@@ -1,0 +1,103 @@
+---
+const SKILL_PILLARS = [
+  {
+    category: 'Applied AI & LLM Systems',
+    description: 'On-premise model fine-tuning, multi-model failover orchestration, and speech synthesis pipelines.',
+    skills: [
+      { name: 'QLoRA / PEFT', desc: '4-bit quant fine-tuning' },
+      { name: 'Unsloth & Transformers', desc: 'High-throughput LLM training' },
+      { name: 'Ollama & Airgapped Runtime', desc: 'On-premise inference engines' },
+      { name: 'Multimodal Audio Ingestion', desc: 'Gemini 1.5, NVIDIA NIM' },
+      { name: 'Speech Synthesis (F5 / VibeVoice)', desc: 'Zero-shot voice cloning' },
+      { name: 'Evaluation Benchmarks', desc: 'Internal test suites & WER' }
+    ]
+  },
+  {
+    category: 'Backend & Enterprise Architecture',
+    description: 'Scalable service layers, ERP module architecture, and asynchronous execution queues.',
+    skills: [
+      { name: 'Python (FastAPI / Flask)', desc: 'High-concurrency REST endpoints' },
+      { name: 'Node.js & Express (TypeScript)', desc: 'MERN microservice architectures' },
+      { name: 'Odoo 17/19 ORM & QWeb', desc: 'Custom enterprise business logic' },
+      { name: 'Asynchronous Job Queues', desc: 'Odoo queue_job & workers' },
+      { name: 'Financial & FX Engines', desc: 'Multi-currency computed rollups' },
+      { name: 'Proxy Routing Bridges', desc: 'Local CLI AI routing layers' }
+    ]
+  },
+  {
+    category: 'Data & Database Optimization',
+    description: 'High-integrity transaction ledgers, relational indexing, and document databases.',
+    skills: [
+      { name: 'PostgreSQL', desc: 'Compound indexing & N+1 query fixes' },
+      { name: 'MongoDB Atlas', desc: 'Document modeling & aggregation' },
+      { name: 'In-Memory Caching', desc: 'FX rates, tokens & state buffers' },
+      { name: 'Pandas & NumPy', desc: 'Data wrangling & batch ingestion' },
+      { name: 'Data Pipeline Security', desc: 'HMAC-SHA256 authenticated streams' }
+    ]
+  },
+  {
+    category: 'Systems, Security & Automation',
+    description: 'Low-level network controls, browser extensions, and serverless automation meshes.',
+    skills: [
+      { name: 'Windows Services & Watchdogs', desc: 'Fails-closed security daemons' },
+      { name: 'Custom DNS Proxies', desc: 'DoH stripping & site whitelisting' },
+      { name: 'Chrome Extensions (Manifest V3)', desc: 'Zero-click background capture' },
+      { name: 'Google Apps Script & Drive API', desc: 'Serverless enterprise pipelines' },
+      { name: 'Docker & Linux Operations', desc: 'Containerization & cloud hosting' },
+      { name: 'Git & GitHub CI/CD', desc: 'Automated test & deploy pipelines' }
+    ]
+  }
+];
+---
+
+<section id="skills" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)]" aria-labelledby="skills-heading">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
+    
+    <div class="mb-10">
+      <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
+        <span class="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
+        <span>04 // Technical Matrix</span>
+      </div>
+      <h2 id="skills-heading" class="text-[var(--text-xl)] font-serif font-medium tracking-tight text-[var(--text-primary)]">
+        Engineering Capabilities &amp; Stack
+      </h2>
+      <p class="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1 max-w-2xl">
+        Every tool, framework, and model listed below has been deployed in real production code or active field trials.
+      </p>
+    </div>
+
+    <!-- 4-Pillar Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {SKILL_PILLARS.map((pillar, idx) => (
+        <div key={pillar.category} class="p-6 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-md)] space-y-4">
+          
+          <div class="flex items-center justify-between pb-3 border-b border-[var(--border-subtle)]">
+            <h3 class="font-serif font-medium text-[var(--text-base)] text-[var(--text-primary)]">
+              {pillar.category}
+            </h3>
+            <span class="font-mono text-[10px] text-[var(--text-tertiary)]">[0{idx + 1}]</span>
+          </div>
+
+          <p class="text-[var(--text-xs)] text-[var(--text-secondary)]">
+            {pillar.description}
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
+            {pillar.skills.map(skill => (
+              <div key={skill.name} class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+                <div class="font-mono text-[var(--text-xs)] font-medium text-[var(--text-primary)]">
+                  {skill.name}
+                </div>
+                <div class="text-[10px] text-[var(--text-tertiary)] mt-0.5">
+                  {skill.desc}
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

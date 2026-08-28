@@ -1,0 +1,121 @@
+---
+const PRINCIPLES = [
+  {
+    title: 'Zero Marginal Token Cost',
+    body: 'Cloud APIs are great for prototyping, but enterprise profitability demands on-premise open-weights intelligence. Fine-tuning models on domain datasets turns expensive recurring overhead into a owned operational asset.'
+  },
+  {
+    title: 'Fault-Tolerant by Architecture',
+    body: 'Single-provider LLM pipelines fail in production. Whether it is an unexpected HTTP 429 rate limit or an upstream outage, systems must gracefully degrade across multi-tier failovers down to deterministic cached fallbacks.'
+  },
+  {
+    title: 'Zero UI-Blocking & Query Rigor',
+    body: 'An AI feature that freezes the client UI or runs uncontrolled N+1 database queries is a bug. Background workers, asynchronous queues, and indexed compound lookups are non-negotiable.'
+  }
+];
+---
+
+<section id="about" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)]" aria-labelledby="about-heading">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      
+      <!-- Left Narrative -->
+      <div class="lg:col-span-7 space-y-6">
+        <div>
+          <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
+            <span class="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
+            <span>06 // Engineering Philosophy</span>
+          </div>
+          <h2 id="about-heading" class="text-[var(--text-xl)] font-serif font-medium tracking-tight text-[var(--text-primary)]">
+            How I Think About Applied AI &amp; Systems
+          </h2>
+        </div>
+
+        <div class="space-y-4 text-[var(--text-base)] text-[var(--text-secondary)] leading-relaxed font-sans">
+          <p>
+            I am an Applied AI Systems Engineer based in Ahmedabad, India. My work sits at the intersection of <strong class="text-[var(--text-primary)] font-medium">open-weights model fine-tuning</strong>, <strong class="text-[var(--text-primary)] font-medium">multi-modal ingestion pipelines</strong>, and <strong class="text-[var(--text-primary)] font-medium">resilient enterprise backend architectures</strong>.
+          </p>
+          <p>
+            Rather than treating AI as a black-box API wrapper, I focus on the hard engineering questions: How do we fine-tune a 7B model so it runs locally at near-zero marginal cost? How do we build a 7-tier failover DAG so a voice-to-order pipeline never drops a customer transaction? How do we seal endpoint DNS loopholes so security cannot be bypassed with a browser toggle?
+          </p>
+          <p>
+            My long-term ambition is to build deep-tech AI software that solves foundational operational bottlenecks. I prioritize empirical evaluation suites, measurable latency SLAs, and clean architectural separation of concerns over performative tech trends.
+          </p>
+        </div>
+
+        <!-- 3 Core Principles -->
+        <div class="pt-4 space-y-4 border-t border-[var(--border-subtle)]">
+          {PRINCIPLES.map((principle, idx) => (
+            <div key={principle.title} class="p-4 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-sm)]">
+              <div class="font-mono text-[var(--text-xs)] text-[var(--accent)] font-semibold mb-1">
+                0{idx + 1} // {principle.title}
+              </div>
+              <p class="text-[var(--text-xs)] text-[var(--text-secondary)] leading-relaxed">
+                {principle.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
+      </div>
+
+      <!-- Right Column: Lab Notebook Fact Sheet -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <div class="p-6 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-md)] space-y-4 font-mono text-[var(--text-xs)]">
+          <div class="flex items-center justify-between pb-3 border-b border-[var(--border-subtle)] text-[var(--text-primary)] font-bold">
+            <span>// QUICK FACTS &amp; PROFILE</span>
+            <span class="text-[var(--accent)]">ONLINE</span>
+          </div>
+
+          <div class="space-y-3">
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Location &amp; Timezone</div>
+              <div class="text-[var(--text-primary)] font-medium mt-0.5">Ahmedabad, Gujarat, India 🇮🇳 (UTC+5:30)</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Current Focus</div>
+              <div class="text-[var(--text-primary)] font-medium mt-0.5">Odoo 19 AI Modules &amp; Local Fine-Tuning @ Arihant AI</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Academic Credentials</div>
+              <div class="text-[var(--text-primary)] font-medium mt-0.5">MCA (Alliance Univ) · AI/ML Minor (IIT Mandi)</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Core Stack</div>
+              <div class="text-[var(--text-primary)] font-medium mt-0.5">Python, QLoRA, FastAPI, Odoo 19, Node/Express, PostgreSQL, MongoDB</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">GitHub Repository</div>
+              <a 
+                href="https://github.com/harshthanki-codes" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="text-[var(--accent)] hover:underline block mt-0.5 truncate"
+              >
+                github.com/harshthanki-codes ↗
+              </a>
+            </div>
+
+            <div>
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Interests Beyond Code</div>
+              <div class="text-[var(--text-secondary)] mt-0.5">Automotive engineering, weight training, exploring regional cuisine.</div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-[var(--border-subtle)] text-[10px] text-[var(--text-tertiary)]">
+            Verified production systems operator. Open for technical conversations and strategic engineering roles.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,47 @@
+---
+import { ThemeToggle } from './islands/ThemeToggle';
+import { MobileNavDrawer } from './islands/MobileNavDrawer';
+---
+
+<header class="sticky top-0 z-40 w-full border-b border-[var(--border-subtle)] bg-[var(--bg-surface-overlay)] backdrop-blur-md transition-colors">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)] h-16 flex items-center justify-between gap-4">
+    
+    <!-- Logo / Brand Identifier -->
+    <a 
+      href="#hero" 
+      class="flex items-center gap-2.5 font-mono text-[var(--text-sm)] text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors focus-visible:outline-none"
+      aria-label="Harsh Thanki Portfolio Home"
+    >
+      <span class="w-2 h-2 bg-[var(--accent)] rounded-xs"></span>
+      <span class="font-bold tracking-tight">HARSH THANKI</span>
+      <span class="hidden sm:inline-block text-[var(--text-tertiary)] text-[11px] bg-[var(--bg-surface-raised)] px-1.5 py-0.5 border border-[var(--border-subtle)]">
+        AI Systems / Full-Stack
+      </span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-6 font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--text-secondary)]" aria-label="Main Navigation">
+      <a href="#projects" class="touch-target hover:text-[var(--text-primary)] transition-colors">01 // Systems</a>
+      <a href="#telemetry" class="touch-target hover:text-[var(--text-primary)] transition-colors">02 // Telemetry</a>
+      <a href="#skills" class="touch-target hover:text-[var(--text-primary)] transition-colors">03 // Stack</a>
+      <a href="#experience" class="touch-target hover:text-[var(--text-primary)] transition-colors">04 // Track Record</a>
+      <a href="#about" class="touch-target hover:text-[var(--text-primary)] transition-colors">05 // Philosophy</a>
+    </nav>
+
+    <!-- Right Controls: Theme Toggle & Direct Contact CTA -->
+    <div class="flex items-center gap-2.5">
+      <ThemeToggle client:load />
+
+      <a 
+        href="#contact" 
+        class="hidden sm:inline-flex touch-target px-3.5 py-1.5 bg-[var(--accent)] text-[var(--accent-text)] font-mono text-[var(--text-xs)] font-medium hover:bg-[var(--accent-hover)] transition-colors shadow-xs"
+      >
+        Let's Connect →
+      </a>
+
+      <!-- Mobile Navigation Drawer -->
+      <MobileNavDrawer client:idle />
+    </div>
+
+  </div>
+</header>

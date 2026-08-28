@@ -1,0 +1,127 @@
+---
+const EXPERIENCES = [
+  {
+    role: 'Python Developer Intern (Applied AI & Systems)',
+    company: 'Arihant AI',
+    location: 'Ahmedabad, India',
+    period: '2025 – Present',
+    status: 'Current Engagement',
+    impact: 'Architected and deployed custom Odoo 19 ERP modules, on-premise QLoRA fine-tuning pipelines, 7-tier multimodal voice-to-order failover systems, and enterprise DNS proxy watchdogs across 35+ workstations.',
+    highlights: [
+      'Fine-tuned DeepSeek Coder 6.7B to 8.7/10 score against Claude Sonnet 5 on internal Odoo 19 benchmarks at $0 marginal cost.',
+      'Engineered in-memory multimodal voice-to-order pipeline with zero dropped orders in active production field trials.',
+      'Built tamper-proof fails-closed Windows watchdog service closing DoH bypass loopholes across enterprise endpoints.'
+    ],
+    stack: ['Python', 'Odoo 19', 'QLoRA', 'Ollama', 'FastAPI', 'Gemini Multimodal', 'PostgreSQL', 'Windows Services']
+  },
+  {
+    role: 'Machine Learning Intern (Computer Vision)',
+    company: 'Pratinik Infotech',
+    location: 'Remote / Hybrid',
+    period: 'Jan 2026 – Mar 2026',
+    status: 'Completed',
+    impact: 'Engineered multi-class convolutional neural networks for agricultural plant disease detection using transfer learning architectures.',
+    highlights: [
+      'Implemented ResNet and VGG16 transfer learning models in TensorFlow with data augmentation pipelines.',
+      'Achieved robust classification accuracy across multi-class leaf disease datasets under varying lighting conditions.'
+    ],
+    stack: ['TensorFlow', 'Python', 'ResNet', 'VGG16', 'OpenCV', 'Transfer Learning']
+  },
+  {
+    role: 'Data Analysis Intern',
+    company: 'Cognifyz Technologies',
+    location: 'Remote',
+    period: 'Jan 2026 – Feb 2026',
+    status: 'Completed',
+    impact: 'Conducted end-to-end exploratory data analysis and structured data cleaning pipelines for commercial insight reports.',
+    highlights: [
+      'Automated batch cleaning and anomaly detection for multi-variable business datasets.',
+      'Built publication-grade visualization dashboards using Pandas, Matplotlib, and Seaborn.'
+    ],
+    stack: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'EDA']
+  },
+  {
+    role: 'Minor in Data Science & AI/ML',
+    company: 'IIT Mandi (with MCA at Alliance University)',
+    location: 'Academic Credential',
+    period: '2024 – 2026',
+    status: 'Completed with Distinction',
+    impact: 'Completed advanced minor program covering statistical learning theory, deep neural architectures, and applied AI systems.',
+    highlights: [
+      'Rigorous foundation in gradient descent optimization, transformer attention mechanisms, and model evaluation.',
+      'Project-based capstones focusing on practical model deployment and efficiency.'
+    ],
+    stack: ['Machine Learning', 'Deep Learning', 'PyTorch', 'Linear Algebra', 'Statistical Modeling']
+  }
+];
+---
+
+<section id="experience" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-app)]" aria-labelledby="experience-heading">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
+    
+    <div class="mb-10">
+      <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
+        <span class="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
+        <span>05 // Track Record &amp; Timeline</span>
+      </div>
+      <h2 id="experience-heading" class="text-[var(--text-xl)] font-serif font-medium tracking-tight text-[var(--text-primary)]">
+        Where I've Delivered Systems
+      </h2>
+      <p class="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1 max-w-2xl">
+        A timeline of shipping production code, optimizing database query layers, and testing AI pipelines under real operational constraints.
+      </p>
+    </div>
+
+    <!-- Timeline List -->
+    <div class="space-y-6">
+      {EXPERIENCES.map((exp, idx) => (
+        <article key={exp.company} class="p-6 sm:p-8 border border-[var(--border-subtle)] bg-[var(--bg-surface)] rounded-[var(--radius-md)] space-y-4">
+          
+          {/* Header Row */}
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[var(--border-subtle)]">
+            <div>
+              <span class="font-mono text-[10px] text-[var(--text-tertiary)] block mb-0.5">
+                TIMELINE [0{idx + 1}] · {exp.period}
+              </span>
+              <h3 class="font-serif font-medium text-[var(--text-base)] sm:text-[var(--text-lg)] text-[var(--text-primary)]">
+                {exp.role}
+              </h3>
+              <div class="text-[var(--text-xs)] text-[var(--accent)] font-mono font-medium">
+                @ {exp.company} <span class="text-[var(--text-tertiary)] font-normal">· {exp.location}</span>
+              </div>
+            </div>
+
+            <span class="self-start sm:self-center font-mono text-[10px] uppercase px-2 py-0.5 border border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] text-[var(--text-secondary)]">
+              {exp.status}
+            </span>
+          </div>
+
+          <p class="text-[var(--text-sm)] text-[var(--text-secondary)] leading-relaxed">
+            {exp.impact}
+          </p>
+
+          {/* Bullet Highlights */}
+          <ul class="space-y-1.5 font-sans text-[var(--text-xs)] text-[var(--text-secondary)]">
+            {exp.highlights.map(item => (
+              <li key={item} class="flex items-start gap-2">
+                <span class="text-[var(--accent)] font-mono shrink-0">↳</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* Stack Chips */}
+          <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            {exp.stack.map(tech => (
+              <span key={tech} class="bg-[var(--bg-surface-raised)] text-[var(--text-tertiary)] px-2 py-0.5 border border-[var(--border-subtle)]">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>

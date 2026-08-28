@@ -1,0 +1,147 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { PROJECTS_DATA } from '../data/projects';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Harsh Thanki — Applied AI Systems & Full-Stack Engineer",
+  description = "Applied AI Systems & High-Throughput Backend Engineer. Specializing in on-premise LLM fine-tuning (QLoRA), multi-tier failover architectures, Odoo 19 ERP modules, and MERN microservices."
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://harshthanki-codes.github.io');
+const previewImageURL = new URL('/Portfolio_Website/og-image.png', Astro.site || 'https://harshthanki-codes.github.io');
+
+// Construct Schema.org JSON-LD dynamically from real project data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://harshthanki-codes.github.io/#person",
+      "name": "Harsh Thanki",
+      "jobTitle": "Applied AI Systems & Full-Stack Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Arihant AI"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "IIT Mandi",
+          "department": "Minor in Data Science & AI/ML"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Alliance University",
+          "department": "Master of Computer Applications (MCA)"
+        }
+      ],
+      "url": "https://harshthanki-codes.github.io/Portfolio_Website/",
+      "sameAs": [
+        "https://github.com/harshthanki-codes",
+        "https://www.linkedin.com/in/harshthanki"
+      ],
+      "knowsAbout": [
+        "LLM Fine-Tuning",
+        "QLoRA",
+        "Python",
+        "FastAPI",
+        "Odoo 19 ERP",
+        "PostgreSQL",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Multimodal AI Systems"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://harshthanki-codes.github.io/#projects",
+      "name": "Production AI & Full-Stack Engineering Case Studies",
+      "itemListElement": PROJECTS_DATA.map((project, idx) => ({
+        "@type": "SoftwareSourceCode",
+        "position": idx + 1,
+        "name": project.title,
+        "description": project.tagline,
+        "programmingLanguage": project.stack.join(", "),
+        "codeRepository": "https://github.com/harshthanki-codes"
+      }))
+    }
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical & Basic Metadata -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio_Website/favicon.svg" />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={previewImageURL} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={previewImageURL} />
+
+    <!-- Fonts (Preconnect & Subsets) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" 
+      rel="stylesheet" 
+    />
+
+    <!-- Theme Initialization Script (Prevents Flash of Wrong Theme) -->
+    <script is:inline>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const activeTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', activeTheme === 'dark');
+        document.documentElement.setAttribute('data-theme', activeTheme);
+      })();
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  </head>
+  <body class="tech-grid-bg antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
+    
+    <!-- A11y Skip Link -->
+    <a 
+      href="#main-content" 
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--accent)] focus:text-[var(--accent-text)] focus:font-mono focus:text-xs"
+    >
+      Skip to main content
+    </a>
+
+    <Navbar />
+
+    <main id="main-content" class="min-h-screen">
+      <slot />
+    </main>
+
+    <Footer />
+
+  </body>
+</html>

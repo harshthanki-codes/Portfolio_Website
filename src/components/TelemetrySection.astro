@@ -1,0 +1,24 @@
+---
+import { TelemetryWidget } from './islands/TelemetryWidget';
+---
+
+<section id="telemetry" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-app)] relative" aria-labelledby="telemetry-heading">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
+    
+    <div class="mb-8">
+      <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
+        <span class="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
+        <span>03 // Full-Stack Runtime Proof</span>
+      </div>
+      <h2 id="telemetry-heading" class="text-[var(--text-xl)] font-serif font-medium tracking-tight text-[var(--text-primary)]">
+        Live MERN Microservice Integration
+      </h2>
+      <p class="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1 max-w-2xl">
+        A dedicated Node.js/Express + MongoDB Atlas cluster operational in production. Recruiter verification via live client-side telemetry.
+      </p>
+    </div>
+
+    <TelemetryWidget client:visible />
+
+  </div>
+</section>
