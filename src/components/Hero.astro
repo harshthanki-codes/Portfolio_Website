@@ -2,46 +2,51 @@
 import { HeroFallbackDiagram } from './islands/HeroFallbackDiagram';
 ---
 
-<section id="hero" class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden" aria-labelledby="hero-heading">
-  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
+<section id="hero" class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden solar-glow-bg" aria-labelledby="hero-heading">
+  <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)] relative z-10">
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
       
-      <!-- Left Column: Technical Narrative & Positioning -->
+      <!-- Left Column: High-Impact Technical Narrative -->
       <div class="lg:col-span-6 space-y-6">
         
-        <!-- Status Indicator Pill -->
-        <div class="inline-flex items-center gap-2 px-2.5 py-1 border border-[var(--border-subtle)] bg-[var(--bg-surface)] font-mono text-[var(--text-xs)] text-[var(--text-secondary)] rounded-[var(--radius-sm)]">
-          <span className="w-2 h-2 rounded-full bg-[var(--status-complete)] animate-pulse"></span>
-          <span>Available for High-Impact Applied AI &amp; Backend Engineering</span>
+        <!-- Live Status Indicator Pill -->
+        <div class="inline-flex items-center gap-2.5 px-3 py-1.5 border border-[var(--accent-border)] bg-[var(--accent-subtle)] font-mono text-[var(--text-xs)] text-[var(--accent)] rounded-full shadow-xs">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]"></span>
+          </span>
+          <span class="font-medium tracking-wide">Applied AI Systems &amp; High-Throughput Backends</span>
         </div>
 
-        <!-- Display Headline -->
-        <h1 id="hero-heading" class="text-[var(--text-2xl)] font-serif font-normal tracking-tight text-[var(--text-primary)] leading-[1.1]">
-          Architecting <em class="italic text-[var(--accent)] font-serif">resilient AI systems</em> &amp; production backends.
+        <!-- Headline with Radiant Orange Gradient -->
+        <h1 id="hero-heading" class="text-[var(--text-2xl)] font-serif font-normal tracking-tight text-[var(--text-primary)] leading-[1.08]">
+          Engineering <span class="gradient-text-solar font-serif italic">resilient AI systems</span> &amp; production backends.
         </h1>
 
-        <!-- High-Signal Narrative Paragraph -->
-        <p class="text-[var(--text-md)] text-[var(--text-secondary)] leading-relaxed max-w-xl">
-          I specialize in <strong>on-premise LLM fine-tuning</strong>, <strong>multi-tier failover pipelines</strong>, and <strong>high-throughput ERP architectures</strong>. Proven record deploying local open-weights intelligence, zero-cost automated ingestion, and tamper-proof security systems.
+        <!-- Narrative Paragraph -->
+        <p class="text-[var(--text-md)] text-[var(--text-secondary)] leading-relaxed max-w-xl font-sans">
+          I build <strong class="text-[var(--text-primary)] font-semibold">on-premise LLM fine-tuning pipelines</strong>, <strong class="text-[var(--text-primary)] font-semibold">7-tier failover DAG architectures</strong>, and <strong class="text-[var(--text-primary)] font-semibold">distributed ERP engines</strong>. Zero marginal token cost, zero dropped transactions, and battle-tested endpoint security.
         </p>
 
-        <!-- System Credentials Metric Strip -->
-        <div class="grid grid-cols-3 gap-3 py-2 border-y border-[var(--border-subtle)] font-mono text-[var(--text-xs)]">
-          <div>
-            <div class="text-[var(--text-tertiary)] text-[10px] uppercase">Fine-Tuned Eval</div>
-            <div class="text-[var(--text-primary)] font-bold text-[var(--text-sm)] mt-0.5">8.7 / 10</div>
-            <div class="text-[10px] text-[var(--accent)]">vs Sonnet 5</div>
+        <!-- System Metric Cards (Glow Strip) -->
+        <div class="grid grid-cols-3 gap-3 py-3 border-y border-[var(--border-subtle)] font-mono text-[var(--text-xs)]">
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors">
+            <div class="text-[var(--text-tertiary)] text-[10px] uppercase tracking-wider">Fine-Tuned Eval</div>
+            <div class="text-[var(--text-primary)] font-bold text-[var(--text-base)] mt-0.5">8.7 / 10</div>
+            <div class="text-[10px] text-[var(--accent)] font-medium">vs Claude Sonnet 5</div>
           </div>
-          <div>
-            <div class="text-[var(--text-tertiary)] text-[10px] uppercase">Failover Resilience</div>
-            <div class="text-[var(--text-primary)] font-bold text-[var(--text-sm)] mt-0.5">7-Tier Chain</div>
-            <div class="text-[10px] text-[var(--status-complete)]">0% Order Loss</div>
+
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors">
+            <div class="text-[var(--text-tertiary)] text-[10px] uppercase tracking-wider">Failover Resilience</div>
+            <div class="text-[var(--text-primary)] font-bold text-[var(--text-base)] mt-0.5">7-Tier Mesh</div>
+            <div class="text-[10px] text-[var(--status-complete)] font-medium">0% Order Loss</div>
           </div>
-          <div>
-            <div class="text-[var(--text-tertiary)] text-[10px] uppercase">Deployment Scale</div>
-            <div class="text-[var(--text-primary)] font-bold text-[var(--text-sm)] mt-0.5">35+ Nodes</div>
-            <div class="text-[10px] text-[var(--text-secondary)]">Zero-License</div>
+
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors">
+            <div class="text-[var(--text-tertiary)] text-[10px] uppercase tracking-wider">Endpoint Scale</div>
+            <div class="text-[var(--text-primary)] font-bold text-[var(--text-base)] mt-0.5">35+ Nodes</div>
+            <div class="text-[10px] text-[var(--text-secondary)] font-medium">Fails-Closed DNS</div>
           </div>
         </div>
 
@@ -49,17 +54,18 @@ import { HeroFallbackDiagram } from './islands/HeroFallbackDiagram';
         <div class="flex flex-wrap items-center gap-3 pt-2">
           <a 
             href="#projects" 
-            class="touch-target px-5 py-2.5 bg-[var(--accent)] text-[var(--accent-text)] font-mono text-[var(--text-xs)] font-medium hover:bg-[var(--accent-hover)] transition-all shadow-xs flex items-center gap-2"
+            class="touch-target px-5 py-3 rounded-[var(--radius-md)] bg-[var(--accent-gradient)] text-[var(--accent-text)] font-mono text-[var(--text-xs)] font-bold shadow-[0_4px_20px_var(--accent-glow)] hover:shadow-[0_8px_30px_var(--accent-glow)] transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
           >
-            <span>Explore 7 Case Studies ↓</span>
+            <span>Explore 7 Case Studies &darr;</span>
           </a>
+
           <a 
             href="https://github.com/harshthanki-codes" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="touch-target px-5 py-2.5 border border-[var(--border-strong)] bg-[var(--bg-surface)] text-[var(--text-primary)] font-mono text-[var(--text-xs)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all flex items-center gap-1.5"
+            class="touch-target px-5 py-3 rounded-[var(--radius-md)] border border-[var(--border-strong)] bg-[var(--bg-surface)] text-[var(--text-primary)] font-mono text-[var(--text-xs)] font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all shadow-xs flex items-center gap-1.5"
           >
-            <span>github.com/harshthanki-codes ↗</span>
+            <span>github.com/harshthanki-codes &nearr;</span>
           </a>
         </div>
 
@@ -67,7 +73,12 @@ import { HeroFallbackDiagram } from './islands/HeroFallbackDiagram';
 
       <!-- Right Column: Signature Interactive Element (Live 7-Tier Fallback Diagram) -->
       <div class="lg:col-span-6">
-        <HeroFallbackDiagram client:load />
+        <div class="relative">
+          <div class="absolute -inset-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-[var(--radius-lg)] blur-xl opacity-60 pointer-events-none"></div>
+          <div class="relative">
+            <HeroFallbackDiagram client:load />
+          </div>
+        </div>
       </div>
 
     </div>

@@ -2,7 +2,7 @@
 const PRINCIPLES = [
   {
     title: 'Zero Marginal Token Cost',
-    body: 'Cloud APIs are great for prototyping, but enterprise profitability demands on-premise open-weights intelligence. Fine-tuning models on domain datasets turns expensive recurring overhead into a owned operational asset.'
+    body: 'Cloud APIs are great for prototyping, but enterprise unit economics demand on-premise open-weights intelligence. Fine-tuning models on domain datasets turns recurring expenses into an owned high-margin asset.'
   },
   {
     title: 'Fault-Tolerant by Architecture',
@@ -10,48 +10,49 @@ const PRINCIPLES = [
   },
   {
     title: 'Zero UI-Blocking & Query Rigor',
-    body: 'An AI feature that freezes the client UI or runs uncontrolled N+1 database queries is a bug. Background workers, asynchronous queues, and indexed compound lookups are non-negotiable.'
+    body: 'An AI feature that freezes the client UI or runs uncontrolled N+1 database queries is broken. Background workers, asynchronous queues, and indexed compound lookups are non-negotiable standards.'
   }
 ];
 ---
 
-<section id="about" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)]" aria-labelledby="about-heading">
+<section id="about" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)] relative" aria-labelledby="about-heading">
   <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
     
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
       
       <!-- Left Narrative -->
       <div class="lg:col-span-7 space-y-6">
         <div>
           <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
-            <span class="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
-            <span>06 // Engineering Philosophy</span>
+            <span class="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_8px_var(--accent)]"></span>
+            <span class="font-semibold">05 // Engineering Philosophy</span>
           </div>
-          <h2 id="about-heading" class="text-[var(--text-xl)] font-serif font-medium tracking-tight text-[var(--text-primary)]">
-            How I Think About Applied AI &amp; Systems
+          <h2 id="about-heading" class="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
+            How I Think About <span class="gradient-text-solar font-serif italic">Applied AI &amp; Systems</span>
           </h2>
         </div>
 
         <div class="space-y-4 text-[var(--text-base)] text-[var(--text-secondary)] leading-relaxed font-sans">
           <p>
-            I am an Applied AI Systems Engineer based in Ahmedabad, India. My work sits at the intersection of <strong class="text-[var(--text-primary)] font-medium">open-weights model fine-tuning</strong>, <strong class="text-[var(--text-primary)] font-medium">multi-modal ingestion pipelines</strong>, and <strong class="text-[var(--text-primary)] font-medium">resilient enterprise backend architectures</strong>.
+            I am an Applied AI Systems Engineer based in Ahmedabad, India. My work focuses on <strong class="text-[var(--text-primary)] font-semibold">open-weights model fine-tuning</strong>, <strong class="text-[var(--text-primary)] font-semibold">multimodal ingestion pipelines</strong>, and <strong class="text-[var(--text-primary)] font-semibold">resilient enterprise backend architectures</strong>.
           </p>
           <p>
-            Rather than treating AI as a black-box API wrapper, I focus on the hard engineering questions: How do we fine-tune a 7B model so it runs locally at near-zero marginal cost? How do we build a 7-tier failover DAG so a voice-to-order pipeline never drops a customer transaction? How do we seal endpoint DNS loopholes so security cannot be bypassed with a browser toggle?
+            Rather than treating AI as a shallow API wrapper, I focus on the hard engineering questions: How do we fine-tune a 7B model so it runs locally at zero marginal cost? How do we build a 7-tier failover DAG so a voice-to-order pipeline never drops a customer transaction? How do we seal endpoint DNS loopholes so security cannot be bypassed with a browser toggle?
           </p>
           <p>
-            My long-term ambition is to build deep-tech AI software that solves foundational operational bottlenecks. I prioritize empirical evaluation suites, measurable latency SLAs, and clean architectural separation of concerns over performative tech trends.
+            My long-term ambition is to build deep-tech AI software that solves foundational operational bottlenecks. I prioritize empirical evaluation suites, measurable latency SLAs, and clean architectural separation of concerns over superficial trends.
           </p>
         </div>
 
-        <!-- 3 Core Principles -->
+        <!-- 3 Core Principles Cards -->
         <div class="pt-4 space-y-4 border-t border-[var(--border-subtle)]">
           {PRINCIPLES.map((principle, idx) => (
-            <div key={principle.title} class="p-4 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-sm)]">
-              <div class="font-mono text-[var(--text-xs)] text-[var(--accent)] font-semibold mb-1">
-                0{idx + 1} // {principle.title}
+            <div key={principle.title} class="p-5 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-md)] hover:border-[var(--accent-border)] transition-colors shadow-xs">
+              <div class="font-mono text-[var(--text-xs)] text-[var(--accent)] font-bold mb-1 flex items-center gap-2">
+                <span>0{idx + 1} //</span>
+                <span>{principle.title}</span>
               </div>
-              <p class="text-[var(--text-xs)] text-[var(--text-secondary)] leading-relaxed">
+              <p class="text-[var(--text-xs)] text-[var(--text-secondary)] leading-relaxed font-sans">
                 {principle.body}
               </p>
             </div>
@@ -60,56 +61,56 @@ const PRINCIPLES = [
 
       </div>
 
-      <!-- Right Column: Lab Notebook Fact Sheet -->
+      <!-- Right Column: Sleek Lab Notebook Fact Sheet -->
       <div class="lg:col-span-5 space-y-6">
         
-        <div class="p-6 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-md)] space-y-4 font-mono text-[var(--text-xs)]">
+        <div class="p-6 sm:p-7 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-lg)] space-y-5 font-mono text-[var(--text-xs)] shadow-md relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-[var(--accent-gradient)]"></div>
+
           <div class="flex items-center justify-between pb-3 border-b border-[var(--border-subtle)] text-[var(--text-primary)] font-bold">
-            <span>// QUICK FACTS &amp; PROFILE</span>
-            <span class="text-[var(--accent)]">ONLINE</span>
+            <span>// PROFILE &amp; TELEMETRY</span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] border border-[var(--accent-border)] text-[10px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse"></span>
+              ONLINE
+            </span>
           </div>
 
-          <div class="space-y-3">
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Location &amp; Timezone</div>
-              <div class="text-[var(--text-primary)] font-medium mt-0.5">Ahmedabad, Gujarat, India 🇮🇳 (UTC+5:30)</div>
+          <div class="space-y-3.5">
+            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Location &amp; Timezone</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">Ahmedabad, Gujarat, India 🇮🇳 (UTC+5:30)</div>
             </div>
 
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Current Focus</div>
-              <div class="text-[var(--text-primary)] font-medium mt-0.5">Odoo 19 AI Modules &amp; Local Fine-Tuning @ Arihant AI</div>
+            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Current Focus</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">Odoo 19 AI Modules &amp; Local Fine-Tuning @ Arihant AI</div>
             </div>
 
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Academic Credentials</div>
-              <div class="text-[var(--text-primary)] font-medium mt-0.5">MCA (Alliance Univ) · AI/ML Minor (IIT Mandi)</div>
+            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Academic Credentials</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">MCA (Alliance Univ) &middot; AI/ML Minor (IIT Mandi)</div>
             </div>
 
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Core Stack</div>
-              <div class="text-[var(--text-primary)] font-medium mt-0.5">Python, QLoRA, FastAPI, Odoo 19, Node/Express, PostgreSQL, MongoDB</div>
+            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Primary Core Stack</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">Python, QLoRA, FastAPI, Odoo 19, Node/Express, PostgreSQL, MongoDB</div>
             </div>
 
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">GitHub Repository</div>
+            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+              <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Code Repositories</div>
               <a 
                 href="https://github.com/harshthanki-codes" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="text-[var(--accent)] hover:underline block mt-0.5 truncate"
+                class="text-[var(--accent)] font-bold hover:underline block mt-0.5 truncate"
               >
-                github.com/harshthanki-codes ↗
+                github.com/harshthanki-codes &nearr;
               </a>
-            </div>
-
-            <div>
-              <div class="text-[var(--text-tertiary)] uppercase text-[10px]">Interests Beyond Code</div>
-              <div class="text-[var(--text-secondary)] mt-0.5">Automotive engineering, weight training, exploring regional cuisine.</div>
             </div>
           </div>
 
-          <div class="pt-3 border-t border-[var(--border-subtle)] text-[10px] text-[var(--text-tertiary)]">
-            Verified production systems operator. Open for technical conversations and strategic engineering roles.
+          <div class="pt-3 border-t border-[var(--border-subtle)] text-[11px] text-[var(--text-tertiary)] leading-relaxed">
+            Verified production systems operator. Open for technical conversations, high-impact consulting, and strategic engineering roles.
           </div>
         </div>
 
