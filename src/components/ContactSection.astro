@@ -1,5 +1,5 @@
 ---
-// Clean inline SVGs for zero dependency issues and pure static HTML output
+// Clean inline SVGs for zero dependency issues, zero bundle bloat, and perfect responsiveness
 ---
 
 <section id="contact" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-app)] relative overflow-hidden" aria-labelledby="contact-heading">
@@ -18,101 +18,128 @@
       </p>
     </div>
 
-    <!-- Contact Channels Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+    <!-- Adjustable, Responsive Contact Channels Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
       
-      <!-- Email Card (Primary Solar Gradient Card) -->
+      <!-- Email Card (Highlighted Primary Action) -->
       <a
         href="mailto:harshthanki203@gmail.com"
-        class="touch-target p-6 border border-[var(--accent-border)] bg-[var(--accent-subtle)] text-[var(--text-primary)] hover:shadow-[0_8px_32px_-4px_var(--accent-glow)] rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-5 group transform hover:-translate-y-1"
+        class="touch-target p-5 sm:p-6 border border-[var(--accent-border)] bg-[var(--accent-subtle)] hover:bg-[var(--accent-subtle)] text-[var(--text-primary)] hover:shadow-[0_12px_32px_-4px_var(--accent-glow)] rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-4 group transform hover:-translate-y-1 relative overflow-hidden"
       >
-        <div class="flex items-center justify-between">
-          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--accent)] text-[var(--accent-text)] shadow-xs">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div class="flex items-center justify-between gap-2">
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--accent)] text-[var(--accent-text)] shadow-xs shrink-0">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <span class="font-mono text-[10px] uppercase font-bold tracking-wider text-[var(--accent)]">Direct Mail</span>
+          <span class="px-2.5 py-0.5 rounded-full bg-[var(--accent)] text-[var(--accent-text)] font-mono text-[9px] uppercase font-bold tracking-wider shrink-0">
+            Primary Mail
+          </span>
         </div>
-        <div>
-          <div class="font-mono text-[var(--text-xs)] font-bold text-[var(--text-primary)] truncate">harshthanki203@gmail.com</div>
-          <div class="text-[11px] text-[var(--text-secondary)] mt-1">&lt;24h response SLA &rarr;</div>
+
+        <div class="space-y-1 min-w-0">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-[var(--accent)] font-semibold">Direct Email</div>
+          <div class="font-mono text-[12px] sm:text-[13px] font-bold text-[var(--text-primary)] break-all leading-snug group-hover:text-[var(--accent)] transition-colors">
+            harshthanki203@gmail.com
+          </div>
+          <div class="text-[11px] text-[var(--text-secondary)] font-mono pt-1 flex items-center gap-1">
+            <span>&lt;24h SLA response</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
         </div>
       </a>
 
-      <!-- GitHub -->
+      <!-- GitHub Card -->
       <a
         href="https://github.com/harshthanki-codes"
         target="_blank"
         rel="noopener noreferrer"
-        class="touch-target p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-5 group transform hover:-translate-y-1"
+        class="touch-target p-5 sm:p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-4 group transform hover:-translate-y-1"
       >
-        <div class="flex items-center justify-between">
-          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors">
-            <svg class="w-5 h-5 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
+        <div class="flex items-center justify-between gap-2">
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors shrink-0">
+            <svg class="w-4 h-4 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
             </svg>
           </div>
-          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
           </svg>
         </div>
-        <div>
-          <div class="font-mono text-[var(--text-xs)] font-bold text-[var(--text-primary)]">GitHub</div>
-          <div class="text-[11px] text-[var(--text-secondary)] mt-1">Code repositories &amp; evals</div>
+
+        <div class="space-y-1 min-w-0">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-[var(--text-tertiary)] font-semibold">Open Source</div>
+          <div class="font-mono text-[13px] font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate">
+            GitHub
+          </div>
+          <div class="text-[11px] text-[var(--text-secondary)] font-mono pt-1">
+            Repositories &amp; Evals &nearr;
+          </div>
         </div>
       </a>
 
-      <!-- LinkedIn -->
+      <!-- LinkedIn Card -->
       <a
         href="https://www.linkedin.com/in/harshthanki"
         target="_blank"
         rel="noopener noreferrer"
-        class="touch-target p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-5 group transform hover:-translate-y-1"
+        class="touch-target p-5 sm:p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-4 group transform hover:-translate-y-1"
       >
-        <div class="flex items-center justify-between">
-          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors">
-            <svg class="w-5 h-5 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
+        <div class="flex items-center justify-between gap-2">
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors shrink-0">
+            <svg class="w-4 h-4 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
               <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
             </svg>
           </div>
-          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
           </svg>
         </div>
-        <div>
-          <div class="font-mono text-[var(--text-xs)] font-bold text-[var(--text-primary)]">LinkedIn</div>
-          <div class="text-[11px] text-[var(--text-secondary)] mt-1">Professional network</div>
+
+        <div class="space-y-1 min-w-0">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-[var(--text-tertiary)] font-semibold">Network</div>
+          <div class="font-mono text-[13px] font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate">
+            LinkedIn
+          </div>
+          <div class="text-[11px] text-[var(--text-secondary)] font-mono pt-1">
+            Professional Profile &nearr;
+          </div>
         </div>
       </a>
 
-      <!-- Freelancer -->
+      <!-- Freelancer Card -->
       <a
         href="https://www.freelancer.com/u/harshthanki203"
         target="_blank"
         rel="noopener noreferrer"
-        class="touch-target p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-5 group transform hover:-translate-y-1"
+        class="touch-target p-5 sm:p-6 border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:shadow-md rounded-[var(--radius-lg)] transition-all flex flex-col justify-between space-y-4 group transform hover:-translate-y-1"
       >
-        <div class="flex items-center justify-between">
-          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors">
-            <svg class="w-5 h-5 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div class="flex items-center justify-between gap-2">
+          <div class="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] group-hover:border-[var(--accent)] transition-colors shrink-0">
+            <svg class="w-4 h-4 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
             </svg>
           </div>
-          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--accent)] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
           </svg>
         </div>
-        <div>
-          <div class="font-mono text-[var(--text-xs)] font-bold text-[var(--text-primary)]">Freelancer</div>
-          <div class="text-[11px] text-[var(--text-secondary)] mt-1">Contract engagements</div>
+
+        <div class="space-y-1 min-w-0">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-[var(--text-tertiary)] font-semibold">Contracting</div>
+          <div class="font-mono text-[13px] font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate">
+            Freelancer
+          </div>
+          <div class="text-[11px] text-[var(--text-secondary)] font-mono pt-1">
+            Contract Hire &nearr;
+          </div>
         </div>
       </a>
 
     </div>
 
     <!-- Live Status Banner -->
-    <div class="mt-12 p-4 border border-[var(--accent-border)] bg-[var(--accent-subtle)] max-w-xl mx-auto text-center font-mono text-[11px] text-[var(--text-primary)] rounded-[var(--radius-md)] shadow-xs">
+    <div class="mt-10 p-4 border border-[var(--accent-border)] bg-[var(--accent-subtle)] max-w-xl mx-auto text-center font-mono text-[11px] text-[var(--text-primary)] rounded-[var(--radius-md)] shadow-xs">
       <span class="text-[var(--accent)] font-bold">&bull; STATUS:</span> Actively accepting freelance, consulting, and select high-ownership engineering roles.
     </div>
 
