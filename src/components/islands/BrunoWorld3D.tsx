@@ -3,34 +3,31 @@ import * as THREE from 'three';
 import confetti from 'canvas-confetti';
 import { PROJECTS_DATA, type ProjectData } from '../../data/projects';
 import { 
-  Compass, 
-  Zap, 
   Volume2, 
   VolumeX, 
   RotateCcw, 
   Layers, 
-  Terminal, 
   CheckCircle2, 
   ChevronRight, 
   X, 
-  Cpu, 
-  Server, 
-  ShieldCheck, 
   Mail, 
   ExternalLink,
-  Radio,
-  Sparkles
+  Compass,
+  Zap,
+  Cpu,
+  Terminal,
+  Sun,
+  Moon
 } from 'lucide-react';
 
-interface ZoneMonument {
+interface ZoneItem {
   id: string;
   name: string;
   category: string;
   x: number;
   z: number;
   radius: number;
-  color: number;
-  icon: string;
+  color: string;
   title: string;
   tagline: string;
   visited: boolean;
@@ -39,19 +36,17 @@ interface ZoneMonument {
 export const BrunoWorld3D: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
   const [speed, setSpeed] = useState<number>(0);
-  const [tokenRate, setTokenRate] = useState<number>(0);
-  const [activeZone, setActiveZone] = useState<ZoneMonument | null>(null);
-  const [visitedCount, setVisitedCount] = useState<number>(0);
+  const [activeZone, setActiveZone] = useState<ZoneItem | null>(null);
   const [isMuted, setIsMuted] = useState<boolean>(false);
-  const [cameraView, setCameraView] = useState<'chase' | 'iso' | 'top'>('chase');
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
-  const [showDrawer, setShowDrawer] = useState<boolean>(false);
-  const [activeSectionTab, setActiveSectionTab] = useState<string>('projects');
+  const [showDossier, setShowDossier] = useState<boolean>(false);
+  const [activeTab, setActiveTab] = useState<string>('projects');
+  const [themeMode, setThemeMode] = useState<'day' | 'night'>('day');
 
   // Audio Context Ref
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  // Physics & Animation state refs
+  // Physics state refs
   const keysRef = useRef<{ [key: string]: boolean }>({});
   const roverPosRef = useRef<{ x: number; z: number; angle: number; speed: number }>({
     x: 0,
@@ -60,76 +55,71 @@ export const BrunoWorld3D: React.FC = () => {
     speed: 0
   });
 
-  const zonesRef = useRef<ZoneMonument[]>([
+  const zonesRef = useRef<ZoneItem[]>([
     {
       id: 'projects',
-      name: '01 // SYSTEMS FOUNDRY',
-      category: '7 Technical Case Studies',
-      x: -35,
-      z: -35,
-      radius: 14,
-      color: 0xff5500,
-      icon: 'Cpu',
+      name: 'PROJECTS',
+      category: '7 Technical Systems',
+      x: -36,
+      z: -36,
+      radius: 16,
+      color: '#ff5500',
       title: 'Production AI Systems & Deep Architectures',
-      tagline: 'Explore 7 end-to-end case studies: QLoRA fine-tuning, 7-tier failovers & ERP engines.',
-      visited: false
-    },
-    {
-      id: 'telemetry',
-      name: '02 // TELEMETRY HUB',
-      category: 'Live Microservice',
-      x: 35,
-      z: -35,
-      radius: 14,
-      color: 0xffaa00,
-      icon: 'Server',
-      title: 'Live REST API Mesh & MongoDB Cluster',
-      tagline: 'Real-time telemetry engine running Node/Express and MongoDB Atlas connection pool.',
+      tagline: 'Fine-tuned LLMs (QLoRA), 7-tier failover DAGs, Odoo 19 ERP engines, and DNS proxy watchdogs.',
       visited: false
     },
     {
       id: 'skills',
-      name: '03 // STACK MATRIX',
-      category: '4-Pillar Engineering',
-      x: 35,
-      z: 35,
-      radius: 14,
-      color: 0x10b981,
-      icon: 'Layers',
-      title: 'Core Technical Capabilities & Infrastructure',
-      tagline: 'QLoRA, Transformers, FastAPI, Odoo ORM, PostgreSQL, and fails-closed security daemons.',
+      name: 'SKILLS PLAYGROUND',
+      category: 'Interactive Dominoes',
+      x: 36,
+      z: -36,
+      radius: 16,
+      color: '#10b981',
+      title: 'Engineering Stack & Domino Bowling',
+      tagline: 'Ram the car into the skill pins & domino blocks to knock down tech capabilities!',
       visited: false
     },
     {
       id: 'experience',
-      name: '04 // TIMELINE TRACK',
-      category: 'Verified Record',
-      x: -35,
-      z: 35,
-      radius: 14,
-      color: 0x3b82f6,
-      icon: 'ShieldCheck',
-      title: 'Delivered Production Engagements & Capstones',
-      tagline: 'From on-premise AI model pipelines to IIT Mandi AI/ML credentials.',
+      name: 'EXPERIENCE',
+      category: 'Track Record',
+      x: -36,
+      z: 36,
+      radius: 16,
+      color: '#3b82f6',
+      title: 'Production Timeline & IIT Mandi AI/ML',
+      tagline: 'Verified track record across on-premise AI deployments and distributed backend systems.',
+      visited: false
+    },
+    {
+      id: 'telemetry',
+      name: 'TELEMETRY HUB',
+      category: 'Live Microservice',
+      x: 36,
+      z: 36,
+      radius: 16,
+      color: '#f59e0b',
+      title: 'Live REST API Mesh & MongoDB Cluster',
+      tagline: 'Real-time Node/Express API with live connection pool and telemetry streaming.',
       visited: false
     },
     {
       id: 'contact',
-      name: '05 // DISPATCH DEPOT',
-      category: 'Direct Communications',
+      name: 'CONTACT DEPOT',
+      category: 'Direct Dispatch',
       x: 0,
-      z: 46,
-      radius: 14,
-      color: 0xff5500,
-      icon: 'Mail',
+      z: 48,
+      radius: 16,
+      color: '#ec4899',
       title: 'Initiate Technical Collaboration',
-      tagline: 'Direct email, GitHub repositories, LinkedIn, and contract engagements.',
+      tagline: 'Direct mail (harshthanki203@gmail.com), GitHub repositories, and LinkedIn.',
       visited: false
     }
   ]);
 
-  // Procedural Web Audio Synthesizer
-  const playSound = (type: 'bump' | 'honk' | 'zone' | 'whoosh') => {
+  // Web Audio Synthesizer (Engine, Bump, Honk, Fanfare)
+  const playSound = (type: 'engine' | 'bump' | 'honk' | 'zone' | 'whoosh') => {
     if (isMuted) return;
     try {
       if (!audioCtxRef.current) {
@@ -146,17 +136,17 @@ export const BrunoWorld3D: React.FC = () => {
 
       if (type === 'bump') {
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(140, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(35, ctx.currentTime + 0.15);
-        gain.gain.setValueAtTime(0.25, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.15);
+        osc.frequency.setValueAtTime(150, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 0.18);
+        gain.gain.setValueAtTime(0.3, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.18);
         osc.start();
-        osc.stop(ctx.currentTime + 0.15);
+        osc.stop(ctx.currentTime + 0.18);
       } else if (type === 'honk') {
         osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(420, ctx.currentTime);
-        osc.frequency.setValueAtTime(450, ctx.currentTime + 0.08);
-        gain.gain.setValueAtTime(0.18, ctx.currentTime);
+        osc.frequency.setValueAtTime(440, ctx.currentTime);
+        osc.frequency.setValueAtTime(460, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.2, ctx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
         osc.start();
         osc.stop(ctx.currentTime + 0.3);
@@ -167,37 +157,36 @@ export const BrunoWorld3D: React.FC = () => {
           noteOsc.connect(noteGain);
           noteGain.connect(ctx.destination);
           noteOsc.type = 'sine';
-          noteOsc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.08);
-          noteGain.gain.setValueAtTime(0.12, ctx.currentTime + i * 0.08);
-          noteGain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.08 + 0.25);
-          noteOsc.start(ctx.currentTime + i * 0.08);
-          noteOsc.stop(ctx.currentTime + i * 0.08 + 0.25);
+          noteOsc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.07);
+          noteGain.gain.setValueAtTime(0.15, ctx.currentTime + i * 0.07);
+          noteGain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.07 + 0.25);
+          noteOsc.start(ctx.currentTime + i * 0.07);
+          noteOsc.stop(ctx.currentTime + i * 0.07 + 0.25);
         });
       } else if (type === 'whoosh') {
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(200, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.2);
-        gain.gain.setValueAtTime(0.1, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
+        osc.frequency.setValueAtTime(220, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.22);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.22);
         osc.start();
-        osc.stop(ctx.currentTime + 0.2);
+        osc.stop(ctx.currentTime + 0.22);
       }
     } catch {
-      // Audio context fallback
+      // Audio fallback
     }
   };
 
-  // Teleport / Glide Rover to Specific Zone
-  const teleportToZone = (zoneId: string) => {
+  // Glide Rover & Camera to Zone
+  const teleportTo = (zoneId: string) => {
     const target = zonesRef.current.find(z => z.id === zoneId);
     if (!target) return;
-
     playSound('whoosh');
     roverPosRef.current.x = target.x;
-    roverPosRef.current.z = target.z + 5;
+    roverPosRef.current.z = target.z + 6;
     roverPosRef.current.speed = 0;
     roverPosRef.current.angle = Math.PI;
-    setActiveSectionTab(zoneId);
+    setActiveTab(zoneId);
   };
 
   useEffect(() => {
@@ -207,193 +196,299 @@ export const BrunoWorld3D: React.FC = () => {
     let width = container.clientWidth || window.innerWidth;
     let height = container.clientHeight || window.innerHeight;
 
-    // 1. Scene & Atmosphere
+    // 1. Bruno Simon Stylized Warm Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x08090d);
-    scene.fog = new THREE.FogExp2(0x08090d, 0.012);
+    const isDay = themeMode === 'day';
+    
+    // Warm sand clay ground vs Obsidian Night
+    const bgCol = isDay ? 0xf5eedc : 0x0f1118;
+    const floorCol = isDay ? 0xfbf6ea : 0x141822;
+    const roadCol = isDay ? 0xede4ce : 0x1c2130;
 
-    // 2. Camera
-    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    camera.position.set(0, 32, 45);
+    scene.background = new THREE.Color(bgCol);
+    scene.fog = new THREE.FogExp2(bgCol, 0.009);
 
-    // 3. WebGL Renderer
+    // 2. Isometric Perspective Camera
+    const camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 1000);
+    camera.position.set(0, 38, 48);
+
+    // 3. High-Quality WebGL Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = isDay ? 1.05 : 1.2;
     container.appendChild(renderer.domElement);
 
-    // 4. Studio Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+    // 4. Warm Sun Lighting (Bruno Simon signature soft shadows)
+    const ambientLight = new THREE.AmbientLight(isDay ? 0xfffaed : 0xffffff, isDay ? 0.95 : 0.6);
     scene.add(ambientLight);
 
-    const dirLight = new THREE.DirectionalLight(0xfff0dd, 2.2);
-    dirLight.position.set(50, 70, 40);
-    dirLight.castShadow = true;
-    dirLight.shadow.mapSize.width = 2048;
-    dirLight.shadow.mapSize.height = 2048;
-    dirLight.shadow.camera.near = 10;
-    dirLight.shadow.camera.far = 200;
-    dirLight.shadow.camera.left = -80;
-    dirLight.shadow.camera.right = 80;
-    dirLight.shadow.camera.top = 80;
-    dirLight.shadow.camera.bottom = -80;
-    scene.add(dirLight);
+    const sunLight = new THREE.DirectionalLight(isDay ? 0xffeed0 : 0xffdcb5, isDay ? 1.8 : 1.4);
+    sunLight.position.set(55, 80, 45);
+    sunLight.castShadow = true;
+    sunLight.shadow.mapSize.width = 2048;
+    sunLight.shadow.mapSize.height = 2048;
+    sunLight.shadow.camera.near = 10;
+    sunLight.shadow.camera.far = 250;
+    sunLight.shadow.camera.left = -90;
+    sunLight.shadow.camera.right = 90;
+    sunLight.shadow.camera.top = 90;
+    sunLight.shadow.camera.bottom = -90;
+    sunLight.shadow.bias = -0.0005;
+    scene.add(sunLight);
 
-    // Subtle Amber Rim Light
-    const rimLight = new THREE.PointLight(0xff5500, 3, 100);
-    rimLight.position.set(-40, 30, -40);
-    scene.add(rimLight);
+    // Soft sky hemisphere light
+    const hemiLight = new THREE.HemisphereLight(isDay ? 0xffffff : 0x3b82f6, isDay ? 0xf0e0c0 : 0x050508, 0.6);
+    scene.add(hemiLight);
 
-    // 5. Stylized Cyber Grid Floor
-    const gridHelper = new THREE.GridHelper(200, 100, 0xff5500, 0x181c26);
-    gridHelper.position.y = 0.02;
-    scene.add(gridHelper);
-
-    const floorGeo = new THREE.PlaneGeometry(240, 240);
+    // 5. Stylized Playground Ground with Painted Roads & Crossings
+    const floorGeo = new THREE.PlaneGeometry(280, 280);
     const floorMat = new THREE.MeshStandardMaterial({
-      color: 0x0c0e14,
-      roughness: 0.85,
-      metalness: 0.2
+      color: floorCol,
+      roughness: 0.9,
+      metalness: 0.05
     });
-    const floor = new THREE.Mesh(floorGeo, floorMat);
-    floor.rotation.x = -Math.PI / 2;
-    floor.receiveShadow = true;
-    scene.add(floor);
+    const floorMesh = new THREE.Mesh(floorGeo, floorMat);
+    floorMesh.rotation.x = -Math.PI / 2;
+    floorMesh.receiveShadow = true;
+    scene.add(floorMesh);
 
-    // 6. Construct Cyber Rover
-    const roverGroup = new THREE.Group();
+    // Central Playground Compass Circle
+    const centerRingGeo = new THREE.RingGeometry(8, 8.5, 64);
+    const centerRingMat = new THREE.MeshBasicMaterial({ color: isDay ? 0xe2d6ba : 0x2a3248, side: THREE.DoubleSide });
+    const centerRing = new THREE.Mesh(centerRingGeo, centerRingMat);
+    centerRing.rotation.x = -Math.PI / 2;
+    centerRing.position.y = 0.02;
+    scene.add(centerRing);
 
-    // Chassis
-    const chassisGeo = new THREE.BoxGeometry(2.6, 0.9, 4.0);
-    const chassisMat = new THREE.MeshStandardMaterial({ color: 0x151821, roughness: 0.3, metalness: 0.8 });
+    // Painted Roads Connecting Sectors
+    const roadMat = new THREE.MeshBasicMaterial({ color: roadCol, side: THREE.DoubleSide });
+    const hRoad = new THREE.Mesh(new THREE.PlaneGeometry(200, 14), roadMat);
+    hRoad.rotation.x = -Math.PI / 2;
+    hRoad.position.y = 0.01;
+    scene.add(hRoad);
+
+    const vRoad = new THREE.Mesh(new THREE.PlaneGeometry(14, 200), roadMat);
+    vRoad.rotation.x = -Math.PI / 2;
+    vRoad.position.y = 0.01;
+    scene.add(vRoad);
+
+    // Dashed Road Centerlines
+    for (let i = -90; i <= 90; i += 8) {
+      if (Math.abs(i) < 12) continue;
+      const stripeGeo = new THREE.PlaneGeometry(4, 0.6);
+      const stripeMat = new THREE.MeshBasicMaterial({ color: isDay ? 0xffffff : 0xff5500, side: THREE.DoubleSide });
+      
+      const hStripe = new THREE.Mesh(stripeGeo, stripeMat);
+      hStripe.rotation.x = -Math.PI / 2;
+      hStripe.position.set(i, 0.02, 0);
+      scene.add(hStripe);
+
+      const vStripe = new THREE.Mesh(stripeGeo, stripeMat);
+      vStripe.rotation.x = -Math.PI / 2;
+      vStripe.rotation.z = Math.PI / 2;
+      vStripe.position.set(0, 0.02, i);
+      scene.add(vStripe);
+    }
+
+    // 6. Construct Adorable Red Bruno RC Truck
+    const carGroup = new THREE.Group();
+
+    // Red Body Chassis
+    const chassisGeo = new THREE.BoxGeometry(2.4, 0.9, 4.2);
+    const chassisMat = new THREE.MeshStandardMaterial({
+      color: 0xff3b30,
+      roughness: 0.2,
+      metalness: 0.1
+    });
     const chassis = new THREE.Mesh(chassisGeo, chassisMat);
-    chassis.position.y = 0.75;
+    chassis.position.y = 0.85;
     chassis.castShadow = true;
-    roverGroup.add(chassis);
+    carGroup.add(chassis);
 
-    // Cabin / Solar Roof
-    const roofGeo = new THREE.BoxGeometry(1.9, 0.6, 2.4);
-    const roofMat = new THREE.MeshStandardMaterial({ color: 0xff5500, roughness: 0.2, metalness: 0.5 });
-    const roof = new THREE.Mesh(roofGeo, roofMat);
-    roof.position.set(0, 1.35, -0.2);
-    roof.castShadow = true;
-    roverGroup.add(roof);
+    // White Roof / Cabin
+    const cabinGeo = new THREE.BoxGeometry(2.0, 0.85, 2.2);
+    const cabinMat = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      roughness: 0.15,
+      metalness: 0.05
+    });
+    const cabin = new THREE.Mesh(cabinGeo, cabinMat);
+    cabin.position.set(0, 1.6, -0.2);
+    cabin.castShadow = true;
+    carGroup.add(cabin);
 
-    // Headlights
-    const lightGeo = new THREE.SphereGeometry(0.22, 16, 16);
-    const lightMat = new THREE.MeshBasicMaterial({ color: 0xffa044 });
+    // Tinted Glass Windshield
+    const windshieldGeo = new THREE.BoxGeometry(1.9, 0.6, 0.2);
+    const windshieldMat = new THREE.MeshStandardMaterial({ color: 0x112233, roughness: 0.1 });
+    const windshield = new THREE.Mesh(windshieldGeo, windshieldMat);
+    windshield.position.set(0, 1.55, -1.32);
+    carGroup.add(windshield);
+
+    // Yellow Headlights
+    const lightGeo = new THREE.CylinderGeometry(0.22, 0.22, 0.1, 16);
+    const lightMat = new THREE.MeshBasicMaterial({ color: 0xffea00 });
+    
     const lLight = new THREE.Mesh(lightGeo, lightMat);
-    lLight.position.set(-1.0, 0.75, -2.0);
-    roverGroup.add(lLight);
+    lLight.rotation.x = Math.PI / 2;
+    lLight.position.set(-0.8, 0.85, -2.12);
+    carGroup.add(lLight);
 
     const rLight = new THREE.Mesh(lightGeo, lightMat);
-    rLight.position.set(1.0, 0.75, -2.0);
-    roverGroup.add(rLight);
+    rLight.rotation.x = Math.PI / 2;
+    rLight.position.set(0.8, 0.85, -2.12);
+    carGroup.add(rLight);
 
-    // Spotlight
-    const spotLight = new THREE.SpotLight(0xff7700, 5, 35, Math.PI / 6, 0.5);
-    spotLight.position.set(0, 1.2, -2.0);
-    spotLight.target.position.set(0, 0, -18);
-    roverGroup.add(spotLight);
-    roverGroup.add(spotLight.target);
+    // Yellow Headlight Cones
+    const spotL = new THREE.SpotLight(0xfff088, 4, 30, Math.PI / 6, 0.5);
+    spotL.position.set(0, 1.0, -2.0);
+    spotL.target.position.set(0, 0, -18);
+    carGroup.add(spotL);
+    carGroup.add(spotL.target);
 
-    // 4 Heavy-Duty Wheels
-    const wheelGeo = new THREE.CylinderGeometry(0.55, 0.55, 0.45, 16);
-    const wheelMat = new THREE.MeshStandardMaterial({ color: 0x050608, roughness: 0.9 });
+    // 4 Stylized Chunky Wheels
+    const wheelGeo = new THREE.CylinderGeometry(0.6, 0.6, 0.5, 24);
+    const wheelMat = new THREE.MeshStandardMaterial({ color: 0x1a1a1a, roughness: 0.8 });
+    const hubMat = new THREE.MeshStandardMaterial({ color: 0xeeeeee, roughness: 0.2 });
+
+    const wheels: THREE.Mesh[] = [];
     const wheelPositions = [
-      [-1.45, 0.55, -1.3],
-      [1.45, 0.55, -1.3],
-      [-1.45, 0.55, 1.3],
-      [1.45, 0.55, 1.3]
+      [-1.35, 0.6, -1.3],
+      [1.35, 0.6, -1.3],
+      [-1.35, 0.6, 1.3],
+      [1.35, 0.6, 1.3]
     ];
-    wheelPositions.forEach(pos => {
+
+    wheelPositions.forEach((pos, idx) => {
       const wheel = new THREE.Mesh(wheelGeo, wheelMat);
       wheel.rotation.z = Math.PI / 2;
       wheel.position.set(pos[0], pos[1], pos[2]);
       wheel.castShadow = true;
-      roverGroup.add(wheel);
+
+      const hub = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.52, 16), hubMat);
+      wheel.add(hub);
+
+      wheels.push(wheel);
+      carGroup.add(wheel);
     });
 
-    scene.add(roverGroup);
+    scene.add(carGroup);
 
-    // 7. Interactive Physics Obstacles (Knockable Dominoes & GPU Blocks)
-    interface PhysicsBox {
-      mesh: THREE.Mesh;
+    // 7. Interactive Physics Obstacles (Bowling Pins & Domino Crates)
+    interface PhysicsItem {
+      mesh: THREE.Mesh | THREE.Group;
       vx: number;
       vz: number;
       rotV: number;
+      isPin?: boolean;
     }
-    const physicsBoxes: PhysicsBox[] = [];
+    const physicsItems: PhysicsItem[] = [];
 
-    const createObstacles = () => {
-      const boxGeo = new THREE.BoxGeometry(1.8, 1.8, 1.8);
-      const boxMaterials = [
-        new THREE.MeshStandardMaterial({ color: 0xff5500, roughness: 0.3, metalness: 0.7 }),
-        new THREE.MeshStandardMaterial({ color: 0xffaa00, roughness: 0.3, metalness: 0.7 }),
-        new THREE.MeshStandardMaterial({ color: 0x10b981, roughness: 0.3, metalness: 0.7 }),
-        new THREE.MeshStandardMaterial({ color: 0x3b82f6, roughness: 0.3, metalness: 0.7 })
-      ];
+    // Create 3D Bowling Pins in the Skills Zone
+    const createBowlingPins = () => {
+      const pinMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.3 });
+      const stripeMat = new THREE.MeshStandardMaterial({ color: 0xff3300, roughness: 0.3 });
 
-      const obstacleClusters = [
+      const pinGeo = new THREE.CylinderGeometry(0.35, 0.6, 2.2, 16);
+      const topGeo = new THREE.SphereGeometry(0.4, 16, 16);
+
+      const rows = 4;
+      let count = 0;
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c <= r; c++) {
+          const pinGroup = new THREE.Group();
+          const body = new THREE.Mesh(pinGeo, pinMat);
+          body.position.y = 1.1;
+          body.castShadow = true;
+          pinGroup.add(body);
+
+          const head = new THREE.Mesh(topGeo, stripeMat);
+          head.position.y = 2.3;
+          head.castShadow = true;
+          pinGroup.add(head);
+
+          const px = 32 + (c - r * 0.5) * 2.2;
+          const pz = -38 + r * 2.2;
+
+          pinGroup.position.set(px, 0, pz);
+          scene.add(pinGroup);
+          physicsItems.push({ mesh: pinGroup, vx: 0, vz: 0, rotV: 0, isPin: true });
+          count++;
+        }
+      }
+    };
+    createBowlingPins();
+
+    // Create Wooden Domino Crates across the map
+    const createWoodenCrates = () => {
+      const crateGeo = new THREE.BoxGeometry(1.8, 1.8, 1.8);
+      const crateColors = [0xe5a65d, 0xd48b3b, 0x5fa8d3, 0x62b6cb, 0xf4a261];
+
+      const crateClusters = [
         { x: -16, z: -16 },
         { x: 16, z: -16 },
         { x: 16, z: 16 },
-        { x: -16, z: 16 },
-        { x: 0, z: -20 },
-        { x: 0, z: 20 }
+        { x: -16, z: 16 }
       ];
 
-      obstacleClusters.forEach((cluster, cIdx) => {
+      crateClusters.forEach((cluster, cIdx) => {
         for (let i = 0; i < 3; i++) {
           for (let j = 0; j < 3; j++) {
-            const box = new THREE.Mesh(boxGeo, boxMaterials[(cIdx + i + j) % boxMaterials.length]);
-            box.position.set(cluster.x + (i - 1) * 2.4, 0.9 + (i === 1 && j === 1 ? 1.8 : 0), cluster.z + (j - 1) * 2.4);
-            box.castShadow = true;
-            box.receiveShadow = true;
-            scene.add(box);
-            physicsBoxes.push({ mesh: box, vx: 0, vz: 0, rotV: 0 });
+            const mat = new THREE.MeshStandardMaterial({
+              color: crateColors[(cIdx + i + j) % crateColors.length],
+              roughness: 0.7
+            });
+            const crate = new THREE.Mesh(crateGeo, mat);
+            crate.position.set(cluster.x + (i - 1) * 2.2, 0.9 + (i === 1 && j === 1 ? 1.8 : 0), cluster.z + (j - 1) * 2.2);
+            crate.castShadow = true;
+            crate.receiveShadow = true;
+            scene.add(crate);
+            physicsItems.push({ mesh: crate, vx: 0, vz: 0, rotV: 0 });
           }
         }
       });
     };
-    createObstacles();
+    createWoodenCrates();
 
-    // 8. 3D Architectural Zone Monuments
+    // 8. Construct 3D Architectural Sector Monuments & Billboards
     zonesRef.current.forEach(zone => {
-      // Glow Ring
-      const ringGeo = new THREE.RingGeometry(zone.radius - 0.5, zone.radius, 40);
+      // Sector Floor Ring
+      const ringGeo = new THREE.RingGeometry(zone.radius - 0.6, zone.radius, 48);
       const ringMat = new THREE.MeshBasicMaterial({ color: zone.color, side: THREE.DoubleSide });
       const ring = new THREE.Mesh(ringGeo, ringMat);
       ring.rotation.x = -Math.PI / 2;
-      ring.position.set(zone.x, 0.05, zone.z);
+      ring.position.set(zone.x, 0.03, zone.z);
       scene.add(ring);
 
-      // Central Hologram Tower
-      const towerGeo = new THREE.CylinderGeometry(1.5, 2.2, 7, 8);
-      const towerMat = new THREE.MeshStandardMaterial({
+      // Central Pillar Monument
+      const pillarGeo = new THREE.CylinderGeometry(1.6, 2.2, 6.5, 8);
+      const pillarMat = new THREE.MeshStandardMaterial({
         color: zone.color,
-        roughness: 0.2,
-        metalness: 0.8,
-        emissive: zone.color,
-        emissiveIntensity: 0.35
+        roughness: 0.3,
+        metalness: 0.4
       });
-      const tower = new THREE.Mesh(towerGeo, towerMat);
-      tower.position.set(zone.x, 3.5, zone.z);
-      tower.castShadow = true;
-      scene.add(tower);
+      const pillar = new THREE.Mesh(pillarGeo, pillarMat);
+      pillar.position.set(zone.x, 3.25, zone.z);
+      pillar.castShadow = true;
+      scene.add(pillar);
 
-      // Floating Orb
-      const orbGeo = new THREE.SphereGeometry(1.0, 16, 16);
-      const orbMat = new THREE.MeshBasicMaterial({ color: zone.color });
-      const orb = new THREE.Mesh(orbGeo, orbMat);
-      orb.position.set(zone.x, 9.0, zone.z);
-      scene.add(orb);
+      // Floating 3D Geometric Emblem
+      const emblemGeo = new THREE.OctahedronGeometry(1.4, 0);
+      const emblemMat = new THREE.MeshStandardMaterial({
+        color: isDay ? 0xffffff : 0xffeedd,
+        roughness: 0.1,
+        metalness: 0.8
+      });
+      const emblem = new THREE.Mesh(emblemGeo, emblemMat);
+      emblem.position.set(zone.x, 8.5, zone.z);
+      emblem.castShadow = true;
+      scene.add(emblem);
     });
 
-    // 9. Keyboard Event Listeners
+    // 9. Controls Event Listeners
     const handleKeyDown = (e: KeyboardEvent) => {
       keysRef.current[e.key.toLowerCase()] = true;
       if (e.key.toLowerCase() === 'h') playSound('honk');
@@ -419,10 +514,10 @@ export const BrunoWorld3D: React.FC = () => {
       const keys = keysRef.current;
       const rover = roverPosRef.current;
 
-      const accel = 38.0;
-      const maxSpeed = 24.0;
-      const friction = 0.93;
-      const turnSpeed = 2.9;
+      const accel = 42.0;
+      const maxSpeed = 26.0;
+      const friction = 0.94;
+      const turnSpeed = 3.2;
 
       const isForward = keys['arrowup'] || keys['w'];
       const isBackward = keys['arrowdown'] || keys['s'];
@@ -439,7 +534,8 @@ export const BrunoWorld3D: React.FC = () => {
 
       rover.speed = Math.max(-maxSpeed, Math.min(maxSpeed, rover.speed));
 
-      if (Math.abs(rover.speed) > 0.1) {
+      // Steering with drift effect
+      if (Math.abs(rover.speed) > 0.15) {
         const dir = rover.speed < 0 ? 1 : -1;
         if (isLeft) rover.angle += turnSpeed * delta * dir;
         if (isRight) rover.angle -= turnSpeed * delta * dir;
@@ -449,43 +545,47 @@ export const BrunoWorld3D: React.FC = () => {
       rover.x += Math.sin(rover.angle) * rover.speed * delta;
       rover.z += Math.cos(rover.angle) * rover.speed * delta;
 
-      // Arena boundary limits
-      rover.x = Math.max(-85, Math.min(85, rover.x));
-      rover.z = Math.max(-85, Math.min(85, rover.z));
+      // Arena boundary limits (-95 to 95)
+      rover.x = Math.max(-95, Math.min(95, rover.x));
+      rover.z = Math.max(-95, Math.min(95, rover.z));
 
-      // Sync 3D Mesh
-      roverGroup.position.set(rover.x, 0, rover.z);
-      roverGroup.rotation.y = rover.angle;
+      // Sync 3D Car Mesh
+      carGroup.position.set(rover.x, 0, rover.z);
+      carGroup.rotation.y = rover.angle;
 
-      // Telemetry metrics
-      const currentSpeed = Math.round(Math.abs(rover.speed) * 4.6);
+      // Wheel spinning animation
+      wheels.forEach(w => {
+        w.rotation.x += rover.speed * delta * 2.5;
+      });
+
+      // Update Speedometer
+      const currentSpeed = Math.round(Math.abs(rover.speed) * 4.8);
       setSpeed(currentSpeed);
-      setTokenRate(Math.round(currentSpeed * 19.2));
 
-      // Physics box collisions
-      physicsBoxes.forEach(pBox => {
-        const dist = Math.hypot(rover.x - pBox.mesh.position.x, rover.z - pBox.mesh.position.z);
-        if (dist < 2.8) {
-          const angle = Math.atan2(pBox.mesh.position.z - rover.z, pBox.mesh.position.x - rover.x);
-          pBox.vx = Math.cos(angle) * (Math.abs(rover.speed) + 6);
-          pBox.vz = Math.sin(angle) * (Math.abs(rover.speed) + 6);
-          pBox.rotV = (Math.random() - 0.5) * 6;
+      // Physics box & bowling pin collisions
+      physicsItems.forEach(item => {
+        const dist = Math.hypot(rover.x - item.mesh.position.x, rover.z - item.mesh.position.z);
+        if (dist < 3.0) {
+          const angle = Math.atan2(item.mesh.position.z - rover.z, item.mesh.position.x - rover.x);
+          item.vx = Math.cos(angle) * (Math.abs(rover.speed) + 7);
+          item.vz = Math.sin(angle) * (Math.abs(rover.speed) + 7);
+          item.rotV = (Math.random() - 0.5) * 7;
           playSound('bump');
           rover.speed *= 0.65;
         }
 
-        pBox.mesh.position.x += pBox.vx * delta;
-        pBox.mesh.position.z += pBox.vz * delta;
-        pBox.mesh.rotation.y += pBox.rotV * delta;
-        pBox.mesh.rotation.x += pBox.rotV * delta * 0.5;
+        item.mesh.position.x += item.vx * delta;
+        item.mesh.position.z += item.vz * delta;
+        item.mesh.rotation.y += item.rotV * delta;
+        item.mesh.rotation.z += item.rotV * delta * 0.6;
 
-        pBox.vx *= 0.92;
-        pBox.vz *= 0.92;
-        pBox.rotV *= 0.92;
+        item.vx *= 0.93;
+        item.vz *= 0.93;
+        item.rotV *= 0.93;
       });
 
       // Check Zone Triggers
-      let inside: ZoneMonument | null = null;
+      let inside: ZoneItem | null = null;
       let newlyVisited = false;
 
       zonesRef.current.forEach(zone => {
@@ -497,8 +597,8 @@ export const BrunoWorld3D: React.FC = () => {
             newlyVisited = true;
             playSound('zone');
             confetti({
-              particleCount: 60,
-              spread: 70,
+              particleCount: 70,
+              spread: 80,
               origin: { y: 0.5 }
             });
           }
@@ -506,25 +606,14 @@ export const BrunoWorld3D: React.FC = () => {
       });
 
       setActiveZone(inside);
-      if (newlyVisited) {
-        setVisitedCount(zonesRef.current.filter(z => z.visited).length);
-      }
 
-      // Camera follow spring
-      if (cameraView === 'chase') {
-        const targetCamX = rover.x - Math.sin(rover.angle) * -20;
-        const targetCamZ = rover.z - Math.cos(rover.angle) * -20;
-        const targetCamY = 14;
+      // Smooth Isometric Follow Camera
+      const targetCamX = rover.x - Math.sin(rover.angle) * -22;
+      const targetCamZ = rover.z - Math.cos(rover.angle) * -22;
+      const targetCamY = 16;
 
-        camera.position.lerp(new THREE.Vector3(targetCamX, targetCamY, targetCamZ), 0.08);
-        camera.lookAt(rover.x, 1.8, rover.z);
-      } else if (cameraView === 'iso') {
-        camera.position.lerp(new THREE.Vector3(rover.x + 35, 40, rover.z + 35), 0.05);
-        camera.lookAt(rover.x, 0, rover.z);
-      } else if (cameraView === 'top') {
-        camera.position.lerp(new THREE.Vector3(rover.x, 70, rover.z + 0.1), 0.08);
-        camera.lookAt(rover.x, 0, rover.z);
-      }
+      camera.position.lerp(new THREE.Vector3(targetCamX, targetCamY, targetCamZ), 0.08);
+      camera.lookAt(rover.x, 1.6, rover.z);
 
       renderer.render(scene, camera);
     };
@@ -552,90 +641,90 @@ export const BrunoWorld3D: React.FC = () => {
         container.removeChild(renderer.domElement);
       }
     };
-  }, [cameraView, isMuted]);
+  }, [themeMode, isMuted]);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-[#08090d] select-none font-mono">
+    <div className="relative w-screen h-screen overflow-hidden select-none font-mono">
       
-      {/* 🚀 TOP HUD NAVIGATION BAR (Instant Zone Teleporters) */}
-      <header className="absolute top-0 left-0 right-0 z-30 h-16 border-b border-white/10 bg-black/60 backdrop-blur-xl px-4 sm:px-8 flex items-center justify-between gap-4 text-white">
+      {/* 🌟 BRUNO SIMON VINTAGE ARCADE HEADER (Single Cohesive Navigation Bar) */}
+      <header className="absolute top-0 left-0 right-0 z-30 h-16 bg-black/75 backdrop-blur-xl border-b border-white/10 px-4 sm:px-8 flex items-center justify-between gap-4 text-white">
         
         {/* Brand */}
         <div className="flex items-center gap-3 shrink-0">
-          <div className="w-3 h-3 rounded-full bg-[var(--accent)] animate-ping"></div>
+          <div className="w-3 h-3 rounded-full bg-[#ff5500] animate-ping"></div>
           <div>
-            <div className="font-bold text-sm tracking-tight text-white flex items-center gap-2">
+            <div className="font-extrabold text-sm tracking-tight text-white flex items-center gap-2">
               <span>HARSH THANKI</span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--accent)] text-black font-extrabold uppercase">
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#ff5500] text-black font-extrabold uppercase">
                 AI &middot; MERN
               </span>
             </div>
             <div className="text-[10px] text-white/50 tracking-wider">
-              3D NEURAL SYSTEMS WORLD
+              APPLIED AI SYSTEMS ENGINEER
             </div>
           </div>
         </div>
 
         {/* Desktop Quick-Glide Zone Navigators */}
-        <nav className="hidden lg:flex items-center gap-1.5 p-1 bg-white/5 border border-white/10 rounded-full text-xs" aria-label="Zone Navigation">
+        <nav className="hidden lg:flex items-center gap-1.5 p-1 bg-white/10 border border-white/15 rounded-full text-xs" aria-label="Sector Navigation">
           <button
             type="button"
-            onClick={() => teleportToZone('projects')}
-            className={`px-3.5 py-1.5 rounded-full transition-all ${
+            onClick={() => teleportTo('projects')}
+            className={`px-4 py-1.5 rounded-full transition-all ${
               activeZone?.id === 'projects' 
-                ? 'bg-[var(--accent)] text-black font-bold shadow-xs' 
-                : 'text-white/70 hover:text-white hover:bg-white/10'
+                ? 'bg-[#ff5500] text-black font-bold shadow-md' 
+                : 'text-white/80 hover:text-white hover:bg-white/10'
             }`}
           >
-            01 // Systems
+            01 // Projects
           </button>
 
           <button
             type="button"
-            onClick={() => teleportToZone('telemetry')}
-            className={`px-3.5 py-1.5 rounded-full transition-all ${
-              activeZone?.id === 'telemetry' 
-                ? 'bg-[var(--accent)] text-black font-bold shadow-xs' 
-                : 'text-white/70 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            02 // Telemetry
-          </button>
-
-          <button
-            type="button"
-            onClick={() => teleportToZone('skills')}
-            className={`px-3.5 py-1.5 rounded-full transition-all ${
+            onClick={() => teleportTo('skills')}
+            className={`px-4 py-1.5 rounded-full transition-all ${
               activeZone?.id === 'skills' 
-                ? 'bg-[var(--accent)] text-black font-bold shadow-xs' 
-                : 'text-white/70 hover:text-white hover:bg-white/10'
+                ? 'bg-[#ff5500] text-black font-bold shadow-md' 
+                : 'text-white/80 hover:text-white hover:bg-white/10'
             }`}
           >
-            03 // Stack
+            02 // Skills
           </button>
 
           <button
             type="button"
-            onClick={() => teleportToZone('experience')}
-            className={`px-3.5 py-1.5 rounded-full transition-all ${
+            onClick={() => teleportTo('experience')}
+            className={`px-4 py-1.5 rounded-full transition-all ${
               activeZone?.id === 'experience' 
-                ? 'bg-[var(--accent)] text-black font-bold shadow-xs' 
-                : 'text-white/70 hover:text-white hover:bg-white/10'
+                ? 'bg-[#ff5500] text-black font-bold shadow-md' 
+                : 'text-white/80 hover:text-white hover:bg-white/10'
             }`}
           >
-            04 // Timeline
+            03 // Timeline
           </button>
 
           <button
             type="button"
-            onClick={() => teleportToZone('contact')}
-            className={`px-3.5 py-1.5 rounded-full transition-all ${
-              activeZone?.id === 'contact' 
-                ? 'bg-[var(--accent)] text-black font-bold shadow-xs' 
-                : 'text-white/70 hover:text-white hover:bg-white/10'
+            onClick={() => teleportTo('telemetry')}
+            className={`px-4 py-1.5 rounded-full transition-all ${
+              activeZone?.id === 'telemetry' 
+                ? 'bg-[#ff5500] text-black font-bold shadow-md' 
+                : 'text-white/80 hover:text-white hover:bg-white/10'
             }`}
           >
-            05 // Dispatch
+            04 // Telemetry
+          </button>
+
+          <button
+            type="button"
+            onClick={() => teleportTo('contact')}
+            className={`px-4 py-1.5 rounded-full transition-all ${
+              activeZone?.id === 'contact' 
+                ? 'bg-[#ff5500] text-black font-bold shadow-md' 
+                : 'text-white/80 hover:text-white hover:bg-white/10'
+            }`}
+          >
+            05 // Contact
           </button>
         </nav>
 
@@ -643,52 +732,51 @@ export const BrunoWorld3D: React.FC = () => {
         <div className="flex items-center gap-2.5">
           <button
             type="button"
-            onClick={() => setShowDrawer(true)}
-            className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs text-white flex items-center gap-1.5 transition-all"
+            onClick={() => setShowDossier(true)}
+            className="px-3.5 py-1.5 rounded-full bg-white/15 hover:bg-white/25 border border-white/20 text-xs text-white flex items-center gap-1.5 transition-all shadow-xs"
             title="Open Structured Engineering Dossier"
           >
-            <Layers className="w-3.5 h-3.5 text-[var(--accent)]" />
+            <Layers className="w-3.5 h-3.5 text-[#ff5500]" />
             <span className="hidden sm:inline">Dossier / List</span>
           </button>
 
           <button
             type="button"
-            onClick={() => setCameraView(prev => prev === 'chase' ? 'iso' : prev === 'iso' ? 'top' : 'chase')}
-            className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs text-white transition-all hidden md:inline-block"
-            title="Switch Camera Perspective"
+            onClick={() => setThemeMode(prev => prev === 'day' ? 'night' : 'day')}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white transition-all"
+            title="Toggle Day / Night Mode"
           >
-            Cam: {cameraView.toUpperCase()}
+            {themeMode === 'day' ? <Moon className="w-4 h-4 text-amber-300" /> : <Sun className="w-4 h-4 text-amber-400" />}
           </button>
 
           <button
             type="button"
             onClick={() => setIsMuted(prev => !prev)}
             className="p-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white transition-all"
-            title={isMuted ? "Unmute Synthesizer Audio" : "Mute Audio"}
+            title={isMuted ? "Unmute Engine Audio" : "Mute Audio"}
           >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-[var(--accent)]" />}
+            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-[#ff5500]" />}
           </button>
         </div>
 
       </header>
 
-      {/* 🎮 FULLSCREEN 3D WEBGL CANVAS */}
+      {/* 🎮 FULLSCREEN 3D WEBGL PLAYGROUND */}
       <div ref={mountRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
 
       {/* 🧭 BOTTOM-LEFT MINI-MAP RADAR & SPEEDOMETER */}
       <div className="absolute bottom-6 left-6 z-20 flex flex-col gap-3 pointer-events-none">
         
         {/* Radar Blip Box */}
-        <div className="p-3 bg-black/70 border border-white/10 backdrop-blur-xl rounded-xl w-36 h-36 relative overflow-hidden flex items-center justify-center pointer-events-auto">
-          {/* Radar Scanner Sweep */}
+        <div className="p-3 bg-black/75 border border-white/15 backdrop-blur-xl rounded-2xl w-36 h-36 relative overflow-hidden flex items-center justify-center pointer-events-auto shadow-2xl">
           <div className="absolute inset-0 rounded-full border border-white/15"></div>
           <div className="absolute w-24 h-24 rounded-full border border-white/10"></div>
           <div className="absolute w-12 h-12 rounded-full border border-white/10"></div>
           
-          {/* Center Rover Dot */}
-          <div className="w-2.5 h-2.5 rounded-full bg-[var(--accent)] z-10 shadow-[0_0_8px_var(--accent)]"></div>
+          {/* Center Red Car Dot */}
+          <div className="w-2.5 h-2.5 rounded-full bg-red-500 z-10 shadow-[0_0_8px_red]"></div>
 
-          {/* Radar Blips */}
+          {/* Sector Radar Blips */}
           {zonesRef.current.map(z => {
             const relX = (z.x / 100) * 50;
             const relZ = (z.z / 100) * 50;
@@ -696,42 +784,39 @@ export const BrunoWorld3D: React.FC = () => {
               <div
                 key={z.id}
                 style={{ transform: `translate(${relX}px, ${relZ}px)` }}
-                className={`absolute w-2 h-2 rounded-full ${z.visited ? 'bg-green-400' : 'bg-orange-400'} animate-pulse`}
+                className={`absolute w-2.5 h-2.5 rounded-full ${z.visited ? 'bg-green-400' : 'bg-orange-400'} animate-pulse`}
                 title={z.name}
               />
             );
           })}
 
-          <div className="absolute bottom-1 left-2 text-[9px] text-white/40 uppercase font-mono">
-            GPS Radar &middot; 5 Zones
+          <div className="absolute bottom-1.5 left-2.5 text-[9px] text-white/50 uppercase font-mono">
+            GPS Radar &middot; 5 Sectors
           </div>
         </div>
 
-        {/* Live Speed & Token Velocity */}
-        <div className="p-3 bg-black/70 border border-white/10 backdrop-blur-xl rounded-xl flex items-center justify-between gap-4 text-xs text-white">
+        {/* Speedometer */}
+        <div className="p-3 bg-black/75 border border-white/15 backdrop-blur-xl rounded-xl flex items-center justify-between gap-4 text-xs text-white shadow-xl">
           <div className="flex items-center gap-2">
-            <Zap className="w-4 h-4 text-[var(--accent)]" />
+            <Zap className="w-4 h-4 text-[#ff5500]" />
             <span className="font-bold">{speed} km/h</span>
           </div>
           <div className="text-white/40">|</div>
-          <div className="flex items-center gap-2">
-            <Cpu className="w-4 h-4 text-green-400" />
-            <span className="font-bold">{tokenRate} tok/s</span>
-          </div>
+          <div className="text-[10px] text-white/60">Bruno Mode</div>
         </div>
 
       </div>
 
-      {/* 📍 ACTIVE ZONE FLOATING BILLBOARD (Discovered on Drive) */}
+      {/* 📍 ACTIVE SECTOR FLOATING BILLBOARD (Discovered on Drive) */}
       {activeZone && (
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 bg-black/85 border border-[var(--accent-border)] backdrop-blur-2xl p-6 rounded-2xl max-w-lg w-[92%] text-white shadow-2xl z-30 animate-in slide-in-from-top duration-300">
+        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 bg-black/90 border border-white/20 backdrop-blur-2xl p-6 rounded-2xl max-w-lg w-[92%] text-white shadow-2xl z-30 animate-in slide-in-from-top duration-300">
           <div className="flex items-center justify-between gap-2 mb-2">
-            <span className="text-[10px] uppercase px-3 py-1 rounded-full bg-[var(--accent)] text-black font-extrabold tracking-wider">
+            <span className="text-[10px] uppercase px-3 py-1 rounded-full bg-[#ff5500] text-black font-extrabold tracking-wider">
               {activeZone.category}
             </span>
             <span className="text-xs text-green-400 font-bold flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4" />
-              ZONE CONNECTED
+              SECTOR ARRIVAL
             </span>
           </div>
 
@@ -747,30 +832,30 @@ export const BrunoWorld3D: React.FC = () => {
             <button
               type="button"
               onClick={() => {
-                setShowDrawer(true);
-                setActiveSectionTab(activeZone.id);
+                setShowDossier(true);
+                setActiveTab(activeZone.id);
               }}
-              className="px-4 py-2 rounded-lg bg-[var(--accent-gradient)] text-black font-bold text-xs flex items-center gap-1.5 hover:shadow-[0_0_16px_var(--accent-glow)] transition-all"
+              className="px-4 py-2 rounded-lg bg-[#ff5500] text-black font-bold text-xs flex items-center gap-1.5 hover:shadow-lg transition-all"
             >
-              <span>Explore Section Dossier</span>
+              <span>Inspect Sector Data</span>
               <ChevronRight className="w-4 h-4" />
             </button>
 
             <span className="text-[10px] text-white/40 font-mono">
-              Press R to Reset Rover
+              Press R to Reset Car
             </span>
           </div>
         </div>
       )}
 
-      {/* 📱 MOBILE TOUCH CONTROLS */}
+      {/* 📱 MOBILE TOUCH JOYSTICK */}
       <div className="absolute bottom-6 right-6 grid grid-cols-3 gap-2.5 sm:hidden z-20">
         <div></div>
         <button
           type="button"
           onTouchStart={() => { keysRef.current['w'] = true; }}
           onTouchEnd={() => { keysRef.current['w'] = false; }}
-          className="w-14 h-14 rounded-2xl bg-white/20 active:bg-[var(--accent)] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20"
+          className="w-14 h-14 rounded-2xl bg-black/60 active:bg-[#ff5500] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20 shadow-2xl"
           aria-label="Drive Forward"
         >
           ▲
@@ -780,7 +865,7 @@ export const BrunoWorld3D: React.FC = () => {
           type="button"
           onTouchStart={() => { keysRef.current['a'] = true; }}
           onTouchEnd={() => { keysRef.current['a'] = false; }}
-          className="w-14 h-14 rounded-2xl bg-white/20 active:bg-[var(--accent)] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20"
+          className="w-14 h-14 rounded-2xl bg-black/60 active:bg-[#ff5500] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20 shadow-2xl"
           aria-label="Turn Left"
         >
           ◀
@@ -789,7 +874,7 @@ export const BrunoWorld3D: React.FC = () => {
           type="button"
           onTouchStart={() => { keysRef.current['s'] = true; }}
           onTouchEnd={() => { keysRef.current['s'] = false; }}
-          className="w-14 h-14 rounded-2xl bg-white/20 active:bg-[var(--accent)] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20"
+          className="w-14 h-14 rounded-2xl bg-black/60 active:bg-[#ff5500] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20 shadow-2xl"
           aria-label="Drive Backward"
         >
           ▼
@@ -798,7 +883,7 @@ export const BrunoWorld3D: React.FC = () => {
           type="button"
           onTouchStart={() => { keysRef.current['d'] = true; }}
           onTouchEnd={() => { keysRef.current['d'] = false; }}
-          className="w-14 h-14 rounded-2xl bg-white/20 active:bg-[var(--accent)] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20"
+          className="w-14 h-14 rounded-2xl bg-black/60 active:bg-[#ff5500] text-white font-bold text-xl flex items-center justify-center backdrop-blur-xl border border-white/20 shadow-2xl"
           aria-label="Turn Right"
         >
           ▶
@@ -806,26 +891,26 @@ export const BrunoWorld3D: React.FC = () => {
       </div>
 
       {/* 📖 FULL STRUCTURED ENGINEERING DOSSIER DRAWER */}
-      {showDrawer && (
+      {showDossier && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xl flex justify-end animate-in fade-in duration-200">
           <div className="w-full max-w-2xl bg-[#0e1117] border-l border-white/15 h-full overflow-y-auto p-6 sm:p-8 space-y-6 text-white animate-in slide-in-from-right duration-300">
             
-            {/* Drawer Header */}
+            {/* Header */}
             <div className="flex items-center justify-between pb-4 border-b border-white/10">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-[var(--accent)] text-black font-bold">
+                <div className="p-2 rounded-lg bg-[#ff5500] text-black font-bold">
                   <Terminal className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white uppercase">Harsh Thanki &middot; Engineering Dossier</h3>
-                  <span className="text-xs text-white/50">Applied AI &middot; MERN Architecture</span>
+                  <h3 className="text-base font-bold text-white uppercase">Harsh Thanki &middot; Technical Dossier</h3>
+                  <span className="text-xs text-white/50">Applied AI &middot; MERN Systems Architect</span>
                 </div>
               </div>
 
               <button
                 type="button"
                 onClick={() => {
-                  setShowDrawer(false);
+                  setShowDossier(false);
                   setSelectedProject(null);
                 }}
                 className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white/80 transition-colors"
@@ -837,14 +922,14 @@ export const BrunoWorld3D: React.FC = () => {
 
             {/* Dossier Tabs */}
             <div className="flex flex-wrap gap-2 pt-1 font-mono text-xs">
-              {['projects', 'telemetry', 'skills', 'experience', 'contact'].map(tab => (
+              {['projects', 'skills', 'experience', 'telemetry', 'contact'].map(tab => (
                 <button
                   key={tab}
                   type="button"
-                  onClick={() => setActiveSectionTab(tab)}
+                  onClick={() => setActiveTab(tab)}
                   className={`px-3.5 py-1.5 rounded-full border transition-all uppercase ${
-                    activeSectionTab === tab
-                      ? 'border-[var(--accent)] bg-[var(--accent)] text-black font-bold'
+                    activeTab === tab
+                      ? 'border-[#ff5500] bg-[#ff5500] text-black font-bold'
                       : 'border-white/15 bg-white/5 text-white/70 hover:border-white/30'
                   }`}
                 >
@@ -854,10 +939,10 @@ export const BrunoWorld3D: React.FC = () => {
             </div>
 
             {/* Tab 1: 7 Case Studies */}
-            {activeSectionTab === 'projects' && (
-              <div className="space-y-5">
+            {activeTab === 'projects' && (
+              <div className="space-y-4">
                 <div className="text-xs text-white/60">
-                  Select any production system to inspect empirical benchmarks, constraints, and failover DAGs:
+                  Select any production system to inspect empirical benchmarks, constraints, and architecture DAGs:
                 </div>
 
                 <div className="space-y-3">
@@ -865,10 +950,10 @@ export const BrunoWorld3D: React.FC = () => {
                     <div
                       key={proj.id}
                       onClick={() => setSelectedProject(proj)}
-                      className="p-4 border border-white/10 bg-white/5 hover:border-[var(--accent)] rounded-xl cursor-pointer transition-all hover:bg-white/10 space-y-2"
+                      className="p-4 border border-white/10 bg-white/5 hover:border-[#ff5500] rounded-xl cursor-pointer transition-all hover:bg-white/10 space-y-2"
                     >
                       <div className="flex items-center justify-between gap-2">
-                        <span className="text-[10px] text-[var(--accent)] font-bold uppercase">
+                        <span className="text-[10px] text-[#ff5500] font-bold uppercase">
                           [0{idx + 1}] &middot; {proj.statusDetail}
                         </span>
                         <span className="text-[10px] text-white/40 font-mono">Deep Dive &rarr;</span>
@@ -879,11 +964,11 @@ export const BrunoWorld3D: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Detailed Selected Project Modal */}
+                {/* Selected Project Breakdown */}
                 {selectedProject && (
-                  <div className="p-6 border border-[var(--accent)] bg-black/90 rounded-xl space-y-5 animate-in fade-in">
+                  <div className="p-6 border border-[#ff5500] bg-black/90 rounded-xl space-y-5 animate-in fade-in">
                     <div className="flex items-center justify-between pb-2 border-b border-white/10">
-                      <span className="text-xs font-bold text-[var(--accent)] uppercase">{selectedProject.statusDetail}</span>
+                      <span className="text-xs font-bold text-[#ff5500] uppercase">{selectedProject.statusDetail}</span>
                       <button
                         type="button"
                         onClick={() => setSelectedProject(null)}
@@ -907,7 +992,7 @@ export const BrunoWorld3D: React.FC = () => {
                       </div>
 
                       <div className="p-3 bg-white/5 rounded border border-white/10">
-                        <div className="text-[10px] text-[var(--accent)] uppercase font-bold mb-1">03 // Architecture</div>
+                        <div className="text-[10px] text-[#ff5500] uppercase font-bold mb-1">03 // Architecture</div>
                         <p className="text-white/80 font-sans">{selectedProject.architecture.description}</p>
                       </div>
 
@@ -929,32 +1014,12 @@ export const BrunoWorld3D: React.FC = () => {
               </div>
             )}
 
-            {/* Tab 2: Telemetry */}
-            {activeSectionTab === 'telemetry' && (
-              <div className="p-5 border border-white/10 bg-white/5 rounded-xl space-y-4 text-xs font-mono">
-                <div className="text-[var(--accent)] font-bold text-sm">// LIVE MERN TELEMETRY ENGINE</div>
-                <p className="text-white/70 font-sans">
-                  Communicating with deployed Node.js/Express API cluster and MongoDB Atlas connection pools.
-                </p>
-                <div className="grid grid-cols-2 gap-3 pt-2">
-                  <div className="p-3 bg-black/50 border border-white/10 rounded">
-                    <div className="text-white/50 text-[10px]">API CLUSTER</div>
-                    <div className="text-white font-bold text-sm mt-1">aws-ap-south-1</div>
-                  </div>
-                  <div className="p-3 bg-black/50 border border-white/10 rounded">
-                    <div className="text-white/50 text-[10px]">DRIVER STATE</div>
-                    <div className="text-green-400 font-bold text-sm mt-1">Connected (M0)</div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Tab 3: Skills */}
-            {activeSectionTab === 'skills' && (
+            {/* Tab 2: Skills */}
+            {activeTab === 'skills' && (
               <div className="space-y-4 text-xs font-mono">
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
-                  <div className="text-[var(--accent)] font-bold">01 // APPLIED AI & LLM SYSTEMS</div>
-                  <p className="text-white/70 font-sans">QLoRA / PEFT 4-bit quant, Ollama Airgapped Runtime, Speech Synthesis (IndicF5/VibeVoice), Transformers.</p>
+                  <div className="text-[#ff5500] font-bold">01 // APPLIED AI & LLM SYSTEMS</div>
+                  <p className="text-white/70 font-sans">QLoRA / PEFT 4-bit quantization, Ollama Airgapped Runtime, Speech Synthesis (IndicF5/VibeVoice), HuggingFace Transformers.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
                   <div className="text-amber-400 font-bold">02 // BACKEND & ERP ARCHITECTURE</div>
@@ -971,11 +1036,11 @@ export const BrunoWorld3D: React.FC = () => {
               </div>
             )}
 
-            {/* Tab 4: Experience */}
-            {activeSectionTab === 'experience' && (
+            {/* Tab 3: Experience */}
+            {activeTab === 'experience' && (
               <div className="space-y-4 text-xs font-sans">
-                <div className="p-4 border border-[var(--accent-border)] bg-[var(--accent-subtle)] rounded-xl space-y-1.5">
-                  <div className="font-mono text-[10px] text-[var(--accent)] font-bold uppercase">Current Engagement &middot; 2025 – Present</div>
+                <div className="p-4 border border-[#ff5500] bg-[#ff5500]/10 rounded-xl space-y-1.5">
+                  <div className="font-mono text-[10px] text-[#ff5500] font-bold uppercase">Current Engagement &middot; 2025 – Present</div>
                   <div className="font-serif font-bold text-white text-base">Applied AI &amp; Systems Engineer</div>
                   <p className="text-white/80">Architecting on-premise QLoRA pipelines, 7-tier multimodal failover DAGs, and enterprise DNS proxies across 35+ workstations.</p>
                 </div>
@@ -987,12 +1052,32 @@ export const BrunoWorld3D: React.FC = () => {
               </div>
             )}
 
+            {/* Tab 4: Telemetry */}
+            {activeTab === 'telemetry' && (
+              <div className="p-5 border border-white/10 bg-white/5 rounded-xl space-y-4 text-xs font-mono">
+                <div className="text-[#ff5500] font-bold text-sm">// LIVE MERN TELEMETRY ENGINE</div>
+                <p className="text-white/70 font-sans">
+                  Communicating with deployed Node.js/Express API cluster and MongoDB Atlas connection pools.
+                </p>
+                <div className="grid grid-cols-2 gap-3 pt-2">
+                  <div className="p-3 bg-black/50 border border-white/10 rounded">
+                    <div className="text-white/50 text-[10px]">API CLUSTER</div>
+                    <div className="text-white font-bold text-sm mt-1">aws-ap-south-1</div>
+                  </div>
+                  <div className="p-3 bg-black/50 border border-white/10 rounded">
+                    <div className="text-white/50 text-[10px]">DRIVER STATE</div>
+                    <div className="text-green-400 font-bold text-sm mt-1">Connected (M0)</div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Tab 5: Contact */}
-            {activeSectionTab === 'contact' && (
+            {activeTab === 'contact' && (
               <div className="space-y-3 text-xs font-mono">
                 <a
                   href="mailto:harshthanki203@gmail.com"
-                  className="p-4 border border-[var(--accent-border)] bg-[var(--accent-subtle)] rounded-xl flex items-center justify-between text-white hover:bg-[var(--accent)] hover:text-black transition-all"
+                  className="p-4 border border-[#ff5500] bg-[#ff5500]/10 rounded-xl flex items-center justify-between text-white hover:bg-[#ff5500] hover:text-black transition-all"
                 >
                   <div>
                     <div className="font-bold">harshthanki203@gmail.com</div>
@@ -1005,7 +1090,7 @@ export const BrunoWorld3D: React.FC = () => {
                   href="https://github.com/harshthanki-codes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 border border-white/10 bg-white/5 rounded-xl flex items-center justify-between text-white hover:border-[var(--accent)] transition-all"
+                  className="p-4 border border-white/10 bg-white/5 rounded-xl flex items-center justify-between text-white hover:border-[#ff5500] transition-all"
                 >
                   <div>
                     <div className="font-bold">github.com/harshthanki-codes</div>
@@ -1020,7 +1105,7 @@ export const BrunoWorld3D: React.FC = () => {
                   href="https://www.linkedin.com/in/harshthanki"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 border border-white/10 bg-white/5 rounded-xl flex items-center justify-between text-white hover:border-[var(--accent)] transition-all"
+                  className="p-4 border border-white/10 bg-white/5 rounded-xl flex items-center justify-between text-white hover:border-[#ff5500] transition-all"
                 >
                   <div>
                     <div className="font-bold">linkedin.com/in/harshthanki</div>
@@ -1038,8 +1123,8 @@ export const BrunoWorld3D: React.FC = () => {
       )}
 
       {/* Floating Instructions Banner */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 font-mono text-[11px] text-white/60 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 pointer-events-none hidden md:block">
-        ⌨️ <span className="text-white font-semibold">WASD / Arrow Keys</span> to Drive &middot; <span className="text-white font-semibold">H</span> to Honk &middot; <span className="text-white font-semibold">R</span> to Reset &middot; Click Top Nav to Glide
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 font-mono text-[11px] text-white/70 bg-black/75 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/15 shadow-2xl pointer-events-none hidden md:block">
+        ⌨️ <span className="text-white font-bold">WASD / Arrow Keys</span> to Drive &middot; <span className="text-white font-bold">H</span> to Honk &middot; <span className="text-white font-bold">R</span> to Reset &middot; Click Top Nav to Glide
       </div>
 
     </div>

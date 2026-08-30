@@ -7,11 +7,13 @@ import { PROJECTS_DATA } from '../data/projects';
 interface Props {
   title?: string;
   description?: string;
+  hideLayoutNavFooter?: boolean;
 }
 
 const {
   title = "Harsh Thanki — Applied AI Systems & Full-Stack Engineer",
-  description = "Applied AI Systems & High-Throughput Backend Engineer. Specializing in on-premise LLM fine-tuning (QLoRA), multi-tier failover architectures, Odoo 19 ERP modules, and MERN microservices."
+  description = "Applied AI Systems & High-Throughput Backend Engineer. Specializing in on-premise LLM fine-tuning (QLoRA), multi-tier failover architectures, Odoo 19 ERP modules, and MERN microservices.",
+  hideLayoutNavFooter = false
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://harshthanki-codes.github.io');
@@ -135,13 +137,13 @@ const structuredData = {
       Skip to main content
     </a>
 
-    <Navbar />
+    { !hideLayoutNavFooter && <Navbar /> }
 
-    <main id="main-content" class="min-h-screen">
+    <main id="main-content" class={hideLayoutNavFooter ? "w-screen h-screen overflow-hidden" : "min-h-screen"}>
       <slot />
     </main>
 
-    <Footer />
+    { !hideLayoutNavFooter && <Footer /> }
 
   </body>
 </html>
