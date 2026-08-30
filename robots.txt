@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harshthanki-codes.github.io/Portfolio_Website/sitemap-index.xml
