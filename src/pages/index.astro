@@ -1,20 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import { ProjectsSection } from '../components/islands/ProjectsSection';
-import TelemetrySection from '../components/TelemetrySection.astro';
-import SkillsSection from '../components/SkillsSection.astro';
-import ExperienceSection from '../components/ExperienceSection.astro';
-import AboutSection from '../components/AboutSection.astro';
-import ContactSection from '../components/ContactSection.astro';
+import { BrunoWorld3D } from '../components/islands/BrunoWorld3D';
 ---
 
 <Layout>
-  <Hero />
-  <ProjectsSection client:load />
-  <TelemetrySection />
-  <SkillsSection />
-  <ExperienceSection />
-  <AboutSection />
-  <ContactSection />
+  <main class="w-screen h-screen overflow-hidden bg-[#08090d]">
+    <BrunoWorld3D client:only="react" />
+  </main>
 </Layout>
