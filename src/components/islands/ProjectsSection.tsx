@@ -79,7 +79,7 @@ export const ProjectsSection: React.FC = () => {
               <span className="font-semibold">02 // Technical Case Studies</span>
             </div>
             <h2 id="projects-heading" className="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
-              Production Architecture &amp; <span class="gradient-text-solar font-serif italic">Case Studies</span>
+              Production Architecture &amp; <span className="gradient-text-solar font-serif italic">Case Studies</span>
             </h2>
             <p className="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1.5 max-w-2xl font-sans">
               Real problem statements, strict operational constraints, verified failover DAGs, and empirical performance benchmarks.

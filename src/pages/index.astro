@@ -1,8 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { BrunoWorld3D } from '../components/islands/BrunoWorld3D';
+import Hero from '../components/Hero.astro';
+import { ProjectsSection } from '../components/islands/ProjectsSection';
+import TelemetrySection from '../components/TelemetrySection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import ExperienceSection from '../components/ExperienceSection.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 ---
 
-<Layout hideLayoutNavFooter={true}>
-  <BrunoWorld3D client:only="react" />
+<Layout>
+  <Hero />
+  <ProjectsSection client:load />
+  <TelemetrySection />
+  <SkillsSection />
+  <ExperienceSection />
+  <AboutSection />
+  <ContactSection />
 </Layout>
