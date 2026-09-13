@@ -1102,13 +1102,13 @@ export const BrunoWorld3D: React.FC = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/harshthanki"
+                  href="https://www.linkedin.com/in/harsh-thanki-60ba41317/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 border border-white/10 bg-white/5 rounded-xl flex items-center justify-between text-white hover:border-[#ff5500] transition-all"
                 >
                   <div>
-                    <div className="font-bold">linkedin.com/in/harshthanki</div>
+                    <div className="font-bold">linkedin.com/in/harsh-thanki-60ba41317</div>
                     <div className="text-[10px] text-white/50 mt-0.5">Professional Network</div>
                   </div>
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
