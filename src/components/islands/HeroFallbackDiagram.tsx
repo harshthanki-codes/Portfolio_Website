@@ -14,16 +14,16 @@ export const HeroFallbackDiagram: React.FC = () => {
   const [simulationState, setSimulationState] = useState<'normal' | 'rate-limit' | 'latency-spike'>('normal');
   const [activeTier, setActiveTier] = useState<number>(1);
   const [isSimulating, setIsSimulating] = useState<boolean>(false);
-  const [logMessage, setLogMessage] = useState<string>('System nominal. Routing primary traffic through Tier 1 (Gemini Multimodal).');
+  const [logMessage, setLogMessage] = useState<string>('System nominal. Routing primary traffic through Tier 1 (Multimodal Ingestion Core).');
 
   const tiers: TierNode[] = [
-    { id: 't1', name: 'Tier 1: Gemini 1.5 Multimodal', provider: 'Google AI Studio', latency: '210ms', cost: '$0.0003/req', status: simulationState === 'normal' ? 'active' : 'failed' },
-    { id: 't2', name: 'Tier 2: NVIDIA NIM (Llama 3.3)', provider: 'NVIDIA Cloud', latency: '95ms', cost: '$0.0002/req', status: simulationState === 'rate-limit' ? 'active' : simulationState === 'latency-spike' ? 'failed' : 'idle' },
-    { id: 't3', name: 'Tier 3: Groq LPUs (Llama 3.3 70B)', provider: 'Groq Cloud Edge', latency: '42ms', cost: '$0.0001/req', status: simulationState === 'latency-spike' ? 'active' : 'idle' },
-    { id: 't4', name: 'Tier 4: Mistral Large 2', provider: 'Mistral AI API', latency: '280ms', cost: '$0.0004/req', status: 'idle' },
-    { id: 't5', name: 'Tier 5: OpenRouter Aggregator', provider: 'Multi-Model Fallback', latency: '350ms', cost: '$0.0005/req', status: 'idle' },
-    { id: 't6', name: 'Tier 6: Local Ollama Airgap', provider: 'On-Prem DeepSeek 7B', latency: '120ms', cost: '$0.0000/req', status: 'idle' },
-    { id: 't7', name: 'Tier 7: Deterministic Rule Engine', provider: 'In-Memory Cache & Regex', latency: '2ms', cost: '$0.0000/req', status: 'idle' }
+    { id: 't1', name: 'Tier 1: Multimodal Ingestion Engine', provider: 'High-Fidelity Acoustic & Vision Core', latency: '210ms', cost: '$0.0003/req', status: simulationState === 'normal' ? 'active' : 'failed' },
+    { id: 't2', name: 'Tier 2: High-Throughput Distributed Transformer', provider: 'Distributed Inference Cluster', latency: '95ms', cost: '$0.0002/req', status: simulationState === 'rate-limit' ? 'active' : simulationState === 'latency-spike' ? 'failed' : 'idle' },
+    { id: 't3', name: 'Tier 3: Ultra-Low-Latency Edge Accelerator', provider: 'Hardware-Optimized Edge Core', latency: '42ms', cost: '$0.0001/req', status: simulationState === 'latency-spike' ? 'active' : 'idle' },
+    { id: 't4', name: 'Tier 4: High-Context Fallback Reasoning Core', provider: 'Multi-Region Fallback Mesh', latency: '280ms', cost: '$0.0004/req', status: 'idle' },
+    { id: 't5', name: 'Tier 5: Distributed Multi-Cloud Router', provider: 'Autonomous Dynamic Routing Gateway', latency: '350ms', cost: '$0.0005/req', status: 'idle' },
+    { id: 't6', name: 'Tier 6: Air-Gapped On-Premise Weights', provider: 'Local Quantized Execution Engine', latency: '120ms', cost: '$0.0000/req', status: 'idle' },
+    { id: 't7', name: 'Tier 7: Deterministic Rule & In-Memory Cache', provider: 'Sub-2ms Zero-Cost Circuit Breaker', latency: '2ms', cost: '$0.0000/req', status: 'idle' }
   ];
 
   const runSimulation = (mode: 'normal' | 'rate-limit' | 'latency-spike') => {
@@ -32,13 +32,13 @@ export const HeroFallbackDiagram: React.FC = () => {
 
     if (mode === 'normal') {
       setActiveTier(1);
-      setLogMessage('Inbound request: HMAC signature valid -> Tier 1 (Gemini) resolved in 210ms (HTTP 200).');
+      setLogMessage('Inbound request: HMAC signature verified -> Tier 1 resolved in 210ms (HTTP 200).');
     } else if (mode === 'rate-limit') {
       setActiveTier(2);
-      setLogMessage('Inbound request: Tier 1 threw HTTP 429 -> Circuit breaker engaged -> Tier 2 (NVIDIA NIM) resolved in 95ms.');
+      setLogMessage('Inbound request: Tier 1 rate-limit detected -> Circuit breaker engaged -> Tier 2 resolved in 95ms.');
     } else if (mode === 'latency-spike') {
       setActiveTier(3);
-      setLogMessage('Inbound request: Tier 1 & 2 latency >1500ms -> Instant fallback to Tier 3 (Groq LPU) in 42ms.');
+      setLogMessage('Inbound request: Tier 1 & 2 latency >1500ms -> Instant circuit bypass to Tier 3 Edge Accelerator in 42ms.');
     }
 
     setTimeout(() => {
@@ -126,7 +126,7 @@ export const HeroFallbackDiagram: React.FC = () => {
               <span>3. Latency &gt;1.5s</span>
               <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
             </div>
-            <div className="text-[10px] opacity-80 mt-0.5">Tier 3 Groq Circuit</div>
+            <div className="text-[10px] opacity-80 mt-0.5">Tier 3 Low-Latency Circuit</div>
           </button>
         </div>
       </div>

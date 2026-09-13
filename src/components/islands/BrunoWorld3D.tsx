@@ -1019,7 +1019,7 @@ export const BrunoWorld3D: React.FC = () => {
               <div className="space-y-4 text-xs font-mono">
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
                   <div className="text-[#ff5500] font-bold">01 // APPLIED AI & LLM SYSTEMS</div>
-                  <p className="text-white/70 font-sans">QLoRA / PEFT 4-bit quantization, Ollama Airgapped Runtime, Speech Synthesis (IndicF5/VibeVoice), HuggingFace Transformers.</p>
+                  <p className="text-white/70 font-sans">QLoRA / PEFT 4-bit quantization, Airgapped Runtimes, Neural Speech Synthesis, HuggingFace Transformers.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
                   <div className="text-amber-400 font-bold">02 // BACKEND & ERP ARCHITECTURE</div>
