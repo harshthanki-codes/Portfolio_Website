@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle2, AlertTriangle, Zap, Terminal } from 'lucide-react';
+import { CheckCircle2, Zap, Terminal, ArrowRight } from 'lucide-react';
 
 interface TierNode {
   id: string;
@@ -98,7 +98,7 @@ export const HeroFallbackDiagram: React.FC = () => {
         </div>
       </div>
 
-      {/* Interactive Simulation Trigger Matrix (Never Wraps Awkwardly) */}
+      {/* Interactive Simulation Trigger Matrix (Calm, Professional Telemetry) */}
       <div className="my-4">
         <div className="text-[11px] font-mono text-[var(--text-secondary)] mb-2 flex items-center gap-1.5">
           <Zap className="w-3.5 h-3.5 text-[var(--accent)] shrink-0" />
@@ -148,7 +148,7 @@ export const HeroFallbackDiagram: React.FC = () => {
             </span>
           </button>
 
-          {/* Button 3 */}
+          {/* Button 3 (Warm Amber Accent, No Red) */}
           <button
             type="button"
             onClick={() => runSimulation('latency-spike')}
@@ -159,10 +159,10 @@ export const HeroFallbackDiagram: React.FC = () => {
             }`}
           >
             <div className="flex items-center justify-between gap-1 w-full">
-              <span className={`font-mono text-xs font-bold ${simulationState === 'latency-spike' ? 'text-red-400' : 'text-[var(--text-primary)]'}`}>
+              <span className={`font-mono text-xs font-bold ${simulationState === 'latency-spike' ? 'text-[var(--accent)]' : 'text-[var(--text-primary)]'}`}>
                 3. Latency Spike
               </span>
-              <span className="w-2 h-2 rounded-full bg-red-500 shrink-0"></span>
+              <span className="w-2 h-2 rounded-full bg-[var(--accent)] shrink-0"></span>
             </div>
             <span className="text-[10px] text-[var(--text-secondary)] leading-tight whitespace-nowrap">
               Tier 3 Edge LPU
@@ -171,11 +171,11 @@ export const HeroFallbackDiagram: React.FC = () => {
         </div>
       </div>
 
-      {/* Node Topology List (Clean, High-Readability Layout with Zero Text Truncation) */}
+      {/* Node Topology List (Clean, Positive Telemetry — Zero Red) */}
       <div className="space-y-2.5">
         {tiers.map((tier, idx) => {
           const isNodeActive = tier.status === 'active';
-          const isNodeFailed = tier.status === 'failed';
+          const isNodeRerouted = tier.status === 'failed';
 
           return (
             <div
@@ -183,8 +183,8 @@ export const HeroFallbackDiagram: React.FC = () => {
               className={`p-3 border rounded-[var(--radius-sm)] transition-all flex items-center justify-between gap-3 ${
                 isNodeActive
                   ? 'border-[var(--accent)] bg-[var(--accent-subtle)] shadow-[0_0_16px_var(--accent-glow)]'
-                  : isNodeFailed
-                  ? 'border-red-500/30 bg-red-500/5 opacity-75'
+                  : isNodeRerouted
+                  ? 'border-white/10 bg-white/[0.02] opacity-60'
                   : 'border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] hover:border-[var(--border-strong)]'
               }`}
             >
@@ -209,9 +209,9 @@ export const HeroFallbackDiagram: React.FC = () => {
                         RESOLVING
                       </span>
                     )}
-                    {isNodeFailed && (
-                      <span className="inline-flex items-center px-2 py-0.5 text-[9px] font-mono rounded-full bg-red-500/90 text-white font-bold tracking-wider shrink-0">
-                        BYPASSED
+                    {isNodeRerouted && (
+                      <span className="inline-flex items-center px-2 py-0.5 text-[9px] font-mono rounded-full bg-white/10 text-white/60 border border-white/10 font-semibold tracking-wider shrink-0">
+                        REROUTED
                       </span>
                     )}
                   </div>
@@ -222,7 +222,7 @@ export const HeroFallbackDiagram: React.FC = () => {
                 </div>
               </div>
 
-              {/* Right Column: Latency + Cost + Icon */}
+              {/* Right Column: Latency + Cost + Status Icon */}
               <div className="flex items-center gap-2.5 text-right shrink-0">
                 <div className="font-mono">
                   <div className={`text-xs font-bold leading-tight ${isNodeActive ? 'text-[var(--accent)]' : 'text-[var(--text-primary)]'}`}>
@@ -235,8 +235,8 @@ export const HeroFallbackDiagram: React.FC = () => {
 
                 {isNodeActive ? (
                   <CheckCircle2 className="w-4 h-4 text-[var(--accent)] shrink-0" />
-                ) : isNodeFailed ? (
-                  <AlertTriangle className="w-4 h-4 text-red-500 shrink-0" />
+                ) : isNodeRerouted ? (
+                  <ArrowRight className="w-3.5 h-3.5 text-white/40 shrink-0" />
                 ) : (
                   <div className="w-2 h-2 rounded-full bg-[var(--border-strong)] shrink-0" />
                 )}
