@@ -63,11 +63,21 @@ export const MobileNavDrawer: React.FC = () => {
             aria-label="Mobile Navigation"
           >
             <div>
-              {/* Header */}
+              {/* Header with Circle Avatar */}
               <div className="flex items-center justify-between pb-4 border-b border-[var(--border-subtle)]">
-                <div className="font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--accent)] font-semibold flex items-center gap-2">
-                  <Terminal className="w-4 h-4" />
-                  <span>Navigation Mesh</span>
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-full overflow-hidden border border-[var(--accent-border)] ring-1 ring-[var(--accent)]/30 shrink-0">
+                    <img 
+                      src="/Portfolio_Website/images/harsh-thanki.png" 
+                      alt="Harsh Thanki" 
+                      className="w-full h-full object-cover object-top" 
+                      width="32" 
+                      height="32" 
+                    />
+                  </div>
+                  <div className="font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--text-primary)] font-bold">
+                    Harsh Thanki
+                  </div>
                 </div>
                 <button
                   type="button"
@@ -79,17 +89,17 @@ export const MobileNavDrawer: React.FC = () => {
                 </button>
               </div>
 
-              {/* Navigation Links */}
-              <nav className="mt-6 flex flex-col space-y-2">
-                {NAV_LINKS.map((link, idx) => (
+              {/* Links */}
+              <nav className="space-y-1.5 font-mono text-[var(--text-sm)] mt-6" aria-label="Mobile Menu Links">
+                {NAV_LINKS.map((item) => (
                   <a
-                    key={link.href}
-                    href={link.href}
+                    key={item.href}
+                    href={item.href}
                     onClick={handleLinkClick}
-                    className="touch-target px-3 py-2.5 font-mono text-[var(--text-sm)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-raised)] border border-transparent hover:border-[var(--border-subtle)] transition-all flex items-center justify-between"
+                    className="touch-target flex items-center justify-between p-3 rounded-[var(--radius-sm)] border border-transparent hover:border-[var(--border-subtle)] hover:bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
                   >
-                    <span>0{idx + 1}. {link.label}</span>
-                    <ArrowRight className="w-3.5 h-3.5 opacity-50" />
+                    <span className="text-[var(--accent)] font-semibold">{item.num} //</span>
+                    <span className="font-medium">{item.label}</span>
                   </a>
                 ))}
               </nav>
@@ -98,7 +108,7 @@ export const MobileNavDrawer: React.FC = () => {
             {/* Bottom Meta */}
             <div className="pt-6 border-t border-[var(--border-subtle)] space-y-3 font-mono text-[var(--text-xs)]">
               <div className="text-[var(--text-tertiary)]">
-                Harsh Thanki · Applied AI Systems
+                Harsh Thanki · Python Developer &amp; AI/ML Engineer
               </div>
               <a
                 href="#contact"

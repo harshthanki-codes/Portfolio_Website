@@ -28,13 +28,13 @@ const PRINCIPLES = [
             <span class="font-semibold">05 // Engineering Philosophy</span>
           </div>
           <h2 id="about-heading" class="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
-            How I Think About <span class="gradient-text-solar font-serif italic">Applied AI &amp; Systems</span>
+            How I Think About <span class="gradient-text-solar font-serif italic">Intelligent Systems &amp; Engineering</span>
           </h2>
         </div>
 
         <div class="space-y-4 text-[var(--text-base)] text-[var(--text-secondary)] leading-relaxed font-sans">
           <p>
-            I am an Applied AI Systems Engineer based in Ahmedabad, India. My work focuses on <strong class="text-[var(--text-primary)] font-semibold">open-weights model fine-tuning</strong>, <strong class="text-[var(--text-primary)] font-semibold">multimodal ingestion pipelines</strong>, and <strong class="text-[var(--text-primary)] font-semibold">resilient enterprise backend architectures</strong>.
+            I am a <strong class="text-[var(--text-primary)] font-semibold">Python Developer &amp; AI/ML Engineer</strong> based in Ahmedabad, India. My work focuses on <strong class="text-[var(--text-primary)] font-semibold">custom LLM automation pipelines</strong>, <strong class="text-[var(--text-primary)] font-semibold">high-throughput Odoo ERP architectures</strong>, and <strong class="text-[var(--text-primary)] font-semibold">resilient enterprise backend services</strong>.
           </p>
           <p>
             Rather than treating AI as a shallow API wrapper, I focus on the hard engineering questions: How do we fine-tune a 7B model so it runs locally at zero marginal cost? How do we build a 7-tier failover DAG so a voice-to-order pipeline never drops a customer transaction? How do we seal endpoint DNS loopholes so security cannot be bypassed with a browser toggle?
@@ -61,21 +61,56 @@ const PRINCIPLES = [
 
       </div>
 
-      <!-- Right Column: Sleek Lab Notebook Fact Sheet -->
+      <!-- Right Column: Executive Portrait & Fact Sheet -->
       <div class="lg:col-span-5 space-y-6">
         
-        <div class="p-6 sm:p-7 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-lg)] space-y-5 font-mono text-[var(--text-xs)] shadow-md relative overflow-hidden">
+        <!-- World-Class Executive Portrait Card -->
+        <div class="p-6 sm:p-7 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-lg)] space-y-6 shadow-xl relative overflow-hidden group">
           <div class="absolute top-0 left-0 right-0 h-1 bg-[var(--accent-gradient)]"></div>
+          
+          <!-- Prominent Glowing Circle Portrait -->
+          <div class="flex flex-col items-center text-center space-y-4 pt-2">
+            <div class="relative">
+              <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden ring-4 ring-[var(--accent)] ring-offset-4 ring-offset-[var(--bg-app)] shadow-[0_0_40px_var(--accent-glow)] bg-neutral-900 group-hover:scale-105 transition-transform duration-500">
+                <img 
+                  src="/Portfolio_Website/images/harsh-thanki.png" 
+                  alt="Harsh Thanki — Python Developer & AI/ML Engineer" 
+                  class="w-full h-full object-cover object-top"
+                  width="192"
+                  height="192"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Online status dot -->
+              <span class="absolute bottom-2 right-3 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--bg-app)] ring-2 ring-[var(--bg-app)]">
+                <span class="relative flex h-3.5 w-3.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--status-complete)] opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-[var(--status-complete)]"></span>
+                </span>
+              </span>
+            </div>
 
-          <div class="flex items-center justify-between pb-3 border-b border-[var(--border-subtle)] text-[var(--text-primary)] font-bold">
-            <span>// PROFILE &amp; TELEMETRY</span>
-            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] border border-[var(--accent-border)] text-[10px]">
-              <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse"></span>
-              ONLINE
-            </span>
+            <div class="space-y-1">
+              <div class="text-lg font-bold font-serif text-[var(--text-primary)]">Harsh Thanki</div>
+              <div class="text-xs font-mono text-[var(--accent)] font-semibold uppercase tracking-wider">
+                Python Developer &middot; AI/ML Engineer
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/40 border border-white/10 text-[11px] font-mono text-[var(--text-secondary)] mt-1">
+                <span class="w-2 h-2 rounded-full bg-[var(--status-complete)]"></span>
+                <span>Verified Systems Operator</span>
+              </div>
+            </div>
           </div>
 
-          <div class="space-y-3.5">
+          <!-- Fact Sheet Details -->
+          <div class="space-y-3 font-mono text-[var(--text-xs)]">
+            <div class="flex items-center justify-between pb-2 border-b border-[var(--border-subtle)] text-[var(--text-primary)] font-bold">
+              <span>// EXECUTIVE TELEMETRY</span>
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] border border-[var(--accent-border)] text-[10px]">
+                ACTIVE OPERATOR
+              </span>
+            </div>
+
             <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Location &amp; Timezone</div>
               <div class="text-[var(--text-primary)] font-bold mt-0.5">Ahmedabad, Gujarat, India 🇮🇳 (UTC+5:30)</div>
@@ -83,7 +118,7 @@ const PRINCIPLES = [
 
             <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Current Focus</div>
-              <div class="text-[var(--text-primary)] font-bold mt-0.5">Odoo 19 AI Modules, QLoRA &amp; Distributed Architectures</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">Odoo 19 AI Modules, QLoRA &amp; Distributed Backend Pipelines</div>
             </div>
 
             <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
@@ -93,7 +128,7 @@ const PRINCIPLES = [
 
             <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Primary Core Stack</div>
-              <div class="text-[var(--text-primary)] font-bold mt-0.5">Python, QLoRA, FastAPI, Odoo 19, Node/Express, PostgreSQL, MongoDB</div>
+              <div class="text-[var(--text-primary)] font-bold mt-0.5">Python, PyTorch, FastAPI, Odoo ERP, PostgreSQL, Celery, Redis</div>
             </div>
 
             <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
@@ -109,8 +144,8 @@ const PRINCIPLES = [
             </div>
           </div>
 
-          <div class="pt-3 border-t border-[var(--border-subtle)] text-[11px] text-[var(--text-tertiary)] leading-relaxed">
-            Verified production systems operator. Open for technical conversations, high-impact consulting, and strategic engineering roles.
+          <div class="pt-2 border-t border-[var(--border-subtle)] text-[11px] font-mono text-[var(--text-tertiary)] leading-relaxed">
+            Verified production systems operator. Open for technical discussions, high-impact consulting, and strategic engineering contracts.
           </div>
         </div>
 

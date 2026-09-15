@@ -656,11 +656,11 @@ export const BrunoWorld3D: React.FC = () => {
             <div className="font-extrabold text-sm tracking-tight text-white flex items-center gap-2">
               <span>HARSH THANKI</span>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#ff5500] text-black font-extrabold uppercase">
-                AI &middot; MERN
+                PYTHON &middot; AI/ML
               </span>
             </div>
             <div className="text-[10px] text-white/50 tracking-wider">
-              APPLIED AI SYSTEMS ENGINEER
+              PYTHON DEVELOPER &middot; AI/ML ENGINEER
             </div>
           </div>
         </div>
@@ -903,7 +903,7 @@ export const BrunoWorld3D: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-white uppercase">Harsh Thanki &middot; Technical Dossier</h3>
-                  <span className="text-xs text-white/50">Applied AI &middot; MERN Systems Architect</span>
+                  <span className="text-xs text-white/50">Python Developer &middot; AI/ML Engineer</span>
                 </div>
               </div>
 
@@ -1018,19 +1018,19 @@ export const BrunoWorld3D: React.FC = () => {
             {activeTab === 'skills' && (
               <div className="space-y-4 text-xs font-mono">
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
-                  <div className="text-[#ff5500] font-bold">01 // APPLIED AI & LLM SYSTEMS</div>
+                  <div className="text-[#ff5500] font-bold">01 // AI/ML &amp; LLM SYSTEMS</div>
                   <p className="text-white/70 font-sans">QLoRA / PEFT 4-bit quantization, Airgapped Runtimes, Neural Speech Synthesis, HuggingFace Transformers.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
-                  <div className="text-amber-400 font-bold">02 // BACKEND & ERP ARCHITECTURE</div>
-                  <p className="text-white/70 font-sans">Python (FastAPI/Flask), Node.js/Express, Odoo 19 ORM, Asynchronous Job Queues, Multi-currency rollups.</p>
+                  <div className="text-amber-400 font-bold">02 // BACKEND &amp; ERP ARCHITECTURE</div>
+                  <p className="text-white/70 font-sans">Python (FastAPI/Flask), Odoo 19 ORM, Celery Redis Workers, Asynchronous Job Queues, Multi-currency rollups.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
-                  <div className="text-green-400 font-bold">03 // DATA & PERSISTENCE</div>
-                  <p className="text-white/70 font-sans">PostgreSQL compound indexing & N+1 fixes, MongoDB Atlas, In-memory state buffers.</p>
+                  <div className="text-green-400 font-bold">03 // DATA &amp; PERSISTENCE</div>
+                  <p className="text-white/70 font-sans">PostgreSQL compound indexing &amp; N+1 fixes, MongoDB Atlas, In-memory state buffers.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
-                  <div className="text-blue-400 font-bold">04 // SYSTEMS & SECURITY</div>
+                  <div className="text-blue-400 font-bold">04 // SYSTEMS &amp; SECURITY</div>
                   <p className="text-white/70 font-sans">Windows Services watchdogs, Custom DNS proxies, Manifest V3 extensions, Docker.</p>
                 </div>
               </div>
@@ -1041,7 +1041,7 @@ export const BrunoWorld3D: React.FC = () => {
               <div className="space-y-4 text-xs font-sans">
                 <div className="p-4 border border-[#ff5500] bg-[#ff5500]/10 rounded-xl space-y-1.5">
                   <div className="font-mono text-[10px] text-[#ff5500] font-bold uppercase">Current Engagement &middot; 2025 – Present</div>
-                  <div className="font-serif font-bold text-white text-base">Applied AI &amp; Systems Engineer</div>
+                  <div className="font-serif font-bold text-white text-base">Python Developer &amp; AI/ML Engineer</div>
                   <p className="text-white/80">Architecting on-premise QLoRA pipelines, 7-tier multimodal failover DAGs, and enterprise DNS proxies across 35+ workstations.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-1.5">
@@ -1055,9 +1055,9 @@ export const BrunoWorld3D: React.FC = () => {
             {/* Tab 4: Telemetry */}
             {activeTab === 'telemetry' && (
               <div className="p-5 border border-white/10 bg-white/5 rounded-xl space-y-4 text-xs font-mono">
-                <div className="text-[#ff5500] font-bold text-sm">// LIVE MERN TELEMETRY ENGINE</div>
+                <div className="text-[#ff5500] font-bold text-sm">// LIVE BACKEND TELEMETRY ENGINE</div>
                 <p className="text-white/70 font-sans">
-                  Communicating with deployed Node.js/Express API cluster and MongoDB Atlas connection pools.
+                  Communicating with deployed Python FastAPI endpoints, database clusters, and inference execution pools.
                 </p>
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div className="p-3 bg-black/50 border border-white/10 rounded">

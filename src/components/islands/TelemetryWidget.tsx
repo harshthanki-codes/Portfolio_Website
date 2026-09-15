@@ -41,10 +41,10 @@ export const TelemetryWidget: React.FC = () => {
           </div>
           <div>
             <span className="font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--text-primary)] font-bold block">
-              MERN Microservice Live Mesh &middot; Telemetry Engine
+              Python Microservice Live Mesh &middot; Telemetry Engine
             </span>
             <span className="text-[11px] text-[var(--text-tertiary)]">
-              Real-time Node/Express API &middot; MongoDB Atlas Pool
+              Real-time FastAPI Endpoint &middot; PostgreSQL &amp; Redis Pool
             </span>
           </div>
         </div>

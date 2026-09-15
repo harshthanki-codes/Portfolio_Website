@@ -6,20 +6,28 @@ import { MobileNavDrawer } from './islands/MobileNavDrawer';
 <header class="sticky top-0 z-40 w-full border-b border-[var(--border-subtle)] bg-[var(--bg-surface-overlay)] backdrop-blur-xl transition-all duration-300">
   <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)] h-16 flex items-center justify-between gap-4">
     
-    <!-- Logo / Brand Identifier with Solar Glow Ring -->
+    <!-- Logo / Brand Identifier with Executive Portrait Avatar -->
     <a 
       href="#hero" 
       class="flex items-center gap-3 font-mono text-[var(--text-sm)] text-[var(--text-primary)] group focus-visible:outline-none"
       aria-label="Harsh Thanki Portfolio Home"
     >
-      <div class="relative flex items-center justify-center w-8 h-8 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-strong)] group-hover:border-[var(--accent)] transition-colors shadow-xs">
-        <span class="w-2.5 h-2.5 rounded-full bg-[var(--accent)] shadow-[0_0_10px_var(--accent)]"></span>
+      <div class="relative flex items-center justify-center w-9 h-9 rounded-full overflow-hidden border border-[var(--accent-border)] bg-[var(--bg-surface-raised)] shadow-xs group-hover:border-[var(--accent)] transition-all">
+        <img 
+          src="/Portfolio_Website/images/harsh-thanki.png" 
+          alt="Harsh Thanki" 
+          class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110" 
+          width="36" 
+          height="36" 
+          loading="eager"
+        />
+        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[var(--accent)] ring-1.5 ring-[var(--bg-surface)]"></span>
       </div>
       <div class="flex flex-col">
         <span class="font-bold tracking-tight leading-none text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
           HARSH THANKI
         </span>
-        <span class="text-[10px] text-[var(--text-tertiary)] tracking-wider mt-0.5">
+        <span class="text-[10px] text-[var(--text-tertiary)] tracking-wider mt-0.5 font-medium">
           PYTHON DEVELOPER &middot; AI/ML
         </span>
       </div>
