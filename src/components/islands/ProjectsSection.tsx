@@ -71,49 +71,67 @@ export const ProjectsSection: React.FC = () => {
     <section id="projects" className="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] relative" aria-labelledby="projects-heading">
       <div className="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
         
-        {/* Section Header with Solar Glow Accent */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        {/* Section Header with Solar Glow Accent & Telemetry Hub */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
           <div>
             <div className="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
               <span className="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_8px_var(--accent)]"></span>
-              <span className="font-semibold">02 // Technical Case Studies</span>
+              <span className="font-semibold">01 // Architectural Dossier</span>
             </div>
             <h2 id="projects-heading" className="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
               Production Architecture &amp; <span className="gradient-text-solar font-serif italic">Case Studies</span>
             </h2>
-            <p className="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1.5 max-w-2xl font-sans">
+            <p className="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1.5 max-w-xl font-sans">
               Real problem statements, strict operational constraints, verified failover DAGs, and empirical performance benchmarks.
             </p>
           </div>
 
-          {/* Sort Controller */}
-          <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] shrink-0">
-            <span className="text-[var(--text-tertiary)]">Sort by:</span>
-            <div className="inline-flex border border-[var(--border-subtle)] p-1 bg-[var(--bg-surface-raised)] rounded-full shadow-xs">
-              <button
-                type="button"
-                onClick={() => setSortBy('status')}
-                className={`touch-target px-3.5 py-1 text-[var(--text-xs)] rounded-full transition-all ${
-                  sortBy === 'status'
-                    ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
-                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-                }`}
-                aria-pressed={sortBy === 'status'}
-              >
-                Status Weight
-              </button>
-              <button
-                type="button"
-                onClick={() => setSortBy('category')}
-                className={`touch-target px-3.5 py-1 text-[var(--text-xs)] rounded-full transition-all ${
-                  sortBy === 'category'
-                    ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
-                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-                }`}
-                aria-pressed={sortBy === 'category'}
-              >
-                Category
-              </button>
+          {/* Right Side: Architectural Telemetry Metrics & Sort Controls */}
+          <div className="flex flex-wrap items-center gap-2.5 lg:justify-end shrink-0">
+            <div className="px-3 py-1.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] font-mono shadow-xs">
+              <div className="text-[9px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">Systems Delivered</div>
+              <div className="text-[var(--text-xs)] font-bold text-[var(--text-primary)] flex items-center gap-1.5 mt-0.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--status-complete)]"></span>
+                <span>7 Core Architectures</span>
+              </div>
+            </div>
+
+            <div className="px-3 py-1.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] font-mono shadow-xs">
+              <div className="text-[9px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">Resilience SLA</div>
+              <div className="text-[var(--text-xs)] font-bold text-[var(--text-primary)] flex items-center gap-1.5 mt-0.5">
+                <span className="text-[var(--accent)]">0%</span>
+                <span className="text-[var(--text-secondary)]">Transaction Loss</span>
+              </div>
+            </div>
+
+            {/* Sort Controller */}
+            <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] shrink-0 ml-1">
+              <div className="inline-flex border border-[var(--border-subtle)] p-1 bg-[var(--bg-surface-raised)] rounded-full shadow-xs">
+                <button
+                  type="button"
+                  onClick={() => setSortBy('status')}
+                  className={`touch-target px-3 py-1 text-[var(--text-xs)] rounded-full transition-all ${
+                    sortBy === 'status'
+                      ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  }`}
+                  aria-pressed={sortBy === 'status'}
+                >
+                  Status
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSortBy('category')}
+                  className={`touch-target px-3 py-1 text-[var(--text-xs)] rounded-full transition-all ${
+                    sortBy === 'category'
+                      ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  }`}
+                  aria-pressed={sortBy === 'category'}
+                >
+                  Category
+                </button>
+              </div>
             </div>
           </div>
         </div>
