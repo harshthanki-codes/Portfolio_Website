@@ -59,7 +59,7 @@ export const CyberRoverPlayground: React.FC = () => {
   const zonesRef = useRef<Zone[]>([
     { id: 'z1', name: 'LLM Fine-Tuning Foundry', tag: 'On-Premises AI', x: -28, z: -28, radius: 10, color: 0xff5500, description: 'Fine-tuned open-weights 7B models on curated ERP codebases.', metric: '8.7/10 vs Frontier Baseline', visited: false },
     { id: 'z2', name: '7-Tier Failover DAG', tag: 'Resilience Mesh', x: 28, z: -28, radius: 10, color: 0xffaa00, description: 'Zero-drop failover architecture across multimodal & edge LPU inference.', metric: '0% Transaction Drop SLA', visited: false },
-    { id: 'z3', name: 'Odoo 19 ERP Engine', tag: 'Enterprise Backend', x: 28, z: 28, radius: 10, color: 0x00bb77, description: 'Multi-currency computed ledger rollups & asynchronous workers.', metric: '<50ms Query Execution', visited: false },
+    { id: 'z3', name: 'Enterprise ERP Engine', tag: 'Enterprise Systems', x: 28, z: 28, radius: 10, color: 0x00bb77, description: 'Multi-currency computed ledger rollups & asynchronous workers.', metric: '<50ms Query Execution', visited: false },
     { id: 'z4', name: 'Security Firewall Bastion', tag: 'Network Defense', x: -28, z: 28, radius: 10, color: 0x3b82f6, description: 'Tamper-proof Windows DNS proxy watchdog on 35+ workstations.', metric: 'Fails-Closed Architecture', visited: false },
     { id: 'z5', name: 'Speech Synthesis Lab', tag: 'Voice AI Studio', x: 0, z: 35, radius: 10, color: 0xec4899, description: 'Zero-shot neural multilingual voice cloning & speech synthesis.', metric: '60s Voice Reference Clones', visited: false }
   ]);

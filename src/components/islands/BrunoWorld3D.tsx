@@ -65,7 +65,7 @@ export const BrunoWorld3D: React.FC = () => {
       radius: 16,
       color: '#ff5500',
       title: 'Production AI Systems & Deep Architectures',
-      tagline: 'Fine-tuned LLMs (QLoRA), 7-tier failover DAGs, Odoo 19 ERP engines, and DNS proxy watchdogs.',
+      tagline: 'Fine-tuned LLMs (QLoRA), 7-tier failover DAGs, scalable enterprise ERP engines, and DNS proxy watchdogs.',
       visited: false
     },
     {
@@ -1023,7 +1023,7 @@ export const BrunoWorld3D: React.FC = () => {
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
                   <div className="text-amber-400 font-bold">02 // BACKEND &amp; ERP ARCHITECTURE</div>
-                  <p className="text-white/70 font-sans">Python (FastAPI/Flask), Odoo 19 ORM, Celery Redis Workers, Asynchronous Job Queues, Multi-currency rollups.</p>
+                  <p className="text-white/70 font-sans">Python (FastAPI/Flask), Enterprise ORM Architecture, Celery Redis Workers, Asynchronous Job Queues, Multi-currency rollups.</p>
                 </div>
                 <div className="p-4 border border-white/10 bg-white/5 rounded-xl space-y-2">
                   <div className="text-green-400 font-bold">03 // DATA &amp; PERSISTENCE</div>

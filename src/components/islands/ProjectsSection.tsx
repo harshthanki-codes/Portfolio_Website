@@ -32,7 +32,7 @@ const CATEGORIES: ('All' | ProjectCategory)[] = [
 export const ProjectsSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<'All' | ProjectCategory>('All');
   const [sortBy, setSortBy] = useState<'status' | 'category'>('status');
-  const [expandedProjectId, setExpandedProjectId] = useState<string | null>('odoo-foundation-ai');
+  const [expandedProjectId, setExpandedProjectId] = useState<string | null>('erp-llm-foundation');
 
   const filteredAndSortedProjects = useMemo(() => {
     let result = [...PROJECTS_DATA];
