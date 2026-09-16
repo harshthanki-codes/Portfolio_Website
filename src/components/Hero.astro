@@ -20,8 +20,9 @@ import { HeroFallbackDiagram } from './islands/HeroFallbackDiagram';
                 class="w-full h-full object-cover object-top"
                 width="64" 
                 height="64" 
-                loading="eager"
+                loading="eager" 
                 fetchpriority="high"
+                onerror="this.onerror=null; this.src='/Portfolio_Website/images/harsh-thanki.webp';"
               />
             </div>
             <span class="absolute bottom-0 right-0 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[var(--bg-app)]">

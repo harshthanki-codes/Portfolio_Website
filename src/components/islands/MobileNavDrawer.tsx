@@ -73,6 +73,7 @@ export const MobileNavDrawer: React.FC = () => {
                       className="w-full h-full object-cover object-top" 
                       width="32" 
                       height="32" 
+                      onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/Portfolio_Website/images/harsh-thanki.webp'; }}
                     />
                   </div>
                   <div className="font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--text-primary)] font-bold">

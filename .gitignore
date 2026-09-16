@@ -25,3 +25,16 @@ pnpm-debug.log*
 
 # unignore source data
 !src/data/
+
+# Unignore website images and assets (overriding machine-wide global gitignore)
+!*.png
+!*.jpg
+!*.jpeg
+!*.webp
+!*.svg
+!*.ico
+!public/
+!public/**
+!images/
+!images/**
+
