@@ -1,20 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import SolutionsSection from '../components/SolutionsSection.astro';
 import { ProjectsSection } from '../components/islands/ProjectsSection';
 import TelemetrySection from '../components/TelemetrySection.astro';
 import SkillsSection from '../components/SkillsSection.astro';
 import ExperienceSection from '../components/ExperienceSection.astro';
 import AboutSection from '../components/AboutSection.astro';
+import { ProjectScoper } from '../components/islands/ProjectScoper';
 import ContactSection from '../components/ContactSection.astro';
 ---
 
 <Layout>
   <Hero />
+  <SolutionsSection />
   <ProjectsSection client:load />
   <TelemetrySection />
   <SkillsSection />
   <ExperienceSection />
   <AboutSection />
+  <ProjectScoper client:load />
   <ContactSection />
 </Layout>

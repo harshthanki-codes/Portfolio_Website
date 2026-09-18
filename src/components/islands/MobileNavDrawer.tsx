@@ -2,16 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Terminal } from 'lucide-react';
 
 interface NavLink {
+  num: string;
   label: string;
   href: string;
 }
 
 const NAV_LINKS: NavLink[] = [
-  { label: 'Systems & Case Studies', href: '#projects' },
-  { label: 'Capabilities', href: '#skills' },
-  { label: 'Track Record', href: '#experience' },
-  { label: 'Engineering Philosophy', href: '#about' },
-  { label: 'Contact', href: '#contact' }
+  { num: '01', label: 'Client Solutions', href: '#solutions' },
+  { num: '02', label: 'Systems & Case Studies', href: '#projects' },
+  { num: '03', label: 'Telemetry Proof', href: '#telemetry' },
+  { num: '04', label: 'Technical Stack', href: '#skills' },
+  { num: '05', label: 'Track Record', href: '#experience' },
+  { num: '06', label: 'Scope Project', href: '#scoper' },
+  { num: '07', label: 'Contact', href: '#contact' }
 ];
 
 export const MobileNavDrawer: React.FC = () => {
@@ -34,7 +37,7 @@ export const MobileNavDrawer: React.FC = () => {
 
   return (
     <div className="lg:hidden">
-      {/* Menu Trigger Button */}
+      {/* Trigger Button */}
       <button
         type="button"
         onClick={() => setIsOpen(true)}
@@ -42,24 +45,20 @@ export const MobileNavDrawer: React.FC = () => {
         aria-label="Open Navigation Menu"
         aria-expanded={isOpen}
       >
-        <Menu className="w-5 h-5" aria-hidden="true" />
+        <Menu className="w-5 h-5" />
       </button>
 
-      {/* Backdrop & Slide-out Drawer */}
+      {/* Backdrop & Drawer */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex justify-end">
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
-            onClick={() => setIsOpen(false)}
-            aria-hidden="true"
-          />
-
-          {/* Drawer Container */}
-          <div
-            className="relative w-full max-w-xs bg-[var(--bg-app)] border-l border-[var(--border-strong)] h-full p-6 flex flex-col justify-between z-10 shadow-2xl overflow-y-auto"
+        <div 
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity"
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        >
+          <div 
+            className="fixed inset-y-0 right-0 w-full max-w-xs bg-[var(--bg-app)] border-l border-[var(--border-subtle)] p-6 shadow-2xl flex flex-col justify-between"
+            onClick={(e) => e.stopPropagation()}
             role="dialog"
-            aria-modal="true"
             aria-label="Mobile Navigation"
           >
             <div>
@@ -109,14 +108,14 @@ export const MobileNavDrawer: React.FC = () => {
             {/* Bottom Meta */}
             <div className="pt-6 border-t border-[var(--border-subtle)] space-y-3 font-mono text-[var(--text-xs)]">
               <div className="text-[var(--text-tertiary)]">
-                Harsh Thanki · Python Developer &amp; AI/ML Engineer
+                Harsh Thanki · AI Architect &amp; Solutions Engineer
               </div>
               <a
-                href="#contact"
+                href="#scoper"
                 onClick={handleLinkClick}
-                className="touch-target w-full py-2.5 px-4 bg-[var(--accent)] text-[var(--accent-text)] text-center font-medium hover:bg-[var(--accent-hover)] transition-colors block"
+                className="touch-target w-full py-2.5 px-4 bg-[var(--accent)] text-[var(--accent-text)] text-center font-bold hover:bg-[var(--accent-hover)] transition-colors block shadow-sm"
               >
-                Initiate Direct Contact →
+                Scope Project &rarr;
               </a>
             </div>
           </div>
