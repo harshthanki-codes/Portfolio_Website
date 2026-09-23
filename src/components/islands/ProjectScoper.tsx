@@ -123,7 +123,7 @@ Specific Notes: ${clientNotes || 'Let us discuss our technical architecture and 
           <div>
             <div className="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
               <span className="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_8px_var(--accent)]"></span>
-              <span className="font-semibold">Interactive Architecture Planner</span>
+              <span className="font-semibold">07 // Architecture Planner &amp; Scoper</span>
             </div>
             <h2 id="scoper-heading" className="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
               Scope Your Custom <span className="gradient-text-solar font-serif italic">Enterprise Solution</span>
