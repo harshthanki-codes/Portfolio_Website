@@ -13,8 +13,9 @@ const NAV_LINKS: NavLink[] = [
   { num: '03', label: 'Telemetry Proof', href: '#telemetry' },
   { num: '04', label: 'Technical Stack', href: '#skills' },
   { num: '05', label: 'Track Record', href: '#experience' },
-  { num: '06', label: 'Scope Project', href: '#scoper' },
-  { num: '07', label: 'Contact', href: '#contact' }
+  { num: '06', label: 'Engineering Philosophy', href: '#about' },
+  { num: '07', label: 'Scope Project', href: '#scoper' },
+  { num: '08', label: 'Direct Dispatch', href: '#contact' }
 ];
 
 export const MobileNavDrawer: React.FC = () => {
