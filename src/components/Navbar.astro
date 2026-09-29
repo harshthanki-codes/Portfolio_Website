@@ -1,19 +1,18 @@
 ---
 import { ThemeToggle } from './islands/ThemeToggle';
 import { MobileNavDrawer } from './islands/MobileNavDrawer';
-import { NavbarTabsClient } from './islands/NavbarTabsClient';
 ---
 
-<header class="sticky top-0 z-40 w-full border-b border-[var(--border-subtle)] bg-[var(--bg-surface-overlay)] backdrop-blur-xl transition-all duration-300">
+<header class="sticky top-0 z-40 w-full border-b border-white/[0.06] bg-[#08090c]/80 backdrop-blur-xl transition-all duration-300">
   <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)] h-16 flex items-center justify-between gap-4">
     
-    <!-- Logo / Brand Identifier with Executive Portrait Avatar -->
+    <!-- Logo / Brand -->
     <a 
       href="#hero" 
-      class="flex items-center gap-3 font-mono text-[var(--text-sm)] text-[var(--text-primary)] group focus-visible:outline-none"
+      class="flex items-center gap-3 font-mono text-[var(--text-sm)] text-[var(--text-primary)] group focus-visible:outline-none shrink-0"
       aria-label="Harsh Thanki Portfolio Home"
     >
-      <div class="relative flex items-center justify-center w-9 h-9 rounded-full overflow-hidden border border-[var(--accent-border)] bg-[var(--bg-surface-raised)] shadow-xs group-hover:border-[var(--accent)] transition-all">
+      <div class="relative flex items-center justify-center w-9 h-9 rounded-full overflow-hidden border border-[var(--accent-border)] bg-[#151820] shadow group-hover:border-[var(--accent)] transition-all">
         <img 
           src="/Portfolio_Website/images/harsh-thanki.png" 
           alt="Harsh Thanki" 
@@ -23,31 +22,42 @@ import { NavbarTabsClient } from './islands/NavbarTabsClient';
           loading="eager"
           onerror="this.onerror=null; this.src='/Portfolio_Website/images/harsh-thanki.webp';"
         />
-        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[var(--accent)] ring-1.5 ring-[var(--bg-surface)]"></span>
+        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[var(--accent)] ring-2 ring-[#08090c]"></span>
       </div>
-      <div class="flex flex-col">
-        <span class="font-bold tracking-tight leading-none text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+      <div class="flex flex-col leading-none">
+        <span class="font-bold tracking-tight text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors text-xs uppercase">
           HARSH THANKI
         </span>
-        <span class="text-[10px] text-[var(--text-tertiary)] tracking-wider mt-0.5 font-medium">
-          AI ARCHITECT &middot; SOLUTIONS ENGINEER
+        <span class="text-[9px] text-[var(--text-tertiary)] tracking-widest mt-0.5 font-medium uppercase">
+          AI ARCHITECT · SOLUTIONS ENGINEER
         </span>
       </div>
     </a>
 
-    <nav class="hidden lg:flex items-center" aria-label="Main Navigation">
-      <NavbarTabsClient client:load />
+    <!-- Animated Tab Navigation (pure CSS) -->
+    <nav
+      id="main-nav"
+      class="hidden lg:flex items-center gap-0.5 rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur px-1.5 py-1.5"
+      aria-label="Main Navigation"
+    >
+      <a href="#solutions" class="nav-pill">01&nbsp;Solutions</a>
+      <a href="#projects"  class="nav-pill">02&nbsp;Systems</a>
+      <a href="#telemetry" class="nav-pill">03&nbsp;Telemetry</a>
+      <a href="#skills"    class="nav-pill">04&nbsp;Stack</a>
+      <a href="#experience"class="nav-pill">05&nbsp;Timeline</a>
+      <a href="#about"     class="nav-pill">06&nbsp;Philosophy</a>
+      <a href="#scoper"    class="nav-pill accent-pill">07&nbsp;Scoper&nbsp;→</a>
     </nav>
 
-    <!-- Right Controls: Theme Toggle & Direct Contact CTA -->
-    <div class="flex items-center gap-3">
+    <!-- Right Controls -->
+    <div class="flex items-center gap-3 shrink-0">
       <ThemeToggle client:load />
 
       <a 
         href="#scoper" 
-        class="hidden sm:inline-flex touch-target px-4 py-2 rounded-[var(--radius-md)] bg-[var(--accent-gradient)] text-[var(--accent-text)] font-mono text-[var(--text-xs)] font-semibold hover:shadow-[0_0_20px_var(--accent-glow)] transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+        class="hidden sm:inline-flex touch-target px-4 py-2 rounded-full bg-[var(--accent-gradient)] text-white font-mono text-[10px] font-bold uppercase tracking-wider hover:shadow-[0_0_20px_var(--accent-glow)] transition-all transform hover:-translate-y-0.5 active:translate-y-0"
       >
-        Scope Project &rarr;
+        Scope Project →
       </a>
 
       <!-- Mobile Navigation Drawer -->
@@ -56,3 +66,72 @@ import { NavbarTabsClient } from './islands/NavbarTabsClient';
 
   </div>
 </header>
+
+<style>
+  .nav-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    position: relative;
+  }
+  .nav-pill:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .nav-pill.active,
+  .nav-pill:focus-visible {
+    color: #08090c;
+    background: #fff;
+  }
+  .nav-pill.accent-pill {
+    color: var(--accent);
+    background: rgba(255, 102, 0, 0.1);
+  }
+  .nav-pill.accent-pill:hover {
+    background: rgba(255, 102, 0, 0.2);
+    color: var(--accent);
+  }
+
+  /* Active pill highlight via JS scroll spy */
+  .nav-pill[data-active="true"] {
+    background: #ffffff;
+    color: #08090c;
+  }
+</style>
+
+<script>
+  // Lightweight scroll spy to highlight active nav link
+  const pills = document.querySelectorAll('.nav-pill:not(.accent-pill)');
+  const sections = ['solutions', 'projects', 'telemetry', 'skills', 'experience', 'about'];
+
+  function setActive(id: string) {
+    pills.forEach(p => {
+      const href = (p as HTMLAnchorElement).getAttribute('href');
+      (p as HTMLElement).dataset.active = href === '#' + id ? 'true' : 'false';
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    },
+    { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
+  );
+
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+</script>

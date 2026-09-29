@@ -1165,11 +1165,11 @@ export default function LiquidWave({
       ref={mountRef}
       className={`liquid-ether-container ${className || ''}`}
       style={{
-        width: '100%',
-        height: '100%',
+        ...style,
+        width: style?.width ?? '100%',
+        height: style?.height ?? '100%',
         position: 'relative',
         overflow: 'hidden',
-        ...style,
       }}
     />
   );

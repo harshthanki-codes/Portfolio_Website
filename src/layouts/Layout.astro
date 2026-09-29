@@ -131,15 +131,18 @@ const structuredData = {
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
-  <body class="bg-[#08090c] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
-    <!-- LiquidWave WebGL Background -->
-    <LiquidWave
-      client:load
-      className="fixed inset-0 z-0 pointer-events-none"
-      color1="orange"
-      color2="darkorange"
-      color3="orangered"
-    />
+  <body class="bg-[#08090c] text-[var(--text-primary)] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
+
+    <!-- LiquidWave WebGL Full-Viewport Background -->
+    <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;overflow:hidden;">
+      <LiquidWave
+        client:load
+        color1="orange"
+        color2="darkorange"
+        color3="orangered"
+        style={{ width: '100vw', height: '100vh', display: 'block' }}
+      />
+    </div>
     
     <!-- A11y Skip Link -->
     <a 
