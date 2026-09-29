@@ -1,4 +1,6 @@
 ---
+
+import LiquidWave from '../components/islands/LiquidWave';
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
@@ -80,6 +82,7 @@ const structuredData = {
 };
 ---
 
+
 <!DOCTYPE html>
 <html lang="en" class="dark" data-theme="dark">
   <head>
@@ -128,7 +131,7 @@ const structuredData = {
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
-  <body class="tech-grid-bg antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
+  <body class="tech-grid-bg antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">`n    <LiquidWave client:load className="fixed inset-0 z-[-1]" />
     
     <!-- A11y Skip Link -->
     <a 
