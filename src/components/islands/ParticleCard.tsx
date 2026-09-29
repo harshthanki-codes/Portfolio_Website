@@ -1,7 +1,7 @@
 'use client';
 
-import { useMemo, useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { useMemo, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -45,8 +45,6 @@ const Particle = ({
   cols: number;
   rows: number;
 }) => {
-  const innerPadding = 4; // Reduced padding for tighter fit
-
   const backgroundStyle = {
     backgroundImage: `url(${img})`,
     backgroundSize: `${cols * 100}% ${rows * 100}%`,
@@ -54,19 +52,16 @@ const Particle = ({
     backgroundRepeat: 'no-repeat',
   };
 
-  // More dramatic scattering
   const finalTransform = `translate3d(${p.randX * 1.5}px, ${p.randY * 1.5}px, 0) rotate(${p.rotate * 2}deg) scale(${p.scale * 0.8})`;
 
   const style: React.CSSProperties = {
     ...backgroundStyle,
-    // Slower, smoother transition (increased duration)
     transition: `transform 5400ms cubic-bezier(.2,.8,.2,1) ${p.delay}ms, opacity 5400ms ease-in ${p.delay + 500}ms`,
     transform: active ? finalTransform : 'translate3d(0,0,0) rotate(0deg) scale(1)',
     opacity: active ? 0 : 1,
-    // Remove artifacts when inactive
     boxShadow: active ? '0 2px 4px rgba(0,0,0,0.1)' : 'none',
     borderRadius: active ? 4 : 0,
-    width: '100.5%', // Slight overlap to prevent sub-pixel gaps
+    width: '100.5%',
     height: '100.5%',
     willChange: 'transform, opacity',
     position: 'absolute',
@@ -90,11 +85,11 @@ const Particle = ({
 };
 
 export default function ParticleCard({
-  name = 'Sam Jenkins',
-  role = 'Product Designer',
-  bio = 'Passionate about creating intuitive and beautiful user experiences. I specialize in UI/UX design and frontend development with a focus on accessibility. I am a frontend developer with a passion for creating engaging and interactive user interfaces.',
-  img = 'https://images.unsplash.com/photo-1676377630534-a08fd9778701?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  tags = ['UI/UX', 'React', 'Motion', 'Figma'],
+  name = 'Harsh Thanki',
+  role = 'AI Architect & Solutions Engineer',
+  bio = 'Verified production systems operator. Open for technical discussions, high-impact consulting, and strategic engineering contracts.',
+  img = '/Portfolio_Website/images/harsh-thanki.png',
+  tags = ['Python', 'FastAPI', 'PyTorch', 'Distributed Systems'],
   cols = 20,
   rows = 24,
 }: ParticleCardProps) {
@@ -108,35 +103,25 @@ export default function ParticleCard({
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Precompute particle metadata
   const particles = useMemo(() => {
     const arr: ParticleData[] = [];
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < cols; x++) {
         const posX = (x / (cols - 1)) * 100;
         const posY = (y / (rows - 1)) * 100;
-
-        // Center-based explosion logic
         const centerX = cols / 2;
         const centerY = rows / 2;
         const dx = x - centerX;
         const dy = y - centerY;
-
         const angle = Math.atan2(dy, dx);
         const distance = Math.sqrt(dx * dx + dy * dy);
-
-        // Randomize slightly but keep directional momentum
         const spread = 150 + Math.random() * 300;
         const randX = Math.cos(angle) * spread * (1 + Math.random() * 0.5);
         const randY = Math.sin(angle) * spread * (1 + Math.random() * 0.5);
-
         const rotate = (Math.random() * 2 - 1) * 180;
         const scale = 0.5 + Math.random() * 0.5;
-
-        // Delay based on distance from center (ripple effect) or random
-        const delay = distance * 20 + Math.random() * 150; // Increased delay spread
+        const delay = distance * 20 + Math.random() * 150;
         const blur = Math.random() * 2;
-
         arr.push({ x, y, posX, posY, randX, randY, rotate, scale, delay, blur });
       }
     }
@@ -144,93 +129,103 @@ export default function ParticleCard({
   }, [cols, rows]);
 
   return (
-    <div className="flex min-h-[400px] items-center justify-center p-8">
+    <div className="flex min-h-[400px] items-center justify-center p-4">
       <motion.div
         className={cn(
-          'bg-card relative h-[450px] w-[330px] cursor-pointer overflow-hidden rounded-lg shadow-2xl',
+          'relative h-[450px] w-[320px] cursor-pointer overflow-hidden rounded-2xl shadow-2xl',
+          'border border-white/10',
           'group select-none'
         )}
+        style={{ background: '#0e0f14' }}
         initial={false}
         animate={active ? { scale: 1.02 } : { scale: 1 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
         onHoverStart={() => !isMobile && setActive(true)}
         onHoverEnd={() => !isMobile && setActive(false)}
-        onClick={() => setIsMobile(!active)} // Tap to toggle on mobile
+        onClick={() => isMobile && setActive((v) => !v)}
       >
         {/* --- Background Content (Revealed on Hover) --- */}
-        <div className="from-background to-muted absolute inset-0 z-0 flex flex-col bg-linear-to-br p-6 pt-4 pb-6">
+        <div
+          className="absolute inset-0 z-0 flex flex-col p-6 pt-5 pb-6"
+          style={{ background: 'linear-gradient(135deg, #111318 0%, #0a0b0f 100%)' }}
+        >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex h-full flex-col gap-3"
+            className="flex h-full flex-col gap-4"
           >
             <div>
-              <h3 className="text-foreground m-0 text-2xl font-bold">{name}</h3>
-              <p className="text-muted-foreground m-0 font-medium">{role}</p>
+              <h3 className="m-0 text-2xl font-bold text-white">{name}</h3>
+              <p className="m-0 mt-1 text-sm font-mono font-semibold" style={{ color: '#f97316' }}>
+                {role}
+              </p>
             </div>
 
-            <p className="text-muted-foreground m-0 flex-1 text-sm leading-relaxed">{bio}</p>
+            <p className="m-0 flex-1 text-sm leading-relaxed" style={{ color: '#a1a1aa' }}>
+              {bio}
+            </p>
 
             <div className="flex flex-wrap gap-2">
               {tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-foreground bg-background/80 border-border hover:bg-background rounded-md border px-3 py-1 text-xs font-semibold duration-400"
+                  className="rounded-md border px-3 py-1 text-xs font-mono font-semibold text-white transition-colors duration-300"
+                  style={{ borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}
                 >
                   {tag}
                 </span>
               ))}
             </div>
 
-            <button className="bg-primary! text-primary-foreground hover:bg-primary/90! group/btn mt-3 flex! w-full cursor-pointer items-center! justify-center! gap-2 rounded-xl border-0! py-3 text-sm font-semibold shadow-lg transition-all duration-300">
-              View Profile
-              <svg
-                className="h-4 w-4 transition-transform group-hover/btn:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
+            <a
+              href="#scoper"
+              className="mt-1 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold text-black shadow-lg transition-all duration-300 hover:opacity-90"
+              style={{ background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)' }}
+            >
+              Scope a Project
+              <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </a>
           </motion.div>
         </div>
 
         {/* --- Foreground Image / Particles (Vanish on Hover) --- */}
         <div className="absolute inset-0 z-10 h-full w-full">
-          {/* Static Image (fades out) */}
+          {/* Static Image */}
           <img
             src={img}
             alt={name}
             className={cn(
-              'pointer-events-none absolute top-0 left-0 h-full w-full object-cover transition-opacity duration-500 ease-out',
+              'pointer-events-none absolute top-0 left-0 h-full w-full object-cover object-top transition-opacity duration-500 ease-out',
               active ? 'opacity-0' : 'opacity-100'
             )}
+            onError={(e) => {
+              const t = e.target as HTMLImageElement;
+              t.onerror = null;
+              t.src = img.replace('.png', '.webp');
+            }}
           />
 
-          {/* Overlay Gradient for text readability (fades out) */}
+          {/* Overlay Gradient */}
           <div
             className={cn(
-              'absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent transition-opacity duration-500',
+              'absolute inset-0 transition-opacity duration-500',
               active ? 'opacity-0' : 'opacity-100'
             )}
+            style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)' }}
           />
 
-          {/* Initial Text Overlay (fades out) */}
+          {/* Name + Role Overlay */}
           <div
             className={cn(
-              'absolute right-0 bottom-0 left-0 transform p-8 transition-all duration-500',
+              'absolute right-0 bottom-0 left-0 transform p-6 transition-all duration-500',
               active ? 'translate-y-4 opacity-0' : 'translate-y-0 opacity-100'
             )}
           >
-            <h2 className="mb-1 text-3xl font-bold text-white">{name}</h2>
-            <p className="font-medium text-white/90">{role}</p>
+            <h2 className="mb-1 text-2xl font-bold text-white">{name}</h2>
+            <p className="font-mono text-sm font-semibold" style={{ color: '#fb923c' }}>{role}</p>
           </div>
 
           {/* Particle Grid */}

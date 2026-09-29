@@ -122,7 +122,7 @@ const structuredData = {
       (function() {
         const savedTheme = localStorage.getItem('theme');
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const activeTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        const activeTheme = 'dark';
         document.documentElement.classList.toggle('dark', activeTheme === 'dark');
         document.documentElement.setAttribute('data-theme', activeTheme);
       })();
@@ -131,7 +131,15 @@ const structuredData = {
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
-  <body class="tech-grid-bg antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">`n    <LiquidWave client:load className="fixed inset-0 z-[-1]" />
+  <body class="bg-[#08090c] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
+    <!-- LiquidWave WebGL Background -->
+    <LiquidWave
+      client:load
+      className="fixed inset-0 z-0 pointer-events-none"
+      color1="orange"
+      color2="darkorange"
+      color3="orangered"
+    />
     
     <!-- A11y Skip Link -->
     <a 

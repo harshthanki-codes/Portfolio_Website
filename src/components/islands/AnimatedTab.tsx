@@ -27,12 +27,9 @@ export const AnimatedTabs: React.FC<AnimatedTabsProps> = ({
   return (
     <div
       className={cn(
-        'flex flex-row flex-nowrap items-center justify-center gap-1 rounded-full p-1 sm:gap-0 sm:p-1.5',
-        'bg-white/60 dark:bg-zinc-900/60', // Light/Dark glass effect
-        'border border-black/5 dark:border-white/10', // Border adaptation
-        'backdrop-blur-xl', // Strong glass effect
-        'shadow-2xl', // Container shadow
-        'max-w-full', // Ensure it doesn't overflow
+        'flex flex-row flex-nowrap items-center justify-center gap-1 rounded-full p-1',
+        'bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)]',
+        'backdrop-blur-xl shadow-md max-w-full',
         className
       )}
     >
@@ -48,20 +45,20 @@ export const AnimatedTabs: React.FC<AnimatedTabsProps> = ({
             onMouseLeave={() => setHoveredTab(null)}
             whileTap={{ scale: 0.95 }}
             className={cn(
-              'relative z-10 cursor-pointer rounded-full px-3 py-2 text-xs font-semibold whitespace-nowrap transition-colors duration-200 outline-none sm:px-4 sm:py-2.5 sm:text-sm md:px-6',
+              'relative z-10 cursor-pointer rounded-full px-3 py-1.5 text-[10px] uppercase tracking-wider font-mono font-semibold whitespace-nowrap transition-colors duration-200 outline-none sm:px-4 sm:py-2 md:px-5',
               isActive
-                ? 'text-white dark:text-black' // Active text
-                : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-300' // Inactive text
+                ? 'text-[var(--bg-app)]' // Active text (dark)
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]' // Inactive text
             )}
             style={{
               WebkitTapHighlightColor: 'transparent',
             }}
           >
-            {/* Active Pill with "Transferring" Shadow */}
+            {/* Active Pill */}
             {isActive && (
               <motion.div
                 layoutId="active-pill"
-                className="absolute inset-0 z-[-1] rounded-full bg-black shadow-xl dark:bg-white dark:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                className="absolute inset-0 z-[-1] rounded-full bg-[var(--accent)] shadow-[0_0_10px_var(--accent-glow)]"
                 transition={{
                   type: 'spring',
                   stiffness: 320,
@@ -75,7 +72,7 @@ export const AnimatedTabs: React.FC<AnimatedTabsProps> = ({
             {isHovered && !isActive && (
               <motion.div
                 layoutId="hover-pill"
-                className="absolute inset-0 z-[-1] rounded-full bg-black/5 dark:bg-white/5"
+                className="absolute inset-0 z-[-1] rounded-full bg-[var(--bg-surface)]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
