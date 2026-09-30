@@ -117,16 +117,7 @@ const structuredData = {
       rel="stylesheet" 
     />
 
-    <!-- Theme Initialization Script (Prevents Flash of Wrong Theme) -->
-    <script is:inline>
-      (function() {
-        const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const activeTheme = 'dark';
-        document.documentElement.classList.toggle('dark', activeTheme === 'dark');
-        document.documentElement.setAttribute('data-theme', activeTheme);
-      })();
-    </script>
+    <!-- Theme Initialization Script Removed (Natively Dark) -->
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
@@ -137,10 +128,10 @@ const structuredData = {
     <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;overflow:hidden;">
       <LiquidWave
         client:load
-        color1="orange"
-        color2="darkorange"
-        color3="orangered"
-        style={{ width: '100vw', height: '100vh', display: 'block' }}
+        color1="#1c0f0a"
+        color2="#2d1306"
+        color3="#3f1a07"
+        style={{ width: '100vw', height: '100vh', display: 'block', opacity: 0.6 }}
       />
     </div>
     

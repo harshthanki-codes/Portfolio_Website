@@ -2,36 +2,36 @@
 
 @layer base {
   :root {
-    /* High-End Light Theme: Crisp Solar Editorial */
-    --bg-app: #fcfcfb;
-    --bg-surface: #ffffff;
-    --bg-surface-raised: #f7f7f4;
-    --bg-surface-elevated: #ffffff;
-    --bg-surface-overlay: rgba(252, 252, 251, 0.82);
+    /* World-Class Dark Theme (Forced Everywhere): Obsidian Velvet & Solar Ember */
+    --bg-app: #08090c;
+    --bg-surface: #0f1116;
+    --bg-surface-raised: #151820;
+    --bg-surface-elevated: #1c202b;
+    --bg-surface-overlay: rgba(8, 9, 12, 0.82);
 
-    --text-primary: #0f1117;
-    --text-secondary: #4b5262;
-    --text-tertiary: #7e8699;
-    --text-disabled: #b5bcc9;
+    --text-primary: #f5f6f9;
+    --text-secondary: #a3a9be;
+    --text-tertiary: #6b738c;
+    --text-disabled: #3d4356;
 
-    --border-subtle: rgba(15, 17, 23, 0.08);
-    --border-strong: rgba(15, 17, 23, 0.16);
-    --border-contrast: #0f1117;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.18);
+    --border-contrast: #f5f6f9;
 
-    /* Vibrant Solar Orange / Tangerine & Amber Palette */
-    --accent: #ff5500;
-    --accent-hover: #e04400;
-    --accent-active: #c43800;
-    --accent-subtle: rgba(255, 85, 0, 0.08);
-    --accent-border: rgba(255, 85, 0, 0.22);
+    /* Ultra-Crisp Solar Flame Accent */
+    --accent: #ff6600;
+    --accent-hover: #ff7a1a;
+    --accent-active: #e65500;
+    --accent-subtle: rgba(255, 102, 0, 0.12);
+    --accent-border: rgba(255, 102, 0, 0.32);
     --accent-text: #ffffff;
-    --accent-gradient: linear-gradient(135deg, #ff5500 0%, #ff8800 50%, #ffaa00 100%);
-    --accent-glow: rgba(255, 85, 0, 0.25);
+    --accent-gradient: linear-gradient(135deg, #ff6600 0%, #ff9400 60%, #ffb733 100%);
+    --accent-glow: rgba(255, 102, 0, 0.35);
 
     /* Diagnostics & States */
-    --status-active: #ff5500;
-    --status-testing: #e68a00;
-    --status-complete: #00aa66;
+    --status-active: #ff6600;
+    --status-testing: #f59e0b;
+    --status-complete: #10b981;
 
     /* Typography */
     --font-serif: "Newsreader", Georgia, serif;
