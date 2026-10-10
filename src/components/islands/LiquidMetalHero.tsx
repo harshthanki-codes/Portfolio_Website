@@ -51,29 +51,29 @@ export default function LiquidMetalHero() {
           I build <strong className="text-white font-semibold">custom LLM automation pipelines</strong>, mission-critical ERP &amp; CRM architectures, and resilient Python backend systems. Engineered for founders and tier-1 teams requiring measurable ROI, zero data-leakage, and airgapped reliability.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto mt-4">
-          <a href="#solutions" className="px-8 py-3.5 rounded-full bg-white text-black font-bold tracking-wide hover:bg-gray-200 transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,100,0,0.3)]">
+        <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto mt-8">
+          <a href="#solutions" className="px-8 py-3.5 rounded-full bg-white text-black font-bold tracking-wide hover:bg-gray-200 transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,100,0,0.4)]">
             Explore Solutions &rarr;
           </a>
-          <a href="#scoper" className="px-8 py-3.5 rounded-full bg-black/40 backdrop-blur-md text-white font-semibold border border-white/20 hover:bg-black/60 hover:border-white/40 transition-colors">
+          <a href="#scoper" className="px-8 py-3.5 rounded-full bg-black/60 backdrop-blur-xl text-white font-semibold border border-white/30 hover:bg-black/80 hover:border-white/50 transition-colors">
             Scope Project
           </a>
         </div>
       </div>
 
       {/* Feature bottom bar */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 pb-8 pointer-events-none mt-auto">
-        <div className="bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 md:p-6 flex flex-col sm:flex-row justify-between items-center text-sm md:text-base text-gray-300 gap-4 shadow-2xl">
-          <div className="font-medium text-white flex items-center gap-2">
-             <span className="text-orange-500">⚡</span> Live 7-Tier Fallback
+      <div className="relative z-20 w-full max-w-5xl mx-auto px-4 pb-12 pointer-events-none mt-auto">
+        <div className="bg-black/60 backdrop-blur-2xl border border-white/20 rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row justify-between items-center text-sm md:text-base text-gray-200 gap-4 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
+          <div className="font-semibold text-white flex items-center gap-3">
+             <span className="text-orange-400 text-lg">⚡</span> Live 7-Tier Fallback
           </div>
-          <div className="hidden sm:block text-gray-600">•</div>
-          <div className="font-medium text-white flex items-center gap-2">
-             <span className="text-orange-500">🔒</span> Zero Data Leakage
+          <div className="hidden sm:block text-gray-500">•</div>
+          <div className="font-semibold text-white flex items-center gap-3">
+             <span className="text-orange-400 text-lg">🔒</span> Zero Data Leakage
           </div>
-          <div className="hidden sm:block text-gray-600">•</div>
-          <div className="font-medium text-white flex items-center gap-2">
-             <span className="text-orange-500">📈</span> Measurable ROI
+          <div className="hidden sm:block text-gray-500">•</div>
+          <div className="font-semibold text-white flex items-center gap-3">
+             <span className="text-orange-400 text-lg">📈</span> Measurable ROI
           </div>
         </div>
       </div>
