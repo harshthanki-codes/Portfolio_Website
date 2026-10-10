@@ -4,7 +4,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial, Environment, ContactShadows
 
 export default function LiquidMetalHero() {
   return (
-    <div className="relative w-full h-[100vh] bg-[#08090c] overflow-hidden flex flex-col items-center justify-center font-sans">
+    <div className="relative w-full min-h-screen bg-[#08090c] overflow-hidden flex flex-col font-sans pt-20">
       
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
@@ -12,7 +12,7 @@ export default function LiquidMetalHero() {
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 10, 10]} intensity={1} />
           <Suspense fallback={null}>
-            <Sphere args={[1, 100, 100]} scale={1.2}>
+            <Sphere args={[1, 100, 100]} scale={1.1}>
               <MeshDistortMaterial
                 color="#ffffff"
                 attach="material"
@@ -32,7 +32,7 @@ export default function LiquidMetalHero() {
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto pointer-events-none">
+      <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto pointer-events-none pb-32">
         
         {/* Availability Badge */}
         <div className="mb-6 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
@@ -51,7 +51,7 @@ export default function LiquidMetalHero() {
           I build <strong className="text-white font-semibold">custom LLM automation pipelines</strong>, mission-critical ERP &amp; CRM architectures, and resilient Python backend systems. Engineered for founders and tier-1 teams requiring measurable ROI, zero data-leakage, and airgapped reliability.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto">
+        <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto mt-4">
           <a href="#solutions" className="px-8 py-3.5 rounded-full bg-white text-black font-bold tracking-wide hover:bg-gray-200 transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,100,0,0.3)]">
             Explore Solutions &rarr;
           </a>
@@ -62,7 +62,7 @@ export default function LiquidMetalHero() {
       </div>
 
       {/* Feature bottom bar */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 w-full max-w-4xl px-4 pointer-events-none">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 pb-8 pointer-events-none mt-auto">
         <div className="bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 md:p-6 flex flex-col sm:flex-row justify-between items-center text-sm md:text-base text-gray-300 gap-4 shadow-2xl">
           <div className="font-medium text-white flex items-center gap-2">
              <span className="text-orange-500">⚡</span> Live 7-Tier Fallback
