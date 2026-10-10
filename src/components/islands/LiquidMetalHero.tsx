@@ -4,35 +4,13 @@ import { OrbitControls, Sphere, MeshDistortMaterial, Environment, ContactShadows
 
 export default function LiquidMetalHero() {
   return (
-    <div className="relative w-full min-h-screen bg-[#08090c] overflow-hidden flex flex-col font-sans pt-20">
+    <div className="relative w-full min-h-screen bg-transparent overflow-hidden flex flex-col font-sans pt-20">
       
-      {/* 3D Background */}
-      <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 3] }}>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[10, 10, 10]} intensity={1} />
-          <Suspense fallback={null}>
-            <Sphere args={[1, 100, 100]} scale={1.1}>
-              <MeshDistortMaterial
-                color="#ffffff"
-                attach="material"
-                distort={0.4}
-                speed={2}
-                metalness={1}
-                roughness={0.1}
-                clearcoat={1}
-                clearcoatRoughness={0.1}
-              />
-            </Sphere>
-            <Environment preset="city" />
-            <ContactShadows position={[0, -1.5, 0]} opacity={0.5} scale={10} blur={1.5} far={1.5} />
-          </Suspense>
-          <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
-        </Canvas>
-      </div>
+      {/* Subtle radial gradient overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80 z-0 pointer-events-none"></div>
 
       {/* Content overlay */}
-      <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto pointer-events-none pb-32">
+      <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto pointer-events-none pb-32 mt-10">
         
         {/* Availability Badge */}
         <div className="mb-6 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
