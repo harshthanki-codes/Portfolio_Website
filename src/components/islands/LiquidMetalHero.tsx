@@ -1,6 +1,4 @@
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial, Environment, ContactShadows } from '@react-three/drei';
+import React from 'react';
 
 export default function LiquidMetalHero() {
   return (

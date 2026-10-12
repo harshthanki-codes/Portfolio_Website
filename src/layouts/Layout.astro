@@ -1,6 +1,6 @@
 ---
 
-import LiquidWave from '../components/islands/LiquidWave';
+import PredictiveArcBackground from '../components/islands/PredictiveArcBackground';
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
@@ -124,14 +124,17 @@ const structuredData = {
   </head>
   <body class="bg-[#08090c] text-[var(--text-primary)] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
 
-    <!-- LiquidWave WebGL Full-Viewport Background -->
-    <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;overflow:hidden;opacity:0.85;">
-      <LiquidWave
+    <!-- ThreeUI Predictive Arc Background -->
+    <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;overflow:hidden;">
+      <PredictiveArcBackground
         client:load
-        color1="#ff6600"
-        color2="#ffaa00"
-        color3="#ff3300"
-        style={{ width: '100vw', height: '100vh', display: 'block' }}
+        speed={1.0}
+        spacing={5}
+        dotSize={5.5}
+        archHeight={0.65}
+        thickness={1.1}
+        brightness={1.0}
+        mode="dark"
       />
     </div>
     
