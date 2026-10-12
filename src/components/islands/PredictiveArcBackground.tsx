@@ -90,15 +90,16 @@ export default function PredictiveArcBackground({
     window.addEventListener('mousemove', handleMouseMove, { passive: true });
 
     const handleResize = () => {
-      const rect = container.getBoundingClientRect();
-      width = Math.max(1, Math.floor(rect.width));
-      height = Math.max(1, Math.floor(rect.height));
+      width = Math.max(1, window.innerWidth);
+      height = Math.max(1, window.innerHeight);
 
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
+
+    window.addEventListener('resize', handleResize);
 
     const render = () => {
       const opt = optionsRef.current;
@@ -226,6 +227,7 @@ export default function PredictiveArcBackground({
 
     return () => {
       if (animId) cancelAnimationFrame(animId);
+      window.removeEventListener('resize', handleResize);
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
       window.removeEventListener('mousemove', handleMouseMove);
@@ -236,10 +238,19 @@ export default function PredictiveArcBackground({
   return (
     <div
       ref={containerRef}
-      className={`relative w-full h-full overflow-hidden ${className}`}
       style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        pointerEvents: 'none',
+        zIndex: 0,
+        overflow: 'hidden',
+        backgroundColor: '#030304',
         filter: hue || saturation !== 1 ? `hue-rotate(${hue}deg) saturate(${saturation})` : undefined,
       }}
+      className={className}
       aria-hidden="true"
     >
       <canvas
@@ -248,8 +259,8 @@ export default function PredictiveArcBackground({
           position: 'absolute',
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
+          width: '100vw',
+          height: '100vh',
           display: 'block',
         }}
       />

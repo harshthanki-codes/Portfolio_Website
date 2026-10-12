@@ -90,6 +90,11 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Anti-Caching Headers for Instant CDN / Browser Invalidation -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <!-- Canonical & Basic Metadata -->
     <title>{title}</title>
     <meta name="description" content={description} />
