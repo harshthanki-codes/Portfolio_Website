@@ -118,7 +118,7 @@ export default function PredictiveArcBackground({
       // Interactive mouse offset gently shifts the arc apex
       const mouseOffset = opt.interactive ? (currentMouseX - 0.5) * (width * 0.15) : 0;
       const centerX = width / 2 + mouseOffset;
-      const apexY = height * 0.32; // arch apex 32% from top
+      const apexY = height * 0.22; // arch apex elevated to 22% from top, eliminating upper void
       const spreadX = width * 1.45;
       const curveR = height * opt.archHeight;
 
