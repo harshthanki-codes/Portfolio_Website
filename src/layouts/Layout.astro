@@ -127,7 +127,7 @@ const structuredData = {
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
-  <body class="bg-[#08090c] text-[var(--text-primary)] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
+  <body class="bg-[#030304] text-[var(--text-primary)] antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)]">
 
     <!-- ThreeUI Predictive Arc Background -->
     <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;overflow:hidden;">
@@ -153,7 +153,7 @@ const structuredData = {
 
     { !hideLayoutNavFooter && <Navbar /> }
 
-    <main id="main-content" class={hideLayoutNavFooter ? "w-screen h-screen overflow-hidden" : "min-h-screen"}>
+    <main id="main-content" class={hideLayoutNavFooter ? "w-screen h-screen overflow-hidden relative z-10" : "min-h-screen relative z-10"}>
       <slot />
     </main>
 

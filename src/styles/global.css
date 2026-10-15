@@ -62,20 +62,20 @@
 
   [data-theme="dark"],
   .dark {
-    /* World-Class Dark Theme: Obsidian Velvet & Solar Ember */
-    --bg-app: #08090c;
-    --bg-surface: #0f1116;
-    --bg-surface-raised: #151820;
-    --bg-surface-elevated: #1c202b;
-    --bg-surface-overlay: rgba(8, 9, 12, 0.82);
+    /* World-Class Dark Theme: Deep Obsidian Glass & Ultraviolet / Solar Accents */
+    --bg-app: transparent;
+    --bg-surface: rgba(10, 11, 16, 0.65);
+    --bg-surface-raised: rgba(18, 20, 29, 0.75);
+    --bg-surface-elevated: rgba(26, 29, 42, 0.85);
+    --bg-surface-overlay: rgba(3, 3, 4, 0.75);
 
     --text-primary: #f5f6f9;
-    --text-secondary: #a3a9be;
+    --text-secondary: #9ea4b8;
     --text-tertiary: #6b738c;
     --text-disabled: #3d4356;
 
     --border-subtle: rgba(255, 255, 255, 0.08);
-    --border-strong: rgba(255, 255, 255, 0.18);
+    --border-strong: rgba(255, 255, 255, 0.16);
     --border-contrast: #f5f6f9;
 
     /* Ultra-Crisp Solar Flame Accent */
@@ -94,7 +94,7 @@
   }
 
   html {
-    background-color: #08090c !important;
+    background-color: #030304 !important;
     color: var(--text-primary);
     font-family: var(--font-sans);
     scroll-behavior: smooth;
@@ -103,7 +103,7 @@
   }
 
   body {
-    background-color: #08090c;
+    background-color: transparent;
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
@@ -111,15 +111,14 @@
     position: relative;
   }
 
-  /* Content sits above LiquidWave z-index:0 layer */
+  /* Content sits above background z-index:0 layer */
   header, main, footer {
     position: relative;
     z-index: 10;
   }
 
-  /* LiquidWave canvas always stays at z-index:0 */
   .tech-grid-bg {
-    background-color: #08090c;
+    background-color: transparent;
   }
 
   /* Glowing Text Gradient */
@@ -131,14 +130,16 @@
 
   /* Glass Card */
   .glass-card {
-    background: var(--bg-surface);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border-subtle);
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    background: rgba(12, 14, 22, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     transition: all 0.25s var(--ease-out-quad);
   }
   .glass-card:hover {
     border-color: var(--accent-border);
+    background: rgba(18, 21, 32, 0.75);
     box-shadow: 0 12px 32px -4px var(--accent-glow);
     transform: translateY(-2px);
   }

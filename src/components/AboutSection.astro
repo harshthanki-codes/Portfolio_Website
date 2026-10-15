@@ -20,7 +20,7 @@ const PRINCIPLES = [
 ---
 
 
-<section id="about" class="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)] relative" aria-labelledby="about-heading">
+<section id="about" class="py-[var(--space-section-y)] border-t border-white/[0.08] bg-transparent relative" aria-labelledby="about-heading">
   <div class="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
@@ -50,15 +50,15 @@ const PRINCIPLES = [
         </div>
 
         <!-- 3 Core Principles Cards with Right-Side Metric Badges -->
-        <div class="pt-4 space-y-4 border-t border-[var(--border-subtle)]">
+        <div class="pt-4 space-y-4 border-t border-white/[0.08]">
           {PRINCIPLES.map((principle, idx) => (
-            <div key={principle.title} class="p-5 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-md)] hover:border-[var(--accent-border)] transition-colors shadow-xs">
-              <div class="flex items-center justify-between gap-3 mb-2 pb-1 border-b border-[var(--border-subtle)]/50">
+            <div key={principle.title} class="p-5 border border-white/[0.08] bg-[#0c0e16]/65 backdrop-blur-xl rounded-[var(--radius-md)] hover:border-orange-500/40 hover:bg-[#121522]/80 transition-all shadow-md group">
+              <div class="flex items-center justify-between gap-3 mb-2 pb-1 border-b border-white/[0.06]">
                 <div class="font-mono text-[var(--text-xs)] text-[var(--accent)] font-bold flex items-center gap-2">
-                  <span>0{idx + 1} //</span>
-                  <span>{principle.title}</span>
+                  <span class="text-white/40">0{idx + 1} //</span>
+                  <span class="group-hover:text-white transition-colors">{principle.title}</span>
                 </div>
-                <span class="font-mono text-[10px] text-[var(--accent)] bg-[var(--bg-surface)] px-2.5 py-0.5 rounded-[var(--radius-sm)] border border-[var(--border-subtle)] font-semibold shrink-0">
+                <span class="font-mono text-[10px] text-orange-400 bg-orange-500/10 px-2.5 py-0.5 rounded-[var(--radius-sm)] border border-orange-500/20 font-semibold shrink-0">
                   {principle.metric}
                 </span>
               </div>
@@ -75,13 +75,13 @@ const PRINCIPLES = [
       <div class="lg:col-span-5 space-y-6">
         
         <!-- World-Class Executive Portrait Card -->
-        <div class="p-6 sm:p-7 border border-[var(--border-subtle)] bg-[var(--bg-app)] rounded-[var(--radius-lg)] space-y-6 shadow-xl relative overflow-hidden group">
+        <div class="p-6 sm:p-7 border border-white/[0.1] bg-[#0c0e16]/75 backdrop-blur-xl rounded-[var(--radius-lg)] space-y-6 shadow-2xl relative overflow-hidden group hover:border-orange-500/30 transition-all">
           <div class="absolute top-0 left-0 right-0 h-1 bg-[var(--accent-gradient)]"></div>
           
           <!-- Prominent Glowing Circle Portrait -->
           <div class="flex flex-col items-center text-center space-y-4 pt-2">
             <div class="relative">
-              <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden ring-4 ring-[var(--accent)] ring-offset-4 ring-offset-[var(--bg-app)] shadow-[0_0_40px_var(--accent-glow)] bg-neutral-900 group-hover:scale-105 transition-transform duration-500">
+              <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden ring-4 ring-orange-500/70 ring-offset-4 ring-offset-[#0c0e16] shadow-[0_0_40px_rgba(249,115,22,0.35)] bg-neutral-900 group-hover:scale-105 transition-transform duration-500">
                 <img 
                   src="/Portfolio_Website/images/harsh-thanki.png" 
                   alt="Harsh Thanki — Python Developer & AI/ML Engineer" 
@@ -93,7 +93,7 @@ const PRINCIPLES = [
                 />
               </div>
               <!-- Online status dot -->
-              <span class="absolute bottom-2 right-3 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--bg-app)] ring-2 ring-[var(--bg-app)]">
+              <span class="absolute bottom-2 right-3 flex h-5 w-5 items-center justify-center rounded-full bg-[#0c0e16] ring-2 ring-[#0c0e16]">
                 <span class="relative flex h-3.5 w-3.5">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--status-complete)] opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-[var(--status-complete)]"></span>
@@ -106,7 +106,7 @@ const PRINCIPLES = [
               <div class="text-xs font-mono text-[var(--accent)] font-semibold uppercase tracking-wider">
                 Python Developer &middot; AI/ML Engineer
               </div>
-              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/40 border border-white/10 text-[11px] font-mono text-[var(--text-secondary)] mt-1">
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono text-[var(--text-secondary)] mt-1">
                 <span class="w-2 h-2 rounded-full bg-[var(--status-complete)]"></span>
                 <span>Verified Systems Operator</span>
               </div>
@@ -115,34 +115,34 @@ const PRINCIPLES = [
 
           <!-- Fact Sheet Details -->
           <div class="space-y-3 font-mono text-[var(--text-xs)]">
-            <div class="flex items-center justify-between pb-2 border-b border-[var(--border-subtle)] text-[var(--text-primary)] font-bold">
+            <div class="flex items-center justify-between pb-2 border-b border-white/[0.08] text-[var(--text-primary)] font-bold">
               <span>// EXECUTIVE TELEMETRY</span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] border border-[var(--accent-border)] text-[10px]">
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/30 text-[10px]">
                 ACTIVE OPERATOR
               </span>
             </div>
 
-            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+            <div class="p-2.5 bg-white/[0.03] border border-white/[0.06] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Location &amp; Timezone</div>
               <div class="text-[var(--text-primary)] font-bold mt-0.5">Ahmedabad, Gujarat, India 🇮🇳 (UTC+5:30)</div>
             </div>
 
-            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+            <div class="p-2.5 bg-white/[0.03] border border-white/[0.06] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Current Focus</div>
               <div class="text-[var(--text-primary)] font-bold mt-0.5">Custom AI Automation, QLoRA &amp; Distributed Backend Pipelines</div>
             </div>
 
-            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+            <div class="p-2.5 bg-white/[0.03] border border-white/[0.06] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Academic Credentials</div>
               <div class="text-[var(--text-primary)] font-bold mt-0.5">MCA (Alliance Univ) &middot; AI/ML Minor (IIT Mandi)</div>
             </div>
 
-            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+            <div class="p-2.5 bg-white/[0.03] border border-white/[0.06] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Primary Core Stack</div>
               <div class="text-[var(--text-primary)] font-bold mt-0.5">Python, PyTorch, FastAPI, Enterprise ERP &amp; ORMs, PostgreSQL, Celery, Redis</div>
             </div>
 
-            <div class="p-2.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)]">
+            <div class="p-2.5 bg-white/[0.03] border border-white/[0.06] rounded-[var(--radius-sm)]">
               <div class="text-[var(--text-tertiary)] uppercase text-[10px] font-semibold">Code Repositories</div>
               <a 
                 href="https://github.com/harshthanki-codes" 
@@ -155,7 +155,7 @@ const PRINCIPLES = [
             </div>
           </div>
 
-          <div class="pt-2 border-t border-[var(--border-subtle)] text-[11px] font-mono text-[var(--text-tertiary)] leading-relaxed">
+          <div class="pt-2 border-t border-white/[0.08] text-[11px] font-mono text-[var(--text-tertiary)] leading-relaxed">
             Verified production systems operator. Open for technical discussions, high-impact consulting, and strategic engineering contracts.
           </div>
         </div>

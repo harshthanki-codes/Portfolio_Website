@@ -15,7 +15,12 @@ import {
   GitBranch,
   Sparkles,
   Layers,
-  BarChart3
+  BarChart3,
+  AlertTriangle,
+  Lock,
+  Workflow,
+  Eye,
+  Check
 } from 'lucide-react';
 
 const CATEGORIES: ('All' | ProjectCategory)[] = [
@@ -29,10 +34,17 @@ const CATEGORIES: ('All' | ProjectCategory)[] = [
   'LegalTech'
 ];
 
+type PhaseTab = 'problem' | 'constraint' | 'architecture' | 'outcomes' | 'all';
+
 export const ProjectsSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<'All' | ProjectCategory>('All');
   const [sortBy, setSortBy] = useState<'status' | 'category'>('status');
   const [expandedProjectId, setExpandedProjectId] = useState<string | null>('erp-llm-foundation');
+  
+  // Independent active phase state per project for clean tabbed navigation
+  const [activePhases, setActivePhases] = useState<Record<string, PhaseTab>>({
+    'erp-llm-foundation': 'architecture'
+  });
 
   const filteredAndSortedProjects = useMemo(() => {
     let result = [...PROJECTS_DATA];
@@ -51,69 +63,81 @@ export const ProjectsSection: React.FC = () => {
   }, [selectedCategory, sortBy]);
 
   const toggleExpand = (id: string) => {
-    setExpandedProjectId(prev => (prev === id ? null : id));
+    setExpandedProjectId(prev => {
+      const next = prev === id ? null : id;
+      if (next && !activePhases[id]) {
+        setActivePhases(curr => ({ ...curr, [id]: 'problem' }));
+      }
+      return next;
+    });
+  };
+
+  const setPhaseForProject = (projectId: string, phase: PhaseTab) => {
+    setActivePhases(prev => ({
+      ...prev,
+      [projectId]: phase
+    }));
   };
 
   const getStatusBadgeStyle = (status: ProjectStatus) => {
     switch (status) {
       case 'Active':
-        return 'bg-[var(--accent-subtle)] text-[var(--accent)] border-[var(--accent-border)] shadow-[0_0_10px_var(--accent-glow)] font-bold';
+        return 'bg-orange-500/15 text-orange-400 border-orange-500/30 shadow-[0_0_12px_rgba(255,102,0,0.25)] font-bold';
       case 'Field Testing':
-        return 'bg-[rgba(245,158,11,0.12)] text-[var(--status-testing)] border-[rgba(245,158,11,0.3)] font-bold';
+        return 'bg-amber-500/15 text-amber-400 border-amber-500/30 font-bold';
       case 'Complete':
-        return 'bg-[rgba(16,185,129,0.12)] text-[var(--status-complete)] border-[rgba(16,185,129,0.3)] font-bold';
+        return 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 font-bold';
       default:
-        return 'bg-[var(--bg-surface-raised)] text-[var(--text-secondary)] border-[var(--border-subtle)]';
+        return 'bg-white/[0.05] text-gray-400 border-white/[0.08]';
     }
   };
 
   return (
-    <section id="projects" className="py-[var(--space-section-y)] border-t border-[var(--border-subtle)] relative" aria-labelledby="projects-heading">
+    <section id="projects" className="py-[var(--space-section-y)] border-t border-white/[0.08] relative bg-transparent" aria-labelledby="projects-heading">
       <div className="max-w-[var(--container-max-w)] mx-auto px-[var(--space-gutter)]">
         
         {/* Section Header with Solar Glow Accent & Telemetry Hub */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
           <div>
-            <div className="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
-              <span className="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_8px_var(--accent)]"></span>
+            <div className="flex items-center gap-2 text-orange-400 font-mono text-xs uppercase tracking-wider mb-2">
+              <span className="w-2 h-2 bg-orange-400 rounded-full shadow-[0_0_8px_#ff6600]" />
               <span className="font-semibold">02 // Architectural Dossier</span>
             </div>
-            <h2 id="projects-heading" className="text-[var(--text-xl)] font-serif font-normal tracking-tight text-[var(--text-primary)]">
+            <h2 id="projects-heading" className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight text-white">
               Production Architecture &amp; <span className="gradient-text-solar font-serif italic">Case Studies</span>
             </h2>
-            <p className="text-[var(--text-sm)] text-[var(--text-secondary)] mt-1.5 max-w-xl font-sans">
+            <p className="text-sm sm:text-base text-gray-400 mt-2 max-w-xl font-sans">
               Real problem statements, strict operational constraints, verified failover DAGs, and empirical performance benchmarks.
             </p>
           </div>
 
           {/* Right Side: Architectural Telemetry Metrics & Sort Controls */}
           <div className="flex flex-wrap items-center gap-2.5 lg:justify-end shrink-0">
-            <div className="px-3 py-1.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] font-mono shadow-xs">
-              <div className="text-[9px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">Systems Delivered</div>
-              <div className="text-[var(--text-xs)] font-bold text-[var(--text-primary)] flex items-center gap-1.5 mt-0.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[var(--status-complete)]"></span>
+            <div className="px-3.5 py-2 rounded-xl bg-[#0c0e16]/70 backdrop-blur-xl border border-white/[0.08] font-mono shadow-sm">
+              <div className="text-[9px] text-gray-400 uppercase tracking-wider font-semibold">Systems Delivered</div>
+              <div className="text-xs font-bold text-white flex items-center gap-1.5 mt-0.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span>7 Core Architectures</span>
               </div>
             </div>
 
-            <div className="px-3 py-1.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] font-mono shadow-xs">
-              <div className="text-[9px] text-[var(--text-tertiary)] uppercase tracking-wider font-semibold">Resilience SLA</div>
-              <div className="text-[var(--text-xs)] font-bold text-[var(--text-primary)] flex items-center gap-1.5 mt-0.5">
-                <span className="text-[var(--accent)]">0%</span>
-                <span className="text-[var(--text-secondary)]">Transaction Loss</span>
+            <div className="px-3.5 py-2 rounded-xl bg-[#0c0e16]/70 backdrop-blur-xl border border-white/[0.08] font-mono shadow-sm">
+              <div className="text-[9px] text-gray-400 uppercase tracking-wider font-semibold">Resilience SLA</div>
+              <div className="text-xs font-bold text-white flex items-center gap-1.5 mt-0.5">
+                <span className="text-orange-400 font-bold">0%</span>
+                <span className="text-gray-300">Transaction Loss</span>
               </div>
             </div>
 
-            {/* Sort Controller */}
-            <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] shrink-0 ml-1">
-              <div className="inline-flex border border-[var(--border-subtle)] p-1 bg-[var(--bg-surface-raised)] rounded-full shadow-xs">
+            <div className="flex items-center gap-2 font-mono text-xs shrink-0 ml-1">
+              <div className="inline-flex border border-white/[0.08] p-1 bg-[#0c0e16]/70 backdrop-blur-xl rounded-full shadow-sm">
                 <button
                   type="button"
                   onClick={() => setSortBy('status')}
-                  className={`touch-target px-3 py-1 text-[var(--text-xs)] rounded-full transition-all ${
-                    sortBy === 'status'
-                      ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  className={`touch-target px-3 py-1 text-xs rounded-full transition-all font-semibold ${
+                    sortBy === 'status' 
+                      ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-xs' 
+                      : 'text-gray-400 hover:text-white'
                   }`}
                   aria-pressed={sortBy === 'status'}
                 >
@@ -122,10 +146,10 @@ export const ProjectsSection: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setSortBy('category')}
-                  className={`touch-target px-3 py-1 text-[var(--text-xs)] rounded-full transition-all ${
-                    sortBy === 'category'
-                      ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] font-semibold shadow-xs'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  className={`touch-target px-3 py-1 text-xs rounded-full transition-all font-semibold ${
+                    sortBy === 'category' 
+                      ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-xs' 
+                      : 'text-gray-400 hover:text-white'
                   }`}
                   aria-pressed={sortBy === 'category'}
                 >
@@ -136,18 +160,18 @@ export const ProjectsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Filter Bar with Smooth Rounded Pills */}
+        {/* Category Filter Chips */}
         <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-8 no-scrollbar" role="toolbar" aria-label="Project category filters">
-          <Filter className="w-3.5 h-3.5 text-[var(--text-tertiary)] shrink-0 mr-1" aria-hidden="true" />
+          <Filter className="w-3.5 h-3.5 text-gray-500 shrink-0 mr-1" aria-hidden="true" />
           {CATEGORIES.map(category => (
             <button
               key={category}
               type="button"
               onClick={() => setSelectedCategory(category)}
-              className={`touch-target whitespace-nowrap px-4 py-1.5 font-mono text-[var(--text-xs)] rounded-full border transition-all ${
+              className={`touch-target whitespace-nowrap px-4 py-1.5 font-mono text-xs rounded-full border transition-all ${
                 selectedCategory === category
-                  ? 'border-[var(--accent)] bg-[var(--accent-subtle)] text-[var(--accent)] font-bold shadow-[0_0_12px_var(--accent-glow)]'
-                  : 'border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)]'
+                  ? 'border-orange-500 bg-orange-500/15 text-orange-400 font-bold shadow-[0_0_12px_rgba(255,102,0,0.3)]'
+                  : 'border-white/[0.08] bg-[#0c0e16]/60 text-gray-400 hover:border-white/20 hover:text-white backdrop-blur-md'
               }`}
               aria-pressed={selectedCategory === category}
             >
@@ -160,14 +184,15 @@ export const ProjectsSection: React.FC = () => {
         <div className="space-y-6">
           {filteredAndSortedProjects.map((project, idx) => {
             const isExpanded = expandedProjectId === project.id;
+            const currentPhase = activePhases[project.id] || 'problem';
 
             return (
               <article
                 key={project.id}
-                className={`border rounded-[var(--radius-lg)] transition-all duration-300 bg-[var(--bg-surface)] overflow-hidden ${
+                className={`border rounded-2xl transition-all duration-300 bg-[#0c0e16]/70 backdrop-blur-xl overflow-hidden ${
                   isExpanded
-                    ? 'border-[var(--accent)] shadow-[0_8px_32px_-4px_var(--accent-glow)] ring-1 ring-[var(--accent-border)]'
-                    : 'border-[var(--border-subtle)] hover:border-[var(--border-strong)] shadow-xs'
+                    ? 'border-orange-500/60 shadow-[0_12px_40px_rgba(255,102,0,0.15)] ring-1 ring-orange-500/30'
+                    : 'border-white/[0.08] hover:border-white/20 shadow-sm hover:bg-[#101320]/80'
                 }`}
               >
                 {/* Header Row (Clickable) */}
@@ -183,46 +208,46 @@ export const ProjectsSection: React.FC = () => {
                   tabIndex={0}
                   aria-expanded={isExpanded}
                   aria-controls={`case-study-${project.id}`}
-                  className="p-6 sm:p-7 cursor-pointer select-none focus-visible:outline-none flex flex-col lg:flex-row lg:items-center justify-between gap-5"
+                  className="p-6 sm:p-7 cursor-pointer select-none focus-visible:outline-none flex flex-col lg:flex-row lg:items-center justify-between gap-5 group"
                 >
                   <div className="space-y-2.5 min-w-0 max-w-3xl">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="font-mono text-[var(--text-xs)] text-[var(--text-tertiary)] font-bold">
+                      <span className="font-mono text-xs text-orange-400/80 font-bold bg-orange-500/10 px-2 py-0.5 rounded-md border border-orange-500/20">
                         [0{idx + 1}]
                       </span>
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full border font-mono text-[10px] tracking-wide uppercase ${getStatusBadgeStyle(project.status)}`}>
                         {project.statusDetail}
                       </span>
                       {project.categories.map(cat => (
-                        <span key={cat} className="font-mono text-[10px] text-[var(--text-tertiary)] bg-[var(--bg-surface-raised)] px-2.5 py-0.5 rounded-full border border-[var(--border-subtle)]">
+                        <span key={cat} className="font-mono text-[10px] text-gray-400 bg-white/[0.04] px-2.5 py-0.5 rounded-full border border-white/[0.06]">
                           {cat}
                         </span>
                       ))}
                     </div>
 
-                    <h3 className="text-[var(--text-lg)] font-serif font-medium text-[var(--text-primary)] leading-snug">
+                    <h3 className="text-lg sm:text-xl font-serif font-medium text-white group-hover:text-orange-400 transition-colors leading-snug">
                       {project.title}
                     </h3>
 
-                    <p className="text-[var(--text-sm)] text-[var(--text-secondary)] line-clamp-2 font-sans">
+                    <p className="text-sm text-gray-300 line-clamp-2 font-sans leading-relaxed">
                       {project.tagline}
                     </p>
                   </div>
 
                   {/* Right Action / Stack Chips */}
-                  <div className="flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-[var(--border-subtle)]">
+                  <div className="flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-white/[0.06]">
                     <div className="hidden sm:flex flex-wrap gap-1.5 max-w-xs justify-end">
                       {project.primaryTech.map(tech => (
-                        <span key={tech} className="font-mono text-[10px] text-[var(--text-secondary)] bg-[var(--bg-surface-raised)] px-2.5 py-0.5 rounded-[var(--radius-sm)] border border-[var(--border-subtle)]">
+                        <span key={tech} className="font-mono text-[10px] text-gray-300 bg-white/[0.05] px-2.5 py-0.5 rounded-md border border-white/[0.08]">
                           {tech}
                         </span>
                       ))}
                     </div>
 
-                    <div className={`touch-target px-3.5 py-1.5 rounded-full font-mono text-[var(--text-xs)] font-bold flex items-center gap-1.5 transition-all ${
+                    <div className={`touch-target px-4 py-2 rounded-full font-mono text-xs font-bold flex items-center gap-2 transition-all ${
                       isExpanded 
-                        ? 'bg-[var(--accent)] text-[var(--accent-text)] shadow-xs' 
-                        : 'border border-[var(--border-subtle)] text-[var(--accent)] hover:border-[var(--accent)]'
+                        ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md' 
+                        : 'border border-white/20 text-orange-400 hover:border-orange-400 group-hover:bg-orange-500/10'
                     }`}>
                       <span>{isExpanded ? 'Collapse' : 'Deep Dive'}</span>
                       {isExpanded ? (
@@ -234,57 +259,132 @@ export const ProjectsSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Expanded 4-Part Narrative Case Study */}
+                {/* Expanded Interactive Narrative Dossier */}
                 {isExpanded && (
                   <div
                     id={`case-study-${project.id}`}
-                    className="border-t border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] p-6 sm:p-8 space-y-8 animate-in fade-in duration-300"
+                    className="border-t border-white/[0.08] bg-[#080a10]/80 p-6 sm:p-8 space-y-6 animate-in fade-in duration-300"
                   >
-                    {/* The 4-Part Story Grid */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                      {/* 1. THE PROBLEM */}
-                      <div className="p-6 border border-red-500/20 bg-[var(--bg-surface)] rounded-[var(--radius-md)] space-y-2.5 shadow-xs">
-                        <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] uppercase tracking-wider text-red-500 font-bold">
-                          <span className="w-2 h-2 bg-red-500 rounded-full shadow-[0_0_6px_red]"></span>
-                          <span>Phase 01 // The Problem</span>
-                        </div>
-                        <p className="text-[var(--text-sm)] text-[var(--text-secondary)] leading-relaxed font-sans">
-                          {project.problem}
-                        </p>
-                      </div>
+                    {/* Interactive Phase Navigation Rail */}
+                    <div className="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-white/[0.08]">
+                      <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
+                        <span className="text-gray-500 uppercase tracking-wider text-[10px] mr-2 flex items-center gap-1">
+                          <Eye className="w-3.5 h-3.5 text-orange-400" />
+                          <span>Inspect Phase:</span>
+                        </span>
 
-                      {/* 2. THE CONSTRAINT */}
-                      <div className="p-6 border border-[var(--accent-border)] bg-[var(--bg-surface)] rounded-[var(--radius-md)] space-y-2.5 shadow-xs">
-                        <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--accent)] font-bold">
-                          <span className="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_6px_var(--accent)]"></span>
-                          <span>Phase 02 // Technical Constraint</span>
-                        </div>
-                        <p className="text-[var(--text-sm)] text-[var(--text-secondary)] leading-relaxed font-sans">
-                          {project.constraint}
-                        </p>
+                        <button
+                          type="button"
+                          onClick={() => setPhaseForProject(project.id, 'problem')}
+                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                            currentPhase === 'problem'
+                              ? 'bg-red-500/20 text-red-400 border border-red-500/40 shadow-xs'
+                              : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
+                          }`}
+                        >
+                          <AlertTriangle className="w-3 h-3 text-red-400" />
+                          <span>01 Problem</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setPhaseForProject(project.id, 'constraint')}
+                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                            currentPhase === 'constraint'
+                              ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40 shadow-xs'
+                              : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
+                          }`}
+                        >
+                          <Lock className="w-3 h-3 text-amber-400" />
+                          <span>02 Constraint</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setPhaseForProject(project.id, 'architecture')}
+                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                            currentPhase === 'architecture'
+                              ? 'bg-orange-500/20 text-orange-400 border border-orange-500/40 shadow-xs'
+                              : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
+                          }`}
+                        >
+                          <Workflow className="w-3 h-3 text-orange-400" />
+                          <span>03 Architecture</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setPhaseForProject(project.id, 'outcomes')}
+                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                            currentPhase === 'outcomes'
+                              ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-xs'
+                              : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
+                          }`}
+                        >
+                          <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+                          <span>04 Outcomes &amp; ROI</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setPhaseForProject(project.id, 'all')}
+                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all ${
+                            currentPhase === 'all'
+                              ? 'bg-white/20 text-white border border-white/30'
+                              : 'text-gray-500 hover:text-gray-300'
+                          }`}
+                        >
+                          View Full Dossier
+                        </button>
                       </div>
                     </div>
 
+                    {/* Phase 01: The Problem View */}
+                    {(currentPhase === 'problem' || currentPhase === 'all') && (
+                      <div className="p-6 border border-red-500/25 bg-red-950/15 backdrop-blur-md rounded-xl space-y-3 shadow-sm animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-red-400 font-bold">
+                          <span className="w-2 h-2 bg-red-500 rounded-full shadow-[0_0_8px_#ef4444]" />
+                          <span>Phase 01 // The Problem Statement</span>
+                        </div>
+                        <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-sans">
+                          {project.problem}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Phase 02: Technical Constraint View */}
+                    {(currentPhase === 'constraint' || currentPhase === 'all') && (
+                      <div className="p-6 border border-amber-500/25 bg-amber-950/15 backdrop-blur-md rounded-xl space-y-3 shadow-sm animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-amber-400 font-bold">
+                          <span className="w-2 h-2 bg-amber-400 rounded-full shadow-[0_0_8px_#f59e0b]" />
+                          <span>Phase 02 // Hard Operational &amp; Engineering Constraints</span>
+                        </div>
+                        <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-sans">
+                          {project.constraint}
+                        </p>
+                      </div>
+                    )}
+
                     {/* Sub-Tracks (Specifically for Project 5) */}
-                    {project.subTracks && (
-                      <div className="border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-6 rounded-[var(--radius-md)] space-y-4 shadow-xs">
-                        <div className="font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--accent)] font-bold flex items-center gap-2">
-                          <GitBranch className="w-4 h-4 text-[var(--accent)]" />
+                    {project.subTracks && (currentPhase === 'constraint' || currentPhase === 'architecture' || currentPhase === 'all') && (
+                      <div className="border border-white/[0.08] bg-white/[0.02] p-6 rounded-xl space-y-4">
+                        <div className="font-mono text-xs uppercase tracking-wider text-orange-400 font-bold flex items-center gap-2">
+                          <GitBranch className="w-4 h-4 text-orange-400" />
                           <span>Dual-Track Execution Matrix</span>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           {project.subTracks.map(track => (
-                            <div key={track.name} className="p-5 border border-[var(--border-subtle)] bg-[var(--bg-surface-raised)] rounded-[var(--radius-sm)] space-y-2.5">
-                              <div className="font-serif font-medium text-[var(--text-primary)] text-[var(--text-base)]">
+                            <div key={track.name} className="p-5 border border-white/[0.08] bg-white/[0.03] rounded-lg space-y-2">
+                              <div className="font-serif font-medium text-white text-base">
                                 {track.name}
                               </div>
-                              <div className="text-[var(--text-xs)] text-[var(--text-secondary)]">
-                                <strong className="text-[var(--text-primary)] font-semibold">Goal:</strong> {track.focus}
+                              <div className="text-xs text-gray-300">
+                                <strong className="text-white font-semibold">Goal:</strong> {track.focus}
                               </div>
-                              <p className="text-[var(--text-xs)] text-[var(--text-secondary)] leading-relaxed font-sans">
+                              <p className="text-xs text-gray-300 leading-relaxed font-sans">
                                 {track.approach}
                               </p>
-                              <div className="pt-2 border-t border-[var(--border-subtle)] font-mono text-[11px] text-[var(--accent)] font-semibold">
+                              <div className="pt-2 border-t border-white/[0.06] font-mono text-xs text-orange-400 font-semibold">
                                 &rarr; {track.benchmark}
                               </div>
                             </div>
@@ -293,84 +393,88 @@ export const ProjectsSection: React.FC = () => {
                       </div>
                     )}
 
-                    {/* 3. THE ARCHITECTURE (Visual Flow Diagram) */}
-                    <div className="border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-6 sm:p-7 rounded-[var(--radius-md)] space-y-4 shadow-xs">
-                      <div className="flex flex-wrap items-center justify-between gap-2">
-                        <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--accent)] font-bold">
-                          <Cpu className="w-4 h-4 text-[var(--accent)]" />
-                          <span>Phase 03 // {project.architecture.flowTitle}</span>
+                    {/* Phase 03: Architecture DAG Flow */}
+                    {(currentPhase === 'architecture' || currentPhase === 'all') && (
+                      <div className="border border-white/[0.08] bg-white/[0.02] p-6 sm:p-7 rounded-xl space-y-4 shadow-sm animate-in fade-in duration-200">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-orange-400 font-bold">
+                            <Cpu className="w-4 h-4 text-orange-400" />
+                            <span>Phase 03 // {project.architecture.flowTitle}</span>
+                          </div>
+                          <span className="font-mono text-[10px] text-orange-400 bg-orange-500/10 px-2.5 py-0.5 rounded-full border border-orange-500/20 font-semibold">
+                            Verified Production Topology
+                          </span>
                         </div>
-                        <span className="font-mono text-[10px] text-[var(--accent)] bg-[var(--accent-subtle)] px-2.5 py-0.5 rounded-full border border-[var(--accent-border)] font-semibold">
-                          Verified Topology
-                        </span>
-                      </div>
 
-                      <p className="text-[var(--text-xs)] text-[var(--text-secondary)] font-mono leading-relaxed bg-[var(--bg-surface-raised)] p-3.5 rounded-[var(--radius-sm)] border border-[var(--border-subtle)]">
-                        {project.architecture.description}
-                      </p>
+                        <p className="text-xs sm:text-sm text-gray-300 font-mono leading-relaxed bg-black/40 p-4 rounded-lg border border-white/[0.06]">
+                          {project.architecture.description}
+                        </p>
 
-                      {/* SVG Visual Flow Diagram */}
-                      <div className="pt-2 overflow-x-auto pb-2">
-                        <div className="min-w-[640px] flex items-center justify-between gap-3 p-5 bg-[var(--bg-app)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)] font-mono text-[var(--text-xs)]">
-                          {project.architecture.nodes.map((node, i) => (
-                            <React.Fragment key={node.id}>
-                              <div className={`p-3.5 border text-center shrink-0 min-w-[130px] rounded-[var(--radius-sm)] ${
-                                node.type === 'fallback' 
-                                  ? 'border-[var(--status-testing)] bg-[rgba(245,158,11,0.08)] shadow-xs' 
-                                  : node.type === 'output'
-                                  ? 'border-[var(--status-complete)] bg-[rgba(16,185,129,0.08)] shadow-xs'
-                                  : 'border-[var(--border-strong)] bg-[var(--bg-surface)] shadow-xs'
-                              }`}>
-                                <div className="font-bold text-[var(--text-primary)] text-[11px] truncate">
-                                  {node.label}
-                                </div>
-                                {node.sub && (
-                                  <div className="text-[9px] text-[var(--text-tertiary)] mt-0.5 truncate">
-                                    {node.sub}
+                        {/* Interactive Node Flow Diagram */}
+                        <div className="pt-2 overflow-x-auto pb-2">
+                          <div className="min-w-[640px] flex items-center justify-between gap-3 p-5 bg-black/50 border border-white/[0.08] rounded-xl font-mono text-xs">
+                            {project.architecture.nodes.map((node, i) => (
+                              <React.Fragment key={node.id}>
+                                <div className={`p-3.5 border text-center shrink-0 min-w-[130px] rounded-lg transition-transform hover:scale-105 ${
+                                  node.type === 'fallback' 
+                                    ? 'border-amber-500/40 bg-amber-500/10 text-amber-300' 
+                                    : node.type === 'output'
+                                    ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
+                                    : 'border-white/20 bg-white/[0.05] text-white'
+                                }`}>
+                                  <div className="font-bold text-xs truncate">
+                                    {node.label}
                                   </div>
-                                )}
-                              </div>
+                                  {node.sub && (
+                                    <div className="text-[10px] text-gray-400 mt-0.5 truncate">
+                                      {node.sub}
+                                    </div>
+                                  )}
+                                </div>
 
-                              {i < project.architecture.nodes.length - 1 && (
-                                <ArrowRight className="w-4 h-4 text-[var(--accent)] shrink-0 opacity-80" />
-                              )}
-                            </React.Fragment>
+                                {i < project.architecture.nodes.length - 1 && (
+                                  <ArrowRight className="w-4 h-4 text-orange-400 shrink-0 opacity-80" />
+                                )}
+                              </React.Fragment>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Phase 04: Verified Empirical Outcomes */}
+                    {(currentPhase === 'outcomes' || currentPhase === 'all') && (
+                      <div className="p-6 sm:p-7 border border-emerald-500/30 bg-emerald-950/15 backdrop-blur-md rounded-xl space-y-4 shadow-sm animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-emerald-400 font-bold">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                          <span>Phase 04 // Verified Empirical Outcomes &amp; ROI</span>
+                        </div>
+
+                        {/* High-Impact Metric Counters Grid */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono">
+                          {project.result.metrics.map(metric => (
+                            <div key={metric.label} className="p-4 bg-black/40 border border-emerald-500/20 rounded-lg text-center shadow-xs">
+                              <div className="text-lg sm:text-xl font-bold text-white">
+                                {metric.value}
+                              </div>
+                              <div className="text-[10px] text-emerald-300/80 uppercase mt-1 font-semibold">
+                                {metric.label}
+                              </div>
+                            </div>
                           ))}
                         </div>
-                      </div>
-                    </div>
 
-                    {/* 4. THE RESULT (High-Impact Metrics) */}
-                    <div className="p-6 sm:p-7 border border-[var(--status-complete)] bg-[rgba(16,185,129,0.04)] rounded-[var(--radius-md)] space-y-4 shadow-xs">
-                      <div className="flex items-center gap-2 font-mono text-[var(--text-xs)] uppercase tracking-wider text-[var(--status-complete)] font-bold">
-                        <CheckCircle2 className="w-4 h-4 text-[var(--status-complete)]" />
-                        <span>Phase 04 // Verified Empirical Outcomes</span>
+                        <p className="text-sm text-gray-200 font-sans leading-relaxed">
+                          {project.result.summary}
+                        </p>
                       </div>
-
-                      {/* Metric Counters Grid */}
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono">
-                        {project.result.metrics.map(metric => (
-                          <div key={metric.label} className="p-3.5 bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded-[var(--radius-sm)] text-center shadow-xs">
-                            <div className="text-[var(--text-base)] font-bold text-[var(--text-primary)]">
-                              {metric.value}
-                            </div>
-                            <div className="text-[10px] text-[var(--text-tertiary)] uppercase mt-0.5 font-medium">
-                              {metric.label}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-
-                      <p className="text-[var(--text-sm)] text-[var(--text-secondary)] font-sans leading-relaxed">
-                        {project.result.summary}
-                      </p>
-                    </div>
+                    )}
 
                     {/* Complete Tech Stack Footnote */}
-                    <div className="pt-2 flex flex-wrap items-center gap-2 font-mono text-[11px]">
-                      <span className="text-[var(--text-tertiary)] uppercase font-semibold">Complete Stack:</span>
+                    <div className="pt-2 flex flex-wrap items-center gap-2 font-mono text-xs">
+                      <span className="text-gray-400 uppercase font-semibold">Verified Tech Stack:</span>
                       {project.stack.map(tech => (
-                        <span key={tech} className="bg-[var(--bg-surface)] text-[var(--text-secondary)] px-2.5 py-0.5 rounded-[var(--radius-sm)] border border-[var(--border-subtle)]">
+                        <span key={tech} className="bg-white/[0.04] text-gray-300 px-2.5 py-1 rounded-md border border-white/[0.08]">
                           {tech}
                         </span>
                       ))}
@@ -387,3 +491,5 @@ export const ProjectsSection: React.FC = () => {
     </section>
   );
 };
+
+export default ProjectsSection;
