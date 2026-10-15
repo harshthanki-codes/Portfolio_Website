@@ -162,7 +162,22 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Mobile Native Scrollbar Suppression & Momentum */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile Tap Highlight Reset */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Scrollbar for Desktop */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

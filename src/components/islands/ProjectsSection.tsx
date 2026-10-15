@@ -161,14 +161,14 @@ export const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Category Filter Chips */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-8 no-scrollbar" role="toolbar" aria-label="Project category filters">
+        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 sm:mb-8 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth" role="toolbar" aria-label="Project category filters">
           <Filter className="w-3.5 h-3.5 text-gray-500 shrink-0 mr-1" aria-hidden="true" />
           {CATEGORIES.map(category => (
             <button
               key={category}
               type="button"
               onClick={() => setSelectedCategory(category)}
-              className={`touch-target whitespace-nowrap px-4 py-1.5 font-mono text-xs rounded-full border transition-all ${
+              className={`touch-target shrink-0 whitespace-nowrap px-4 py-1.5 font-mono text-xs rounded-full border transition-all ${
                 selectedCategory === category
                   ? 'border-orange-500 bg-orange-500/15 text-orange-400 font-bold shadow-[0_0_12px_rgba(255,102,0,0.3)]'
                   : 'border-white/[0.08] bg-[#0c0e16]/60 text-gray-400 hover:border-white/20 hover:text-white backdrop-blur-md'
@@ -267,16 +267,16 @@ export const ProjectsSection: React.FC = () => {
                   >
                     {/* Interactive Phase Navigation Rail */}
                     <div className="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-white/[0.08]">
-                      <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
-                        <span className="text-gray-500 uppercase tracking-wider text-[10px] mr-2 flex items-center gap-1">
+                      <div className="flex items-center gap-1.5 font-mono text-xs overflow-x-auto no-scrollbar pb-1.5 -mx-2 px-2 sm:mx-0 sm:px-0 scroll-smooth">
+                        <span className="text-gray-500 uppercase tracking-wider text-[10px] mr-2 flex items-center gap-1 shrink-0">
                           <Eye className="w-3.5 h-3.5 text-orange-400" />
-                          <span>Inspect Phase:</span>
+                          <span>Phase:</span>
                         </span>
 
                         <button
                           type="button"
                           onClick={() => setPhaseForProject(project.id, 'problem')}
-                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                          className={`shrink-0 px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
                             currentPhase === 'problem'
                               ? 'bg-red-500/20 text-red-400 border border-red-500/40 shadow-xs'
                               : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
@@ -289,7 +289,7 @@ export const ProjectsSection: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => setPhaseForProject(project.id, 'constraint')}
-                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                          className={`shrink-0 px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
                             currentPhase === 'constraint'
                               ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40 shadow-xs'
                               : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
@@ -302,7 +302,7 @@ export const ProjectsSection: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => setPhaseForProject(project.id, 'architecture')}
-                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                          className={`shrink-0 px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
                             currentPhase === 'architecture'
                               ? 'bg-orange-500/20 text-orange-400 border border-orange-500/40 shadow-xs'
                               : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
@@ -315,7 +315,7 @@ export const ProjectsSection: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => setPhaseForProject(project.id, 'outcomes')}
-                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
+                          className={`shrink-0 px-3 py-1.5 rounded-lg font-semibold transition-all flex items-center gap-1.5 ${
                             currentPhase === 'outcomes'
                               ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-xs'
                               : 'text-gray-400 hover:text-white bg-white/[0.03] border border-white/[0.05]'
@@ -328,7 +328,7 @@ export const ProjectsSection: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => setPhaseForProject(project.id, 'all')}
-                          className={`px-3 py-1.5 rounded-lg font-semibold transition-all ${
+                          className={`shrink-0 px-3 py-1.5 rounded-lg font-semibold transition-all ${
                             currentPhase === 'all'
                               ? 'bg-white/20 text-white border border-white/30'
                               : 'text-gray-500 hover:text-gray-300'
@@ -410,33 +410,68 @@ export const ProjectsSection: React.FC = () => {
                           {project.architecture.description}
                         </p>
 
-                        {/* Interactive Node Flow Diagram */}
-                        <div className="pt-2 overflow-x-auto pb-2">
-                          <div className="min-w-[640px] flex items-center justify-between gap-3 p-5 bg-black/50 border border-white/[0.08] rounded-xl font-mono text-xs">
+                        {/* Interactive Node Flow Diagram (Mobile Vertical Flow + Desktop Horizontal Flow) */}
+                        <div className="pt-2">
+                          {/* Mobile Vertical Flow (< sm) */}
+                          <div className="sm:hidden space-y-2 p-3.5 bg-black/60 border border-white/[0.08] rounded-xl font-mono text-xs">
                             {project.architecture.nodes.map((node, i) => (
-                              <React.Fragment key={node.id}>
-                                <div className={`p-3.5 border text-center shrink-0 min-w-[130px] rounded-lg transition-transform hover:scale-105 ${
+                              <div key={node.id} className="flex items-start gap-3">
+                                <div className="flex flex-col items-center pt-1 shrink-0">
+                                  <span className={`w-3 h-3 rounded-full flex items-center justify-center ${
+                                    node.type === 'fallback'
+                                      ? 'bg-amber-400 ring-2 ring-amber-400/30'
+                                      : node.type === 'output'
+                                      ? 'bg-emerald-400 ring-2 ring-emerald-400/30'
+                                      : 'bg-orange-500 ring-2 ring-orange-500/30'
+                                  }`} />
+                                  {i < project.architecture.nodes.length - 1 && (
+                                    <span className="w-0.5 h-7 bg-white/15 my-0.5" />
+                                  )}
+                                </div>
+                                <div className={`flex-1 p-2.5 rounded-lg border text-xs ${
                                   node.type === 'fallback' 
                                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300' 
                                     : node.type === 'output'
                                     ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
-                                    : 'border-white/20 bg-white/[0.05] text-white'
+                                    : 'border-white/10 bg-white/[0.04] text-white'
                                 }`}>
-                                  <div className="font-bold text-xs truncate">
-                                    {node.label}
-                                  </div>
+                                  <div className="font-bold text-xs">{node.label}</div>
                                   {node.sub && (
-                                    <div className="text-[10px] text-gray-400 mt-0.5 truncate">
-                                      {node.sub}
-                                    </div>
+                                    <div className="text-[10px] text-gray-400 mt-0.5">{node.sub}</div>
                                   )}
                                 </div>
-
-                                {i < project.architecture.nodes.length - 1 && (
-                                  <ArrowRight className="w-4 h-4 text-orange-400 shrink-0 opacity-80" />
-                                )}
-                              </React.Fragment>
+                              </div>
                             ))}
+                          </div>
+
+                          {/* Desktop Horizontal Flow (>= sm) */}
+                          <div className="hidden sm:block overflow-x-auto pb-2 no-scrollbar">
+                            <div className="min-w-[620px] flex items-center justify-between gap-3 p-5 bg-black/50 border border-white/[0.08] rounded-xl font-mono text-xs">
+                              {project.architecture.nodes.map((node, i) => (
+                                <React.Fragment key={node.id}>
+                                  <div className={`p-3.5 border text-center shrink-0 min-w-[130px] rounded-lg transition-transform hover:scale-105 ${
+                                    node.type === 'fallback' 
+                                      ? 'border-amber-500/40 bg-amber-500/10 text-amber-300' 
+                                      : node.type === 'output'
+                                      ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
+                                      : 'border-white/20 bg-white/[0.05] text-white'
+                                  }`}>
+                                    <div className="font-bold text-xs truncate">
+                                      {node.label}
+                                    </div>
+                                    {node.sub && (
+                                      <div className="text-[10px] text-gray-400 mt-0.5 truncate">
+                                        {node.sub}
+                                      </div>
+                                    )}
+                                  </div>
+
+                                  {i < project.architecture.nodes.length - 1 && (
+                                    <ArrowRight className="w-4 h-4 text-orange-400 shrink-0 opacity-80" />
+                                  )}
+                                </React.Fragment>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>

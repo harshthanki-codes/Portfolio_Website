@@ -337,7 +337,7 @@ Specific Notes: ${clientNotes || 'Let us discuss our technical architecture and 
                     placeholder="founder@company.com or +1 / +91..."
                     value={clientEmail}
                     onChange={(e) => setClientEmail(e.target.value)}
-                    className="w-full px-3 py-2 bg-black/40 border border-white/10 rounded-[var(--radius-sm)] text-xs text-[var(--text-primary)] font-mono focus:outline-none focus:border-orange-500 transition-colors"
+                    className="w-full px-3 py-2.5 bg-black/40 border border-white/10 rounded-[var(--radius-sm)] text-base sm:text-xs text-[var(--text-primary)] font-mono focus:outline-none focus:border-orange-500 transition-colors"
                   />
                 </div>
 
@@ -351,7 +351,7 @@ Specific Notes: ${clientNotes || 'Let us discuss our technical architecture and 
                     placeholder="Tell us about your current stack, bottlenecks, or timeline..."
                     value={clientNotes}
                     onChange={(e) => setClientNotes(e.target.value)}
-                    className="w-full px-3 py-2 bg-black/40 border border-white/10 rounded-[var(--radius-sm)] text-xs text-[var(--text-primary)] font-mono focus:outline-none focus:border-orange-500 transition-colors resize-none"
+                    className="w-full px-3 py-2.5 bg-black/40 border border-white/10 rounded-[var(--radius-sm)] text-base sm:text-xs text-[var(--text-primary)] font-mono focus:outline-none focus:border-orange-500 transition-colors resize-none"
                   />
                 </div>
 

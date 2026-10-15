@@ -78,7 +78,7 @@ export default function PredictiveArcBackground({
     let animId = 0;
     let isVisible = true;
 
-    // Mouse tracking for subtle interactive reactivity
+    // Mouse and touch tracking for subtle interactive reactivity
     let targetMouseX = 0.5;
     let currentMouseX = 0.5;
 
@@ -87,7 +87,14 @@ export default function PredictiveArcBackground({
       targetMouseX = e.clientX / Math.max(1, window.innerWidth);
     };
 
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!optionsRef.current.interactive || !e.touches[0]) return;
+      targetMouseX = e.touches[0].clientX / Math.max(1, window.innerWidth);
+    };
+
     window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
+    window.addEventListener('touchstart', handleTouchMove, { passive: true });
 
     const handleResize = () => {
       width = Math.max(1, window.innerWidth);
@@ -105,7 +112,12 @@ export default function PredictiveArcBackground({
       const opt = optionsRef.current;
       const isLight = opt.mode === 'light';
 
-      // Smooth mouse lerp
+      // Multi-device responsive adaptation
+      const isMobile = width < 768;
+      const isTablet = width >= 768 && width < 1024;
+      const is4K = width >= 2200;
+
+      // Smooth mouse / touch lerp
       currentMouseX += (targetMouseX - currentMouseX) * 0.05;
 
       // Dark obsidian background matching portfolio palette
@@ -114,18 +126,17 @@ export default function PredictiveArcBackground({
 
       frame += 0.015 * opt.speed;
 
-      // Center and apex calculations
-      // Interactive mouse offset gently shifts the arc apex
-      const mouseOffset = opt.interactive ? (currentMouseX - 0.5) * (width * 0.15) : 0;
+      // Center and apex calculations adapted per device class
+      const mouseOffset = opt.interactive ? (currentMouseX - 0.5) * (width * (isMobile ? 0.22 : 0.15)) : 0;
       const centerX = width / 2 + mouseOffset;
-      const apexY = height * 0.22; // arch apex elevated to 22% from top, eliminating upper void
-      const spreadX = width * 1.45;
-      const curveR = height * opt.archHeight;
+      const apexY = isMobile ? height * 0.16 : height * 0.22;
+      const spreadX = isMobile ? width * 2.2 : isTablet ? width * 1.7 : is4K ? width * 1.5 : width * 1.45;
+      const curveR = isMobile ? height * 0.38 : height * opt.archHeight;
 
       ctx.globalCompositeOperation = isLight ? 'source-over' : 'lighter';
 
-      const s = Math.max(3, opt.spacing);
-      const dot = opt.dotSize;
+      const s = isMobile ? Math.max(5, opt.spacing) : is4K ? Math.max(7, opt.spacing) : Math.max(3, opt.spacing);
+      const dot = isMobile ? Math.max(4.2, opt.dotSize * 0.85) : is4K ? opt.dotSize * 1.25 : opt.dotSize;
 
       for (let x = 0; x < width; x += s) {
         const normX = (x - centerX) / (spreadX / 2);
@@ -133,7 +144,8 @@ export default function PredictiveArcBackground({
 
         for (let y = 0; y < height; y += s) {
           const distY = Math.abs(y - targetY);
-          const bandWidth = (140 + (1 - Math.min(1, Math.abs(normX))) * 80) * opt.thickness;
+          const baseBand = isMobile ? 110 : 140;
+          const bandWidth = (baseBand + (1 - Math.min(1, Math.abs(normX))) * 80) * opt.thickness;
 
           if (distY >= bandWidth) continue;
 
@@ -231,6 +243,8 @@ export default function PredictiveArcBackground({
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchstart', handleTouchMove);
       document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, []);
@@ -242,8 +256,10 @@ export default function PredictiveArcBackground({
         position: 'fixed',
         top: 0,
         left: 0,
-        width: '100vw',
-        height: '100vh',
+        right: 0,
+        bottom: 0,
+        width: '100%',
+        height: '100%',
         pointerEvents: 'none',
         zIndex: 0,
         overflow: 'hidden',

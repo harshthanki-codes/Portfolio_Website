@@ -134,7 +134,7 @@ export const TelemetryWidget: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500" />
 
       {/* Cluster Node Selector Tabs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar" role="tablist">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2.5 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth" role="tablist">
         <span className="text-gray-400 font-mono text-xs uppercase tracking-wider mr-2 hidden sm:inline-flex items-center gap-1.5 shrink-0">
           <Activity className="w-3.5 h-3.5 text-orange-400" />
           <span>Active Mesh Node:</span>
@@ -147,7 +147,7 @@ export const TelemetryWidget: React.FC = () => {
               setSelectedNodeId(node.id);
               setLatency(node.p99Latency);
             }}
-            className={`touch-target px-3.5 py-1.5 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-2 ${
+            className={`touch-target shrink-0 px-3.5 py-1.5 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-2 ${
               selectedNodeId === node.id
                 ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-[0_0_12px_rgba(255,102,0,0.35)]'
                 : 'bg-white/[0.04] text-gray-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]'
@@ -162,33 +162,33 @@ export const TelemetryWidget: React.FC = () => {
       </div>
 
       {/* Node Telemetry Dashboard Card */}
-      <div className="flex flex-wrap items-center justify-between gap-4 p-5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
-        <div className="flex items-center gap-3.5">
-          <div className="p-3 rounded-xl bg-orange-500/15 border border-orange-500/30 text-orange-400 shadow-sm">
-            <Server className="w-5 h-5" />
+      <div className="flex flex-wrap items-center justify-between gap-4 p-4 sm:p-5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+        <div className="flex items-center gap-3">
+          <div className="p-2.5 sm:p-3 rounded-xl bg-orange-500/15 border border-orange-500/30 text-orange-400 shadow-sm shrink-0">
+            <Server className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-sm sm:text-base font-bold text-white tracking-wide">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-mono text-xs sm:text-base font-bold text-white tracking-wide">
                 {activeNode.name}
               </span>
-              <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+              <span className="text-[9px] sm:text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
                 {activeNode.status}
               </span>
             </div>
-            <div className="text-xs text-gray-400 mt-1 font-mono">
+            <div className="text-[11px] sm:text-xs text-gray-400 mt-1 font-mono">
               Engine: <span className="text-gray-200">{activeNode.engine}</span> &middot; Region: <span className="text-orange-400">{activeNode.region}</span>
             </div>
           </div>
         </div>
 
-        {/* Live Sparkline Waveform */}
-        <div className="hidden lg:flex items-center gap-3 font-mono">
+        {/* Live Sparkline Waveform (Available on all devices) */}
+        <div className="flex items-center gap-3 font-mono ml-auto sm:ml-0">
           <div className="text-right">
-            <div className="text-[10px] text-gray-400 uppercase tracking-wider">Live Jitter Trace</div>
+            <div className="text-[9px] sm:text-[10px] text-gray-400 uppercase tracking-wider">Live Jitter</div>
             <div className="text-xs text-emerald-400 font-bold">{latency}ms p99</div>
           </div>
-          <div className="flex items-end gap-1 h-8 w-24 bg-black/40 p-1.5 rounded-lg border border-white/[0.06]">
+          <div className="flex items-end gap-1 h-7 sm:h-8 w-20 sm:w-24 bg-black/40 p-1 sm:p-1.5 rounded-lg border border-white/[0.06]">
             {pingHistory.map((val, i) => (
               <div
                 key={i}

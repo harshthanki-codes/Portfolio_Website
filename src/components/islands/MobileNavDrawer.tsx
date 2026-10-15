@@ -57,7 +57,7 @@ export const MobileNavDrawer: React.FC = () => {
           aria-hidden="true"
         >
           <div 
-            className="fixed inset-y-0 right-0 w-full max-w-xs bg-[var(--bg-app)] border-l border-[var(--border-subtle)] p-6 shadow-2xl flex flex-col justify-between"
+            className="fixed inset-y-0 right-0 w-full max-w-[300px] bg-[#090b10] border-l border-white/10 p-6 pt-[calc(1.5rem+env(safe-area-inset-top,0px))] pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] shadow-2xl flex flex-col justify-between overflow-y-auto no-scrollbar z-50"
             onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-label="Mobile Navigation"

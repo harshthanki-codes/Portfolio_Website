@@ -128,11 +128,11 @@ export const SolutionsShowcase: React.FC = () => {
   return (
     <div className="space-y-8">
       {/* Interactive Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar" role="tablist">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2.5 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth" role="tablist">
         <button
           type="button"
           onClick={() => setActiveTab('all')}
-          className={`touch-target px-4 py-2 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all ${
+          className={`touch-target shrink-0 px-4 py-2 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all ${
             activeTab === 'all'
               ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-[0_0_16px_rgba(255,102,0,0.4)]'
               : 'bg-white/[0.04] text-gray-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]'
@@ -147,7 +147,7 @@ export const SolutionsShowcase: React.FC = () => {
             key={sol.id}
             type="button"
             onClick={() => setActiveTab(sol.id)}
-            className={`touch-target px-4 py-2 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-2 ${
+            className={`touch-target shrink-0 px-4 py-2 rounded-full font-mono text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-2 ${
               activeTab === sol.id
                 ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-[0_0_16px_rgba(255,102,0,0.4)]'
                 : 'bg-white/[0.04] text-gray-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]'
@@ -162,14 +162,14 @@ export const SolutionsShowcase: React.FC = () => {
       </div>
 
       {/* Solutions Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-8">
         {filteredSolutions.map(sol => {
           const isExpanded = !!expandedCards[sol.id];
 
           return (
             <div
               key={sol.id}
-              className="group relative rounded-2xl border border-white/[0.08] bg-[#0c0e16]/65 backdrop-blur-xl p-6 sm:p-7 transition-all duration-300 hover:border-orange-500/40 hover:bg-[#111420]/80 hover:shadow-[0_12px_40px_rgba(255,102,0,0.12)] flex flex-col justify-between overflow-hidden"
+              className="group relative rounded-2xl border border-white/[0.08] bg-[#0c0e16]/65 backdrop-blur-xl p-5 sm:p-7 transition-all duration-300 hover:border-orange-500/40 hover:bg-[#111420]/80 hover:shadow-[0_12px_40px_rgba(255,102,0,0.12)] flex flex-col justify-between overflow-hidden"
             >
               {/* Subtle Ambient Hover Glow */}
               <div 
@@ -178,24 +178,24 @@ export const SolutionsShowcase: React.FC = () => {
 
               {/* Card Top Header */}
               <div>
-                <div className="flex items-center justify-between gap-3 mb-4">
+                <div className="flex flex-wrap items-center justify-between gap-2.5 mb-3.5">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm">
                     {sol.icon}
-                    <span className="font-mono text-[11px] font-bold text-gray-200 tracking-wider uppercase">
+                    <span className="font-mono text-[10px] sm:text-[11px] font-bold text-gray-200 tracking-wider uppercase">
                       {sol.categoryNumber} // {sol.categoryTag}
                     </span>
                   </div>
-                  <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
+                  <span className="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 sm:py-1 rounded-full border border-emerald-500/20">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     {sol.headlineMetric}
                   </span>
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-serif font-bold text-white group-hover:text-orange-400 transition-colors leading-snug">
+                <h3 className="text-lg sm:text-2xl font-serif font-bold text-white group-hover:text-orange-400 transition-colors leading-snug">
                   {sol.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-gray-300 mt-3 leading-relaxed font-sans">
+                <p className="text-xs sm:text-base text-gray-300 mt-2.5 leading-relaxed font-sans">
                   {sol.description}
                 </p>
 
