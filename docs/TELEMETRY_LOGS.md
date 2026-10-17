@@ -288,3 +288,4 @@
 | #284 | 2026-10-17 17:15:15 | Predictive Arc Canvas | `frame_render_budget` | `15.8 ms (63fps)` | **PASS** |
 | #285 | 2026-10-17 17:17:00 | Mobile Touch Handler | `lerp_responsiveness` | `8.2 ms` | **PASS** |
 | #286 | 2026-10-17 17:18:45 | Zero-Marginal Token Gateway | `cost_per_query` | `$0.00000` | **PASS** |
+| #287 | 2026-10-17 17:20:30 | JWT Auth Decryptor | `token_validation_latency` | `1.1 ms` | **PASS** |
