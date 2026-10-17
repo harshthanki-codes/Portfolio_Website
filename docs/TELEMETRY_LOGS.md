@@ -42,3 +42,4 @@
 | #038 | 2026-10-17 10:04:45 | Voice-to-Order DAG | `audio_chunk_decode_latency` | `38.2 ms` | **PASS** |
 | #039 | 2026-10-17 10:06:30 | Semantic Vector Cache | `cache_hit_rate` | `94.6%` | **PASS** |
 | #040 | 2026-10-17 10:08:15 | Distributed Worker Mesh | `celery_queue_depth` | `0 tasks` | **PASS** |
+| #041 | 2026-10-17 10:10:00 | PostgreSQL Query Optimizer | `index_scan_p99` | `12.4 ms` | **PASS** |
