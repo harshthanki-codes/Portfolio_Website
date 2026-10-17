@@ -251,3 +251,4 @@
 | #247 | 2026-10-17 16:10:30 | QLoRA 4-bit Adapter | `vram_allocation` | `5.82 GB` | **PASS** |
 | #248 | 2026-10-17 16:12:15 | Predictive Arc Canvas | `frame_render_budget` | `15.8 ms (63fps)` | **PASS** |
 | #249 | 2026-10-17 16:14:00 | Mobile Touch Handler | `lerp_responsiveness` | `8.2 ms` | **PASS** |
+| #250 | 2026-10-17 16:15:45 | Zero-Marginal Token Gateway | `cost_per_query` | `$0.00000` | **PASS** |
