@@ -261,3 +261,4 @@
 | #257 | 2026-10-17 16:28:00 | PostgreSQL Query Optimizer | `index_scan_p99` | `12.4 ms` | **PASS** |
 | #258 | 2026-10-17 16:29:45 | Failover Mesh Router | `circuit_breaker_health` | `100.0%` | **PASS** |
 | #259 | 2026-10-17 16:31:30 | QLoRA 4-bit Adapter | `vram_allocation` | `5.82 GB` | **PASS** |
+| #260 | 2026-10-17 16:33:15 | Predictive Arc Canvas | `frame_render_budget` | `15.8 ms (63fps)` | **PASS** |
