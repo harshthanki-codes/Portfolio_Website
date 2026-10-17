@@ -159,3 +159,4 @@
 | #155 | 2026-10-17 13:29:30 | JWT Auth Decryptor | `token_validation_latency` | `1.1 ms` | **PASS** |
 | #156 | 2026-10-17 13:31:15 | Redis Memory Pool | `fragmentation_ratio` | `1.08` | **PASS** |
 | #157 | 2026-10-17 13:33:00 | LLM Inference Engine | `token_generation_rate` | `142 tok/sec` | **PASS** |
+| #158 | 2026-10-17 13:34:45 | Voice-to-Order DAG | `audio_chunk_decode_latency` | `38.2 ms` | **PASS** |
