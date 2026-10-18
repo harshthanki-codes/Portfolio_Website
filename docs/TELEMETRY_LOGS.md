@@ -384,3 +384,4 @@
 | #376 | 2026-10-18 06:27:30 | vLLM PagedAttention Manager | `kv_cache_utilization` | `78.4%` | **OPTIMAL** |
 | #377 | 2026-10-18 06:27:52 | FlashAttention-2 Kernel | `compute_tflops_efficiency` | `91.2%` | **PASS** |
 | #378 | 2026-10-18 06:28:14 | DeepSeek Reasoning Engine | `cot_step_verification` | `0.994 conf` | **PASS** |
+| #379 | 2026-10-18 06:28:36 | Llama-3.3 Quantized Runner | `tokens_per_second` | `164 tok/sec` | **PASS** |
