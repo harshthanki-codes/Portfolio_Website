@@ -356,3 +356,4 @@
 | #348 | 2026-10-18 06:17:14 | DeepSeek Reasoning Engine | `cot_step_verification` | `0.994 conf` | **PASS** |
 | #349 | 2026-10-18 06:17:36 | Llama-3.3 Quantized Runner | `tokens_per_second` | `164 tok/sec` | **PASS** |
 | #350 | 2026-10-18 06:17:58 | Multi-Agent Consensus Arbiter | `voting_convergence_latency` | `41.6 ms` | **PASS** |
+| #351 | 2026-10-18 06:18:20 | FastAPI Async Gateway | `request_throughput_p99` | `18.1 ms` | **PASS** |
