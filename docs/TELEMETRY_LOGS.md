@@ -377,3 +377,4 @@
 | #369 | 2026-10-18 06:24:56 | Celery Prefetch Router | `worker_idle_variance` | `0.02%` | **PASS** |
 | #370 | 2026-10-18 06:25:18 | Speech-to-Text VAD Pipeline | `vad_silence_cut_accuracy` | `99.1%` | **PASS** |
 | #371 | 2026-10-18 06:25:40 | Vector Embeddings Batcher | `dot_product_simd_speed` | `4.2 ms / 1k` | **PASS** |
+| #372 | 2026-10-18 06:26:02 | Enterprise ERP Syncer | `event_stream_backlog` | `0 pending` | **PASS** |
