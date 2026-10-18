@@ -569,3 +569,4 @@
 | #561 | 2026-10-18 07:35:20 | FastAPI Async Gateway | `request_throughput_p99` | `18.1 ms` | **PASS** |
 | #562 | 2026-10-18 07:35:42 | Redis Shard Rebalancer | `memory_eviction_pressure` | `0 keys` | **PASS** |
 | #563 | 2026-10-18 07:36:04 | PostgreSQL RLS Validator | `auth_filter_overhead` | `0.85 ms` | **PASS** |
+| #564 | 2026-10-18 07:36:26 | Celery Prefetch Router | `worker_idle_variance` | `0.02%` | **PASS** |
