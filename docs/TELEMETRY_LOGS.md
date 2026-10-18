@@ -361,3 +361,4 @@
 | #353 | 2026-10-18 06:19:04 | PostgreSQL RLS Validator | `auth_filter_overhead` | `0.85 ms` | **PASS** |
 | #354 | 2026-10-18 06:19:26 | Celery Prefetch Router | `worker_idle_variance` | `0.02%` | **PASS** |
 | #355 | 2026-10-18 06:19:48 | Speech-to-Text VAD Pipeline | `vad_silence_cut_accuracy` | `99.1%` | **PASS** |
+| #356 | 2026-10-18 06:20:10 | Vector Embeddings Batcher | `dot_product_simd_speed` | `4.2 ms / 1k` | **PASS** |
