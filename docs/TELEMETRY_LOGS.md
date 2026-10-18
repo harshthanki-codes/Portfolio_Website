@@ -480,3 +480,4 @@
 | #472 | 2026-10-18 07:02:42 | Redis Shard Rebalancer | `memory_eviction_pressure` | `0 keys` | **PASS** |
 | #473 | 2026-10-18 07:03:04 | PostgreSQL RLS Validator | `auth_filter_overhead` | `0.85 ms` | **PASS** |
 | #474 | 2026-10-18 07:03:26 | Celery Prefetch Router | `worker_idle_variance` | `0.02%` | **PASS** |
+| #475 | 2026-10-18 07:03:48 | Speech-to-Text VAD Pipeline | `vad_silence_cut_accuracy` | `99.1%` | **PASS** |
