@@ -500,3 +500,4 @@
 | #492 | 2026-10-18 07:10:02 | Enterprise ERP Syncer | `event_stream_backlog` | `0 pending` | **PASS** |
 | #493 | 2026-10-18 07:10:24 | Three.js WebGL Frame Pacing | `frame_budget_stability` | `60.0 fps` | **PASS** |
 | #494 | 2026-10-18 07:10:46 | Mobile Dynamic Viewport | `safe_area_resilience` | `100%` | **PASS** |
+| #495 | 2026-10-18 07:11:08 | Zero-Marginal Token Cache | `cost_saving_ratio` | `96.4%` | **PASS** |
