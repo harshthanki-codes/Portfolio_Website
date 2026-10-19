@@ -623,3 +623,4 @@
 | #0611 | 2026-10-19 08:03:01 | Speech-to-Text VAD Pipeline | `vad_accuracy` | `99.4%` | **PASS** |
 | #0612 | 2026-10-19 08:03:18 | Vector Embeddings Batcher | `simd_dot_product_speed` | `3.9 ms / 1k` | **PASS** |
 | #0613 | 2026-10-19 08:03:34 | Enterprise ERP Syncer | `event_stream_backlog` | `0 pending` | **PASS** |
+| #0614 | 2026-10-19 08:03:51 | Three.js WebGL Frame Pacing | `frame_budget_stability` | `60.0 fps` | **PASS** |
