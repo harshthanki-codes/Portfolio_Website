@@ -845,3 +845,4 @@
 | #0833 | 2026-10-19 09:04:10 | Enterprise ERP Syncer | `event_stream_backlog` | `0 pending` | **PASS** |
 | #0834 | 2026-10-19 09:04:27 | Three.js WebGL Frame Pacing | `frame_budget_stability` | `60.0 fps` | **PASS** |
 | #0835 | 2026-10-19 09:04:43 | Mobile Dynamic Viewport | `safe_area_resilience` | `100%` | **PASS** |
+| #0836 | 2026-10-19 09:05:00 | Command Console HUD | `key_action_dispatch_latency` | `2.1 ms` | **PASS** |
