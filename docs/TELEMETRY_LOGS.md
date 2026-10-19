@@ -929,3 +929,4 @@
 | #0917 | 2026-10-19 09:27:19 | Web Audio Synthesizer | `oscillator_render_budget` | `0.4 ms` | **PASS** |
 | #0918 | 2026-10-19 09:27:35 | Semantic Redis Vector Cache | `cosine_similarity_p99` | `0.984` | **PASS** |
 | #0919 | 2026-10-19 09:27:52 | Distributed Worker Mesh | `celery_active_workers` | `16 nodes` | **PASS** |
+| #0920 | 2026-10-19 09:28:08 | Zero-Marginal Token Cache | `cost_saving_ratio` | `96.8%` | **PASS** |
