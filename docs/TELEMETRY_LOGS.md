@@ -700,3 +700,4 @@
 | #0688 | 2026-10-19 08:24:14 | FastAPI Async Gateway | `request_throughput_p99` | `16.8 ms` | **PASS** |
 | #0689 | 2026-10-19 08:24:30 | Redis Shard Rebalancer | `eviction_pressure` | `0 keys` | **PASS** |
 | #0690 | 2026-10-19 08:24:47 | PostgreSQL RLS Validator | `auth_filter_overhead` | `0.78 ms` | **PASS** |
+| #0691 | 2026-10-19 08:25:04 | Speech-to-Text VAD Pipeline | `vad_accuracy` | `99.4%` | **PASS** |
