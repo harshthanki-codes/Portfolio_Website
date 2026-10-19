@@ -1097,3 +1097,4 @@
 | #1085 | 2026-10-19 10:13:35 | DeepSeek Reasoning Engine | `cot_step_verification` | `0.996 conf` | **PASS** |
 | #1086 | 2026-10-19 10:13:52 | Llama-3.3 70B Quantized Engine | `tokens_per_second` | `168 tok/sec` | **PASS** |
 | #1087 | 2026-10-19 10:14:08 | Multi-Agent Consensus Arbiter | `voting_convergence_latency` | `36.4 ms` | **PASS** |
+| #1088 | 2026-10-19 10:14:25 | FastAPI Async Gateway | `request_throughput_p99` | `16.8 ms` | **PASS** |
