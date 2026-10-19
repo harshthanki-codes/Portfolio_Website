@@ -1046,3 +1046,4 @@
 | #1034 | 2026-10-19 09:59:32 | Three.js WebGL Frame Pacing | `frame_budget_stability` | `60.0 fps` | **PASS** |
 | #1035 | 2026-10-19 09:59:49 | Mobile Dynamic Viewport | `safe_area_resilience` | `100%` | **PASS** |
 | #1036 | 2026-10-19 10:00:06 | Command Console HUD | `key_action_dispatch_latency` | `2.1 ms` | **PASS** |
+| #1037 | 2026-10-19 10:00:22 | Web Audio Synthesizer | `oscillator_render_budget` | `0.4 ms` | **PASS** |
