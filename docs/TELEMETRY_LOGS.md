@@ -872,3 +872,4 @@
 | #0860 | 2026-10-19 09:11:37 | Zero-Marginal Token Cache | `cost_saving_ratio` | `96.8%` | **PASS** |
 | #0861 | 2026-10-19 09:11:53 | Architecture Chaos Lab | `fault_injection_latency` | `14.2 ms` | **PASS** |
 | #0862 | 2026-10-19 09:12:10 | Token Economics Calculator | `cost_projection_accuracy` | `99.8%` | **PASS** |
+| #0863 | 2026-10-19 09:12:26 | vLLM PagedAttention KV-Cache | `block_table_fragmentation` | `1.12%` | **OPTIMAL** |
