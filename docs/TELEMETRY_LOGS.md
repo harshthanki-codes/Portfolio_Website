@@ -1155,3 +1155,4 @@
 | #1143 | 2026-10-19 10:29:34 | vLLM PagedAttention KV-Cache | `block_table_fragmentation` | `1.12%` | **OPTIMAL** |
 | #1144 | 2026-10-19 10:29:50 | FlashAttention-2 SIMD Kernel | `tflops_sustained` | `128 TFLOPs` | **PASS** |
 | #1145 | 2026-10-19 10:30:07 | DeepSeek Reasoning Engine | `cot_step_verification` | `0.996 conf` | **PASS** |
+| #1146 | 2026-10-19 10:30:24 | Llama-3.3 70B Quantized Engine | `tokens_per_second` | `168 tok/sec` | **PASS** |
