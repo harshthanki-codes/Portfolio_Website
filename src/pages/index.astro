@@ -10,6 +10,7 @@ import ExperienceSection from '../components/ExperienceSection.astro';
 import AboutSection from '../components/AboutSection.astro';
 import { ProjectScoper } from '../components/islands/ProjectScoper';
 import ContactSection from '../components/ContactSection.astro';
+import { CommandPalette } from '../components/islands/CommandPalette';
 ---
 
 <Layout>
@@ -23,4 +24,5 @@ import ContactSection from '../components/ContactSection.astro';
   <AboutSection />
   <ProjectScoper client:load />
   <ContactSection />
+  <CommandPalette client:idle />
 </Layout>

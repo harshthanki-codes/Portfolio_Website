@@ -50,8 +50,18 @@ import { MobileNavDrawer } from './islands/MobileNavDrawer';
     </nav>
 
     <!-- Right Controls -->
-    <div class="flex items-center gap-3 shrink-0">
-      
+    <div class="flex items-center gap-2.5 shrink-0">
+      <button
+        type="button"
+        id="nav-cmd-trigger"
+        class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] text-gray-300 hover:text-white font-mono text-[10px] transition-colors"
+        aria-label="Open Command Console (⌘K)"
+        onclick="window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))"
+      >
+        <span class="text-orange-400 font-bold">⚡</span>
+        <span>Console</span>
+        <kbd class="px-1 py-0.2 rounded bg-white/10 text-[9px] text-gray-400 font-mono">⌘K</kbd>
+      </button>
 
       <a 
         href="#scoper" 

@@ -1,5 +1,6 @@
 ---
 import { TelemetryWidget } from './islands/TelemetryWidget';
+import { ArchitectureSimulator } from './islands/ArchitectureSimulator';
 ---
 
 <section id="telemetry" class="py-[var(--space-section-y)] border-t border-white/[0.08] bg-transparent relative" aria-labelledby="telemetry-heading">
@@ -9,13 +10,13 @@ import { TelemetryWidget } from './islands/TelemetryWidget';
       <div>
         <div class="flex items-center gap-2 text-[var(--accent)] font-mono text-[var(--text-xs)] uppercase tracking-wider mb-2">
           <span class="w-2 h-2 bg-[var(--accent)] rounded-full shadow-[0_0_8px_var(--accent)]"></span>
-          <span class="font-semibold">03 // Systems Runtime Proof</span>
+          <span class="font-semibold">03 // Systems Runtime Proof &amp; Chaos Lab</span>
         </div>
         <h2 id="telemetry-heading" class="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight text-[var(--text-primary)]">
-          Live Backend Telemetry &amp; <span class="gradient-text-solar font-serif italic">Health Mesh</span>
+          Live Backend Telemetry &amp; <span class="gradient-text-solar font-serif italic">Chaos Simulator</span>
         </h2>
         <p class="text-[var(--text-sm)] sm:text-base text-[var(--text-secondary)] mt-2 max-w-xl font-sans">
-          Live operational telemetry across deployed Python backend services, database clusters, and inference execution pipelines.
+          Live operational telemetry across deployed Python backend services, combined with an interactive Chaos Failover Lab and enterprise Token Economics ROI calculator.
         </p>
       </div>
 
@@ -50,7 +51,10 @@ import { TelemetryWidget } from './islands/TelemetryWidget';
       </div>
     </div>
 
-    <TelemetryWidget client:visible />
+    <div class="space-y-10">
+      <TelemetryWidget client:visible />
+      <ArchitectureSimulator client:visible />
+    </div>
 
   </div>
 </section>
