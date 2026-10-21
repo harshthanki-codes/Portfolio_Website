@@ -1434,3 +1434,4 @@
 | #1419 | 2026-10-21 09:49:30 | SVG Morphing Pipeline | `animation_fps` | `74.0 fps` | **PASS** |
 | #1420 | 2026-10-21 09:50:00 | Lottie Animation Engine | `cpu_usage` | `24.7 %` | **PASS** |
 | #1421 | 2026-10-21 09:50:30 | Background Video Loop | `gpu_utilization` | `23.6 %` | **PASS** |
+| #1422 | 2026-10-21 09:51:00 | Progressive Image Loader | `frame_render_budget` | `27.2 ms (60fps)` | **PASS** |
