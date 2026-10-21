@@ -1224,3 +1224,4 @@
 | #1209 | 2026-10-21 08:04:30 | Audio Visualizer | `gpu_utilization` | `56.7 %` | **PASS** |
 | #1210 | 2026-10-21 08:05:00 | 3D Particle Renderer | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
 | #1211 | 2026-10-21 08:05:30 | Predictive Arc Canvas | `latency` | `21.0 ms` | **PASS** |
+| #1212 | 2026-10-21 08:06:00 | Scroll Parallax Manager | `jank_events` | `1.7 count` | **PASS** |
