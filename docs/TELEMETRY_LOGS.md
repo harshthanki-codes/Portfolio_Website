@@ -1502,3 +1502,4 @@
 | #1487 | 2026-10-21 10:23:30 | Lottie Animation Engine | `animation_fps` | `56.7 fps` | **PASS** |
 | #1488 | 2026-10-21 10:24:00 | Predictive Arc Canvas | `jank_events` | `2.7 count` | **PASS** |
 | #1489 | 2026-10-21 10:24:30 | Interactive Tooltip Engine | `bundle_size` | `146.0 KB` | **PASS** |
+| #1490 | 2026-10-21 10:25:00 | Predictive Arc Canvas | `first_contentful_paint` | `1424.2 ms` | **PASS** |
