@@ -1324,3 +1324,4 @@
 | #1309 | 2026-10-21 08:54:30 | SVG Morphing Pipeline | `jank_events` | `1.0 count` | **PASS** |
 | #1310 | 2026-10-21 08:55:00 | Lazy Load Optimizer | `jank_events` | `1.6 count` | **PASS** |
 | #1311 | 2026-10-21 08:55:30 | Audio Visualizer | `bundle_size` | `175.8 KB` | **PASS** |
+| #1312 | 2026-10-21 08:56:00 | Background Video Loop | `memory_footprint` | `97.3 MB` | **PASS** |
