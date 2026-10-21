@@ -1467,3 +1467,4 @@
 | #1452 | 2026-10-21 10:06:00 | SVG Morphing Pipeline | `memory_footprint` | `113.3 MB` | **PASS** |
 | #1453 | 2026-10-21 10:06:30 | WebGL Shader Compiler | `latency` | `8.0 ms` | **PASS** |
 | #1454 | 2026-10-21 10:07:00 | Audio Visualizer | `cpu_usage` | `23.6 %` | **PASS** |
+| #1455 | 2026-10-21 10:07:30 | Viewport Resize Observer | `cpu_usage` | `34.5 %` | **PASS** |
