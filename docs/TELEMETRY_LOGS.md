@@ -1462,3 +1462,4 @@
 | #1447 | 2026-10-21 10:03:30 | Touch Gesture Dispatcher | `gpu_utilization` | `62.9 %` | **PASS** |
 | #1448 | 2026-10-21 10:04:00 | Telemetry Beacon | `gpu_utilization` | `56.3 %` | **PASS** |
 | #1449 | 2026-10-21 10:04:30 | Progressive Image Loader | `time_to_interactive` | `1415.6 ms` | **PASS** |
+| #1450 | 2026-10-21 10:05:00 | Telemetry Beacon | `jank_events` | `2.7 count` | **PASS** |
