@@ -1400,3 +1400,4 @@
 | #1385 | 2026-10-21 09:32:30 | Touch Gesture Dispatcher | `jank_events` | `1.3 count` | **PASS** |
 | #1386 | 2026-10-21 09:33:00 | SVG Morphing Pipeline | `memory_footprint` | `85.6 MB` | **PASS** |
 | #1387 | 2026-10-21 09:33:30 | Background Video Loop | `time_to_interactive` | `2088.6 ms` | **PASS** |
+| #1388 | 2026-10-21 09:34:00 | CSS-in-JS Themer | `gpu_utilization` | `56.3 %` | **PASS** |
