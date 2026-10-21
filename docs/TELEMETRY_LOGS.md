@@ -1276,3 +1276,4 @@
 | #1261 | 2026-10-21 08:30:30 | CSS-in-JS Themer | `memory_footprint` | `101.2 MB` | **PASS** |
 | #1262 | 2026-10-21 08:31:00 | Telemetry Beacon | `memory_footprint` | `81.7 MB` | **PASS** |
 | #1263 | 2026-10-21 08:31:30 | 3D Particle Renderer | `jank_events` | `1.9 count` | **PASS** |
+| #1264 | 2026-10-21 08:32:00 | WebGL Shader Compiler | `memory_footprint` | `49.3 MB` | **PASS** |
