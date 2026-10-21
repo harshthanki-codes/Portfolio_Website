@@ -1482,3 +1482,4 @@
 | #1467 | 2026-10-21 10:13:30 | Telemetry Beacon | `animation_fps` | `61.4 fps` | **PASS** |
 | #1468 | 2026-10-21 10:14:00 | Audio Visualizer | `latency` | `5.4 ms` | **PASS** |
 | #1469 | 2026-10-21 10:14:30 | Touch Gesture Dispatcher | `latency` | `23.2 ms` | **PASS** |
+| #1470 | 2026-10-21 10:15:00 | Telemetry Beacon | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
