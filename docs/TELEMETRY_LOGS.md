@@ -1293,3 +1293,4 @@
 | #1278 | 2026-10-21 08:39:00 | CSS-in-JS Themer | `memory_footprint` | `88.9 MB` | **PASS** |
 | #1279 | 2026-10-21 08:39:30 | 3D Particle Renderer | `bundle_size` | `184.2 KB` | **PASS** |
 | #1280 | 2026-10-21 08:40:00 | CSS-in-JS Themer | `gpu_utilization` | `67.0 %` | **PASS** |
+| #1281 | 2026-10-21 08:40:30 | CSS-in-JS Themer | `cpu_usage` | `23.3 %` | **PASS** |
