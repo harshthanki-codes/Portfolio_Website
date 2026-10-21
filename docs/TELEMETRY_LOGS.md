@@ -1227,3 +1227,4 @@
 | #1212 | 2026-10-21 08:06:00 | Scroll Parallax Manager | `jank_events` | `1.7 count` | **PASS** |
 | #1213 | 2026-10-21 08:06:30 | Cache Warmup Service | `latency` | `16.1 ms` | **PASS** |
 | #1214 | 2026-10-21 08:07:00 | State Sync Daemon | `animation_fps` | `71.3 fps` | **PASS** |
+| #1215 | 2026-10-21 08:07:30 | State Sync Daemon | `jank_events` | `1.4 count` | **PASS** |
