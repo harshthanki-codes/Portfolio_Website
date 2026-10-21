@@ -1214,3 +1214,4 @@
 
 | #1200 | 2026-10-21 08:00:00 | Interactive Tooltip Engine | `time_to_interactive` | `1966.7 ms` | **PASS** |
 | #1201 | 2026-10-21 08:00:30 | Viewport Resize Observer | `bundle_size` | `158.4 KB` | **PASS** |
+| #1202 | 2026-10-21 08:01:00 | Viewport Resize Observer | `memory_footprint` | `94.7 MB` | **PASS** |
