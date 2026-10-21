@@ -1499,3 +1499,4 @@
 | #1484 | 2026-10-21 10:22:00 | Lazy Load Optimizer | `gpu_utilization` | `65.3 %` | **PASS** |
 | #1485 | 2026-10-21 10:22:30 | CSS-in-JS Themer | `cpu_usage` | `13.3 %` | **PASS** |
 | #1486 | 2026-10-21 10:23:00 | Lottie Animation Engine | `cpu_usage` | `32.5 %` | **PASS** |
+| #1487 | 2026-10-21 10:23:30 | Lottie Animation Engine | `animation_fps` | `56.7 fps` | **PASS** |
