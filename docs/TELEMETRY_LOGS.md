@@ -1327,3 +1327,4 @@
 | #1312 | 2026-10-21 08:56:00 | Background Video Loop | `memory_footprint` | `97.3 MB` | **PASS** |
 | #1313 | 2026-10-21 08:56:30 | Dynamic Font Loader | `time_to_interactive` | `2229.3 ms` | **PASS** |
 | #1314 | 2026-10-21 08:57:00 | WebGL Shader Compiler | `memory_footprint` | `101.2 MB` | **PASS** |
+| #1315 | 2026-10-21 08:57:30 | Interactive Tooltip Engine | `jank_events` | `1.0 count` | **PASS** |
