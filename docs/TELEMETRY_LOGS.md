@@ -1279,3 +1279,4 @@
 | #1264 | 2026-10-21 08:32:00 | WebGL Shader Compiler | `memory_footprint` | `49.3 MB` | **PASS** |
 | #1265 | 2026-10-21 08:32:30 | Background Video Loop | `time_to_interactive` | `1541.8 ms` | **PASS** |
 | #1266 | 2026-10-21 08:33:00 | Telemetry Beacon | `animation_fps` | `73.9 fps` | **PASS** |
+| #1267 | 2026-10-21 08:33:30 | Interactive Tooltip Engine | `gpu_utilization` | `25.3 %` | **PASS** |
