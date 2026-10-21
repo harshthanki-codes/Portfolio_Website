@@ -1287,3 +1287,4 @@
 | #1272 | 2026-10-21 08:36:00 | Dynamic Font Loader | `time_to_interactive` | `1404.1 ms` | **PASS** |
 | #1273 | 2026-10-21 08:36:30 | Predictive Arc Canvas | `animation_fps` | `59.2 fps` | **PASS** |
 | #1274 | 2026-10-21 08:37:00 | Predictive Arc Canvas | `gpu_utilization` | `33.2 %` | **PASS** |
+| #1275 | 2026-10-21 08:37:30 | Background Video Loop | `gpu_utilization` | `44.2 %` | **PASS** |
