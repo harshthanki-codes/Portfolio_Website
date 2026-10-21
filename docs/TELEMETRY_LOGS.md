@@ -1441,3 +1441,4 @@
 | #1426 | 2026-10-21 09:53:00 | Micro Frontend Loader | `jank_events` | `1.0 count` | **PASS** |
 | #1427 | 2026-10-21 09:53:30 | Viewport Resize Observer | `cpu_usage` | `18.3 %` | **PASS** |
 | #1428 | 2026-10-21 09:54:00 | Lottie Animation Engine | `memory_footprint` | `75.8 MB` | **PASS** |
+| #1429 | 2026-10-21 09:54:30 | WebGL Shader Compiler | `memory_footprint` | `49.9 MB` | **PASS** |
