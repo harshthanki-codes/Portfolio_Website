@@ -1385,3 +1385,4 @@
 | #1370 | 2026-10-21 09:25:00 | Viewport Resize Observer | `first_contentful_paint` | `1383.3 ms` | **PASS** |
 | #1371 | 2026-10-21 09:25:30 | Telemetry Beacon | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
 | #1372 | 2026-10-21 09:26:00 | 3D Particle Renderer | `latency` | `20.3 ms` | **PASS** |
+| #1373 | 2026-10-21 09:26:30 | State Sync Daemon | `gpu_utilization` | `53.8 %` | **PASS** |
