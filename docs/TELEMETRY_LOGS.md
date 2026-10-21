@@ -1442,3 +1442,4 @@
 | #1427 | 2026-10-21 09:53:30 | Viewport Resize Observer | `cpu_usage` | `18.3 %` | **PASS** |
 | #1428 | 2026-10-21 09:54:00 | Lottie Animation Engine | `memory_footprint` | `75.8 MB` | **PASS** |
 | #1429 | 2026-10-21 09:54:30 | WebGL Shader Compiler | `memory_footprint` | `49.9 MB` | **PASS** |
+| #1430 | 2026-10-21 09:55:00 | Lottie Animation Engine | `time_to_interactive` | `1673.6 ms` | **PASS** |
