@@ -1218,3 +1218,4 @@
 | #1203 | 2026-10-21 08:01:30 | Cache Warmup Service | `time_to_interactive` | `2156.4 ms` | **PASS** |
 | #1204 | 2026-10-21 08:02:00 | 3D Particle Renderer | `latency` | `17.3 ms` | **PASS** |
 | #1205 | 2026-10-21 08:02:30 | Background Video Loop | `gpu_utilization` | `61.8 %` | **PASS** |
+| #1206 | 2026-10-21 08:03:00 | 3D Particle Renderer | `animation_fps` | `73.3 fps` | **PASS** |
