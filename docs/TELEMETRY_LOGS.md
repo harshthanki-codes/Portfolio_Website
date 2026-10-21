@@ -1219,3 +1219,4 @@
 | #1204 | 2026-10-21 08:02:00 | 3D Particle Renderer | `latency` | `17.3 ms` | **PASS** |
 | #1205 | 2026-10-21 08:02:30 | Background Video Loop | `gpu_utilization` | `61.8 %` | **PASS** |
 | #1206 | 2026-10-21 08:03:00 | 3D Particle Renderer | `animation_fps` | `73.3 fps` | **PASS** |
+| #1207 | 2026-10-21 08:03:30 | Viewport Resize Observer | `jank_events` | `0.9 count` | **PASS** |
