@@ -1321,3 +1321,4 @@
 | #1306 | 2026-10-21 08:53:00 | Lottie Animation Engine | `cpu_usage` | `35.0 %` | **PASS** |
 | #1307 | 2026-10-21 08:53:30 | Dynamic Font Loader | `frame_render_budget` | `17.4 ms (60fps)` | **PASS** |
 | #1308 | 2026-10-21 08:54:00 | Lottie Animation Engine | `animation_fps` | `73.7 fps` | **PASS** |
+| #1309 | 2026-10-21 08:54:30 | SVG Morphing Pipeline | `jank_events` | `1.0 count` | **PASS** |
