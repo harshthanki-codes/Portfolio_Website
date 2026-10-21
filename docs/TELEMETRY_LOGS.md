@@ -1503,3 +1503,4 @@
 | #1488 | 2026-10-21 10:24:00 | Predictive Arc Canvas | `jank_events` | `2.7 count` | **PASS** |
 | #1489 | 2026-10-21 10:24:30 | Interactive Tooltip Engine | `bundle_size` | `146.0 KB` | **PASS** |
 | #1490 | 2026-10-21 10:25:00 | Predictive Arc Canvas | `first_contentful_paint` | `1424.2 ms` | **PASS** |
+| #1491 | 2026-10-21 10:25:30 | Telemetry Beacon | `time_to_interactive` | `1565.3 ms` | **PASS** |
