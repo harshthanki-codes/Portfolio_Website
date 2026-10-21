@@ -1353,3 +1353,4 @@
 | #1338 | 2026-10-21 09:09:00 | Responsive Grid System | `latency` | `18.0 ms` | **PASS** |
 | #1339 | 2026-10-21 09:09:30 | CSS-in-JS Themer | `first_contentful_paint` | `1496.8 ms` | **PASS** |
 | #1340 | 2026-10-21 09:10:00 | Viewport Resize Observer | `memory_footprint` | `101.0 MB` | **PASS** |
+| #1341 | 2026-10-21 09:10:30 | CSS-in-JS Themer | `frame_render_budget` | `28.0 ms (60fps)` | **PASS** |
