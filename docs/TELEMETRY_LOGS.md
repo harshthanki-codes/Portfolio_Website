@@ -1313,3 +1313,4 @@
 | #1298 | 2026-10-21 08:49:00 | Audio Visualizer | `latency` | `22.3 ms` | **PASS** |
 | #1299 | 2026-10-21 08:49:30 | State Sync Daemon | `bundle_size` | `216.1 KB` | **PASS** |
 | #1300 | 2026-10-21 08:50:00 | SVG Morphing Pipeline | `frame_render_budget` | `17.1 ms (60fps)` | **PASS** |
+| #1301 | 2026-10-21 08:50:30 | Scroll Parallax Manager | `cpu_usage` | `29.2 %` | **PASS** |
