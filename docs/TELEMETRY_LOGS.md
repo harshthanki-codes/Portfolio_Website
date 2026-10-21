@@ -1383,3 +1383,4 @@
 | #1368 | 2026-10-21 09:24:00 | Telemetry Beacon | `cpu_usage` | `28.5 %` | **PASS** |
 | #1369 | 2026-10-21 09:24:30 | Responsive Grid System | `jank_events` | `1.0 count` | **PASS** |
 | #1370 | 2026-10-21 09:25:00 | Viewport Resize Observer | `first_contentful_paint` | `1383.3 ms` | **PASS** |
+| #1371 | 2026-10-21 09:25:30 | Telemetry Beacon | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
