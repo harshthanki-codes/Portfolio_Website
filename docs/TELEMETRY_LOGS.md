@@ -1253,3 +1253,4 @@
 | #1238 | 2026-10-21 08:19:00 | Progressive Image Loader | `jank_events` | `1.9 count` | **PASS** |
 | #1239 | 2026-10-21 08:19:30 | Lottie Animation Engine | `latency` | `18.5 ms` | **PASS** |
 | #1240 | 2026-10-21 08:20:00 | Lottie Animation Engine | `bundle_size` | `173.7 KB` | **PASS** |
+| #1241 | 2026-10-21 08:20:30 | Dynamic Font Loader | `first_contentful_paint` | `802.6 ms` | **PASS** |
