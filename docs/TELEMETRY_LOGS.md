@@ -1389,3 +1389,4 @@
 | #1374 | 2026-10-21 09:27:00 | WebGL Shader Compiler | `jank_events` | `0.1 count` | **PASS** |
 | #1375 | 2026-10-21 09:27:30 | Lazy Load Optimizer | `time_to_interactive` | `1504.4 ms` | **PASS** |
 | #1376 | 2026-10-21 09:28:00 | WebGL Shader Compiler | `time_to_interactive` | `1426.3 ms` | **PASS** |
+| #1377 | 2026-10-21 09:28:30 | WebGL Shader Compiler | `cpu_usage` | `26.6 %` | **PASS** |
