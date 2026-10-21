@@ -1332,3 +1332,4 @@
 | #1317 | 2026-10-21 08:58:30 | Lottie Animation Engine | `animation_fps` | `73.1 fps` | **PASS** |
 | #1318 | 2026-10-21 08:59:00 | Audio Visualizer | `first_contentful_paint` | `1380.1 ms` | **PASS** |
 | #1319 | 2026-10-21 08:59:30 | Interactive Tooltip Engine | `first_contentful_paint` | `1145.2 ms` | **PASS** |
+| #1320 | 2026-10-21 09:00:00 | Lottie Animation Engine | `cpu_usage` | `22.0 %` | **PASS** |
