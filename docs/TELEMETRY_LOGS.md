@@ -1477,3 +1477,4 @@
 | #1462 | 2026-10-21 10:11:00 | State Sync Daemon | `bundle_size` | `149.6 KB` | **PASS** |
 | #1463 | 2026-10-21 10:11:30 | 3D Particle Renderer | `first_contentful_paint` | `1412.5 ms` | **PASS** |
 | #1464 | 2026-10-21 10:12:00 | 3D Particle Renderer | `gpu_utilization` | `44.3 %` | **PASS** |
+| #1465 | 2026-10-21 10:12:30 | Cache Warmup Service | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
