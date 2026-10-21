@@ -1275,3 +1275,4 @@
 | #1260 | 2026-10-21 08:30:00 | Scroll Parallax Manager | `jank_events` | `1.8 count` | **PASS** |
 | #1261 | 2026-10-21 08:30:30 | CSS-in-JS Themer | `memory_footprint` | `101.2 MB` | **PASS** |
 | #1262 | 2026-10-21 08:31:00 | Telemetry Beacon | `memory_footprint` | `81.7 MB` | **PASS** |
+| #1263 | 2026-10-21 08:31:30 | 3D Particle Renderer | `jank_events` | `1.9 count` | **PASS** |
