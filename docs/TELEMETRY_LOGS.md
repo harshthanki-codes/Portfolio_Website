@@ -1432,3 +1432,4 @@
 | #1417 | 2026-10-21 09:48:30 | Interactive Tooltip Engine | `time_to_interactive` | `2220.7 ms` | **PASS** |
 | #1418 | 2026-10-21 09:49:00 | CSS-in-JS Themer | `latency` | `19.8 ms` | **PASS** |
 | #1419 | 2026-10-21 09:49:30 | SVG Morphing Pipeline | `animation_fps` | `74.0 fps` | **PASS** |
+| #1420 | 2026-10-21 09:50:00 | Lottie Animation Engine | `cpu_usage` | `24.7 %` | **PASS** |
