@@ -1666,3 +1666,4 @@
 | #1648 | 2026-10-22 08:49:20 | Dynamic Font Loader | `cpu_usage` | `42.9 %` | **PASS** |
 | #1649 | 2026-10-22 08:49:40 | Progressive Image Loader | `bundle_size` | `198.9 KB` | **PASS** |
 | #1650 | 2026-10-22 08:50:00 | CSS-in-JS Themer | `frame_render_budget` | `28.3 ms (60fps)` | **PASS** |
+| #1651 | 2026-10-22 08:50:20 | CSS-in-JS Themer | `gpu_utilization` | `24.2 %` | **PASS** |
