@@ -1737,3 +1737,4 @@
 | #1719 | 2026-10-22 09:13:00 | Scroll Parallax Manager | `gpu_utilization` | `64.7 %` | **PASS** |
 | #1720 | 2026-10-22 09:13:20 | Lottie Animation Engine | `frame_render_budget` | `27.1 ms (60fps)` | **PASS** |
 | #1721 | 2026-10-22 09:13:40 | Cache Warmup Service | `first_contentful_paint` | `934.3 ms` | **PASS** |
+| #1722 | 2026-10-22 09:14:00 | Scroll Parallax Manager | `animation_fps` | `55.8 fps` | **PASS** |
