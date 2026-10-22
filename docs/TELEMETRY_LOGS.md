@@ -1975,3 +1975,4 @@
 | #1951 | 2026-10-22 10:30:20 | Scroll Parallax Manager | `memory_footprint` | `67.7 MB` | **PASS** |
 | #1952 | 2026-10-22 10:30:40 | Dynamic Font Loader | `frame_render_budget` | `21.2 ms (60fps)` | **PASS** |
 | #1953 | 2026-10-22 10:31:00 | Viewport Resize Observer | `time_to_interactive` | `1637.4 ms` | **PASS** |
+| #1954 | 2026-10-22 10:31:20 | WebGL Shader Compiler | `jank_events` | `0.7 count` | **PASS** |
