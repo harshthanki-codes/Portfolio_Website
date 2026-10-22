@@ -2094,3 +2094,4 @@
 | #2070 | 2026-10-22 11:10:00 | Lottie Animation Engine | `time_to_interactive` | `1407.5 ms` | **PASS** |
 | #2071 | 2026-10-22 11:10:20 | Touch Gesture Dispatcher | `cpu_usage` | `20.2 %` | **PASS** |
 | #2072 | 2026-10-22 11:10:40 | Background Video Loop | `time_to_interactive` | `1596.4 ms` | **PASS** |
+| #2073 | 2026-10-22 11:11:00 | CSS-in-JS Themer | `time_to_interactive` | `1962.9 ms` | **PASS** |
