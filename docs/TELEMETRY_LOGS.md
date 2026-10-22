@@ -1892,3 +1892,4 @@
 | #1868 | 2026-10-22 10:02:40 | State Sync Daemon | `cpu_usage` | `17.0 %` | **PASS** |
 | #1869 | 2026-10-22 10:03:00 | Background Video Loop | `gpu_utilization` | `69.2 %` | **PASS** |
 | #1870 | 2026-10-22 10:03:20 | Progressive Image Loader | `latency` | `16.3 ms` | **PASS** |
+| #1871 | 2026-10-22 10:03:40 | Telemetry Beacon | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
