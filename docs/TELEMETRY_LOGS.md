@@ -1747,3 +1747,4 @@
 | #1729 | 2026-10-22 09:16:20 | 3D Particle Renderer | `animation_fps` | `62.4 fps` | **PASS** |
 | #1730 | 2026-10-22 09:16:40 | Responsive Grid System | `jank_events` | `1.3 count` | **PASS** |
 | #1731 | 2026-10-22 09:17:00 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
+| #1732 | 2026-10-22 09:17:20 | Cache Warmup Service | `latency` | `12.7 ms` | **PASS** |
