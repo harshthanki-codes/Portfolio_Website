@@ -1829,3 +1829,4 @@
 | #1805 | 2026-10-22 09:41:40 | State Sync Daemon | `frame_render_budget` | `25.2 ms (60fps)` | **PASS** |
 | #1806 | 2026-10-22 09:42:00 | Progressive Image Loader | `memory_footprint` | `93.8 MB` | **PASS** |
 | #1807 | 2026-10-22 09:42:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2124.9 ms` | **PASS** |
+| #1808 | 2026-10-22 09:42:40 | Scroll Parallax Manager | `latency` | `9.3 ms` | **PASS** |
