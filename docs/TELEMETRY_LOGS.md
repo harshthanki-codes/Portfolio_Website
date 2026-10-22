@@ -2005,3 +2005,4 @@
 | #1981 | 2026-10-22 10:40:20 | Telemetry Beacon | `jank_events` | `1.1 count` | **PASS** |
 | #1982 | 2026-10-22 10:40:40 | State Sync Daemon | `bundle_size` | `232.1 KB` | **PASS** |
 | #1983 | 2026-10-22 10:41:00 | Micro Frontend Loader | `first_contentful_paint` | `1374.5 ms` | **PASS** |
+| #1984 | 2026-10-22 10:41:20 | Predictive Arc Canvas | `time_to_interactive` | `2458.6 ms` | **PASS** |
