@@ -2079,3 +2079,4 @@
 | #2055 | 2026-10-22 11:05:00 | SVG Morphing Pipeline | `cpu_usage` | `40.5 %` | **PASS** |
 | #2056 | 2026-10-22 11:05:20 | WebGL Shader Compiler | `memory_footprint` | `54.7 MB` | **PASS** |
 | #2057 | 2026-10-22 11:05:40 | Interactive Tooltip Engine | `animation_fps` | `56.6 fps` | **PASS** |
+| #2058 | 2026-10-22 11:06:00 | Cache Warmup Service | `jank_events` | `0.2 count` | **PASS** |
