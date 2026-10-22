@@ -1711,3 +1711,4 @@
 | #1693 | 2026-10-22 09:04:20 | SVG Morphing Pipeline | `jank_events` | `1.3 count` | **PASS** |
 | #1694 | 2026-10-22 09:04:40 | Predictive Arc Canvas | `first_contentful_paint` | `1445.5 ms` | **PASS** |
 | #1695 | 2026-10-22 09:05:00 | WebGL Shader Compiler | `bundle_size` | `192.5 KB` | **PASS** |
+| #1696 | 2026-10-22 09:05:20 | Predictive Arc Canvas | `gpu_utilization` | `52.9 %` | **PASS** |
