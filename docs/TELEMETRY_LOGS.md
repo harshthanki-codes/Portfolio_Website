@@ -1732,3 +1732,4 @@
 | #1714 | 2026-10-22 09:11:20 | Dynamic Font Loader | `gpu_utilization` | `55.6 %` | **PASS** |
 | #1715 | 2026-10-22 09:11:40 | 3D Particle Renderer | `bundle_size` | `144.7 KB` | **PASS** |
 | #1716 | 2026-10-22 09:12:00 | 3D Particle Renderer | `jank_events` | `1.2 count` | **PASS** |
+| #1717 | 2026-10-22 09:12:20 | Viewport Resize Observer | `gpu_utilization` | `30.9 %` | **PASS** |
