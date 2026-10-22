@@ -1744,3 +1744,4 @@
 | #1726 | 2026-10-22 09:15:20 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
 | #1727 | 2026-10-22 09:15:40 | Cache Warmup Service | `frame_render_budget` | `29.7 ms (60fps)` | **PASS** |
 | #1728 | 2026-10-22 09:16:00 | SVG Morphing Pipeline | `memory_footprint` | `53.7 MB` | **PASS** |
+| #1729 | 2026-10-22 09:16:20 | 3D Particle Renderer | `animation_fps` | `62.4 fps` | **PASS** |
