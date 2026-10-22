@@ -1735,3 +1735,4 @@
 | #1717 | 2026-10-22 09:12:20 | Viewport Resize Observer | `gpu_utilization` | `30.9 %` | **PASS** |
 | #1718 | 2026-10-22 09:12:40 | Micro Frontend Loader | `bundle_size` | `125.2 KB` | **PASS** |
 | #1719 | 2026-10-22 09:13:00 | Scroll Parallax Manager | `gpu_utilization` | `64.7 %` | **PASS** |
+| #1720 | 2026-10-22 09:13:20 | Lottie Animation Engine | `frame_render_budget` | `27.1 ms (60fps)` | **PASS** |
