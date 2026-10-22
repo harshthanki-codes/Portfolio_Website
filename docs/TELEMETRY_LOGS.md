@@ -1770,3 +1770,4 @@
 | #1752 | 2026-10-22 09:24:00 | Background Video Loop | `latency` | `23.0 ms` | **PASS** |
 | #1753 | 2026-10-22 09:24:20 | Touch Gesture Dispatcher | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #1754 | 2026-10-22 09:24:40 | Lazy Load Optimizer | `latency` | `16.9 ms` | **PASS** |
+| #1755 | 2026-10-22 09:25:00 | Predictive Arc Canvas | `gpu_utilization` | `42.5 %` | **PASS** |
