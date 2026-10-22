@@ -1781,3 +1781,4 @@
 | #1763 | 2026-10-22 09:27:40 | Lottie Animation Engine | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
 | #1764 | 2026-10-22 09:28:00 | Touch Gesture Dispatcher | `bundle_size` | `241.8 KB` | **PASS** |
 | #1765 | 2026-10-22 09:28:20 | Micro Frontend Loader | `memory_footprint` | `95.5 MB` | **PASS** |
+| #1766 | 2026-10-22 09:28:40 | Scroll Parallax Manager | `gpu_utilization` | `39.9 %` | **PASS** |
