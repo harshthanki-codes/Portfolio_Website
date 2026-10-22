@@ -1575,3 +1575,4 @@
 | #1557 | 2026-10-22 08:19:00 | CSS-in-JS Themer | `jank_events` | `0.8 count` | **PASS** |
 | #1558 | 2026-10-22 08:19:20 | Dynamic Font Loader | `first_contentful_paint` | `1465.4 ms` | **PASS** |
 | #1559 | 2026-10-22 08:19:40 | Responsive Grid System | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
+| #1560 | 2026-10-22 08:20:00 | Lottie Animation Engine | `bundle_size` | `167.0 KB` | **PASS** |
