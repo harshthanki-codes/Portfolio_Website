@@ -1962,3 +1962,4 @@
 | #1938 | 2026-10-22 10:26:00 | Dynamic Font Loader | `latency` | `20.7 ms` | **PASS** |
 | #1939 | 2026-10-22 10:26:20 | Dynamic Font Loader | `memory_footprint` | `100.5 MB` | **PASS** |
 | #1940 | 2026-10-22 10:26:40 | Scroll Parallax Manager | `animation_fps` | `63.7 fps` | **PASS** |
+| #1941 | 2026-10-22 10:27:00 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
