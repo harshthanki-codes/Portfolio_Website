@@ -2046,3 +2046,4 @@
 | #2022 | 2026-10-22 10:54:00 | Predictive Arc Canvas | `gpu_utilization` | `28.0 %` | **PASS** |
 | #2023 | 2026-10-22 10:54:20 | Background Video Loop | `jank_events` | `0.3 count` | **PASS** |
 | #2024 | 2026-10-22 10:54:40 | Predictive Arc Canvas | `cpu_usage` | `25.3 %` | **PASS** |
+| #2025 | 2026-10-22 10:55:00 | Lottie Animation Engine | `gpu_utilization` | `51.6 %` | **PASS** |
