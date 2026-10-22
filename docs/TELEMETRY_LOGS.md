@@ -1857,3 +1857,4 @@
 | #1833 | 2026-10-22 09:51:00 | Dynamic Font Loader | `first_contentful_paint` | `1174.7 ms` | **PASS** |
 | #1834 | 2026-10-22 09:51:20 | WebGL Shader Compiler | `memory_footprint` | `56.0 MB` | **PASS** |
 | #1835 | 2026-10-22 09:51:40 | Micro Frontend Loader | `frame_render_budget` | `25.3 ms (60fps)` | **PASS** |
+| #1836 | 2026-10-22 09:52:00 | Lottie Animation Engine | `gpu_utilization` | `66.2 %` | **PASS** |
