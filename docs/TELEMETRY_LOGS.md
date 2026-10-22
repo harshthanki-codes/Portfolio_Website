@@ -1808,3 +1808,4 @@
 | #1790 | 2026-10-22 09:36:40 | Touch Gesture Dispatcher | `bundle_size` | `152.3 KB` | **PASS** |
 | #1791 | 2026-10-22 09:37:00 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
 | #1792 | 2026-10-22 09:37:20 | Scroll Parallax Manager | `cpu_usage` | `28.4 %` | **PASS** |
+| #1793 | 2026-10-22 09:37:40 | Touch Gesture Dispatcher | `time_to_interactive` | `1340.9 ms` | **PASS** |
