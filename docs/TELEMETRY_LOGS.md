@@ -1531,3 +1531,4 @@
 | #1513 | 2026-10-22 08:04:20 | 3D Particle Renderer | `memory_footprint` | `99.2 MB` | **PASS** |
 | #1514 | 2026-10-22 08:04:40 | Lottie Animation Engine | `gpu_utilization` | `57.4 %` | **PASS** |
 | #1515 | 2026-10-22 08:05:00 | CSS-in-JS Themer | `gpu_utilization` | `33.7 %` | **PASS** |
+| #1516 | 2026-10-22 08:05:20 | Lottie Animation Engine | `memory_footprint` | `70.0 MB` | **PASS** |
