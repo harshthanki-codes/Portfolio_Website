@@ -1886,3 +1886,4 @@
 | #1862 | 2026-10-22 10:00:40 | SVG Morphing Pipeline | `animation_fps` | `59.9 fps` | **PASS** |
 | #1863 | 2026-10-22 10:01:00 | Viewport Resize Observer | `jank_events` | `2.6 count` | **PASS** |
 | #1864 | 2026-10-22 10:01:20 | Lazy Load Optimizer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
+| #1865 | 2026-10-22 10:01:40 | WebGL Shader Compiler | `first_contentful_paint` | `1061.9 ms` | **PASS** |
