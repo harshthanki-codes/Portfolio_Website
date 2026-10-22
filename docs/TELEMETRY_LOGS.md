@@ -1938,3 +1938,4 @@
 | #1914 | 2026-10-22 10:18:00 | Lazy Load Optimizer | `memory_footprint` | `58.1 MB` | **PASS** |
 | #1915 | 2026-10-22 10:18:20 | Viewport Resize Observer | `memory_footprint` | `59.4 MB` | **PASS** |
 | #1916 | 2026-10-22 10:18:40 | Lazy Load Optimizer | `time_to_interactive` | `1889.3 ms` | **PASS** |
+| #1917 | 2026-10-22 10:19:00 | Micro Frontend Loader | `gpu_utilization` | `59.4 %` | **PASS** |
