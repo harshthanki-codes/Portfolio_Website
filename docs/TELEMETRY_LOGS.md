@@ -2113,3 +2113,4 @@
 | #2089 | 2026-10-22 11:16:20 | Lazy Load Optimizer | `jank_events` | `2.9 count` | **PASS** |
 | #2090 | 2026-10-22 11:16:40 | Audio Visualizer | `time_to_interactive` | `1608.4 ms` | **PASS** |
 | #2091 | 2026-10-22 11:17:00 | Touch Gesture Dispatcher | `bundle_size` | `199.3 KB` | **PASS** |
+| #2092 | 2026-10-22 11:17:20 | Lazy Load Optimizer | `time_to_interactive` | `1941.2 ms` | **PASS** |
