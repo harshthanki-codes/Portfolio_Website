@@ -1619,3 +1619,4 @@
 | #1601 | 2026-10-22 08:33:40 | SVG Morphing Pipeline | `jank_events` | `1.7 count` | **PASS** |
 | #1602 | 2026-10-22 08:34:00 | 3D Particle Renderer | `memory_footprint` | `93.3 MB` | **PASS** |
 | #1603 | 2026-10-22 08:34:20 | 3D Particle Renderer | `animation_fps` | `62.5 fps` | **PASS** |
+| #1604 | 2026-10-22 08:34:40 | Audio Visualizer | `gpu_utilization` | `33.3 %` | **PASS** |
