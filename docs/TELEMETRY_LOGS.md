@@ -2038,3 +2038,4 @@
 | #2014 | 2026-10-22 10:51:20 | Background Video Loop | `bundle_size` | `245.0 KB` | **PASS** |
 | #2015 | 2026-10-22 10:51:40 | 3D Particle Renderer | `cpu_usage` | `23.8 %` | **PASS** |
 | #2016 | 2026-10-22 10:52:00 | 3D Particle Renderer | `time_to_interactive` | `1859.3 ms` | **PASS** |
+| #2017 | 2026-10-22 10:52:20 | CSS-in-JS Themer | `first_contentful_paint` | `881.0 ms` | **PASS** |
