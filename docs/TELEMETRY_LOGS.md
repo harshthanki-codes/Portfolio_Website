@@ -1716,3 +1716,4 @@
 | #1698 | 2026-10-22 09:06:00 | CSS-in-JS Themer | `jank_events` | `1.2 count` | **PASS** |
 | #1699 | 2026-10-22 09:06:20 | Audio Visualizer | `jank_events` | `2.8 count` | **PASS** |
 | #1700 | 2026-10-22 09:06:40 | Audio Visualizer | `gpu_utilization` | `29.2 %` | **PASS** |
+| #1701 | 2026-10-22 09:07:00 | Progressive Image Loader | `latency` | `18.3 ms` | **PASS** |
