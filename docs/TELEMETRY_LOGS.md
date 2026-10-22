@@ -1929,3 +1929,4 @@
 | #1905 | 2026-10-22 10:15:00 | WebGL Shader Compiler | `jank_events` | `2.1 count` | **PASS** |
 | #1906 | 2026-10-22 10:15:20 | Micro Frontend Loader | `jank_events` | `0.1 count` | **PASS** |
 | #1907 | 2026-10-22 10:15:40 | Background Video Loop | `animation_fps` | `59.3 fps` | **PASS** |
+| #1908 | 2026-10-22 10:16:00 | Lottie Animation Engine | `animation_fps` | `69.5 fps` | **PASS** |
