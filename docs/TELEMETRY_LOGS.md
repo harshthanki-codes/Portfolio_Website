@@ -1994,3 +1994,4 @@
 | #1970 | 2026-10-22 10:36:40 | State Sync Daemon | `time_to_interactive` | `1918.3 ms` | **PASS** |
 | #1971 | 2026-10-22 10:37:00 | Interactive Tooltip Engine | `jank_events` | `0.1 count` | **PASS** |
 | #1972 | 2026-10-22 10:37:20 | Interactive Tooltip Engine | `frame_render_budget` | `26.5 ms (60fps)` | **PASS** |
+| #1973 | 2026-10-22 10:37:40 | WebGL Shader Compiler | `latency` | `10.8 ms` | **PASS** |
