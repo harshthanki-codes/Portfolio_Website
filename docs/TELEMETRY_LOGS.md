@@ -1967,3 +1967,4 @@
 | #1943 | 2026-10-22 10:27:40 | Responsive Grid System | `time_to_interactive` | `1586.2 ms` | **PASS** |
 | #1944 | 2026-10-22 10:28:00 | Dynamic Font Loader | `bundle_size` | `184.1 KB` | **PASS** |
 | #1945 | 2026-10-22 10:28:20 | Scroll Parallax Manager | `time_to_interactive` | `2226.9 ms` | **PASS** |
+| #1946 | 2026-10-22 10:28:40 | Scroll Parallax Manager | `gpu_utilization` | `45.9 %` | **PASS** |
