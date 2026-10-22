@@ -1896,3 +1896,4 @@
 | #1872 | 2026-10-22 10:04:00 | Dynamic Font Loader | `first_contentful_paint` | `1243.8 ms` | **PASS** |
 | #1873 | 2026-10-22 10:04:20 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
 | #1874 | 2026-10-22 10:04:40 | Dynamic Font Loader | `memory_footprint` | `100.1 MB` | **PASS** |
+| #1875 | 2026-10-22 10:05:00 | Audio Visualizer | `gpu_utilization` | `44.0 %` | **PASS** |
