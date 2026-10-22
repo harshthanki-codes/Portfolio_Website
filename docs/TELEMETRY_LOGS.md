@@ -1846,3 +1846,4 @@
 | #1822 | 2026-10-22 09:47:20 | 3D Particle Renderer | `cpu_usage` | `42.4 %` | **PASS** |
 | #1823 | 2026-10-22 09:47:40 | WebGL Shader Compiler | `latency` | `6.1 ms` | **PASS** |
 | #1824 | 2026-10-22 09:48:00 | Audio Visualizer | `memory_footprint` | `73.5 MB` | **PASS** |
+| #1825 | 2026-10-22 09:48:20 | Cache Warmup Service | `animation_fps` | `70.8 fps` | **PASS** |
