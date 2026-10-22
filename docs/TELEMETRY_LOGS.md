@@ -1774,3 +1774,4 @@
 | #1756 | 2026-10-22 09:25:20 | WebGL Shader Compiler | `bundle_size` | `229.7 KB` | **PASS** |
 | #1757 | 2026-10-22 09:25:40 | Background Video Loop | `memory_footprint` | `99.8 MB` | **PASS** |
 | #1758 | 2026-10-22 09:26:00 | WebGL Shader Compiler | `bundle_size` | `182.8 KB` | **PASS** |
+| #1759 | 2026-10-22 09:26:20 | Progressive Image Loader | `time_to_interactive` | `2139.5 ms` | **PASS** |
