@@ -1968,3 +1968,4 @@
 | #1944 | 2026-10-22 10:28:00 | Dynamic Font Loader | `bundle_size` | `184.1 KB` | **PASS** |
 | #1945 | 2026-10-22 10:28:20 | Scroll Parallax Manager | `time_to_interactive` | `2226.9 ms` | **PASS** |
 | #1946 | 2026-10-22 10:28:40 | Scroll Parallax Manager | `gpu_utilization` | `45.9 %` | **PASS** |
+| #1947 | 2026-10-22 10:29:00 | Micro Frontend Loader | `animation_fps` | `68.0 fps` | **PASS** |
