@@ -1621,3 +1621,4 @@
 | #1603 | 2026-10-22 08:34:20 | 3D Particle Renderer | `animation_fps` | `62.5 fps` | **PASS** |
 | #1604 | 2026-10-22 08:34:40 | Audio Visualizer | `gpu_utilization` | `33.3 %` | **PASS** |
 | #1605 | 2026-10-22 08:35:00 | State Sync Daemon | `gpu_utilization` | `66.2 %` | **PASS** |
+| #1606 | 2026-10-22 08:35:20 | 3D Particle Renderer | `gpu_utilization` | `20.5 %` | **PASS** |
