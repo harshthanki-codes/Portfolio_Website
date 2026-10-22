@@ -1807,3 +1807,4 @@
 | #1789 | 2026-10-22 09:36:20 | 3D Particle Renderer | `memory_footprint` | `53.3 MB` | **PASS** |
 | #1790 | 2026-10-22 09:36:40 | Touch Gesture Dispatcher | `bundle_size` | `152.3 KB` | **PASS** |
 | #1791 | 2026-10-22 09:37:00 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
+| #1792 | 2026-10-22 09:37:20 | Scroll Parallax Manager | `cpu_usage` | `28.4 %` | **PASS** |
