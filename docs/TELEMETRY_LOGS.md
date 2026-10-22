@@ -1784,3 +1784,4 @@
 | #1766 | 2026-10-22 09:28:40 | Scroll Parallax Manager | `gpu_utilization` | `39.9 %` | **PASS** |
 | #1767 | 2026-10-22 09:29:00 | State Sync Daemon | `cpu_usage` | `21.1 %` | **PASS** |
 | #1768 | 2026-10-22 09:29:20 | Lottie Animation Engine | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
+| #1769 | 2026-10-22 09:29:40 | WebGL Shader Compiler | `time_to_interactive` | `2295.8 ms` | **PASS** |
