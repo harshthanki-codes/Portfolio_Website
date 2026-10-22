@@ -1895,3 +1895,4 @@
 | #1871 | 2026-10-22 10:03:40 | Telemetry Beacon | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
 | #1872 | 2026-10-22 10:04:00 | Dynamic Font Loader | `first_contentful_paint` | `1243.8 ms` | **PASS** |
 | #1873 | 2026-10-22 10:04:20 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
+| #1874 | 2026-10-22 10:04:40 | Dynamic Font Loader | `memory_footprint` | `100.1 MB` | **PASS** |
