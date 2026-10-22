@@ -1803,3 +1803,4 @@
 | #1785 | 2026-10-22 09:35:00 | Scroll Parallax Manager | `time_to_interactive` | `1721.0 ms` | **PASS** |
 | #1786 | 2026-10-22 09:35:20 | Scroll Parallax Manager | `first_contentful_paint` | `1136.1 ms` | **PASS** |
 | #1787 | 2026-10-22 09:35:40 | Scroll Parallax Manager | `frame_render_budget` | `17.2 ms (60fps)` | **PASS** |
+| #1788 | 2026-10-22 09:36:00 | Progressive Image Loader | `first_contentful_paint` | `972.0 ms` | **PASS** |
