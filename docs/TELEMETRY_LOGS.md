@@ -2060,3 +2060,4 @@
 | #2036 | 2026-10-22 10:58:40 | Telemetry Beacon | `first_contentful_paint` | `976.4 ms` | **PASS** |
 | #2037 | 2026-10-22 10:59:00 | Telemetry Beacon | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
 | #2038 | 2026-10-22 10:59:20 | Background Video Loop | `animation_fps` | `67.4 fps` | **PASS** |
+| #2039 | 2026-10-22 10:59:40 | Cache Warmup Service | `memory_footprint` | `62.0 MB` | **PASS** |
