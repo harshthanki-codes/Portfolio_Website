@@ -1631,3 +1631,4 @@
 | #1613 | 2026-10-22 08:37:40 | Background Video Loop | `frame_render_budget` | `15.7 ms (60fps)` | **PASS** |
 | #1614 | 2026-10-22 08:38:00 | Lottie Animation Engine | `memory_footprint` | `111.5 MB` | **PASS** |
 | #1615 | 2026-10-22 08:38:20 | WebGL Shader Compiler | `time_to_interactive` | `2473.5 ms` | **PASS** |
+| #1616 | 2026-10-22 08:38:40 | Lottie Animation Engine | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
