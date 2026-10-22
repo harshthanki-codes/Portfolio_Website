@@ -2102,3 +2102,4 @@
 | #2078 | 2026-10-22 11:12:40 | WebGL Shader Compiler | `bundle_size` | `195.3 KB` | **PASS** |
 | #2079 | 2026-10-22 11:13:00 | Dynamic Font Loader | `animation_fps` | `57.3 fps` | **PASS** |
 | #2080 | 2026-10-22 11:13:20 | 3D Particle Renderer | `memory_footprint` | `73.1 MB` | **PASS** |
+| #2081 | 2026-10-22 11:13:40 | Viewport Resize Observer | `bundle_size` | `168.5 KB` | **PASS** |
