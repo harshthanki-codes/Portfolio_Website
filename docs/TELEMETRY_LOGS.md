@@ -1520,3 +1520,4 @@
 | #1502 | 2026-10-22 08:00:40 | WebGL Shader Compiler | `gpu_utilization` | `36.2 %` | **PASS** |
 | #1503 | 2026-10-22 08:01:00 | Lottie Animation Engine | `latency` | `19.6 ms` | **PASS** |
 | #1504 | 2026-10-22 08:01:20 | Background Video Loop | `memory_footprint` | `85.6 MB` | **PASS** |
+| #1505 | 2026-10-22 08:01:40 | Viewport Resize Observer | `frame_render_budget` | `19.8 ms (60fps)` | **PASS** |
