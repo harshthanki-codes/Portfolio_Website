@@ -1841,3 +1841,4 @@
 | #1817 | 2026-10-22 09:45:40 | Predictive Arc Canvas | `jank_events` | `1.3 count` | **PASS** |
 | #1818 | 2026-10-22 09:46:00 | CSS-in-JS Themer | `jank_events` | `0.6 count` | **PASS** |
 | #1819 | 2026-10-22 09:46:20 | Micro Frontend Loader | `jank_events` | `1.8 count` | **PASS** |
+| #1820 | 2026-10-22 09:46:40 | Dynamic Font Loader | `bundle_size` | `187.3 KB` | **PASS** |
