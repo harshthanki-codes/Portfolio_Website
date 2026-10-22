@@ -1522,3 +1522,4 @@
 | #1504 | 2026-10-22 08:01:20 | Background Video Loop | `memory_footprint` | `85.6 MB` | **PASS** |
 | #1505 | 2026-10-22 08:01:40 | Viewport Resize Observer | `frame_render_budget` | `19.8 ms (60fps)` | **PASS** |
 | #1506 | 2026-10-22 08:02:00 | Touch Gesture Dispatcher | `first_contentful_paint` | `909.6 ms` | **PASS** |
+| #1507 | 2026-10-22 08:02:20 | Cache Warmup Service | `animation_fps` | `67.9 fps` | **PASS** |
