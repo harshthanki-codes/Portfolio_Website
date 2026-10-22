@@ -2013,3 +2013,4 @@
 | #1989 | 2026-10-22 10:43:00 | SVG Morphing Pipeline | `jank_events` | `2.0 count` | **PASS** |
 | #1990 | 2026-10-22 10:43:20 | CSS-in-JS Themer | `jank_events` | `1.8 count` | **PASS** |
 | #1991 | 2026-10-22 10:43:40 | Telemetry Beacon | `gpu_utilization` | `35.7 %` | **PASS** |
+| #1992 | 2026-10-22 10:44:00 | Interactive Tooltip Engine | `cpu_usage` | `20.3 %` | **PASS** |
