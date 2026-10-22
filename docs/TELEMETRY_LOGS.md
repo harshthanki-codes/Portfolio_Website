@@ -1987,3 +1987,4 @@
 | #1963 | 2026-10-22 10:34:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2157.9 ms` | **PASS** |
 | #1964 | 2026-10-22 10:34:40 | Dynamic Font Loader | `memory_footprint` | `69.3 MB` | **PASS** |
 | #1965 | 2026-10-22 10:35:00 | Micro Frontend Loader | `jank_events` | `0.2 count` | **PASS** |
+| #1966 | 2026-10-22 10:35:20 | Background Video Loop | `animation_fps` | `59.4 fps` | **PASS** |
