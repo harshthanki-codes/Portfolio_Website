@@ -1758,3 +1758,4 @@
 | #1740 | 2026-10-22 09:20:00 | State Sync Daemon | `bundle_size` | `191.3 KB` | **PASS** |
 | #1741 | 2026-10-22 09:20:20 | Audio Visualizer | `bundle_size` | `237.4 KB` | **PASS** |
 | #1742 | 2026-10-22 09:20:40 | Cache Warmup Service | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
+| #1743 | 2026-10-22 09:21:00 | State Sync Daemon | `cpu_usage` | `19.5 %` | **PASS** |
