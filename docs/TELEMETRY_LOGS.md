@@ -1591,3 +1591,4 @@
 | #1573 | 2026-10-22 08:24:20 | SVG Morphing Pipeline | `gpu_utilization` | `29.5 %` | **PASS** |
 | #1574 | 2026-10-22 08:24:40 | Touch Gesture Dispatcher | `gpu_utilization` | `62.9 %` | **PASS** |
 | #1575 | 2026-10-22 08:25:00 | Cache Warmup Service | `cpu_usage` | `20.1 %` | **PASS** |
+| #1576 | 2026-10-22 08:25:20 | Cache Warmup Service | `memory_footprint` | `70.0 MB` | **PASS** |
