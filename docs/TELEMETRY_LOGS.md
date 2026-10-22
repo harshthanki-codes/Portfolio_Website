@@ -2035,3 +2035,4 @@
 | #2011 | 2026-10-22 10:50:20 | CSS-in-JS Themer | `cpu_usage` | `42.0 %` | **PASS** |
 | #2012 | 2026-10-22 10:50:40 | SVG Morphing Pipeline | `cpu_usage` | `22.7 %` | **PASS** |
 | #2013 | 2026-10-22 10:51:00 | Viewport Resize Observer | `bundle_size` | `118.2 KB` | **PASS** |
+| #2014 | 2026-10-22 10:51:20 | Background Video Loop | `bundle_size` | `245.0 KB` | **PASS** |
