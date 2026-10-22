@@ -1821,3 +1821,4 @@
 ## 2026-10-23 Telemetry Entries
 
 | #2100 | 2026-10-23 08:00:00 | Scroll Parallax Manager | `animation_fps` | `69.7 fps` | **PASS** |
+| #1802 | 2026-10-22 09:40:40 | Cache Warmup Service | `memory_footprint` | `79.6 MB` | **PASS** |
