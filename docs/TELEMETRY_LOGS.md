@@ -1800,3 +1800,4 @@
 | #1782 | 2026-10-22 09:34:00 | Dynamic Font Loader | `gpu_utilization` | `68.8 %` | **PASS** |
 | #1783 | 2026-10-22 09:34:20 | Progressive Image Loader | `first_contentful_paint` | `1287.3 ms` | **PASS** |
 | #1784 | 2026-10-22 09:34:40 | Viewport Resize Observer | `time_to_interactive` | `1447.5 ms` | **PASS** |
+| #1785 | 2026-10-22 09:35:00 | Scroll Parallax Manager | `time_to_interactive` | `1721.0 ms` | **PASS** |
