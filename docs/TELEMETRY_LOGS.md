@@ -1741,3 +1741,4 @@
 | #1723 | 2026-10-22 09:14:20 | Touch Gesture Dispatcher | `jank_events` | `0.7 count` | **PASS** |
 | #1724 | 2026-10-22 09:14:40 | Audio Visualizer | `latency` | `7.6 ms` | **PASS** |
 | #1725 | 2026-10-22 09:15:00 | Scroll Parallax Manager | `jank_events` | `1.6 count` | **PASS** |
+| #1726 | 2026-10-22 09:15:20 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
