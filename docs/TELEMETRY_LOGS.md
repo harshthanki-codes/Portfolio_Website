@@ -1586,3 +1586,4 @@
 | #1568 | 2026-10-22 08:22:40 | Predictive Arc Canvas | `cpu_usage` | `20.3 %` | **PASS** |
 | #1569 | 2026-10-22 08:23:00 | Lazy Load Optimizer | `time_to_interactive` | `1650.4 ms` | **PASS** |
 | #1570 | 2026-10-22 08:23:20 | Interactive Tooltip Engine | `time_to_interactive` | `1682.2 ms` | **PASS** |
+| #1571 | 2026-10-22 08:23:40 | Predictive Arc Canvas | `jank_events` | `2.8 count` | **PASS** |
