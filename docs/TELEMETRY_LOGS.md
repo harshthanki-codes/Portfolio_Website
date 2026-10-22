@@ -1587,3 +1587,4 @@
 | #1569 | 2026-10-22 08:23:00 | Lazy Load Optimizer | `time_to_interactive` | `1650.4 ms` | **PASS** |
 | #1570 | 2026-10-22 08:23:20 | Interactive Tooltip Engine | `time_to_interactive` | `1682.2 ms` | **PASS** |
 | #1571 | 2026-10-22 08:23:40 | Predictive Arc Canvas | `jank_events` | `2.8 count` | **PASS** |
+| #1572 | 2026-10-22 08:24:00 | 3D Particle Renderer | `jank_events` | `2.9 count` | **PASS** |
