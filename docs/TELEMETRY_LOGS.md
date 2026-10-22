@@ -2108,3 +2108,4 @@
 | #2084 | 2026-10-22 11:14:40 | Scroll Parallax Manager | `frame_render_budget` | `28.6 ms (60fps)` | **PASS** |
 | #2085 | 2026-10-22 11:15:00 | Telemetry Beacon | `latency` | `13.3 ms` | **PASS** |
 | #2086 | 2026-10-22 11:15:20 | Audio Visualizer | `animation_fps` | `67.9 fps` | **PASS** |
+| #2087 | 2026-10-22 11:15:40 | Cache Warmup Service | `memory_footprint` | `74.3 MB` | **PASS** |
