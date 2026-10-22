@@ -1824,3 +1824,5 @@
 | #1802 | 2026-10-22 09:40:40 | Cache Warmup Service | `memory_footprint` | `79.6 MB` | **PASS** |
 | #2101 | 2026-10-23 08:00:20 | Interactive Tooltip Engine | `gpu_utilization` | `68.5 %` | **PASS** |
 | #1803 | 2026-10-22 09:41:00 | Cache Warmup Service | `cpu_usage` | `41.7 %` | **PASS** |
+| #2102 | 2026-10-23 08:00:40 | Viewport Resize Observer | `latency` | `11.5 ms` | **PASS** |
+| #1804 | 2026-10-22 09:41:20 | Lazy Load Optimizer | `animation_fps` | `63.2 fps` | **PASS** |
