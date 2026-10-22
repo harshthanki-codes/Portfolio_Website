@@ -1749,3 +1749,4 @@
 | #1731 | 2026-10-22 09:17:00 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
 | #1732 | 2026-10-22 09:17:20 | Cache Warmup Service | `latency` | `12.7 ms` | **PASS** |
 | #1733 | 2026-10-22 09:17:40 | CSS-in-JS Themer | `bundle_size` | `169.3 KB` | **PASS** |
+| #1734 | 2026-10-22 09:18:00 | Scroll Parallax Manager | `frame_render_budget` | `22.6 ms (60fps)` | **PASS** |
