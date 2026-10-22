@@ -2002,3 +2002,4 @@
 | #1978 | 2026-10-22 10:39:20 | Lazy Load Optimizer | `frame_render_budget` | `27.6 ms (60fps)` | **PASS** |
 | #1979 | 2026-10-22 10:39:40 | CSS-in-JS Themer | `latency` | `8.7 ms` | **PASS** |
 | #1980 | 2026-10-22 10:40:00 | Telemetry Beacon | `frame_render_budget` | `27.5 ms (60fps)` | **PASS** |
+| #1981 | 2026-10-22 10:40:20 | Telemetry Beacon | `jank_events` | `1.1 count` | **PASS** |
