@@ -1734,3 +1734,4 @@
 | #1716 | 2026-10-22 09:12:00 | 3D Particle Renderer | `jank_events` | `1.2 count` | **PASS** |
 | #1717 | 2026-10-22 09:12:20 | Viewport Resize Observer | `gpu_utilization` | `30.9 %` | **PASS** |
 | #1718 | 2026-10-22 09:12:40 | Micro Frontend Loader | `bundle_size` | `125.2 KB` | **PASS** |
+| #1719 | 2026-10-22 09:13:00 | Scroll Parallax Manager | `gpu_utilization` | `64.7 %` | **PASS** |
