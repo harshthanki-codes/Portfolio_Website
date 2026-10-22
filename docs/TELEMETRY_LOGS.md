@@ -1512,3 +1512,7 @@
 | #1497 | 2026-10-21 10:28:30 | State Sync Daemon | `memory_footprint` | `51.3 MB` | **PASS** |
 | #1498 | 2026-10-21 10:29:00 | Lottie Animation Engine | `frame_render_budget` | `18.6 ms (60fps)` | **PASS** |
 | #1499 | 2026-10-21 10:29:30 | WebGL Shader Compiler | `animation_fps` | `66.0 fps` | **PASS** |
+
+## 2026-10-22 Telemetry Entries
+
+| #1500 | 2026-10-22 08:00:00 | Viewport Resize Observer | `cpu_usage` | `15.9 %` | **PASS** |
