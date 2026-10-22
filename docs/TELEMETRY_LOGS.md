@@ -1785,3 +1785,4 @@
 | #1767 | 2026-10-22 09:29:00 | State Sync Daemon | `cpu_usage` | `21.1 %` | **PASS** |
 | #1768 | 2026-10-22 09:29:20 | Lottie Animation Engine | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
 | #1769 | 2026-10-22 09:29:40 | WebGL Shader Compiler | `time_to_interactive` | `2295.8 ms` | **PASS** |
+| #1770 | 2026-10-22 09:30:00 | Lottie Animation Engine | `latency` | `13.2 ms` | **PASS** |
