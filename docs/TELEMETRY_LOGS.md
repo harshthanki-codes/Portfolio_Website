@@ -1729,3 +1729,4 @@
 | #1711 | 2026-10-22 09:10:20 | Audio Visualizer | `jank_events` | `1.9 count` | **PASS** |
 | #1712 | 2026-10-22 09:10:40 | State Sync Daemon | `jank_events` | `2.4 count` | **PASS** |
 | #1713 | 2026-10-22 09:11:00 | State Sync Daemon | `latency` | `9.1 ms` | **PASS** |
+| #1714 | 2026-10-22 09:11:20 | Dynamic Font Loader | `gpu_utilization` | `55.6 %` | **PASS** |
