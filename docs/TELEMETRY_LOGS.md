@@ -2074,3 +2074,4 @@
 | #2050 | 2026-10-22 11:03:20 | State Sync Daemon | `latency` | `24.1 ms` | **PASS** |
 | #2051 | 2026-10-22 11:03:40 | Scroll Parallax Manager | `bundle_size` | `115.1 KB` | **PASS** |
 | #2052 | 2026-10-22 11:04:00 | CSS-in-JS Themer | `time_to_interactive` | `2171.6 ms` | **PASS** |
+| #2053 | 2026-10-22 11:04:20 | Background Video Loop | `jank_events` | `0.3 count` | **PASS** |
