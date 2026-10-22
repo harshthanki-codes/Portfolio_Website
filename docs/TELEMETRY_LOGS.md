@@ -1831,3 +1831,4 @@
 | #1807 | 2026-10-22 09:42:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2124.9 ms` | **PASS** |
 | #1808 | 2026-10-22 09:42:40 | Scroll Parallax Manager | `latency` | `9.3 ms` | **PASS** |
 | #1809 | 2026-10-22 09:43:00 | Lottie Animation Engine | `memory_footprint` | `75.4 MB` | **PASS** |
+| #1810 | 2026-10-22 09:43:20 | Cache Warmup Service | `first_contentful_paint` | `1345.5 ms` | **PASS** |
