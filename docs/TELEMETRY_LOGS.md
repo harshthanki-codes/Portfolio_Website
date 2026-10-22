@@ -1589,3 +1589,4 @@
 | #1571 | 2026-10-22 08:23:40 | Predictive Arc Canvas | `jank_events` | `2.8 count` | **PASS** |
 | #1572 | 2026-10-22 08:24:00 | 3D Particle Renderer | `jank_events` | `2.9 count` | **PASS** |
 | #1573 | 2026-10-22 08:24:20 | SVG Morphing Pipeline | `gpu_utilization` | `29.5 %` | **PASS** |
+| #1574 | 2026-10-22 08:24:40 | Touch Gesture Dispatcher | `gpu_utilization` | `62.9 %` | **PASS** |
