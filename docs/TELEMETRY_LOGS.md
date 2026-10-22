@@ -1838,3 +1838,4 @@
 | #1814 | 2026-10-22 09:44:40 | Micro Frontend Loader | `bundle_size` | `103.1 KB` | **PASS** |
 | #1815 | 2026-10-22 09:45:00 | Progressive Image Loader | `animation_fps` | `72.2 fps` | **PASS** |
 | #1816 | 2026-10-22 09:45:20 | Background Video Loop | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
+| #1817 | 2026-10-22 09:45:40 | Predictive Arc Canvas | `jank_events` | `1.3 count` | **PASS** |
