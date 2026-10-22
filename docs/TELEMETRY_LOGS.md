@@ -2103,3 +2103,4 @@
 | #2079 | 2026-10-22 11:13:00 | Dynamic Font Loader | `animation_fps` | `57.3 fps` | **PASS** |
 | #2080 | 2026-10-22 11:13:20 | 3D Particle Renderer | `memory_footprint` | `73.1 MB` | **PASS** |
 | #2081 | 2026-10-22 11:13:40 | Viewport Resize Observer | `bundle_size` | `168.5 KB` | **PASS** |
+| #2082 | 2026-10-22 11:14:00 | Scroll Parallax Manager | `latency` | `5.7 ms` | **PASS** |
