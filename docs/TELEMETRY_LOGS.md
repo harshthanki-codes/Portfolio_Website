@@ -1635,3 +1635,4 @@
 | #1617 | 2026-10-22 08:39:00 | Dynamic Font Loader | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
 | #1618 | 2026-10-22 08:39:20 | Progressive Image Loader | `latency` | `9.3 ms` | **PASS** |
 | #1619 | 2026-10-22 08:39:40 | CSS-in-JS Themer | `jank_events` | `0.6 count` | **PASS** |
+| #1620 | 2026-10-22 08:40:00 | Scroll Parallax Manager | `cpu_usage` | `30.2 %` | **PASS** |
