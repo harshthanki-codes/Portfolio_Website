@@ -2325,3 +2325,4 @@
 | #2300 | 2026-10-23 09:06:00 | Background Video Loop | `first_contentful_paint` | `1218.0 ms` | **PASS** |
 | #2301 | 2026-10-23 09:06:20 | CSS-in-JS Themer | `memory_footprint` | `101.8 MB` | **PASS** |
 | #2302 | 2026-10-23 09:06:40 | Dynamic Font Loader | `time_to_interactive` | `1988.7 ms` | **PASS** |
+| #2303 | 2026-10-23 09:07:00 | Dynamic Font Loader | `jank_events` | `2.5 count` | **PASS** |
