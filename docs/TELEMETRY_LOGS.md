@@ -2405,3 +2405,4 @@
 | #2380 | 2026-10-23 09:32:40 | Progressive Image Loader | `latency` | `22.8 ms` | **PASS** |
 | #2381 | 2026-10-23 09:33:00 | 3D Particle Renderer | `first_contentful_paint` | `1221.2 ms` | **PASS** |
 | #2382 | 2026-10-23 09:33:20 | CSS-in-JS Themer | `gpu_utilization` | `58.7 %` | **PASS** |
+| #2383 | 2026-10-23 09:33:40 | 3D Particle Renderer | `frame_render_budget` | `22.6 ms (60fps)` | **PASS** |
