@@ -2322,3 +2322,4 @@
 | #2297 | 2026-10-23 09:05:00 | Background Video Loop | `gpu_utilization` | `54.7 %` | **PASS** |
 | #2298 | 2026-10-23 09:05:20 | Telemetry Beacon | `memory_footprint` | `88.7 MB` | **PASS** |
 | #2299 | 2026-10-23 09:05:40 | Predictive Arc Canvas | `latency` | `7.7 ms` | **PASS** |
+| #2300 | 2026-10-23 09:06:00 | Background Video Loop | `first_contentful_paint` | `1218.0 ms` | **PASS** |
