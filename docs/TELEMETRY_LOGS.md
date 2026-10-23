@@ -2348,3 +2348,4 @@
 | #2323 | 2026-10-23 09:13:40 | WebGL Shader Compiler | `bundle_size` | `80.2 KB` | **PASS** |
 | #2324 | 2026-10-23 09:14:00 | Predictive Arc Canvas | `latency` | `19.4 ms` | **PASS** |
 | #2325 | 2026-10-23 09:14:20 | CSS-in-JS Themer | `cpu_usage` | `19.3 %` | **PASS** |
+| #2326 | 2026-10-23 09:14:40 | Scroll Parallax Manager | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
