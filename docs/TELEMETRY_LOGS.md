@@ -2531,3 +2531,4 @@
 | #2506 | 2026-10-23 10:14:40 | Telemetry Beacon | `first_contentful_paint` | `1224.0 ms` | **PASS** |
 | #2507 | 2026-10-23 10:15:00 | Telemetry Beacon | `first_contentful_paint` | `955.8 ms` | **PASS** |
 | #2508 | 2026-10-23 10:15:20 | Background Video Loop | `memory_footprint` | `104.4 MB` | **PASS** |
+| #2509 | 2026-10-23 10:15:40 | Audio Visualizer | `gpu_utilization` | `26.3 %` | **PASS** |
