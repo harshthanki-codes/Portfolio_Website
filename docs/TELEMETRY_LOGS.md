@@ -2607,3 +2607,4 @@
 | #2582 | 2026-10-23 10:40:00 | Viewport Resize Observer | `latency` | `16.7 ms` | **PASS** |
 | #2583 | 2026-10-23 10:40:20 | 3D Particle Renderer | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
 | #2584 | 2026-10-23 10:40:40 | Lottie Animation Engine | `memory_footprint` | `61.5 MB` | **PASS** |
+| #2585 | 2026-10-23 10:41:00 | CSS-in-JS Themer | `first_contentful_paint` | `1272.9 ms` | **PASS** |
