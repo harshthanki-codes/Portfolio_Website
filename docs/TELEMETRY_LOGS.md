@@ -2267,3 +2267,4 @@
 | #2242 | 2026-10-23 08:46:40 | Cache Warmup Service | `jank_events` | `1.4 count` | **PASS** |
 | #2243 | 2026-10-23 08:47:00 | State Sync Daemon | `bundle_size` | `148.6 KB` | **PASS** |
 | #2244 | 2026-10-23 08:47:20 | Dynamic Font Loader | `time_to_interactive` | `2286.8 ms` | **PASS** |
+| #2245 | 2026-10-23 08:47:40 | Audio Visualizer | `animation_fps` | `73.8 fps` | **PASS** |
