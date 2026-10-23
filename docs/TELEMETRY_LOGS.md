@@ -2450,3 +2450,4 @@
 | #2425 | 2026-10-23 09:47:40 | Micro Frontend Loader | `jank_events` | `2.7 count` | **PASS** |
 | #2426 | 2026-10-23 09:48:00 | Micro Frontend Loader | `animation_fps` | `61.0 fps` | **PASS** |
 | #2427 | 2026-10-23 09:48:20 | CSS-in-JS Themer | `gpu_utilization` | `32.4 %` | **PASS** |
+| #2428 | 2026-10-23 09:48:40 | Responsive Grid System | `jank_events` | `2.5 count` | **PASS** |
