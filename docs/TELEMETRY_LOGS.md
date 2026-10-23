@@ -2659,3 +2659,4 @@
 | #2634 | 2026-10-23 10:57:20 | Dynamic Font Loader | `cpu_usage` | `22.7 %` | **PASS** |
 | #2635 | 2026-10-23 10:57:40 | Progressive Image Loader | `animation_fps` | `73.5 fps` | **PASS** |
 | #2636 | 2026-10-23 10:58:00 | Interactive Tooltip Engine | `frame_render_budget` | `15.2 ms (60fps)` | **PASS** |
+| #2637 | 2026-10-23 10:58:20 | 3D Particle Renderer | `jank_events` | `1.3 count` | **PASS** |
