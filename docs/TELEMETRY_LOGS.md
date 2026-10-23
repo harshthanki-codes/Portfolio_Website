@@ -2481,3 +2481,4 @@
 | #2456 | 2026-10-23 09:58:00 | Dynamic Font Loader | `first_contentful_paint` | `800.7 ms` | **PASS** |
 | #2457 | 2026-10-23 09:58:20 | Background Video Loop | `first_contentful_paint` | `1015.8 ms` | **PASS** |
 | #2458 | 2026-10-23 09:58:40 | Predictive Arc Canvas | `memory_footprint` | `106.2 MB` | **PASS** |
+| #2459 | 2026-10-23 09:59:00 | Viewport Resize Observer | `time_to_interactive` | `1247.4 ms` | **PASS** |
