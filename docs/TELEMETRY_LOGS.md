@@ -2452,3 +2452,4 @@
 | #2427 | 2026-10-23 09:48:20 | CSS-in-JS Themer | `gpu_utilization` | `32.4 %` | **PASS** |
 | #2428 | 2026-10-23 09:48:40 | Responsive Grid System | `jank_events` | `2.5 count` | **PASS** |
 | #2429 | 2026-10-23 09:49:00 | CSS-in-JS Themer | `bundle_size` | `181.8 KB` | **PASS** |
+| #2430 | 2026-10-23 09:49:20 | Cache Warmup Service | `animation_fps` | `68.5 fps` | **PASS** |
