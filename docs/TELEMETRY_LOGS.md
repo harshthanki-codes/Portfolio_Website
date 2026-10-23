@@ -2680,3 +2680,4 @@
 | #2655 | 2026-10-23 11:04:20 | Cache Warmup Service | `first_contentful_paint` | `899.0 ms` | **PASS** |
 | #2656 | 2026-10-23 11:04:40 | Telemetry Beacon | `bundle_size` | `209.6 KB` | **PASS** |
 | #2657 | 2026-10-23 11:05:00 | CSS-in-JS Themer | `frame_render_budget` | `23.7 ms (60fps)` | **PASS** |
+| #2658 | 2026-10-23 11:05:20 | Predictive Arc Canvas | `jank_events` | `0.5 count` | **PASS** |
