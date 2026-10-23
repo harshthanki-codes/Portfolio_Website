@@ -2342,3 +2342,4 @@
 | #2317 | 2026-10-23 09:11:40 | Lazy Load Optimizer | `time_to_interactive` | `1802.8 ms` | **PASS** |
 | #2318 | 2026-10-23 09:12:00 | WebGL Shader Compiler | `frame_render_budget` | `22.5 ms (60fps)` | **PASS** |
 | #2319 | 2026-10-23 09:12:20 | CSS-in-JS Themer | `gpu_utilization` | `20.8 %` | **PASS** |
+| #2320 | 2026-10-23 09:12:40 | Scroll Parallax Manager | `gpu_utilization` | `26.9 %` | **PASS** |
