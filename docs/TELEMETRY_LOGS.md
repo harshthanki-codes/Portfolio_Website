@@ -2255,3 +2255,4 @@
 | #2230 | 2026-10-23 08:42:40 | CSS-in-JS Themer | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
 | #2231 | 2026-10-23 08:43:00 | State Sync Daemon | `first_contentful_paint` | `1375.7 ms` | **PASS** |
 | #2232 | 2026-10-23 08:43:20 | State Sync Daemon | `cpu_usage` | `12.0 %` | **PASS** |
+| #2233 | 2026-10-23 08:43:40 | WebGL Shader Compiler | `gpu_utilization` | `67.7 %` | **PASS** |
