@@ -2625,3 +2625,4 @@
 | #2600 | 2026-10-23 10:46:00 | Micro Frontend Loader | `animation_fps` | `72.6 fps` | **PASS** |
 | #2601 | 2026-10-23 10:46:20 | Viewport Resize Observer | `animation_fps` | `69.3 fps` | **PASS** |
 | #2602 | 2026-10-23 10:46:40 | Background Video Loop | `time_to_interactive` | `1771.2 ms` | **PASS** |
+| #2603 | 2026-10-23 10:47:00 | SVG Morphing Pipeline | `jank_events` | `0.3 count` | **PASS** |
