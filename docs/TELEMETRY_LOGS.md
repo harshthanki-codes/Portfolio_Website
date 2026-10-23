@@ -2566,3 +2566,4 @@
 | #2541 | 2026-10-23 10:26:20 | Background Video Loop | `jank_events` | `1.1 count` | **PASS** |
 | #2542 | 2026-10-23 10:26:40 | CSS-in-JS Themer | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
 | #2543 | 2026-10-23 10:27:00 | Cache Warmup Service | `first_contentful_paint` | `1020.4 ms` | **PASS** |
+| #2544 | 2026-10-23 10:27:20 | WebGL Shader Compiler | `memory_footprint` | `106.9 MB` | **PASS** |
