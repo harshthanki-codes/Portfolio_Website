@@ -2703,3 +2703,4 @@
 | #2678 | 2026-10-23 11:12:00 | Dynamic Font Loader | `first_contentful_paint` | `1228.2 ms` | **PASS** |
 | #2679 | 2026-10-23 11:12:20 | Dynamic Font Loader | `memory_footprint` | `46.5 MB` | **PASS** |
 | #2680 | 2026-10-23 11:12:40 | Cache Warmup Service | `memory_footprint` | `72.0 MB` | **PASS** |
+| #2681 | 2026-10-23 11:13:00 | Dynamic Font Loader | `animation_fps` | `67.3 fps` | **PASS** |
