@@ -2428,3 +2428,4 @@
 | #2403 | 2026-10-23 09:40:20 | WebGL Shader Compiler | `cpu_usage` | `39.5 %` | **PASS** |
 | #2404 | 2026-10-23 09:40:40 | Viewport Resize Observer | `memory_footprint` | `110.1 MB` | **PASS** |
 | #2405 | 2026-10-23 09:41:00 | Micro Frontend Loader | `memory_footprint` | `75.3 MB` | **PASS** |
+| #2406 | 2026-10-23 09:41:20 | Dynamic Font Loader | `time_to_interactive` | `1959.7 ms` | **PASS** |
