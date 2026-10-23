@@ -2258,3 +2258,4 @@
 | #2233 | 2026-10-23 08:43:40 | WebGL Shader Compiler | `gpu_utilization` | `67.7 %` | **PASS** |
 | #2234 | 2026-10-23 08:44:00 | Touch Gesture Dispatcher | `gpu_utilization` | `29.1 %` | **PASS** |
 | #2235 | 2026-10-23 08:44:20 | Predictive Arc Canvas | `memory_footprint` | `67.6 MB` | **PASS** |
+| #2236 | 2026-10-23 08:44:40 | Background Video Loop | `jank_events` | `1.2 count` | **PASS** |
