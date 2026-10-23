@@ -2422,3 +2422,4 @@
 | #2397 | 2026-10-23 09:38:20 | SVG Morphing Pipeline | `bundle_size` | `142.9 KB` | **PASS** |
 | #2398 | 2026-10-23 09:38:40 | Viewport Resize Observer | `time_to_interactive` | `1590.5 ms` | **PASS** |
 | #2399 | 2026-10-23 09:39:00 | Telemetry Beacon | `latency` | `6.0 ms` | **PASS** |
+| #2400 | 2026-10-23 09:39:20 | Lottie Animation Engine | `animation_fps` | `74.7 fps` | **PASS** |
