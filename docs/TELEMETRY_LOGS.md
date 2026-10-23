@@ -2317,3 +2317,4 @@
 | #2292 | 2026-10-23 09:03:20 | Predictive Arc Canvas | `latency` | `21.4 ms` | **PASS** |
 | #2293 | 2026-10-23 09:03:40 | WebGL Shader Compiler | `first_contentful_paint` | `1064.7 ms` | **PASS** |
 | #2294 | 2026-10-23 09:04:00 | Dynamic Font Loader | `jank_events` | `0.4 count` | **PASS** |
+| #2295 | 2026-10-23 09:04:20 | CSS-in-JS Themer | `time_to_interactive` | `2373.5 ms` | **PASS** |
