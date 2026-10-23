@@ -2530,3 +2530,4 @@
 | #2505 | 2026-10-23 10:14:20 | Interactive Tooltip Engine | `latency` | `10.7 ms` | **PASS** |
 | #2506 | 2026-10-23 10:14:40 | Telemetry Beacon | `first_contentful_paint` | `1224.0 ms` | **PASS** |
 | #2507 | 2026-10-23 10:15:00 | Telemetry Beacon | `first_contentful_paint` | `955.8 ms` | **PASS** |
+| #2508 | 2026-10-23 10:15:20 | Background Video Loop | `memory_footprint` | `104.4 MB` | **PASS** |
