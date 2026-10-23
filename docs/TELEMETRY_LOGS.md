@@ -2521,3 +2521,4 @@
 | #2496 | 2026-10-23 10:11:20 | Viewport Resize Observer | `frame_render_budget` | `25.1 ms (60fps)` | **PASS** |
 | #2497 | 2026-10-23 10:11:40 | Micro Frontend Loader | `jank_events` | `0.5 count` | **PASS** |
 | #2498 | 2026-10-23 10:12:00 | Progressive Image Loader | `frame_render_budget` | `17.7 ms (60fps)` | **PASS** |
+| #2499 | 2026-10-23 10:12:20 | Background Video Loop | `gpu_utilization` | `54.9 %` | **PASS** |
