@@ -2605,3 +2605,4 @@
 | #2580 | 2026-10-23 10:39:20 | CSS-in-JS Themer | `bundle_size` | `155.2 KB` | **PASS** |
 | #2581 | 2026-10-23 10:39:40 | SVG Morphing Pipeline | `animation_fps` | `73.0 fps` | **PASS** |
 | #2582 | 2026-10-23 10:40:00 | Viewport Resize Observer | `latency` | `16.7 ms` | **PASS** |
+| #2583 | 2026-10-23 10:40:20 | 3D Particle Renderer | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
