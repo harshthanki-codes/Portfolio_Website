@@ -2591,3 +2591,4 @@
 | #2566 | 2026-10-23 10:34:40 | CSS-in-JS Themer | `jank_events` | `0.8 count` | **PASS** |
 | #2567 | 2026-10-23 10:35:00 | Lazy Load Optimizer | `jank_events` | `2.8 count` | **PASS** |
 | #2568 | 2026-10-23 10:35:20 | Dynamic Font Loader | `time_to_interactive` | `2281.2 ms` | **PASS** |
+| #2569 | 2026-10-23 10:35:40 | Lazy Load Optimizer | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
