@@ -2458,3 +2458,4 @@
 | #2433 | 2026-10-23 09:50:20 | Audio Visualizer | `bundle_size` | `125.1 KB` | **PASS** |
 | #2434 | 2026-10-23 09:50:40 | Background Video Loop | `first_contentful_paint` | `1388.0 ms` | **PASS** |
 | #2435 | 2026-10-23 09:51:00 | Audio Visualizer | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
+| #2436 | 2026-10-23 09:51:20 | Cache Warmup Service | `time_to_interactive` | `2143.3 ms` | **PASS** |
