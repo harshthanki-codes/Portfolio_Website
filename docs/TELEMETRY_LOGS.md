@@ -2609,3 +2609,4 @@
 | #2584 | 2026-10-23 10:40:40 | Lottie Animation Engine | `memory_footprint` | `61.5 MB` | **PASS** |
 | #2585 | 2026-10-23 10:41:00 | CSS-in-JS Themer | `first_contentful_paint` | `1272.9 ms` | **PASS** |
 | #2586 | 2026-10-23 10:41:20 | Interactive Tooltip Engine | `first_contentful_paint` | `966.0 ms` | **PASS** |
+| #2587 | 2026-10-23 10:41:40 | Progressive Image Loader | `first_contentful_paint` | `1353.8 ms` | **PASS** |
