@@ -2579,3 +2579,4 @@
 | #2554 | 2026-10-23 10:30:40 | Dynamic Font Loader | `jank_events` | `1.2 count` | **PASS** |
 | #2555 | 2026-10-23 10:31:00 | Responsive Grid System | `first_contentful_paint` | `895.2 ms` | **PASS** |
 | #2556 | 2026-10-23 10:31:20 | SVG Morphing Pipeline | `jank_events` | `1.2 count` | **PASS** |
+| #2557 | 2026-10-23 10:31:40 | Lottie Animation Engine | `gpu_utilization` | `40.2 %` | **PASS** |
