@@ -2483,3 +2483,4 @@
 | #2458 | 2026-10-23 09:58:40 | Predictive Arc Canvas | `memory_footprint` | `106.2 MB` | **PASS** |
 | #2459 | 2026-10-23 09:59:00 | Viewport Resize Observer | `time_to_interactive` | `1247.4 ms` | **PASS** |
 | #2460 | 2026-10-23 09:59:20 | Progressive Image Loader | `first_contentful_paint` | `1408.8 ms` | **PASS** |
+| #2461 | 2026-10-23 09:59:40 | Scroll Parallax Manager | `memory_footprint` | `59.9 MB` | **PASS** |
