@@ -2564,3 +2564,4 @@
 | #2539 | 2026-10-23 10:25:40 | Progressive Image Loader | `time_to_interactive` | `1600.7 ms` | **PASS** |
 | #2540 | 2026-10-23 10:26:00 | Telemetry Beacon | `latency` | `21.0 ms` | **PASS** |
 | #2541 | 2026-10-23 10:26:20 | Background Video Loop | `jank_events` | `1.1 count` | **PASS** |
+| #2542 | 2026-10-23 10:26:40 | CSS-in-JS Themer | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
