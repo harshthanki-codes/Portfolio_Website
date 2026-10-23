@@ -2688,3 +2688,4 @@
 | #2663 | 2026-10-23 11:07:00 | Telemetry Beacon | `jank_events` | `1.9 count` | **PASS** |
 | #2664 | 2026-10-23 11:07:20 | Interactive Tooltip Engine | `time_to_interactive` | `1929.3 ms` | **PASS** |
 | #2665 | 2026-10-23 11:07:40 | Lottie Animation Engine | `frame_render_budget` | `16.2 ms (60fps)` | **PASS** |
+| #2666 | 2026-10-23 11:08:00 | Touch Gesture Dispatcher | `frame_render_budget` | `18.3 ms (60fps)` | **PASS** |
