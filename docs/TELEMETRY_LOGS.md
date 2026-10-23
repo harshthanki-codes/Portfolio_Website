@@ -2387,3 +2387,4 @@
 | #2362 | 2026-10-23 09:26:40 | Audio Visualizer | `animation_fps` | `74.0 fps` | **PASS** |
 | #2363 | 2026-10-23 09:27:00 | State Sync Daemon | `first_contentful_paint` | `1042.3 ms` | **PASS** |
 | #2364 | 2026-10-23 09:27:20 | CSS-in-JS Themer | `time_to_interactive` | `1903.0 ms` | **PASS** |
+| #2365 | 2026-10-23 09:27:40 | Predictive Arc Canvas | `latency` | `9.0 ms` | **PASS** |
