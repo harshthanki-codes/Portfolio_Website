@@ -2615,3 +2615,4 @@
 | #2590 | 2026-10-23 10:42:40 | Viewport Resize Observer | `cpu_usage` | `38.3 %` | **PASS** |
 | #2591 | 2026-10-23 10:43:00 | 3D Particle Renderer | `memory_footprint` | `70.0 MB` | **PASS** |
 | #2592 | 2026-10-23 10:43:20 | CSS-in-JS Themer | `jank_events` | `2.0 count` | **PASS** |
+| #2593 | 2026-10-23 10:43:40 | Telemetry Beacon | `gpu_utilization` | `25.1 %` | **PASS** |
