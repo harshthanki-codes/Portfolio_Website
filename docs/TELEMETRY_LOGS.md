@@ -2617,3 +2617,4 @@
 | #2592 | 2026-10-23 10:43:20 | CSS-in-JS Themer | `jank_events` | `2.0 count` | **PASS** |
 | #2593 | 2026-10-23 10:43:40 | Telemetry Beacon | `gpu_utilization` | `25.1 %` | **PASS** |
 | #2594 | 2026-10-23 10:44:00 | Lazy Load Optimizer | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
+| #2595 | 2026-10-23 10:44:20 | SVG Morphing Pipeline | `bundle_size` | `236.1 KB` | **PASS** |
