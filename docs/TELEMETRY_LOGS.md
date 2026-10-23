@@ -2550,3 +2550,4 @@
 | #2525 | 2026-10-23 10:21:00 | Cache Warmup Service | `jank_events` | `0.7 count` | **PASS** |
 | #2526 | 2026-10-23 10:21:20 | Lazy Load Optimizer | `memory_footprint` | `81.9 MB` | **PASS** |
 | #2527 | 2026-10-23 10:21:40 | SVG Morphing Pipeline | `jank_events` | `0.1 count` | **PASS** |
+| #2528 | 2026-10-23 10:22:00 | 3D Particle Renderer | `time_to_interactive` | `2030.1 ms` | **PASS** |
