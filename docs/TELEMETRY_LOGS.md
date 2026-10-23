@@ -2712,3 +2712,4 @@
 | #2687 | 2026-10-23 11:15:00 | Viewport Resize Observer | `gpu_utilization` | `59.5 %` | **PASS** |
 | #2688 | 2026-10-23 11:15:20 | Micro Frontend Loader | `bundle_size` | `211.6 KB` | **PASS** |
 | #2689 | 2026-10-23 11:15:40 | Audio Visualizer | `time_to_interactive` | `1740.5 ms` | **PASS** |
+| #2690 | 2026-10-23 11:16:00 | Audio Visualizer | `gpu_utilization` | `25.4 %` | **PASS** |
