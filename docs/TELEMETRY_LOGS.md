@@ -2488,3 +2488,4 @@
 | #2463 | 2026-10-23 10:00:20 | Background Video Loop | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
 | #2464 | 2026-10-23 10:00:40 | Viewport Resize Observer | `memory_footprint` | `77.4 MB` | **PASS** |
 | #2465 | 2026-10-23 10:01:00 | WebGL Shader Compiler | `memory_footprint` | `73.6 MB` | **PASS** |
+| #2466 | 2026-10-23 10:01:20 | Dynamic Font Loader | `cpu_usage` | `25.2 %` | **PASS** |
