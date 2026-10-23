@@ -2629,3 +2629,4 @@
 | #2604 | 2026-10-23 10:47:20 | Viewport Resize Observer | `memory_footprint` | `50.3 MB` | **PASS** |
 | #2605 | 2026-10-23 10:47:40 | Micro Frontend Loader | `bundle_size` | `102.9 KB` | **PASS** |
 | #2606 | 2026-10-23 10:48:00 | Telemetry Beacon | `latency` | `14.6 ms` | **PASS** |
+| #2607 | 2026-10-23 10:48:20 | 3D Particle Renderer | `jank_events` | `2.1 count` | **PASS** |
