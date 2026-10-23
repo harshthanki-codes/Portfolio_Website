@@ -2215,3 +2215,4 @@
 | #2190 | 2026-10-23 08:29:20 | Cache Warmup Service | `first_contentful_paint` | `1293.3 ms` | **PASS** |
 | #2191 | 2026-10-23 08:29:40 | Lottie Animation Engine | `jank_events` | `1.6 count` | **PASS** |
 | #2192 | 2026-10-23 08:30:00 | Micro Frontend Loader | `bundle_size` | `146.6 KB` | **PASS** |
+| #2193 | 2026-10-23 08:30:20 | Viewport Resize Observer | `jank_events` | `1.7 count` | **PASS** |
