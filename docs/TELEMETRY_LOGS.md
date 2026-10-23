@@ -2714,3 +2714,4 @@
 | #2689 | 2026-10-23 11:15:40 | Audio Visualizer | `time_to_interactive` | `1740.5 ms` | **PASS** |
 | #2690 | 2026-10-23 11:16:00 | Audio Visualizer | `gpu_utilization` | `25.4 %` | **PASS** |
 | #2691 | 2026-10-23 11:16:20 | Cache Warmup Service | `time_to_interactive` | `1505.5 ms` | **PASS** |
+| #2692 | 2026-10-23 11:16:40 | Viewport Resize Observer | `memory_footprint` | `77.8 MB` | **PASS** |
