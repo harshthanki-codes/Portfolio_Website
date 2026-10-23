@@ -2169,3 +2169,4 @@
 | #2144 | 2026-10-23 08:14:00 | Telemetry Beacon | `bundle_size` | `248.1 KB` | **PASS** |
 | #2145 | 2026-10-23 08:14:20 | Audio Visualizer | `frame_render_budget` | `25.4 ms (60fps)` | **PASS** |
 | #2146 | 2026-10-23 08:14:40 | Telemetry Beacon | `first_contentful_paint` | `829.0 ms` | **PASS** |
+| #2147 | 2026-10-23 08:15:00 | Background Video Loop | `time_to_interactive` | `2308.6 ms` | **PASS** |
