@@ -2397,3 +2397,4 @@
 | #2372 | 2026-10-23 09:30:00 | WebGL Shader Compiler | `cpu_usage` | `15.3 %` | **PASS** |
 | #2373 | 2026-10-23 09:30:20 | Background Video Loop | `latency` | `14.3 ms` | **PASS** |
 | #2374 | 2026-10-23 09:30:40 | Background Video Loop | `first_contentful_paint` | `1117.4 ms` | **PASS** |
+| #2375 | 2026-10-23 09:31:00 | Progressive Image Loader | `cpu_usage` | `16.6 %` | **PASS** |
