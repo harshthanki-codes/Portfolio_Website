@@ -2648,3 +2648,4 @@
 | #2623 | 2026-10-23 10:53:40 | Scroll Parallax Manager | `frame_render_budget` | `27.1 ms (60fps)` | **PASS** |
 | #2624 | 2026-10-23 10:54:00 | Scroll Parallax Manager | `gpu_utilization` | `55.9 %` | **PASS** |
 | #2625 | 2026-10-23 10:54:20 | Lottie Animation Engine | `gpu_utilization` | `46.4 %` | **PASS** |
+| #2626 | 2026-10-23 10:54:40 | Interactive Tooltip Engine | `memory_footprint` | `113.2 MB` | **PASS** |
