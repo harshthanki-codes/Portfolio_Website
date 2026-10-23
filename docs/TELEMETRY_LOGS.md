@@ -2359,3 +2359,4 @@
 | #2334 | 2026-10-23 09:17:20 | Background Video Loop | `memory_footprint` | `59.2 MB` | **PASS** |
 | #2335 | 2026-10-23 09:17:40 | WebGL Shader Compiler | `jank_events` | `3.0 count` | **PASS** |
 | #2336 | 2026-10-23 09:18:00 | Interactive Tooltip Engine | `bundle_size` | `183.9 KB` | **PASS** |
+| #2337 | 2026-10-23 09:18:20 | Lottie Animation Engine | `time_to_interactive` | `1812.6 ms` | **PASS** |
