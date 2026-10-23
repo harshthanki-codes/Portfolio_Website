@@ -2206,3 +2206,4 @@
 | #2181 | 2026-10-23 08:26:20 | Lottie Animation Engine | `memory_footprint` | `107.3 MB` | **PASS** |
 | #2182 | 2026-10-23 08:26:40 | Dynamic Font Loader | `latency` | `20.0 ms` | **PASS** |
 | #2183 | 2026-10-23 08:27:00 | Touch Gesture Dispatcher | `latency` | `15.2 ms` | **PASS** |
+| #2184 | 2026-10-23 08:27:20 | Scroll Parallax Manager | `first_contentful_paint` | `1429.9 ms` | **PASS** |
