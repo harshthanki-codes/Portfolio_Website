@@ -2357,3 +2357,4 @@
 | #2332 | 2026-10-23 09:16:40 | State Sync Daemon | `cpu_usage` | `21.2 %` | **PASS** |
 | #2333 | 2026-10-23 09:17:00 | CSS-in-JS Themer | `jank_events` | `0.3 count` | **PASS** |
 | #2334 | 2026-10-23 09:17:20 | Background Video Loop | `memory_footprint` | `59.2 MB` | **PASS** |
+| #2335 | 2026-10-23 09:17:40 | WebGL Shader Compiler | `jank_events` | `3.0 count` | **PASS** |
