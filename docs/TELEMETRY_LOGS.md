@@ -2515,3 +2515,4 @@
 | #2490 | 2026-10-23 10:09:20 | WebGL Shader Compiler | `animation_fps` | `57.6 fps` | **PASS** |
 | #2491 | 2026-10-23 10:09:40 | 3D Particle Renderer | `first_contentful_paint` | `931.5 ms` | **PASS** |
 | #2492 | 2026-10-23 10:10:00 | Dynamic Font Loader | `latency` | `22.9 ms` | **PASS** |
+| #2493 | 2026-10-23 10:10:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2110.5 ms` | **PASS** |
