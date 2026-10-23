@@ -2584,3 +2584,4 @@
 | #2559 | 2026-10-23 10:32:20 | Telemetry Beacon | `animation_fps` | `74.4 fps` | **PASS** |
 | #2560 | 2026-10-23 10:32:40 | State Sync Daemon | `cpu_usage` | `34.1 %` | **PASS** |
 | #2561 | 2026-10-23 10:33:00 | Scroll Parallax Manager | `memory_footprint` | `65.4 MB` | **PASS** |
+| #2562 | 2026-10-23 10:33:20 | Lottie Animation Engine | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
