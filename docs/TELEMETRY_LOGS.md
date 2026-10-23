@@ -2547,3 +2547,4 @@
 | #2522 | 2026-10-23 10:20:00 | Background Video Loop | `bundle_size` | `202.2 KB` | **PASS** |
 | #2523 | 2026-10-23 10:20:20 | Lazy Load Optimizer | `cpu_usage` | `39.1 %` | **PASS** |
 | #2524 | 2026-10-23 10:20:40 | CSS-in-JS Themer | `memory_footprint` | `102.8 MB` | **PASS** |
+| #2525 | 2026-10-23 10:21:00 | Cache Warmup Service | `jank_events` | `0.7 count` | **PASS** |
