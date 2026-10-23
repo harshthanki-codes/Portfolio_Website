@@ -2632,3 +2632,4 @@
 | #2607 | 2026-10-23 10:48:20 | 3D Particle Renderer | `jank_events` | `2.1 count` | **PASS** |
 | #2608 | 2026-10-23 10:48:40 | Progressive Image Loader | `jank_events` | `2.5 count` | **PASS** |
 | #2609 | 2026-10-23 10:49:00 | Touch Gesture Dispatcher | `bundle_size` | `121.7 KB` | **PASS** |
+| #2610 | 2026-10-23 10:49:20 | Interactive Tooltip Engine | `gpu_utilization` | `26.2 %` | **PASS** |
