@@ -2491,3 +2491,4 @@
 | #2466 | 2026-10-23 10:01:20 | Dynamic Font Loader | `cpu_usage` | `25.2 %` | **PASS** |
 | #2467 | 2026-10-23 10:01:40 | Lottie Animation Engine | `jank_events` | `0.7 count` | **PASS** |
 | #2468 | 2026-10-23 10:02:00 | 3D Particle Renderer | `animation_fps` | `66.4 fps` | **PASS** |
+| #2469 | 2026-10-23 10:02:20 | Background Video Loop | `bundle_size` | `194.4 KB` | **PASS** |
