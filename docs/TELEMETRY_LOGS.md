@@ -2143,3 +2143,4 @@
 | #2118 | 2026-10-23 08:05:20 | Viewport Resize Observer | `time_to_interactive` | `1868.2 ms` | **PASS** |
 | #2119 | 2026-10-23 08:05:40 | Micro Frontend Loader | `time_to_interactive` | `1851.6 ms` | **PASS** |
 | #2120 | 2026-10-23 08:06:00 | Touch Gesture Dispatcher | `memory_footprint` | `117.0 MB` | **PASS** |
+| #2121 | 2026-10-23 08:06:20 | Interactive Tooltip Engine | `gpu_utilization` | `56.2 %` | **PASS** |
