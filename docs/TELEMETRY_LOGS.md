@@ -2533,3 +2533,4 @@
 | #2508 | 2026-10-23 10:15:20 | Background Video Loop | `memory_footprint` | `104.4 MB` | **PASS** |
 | #2509 | 2026-10-23 10:15:40 | Audio Visualizer | `gpu_utilization` | `26.3 %` | **PASS** |
 | #2510 | 2026-10-23 10:16:00 | Cache Warmup Service | `jank_events` | `3.0 count` | **PASS** |
+| #2511 | 2026-10-23 10:16:20 | Predictive Arc Canvas | `gpu_utilization` | `63.1 %` | **PASS** |
