@@ -2453,3 +2453,4 @@
 | #2428 | 2026-10-23 09:48:40 | Responsive Grid System | `jank_events` | `2.5 count` | **PASS** |
 | #2429 | 2026-10-23 09:49:00 | CSS-in-JS Themer | `bundle_size` | `181.8 KB` | **PASS** |
 | #2430 | 2026-10-23 09:49:20 | Cache Warmup Service | `animation_fps` | `68.5 fps` | **PASS** |
+| #2431 | 2026-10-23 09:49:40 | Background Video Loop | `time_to_interactive` | `2421.9 ms` | **PASS** |
