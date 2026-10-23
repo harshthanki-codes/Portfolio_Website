@@ -2366,3 +2366,4 @@
 | #2341 | 2026-10-23 09:19:40 | CSS-in-JS Themer | `bundle_size` | `210.3 KB` | **PASS** |
 | #2342 | 2026-10-23 09:20:00 | State Sync Daemon | `gpu_utilization` | `25.0 %` | **PASS** |
 | #2343 | 2026-10-23 09:20:20 | Micro Frontend Loader | `gpu_utilization` | `44.2 %` | **PASS** |
+| #2344 | 2026-10-23 09:20:40 | WebGL Shader Compiler | `jank_events` | `1.1 count` | **PASS** |
