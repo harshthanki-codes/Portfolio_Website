@@ -2626,3 +2626,4 @@
 | #2601 | 2026-10-23 10:46:20 | Viewport Resize Observer | `animation_fps` | `69.3 fps` | **PASS** |
 | #2602 | 2026-10-23 10:46:40 | Background Video Loop | `time_to_interactive` | `1771.2 ms` | **PASS** |
 | #2603 | 2026-10-23 10:47:00 | SVG Morphing Pipeline | `jank_events` | `0.3 count` | **PASS** |
+| #2604 | 2026-10-23 10:47:20 | Viewport Resize Observer | `memory_footprint` | `50.3 MB` | **PASS** |
