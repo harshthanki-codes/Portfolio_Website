@@ -2191,3 +2191,4 @@
 | #2166 | 2026-10-23 08:21:20 | Scroll Parallax Manager | `latency` | `16.8 ms` | **PASS** |
 | #2167 | 2026-10-23 08:21:40 | Telemetry Beacon | `animation_fps` | `72.5 fps` | **PASS** |
 | #2168 | 2026-10-23 08:22:00 | CSS-in-JS Themer | `latency` | `6.4 ms` | **PASS** |
+| #2169 | 2026-10-23 08:22:20 | Predictive Arc Canvas | `first_contentful_paint` | `1256.2 ms` | **PASS** |
