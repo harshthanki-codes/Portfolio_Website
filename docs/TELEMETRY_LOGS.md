@@ -2236,3 +2236,4 @@
 | #2211 | 2026-10-23 08:36:20 | Background Video Loop | `animation_fps` | `71.4 fps` | **PASS** |
 | #2212 | 2026-10-23 08:36:40 | Lottie Animation Engine | `cpu_usage` | `15.7 %` | **PASS** |
 | #2213 | 2026-10-23 08:37:00 | Lottie Animation Engine | `frame_render_budget` | `21.6 ms (60fps)` | **PASS** |
+| #2214 | 2026-10-23 08:37:20 | Touch Gesture Dispatcher | `animation_fps` | `65.7 fps` | **PASS** |
