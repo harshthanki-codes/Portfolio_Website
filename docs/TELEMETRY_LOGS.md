@@ -2554,3 +2554,4 @@
 | #2529 | 2026-10-23 10:22:20 | State Sync Daemon | `time_to_interactive` | `1258.7 ms` | **PASS** |
 | #2530 | 2026-10-23 10:22:40 | Dynamic Font Loader | `frame_render_budget` | `25.3 ms (60fps)` | **PASS** |
 | #2531 | 2026-10-23 10:23:00 | Progressive Image Loader | `animation_fps` | `63.6 fps` | **PASS** |
+| #2532 | 2026-10-23 10:23:20 | Scroll Parallax Manager | `memory_footprint` | `50.0 MB` | **PASS** |
