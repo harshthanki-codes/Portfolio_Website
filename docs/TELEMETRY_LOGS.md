@@ -2487,3 +2487,4 @@
 | #2462 | 2026-10-23 10:00:00 | SVG Morphing Pipeline | `time_to_interactive` | `1563.8 ms` | **PASS** |
 | #2463 | 2026-10-23 10:00:20 | Background Video Loop | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
 | #2464 | 2026-10-23 10:00:40 | Viewport Resize Observer | `memory_footprint` | `77.4 MB` | **PASS** |
+| #2465 | 2026-10-23 10:01:00 | WebGL Shader Compiler | `memory_footprint` | `73.6 MB` | **PASS** |
