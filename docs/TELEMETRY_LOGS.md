@@ -2503,3 +2503,4 @@
 | #2478 | 2026-10-23 10:05:20 | SVG Morphing Pipeline | `memory_footprint` | `99.9 MB` | **PASS** |
 | #2479 | 2026-10-23 10:05:40 | Background Video Loop | `jank_events` | `3.0 count` | **PASS** |
 | #2480 | 2026-10-23 10:06:00 | WebGL Shader Compiler | `cpu_usage` | `15.4 %` | **PASS** |
+| #2481 | 2026-10-23 10:06:20 | Telemetry Beacon | `frame_render_budget` | `24.7 ms (60fps)` | **PASS** |
