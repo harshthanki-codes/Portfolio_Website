@@ -2293,3 +2293,4 @@
 | #2268 | 2026-10-23 08:55:20 | Viewport Resize Observer | `bundle_size` | `97.2 KB` | **PASS** |
 | #2269 | 2026-10-23 08:55:40 | 3D Particle Renderer | `latency` | `16.7 ms` | **PASS** |
 | #2270 | 2026-10-23 08:56:00 | Viewport Resize Observer | `jank_events` | `1.3 count` | **PASS** |
+| #2271 | 2026-10-23 08:56:20 | Interactive Tooltip Engine | `animation_fps` | `57.9 fps` | **PASS** |
