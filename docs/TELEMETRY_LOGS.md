@@ -2708,3 +2708,4 @@
 | #2683 | 2026-10-23 11:13:40 | Viewport Resize Observer | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
 | #2684 | 2026-10-23 11:14:00 | Scroll Parallax Manager | `first_contentful_paint` | `1172.5 ms` | **PASS** |
 | #2685 | 2026-10-23 11:14:20 | Dynamic Font Loader | `frame_render_budget` | `22.8 ms (60fps)` | **PASS** |
+| #2686 | 2026-10-23 11:14:40 | Cache Warmup Service | `bundle_size` | `231.6 KB` | **PASS** |
