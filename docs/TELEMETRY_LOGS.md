@@ -2429,3 +2429,4 @@
 | #2404 | 2026-10-23 09:40:40 | Viewport Resize Observer | `memory_footprint` | `110.1 MB` | **PASS** |
 | #2405 | 2026-10-23 09:41:00 | Micro Frontend Loader | `memory_footprint` | `75.3 MB` | **PASS** |
 | #2406 | 2026-10-23 09:41:20 | Dynamic Font Loader | `time_to_interactive` | `1959.7 ms` | **PASS** |
+| #2407 | 2026-10-23 09:41:40 | Viewport Resize Observer | `latency` | `16.9 ms` | **PASS** |
