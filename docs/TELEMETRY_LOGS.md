@@ -2486,3 +2486,4 @@
 | #2461 | 2026-10-23 09:59:40 | Scroll Parallax Manager | `memory_footprint` | `59.9 MB` | **PASS** |
 | #2462 | 2026-10-23 10:00:00 | SVG Morphing Pipeline | `time_to_interactive` | `1563.8 ms` | **PASS** |
 | #2463 | 2026-10-23 10:00:20 | Background Video Loop | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
+| #2464 | 2026-10-23 10:00:40 | Viewport Resize Observer | `memory_footprint` | `77.4 MB` | **PASS** |
