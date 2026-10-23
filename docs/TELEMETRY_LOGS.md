@@ -2182,3 +2182,4 @@
 | #2157 | 2026-10-23 08:18:20 | CSS-in-JS Themer | `latency` | `12.7 ms` | **PASS** |
 | #2158 | 2026-10-23 08:18:40 | Interactive Tooltip Engine | `gpu_utilization` | `25.9 %` | **PASS** |
 | #2159 | 2026-10-23 08:19:00 | WebGL Shader Compiler | `memory_footprint` | `78.0 MB` | **PASS** |
+| #2160 | 2026-10-23 08:19:20 | Interactive Tooltip Engine | `gpu_utilization` | `25.5 %` | **PASS** |
