@@ -2319,3 +2319,4 @@
 | #2294 | 2026-10-23 09:04:00 | Dynamic Font Loader | `jank_events` | `0.4 count` | **PASS** |
 | #2295 | 2026-10-23 09:04:20 | CSS-in-JS Themer | `time_to_interactive` | `2373.5 ms` | **PASS** |
 | #2296 | 2026-10-23 09:04:40 | CSS-in-JS Themer | `latency` | `13.6 ms` | **PASS** |
+| #2297 | 2026-10-23 09:05:00 | Background Video Loop | `gpu_utilization` | `54.7 %` | **PASS** |
