@@ -2392,3 +2392,4 @@
 | #2367 | 2026-10-23 09:28:20 | Dynamic Font Loader | `time_to_interactive` | `1274.1 ms` | **PASS** |
 | #2368 | 2026-10-23 09:28:40 | Dynamic Font Loader | `first_contentful_paint` | `981.5 ms` | **PASS** |
 | #2369 | 2026-10-23 09:29:00 | Lazy Load Optimizer | `time_to_interactive` | `1947.0 ms` | **PASS** |
+| #2370 | 2026-10-23 09:29:20 | Lottie Animation Engine | `jank_events` | `1.9 count` | **PASS** |
