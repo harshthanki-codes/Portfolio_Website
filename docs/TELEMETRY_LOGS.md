@@ -2395,3 +2395,4 @@
 | #2370 | 2026-10-23 09:29:20 | Lottie Animation Engine | `jank_events` | `1.9 count` | **PASS** |
 | #2371 | 2026-10-23 09:29:40 | 3D Particle Renderer | `gpu_utilization` | `50.3 %` | **PASS** |
 | #2372 | 2026-10-23 09:30:00 | WebGL Shader Compiler | `cpu_usage` | `15.3 %` | **PASS** |
+| #2373 | 2026-10-23 09:30:20 | Background Video Loop | `latency` | `14.3 ms` | **PASS** |
