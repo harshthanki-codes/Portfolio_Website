@@ -2646,3 +2646,4 @@
 | #2621 | 2026-10-23 10:53:00 | Lazy Load Optimizer | `first_contentful_paint` | `1459.6 ms` | **PASS** |
 | #2622 | 2026-10-23 10:53:20 | Background Video Loop | `animation_fps` | `72.9 fps` | **PASS** |
 | #2623 | 2026-10-23 10:53:40 | Scroll Parallax Manager | `frame_render_budget` | `27.1 ms (60fps)` | **PASS** |
+| #2624 | 2026-10-23 10:54:00 | Scroll Parallax Manager | `gpu_utilization` | `55.9 %` | **PASS** |
