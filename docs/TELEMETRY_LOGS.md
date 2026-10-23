@@ -2291,3 +2291,4 @@
 | #2266 | 2026-10-23 08:54:40 | Background Video Loop | `time_to_interactive` | `1641.0 ms` | **PASS** |
 | #2267 | 2026-10-23 08:55:00 | Touch Gesture Dispatcher | `memory_footprint` | `81.6 MB` | **PASS** |
 | #2268 | 2026-10-23 08:55:20 | Viewport Resize Observer | `bundle_size` | `97.2 KB` | **PASS** |
+| #2269 | 2026-10-23 08:55:40 | 3D Particle Renderer | `latency` | `16.7 ms` | **PASS** |
