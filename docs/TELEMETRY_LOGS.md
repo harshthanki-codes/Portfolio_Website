@@ -2351,3 +2351,4 @@
 | #2326 | 2026-10-23 09:14:40 | Scroll Parallax Manager | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
 | #2327 | 2026-10-23 09:15:00 | Audio Visualizer | `bundle_size` | `90.6 KB` | **PASS** |
 | #2328 | 2026-10-23 09:15:20 | SVG Morphing Pipeline | `cpu_usage` | `16.8 %` | **PASS** |
+| #2329 | 2026-10-23 09:15:40 | 3D Particle Renderer | `gpu_utilization` | `58.4 %` | **PASS** |
