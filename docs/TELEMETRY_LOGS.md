@@ -2665,3 +2665,4 @@
 | #2640 | 2026-10-23 10:59:20 | Background Video Loop | `frame_render_budget` | `29.4 ms (60fps)` | **PASS** |
 | #2641 | 2026-10-23 10:59:40 | State Sync Daemon | `frame_render_budget` | `22.4 ms (60fps)` | **PASS** |
 | #2642 | 2026-10-23 11:00:00 | Lazy Load Optimizer | `memory_footprint` | `113.7 MB` | **PASS** |
+| #2643 | 2026-10-23 11:00:20 | Cache Warmup Service | `cpu_usage` | `39.1 %` | **PASS** |
