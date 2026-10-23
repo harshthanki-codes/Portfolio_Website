@@ -2269,3 +2269,4 @@
 | #2244 | 2026-10-23 08:47:20 | Dynamic Font Loader | `time_to_interactive` | `2286.8 ms` | **PASS** |
 | #2245 | 2026-10-23 08:47:40 | Audio Visualizer | `animation_fps` | `73.8 fps` | **PASS** |
 | #2246 | 2026-10-23 08:48:00 | State Sync Daemon | `latency` | `9.0 ms` | **PASS** |
+| #2247 | 2026-10-23 08:48:20 | Predictive Arc Canvas | `jank_events` | `0.1 count` | **PASS** |
