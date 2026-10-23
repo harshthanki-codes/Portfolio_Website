@@ -1822,3 +1822,4 @@
 
 | #2100 | 2026-10-23 08:00:00 | Scroll Parallax Manager | `animation_fps` | `69.7 fps` | **PASS** |
 | #1802 | 2026-10-22 09:40:40 | Cache Warmup Service | `memory_footprint` | `79.6 MB` | **PASS** |
+| #2101 | 2026-10-23 08:00:20 | Interactive Tooltip Engine | `gpu_utilization` | `68.5 %` | **PASS** |
