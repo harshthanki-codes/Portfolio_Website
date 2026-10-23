@@ -2581,3 +2581,4 @@
 | #2556 | 2026-10-23 10:31:20 | SVG Morphing Pipeline | `jank_events` | `1.2 count` | **PASS** |
 | #2557 | 2026-10-23 10:31:40 | Lottie Animation Engine | `gpu_utilization` | `40.2 %` | **PASS** |
 | #2558 | 2026-10-23 10:32:00 | Progressive Image Loader | `jank_events` | `1.1 count` | **PASS** |
+| #2559 | 2026-10-23 10:32:20 | Telemetry Beacon | `animation_fps` | `74.4 fps` | **PASS** |
