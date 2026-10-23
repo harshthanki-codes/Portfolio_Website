@@ -2448,3 +2448,4 @@
 | #2423 | 2026-10-23 09:47:00 | Micro Frontend Loader | `bundle_size` | `168.4 KB` | **PASS** |
 | #2424 | 2026-10-23 09:47:20 | Lazy Load Optimizer | `jank_events` | `0.9 count` | **PASS** |
 | #2425 | 2026-10-23 09:47:40 | Micro Frontend Loader | `jank_events` | `2.7 count` | **PASS** |
+| #2426 | 2026-10-23 09:48:00 | Micro Frontend Loader | `animation_fps` | `61.0 fps` | **PASS** |
