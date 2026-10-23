@@ -2295,3 +2295,4 @@
 | #2270 | 2026-10-23 08:56:00 | Viewport Resize Observer | `jank_events` | `1.3 count` | **PASS** |
 | #2271 | 2026-10-23 08:56:20 | Interactive Tooltip Engine | `animation_fps` | `57.9 fps` | **PASS** |
 | #2272 | 2026-10-23 08:56:40 | CSS-in-JS Themer | `gpu_utilization` | `43.7 %` | **PASS** |
+| #2273 | 2026-10-23 08:57:00 | WebGL Shader Compiler | `latency` | `5.2 ms` | **PASS** |
