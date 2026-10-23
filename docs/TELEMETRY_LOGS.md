@@ -2494,3 +2494,4 @@
 | #2469 | 2026-10-23 10:02:20 | Background Video Loop | `bundle_size` | `194.4 KB` | **PASS** |
 | #2470 | 2026-10-23 10:02:40 | Micro Frontend Loader | `latency` | `13.4 ms` | **PASS** |
 | #2471 | 2026-10-23 10:03:00 | Lazy Load Optimizer | `gpu_utilization` | `65.4 %` | **PASS** |
+| #2472 | 2026-10-23 10:03:20 | Background Video Loop | `cpu_usage` | `44.2 %` | **PASS** |
