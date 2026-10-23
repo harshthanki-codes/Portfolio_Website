@@ -2243,3 +2243,4 @@
 | #2218 | 2026-10-23 08:38:40 | Background Video Loop | `jank_events` | `2.3 count` | **PASS** |
 | #2219 | 2026-10-23 08:39:00 | Touch Gesture Dispatcher | `cpu_usage` | `38.0 %` | **PASS** |
 | #2220 | 2026-10-23 08:39:20 | WebGL Shader Compiler | `latency` | `10.0 ms` | **PASS** |
+| #2221 | 2026-10-23 08:39:40 | Interactive Tooltip Engine | `frame_render_budget` | `27.0 ms (60fps)` | **PASS** |
