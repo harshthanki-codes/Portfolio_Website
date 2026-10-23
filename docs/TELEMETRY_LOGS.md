@@ -2595,3 +2595,4 @@
 | #2570 | 2026-10-23 10:36:00 | CSS-in-JS Themer | `bundle_size` | `95.9 KB` | **PASS** |
 | #2571 | 2026-10-23 10:36:20 | Lottie Animation Engine | `time_to_interactive` | `1230.7 ms` | **PASS** |
 | #2572 | 2026-10-23 10:36:40 | Background Video Loop | `frame_render_budget` | `19.8 ms (60fps)` | **PASS** |
+| #2573 | 2026-10-23 10:37:00 | SVG Morphing Pipeline | `memory_footprint` | `72.8 MB` | **PASS** |
