@@ -2390,3 +2390,4 @@
 | #2365 | 2026-10-23 09:27:40 | Predictive Arc Canvas | `latency` | `9.0 ms` | **PASS** |
 | #2366 | 2026-10-23 09:28:00 | Cache Warmup Service | `jank_events` | `1.3 count` | **PASS** |
 | #2367 | 2026-10-23 09:28:20 | Dynamic Font Loader | `time_to_interactive` | `1274.1 ms` | **PASS** |
+| #2368 | 2026-10-23 09:28:40 | Dynamic Font Loader | `first_contentful_paint` | `981.5 ms` | **PASS** |
