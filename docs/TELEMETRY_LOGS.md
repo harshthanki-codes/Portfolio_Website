@@ -2721,3 +2721,4 @@
 | #2696 | 2026-10-23 11:18:00 | State Sync Daemon | `cpu_usage` | `37.8 %` | **PASS** |
 | #2697 | 2026-10-23 11:18:20 | Telemetry Beacon | `first_contentful_paint` | `1434.9 ms` | **PASS** |
 | #2698 | 2026-10-23 11:18:40 | Touch Gesture Dispatcher | `jank_events` | `0.8 count` | **PASS** |
+| #2699 | 2026-10-23 11:19:00 | Touch Gesture Dispatcher | `gpu_utilization` | `53.9 %` | **PASS** |
