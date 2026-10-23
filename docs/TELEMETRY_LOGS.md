@@ -2415,3 +2415,4 @@
 | #2390 | 2026-10-23 09:36:00 | Telemetry Beacon | `time_to_interactive` | `2410.2 ms` | **PASS** |
 | #2391 | 2026-10-23 09:36:20 | Predictive Arc Canvas | `frame_render_budget` | `17.2 ms (60fps)` | **PASS** |
 | #2392 | 2026-10-23 09:36:40 | Telemetry Beacon | `latency` | `16.7 ms` | **PASS** |
+| #2393 | 2026-10-23 09:37:00 | Lottie Animation Engine | `first_contentful_paint` | `928.7 ms` | **PASS** |
