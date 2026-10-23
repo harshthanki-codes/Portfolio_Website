@@ -2339,3 +2339,4 @@
 | #2314 | 2026-10-23 09:10:40 | Predictive Arc Canvas | `jank_events` | `1.6 count` | **PASS** |
 | #2315 | 2026-10-23 09:11:00 | Telemetry Beacon | `latency` | `11.5 ms` | **PASS** |
 | #2316 | 2026-10-23 09:11:20 | 3D Particle Renderer | `first_contentful_paint` | `1241.9 ms` | **PASS** |
+| #2317 | 2026-10-23 09:11:40 | Lazy Load Optimizer | `time_to_interactive` | `1802.8 ms` | **PASS** |
