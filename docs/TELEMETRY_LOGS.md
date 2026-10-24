@@ -3290,3 +3290,4 @@
 | #3262 | 2026-10-24 11:06:40 | Interactive Tooltip Engine | `cpu_usage` | `35.0 %` | **PASS** |
 | #3263 | 2026-10-24 11:07:00 | Dynamic Font Loader | `gpu_utilization` | `32.1 %` | **PASS** |
 | #3264 | 2026-10-24 11:07:20 | Background Video Loop | `first_contentful_paint` | `1369.7 ms` | **PASS** |
+| #3265 | 2026-10-24 11:07:40 | Scroll Parallax Manager | `cpu_usage` | `38.0 %` | **PASS** |
