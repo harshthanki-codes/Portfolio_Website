@@ -2979,3 +2979,4 @@
 | #2951 | 2026-10-24 09:23:00 | State Sync Daemon | `latency` | `16.6 ms` | **PASS** |
 | #2952 | 2026-10-24 09:23:20 | CSS-in-JS Themer | `jank_events` | `0.0 count` | **PASS** |
 | #2953 | 2026-10-24 09:23:40 | State Sync Daemon | `memory_footprint` | `113.9 MB` | **PASS** |
+| #2954 | 2026-10-24 09:24:00 | Predictive Arc Canvas | `jank_events` | `2.8 count` | **PASS** |
