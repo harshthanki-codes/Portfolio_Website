@@ -2946,3 +2946,4 @@
 | #2918 | 2026-10-24 09:12:00 | CSS-in-JS Themer | `time_to_interactive` | `1573.4 ms` | **PASS** |
 | #2919 | 2026-10-24 09:12:20 | WebGL Shader Compiler | `frame_render_budget` | `19.2 ms (60fps)` | **PASS** |
 | #2920 | 2026-10-24 09:12:40 | Touch Gesture Dispatcher | `latency` | `19.0 ms` | **PASS** |
+| #2921 | 2026-10-24 09:13:00 | Scroll Parallax Manager | `memory_footprint` | `117.2 MB` | **PASS** |
