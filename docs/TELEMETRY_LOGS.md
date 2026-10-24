@@ -3285,3 +3285,4 @@
 | #3257 | 2026-10-24 11:05:00 | Viewport Resize Observer | `bundle_size` | `192.2 KB` | **PASS** |
 | #3258 | 2026-10-24 11:05:20 | Viewport Resize Observer | `bundle_size` | `154.8 KB` | **PASS** |
 | #3259 | 2026-10-24 11:05:40 | Lottie Animation Engine | `gpu_utilization` | `24.6 %` | **PASS** |
+| #3260 | 2026-10-24 11:06:00 | Scroll Parallax Manager | `frame_render_budget` | `25.0 ms (60fps)` | **PASS** |
