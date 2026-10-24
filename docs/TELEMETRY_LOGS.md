@@ -3053,3 +3053,4 @@
 | #3025 | 2026-10-24 09:47:40 | 3D Particle Renderer | `first_contentful_paint` | `856.9 ms` | **PASS** |
 | #3026 | 2026-10-24 09:48:00 | Predictive Arc Canvas | `animation_fps` | `66.5 fps` | **PASS** |
 | #3027 | 2026-10-24 09:48:20 | Audio Visualizer | `first_contentful_paint` | `1006.4 ms` | **PASS** |
+| #3028 | 2026-10-24 09:48:40 | WebGL Shader Compiler | `frame_render_budget` | `29.3 ms (60fps)` | **PASS** |
