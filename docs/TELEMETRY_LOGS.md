@@ -3175,3 +3175,4 @@
 | #3147 | 2026-10-24 10:28:20 | State Sync Daemon | `memory_footprint` | `115.6 MB` | **PASS** |
 | #3148 | 2026-10-24 10:28:40 | Background Video Loop | `bundle_size` | `155.5 KB` | **PASS** |
 | #3149 | 2026-10-24 10:29:00 | Telemetry Beacon | `bundle_size` | `154.6 KB` | **PASS** |
+| #3150 | 2026-10-24 10:29:20 | Viewport Resize Observer | `first_contentful_paint` | `919.1 ms` | **PASS** |
