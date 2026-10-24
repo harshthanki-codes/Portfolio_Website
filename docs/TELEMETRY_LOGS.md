@@ -3223,3 +3223,4 @@
 | #3195 | 2026-10-24 10:44:20 | Audio Visualizer | `jank_events` | `0.6 count` | **PASS** |
 | #3196 | 2026-10-24 10:44:40 | Background Video Loop | `animation_fps` | `55.8 fps` | **PASS** |
 | #3197 | 2026-10-24 10:45:00 | Viewport Resize Observer | `cpu_usage` | `36.7 %` | **PASS** |
+| #3198 | 2026-10-24 10:45:20 | SVG Morphing Pipeline | `gpu_utilization` | `68.8 %` | **PASS** |
