@@ -2958,3 +2958,4 @@
 | #2930 | 2026-10-24 09:16:00 | Cache Warmup Service | `memory_footprint` | `55.5 MB` | **PASS** |
 | #2931 | 2026-10-24 09:16:20 | Telemetry Beacon | `jank_events` | `2.6 count` | **PASS** |
 | #2932 | 2026-10-24 09:16:40 | Background Video Loop | `animation_fps` | `65.7 fps` | **PASS** |
+| #2933 | 2026-10-24 09:17:00 | Lottie Animation Engine | `gpu_utilization` | `64.3 %` | **PASS** |
