@@ -3309,3 +3309,4 @@
 | #3281 | 2026-10-24 11:13:00 | Telemetry Beacon | `gpu_utilization` | `56.5 %` | **PASS** |
 | #3282 | 2026-10-24 11:13:20 | Touch Gesture Dispatcher | `jank_events` | `3.0 count` | **PASS** |
 | #3283 | 2026-10-24 11:13:40 | Lottie Animation Engine | `cpu_usage` | `39.5 %` | **PASS** |
+| #3284 | 2026-10-24 11:14:00 | Viewport Resize Observer | `latency` | `8.0 ms` | **PASS** |
