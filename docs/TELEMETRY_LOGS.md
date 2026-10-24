@@ -2735,3 +2735,4 @@
 | #2707 | 2026-10-24 08:01:40 | Viewport Resize Observer | `cpu_usage` | `39.4 %` | **PASS** |
 | #2708 | 2026-10-24 08:02:00 | Cache Warmup Service | `time_to_interactive` | `1533.5 ms` | **PASS** |
 | #2709 | 2026-10-24 08:02:20 | Micro Frontend Loader | `jank_events` | `2.6 count` | **PASS** |
+| #2710 | 2026-10-24 08:02:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1251.5 ms` | **PASS** |
