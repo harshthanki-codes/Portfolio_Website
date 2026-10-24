@@ -2965,3 +2965,4 @@
 | #2937 | 2026-10-24 09:18:20 | 3D Particle Renderer | `bundle_size` | `124.1 KB` | **PASS** |
 | #2938 | 2026-10-24 09:18:40 | Dynamic Font Loader | `jank_events` | `0.7 count` | **PASS** |
 | #2939 | 2026-10-24 09:19:00 | Micro Frontend Loader | `time_to_interactive` | `2035.2 ms` | **PASS** |
+| #2940 | 2026-10-24 09:19:20 | Touch Gesture Dispatcher | `memory_footprint` | `62.8 MB` | **PASS** |
