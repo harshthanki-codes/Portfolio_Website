@@ -3094,3 +3094,4 @@
 | #3066 | 2026-10-24 10:01:20 | Micro Frontend Loader | `bundle_size` | `182.1 KB` | **PASS** |
 | #3067 | 2026-10-24 10:01:40 | Lottie Animation Engine | `bundle_size` | `224.8 KB` | **PASS** |
 | #3068 | 2026-10-24 10:02:00 | Micro Frontend Loader | `jank_events` | `0.6 count` | **PASS** |
+| #3069 | 2026-10-24 10:02:20 | WebGL Shader Compiler | `memory_footprint` | `57.1 MB` | **PASS** |
