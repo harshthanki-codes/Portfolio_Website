@@ -3028,3 +3028,4 @@
 | #3000 | 2026-10-24 09:39:20 | Cache Warmup Service | `time_to_interactive` | `2214.5 ms` | **PASS** |
 | #3001 | 2026-10-24 09:39:40 | Predictive Arc Canvas | `latency` | `19.2 ms` | **PASS** |
 | #3002 | 2026-10-24 09:40:00 | Background Video Loop | `latency` | `13.4 ms` | **PASS** |
+| #3003 | 2026-10-24 09:40:20 | Cache Warmup Service | `frame_render_budget` | `21.5 ms (60fps)` | **PASS** |
