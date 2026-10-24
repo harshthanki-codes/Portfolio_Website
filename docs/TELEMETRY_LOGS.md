@@ -2944,3 +2944,4 @@
 | #2916 | 2026-10-24 09:11:20 | Scroll Parallax Manager | `jank_events` | `2.8 count` | **PASS** |
 | #2917 | 2026-10-24 09:11:40 | Background Video Loop | `first_contentful_paint` | `1296.9 ms` | **PASS** |
 | #2918 | 2026-10-24 09:12:00 | CSS-in-JS Themer | `time_to_interactive` | `1573.4 ms` | **PASS** |
+| #2919 | 2026-10-24 09:12:20 | WebGL Shader Compiler | `frame_render_budget` | `19.2 ms (60fps)` | **PASS** |
