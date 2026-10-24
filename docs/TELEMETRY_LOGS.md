@@ -3043,3 +3043,4 @@
 | #3015 | 2026-10-24 09:44:20 | WebGL Shader Compiler | `animation_fps` | `65.1 fps` | **PASS** |
 | #3016 | 2026-10-24 09:44:40 | Scroll Parallax Manager | `latency` | `10.9 ms` | **PASS** |
 | #3017 | 2026-10-24 09:45:00 | WebGL Shader Compiler | `memory_footprint` | `114.7 MB` | **PASS** |
+| #3018 | 2026-10-24 09:45:20 | Dynamic Font Loader | `first_contentful_paint` | `886.5 ms` | **PASS** |
