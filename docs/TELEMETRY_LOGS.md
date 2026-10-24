@@ -3319,3 +3319,4 @@
 | #3291 | 2026-10-24 11:16:20 | Predictive Arc Canvas | `cpu_usage` | `31.3 %` | **PASS** |
 | #3292 | 2026-10-24 11:16:40 | Viewport Resize Observer | `time_to_interactive` | `2443.4 ms` | **PASS** |
 | #3293 | 2026-10-24 11:17:00 | Cache Warmup Service | `first_contentful_paint` | `1404.0 ms` | **PASS** |
+| #3294 | 2026-10-24 11:17:20 | Predictive Arc Canvas | `animation_fps` | `65.3 fps` | **PASS** |
