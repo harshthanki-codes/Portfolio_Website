@@ -2931,3 +2931,4 @@
 | #2903 | 2026-10-24 09:07:00 | Micro Frontend Loader | `first_contentful_paint` | `921.1 ms` | **PASS** |
 | #2904 | 2026-10-24 09:07:20 | Lottie Animation Engine | `bundle_size` | `209.4 KB` | **PASS** |
 | #2905 | 2026-10-24 09:07:40 | Audio Visualizer | `time_to_interactive` | `1376.0 ms` | **PASS** |
+| #2906 | 2026-10-24 09:08:00 | Micro Frontend Loader | `jank_events` | `0.3 count` | **PASS** |
