@@ -2762,3 +2762,4 @@
 | #2734 | 2026-10-24 08:10:40 | Telemetry Beacon | `jank_events` | `2.9 count` | **PASS** |
 | #2735 | 2026-10-24 08:11:00 | CSS-in-JS Themer | `animation_fps` | `64.3 fps` | **PASS** |
 | #2736 | 2026-10-24 08:11:20 | Progressive Image Loader | `cpu_usage` | `31.4 %` | **PASS** |
+| #2737 | 2026-10-24 08:11:40 | Cache Warmup Service | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
