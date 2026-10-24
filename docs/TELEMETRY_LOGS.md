@@ -3226,3 +3226,4 @@
 | #3198 | 2026-10-24 10:45:20 | SVG Morphing Pipeline | `gpu_utilization` | `68.8 %` | **PASS** |
 | #3199 | 2026-10-24 10:45:40 | Audio Visualizer | `cpu_usage` | `24.8 %` | **PASS** |
 | #3200 | 2026-10-24 10:46:00 | WebGL Shader Compiler | `gpu_utilization` | `34.1 %` | **PASS** |
+| #3201 | 2026-10-24 10:46:20 | Viewport Resize Observer | `animation_fps` | `58.0 fps` | **PASS** |
