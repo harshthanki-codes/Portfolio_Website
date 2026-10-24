@@ -2948,3 +2948,4 @@
 | #2920 | 2026-10-24 09:12:40 | Touch Gesture Dispatcher | `latency` | `19.0 ms` | **PASS** |
 | #2921 | 2026-10-24 09:13:00 | Scroll Parallax Manager | `memory_footprint` | `117.2 MB` | **PASS** |
 | #2922 | 2026-10-24 09:13:20 | Cache Warmup Service | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
+| #2923 | 2026-10-24 09:13:40 | SVG Morphing Pipeline | `gpu_utilization` | `61.6 %` | **PASS** |
