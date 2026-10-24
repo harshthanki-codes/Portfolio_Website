@@ -2996,3 +2996,4 @@
 | #2968 | 2026-10-24 09:28:40 | CSS-in-JS Themer | `jank_events` | `2.6 count` | **PASS** |
 | #2969 | 2026-10-24 09:29:00 | Predictive Arc Canvas | `gpu_utilization` | `64.1 %` | **PASS** |
 | #2970 | 2026-10-24 09:29:20 | Touch Gesture Dispatcher | `latency` | `17.6 ms` | **PASS** |
+| #2971 | 2026-10-24 09:29:40 | Dynamic Font Loader | `animation_fps` | `69.1 fps` | **PASS** |
