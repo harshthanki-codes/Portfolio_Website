@@ -3021,3 +3021,4 @@
 | #2993 | 2026-10-24 09:37:00 | CSS-in-JS Themer | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #2994 | 2026-10-24 09:37:20 | Cache Warmup Service | `animation_fps` | `73.0 fps` | **PASS** |
 | #2995 | 2026-10-24 09:37:40 | Telemetry Beacon | `jank_events` | `1.1 count` | **PASS** |
+| #2996 | 2026-10-24 09:38:00 | Cache Warmup Service | `cpu_usage` | `43.9 %` | **PASS** |
