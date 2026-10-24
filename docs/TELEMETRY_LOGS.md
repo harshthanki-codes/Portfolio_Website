@@ -3178,3 +3178,4 @@
 | #3150 | 2026-10-24 10:29:20 | Viewport Resize Observer | `first_contentful_paint` | `919.1 ms` | **PASS** |
 | #3151 | 2026-10-24 10:29:40 | Responsive Grid System | `cpu_usage` | `23.3 %` | **PASS** |
 | #3152 | 2026-10-24 10:30:00 | Background Video Loop | `time_to_interactive` | `2440.4 ms` | **PASS** |
+| #3153 | 2026-10-24 10:30:20 | Background Video Loop | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
