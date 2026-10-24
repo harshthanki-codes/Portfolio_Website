@@ -3312,3 +3312,4 @@
 | #3284 | 2026-10-24 11:14:00 | Viewport Resize Observer | `latency` | `8.0 ms` | **PASS** |
 | #3285 | 2026-10-24 11:14:20 | CSS-in-JS Themer | `time_to_interactive` | `2028.4 ms` | **PASS** |
 | #3286 | 2026-10-24 11:14:40 | WebGL Shader Compiler | `jank_events` | `0.3 count` | **PASS** |
+| #3287 | 2026-10-24 11:15:00 | Lazy Load Optimizer | `cpu_usage` | `11.8 %` | **PASS** |
