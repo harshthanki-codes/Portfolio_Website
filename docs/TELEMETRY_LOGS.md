@@ -2936,3 +2936,4 @@
 | #2908 | 2026-10-24 09:08:40 | Telemetry Beacon | `latency` | `19.7 ms` | **PASS** |
 | #2909 | 2026-10-24 09:09:00 | SVG Morphing Pipeline | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
 | #2910 | 2026-10-24 09:09:20 | Lottie Animation Engine | `animation_fps` | `65.8 fps` | **PASS** |
+| #2911 | 2026-10-24 09:09:40 | WebGL Shader Compiler | `frame_render_budget` | `27.5 ms (60fps)` | **PASS** |
