@@ -3305,3 +3305,4 @@
 | #3277 | 2026-10-24 11:11:40 | State Sync Daemon | `bundle_size` | `82.3 KB` | **PASS** |
 | #3278 | 2026-10-24 11:12:00 | Lottie Animation Engine | `memory_footprint` | `77.0 MB` | **PASS** |
 | #3279 | 2026-10-24 11:12:20 | Background Video Loop | `memory_footprint` | `94.4 MB` | **PASS** |
+| #3280 | 2026-10-24 11:12:40 | Lottie Animation Engine | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
