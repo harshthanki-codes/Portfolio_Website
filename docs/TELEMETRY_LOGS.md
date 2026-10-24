@@ -3313,3 +3313,4 @@
 | #3285 | 2026-10-24 11:14:20 | CSS-in-JS Themer | `time_to_interactive` | `2028.4 ms` | **PASS** |
 | #3286 | 2026-10-24 11:14:40 | WebGL Shader Compiler | `jank_events` | `0.3 count` | **PASS** |
 | #3287 | 2026-10-24 11:15:00 | Lazy Load Optimizer | `cpu_usage` | `11.8 %` | **PASS** |
+| #3288 | 2026-10-24 11:15:20 | Viewport Resize Observer | `memory_footprint` | `50.3 MB` | **PASS** |
