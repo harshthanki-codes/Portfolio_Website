@@ -3202,3 +3202,4 @@
 | #3174 | 2026-10-24 10:37:20 | Progressive Image Loader | `jank_events` | `2.2 count` | **PASS** |
 | #3175 | 2026-10-24 10:37:40 | WebGL Shader Compiler | `animation_fps` | `71.1 fps` | **PASS** |
 | #3176 | 2026-10-24 10:38:00 | Lottie Animation Engine | `latency` | `24.9 ms` | **PASS** |
+| #3177 | 2026-10-24 10:38:20 | Lottie Animation Engine | `cpu_usage` | `35.5 %` | **PASS** |
