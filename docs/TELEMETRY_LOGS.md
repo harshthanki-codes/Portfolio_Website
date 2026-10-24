@@ -2891,3 +2891,4 @@
 | #2863 | 2026-10-24 08:53:40 | Touch Gesture Dispatcher | `memory_footprint` | `114.3 MB` | **PASS** |
 | #2864 | 2026-10-24 08:54:00 | State Sync Daemon | `gpu_utilization` | `49.3 %` | **PASS** |
 | #2865 | 2026-10-24 08:54:20 | Interactive Tooltip Engine | `time_to_interactive` | `2131.6 ms` | **PASS** |
+| #2866 | 2026-10-24 08:54:40 | 3D Particle Renderer | `memory_footprint` | `76.2 MB` | **PASS** |
