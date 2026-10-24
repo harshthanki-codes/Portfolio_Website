@@ -3180,3 +3180,4 @@
 | #3152 | 2026-10-24 10:30:00 | Background Video Loop | `time_to_interactive` | `2440.4 ms` | **PASS** |
 | #3153 | 2026-10-24 10:30:20 | Background Video Loop | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
 | #3154 | 2026-10-24 10:30:40 | Lottie Animation Engine | `cpu_usage` | `13.3 %` | **PASS** |
+| #3155 | 2026-10-24 10:31:00 | Dynamic Font Loader | `animation_fps` | `58.0 fps` | **PASS** |
