@@ -3182,3 +3182,4 @@
 | #3154 | 2026-10-24 10:30:40 | Lottie Animation Engine | `cpu_usage` | `13.3 %` | **PASS** |
 | #3155 | 2026-10-24 10:31:00 | Dynamic Font Loader | `animation_fps` | `58.0 fps` | **PASS** |
 | #3156 | 2026-10-24 10:31:20 | State Sync Daemon | `frame_render_budget` | `17.6 ms (60fps)` | **PASS** |
+| #3157 | 2026-10-24 10:31:40 | State Sync Daemon | `jank_events` | `1.7 count` | **PASS** |
