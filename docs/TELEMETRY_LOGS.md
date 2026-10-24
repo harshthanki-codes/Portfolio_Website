@@ -2863,3 +2863,4 @@
 | #2835 | 2026-10-24 08:44:20 | Progressive Image Loader | `jank_events` | `2.8 count` | **PASS** |
 | #2836 | 2026-10-24 08:44:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1191.7 ms` | **PASS** |
 | #2837 | 2026-10-24 08:45:00 | CSS-in-JS Themer | `latency` | `9.8 ms` | **PASS** |
+| #2838 | 2026-10-24 08:45:20 | Dynamic Font Loader | `animation_fps` | `61.0 fps` | **PASS** |
