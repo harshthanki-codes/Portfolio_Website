@@ -2878,3 +2878,4 @@
 | #2850 | 2026-10-24 08:49:20 | Scroll Parallax Manager | `latency` | `21.2 ms` | **PASS** |
 | #2851 | 2026-10-24 08:49:40 | Touch Gesture Dispatcher | `time_to_interactive` | `2410.6 ms` | **PASS** |
 | #2852 | 2026-10-24 08:50:00 | 3D Particle Renderer | `latency` | `20.9 ms` | **PASS** |
+| #2853 | 2026-10-24 08:50:20 | Scroll Parallax Manager | `bundle_size` | `158.4 KB` | **PASS** |
