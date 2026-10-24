@@ -2880,3 +2880,4 @@
 | #2852 | 2026-10-24 08:50:00 | 3D Particle Renderer | `latency` | `20.9 ms` | **PASS** |
 | #2853 | 2026-10-24 08:50:20 | Scroll Parallax Manager | `bundle_size` | `158.4 KB` | **PASS** |
 | #2854 | 2026-10-24 08:50:40 | Progressive Image Loader | `frame_render_budget` | `20.5 ms (60fps)` | **PASS** |
+| #2855 | 2026-10-24 08:51:00 | Lottie Animation Engine | `jank_events` | `2.1 count` | **PASS** |
