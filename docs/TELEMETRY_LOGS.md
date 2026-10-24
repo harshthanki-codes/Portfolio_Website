@@ -3308,3 +3308,4 @@
 | #3280 | 2026-10-24 11:12:40 | Lottie Animation Engine | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
 | #3281 | 2026-10-24 11:13:00 | Telemetry Beacon | `gpu_utilization` | `56.5 %` | **PASS** |
 | #3282 | 2026-10-24 11:13:20 | Touch Gesture Dispatcher | `jank_events` | `3.0 count` | **PASS** |
+| #3283 | 2026-10-24 11:13:40 | Lottie Animation Engine | `cpu_usage` | `39.5 %` | **PASS** |
