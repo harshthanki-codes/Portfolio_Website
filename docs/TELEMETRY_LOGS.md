@@ -3255,3 +3255,4 @@
 | #3227 | 2026-10-24 10:55:00 | Telemetry Beacon | `bundle_size` | `100.8 KB` | **PASS** |
 | #3228 | 2026-10-24 10:55:20 | Predictive Arc Canvas | `latency` | `10.1 ms` | **PASS** |
 | #3229 | 2026-10-24 10:55:40 | Scroll Parallax Manager | `bundle_size` | `90.9 KB` | **PASS** |
+| #3230 | 2026-10-24 10:56:00 | Scroll Parallax Manager | `frame_render_budget` | `15.3 ms (60fps)` | **PASS** |
