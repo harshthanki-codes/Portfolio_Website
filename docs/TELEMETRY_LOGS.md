@@ -2940,3 +2940,4 @@
 | #2912 | 2026-10-24 09:10:00 | Cache Warmup Service | `frame_render_budget` | `17.5 ms (60fps)` | **PASS** |
 | #2913 | 2026-10-24 09:10:20 | Background Video Loop | `first_contentful_paint` | `1226.7 ms` | **PASS** |
 | #2914 | 2026-10-24 09:10:40 | Dynamic Font Loader | `cpu_usage` | `28.7 %` | **PASS** |
+| #2915 | 2026-10-24 09:11:00 | Dynamic Font Loader | `gpu_utilization` | `48.5 %` | **PASS** |
