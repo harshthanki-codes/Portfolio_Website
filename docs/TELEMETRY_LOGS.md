@@ -2938,3 +2938,4 @@
 | #2910 | 2026-10-24 09:09:20 | Lottie Animation Engine | `animation_fps` | `65.8 fps` | **PASS** |
 | #2911 | 2026-10-24 09:09:40 | WebGL Shader Compiler | `frame_render_budget` | `27.5 ms (60fps)` | **PASS** |
 | #2912 | 2026-10-24 09:10:00 | Cache Warmup Service | `frame_render_budget` | `17.5 ms (60fps)` | **PASS** |
+| #2913 | 2026-10-24 09:10:20 | Background Video Loop | `first_contentful_paint` | `1226.7 ms` | **PASS** |
