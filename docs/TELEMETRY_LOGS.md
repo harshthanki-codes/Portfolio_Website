@@ -2772,3 +2772,4 @@
 | #2744 | 2026-10-24 08:14:00 | 3D Particle Renderer | `gpu_utilization` | `39.1 %` | **PASS** |
 | #2745 | 2026-10-24 08:14:20 | Audio Visualizer | `gpu_utilization` | `25.9 %` | **PASS** |
 | #2746 | 2026-10-24 08:14:40 | CSS-in-JS Themer | `cpu_usage` | `18.0 %` | **PASS** |
+| #2747 | 2026-10-24 08:15:00 | Progressive Image Loader | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
