@@ -2839,3 +2839,4 @@
 | #2811 | 2026-10-24 08:36:20 | Scroll Parallax Manager | `latency` | `6.4 ms` | **PASS** |
 | #2812 | 2026-10-24 08:36:40 | Dynamic Font Loader | `jank_events` | `1.7 count` | **PASS** |
 | #2813 | 2026-10-24 08:37:00 | Dynamic Font Loader | `gpu_utilization` | `57.3 %` | **PASS** |
+| #2814 | 2026-10-24 08:37:20 | Cache Warmup Service | `frame_render_budget` | `17.1 ms (60fps)` | **PASS** |
