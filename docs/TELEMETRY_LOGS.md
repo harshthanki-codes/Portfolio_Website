@@ -3071,3 +3071,4 @@
 | #3043 | 2026-10-24 09:53:40 | Micro Frontend Loader | `time_to_interactive` | `2215.5 ms` | **PASS** |
 | #3044 | 2026-10-24 09:54:00 | SVG Morphing Pipeline | `animation_fps` | `57.3 fps` | **PASS** |
 | #3045 | 2026-10-24 09:54:20 | Viewport Resize Observer | `frame_render_budget` | `18.3 ms (60fps)` | **PASS** |
+| #3046 | 2026-10-24 09:54:40 | Micro Frontend Loader | `memory_footprint` | `67.5 MB` | **PASS** |
