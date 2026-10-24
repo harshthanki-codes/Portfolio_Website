@@ -2918,3 +2918,4 @@
 | #2890 | 2026-10-24 09:02:40 | State Sync Daemon | `bundle_size` | `228.2 KB` | **PASS** |
 | #2891 | 2026-10-24 09:03:00 | State Sync Daemon | `cpu_usage` | `42.8 %` | **PASS** |
 | #2892 | 2026-10-24 09:03:20 | Interactive Tooltip Engine | `first_contentful_paint` | `1152.6 ms` | **PASS** |
+| #2893 | 2026-10-24 09:03:40 | 3D Particle Renderer | `cpu_usage` | `24.6 %` | **PASS** |
