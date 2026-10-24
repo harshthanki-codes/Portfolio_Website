@@ -3023,3 +3023,4 @@
 | #2995 | 2026-10-24 09:37:40 | Telemetry Beacon | `jank_events` | `1.1 count` | **PASS** |
 | #2996 | 2026-10-24 09:38:00 | Cache Warmup Service | `cpu_usage` | `43.9 %` | **PASS** |
 | #2997 | 2026-10-24 09:38:20 | CSS-in-JS Themer | `bundle_size` | `150.8 KB` | **PASS** |
+| #2998 | 2026-10-24 09:38:40 | Progressive Image Loader | `memory_footprint` | `75.7 MB` | **PASS** |
