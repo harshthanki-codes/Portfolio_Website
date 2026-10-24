@@ -2874,3 +2874,4 @@
 | #2846 | 2026-10-24 08:48:00 | CSS-in-JS Themer | `jank_events` | `0.7 count` | **PASS** |
 | #2847 | 2026-10-24 08:48:20 | Predictive Arc Canvas | `first_contentful_paint` | `1042.2 ms` | **PASS** |
 | #2848 | 2026-10-24 08:48:40 | WebGL Shader Compiler | `jank_events` | `0.5 count` | **PASS** |
+| #2849 | 2026-10-24 08:49:00 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
