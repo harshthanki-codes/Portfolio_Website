@@ -2912,3 +2912,4 @@
 | #2884 | 2026-10-24 09:00:40 | Scroll Parallax Manager | `memory_footprint` | `80.9 MB` | **PASS** |
 | #2885 | 2026-10-24 09:01:00 | State Sync Daemon | `bundle_size` | `124.5 KB` | **PASS** |
 | #2886 | 2026-10-24 09:01:20 | Cache Warmup Service | `gpu_utilization` | `24.6 %` | **PASS** |
+| #2887 | 2026-10-24 09:01:40 | Telemetry Beacon | `jank_events` | `1.3 count` | **PASS** |
