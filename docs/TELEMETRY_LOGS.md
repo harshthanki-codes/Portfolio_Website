@@ -3098,3 +3098,4 @@
 | #3070 | 2026-10-24 10:02:40 | State Sync Daemon | `jank_events` | `1.8 count` | **PASS** |
 | #3071 | 2026-10-24 10:03:00 | Background Video Loop | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
 | #3072 | 2026-10-24 10:03:20 | Telemetry Beacon | `memory_footprint` | `59.3 MB` | **PASS** |
+| #3073 | 2026-10-24 10:03:40 | Lottie Animation Engine | `time_to_interactive` | `1333.7 ms` | **PASS** |
