@@ -3238,3 +3238,4 @@
 | #3210 | 2026-10-24 10:49:20 | WebGL Shader Compiler | `gpu_utilization` | `28.1 %` | **PASS** |
 | #3211 | 2026-10-24 10:49:40 | Telemetry Beacon | `animation_fps` | `68.5 fps` | **PASS** |
 | #3212 | 2026-10-24 10:50:00 | Telemetry Beacon | `memory_footprint` | `116.2 MB` | **PASS** |
+| #3213 | 2026-10-24 10:50:20 | Scroll Parallax Manager | `bundle_size` | `248.1 KB` | **PASS** |
