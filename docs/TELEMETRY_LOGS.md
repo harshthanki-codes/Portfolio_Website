@@ -3145,3 +3145,4 @@
 | #3117 | 2026-10-24 10:18:20 | WebGL Shader Compiler | `time_to_interactive` | `2139.9 ms` | **PASS** |
 | #3118 | 2026-10-24 10:18:40 | Viewport Resize Observer | `first_contentful_paint` | `1263.1 ms` | **PASS** |
 | #3119 | 2026-10-24 10:19:00 | 3D Particle Renderer | `time_to_interactive` | `1535.1 ms` | **PASS** |
+| #3120 | 2026-10-24 10:19:20 | 3D Particle Renderer | `frame_render_budget` | `22.5 ms (60fps)` | **PASS** |
