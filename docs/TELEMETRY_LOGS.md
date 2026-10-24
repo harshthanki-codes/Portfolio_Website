@@ -2783,3 +2783,4 @@
 | #2755 | 2026-10-24 08:17:40 | Scroll Parallax Manager | `gpu_utilization` | `54.1 %` | **PASS** |
 | #2756 | 2026-10-24 08:18:00 | Progressive Image Loader | `bundle_size` | `155.0 KB` | **PASS** |
 | #2757 | 2026-10-24 08:18:20 | WebGL Shader Compiler | `memory_footprint` | `52.7 MB` | **PASS** |
+| #2758 | 2026-10-24 08:18:40 | Viewport Resize Observer | `memory_footprint` | `75.6 MB` | **PASS** |
