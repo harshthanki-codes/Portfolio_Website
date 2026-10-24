@@ -2769,3 +2769,4 @@
 | #2741 | 2026-10-24 08:13:00 | 3D Particle Renderer | `memory_footprint` | `72.0 MB` | **PASS** |
 | #2742 | 2026-10-24 08:13:20 | Progressive Image Loader | `memory_footprint` | `119.8 MB` | **PASS** |
 | #2743 | 2026-10-24 08:13:40 | WebGL Shader Compiler | `memory_footprint` | `83.0 MB` | **PASS** |
+| #2744 | 2026-10-24 08:14:00 | 3D Particle Renderer | `gpu_utilization` | `39.1 %` | **PASS** |
