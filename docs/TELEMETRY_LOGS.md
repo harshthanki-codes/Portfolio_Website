@@ -2740,3 +2740,4 @@
 | #2712 | 2026-10-24 08:03:20 | State Sync Daemon | `memory_footprint` | `118.8 MB` | **PASS** |
 | #2713 | 2026-10-24 08:03:40 | CSS-in-JS Themer | `memory_footprint` | `74.4 MB` | **PASS** |
 | #2714 | 2026-10-24 08:04:00 | Responsive Grid System | `bundle_size` | `114.8 KB` | **PASS** |
+| #2715 | 2026-10-24 08:04:20 | Background Video Loop | `time_to_interactive` | `1785.4 ms` | **PASS** |
