@@ -3138,3 +3138,4 @@
 | #3110 | 2026-10-24 10:16:00 | Predictive Arc Canvas | `memory_footprint` | `100.1 MB` | **PASS** |
 | #3111 | 2026-10-24 10:16:20 | Telemetry Beacon | `jank_events` | `0.2 count` | **PASS** |
 | #3112 | 2026-10-24 10:16:40 | Background Video Loop | `first_contentful_paint` | `918.8 ms` | **PASS** |
+| #3113 | 2026-10-24 10:17:00 | 3D Particle Renderer | `time_to_interactive` | `1763.0 ms` | **PASS** |
