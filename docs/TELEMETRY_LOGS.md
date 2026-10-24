@@ -3109,3 +3109,4 @@
 | #3081 | 2026-10-24 10:06:20 | 3D Particle Renderer | `bundle_size` | `230.7 KB` | **PASS** |
 | #3082 | 2026-10-24 10:06:40 | 3D Particle Renderer | `gpu_utilization` | `66.0 %` | **PASS** |
 | #3083 | 2026-10-24 10:07:00 | Micro Frontend Loader | `gpu_utilization` | `51.2 %` | **PASS** |
+| #3084 | 2026-10-24 10:07:20 | Micro Frontend Loader | `frame_render_budget` | `28.8 ms (60fps)` | **PASS** |
