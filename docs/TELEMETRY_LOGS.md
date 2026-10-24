@@ -3107,3 +3107,4 @@
 | #3079 | 2026-10-24 10:05:40 | Dynamic Font Loader | `cpu_usage` | `44.9 %` | **PASS** |
 | #3080 | 2026-10-24 10:06:00 | WebGL Shader Compiler | `memory_footprint` | `68.7 MB` | **PASS** |
 | #3081 | 2026-10-24 10:06:20 | 3D Particle Renderer | `bundle_size` | `230.7 KB` | **PASS** |
+| #3082 | 2026-10-24 10:06:40 | 3D Particle Renderer | `gpu_utilization` | `66.0 %` | **PASS** |
