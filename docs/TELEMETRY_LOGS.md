@@ -3033,3 +3033,4 @@
 | #3005 | 2026-10-24 09:41:00 | Telemetry Beacon | `latency` | `19.0 ms` | **PASS** |
 | #3006 | 2026-10-24 09:41:20 | State Sync Daemon | `bundle_size` | `89.0 KB` | **PASS** |
 | #3007 | 2026-10-24 09:41:40 | Telemetry Beacon | `animation_fps` | `74.7 fps` | **PASS** |
+| #3008 | 2026-10-24 09:42:00 | Lottie Animation Engine | `gpu_utilization` | `22.9 %` | **PASS** |
