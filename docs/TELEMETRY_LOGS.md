@@ -2761,3 +2761,4 @@
 | #2733 | 2026-10-24 08:10:20 | Predictive Arc Canvas | `bundle_size` | `194.6 KB` | **PASS** |
 | #2734 | 2026-10-24 08:10:40 | Telemetry Beacon | `jank_events` | `2.9 count` | **PASS** |
 | #2735 | 2026-10-24 08:11:00 | CSS-in-JS Themer | `animation_fps` | `64.3 fps` | **PASS** |
+| #2736 | 2026-10-24 08:11:20 | Progressive Image Loader | `cpu_usage` | `31.4 %` | **PASS** |
