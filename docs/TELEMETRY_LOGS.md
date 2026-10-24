@@ -2745,3 +2745,4 @@
 | #2717 | 2026-10-24 08:05:00 | Touch Gesture Dispatcher | `first_contentful_paint` | `1195.5 ms` | **PASS** |
 | #2718 | 2026-10-24 08:05:20 | Lazy Load Optimizer | `frame_render_budget` | `28.7 ms (60fps)` | **PASS** |
 | #2719 | 2026-10-24 08:05:40 | Micro Frontend Loader | `animation_fps` | `70.0 fps` | **PASS** |
+| #2720 | 2026-10-24 08:06:00 | Scroll Parallax Manager | `jank_events` | `1.5 count` | **PASS** |
