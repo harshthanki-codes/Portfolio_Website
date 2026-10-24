@@ -3148,3 +3148,4 @@
 | #3120 | 2026-10-24 10:19:20 | 3D Particle Renderer | `frame_render_budget` | `22.5 ms (60fps)` | **PASS** |
 | #3121 | 2026-10-24 10:19:40 | 3D Particle Renderer | `first_contentful_paint` | `1234.9 ms` | **PASS** |
 | #3122 | 2026-10-24 10:20:00 | Responsive Grid System | `animation_fps` | `66.6 fps` | **PASS** |
+| #3123 | 2026-10-24 10:20:20 | Cache Warmup Service | `animation_fps` | `55.1 fps` | **PASS** |
