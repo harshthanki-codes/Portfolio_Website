@@ -3123,3 +3123,4 @@
 | #3095 | 2026-10-24 10:11:00 | Cache Warmup Service | `latency` | `5.2 ms` | **PASS** |
 | #3096 | 2026-10-24 10:11:20 | Touch Gesture Dispatcher | `cpu_usage` | `23.7 %` | **PASS** |
 | #3097 | 2026-10-24 10:11:40 | State Sync Daemon | `bundle_size` | `198.8 KB` | **PASS** |
+| #3098 | 2026-10-24 10:12:00 | Scroll Parallax Manager | `gpu_utilization` | `47.8 %` | **PASS** |
