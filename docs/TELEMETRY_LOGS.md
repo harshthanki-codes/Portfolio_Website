@@ -3195,3 +3195,4 @@
 | #3167 | 2026-10-24 10:35:00 | Lottie Animation Engine | `animation_fps` | `69.3 fps` | **PASS** |
 | #3168 | 2026-10-24 10:35:20 | WebGL Shader Compiler | `first_contentful_paint` | `1057.5 ms` | **PASS** |
 | #3169 | 2026-10-24 10:35:40 | Micro Frontend Loader | `latency` | `18.2 ms` | **PASS** |
+| #3170 | 2026-10-24 10:36:00 | WebGL Shader Compiler | `memory_footprint` | `95.4 MB` | **PASS** |
