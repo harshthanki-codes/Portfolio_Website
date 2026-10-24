@@ -2817,3 +2817,4 @@
 | #2789 | 2026-10-24 08:29:00 | CSS-in-JS Themer | `cpu_usage` | `29.4 %` | **PASS** |
 | #2790 | 2026-10-24 08:29:20 | Micro Frontend Loader | `memory_footprint` | `77.6 MB` | **PASS** |
 | #2791 | 2026-10-24 08:29:40 | Interactive Tooltip Engine | `frame_render_budget` | `16.6 ms (60fps)` | **PASS** |
+| #2792 | 2026-10-24 08:30:00 | Cache Warmup Service | `cpu_usage` | `26.0 %` | **PASS** |
