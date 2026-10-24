@@ -2942,3 +2942,4 @@
 | #2914 | 2026-10-24 09:10:40 | Dynamic Font Loader | `cpu_usage` | `28.7 %` | **PASS** |
 | #2915 | 2026-10-24 09:11:00 | Dynamic Font Loader | `gpu_utilization` | `48.5 %` | **PASS** |
 | #2916 | 2026-10-24 09:11:20 | Scroll Parallax Manager | `jank_events` | `2.8 count` | **PASS** |
+| #2917 | 2026-10-24 09:11:40 | Background Video Loop | `first_contentful_paint` | `1296.9 ms` | **PASS** |
