@@ -3231,3 +3231,4 @@
 | #3203 | 2026-10-24 10:47:00 | 3D Particle Renderer | `jank_events` | `2.8 count` | **PASS** |
 | #3204 | 2026-10-24 10:47:20 | SVG Morphing Pipeline | `bundle_size` | `117.8 KB` | **PASS** |
 | #3205 | 2026-10-24 10:47:40 | State Sync Daemon | `bundle_size` | `214.6 KB` | **PASS** |
+| #3206 | 2026-10-24 10:48:00 | Lottie Animation Engine | `cpu_usage` | `29.1 %` | **PASS** |
