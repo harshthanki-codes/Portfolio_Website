@@ -2807,3 +2807,4 @@
 | #2779 | 2026-10-24 08:25:40 | Progressive Image Loader | `cpu_usage` | `13.6 %` | **PASS** |
 | #2780 | 2026-10-24 08:26:00 | Dynamic Font Loader | `animation_fps` | `70.5 fps` | **PASS** |
 | #2781 | 2026-10-24 08:26:20 | Dynamic Font Loader | `frame_render_budget` | `28.8 ms (60fps)` | **PASS** |
+| #2782 | 2026-10-24 08:26:40 | Dynamic Font Loader | `animation_fps` | `58.9 fps` | **PASS** |
