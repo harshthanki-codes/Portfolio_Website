@@ -2829,3 +2829,4 @@
 | #2801 | 2026-10-24 08:33:00 | SVG Morphing Pipeline | `time_to_interactive` | `1773.7 ms` | **PASS** |
 | #2802 | 2026-10-24 08:33:20 | WebGL Shader Compiler | `latency` | `19.0 ms` | **PASS** |
 | #2803 | 2026-10-24 08:33:40 | Background Video Loop | `time_to_interactive` | `2303.3 ms` | **PASS** |
+| #2804 | 2026-10-24 08:34:00 | SVG Morphing Pipeline | `gpu_utilization` | `61.9 %` | **PASS** |
