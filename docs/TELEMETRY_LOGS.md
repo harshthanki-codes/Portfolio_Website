@@ -2814,3 +2814,4 @@
 | #2786 | 2026-10-24 08:28:00 | WebGL Shader Compiler | `animation_fps` | `56.0 fps` | **PASS** |
 | #2787 | 2026-10-24 08:28:20 | Lazy Load Optimizer | `animation_fps` | `56.1 fps` | **PASS** |
 | #2788 | 2026-10-24 08:28:40 | Scroll Parallax Manager | `jank_events` | `2.0 count` | **PASS** |
+| #2789 | 2026-10-24 08:29:00 | CSS-in-JS Themer | `cpu_usage` | `29.4 %` | **PASS** |
