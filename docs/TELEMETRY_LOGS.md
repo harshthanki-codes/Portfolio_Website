@@ -3157,3 +3157,4 @@
 | #3129 | 2026-10-24 10:22:20 | Audio Visualizer | `time_to_interactive` | `1403.6 ms` | **PASS** |
 | #3130 | 2026-10-24 10:22:40 | State Sync Daemon | `frame_render_budget` | `24.6 ms (60fps)` | **PASS** |
 | #3131 | 2026-10-24 10:23:00 | Lazy Load Optimizer | `jank_events` | `2.3 count` | **PASS** |
+| #3132 | 2026-10-24 10:23:20 | Audio Visualizer | `cpu_usage` | `44.0 %` | **PASS** |
