@@ -3310,3 +3310,4 @@
 | #3282 | 2026-10-24 11:13:20 | Touch Gesture Dispatcher | `jank_events` | `3.0 count` | **PASS** |
 | #3283 | 2026-10-24 11:13:40 | Lottie Animation Engine | `cpu_usage` | `39.5 %` | **PASS** |
 | #3284 | 2026-10-24 11:14:00 | Viewport Resize Observer | `latency` | `8.0 ms` | **PASS** |
+| #3285 | 2026-10-24 11:14:20 | CSS-in-JS Themer | `time_to_interactive` | `2028.4 ms` | **PASS** |
