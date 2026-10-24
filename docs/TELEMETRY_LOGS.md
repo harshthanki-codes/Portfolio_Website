@@ -3228,3 +3228,4 @@
 | #3200 | 2026-10-24 10:46:00 | WebGL Shader Compiler | `gpu_utilization` | `34.1 %` | **PASS** |
 | #3201 | 2026-10-24 10:46:20 | Viewport Resize Observer | `animation_fps` | `58.0 fps` | **PASS** |
 | #3202 | 2026-10-24 10:46:40 | Telemetry Beacon | `cpu_usage` | `30.8 %` | **PASS** |
+| #3203 | 2026-10-24 10:47:00 | 3D Particle Renderer | `jank_events` | `2.8 count` | **PASS** |
