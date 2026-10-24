@@ -2855,3 +2855,4 @@
 | #2827 | 2026-10-24 08:41:40 | Telemetry Beacon | `time_to_interactive` | `2261.0 ms` | **PASS** |
 | #2828 | 2026-10-24 08:42:00 | Audio Visualizer | `bundle_size` | `186.0 KB` | **PASS** |
 | #2829 | 2026-10-24 08:42:20 | Micro Frontend Loader | `first_contentful_paint` | `1243.2 ms` | **PASS** |
+| #2830 | 2026-10-24 08:42:40 | Dynamic Font Loader | `cpu_usage` | `37.6 %` | **PASS** |
