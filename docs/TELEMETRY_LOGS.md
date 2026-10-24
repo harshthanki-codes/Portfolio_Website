@@ -3076,3 +3076,4 @@
 | #3048 | 2026-10-24 09:55:20 | Background Video Loop | `frame_render_budget` | `22.8 ms (60fps)` | **PASS** |
 | #3049 | 2026-10-24 09:55:40 | Predictive Arc Canvas | `animation_fps` | `58.3 fps` | **PASS** |
 | #3050 | 2026-10-24 09:56:00 | Progressive Image Loader | `latency` | `14.6 ms` | **PASS** |
+| #3051 | 2026-10-24 09:56:20 | Scroll Parallax Manager | `frame_render_budget` | `15.0 ms (60fps)` | **PASS** |
