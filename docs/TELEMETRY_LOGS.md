@@ -2786,3 +2786,4 @@
 | #2758 | 2026-10-24 08:18:40 | Viewport Resize Observer | `memory_footprint` | `75.6 MB` | **PASS** |
 | #2759 | 2026-10-24 08:19:00 | Micro Frontend Loader | `animation_fps` | `65.9 fps` | **PASS** |
 | #2760 | 2026-10-24 08:19:20 | Audio Visualizer | `cpu_usage` | `45.0 %` | **PASS** |
+| #2761 | 2026-10-24 08:19:40 | Background Video Loop | `first_contentful_paint` | `1213.3 ms` | **PASS** |
