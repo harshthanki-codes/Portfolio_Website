@@ -2780,3 +2780,4 @@
 | #2752 | 2026-10-24 08:16:40 | Cache Warmup Service | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
 | #2753 | 2026-10-24 08:17:00 | Lazy Load Optimizer | `cpu_usage` | `34.3 %` | **PASS** |
 | #2754 | 2026-10-24 08:17:20 | Lottie Animation Engine | `animation_fps` | `71.3 fps` | **PASS** |
+| #2755 | 2026-10-24 08:17:40 | Scroll Parallax Manager | `gpu_utilization` | `54.1 %` | **PASS** |
