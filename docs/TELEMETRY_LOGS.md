@@ -3020,3 +3020,4 @@
 | #2992 | 2026-10-24 09:36:40 | Micro Frontend Loader | `cpu_usage` | `26.8 %` | **PASS** |
 | #2993 | 2026-10-24 09:37:00 | CSS-in-JS Themer | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #2994 | 2026-10-24 09:37:20 | Cache Warmup Service | `animation_fps` | `73.0 fps` | **PASS** |
+| #2995 | 2026-10-24 09:37:40 | Telemetry Beacon | `jank_events` | `1.1 count` | **PASS** |
