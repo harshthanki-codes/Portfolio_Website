@@ -2838,3 +2838,4 @@
 | #2810 | 2026-10-24 08:36:00 | Lazy Load Optimizer | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
 | #2811 | 2026-10-24 08:36:20 | Scroll Parallax Manager | `latency` | `6.4 ms` | **PASS** |
 | #2812 | 2026-10-24 08:36:40 | Dynamic Font Loader | `jank_events` | `1.7 count` | **PASS** |
+| #2813 | 2026-10-24 08:37:00 | Dynamic Font Loader | `gpu_utilization` | `57.3 %` | **PASS** |
