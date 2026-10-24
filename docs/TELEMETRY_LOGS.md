@@ -2773,3 +2773,4 @@
 | #2745 | 2026-10-24 08:14:20 | Audio Visualizer | `gpu_utilization` | `25.9 %` | **PASS** |
 | #2746 | 2026-10-24 08:14:40 | CSS-in-JS Themer | `cpu_usage` | `18.0 %` | **PASS** |
 | #2747 | 2026-10-24 08:15:00 | Progressive Image Loader | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
+| #2748 | 2026-10-24 08:15:20 | Predictive Arc Canvas | `jank_events` | `2.9 count` | **PASS** |
