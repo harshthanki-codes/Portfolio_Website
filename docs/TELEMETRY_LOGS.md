@@ -2982,3 +2982,4 @@
 | #2954 | 2026-10-24 09:24:00 | Predictive Arc Canvas | `jank_events` | `2.8 count` | **PASS** |
 | #2955 | 2026-10-24 09:24:20 | Telemetry Beacon | `animation_fps` | `55.7 fps` | **PASS** |
 | #2956 | 2026-10-24 09:24:40 | Progressive Image Loader | `latency` | `22.0 ms` | **PASS** |
+| #2957 | 2026-10-24 09:25:00 | Viewport Resize Observer | `memory_footprint` | `59.6 MB` | **PASS** |
