@@ -2775,3 +2775,4 @@
 | #2747 | 2026-10-24 08:15:00 | Progressive Image Loader | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
 | #2748 | 2026-10-24 08:15:20 | Predictive Arc Canvas | `jank_events` | `2.9 count` | **PASS** |
 | #2749 | 2026-10-24 08:15:40 | Micro Frontend Loader | `gpu_utilization` | `47.1 %` | **PASS** |
+| #2750 | 2026-10-24 08:16:00 | Background Video Loop | `bundle_size` | `226.1 KB` | **PASS** |
