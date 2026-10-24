@@ -2789,3 +2789,4 @@
 | #2761 | 2026-10-24 08:19:40 | Background Video Loop | `first_contentful_paint` | `1213.3 ms` | **PASS** |
 | #2762 | 2026-10-24 08:20:00 | Touch Gesture Dispatcher | `frame_render_budget` | `18.1 ms (60fps)` | **PASS** |
 | #2763 | 2026-10-24 08:20:20 | Background Video Loop | `gpu_utilization` | `63.5 %` | **PASS** |
+| #2764 | 2026-10-24 08:20:40 | Progressive Image Loader | `memory_footprint` | `104.8 MB` | **PASS** |
