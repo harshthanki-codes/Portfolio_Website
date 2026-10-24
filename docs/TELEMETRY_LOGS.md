@@ -3004,3 +3004,4 @@
 | #2976 | 2026-10-24 09:31:20 | Scroll Parallax Manager | `animation_fps` | `55.4 fps` | **PASS** |
 | #2977 | 2026-10-24 09:31:40 | SVG Morphing Pipeline | `gpu_utilization` | `43.0 %` | **PASS** |
 | #2978 | 2026-10-24 09:32:00 | WebGL Shader Compiler | `animation_fps` | `71.6 fps` | **PASS** |
+| #2979 | 2026-10-24 09:32:20 | CSS-in-JS Themer | `animation_fps` | `62.5 fps` | **PASS** |
