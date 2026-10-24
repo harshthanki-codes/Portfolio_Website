@@ -2816,3 +2816,4 @@
 | #2788 | 2026-10-24 08:28:40 | Scroll Parallax Manager | `jank_events` | `2.0 count` | **PASS** |
 | #2789 | 2026-10-24 08:29:00 | CSS-in-JS Themer | `cpu_usage` | `29.4 %` | **PASS** |
 | #2790 | 2026-10-24 08:29:20 | Micro Frontend Loader | `memory_footprint` | `77.6 MB` | **PASS** |
+| #2791 | 2026-10-24 08:29:40 | Interactive Tooltip Engine | `frame_render_budget` | `16.6 ms (60fps)` | **PASS** |
