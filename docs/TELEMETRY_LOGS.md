@@ -2828,3 +2828,4 @@
 | #2800 | 2026-10-24 08:32:40 | Touch Gesture Dispatcher | `bundle_size` | `117.8 KB` | **PASS** |
 | #2801 | 2026-10-24 08:33:00 | SVG Morphing Pipeline | `time_to_interactive` | `1773.7 ms` | **PASS** |
 | #2802 | 2026-10-24 08:33:20 | WebGL Shader Compiler | `latency` | `19.0 ms` | **PASS** |
+| #2803 | 2026-10-24 08:33:40 | Background Video Loop | `time_to_interactive` | `2303.3 ms` | **PASS** |
