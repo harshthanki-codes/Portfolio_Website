@@ -3205,3 +3205,4 @@
 | #3177 | 2026-10-24 10:38:20 | Lottie Animation Engine | `cpu_usage` | `35.5 %` | **PASS** |
 | #3178 | 2026-10-24 10:38:40 | Viewport Resize Observer | `animation_fps` | `57.5 fps` | **PASS** |
 | #3179 | 2026-10-24 10:39:00 | CSS-in-JS Themer | `first_contentful_paint` | `1072.1 ms` | **PASS** |
+| #3180 | 2026-10-24 10:39:20 | Interactive Tooltip Engine | `jank_events` | `1.1 count` | **PASS** |
