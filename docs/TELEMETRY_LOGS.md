@@ -3303,3 +3303,4 @@
 | #3275 | 2026-10-24 11:11:00 | WebGL Shader Compiler | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
 | #3276 | 2026-10-24 11:11:20 | Viewport Resize Observer | `jank_events` | `0.1 count` | **PASS** |
 | #3277 | 2026-10-24 11:11:40 | State Sync Daemon | `bundle_size` | `82.3 KB` | **PASS** |
+| #3278 | 2026-10-24 11:12:00 | Lottie Animation Engine | `memory_footprint` | `77.0 MB` | **PASS** |
