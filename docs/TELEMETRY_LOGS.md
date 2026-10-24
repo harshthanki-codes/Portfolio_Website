@@ -2841,3 +2841,4 @@
 | #2813 | 2026-10-24 08:37:00 | Dynamic Font Loader | `gpu_utilization` | `57.3 %` | **PASS** |
 | #2814 | 2026-10-24 08:37:20 | Cache Warmup Service | `frame_render_budget` | `17.1 ms (60fps)` | **PASS** |
 | #2815 | 2026-10-24 08:37:40 | Touch Gesture Dispatcher | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
+| #2816 | 2026-10-24 08:38:00 | Scroll Parallax Manager | `first_contentful_paint` | `1291.5 ms` | **PASS** |
