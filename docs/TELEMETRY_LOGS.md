@@ -3041,3 +3041,4 @@
 | #3013 | 2026-10-24 09:43:40 | Background Video Loop | `memory_footprint` | `107.6 MB` | **PASS** |
 | #3014 | 2026-10-24 09:44:00 | CSS-in-JS Themer | `latency` | `22.0 ms` | **PASS** |
 | #3015 | 2026-10-24 09:44:20 | WebGL Shader Compiler | `animation_fps` | `65.1 fps` | **PASS** |
+| #3016 | 2026-10-24 09:44:40 | Scroll Parallax Manager | `latency` | `10.9 ms` | **PASS** |
