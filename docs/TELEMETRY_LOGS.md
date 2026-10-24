@@ -3009,3 +3009,4 @@
 | #2981 | 2026-10-24 09:33:00 | SVG Morphing Pipeline | `time_to_interactive` | `2490.6 ms` | **PASS** |
 | #2982 | 2026-10-24 09:33:20 | Lottie Animation Engine | `cpu_usage` | `42.9 %` | **PASS** |
 | #2983 | 2026-10-24 09:33:40 | WebGL Shader Compiler | `latency` | `7.7 ms` | **PASS** |
+| #2984 | 2026-10-24 09:34:00 | Scroll Parallax Manager | `gpu_utilization` | `20.1 %` | **PASS** |
