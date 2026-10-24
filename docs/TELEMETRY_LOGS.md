@@ -3188,3 +3188,4 @@
 | #3160 | 2026-10-24 10:32:40 | Audio Visualizer | `frame_render_budget` | `27.3 ms (60fps)` | **PASS** |
 | #3161 | 2026-10-24 10:33:00 | Viewport Resize Observer | `jank_events` | `1.1 count` | **PASS** |
 | #3162 | 2026-10-24 10:33:20 | SVG Morphing Pipeline | `latency` | `12.9 ms` | **PASS** |
+| #3163 | 2026-10-24 10:33:40 | Scroll Parallax Manager | `cpu_usage` | `27.9 %` | **PASS** |
