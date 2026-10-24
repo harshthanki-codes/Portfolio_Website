@@ -3186,3 +3186,4 @@
 | #3158 | 2026-10-24 10:32:00 | Scroll Parallax Manager | `latency` | `21.1 ms` | **PASS** |
 | #3159 | 2026-10-24 10:32:20 | Audio Visualizer | `memory_footprint` | `101.6 MB` | **PASS** |
 | #3160 | 2026-10-24 10:32:40 | Audio Visualizer | `frame_render_budget` | `27.3 ms (60fps)` | **PASS** |
+| #3161 | 2026-10-24 10:33:00 | Viewport Resize Observer | `jank_events` | `1.1 count` | **PASS** |
