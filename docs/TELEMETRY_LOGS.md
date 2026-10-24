@@ -2747,3 +2747,4 @@
 | #2719 | 2026-10-24 08:05:40 | Micro Frontend Loader | `animation_fps` | `70.0 fps` | **PASS** |
 | #2720 | 2026-10-24 08:06:00 | Scroll Parallax Manager | `jank_events` | `1.5 count` | **PASS** |
 | #2721 | 2026-10-24 08:06:20 | Predictive Arc Canvas | `cpu_usage` | `42.6 %` | **PASS** |
+| #2722 | 2026-10-24 08:06:40 | Scroll Parallax Manager | `first_contentful_paint` | `815.3 ms` | **PASS** |
