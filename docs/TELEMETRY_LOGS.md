@@ -3105,3 +3105,4 @@
 | #3077 | 2026-10-24 10:05:00 | Telemetry Beacon | `time_to_interactive` | `1900.9 ms` | **PASS** |
 | #3078 | 2026-10-24 10:05:20 | Background Video Loop | `memory_footprint` | `61.8 MB` | **PASS** |
 | #3079 | 2026-10-24 10:05:40 | Dynamic Font Loader | `cpu_usage` | `44.9 %` | **PASS** |
+| #3080 | 2026-10-24 10:06:00 | WebGL Shader Compiler | `memory_footprint` | `68.7 MB` | **PASS** |
