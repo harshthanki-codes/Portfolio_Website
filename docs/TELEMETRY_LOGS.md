@@ -3065,3 +3065,4 @@
 | #3037 | 2026-10-24 09:51:40 | Viewport Resize Observer | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
 | #3038 | 2026-10-24 09:52:00 | Viewport Resize Observer | `animation_fps` | `61.5 fps` | **PASS** |
 | #3039 | 2026-10-24 09:52:20 | CSS-in-JS Themer | `cpu_usage` | `18.3 %` | **PASS** |
+| #3040 | 2026-10-24 09:52:40 | Background Video Loop | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
