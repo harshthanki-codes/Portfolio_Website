@@ -2766,3 +2766,4 @@
 | #2738 | 2026-10-24 08:12:00 | Audio Visualizer | `memory_footprint` | `106.8 MB` | **PASS** |
 | #2739 | 2026-10-24 08:12:20 | Cache Warmup Service | `latency` | `22.3 ms` | **PASS** |
 | #2740 | 2026-10-24 08:12:40 | Telemetry Beacon | `jank_events` | `1.6 count` | **PASS** |
+| #2741 | 2026-10-24 08:13:00 | 3D Particle Renderer | `memory_footprint` | `72.0 MB` | **PASS** |
