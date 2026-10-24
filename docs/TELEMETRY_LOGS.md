@@ -3050,3 +3050,4 @@
 | #3022 | 2026-10-24 09:46:40 | Background Video Loop | `memory_footprint` | `85.3 MB` | **PASS** |
 | #3023 | 2026-10-24 09:47:00 | Lottie Animation Engine | `latency` | `21.8 ms` | **PASS** |
 | #3024 | 2026-10-24 09:47:20 | CSS-in-JS Themer | `gpu_utilization` | `65.7 %` | **PASS** |
+| #3025 | 2026-10-24 09:47:40 | 3D Particle Renderer | `first_contentful_paint` | `856.9 ms` | **PASS** |
