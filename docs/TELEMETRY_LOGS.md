@@ -2961,3 +2961,4 @@
 | #2933 | 2026-10-24 09:17:00 | Lottie Animation Engine | `gpu_utilization` | `64.3 %` | **PASS** |
 | #2934 | 2026-10-24 09:17:20 | Predictive Arc Canvas | `jank_events` | `1.6 count` | **PASS** |
 | #2935 | 2026-10-24 09:17:40 | SVG Morphing Pipeline | `frame_render_budget` | `23.2 ms (60fps)` | **PASS** |
+| #2936 | 2026-10-24 09:18:00 | 3D Particle Renderer | `memory_footprint` | `65.9 MB` | **PASS** |
