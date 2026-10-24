@@ -3259,3 +3259,4 @@
 | #3231 | 2026-10-24 10:56:20 | Interactive Tooltip Engine | `time_to_interactive` | `2092.3 ms` | **PASS** |
 | #3232 | 2026-10-24 10:56:40 | Background Video Loop | `animation_fps` | `58.2 fps` | **PASS** |
 | #3233 | 2026-10-24 10:57:00 | Audio Visualizer | `animation_fps` | `73.4 fps` | **PASS** |
+| #3234 | 2026-10-24 10:57:20 | Scroll Parallax Manager | `cpu_usage` | `35.9 %` | **PASS** |
