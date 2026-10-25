@@ -3919,3 +3919,4 @@
 | #3888 | 2026-10-25 11:15:20 | Touch Gesture Dispatcher | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
 | #3889 | 2026-10-25 11:15:40 | Dynamic Font Loader | `frame_render_budget` | `28.5 ms (60fps)` | **PASS** |
 | #3890 | 2026-10-25 11:16:00 | 3D Particle Renderer | `time_to_interactive` | `2166.6 ms` | **PASS** |
+| #3891 | 2026-10-25 11:16:20 | Dynamic Font Loader | `first_contentful_paint` | `1015.1 ms` | **PASS** |
