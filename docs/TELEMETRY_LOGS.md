@@ -3381,3 +3381,4 @@
 | #3350 | 2026-10-25 08:16:00 | 3D Particle Renderer | `gpu_utilization` | `31.6 %` | **PASS** |
 | #3351 | 2026-10-25 08:16:20 | Dynamic Font Loader | `gpu_utilization` | `26.9 %` | **PASS** |
 | #3352 | 2026-10-25 08:16:40 | Progressive Image Loader | `latency` | `15.0 ms` | **PASS** |
+| #3353 | 2026-10-25 08:17:00 | Micro Frontend Loader | `frame_render_budget` | `23.2 ms (60fps)` | **PASS** |
