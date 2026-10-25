@@ -3831,3 +3831,4 @@
 | #3800 | 2026-10-25 10:46:00 | Progressive Image Loader | `memory_footprint` | `94.4 MB` | **PASS** |
 | #3801 | 2026-10-25 10:46:20 | Progressive Image Loader | `time_to_interactive` | `2098.8 ms` | **PASS** |
 | #3802 | 2026-10-25 10:46:40 | Lottie Animation Engine | `jank_events` | `1.8 count` | **PASS** |
+| #3803 | 2026-10-25 10:47:00 | Cache Warmup Service | `first_contentful_paint` | `1209.8 ms` | **PASS** |
