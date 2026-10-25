@@ -3698,3 +3698,4 @@
 | #3667 | 2026-10-25 10:01:40 | State Sync Daemon | `animation_fps` | `64.9 fps` | **PASS** |
 | #3668 | 2026-10-25 10:02:00 | Progressive Image Loader | `latency` | `24.4 ms` | **PASS** |
 | #3669 | 2026-10-25 10:02:20 | 3D Particle Renderer | `cpu_usage` | `14.9 %` | **PASS** |
+| #3670 | 2026-10-25 10:02:40 | Telemetry Beacon | `frame_render_budget` | `22.4 ms (60fps)` | **PASS** |
