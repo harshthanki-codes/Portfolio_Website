@@ -3562,3 +3562,4 @@
 | #3531 | 2026-10-25 09:16:20 | Background Video Loop | `latency` | `8.8 ms` | **PASS** |
 | #3532 | 2026-10-25 09:16:40 | Telemetry Beacon | `gpu_utilization` | `36.5 %` | **PASS** |
 | #3533 | 2026-10-25 09:17:00 | Background Video Loop | `first_contentful_paint` | `1274.3 ms` | **PASS** |
+| #3534 | 2026-10-25 09:17:20 | Cache Warmup Service | `bundle_size` | `221.3 KB` | **PASS** |
