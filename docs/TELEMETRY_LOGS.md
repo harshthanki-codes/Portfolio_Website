@@ -3327,3 +3327,7 @@
 | #3299 | 2026-10-24 11:19:00 | Interactive Tooltip Engine | `time_to_interactive` | `2474.1 ms` | **PASS** |
 | #3300 | 2026-10-24 11:19:20 | Touch Gesture Dispatcher | `memory_footprint` | `70.8 MB` | **PASS** |
 | #3301 | 2026-10-24 11:19:40 | Touch Gesture Dispatcher | `time_to_interactive` | `1600.9 ms` | **PASS** |
+
+## 2026-10-25 Telemetry Entries
+
+| #3302 | 2026-10-25 08:00:00 | Background Video Loop | `memory_footprint` | `52.6 MB` | **PASS** |
