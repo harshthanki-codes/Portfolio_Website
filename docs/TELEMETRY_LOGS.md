@@ -3818,3 +3818,4 @@
 | #3787 | 2026-10-25 10:41:40 | Touch Gesture Dispatcher | `time_to_interactive` | `1971.8 ms` | **PASS** |
 | #3788 | 2026-10-25 10:42:00 | State Sync Daemon | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
 | #3789 | 2026-10-25 10:42:20 | Touch Gesture Dispatcher | `animation_fps` | `66.6 fps` | **PASS** |
+| #3790 | 2026-10-25 10:42:40 | Lazy Load Optimizer | `cpu_usage` | `24.6 %` | **PASS** |
