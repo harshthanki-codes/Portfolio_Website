@@ -3893,3 +3893,4 @@
 | #3862 | 2026-10-25 11:06:40 | State Sync Daemon | `memory_footprint` | `104.0 MB` | **PASS** |
 | #3863 | 2026-10-25 11:07:00 | Lottie Animation Engine | `animation_fps` | `68.2 fps` | **PASS** |
 | #3864 | 2026-10-25 11:07:20 | Scroll Parallax Manager | `cpu_usage` | `19.7 %` | **PASS** |
+| #3865 | 2026-10-25 11:07:40 | WebGL Shader Compiler | `time_to_interactive` | `2253.3 ms` | **PASS** |
