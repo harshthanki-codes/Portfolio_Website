@@ -3926,3 +3926,4 @@
 | #3895 | 2026-10-25 11:17:40 | Scroll Parallax Manager | `animation_fps` | `65.3 fps` | **PASS** |
 | #3896 | 2026-10-25 11:18:00 | Viewport Resize Observer | `latency` | `21.1 ms` | **PASS** |
 | #3897 | 2026-10-25 11:18:20 | Cache Warmup Service | `time_to_interactive` | `1351.2 ms` | **PASS** |
+| #3898 | 2026-10-25 11:18:40 | Scroll Parallax Manager | `memory_footprint` | `83.7 MB` | **PASS** |
