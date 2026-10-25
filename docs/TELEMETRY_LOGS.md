@@ -3378,3 +3378,4 @@
 | #3347 | 2026-10-25 08:15:00 | State Sync Daemon | `animation_fps` | `63.2 fps` | **PASS** |
 | #3348 | 2026-10-25 08:15:20 | CSS-in-JS Themer | `frame_render_budget` | `20.9 ms (60fps)` | **PASS** |
 | #3349 | 2026-10-25 08:15:40 | Interactive Tooltip Engine | `jank_events` | `1.4 count` | **PASS** |
+| #3350 | 2026-10-25 08:16:00 | 3D Particle Renderer | `gpu_utilization` | `31.6 %` | **PASS** |
