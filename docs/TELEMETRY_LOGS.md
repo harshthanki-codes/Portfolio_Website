@@ -3724,3 +3724,4 @@
 | #3693 | 2026-10-25 10:10:20 | WebGL Shader Compiler | `bundle_size` | `215.4 KB` | **PASS** |
 | #3694 | 2026-10-25 10:10:40 | Audio Visualizer | `latency` | `19.7 ms` | **PASS** |
 | #3695 | 2026-10-25 10:11:00 | Audio Visualizer | `gpu_utilization` | `40.9 %` | **PASS** |
+| #3696 | 2026-10-25 10:11:20 | Dynamic Font Loader | `first_contentful_paint` | `846.9 ms` | **PASS** |
