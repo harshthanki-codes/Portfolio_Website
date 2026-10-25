@@ -3761,3 +3761,4 @@
 | #3730 | 2026-10-25 10:22:40 | Interactive Tooltip Engine | `memory_footprint` | `76.1 MB` | **PASS** |
 | #3731 | 2026-10-25 10:23:00 | Lottie Animation Engine | `frame_render_budget` | `19.2 ms (60fps)` | **PASS** |
 | #3732 | 2026-10-25 10:23:20 | 3D Particle Renderer | `memory_footprint` | `99.1 MB` | **PASS** |
+| #3733 | 2026-10-25 10:23:40 | CSS-in-JS Themer | `first_contentful_paint` | `1480.7 ms` | **PASS** |
