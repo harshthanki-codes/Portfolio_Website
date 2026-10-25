@@ -3591,3 +3591,4 @@
 | #3560 | 2026-10-25 09:26:00 | Dynamic Font Loader | `bundle_size` | `206.2 KB` | **PASS** |
 | #3561 | 2026-10-25 09:26:20 | Micro Frontend Loader | `jank_events` | `0.6 count` | **PASS** |
 | #3562 | 2026-10-25 09:26:40 | WebGL Shader Compiler | `animation_fps` | `66.7 fps` | **PASS** |
+| #3563 | 2026-10-25 09:27:00 | 3D Particle Renderer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
