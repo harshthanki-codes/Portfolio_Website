@@ -3642,3 +3642,4 @@
 | #3611 | 2026-10-25 09:43:00 | Cache Warmup Service | `bundle_size` | `185.9 KB` | **PASS** |
 | #3612 | 2026-10-25 09:43:20 | Touch Gesture Dispatcher | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
 | #3613 | 2026-10-25 09:43:40 | Telemetry Beacon | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
+| #3614 | 2026-10-25 09:44:00 | Progressive Image Loader | `jank_events` | `2.5 count` | **PASS** |
