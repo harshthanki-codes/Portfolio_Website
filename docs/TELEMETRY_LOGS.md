@@ -3566,3 +3566,4 @@
 | #3535 | 2026-10-25 09:17:40 | Responsive Grid System | `bundle_size` | `177.7 KB` | **PASS** |
 | #3536 | 2026-10-25 09:18:00 | Progressive Image Loader | `animation_fps` | `59.9 fps` | **PASS** |
 | #3537 | 2026-10-25 09:18:20 | WebGL Shader Compiler | `animation_fps` | `60.5 fps` | **PASS** |
+| #3538 | 2026-10-25 09:18:40 | 3D Particle Renderer | `frame_render_budget` | `20.2 ms (60fps)` | **PASS** |
