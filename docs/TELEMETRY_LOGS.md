@@ -3622,3 +3622,4 @@
 | #3591 | 2026-10-25 09:36:20 | State Sync Daemon | `time_to_interactive` | `1986.4 ms` | **PASS** |
 | #3592 | 2026-10-25 09:36:40 | Background Video Loop | `first_contentful_paint` | `1308.9 ms` | **PASS** |
 | #3593 | 2026-10-25 09:37:00 | SVG Morphing Pipeline | `memory_footprint` | `57.4 MB` | **PASS** |
+| #3594 | 2026-10-25 09:37:20 | Progressive Image Loader | `cpu_usage` | `34.7 %` | **PASS** |
