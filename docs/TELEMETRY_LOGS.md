@@ -3726,3 +3726,4 @@
 | #3695 | 2026-10-25 10:11:00 | Audio Visualizer | `gpu_utilization` | `40.9 %` | **PASS** |
 | #3696 | 2026-10-25 10:11:20 | Dynamic Font Loader | `first_contentful_paint` | `846.9 ms` | **PASS** |
 | #3697 | 2026-10-25 10:11:40 | Dynamic Font Loader | `latency` | `12.1 ms` | **PASS** |
+| #3698 | 2026-10-25 10:12:00 | Scroll Parallax Manager | `jank_events` | `0.9 count` | **PASS** |
