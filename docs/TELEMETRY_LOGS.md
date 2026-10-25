@@ -3872,3 +3872,4 @@
 | #3841 | 2026-10-25 10:59:40 | Scroll Parallax Manager | `animation_fps` | `61.9 fps` | **PASS** |
 | #3842 | 2026-10-25 11:00:00 | State Sync Daemon | `jank_events` | `1.6 count` | **PASS** |
 | #3843 | 2026-10-25 11:00:20 | Audio Visualizer | `first_contentful_paint` | `1202.9 ms` | **PASS** |
+| #3844 | 2026-10-25 11:00:40 | Predictive Arc Canvas | `animation_fps` | `59.1 fps` | **PASS** |
