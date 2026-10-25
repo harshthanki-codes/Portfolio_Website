@@ -3779,3 +3779,4 @@
 | #3748 | 2026-10-25 10:28:40 | Touch Gesture Dispatcher | `jank_events` | `1.5 count` | **PASS** |
 | #3749 | 2026-10-25 10:29:00 | WebGL Shader Compiler | `memory_footprint` | `53.3 MB` | **PASS** |
 | #3750 | 2026-10-25 10:29:20 | State Sync Daemon | `bundle_size` | `223.8 KB` | **PASS** |
+| #3751 | 2026-10-25 10:29:40 | Telemetry Beacon | `jank_events` | `2.5 count` | **PASS** |
