@@ -3759,3 +3759,4 @@
 | #3728 | 2026-10-25 10:22:00 | Viewport Resize Observer | `time_to_interactive` | `1878.8 ms` | **PASS** |
 | #3729 | 2026-10-25 10:22:20 | Touch Gesture Dispatcher | `memory_footprint` | `109.7 MB` | **PASS** |
 | #3730 | 2026-10-25 10:22:40 | Interactive Tooltip Engine | `memory_footprint` | `76.1 MB` | **PASS** |
+| #3731 | 2026-10-25 10:23:00 | Lottie Animation Engine | `frame_render_budget` | `19.2 ms (60fps)` | **PASS** |
