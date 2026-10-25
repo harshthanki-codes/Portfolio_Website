@@ -3775,3 +3775,4 @@
 | #3744 | 2026-10-25 10:27:20 | Lazy Load Optimizer | `latency` | `18.8 ms` | **PASS** |
 | #3745 | 2026-10-25 10:27:40 | Micro Frontend Loader | `first_contentful_paint` | `1403.0 ms` | **PASS** |
 | #3746 | 2026-10-25 10:28:00 | Scroll Parallax Manager | `first_contentful_paint` | `932.7 ms` | **PASS** |
+| #3747 | 2026-10-25 10:28:20 | Lazy Load Optimizer | `frame_render_budget` | `16.3 ms (60fps)` | **PASS** |
