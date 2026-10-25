@@ -3432,3 +3432,4 @@
 | #3401 | 2026-10-25 08:33:00 | CSS-in-JS Themer | `first_contentful_paint` | `980.3 ms` | **PASS** |
 | #3402 | 2026-10-25 08:33:20 | 3D Particle Renderer | `time_to_interactive` | `1875.5 ms` | **PASS** |
 | #3403 | 2026-10-25 08:33:40 | Viewport Resize Observer | `jank_events` | `0.3 count` | **PASS** |
+| #3404 | 2026-10-25 08:34:00 | Predictive Arc Canvas | `jank_events` | `1.8 count` | **PASS** |
