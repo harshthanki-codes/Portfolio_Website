@@ -3478,3 +3478,4 @@
 | #3447 | 2026-10-25 08:48:20 | Touch Gesture Dispatcher | `animation_fps` | `55.6 fps` | **PASS** |
 | #3448 | 2026-10-25 08:48:40 | Scroll Parallax Manager | `time_to_interactive` | `1874.1 ms` | **PASS** |
 | #3449 | 2026-10-25 08:49:00 | Touch Gesture Dispatcher | `animation_fps` | `65.7 fps` | **PASS** |
+| #3450 | 2026-10-25 08:49:20 | State Sync Daemon | `jank_events` | `0.6 count` | **PASS** |
