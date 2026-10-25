@@ -3691,3 +3691,4 @@
 | #3660 | 2026-10-25 09:59:20 | Cache Warmup Service | `latency` | `6.2 ms` | **PASS** |
 | #3661 | 2026-10-25 09:59:40 | Interactive Tooltip Engine | `cpu_usage` | `34.7 %` | **PASS** |
 | #3662 | 2026-10-25 10:00:00 | Micro Frontend Loader | `memory_footprint` | `118.2 MB` | **PASS** |
+| #3663 | 2026-10-25 10:00:20 | Scroll Parallax Manager | `jank_events` | `2.1 count` | **PASS** |
