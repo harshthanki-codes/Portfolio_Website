@@ -3362,3 +3362,4 @@
 | #3331 | 2026-10-25 08:09:40 | Background Video Loop | `bundle_size` | `180.8 KB` | **PASS** |
 | #3332 | 2026-10-25 08:10:00 | Progressive Image Loader | `memory_footprint` | `95.7 MB` | **PASS** |
 | #3333 | 2026-10-25 08:10:20 | Touch Gesture Dispatcher | `memory_footprint` | `88.2 MB` | **PASS** |
+| #3334 | 2026-10-25 08:10:40 | 3D Particle Renderer | `jank_events` | `0.3 count` | **PASS** |
