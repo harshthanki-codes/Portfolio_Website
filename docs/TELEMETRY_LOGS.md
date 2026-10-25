@@ -3640,3 +3640,4 @@
 | #3609 | 2026-10-25 09:42:20 | Lottie Animation Engine | `jank_events` | `2.3 count` | **PASS** |
 | #3610 | 2026-10-25 09:42:40 | Background Video Loop | `memory_footprint` | `54.7 MB` | **PASS** |
 | #3611 | 2026-10-25 09:43:00 | Cache Warmup Service | `bundle_size` | `185.9 KB` | **PASS** |
+| #3612 | 2026-10-25 09:43:20 | Touch Gesture Dispatcher | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
