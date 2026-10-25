@@ -3638,3 +3638,4 @@
 | #3607 | 2026-10-25 09:41:40 | Micro Frontend Loader | `animation_fps` | `64.8 fps` | **PASS** |
 | #3608 | 2026-10-25 09:42:00 | 3D Particle Renderer | `first_contentful_paint` | `986.6 ms` | **PASS** |
 | #3609 | 2026-10-25 09:42:20 | Lottie Animation Engine | `jank_events` | `2.3 count` | **PASS** |
+| #3610 | 2026-10-25 09:42:40 | Background Video Loop | `memory_footprint` | `54.7 MB` | **PASS** |
