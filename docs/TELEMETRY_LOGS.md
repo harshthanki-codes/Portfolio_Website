@@ -3783,3 +3783,4 @@
 | #3752 | 2026-10-25 10:30:00 | 3D Particle Renderer | `time_to_interactive` | `1786.7 ms` | **PASS** |
 | #3753 | 2026-10-25 10:30:20 | 3D Particle Renderer | `bundle_size` | `191.1 KB` | **PASS** |
 | #3754 | 2026-10-25 10:30:40 | Telemetry Beacon | `jank_events` | `2.5 count` | **PASS** |
+| #3755 | 2026-10-25 10:31:00 | Cache Warmup Service | `memory_footprint` | `99.5 MB` | **PASS** |
