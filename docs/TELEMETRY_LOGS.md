@@ -3874,3 +3874,4 @@
 | #3843 | 2026-10-25 11:00:20 | Audio Visualizer | `first_contentful_paint` | `1202.9 ms` | **PASS** |
 | #3844 | 2026-10-25 11:00:40 | Predictive Arc Canvas | `animation_fps` | `59.1 fps` | **PASS** |
 | #3845 | 2026-10-25 11:01:00 | Viewport Resize Observer | `latency` | `11.2 ms` | **PASS** |
+| #3846 | 2026-10-25 11:01:20 | CSS-in-JS Themer | `animation_fps` | `67.1 fps` | **PASS** |
