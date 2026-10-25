@@ -3788,3 +3788,4 @@
 | #3757 | 2026-10-25 10:31:40 | Background Video Loop | `time_to_interactive` | `1849.1 ms` | **PASS** |
 | #3758 | 2026-10-25 10:32:00 | Scroll Parallax Manager | `memory_footprint` | `63.4 MB` | **PASS** |
 | #3759 | 2026-10-25 10:32:20 | Interactive Tooltip Engine | `animation_fps` | `72.9 fps` | **PASS** |
+| #3760 | 2026-10-25 10:32:40 | Progressive Image Loader | `frame_render_budget` | `28.3 ms (60fps)` | **PASS** |
