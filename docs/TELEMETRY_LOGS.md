@@ -3921,3 +3921,4 @@
 | #3890 | 2026-10-25 11:16:00 | 3D Particle Renderer | `time_to_interactive` | `2166.6 ms` | **PASS** |
 | #3891 | 2026-10-25 11:16:20 | Dynamic Font Loader | `first_contentful_paint` | `1015.1 ms` | **PASS** |
 | #3892 | 2026-10-25 11:16:40 | Predictive Arc Canvas | `jank_events` | `2.9 count` | **PASS** |
+| #3893 | 2026-10-25 11:17:00 | CSS-in-JS Themer | `time_to_interactive` | `1701.2 ms` | **PASS** |
