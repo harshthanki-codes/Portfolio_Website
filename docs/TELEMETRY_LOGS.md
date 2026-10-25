@@ -3785,3 +3785,4 @@
 | #3754 | 2026-10-25 10:30:40 | Telemetry Beacon | `jank_events` | `2.5 count` | **PASS** |
 | #3755 | 2026-10-25 10:31:00 | Cache Warmup Service | `memory_footprint` | `99.5 MB` | **PASS** |
 | #3756 | 2026-10-25 10:31:20 | WebGL Shader Compiler | `memory_footprint` | `63.9 MB` | **PASS** |
+| #3757 | 2026-10-25 10:31:40 | Background Video Loop | `time_to_interactive` | `1849.1 ms` | **PASS** |
