@@ -3811,3 +3811,4 @@
 | #3780 | 2026-10-25 10:39:20 | Cache Warmup Service | `memory_footprint` | `81.0 MB` | **PASS** |
 | #3781 | 2026-10-25 10:39:40 | Telemetry Beacon | `jank_events` | `2.5 count` | **PASS** |
 | #3782 | 2026-10-25 10:40:00 | Scroll Parallax Manager | `first_contentful_paint` | `1209.7 ms` | **PASS** |
+| #3783 | 2026-10-25 10:40:20 | Cache Warmup Service | `cpu_usage` | `33.8 %` | **PASS** |
