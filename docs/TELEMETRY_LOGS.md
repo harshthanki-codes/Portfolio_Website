@@ -3728,3 +3728,4 @@
 | #3697 | 2026-10-25 10:11:40 | Dynamic Font Loader | `latency` | `12.1 ms` | **PASS** |
 | #3698 | 2026-10-25 10:12:00 | Scroll Parallax Manager | `jank_events` | `0.9 count` | **PASS** |
 | #3699 | 2026-10-25 10:12:20 | Predictive Arc Canvas | `animation_fps` | `72.3 fps` | **PASS** |
+| #3700 | 2026-10-25 10:12:40 | Cache Warmup Service | `jank_events` | `0.7 count` | **PASS** |
