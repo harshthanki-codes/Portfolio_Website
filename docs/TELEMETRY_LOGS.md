@@ -3739,3 +3739,4 @@
 | #3708 | 2026-10-25 10:15:20 | WebGL Shader Compiler | `gpu_utilization` | `20.1 %` | **PASS** |
 | #3709 | 2026-10-25 10:15:40 | WebGL Shader Compiler | `first_contentful_paint` | `862.2 ms` | **PASS** |
 | #3710 | 2026-10-25 10:16:00 | Lazy Load Optimizer | `gpu_utilization` | `66.0 %` | **PASS** |
+| #3711 | 2026-10-25 10:16:20 | Background Video Loop | `cpu_usage` | `26.5 %` | **PASS** |
