@@ -3834,3 +3834,4 @@
 | #3803 | 2026-10-25 10:47:00 | Cache Warmup Service | `first_contentful_paint` | `1209.8 ms` | **PASS** |
 | #3804 | 2026-10-25 10:47:20 | Viewport Resize Observer | `bundle_size` | `188.8 KB` | **PASS** |
 | #3805 | 2026-10-25 10:47:40 | Background Video Loop | `time_to_interactive` | `1461.1 ms` | **PASS** |
+| #3806 | 2026-10-25 10:48:00 | Background Video Loop | `frame_render_budget` | `24.6 ms (60fps)` | **PASS** |
