@@ -3859,3 +3859,4 @@
 | #3828 | 2026-10-25 10:55:20 | Lottie Animation Engine | `time_to_interactive` | `1300.9 ms` | **PASS** |
 | #3829 | 2026-10-25 10:55:40 | CSS-in-JS Themer | `jank_events` | `0.2 count` | **PASS** |
 | #3830 | 2026-10-25 10:56:00 | Scroll Parallax Manager | `frame_render_budget` | `22.6 ms (60fps)` | **PASS** |
+| #3831 | 2026-10-25 10:56:20 | Dynamic Font Loader | `memory_footprint` | `61.5 MB` | **PASS** |
