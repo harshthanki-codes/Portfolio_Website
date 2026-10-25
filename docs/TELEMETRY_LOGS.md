@@ -3599,3 +3599,4 @@
 | #3568 | 2026-10-25 09:28:40 | Interactive Tooltip Engine | `time_to_interactive` | `2304.0 ms` | **PASS** |
 | #3569 | 2026-10-25 09:29:00 | Dynamic Font Loader | `time_to_interactive` | `1552.3 ms` | **PASS** |
 | #3570 | 2026-10-25 09:29:20 | Interactive Tooltip Engine | `jank_events` | `2.9 count` | **PASS** |
+| #3571 | 2026-10-25 09:29:40 | 3D Particle Renderer | `cpu_usage` | `11.4 %` | **PASS** |
