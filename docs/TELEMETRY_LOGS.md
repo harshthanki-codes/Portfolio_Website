@@ -3407,3 +3407,4 @@
 | #3376 | 2026-10-25 08:24:40 | Cache Warmup Service | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
 | #3377 | 2026-10-25 08:25:00 | State Sync Daemon | `jank_events` | `0.3 count` | **PASS** |
 | #3378 | 2026-10-25 08:25:20 | Background Video Loop | `latency` | `14.2 ms` | **PASS** |
+| #3379 | 2026-10-25 08:25:40 | Telemetry Beacon | `animation_fps` | `67.2 fps` | **PASS** |
