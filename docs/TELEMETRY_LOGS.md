@@ -3560,3 +3560,4 @@
 | #3529 | 2026-10-25 09:15:40 | CSS-in-JS Themer | `jank_events` | `1.7 count` | **PASS** |
 | #3530 | 2026-10-25 09:16:00 | 3D Particle Renderer | `cpu_usage` | `27.7 %` | **PASS** |
 | #3531 | 2026-10-25 09:16:20 | Background Video Loop | `latency` | `8.8 ms` | **PASS** |
+| #3532 | 2026-10-25 09:16:40 | Telemetry Beacon | `gpu_utilization` | `36.5 %` | **PASS** |
