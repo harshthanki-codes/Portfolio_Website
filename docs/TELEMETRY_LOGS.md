@@ -3455,3 +3455,4 @@
 | #3424 | 2026-10-25 08:40:40 | State Sync Daemon | `bundle_size` | `116.9 KB` | **PASS** |
 | #3425 | 2026-10-25 08:41:00 | Telemetry Beacon | `latency` | `6.2 ms` | **PASS** |
 | #3426 | 2026-10-25 08:41:20 | Micro Frontend Loader | `bundle_size` | `175.8 KB` | **PASS** |
+| #3427 | 2026-10-25 08:41:40 | Background Video Loop | `jank_events` | `0.7 count` | **PASS** |
