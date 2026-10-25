@@ -3602,3 +3602,4 @@
 | #3571 | 2026-10-25 09:29:40 | 3D Particle Renderer | `cpu_usage` | `11.4 %` | **PASS** |
 | #3572 | 2026-10-25 09:30:00 | Viewport Resize Observer | `latency` | `23.7 ms` | **PASS** |
 | #3573 | 2026-10-25 09:30:20 | Viewport Resize Observer | `cpu_usage` | `44.0 %` | **PASS** |
+| #3574 | 2026-10-25 09:30:40 | Cache Warmup Service | `cpu_usage` | `16.8 %` | **PASS** |
