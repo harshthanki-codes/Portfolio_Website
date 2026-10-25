@@ -3878,3 +3878,4 @@
 | #3847 | 2026-10-25 11:01:40 | Touch Gesture Dispatcher | `cpu_usage` | `28.1 %` | **PASS** |
 | #3848 | 2026-10-25 11:02:00 | WebGL Shader Compiler | `latency` | `18.9 ms` | **PASS** |
 | #3849 | 2026-10-25 11:02:20 | SVG Morphing Pipeline | `gpu_utilization` | `68.4 %` | **PASS** |
+| #3850 | 2026-10-25 11:02:40 | Scroll Parallax Manager | `frame_render_budget` | `26.9 ms (60fps)` | **PASS** |
