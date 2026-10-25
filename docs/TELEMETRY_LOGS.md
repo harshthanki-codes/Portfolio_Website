@@ -3552,3 +3552,4 @@
 | #3521 | 2026-10-25 09:13:00 | Touch Gesture Dispatcher | `cpu_usage` | `26.5 %` | **PASS** |
 | #3522 | 2026-10-25 09:13:20 | Micro Frontend Loader | `cpu_usage` | `31.2 %` | **PASS** |
 | #3523 | 2026-10-25 09:13:40 | Touch Gesture Dispatcher | `time_to_interactive` | `1321.3 ms` | **PASS** |
+| #3524 | 2026-10-25 09:14:00 | Scroll Parallax Manager | `gpu_utilization` | `45.1 %` | **PASS** |
