@@ -3521,3 +3521,4 @@
 | #3490 | 2026-10-25 09:02:40 | Cache Warmup Service | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
 | #3491 | 2026-10-25 09:03:00 | CSS-in-JS Themer | `frame_render_budget` | `21.9 ms (60fps)` | **PASS** |
 | #3492 | 2026-10-25 09:03:20 | 3D Particle Renderer | `jank_events` | `1.6 count` | **PASS** |
+| #3493 | 2026-10-25 09:03:40 | CSS-in-JS Themer | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
