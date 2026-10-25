@@ -3468,3 +3468,4 @@
 | #3437 | 2026-10-25 08:45:00 | SVG Morphing Pipeline | `time_to_interactive` | `1373.9 ms` | **PASS** |
 | #3438 | 2026-10-25 08:45:20 | Background Video Loop | `frame_render_budget` | `20.6 ms (60fps)` | **PASS** |
 | #3439 | 2026-10-25 08:45:40 | Progressive Image Loader | `jank_events` | `1.4 count` | **PASS** |
+| #3440 | 2026-10-25 08:46:00 | Viewport Resize Observer | `animation_fps` | `61.6 fps` | **PASS** |
