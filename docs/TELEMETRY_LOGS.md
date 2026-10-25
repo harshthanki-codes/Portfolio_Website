@@ -3596,3 +3596,4 @@
 | #3565 | 2026-10-25 09:27:40 | Scroll Parallax Manager | `first_contentful_paint` | `1186.6 ms` | **PASS** |
 | #3566 | 2026-10-25 09:28:00 | WebGL Shader Compiler | `bundle_size` | `222.3 KB` | **PASS** |
 | #3567 | 2026-10-25 09:28:20 | WebGL Shader Compiler | `memory_footprint` | `78.1 MB` | **PASS** |
+| #3568 | 2026-10-25 09:28:40 | Interactive Tooltip Engine | `time_to_interactive` | `2304.0 ms` | **PASS** |
