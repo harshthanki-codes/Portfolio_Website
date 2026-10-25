@@ -3911,3 +3911,4 @@
 | #3880 | 2026-10-25 11:12:40 | CSS-in-JS Themer | `frame_render_budget` | `16.5 ms (60fps)` | **PASS** |
 | #3881 | 2026-10-25 11:13:00 | Audio Visualizer | `gpu_utilization` | `64.4 %` | **PASS** |
 | #3882 | 2026-10-25 11:13:20 | 3D Particle Renderer | `memory_footprint` | `50.1 MB` | **PASS** |
+| #3883 | 2026-10-25 11:13:40 | 3D Particle Renderer | `memory_footprint` | `57.7 MB` | **PASS** |
