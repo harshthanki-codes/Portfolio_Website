@@ -3527,3 +3527,4 @@
 | #3496 | 2026-10-25 09:04:40 | Audio Visualizer | `frame_render_budget` | `26.9 ms (60fps)` | **PASS** |
 | #3497 | 2026-10-25 09:05:00 | State Sync Daemon | `memory_footprint` | `84.8 MB` | **PASS** |
 | #3498 | 2026-10-25 09:05:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2073.5 ms` | **PASS** |
+| #3499 | 2026-10-25 09:05:40 | Touch Gesture Dispatcher | `latency` | `24.8 ms` | **PASS** |
