@@ -3613,3 +3613,4 @@
 | #3582 | 2026-10-25 09:33:20 | Audio Visualizer | `frame_render_budget` | `17.5 ms (60fps)` | **PASS** |
 | #3583 | 2026-10-25 09:33:40 | SVG Morphing Pipeline | `bundle_size` | `137.2 KB` | **PASS** |
 | #3584 | 2026-10-25 09:34:00 | Audio Visualizer | `cpu_usage` | `26.9 %` | **PASS** |
+| #3585 | 2026-10-25 09:34:20 | Cache Warmup Service | `cpu_usage` | `24.4 %` | **PASS** |
