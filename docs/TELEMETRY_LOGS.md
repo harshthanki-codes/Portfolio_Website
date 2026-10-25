@@ -3509,3 +3509,4 @@
 | #3478 | 2026-10-25 08:58:40 | Cache Warmup Service | `memory_footprint` | `103.5 MB` | **PASS** |
 | #3479 | 2026-10-25 08:59:00 | Audio Visualizer | `frame_render_budget` | `23.2 ms (60fps)` | **PASS** |
 | #3480 | 2026-10-25 08:59:20 | Lazy Load Optimizer | `time_to_interactive` | `1749.8 ms` | **PASS** |
+| #3481 | 2026-10-25 08:59:40 | Lazy Load Optimizer | `frame_render_budget` | `25.3 ms (60fps)` | **PASS** |
