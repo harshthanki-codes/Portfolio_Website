@@ -3737,3 +3737,4 @@
 | #3706 | 2026-10-25 10:14:40 | Cache Warmup Service | `jank_events` | `0.6 count` | **PASS** |
 | #3707 | 2026-10-25 10:15:00 | Cache Warmup Service | `bundle_size` | `131.8 KB` | **PASS** |
 | #3708 | 2026-10-25 10:15:20 | WebGL Shader Compiler | `gpu_utilization` | `20.1 %` | **PASS** |
+| #3709 | 2026-10-25 10:15:40 | WebGL Shader Compiler | `first_contentful_paint` | `862.2 ms` | **PASS** |
