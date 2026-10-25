@@ -3456,3 +3456,4 @@
 | #3425 | 2026-10-25 08:41:00 | Telemetry Beacon | `latency` | `6.2 ms` | **PASS** |
 | #3426 | 2026-10-25 08:41:20 | Micro Frontend Loader | `bundle_size` | `175.8 KB` | **PASS** |
 | #3427 | 2026-10-25 08:41:40 | Background Video Loop | `jank_events` | `0.7 count` | **PASS** |
+| #3428 | 2026-10-25 08:42:00 | Cache Warmup Service | `frame_render_budget` | `18.8 ms (60fps)` | **PASS** |
