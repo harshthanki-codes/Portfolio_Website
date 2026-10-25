@@ -3445,3 +3445,4 @@
 | #3414 | 2026-10-25 08:37:20 | Micro Frontend Loader | `cpu_usage` | `30.2 %` | **PASS** |
 | #3415 | 2026-10-25 08:37:40 | 3D Particle Renderer | `bundle_size` | `105.6 KB` | **PASS** |
 | #3416 | 2026-10-25 08:38:00 | Micro Frontend Loader | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
+| #3417 | 2026-10-25 08:38:20 | Interactive Tooltip Engine | `time_to_interactive` | `1884.1 ms` | **PASS** |
