@@ -3816,3 +3816,4 @@
 | #3785 | 2026-10-25 10:41:00 | Scroll Parallax Manager | `jank_events` | `0.4 count` | **PASS** |
 | #3786 | 2026-10-25 10:41:20 | Viewport Resize Observer | `memory_footprint` | `82.0 MB` | **PASS** |
 | #3787 | 2026-10-25 10:41:40 | Touch Gesture Dispatcher | `time_to_interactive` | `1971.8 ms` | **PASS** |
+| #3788 | 2026-10-25 10:42:00 | State Sync Daemon | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
