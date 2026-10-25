@@ -3440,3 +3440,4 @@
 | #3409 | 2026-10-25 08:35:40 | Lottie Animation Engine | `bundle_size` | `178.0 KB` | **PASS** |
 | #3410 | 2026-10-25 08:36:00 | SVG Morphing Pipeline | `bundle_size` | `127.6 KB` | **PASS** |
 | #3411 | 2026-10-25 08:36:20 | Telemetry Beacon | `memory_footprint` | `52.6 MB` | **PASS** |
+| #3412 | 2026-10-25 08:36:40 | 3D Particle Renderer | `time_to_interactive` | `1427.4 ms` | **PASS** |
