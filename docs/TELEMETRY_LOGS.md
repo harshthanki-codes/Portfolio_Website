@@ -3829,3 +3829,4 @@
 | #3798 | 2026-10-25 10:45:20 | CSS-in-JS Themer | `gpu_utilization` | `66.5 %` | **PASS** |
 | #3799 | 2026-10-25 10:45:40 | Touch Gesture Dispatcher | `memory_footprint` | `102.2 MB` | **PASS** |
 | #3800 | 2026-10-25 10:46:00 | Progressive Image Loader | `memory_footprint` | `94.4 MB` | **PASS** |
+| #3801 | 2026-10-25 10:46:20 | Progressive Image Loader | `time_to_interactive` | `2098.8 ms` | **PASS** |
