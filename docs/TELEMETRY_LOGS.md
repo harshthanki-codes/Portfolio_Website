@@ -3474,3 +3474,4 @@
 | #3443 | 2026-10-25 08:47:00 | Predictive Arc Canvas | `gpu_utilization` | `49.9 %` | **PASS** |
 | #3444 | 2026-10-25 08:47:20 | CSS-in-JS Themer | `jank_events` | `2.5 count` | **PASS** |
 | #3445 | 2026-10-25 08:47:40 | Predictive Arc Canvas | `latency` | `15.1 ms` | **PASS** |
+| #3446 | 2026-10-25 08:48:00 | Predictive Arc Canvas | `cpu_usage` | `40.9 %` | **PASS** |
