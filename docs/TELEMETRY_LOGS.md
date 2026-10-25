@@ -3598,3 +3598,4 @@
 | #3567 | 2026-10-25 09:28:20 | WebGL Shader Compiler | `memory_footprint` | `78.1 MB` | **PASS** |
 | #3568 | 2026-10-25 09:28:40 | Interactive Tooltip Engine | `time_to_interactive` | `2304.0 ms` | **PASS** |
 | #3569 | 2026-10-25 09:29:00 | Dynamic Font Loader | `time_to_interactive` | `1552.3 ms` | **PASS** |
+| #3570 | 2026-10-25 09:29:20 | Interactive Tooltip Engine | `jank_events` | `2.9 count` | **PASS** |
