@@ -3730,3 +3730,4 @@
 | #3699 | 2026-10-25 10:12:20 | Predictive Arc Canvas | `animation_fps` | `72.3 fps` | **PASS** |
 | #3700 | 2026-10-25 10:12:40 | Cache Warmup Service | `jank_events` | `0.7 count` | **PASS** |
 | #3701 | 2026-10-25 10:13:00 | Cache Warmup Service | `first_contentful_paint` | `801.9 ms` | **PASS** |
+| #3702 | 2026-10-25 10:13:20 | Predictive Arc Canvas | `gpu_utilization` | `55.5 %` | **PASS** |
