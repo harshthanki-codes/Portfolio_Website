@@ -3879,3 +3879,4 @@
 | #3848 | 2026-10-25 11:02:00 | WebGL Shader Compiler | `latency` | `18.9 ms` | **PASS** |
 | #3849 | 2026-10-25 11:02:20 | SVG Morphing Pipeline | `gpu_utilization` | `68.4 %` | **PASS** |
 | #3850 | 2026-10-25 11:02:40 | Scroll Parallax Manager | `frame_render_budget` | `26.9 ms (60fps)` | **PASS** |
+| #3851 | 2026-10-25 11:03:00 | Progressive Image Loader | `animation_fps` | `68.7 fps` | **PASS** |
