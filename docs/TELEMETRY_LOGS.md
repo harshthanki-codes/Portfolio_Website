@@ -3908,3 +3908,4 @@
 | #3877 | 2026-10-25 11:11:40 | 3D Particle Renderer | `cpu_usage` | `30.0 %` | **PASS** |
 | #3878 | 2026-10-25 11:12:00 | State Sync Daemon | `bundle_size` | `155.7 KB` | **PASS** |
 | #3879 | 2026-10-25 11:12:20 | 3D Particle Renderer | `bundle_size` | `141.6 KB` | **PASS** |
+| #3880 | 2026-10-25 11:12:40 | CSS-in-JS Themer | `frame_render_budget` | `16.5 ms (60fps)` | **PASS** |
