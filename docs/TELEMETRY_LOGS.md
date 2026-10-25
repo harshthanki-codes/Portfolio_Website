@@ -3516,3 +3516,4 @@
 | #3485 | 2026-10-25 09:01:00 | Lazy Load Optimizer | `animation_fps` | `70.0 fps` | **PASS** |
 | #3486 | 2026-10-25 09:01:20 | WebGL Shader Compiler | `first_contentful_paint` | `1039.9 ms` | **PASS** |
 | #3487 | 2026-10-25 09:01:40 | Scroll Parallax Manager | `latency` | `24.2 ms` | **PASS** |
+| #3488 | 2026-10-25 09:02:00 | Viewport Resize Observer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
