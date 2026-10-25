@@ -3845,3 +3845,4 @@
 | #3814 | 2026-10-25 10:50:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1060.0 ms` | **PASS** |
 | #3815 | 2026-10-25 10:51:00 | Telemetry Beacon | `animation_fps` | `70.6 fps` | **PASS** |
 | #3816 | 2026-10-25 10:51:20 | State Sync Daemon | `jank_events` | `2.0 count` | **PASS** |
+| #3817 | 2026-10-25 10:51:40 | Micro Frontend Loader | `animation_fps` | `59.9 fps` | **PASS** |
