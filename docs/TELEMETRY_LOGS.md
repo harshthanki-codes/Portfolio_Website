@@ -3808,3 +3808,4 @@
 | #3777 | 2026-10-25 10:38:20 | Telemetry Beacon | `animation_fps` | `59.5 fps` | **PASS** |
 | #3778 | 2026-10-25 10:38:40 | WebGL Shader Compiler | `bundle_size` | `145.0 KB` | **PASS** |
 | #3779 | 2026-10-25 10:39:00 | 3D Particle Renderer | `bundle_size` | `234.6 KB` | **PASS** |
+| #3780 | 2026-10-25 10:39:20 | Cache Warmup Service | `memory_footprint` | `81.0 MB` | **PASS** |
