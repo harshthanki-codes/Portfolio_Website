@@ -3624,3 +3624,4 @@
 | #3593 | 2026-10-25 09:37:00 | SVG Morphing Pipeline | `memory_footprint` | `57.4 MB` | **PASS** |
 | #3594 | 2026-10-25 09:37:20 | Progressive Image Loader | `cpu_usage` | `34.7 %` | **PASS** |
 | #3595 | 2026-10-25 09:37:40 | Dynamic Font Loader | `latency` | `21.3 ms` | **PASS** |
+| #3596 | 2026-10-25 09:38:00 | Dynamic Font Loader | `time_to_interactive` | `1649.1 ms` | **PASS** |
