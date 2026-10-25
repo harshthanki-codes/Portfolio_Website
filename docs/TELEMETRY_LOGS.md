@@ -3530,3 +3530,4 @@
 | #3499 | 2026-10-25 09:05:40 | Touch Gesture Dispatcher | `latency` | `24.8 ms` | **PASS** |
 | #3500 | 2026-10-25 09:06:00 | CSS-in-JS Themer | `frame_render_budget` | `18.1 ms (60fps)` | **PASS** |
 | #3501 | 2026-10-25 09:06:20 | Background Video Loop | `frame_render_budget` | `24.7 ms (60fps)` | **PASS** |
+| #3502 | 2026-10-25 09:06:40 | Touch Gesture Dispatcher | `time_to_interactive` | `2484.8 ms` | **PASS** |
