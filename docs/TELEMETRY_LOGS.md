@@ -3891,3 +3891,4 @@
 | #3860 | 2026-10-25 11:06:00 | Cache Warmup Service | `cpu_usage` | `29.6 %` | **PASS** |
 | #3861 | 2026-10-25 11:06:20 | Viewport Resize Observer | `cpu_usage` | `13.1 %` | **PASS** |
 | #3862 | 2026-10-25 11:06:40 | State Sync Daemon | `memory_footprint` | `104.0 MB` | **PASS** |
+| #3863 | 2026-10-25 11:07:00 | Lottie Animation Engine | `animation_fps` | `68.2 fps` | **PASS** |
