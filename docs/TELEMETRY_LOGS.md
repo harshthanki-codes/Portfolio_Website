@@ -3886,3 +3886,4 @@
 | #3855 | 2026-10-25 11:04:20 | Lottie Animation Engine | `bundle_size` | `246.6 KB` | **PASS** |
 | #3856 | 2026-10-25 11:04:40 | State Sync Daemon | `latency` | `14.3 ms` | **PASS** |
 | #3857 | 2026-10-25 11:05:00 | Interactive Tooltip Engine | `time_to_interactive` | `1796.0 ms` | **PASS** |
+| #3858 | 2026-10-25 11:05:20 | Interactive Tooltip Engine | `jank_events` | `0.7 count` | **PASS** |
