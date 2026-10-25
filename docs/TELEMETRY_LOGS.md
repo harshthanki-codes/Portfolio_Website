@@ -3626,3 +3626,4 @@
 | #3595 | 2026-10-25 09:37:40 | Dynamic Font Loader | `latency` | `21.3 ms` | **PASS** |
 | #3596 | 2026-10-25 09:38:00 | Dynamic Font Loader | `time_to_interactive` | `1649.1 ms` | **PASS** |
 | #3597 | 2026-10-25 09:38:20 | Micro Frontend Loader | `gpu_utilization` | `37.8 %` | **PASS** |
+| #3598 | 2026-10-25 09:38:40 | Telemetry Beacon | `animation_fps` | `66.7 fps` | **PASS** |
