@@ -3366,3 +3366,4 @@
 | #3335 | 2026-10-25 08:11:00 | WebGL Shader Compiler | `bundle_size` | `222.0 KB` | **PASS** |
 | #3336 | 2026-10-25 08:11:20 | Viewport Resize Observer | `frame_render_budget` | `24.6 ms (60fps)` | **PASS** |
 | #3337 | 2026-10-25 08:11:40 | Telemetry Beacon | `bundle_size` | `81.0 KB` | **PASS** |
+| #3338 | 2026-10-25 08:12:00 | State Sync Daemon | `time_to_interactive` | `2110.4 ms` | **PASS** |
