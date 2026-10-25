@@ -3781,3 +3781,4 @@
 | #3750 | 2026-10-25 10:29:20 | State Sync Daemon | `bundle_size` | `223.8 KB` | **PASS** |
 | #3751 | 2026-10-25 10:29:40 | Telemetry Beacon | `jank_events` | `2.5 count` | **PASS** |
 | #3752 | 2026-10-25 10:30:00 | 3D Particle Renderer | `time_to_interactive` | `1786.7 ms` | **PASS** |
+| #3753 | 2026-10-25 10:30:20 | 3D Particle Renderer | `bundle_size` | `191.1 KB` | **PASS** |
