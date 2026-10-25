@@ -3749,3 +3749,4 @@
 | #3718 | 2026-10-25 10:18:40 | Predictive Arc Canvas | `cpu_usage` | `26.9 %` | **PASS** |
 | #3719 | 2026-10-25 10:19:00 | Interactive Tooltip Engine | `first_contentful_paint` | `921.7 ms` | **PASS** |
 | #3720 | 2026-10-25 10:19:20 | WebGL Shader Compiler | `jank_events` | `1.3 count` | **PASS** |
+| #3721 | 2026-10-25 10:19:40 | 3D Particle Renderer | `first_contentful_paint` | `1082.6 ms` | **PASS** |
