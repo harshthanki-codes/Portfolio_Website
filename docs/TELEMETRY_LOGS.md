@@ -3480,3 +3480,4 @@
 | #3449 | 2026-10-25 08:49:00 | Touch Gesture Dispatcher | `animation_fps` | `65.7 fps` | **PASS** |
 | #3450 | 2026-10-25 08:49:20 | State Sync Daemon | `jank_events` | `0.6 count` | **PASS** |
 | #3451 | 2026-10-25 08:49:40 | Cache Warmup Service | `frame_render_budget` | `22.0 ms (60fps)` | **PASS** |
+| #3452 | 2026-10-25 08:50:00 | Lottie Animation Engine | `animation_fps` | `55.8 fps` | **PASS** |
