@@ -3841,3 +3841,4 @@
 | #3810 | 2026-10-25 10:49:20 | State Sync Daemon | `first_contentful_paint` | `1230.3 ms` | **PASS** |
 | #3811 | 2026-10-25 10:49:40 | Micro Frontend Loader | `animation_fps` | `57.0 fps` | **PASS** |
 | #3812 | 2026-10-25 10:50:00 | Cache Warmup Service | `jank_events` | `1.6 count` | **PASS** |
+| #3813 | 2026-10-25 10:50:20 | Lazy Load Optimizer | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
