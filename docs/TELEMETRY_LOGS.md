@@ -3425,3 +3425,4 @@
 | #3394 | 2026-10-25 08:30:40 | CSS-in-JS Themer | `frame_render_budget` | `15.8 ms (60fps)` | **PASS** |
 | #3395 | 2026-10-25 08:31:00 | Lazy Load Optimizer | `time_to_interactive` | `1969.2 ms` | **PASS** |
 | #3396 | 2026-10-25 08:31:20 | Predictive Arc Canvas | `first_contentful_paint` | `1398.4 ms` | **PASS** |
+| #3397 | 2026-10-25 08:31:40 | Background Video Loop | `jank_events` | `1.0 count` | **PASS** |
