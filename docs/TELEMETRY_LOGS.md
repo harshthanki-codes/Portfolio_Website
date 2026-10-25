@@ -3495,3 +3495,4 @@
 | #3464 | 2026-10-25 08:54:00 | Audio Visualizer | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
 | #3465 | 2026-10-25 08:54:20 | Lottie Animation Engine | `frame_render_budget` | `26.5 ms (60fps)` | **PASS** |
 | #3466 | 2026-10-25 08:54:40 | SVG Morphing Pipeline | `time_to_interactive` | `1917.1 ms` | **PASS** |
+| #3467 | 2026-10-25 08:55:00 | Background Video Loop | `animation_fps` | `67.1 fps` | **PASS** |
