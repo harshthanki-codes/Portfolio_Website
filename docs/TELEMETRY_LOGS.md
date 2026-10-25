@@ -3475,3 +3475,4 @@
 | #3444 | 2026-10-25 08:47:20 | CSS-in-JS Themer | `jank_events` | `2.5 count` | **PASS** |
 | #3445 | 2026-10-25 08:47:40 | Predictive Arc Canvas | `latency` | `15.1 ms` | **PASS** |
 | #3446 | 2026-10-25 08:48:00 | Predictive Arc Canvas | `cpu_usage` | `40.9 %` | **PASS** |
+| #3447 | 2026-10-25 08:48:20 | Touch Gesture Dispatcher | `animation_fps` | `55.6 fps` | **PASS** |
