@@ -3850,3 +3850,4 @@
 | #3819 | 2026-10-25 10:52:20 | 3D Particle Renderer | `jank_events` | `1.3 count` | **PASS** |
 | #3820 | 2026-10-25 10:52:40 | Progressive Image Loader | `gpu_utilization` | `26.8 %` | **PASS** |
 | #3821 | 2026-10-25 10:53:00 | Cache Warmup Service | `cpu_usage` | `17.4 %` | **PASS** |
+| #3822 | 2026-10-25 10:53:20 | Progressive Image Loader | `memory_footprint` | `86.7 MB` | **PASS** |
