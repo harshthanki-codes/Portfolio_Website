@@ -3557,3 +3557,4 @@
 | #3526 | 2026-10-25 09:14:40 | Interactive Tooltip Engine | `time_to_interactive` | `1989.0 ms` | **PASS** |
 | #3527 | 2026-10-25 09:15:00 | SVG Morphing Pipeline | `time_to_interactive` | `1290.7 ms` | **PASS** |
 | #3528 | 2026-10-25 09:15:20 | Background Video Loop | `jank_events` | `1.7 count` | **PASS** |
+| #3529 | 2026-10-25 09:15:40 | CSS-in-JS Themer | `jank_events` | `1.7 count` | **PASS** |
