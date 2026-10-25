@@ -3754,3 +3754,4 @@
 | #3723 | 2026-10-25 10:20:20 | Cache Warmup Service | `memory_footprint` | `78.7 MB` | **PASS** |
 | #3724 | 2026-10-25 10:20:40 | Viewport Resize Observer | `frame_render_budget` | `17.4 ms (60fps)` | **PASS** |
 | #3725 | 2026-10-25 10:21:00 | WebGL Shader Compiler | `gpu_utilization` | `37.3 %` | **PASS** |
+| #3726 | 2026-10-25 10:21:20 | Audio Visualizer | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
