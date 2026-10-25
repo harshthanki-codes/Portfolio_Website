@@ -3847,3 +3847,4 @@
 | #3816 | 2026-10-25 10:51:20 | State Sync Daemon | `jank_events` | `2.0 count` | **PASS** |
 | #3817 | 2026-10-25 10:51:40 | Micro Frontend Loader | `animation_fps` | `59.9 fps` | **PASS** |
 | #3818 | 2026-10-25 10:52:00 | Touch Gesture Dispatcher | `memory_footprint` | `57.5 MB` | **PASS** |
+| #3819 | 2026-10-25 10:52:20 | 3D Particle Renderer | `jank_events` | `1.3 count` | **PASS** |
