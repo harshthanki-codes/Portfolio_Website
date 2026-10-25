@@ -3601,3 +3601,4 @@
 | #3570 | 2026-10-25 09:29:20 | Interactive Tooltip Engine | `jank_events` | `2.9 count` | **PASS** |
 | #3571 | 2026-10-25 09:29:40 | 3D Particle Renderer | `cpu_usage` | `11.4 %` | **PASS** |
 | #3572 | 2026-10-25 09:30:00 | Viewport Resize Observer | `latency` | `23.7 ms` | **PASS** |
+| #3573 | 2026-10-25 09:30:20 | Viewport Resize Observer | `cpu_usage` | `44.0 %` | **PASS** |
