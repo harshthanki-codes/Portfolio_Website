@@ -3608,3 +3608,4 @@
 | #3577 | 2026-10-25 09:31:40 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
 | #3578 | 2026-10-25 09:32:00 | SVG Morphing Pipeline | `frame_render_budget` | `26.9 ms (60fps)` | **PASS** |
 | #3579 | 2026-10-25 09:32:20 | WebGL Shader Compiler | `latency` | `16.1 ms` | **PASS** |
+| #3580 | 2026-10-25 09:32:40 | State Sync Daemon | `first_contentful_paint` | `969.6 ms` | **PASS** |
