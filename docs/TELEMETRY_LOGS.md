@@ -3350,3 +3350,4 @@
 | #3319 | 2026-10-25 08:05:40 | Progressive Image Loader | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
 | #3320 | 2026-10-25 08:06:00 | Progressive Image Loader | `time_to_interactive` | `2256.8 ms` | **PASS** |
 | #3321 | 2026-10-25 08:06:20 | Micro Frontend Loader | `time_to_interactive` | `2216.7 ms` | **PASS** |
+| #3322 | 2026-10-25 08:06:40 | Cache Warmup Service | `cpu_usage` | `34.3 %` | **PASS** |
