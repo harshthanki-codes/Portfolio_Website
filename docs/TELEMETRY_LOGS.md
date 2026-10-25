@@ -3876,3 +3876,4 @@
 | #3845 | 2026-10-25 11:01:00 | Viewport Resize Observer | `latency` | `11.2 ms` | **PASS** |
 | #3846 | 2026-10-25 11:01:20 | CSS-in-JS Themer | `animation_fps` | `67.1 fps` | **PASS** |
 | #3847 | 2026-10-25 11:01:40 | Touch Gesture Dispatcher | `cpu_usage` | `28.1 %` | **PASS** |
+| #3848 | 2026-10-25 11:02:00 | WebGL Shader Compiler | `latency` | `18.9 ms` | **PASS** |
