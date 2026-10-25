@@ -3924,3 +3924,4 @@
 | #3893 | 2026-10-25 11:17:00 | CSS-in-JS Themer | `time_to_interactive` | `1701.2 ms` | **PASS** |
 | #3894 | 2026-10-25 11:17:20 | Responsive Grid System | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
 | #3895 | 2026-10-25 11:17:40 | Scroll Parallax Manager | `animation_fps` | `65.3 fps` | **PASS** |
+| #3896 | 2026-10-25 11:18:00 | Viewport Resize Observer | `latency` | `21.1 ms` | **PASS** |
