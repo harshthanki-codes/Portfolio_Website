@@ -3353,3 +3353,4 @@
 | #3322 | 2026-10-25 08:06:40 | Cache Warmup Service | `cpu_usage` | `34.3 %` | **PASS** |
 | #3323 | 2026-10-25 08:07:00 | 3D Particle Renderer | `gpu_utilization` | `68.3 %` | **PASS** |
 | #3324 | 2026-10-25 08:07:20 | Cache Warmup Service | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
+| #3325 | 2026-10-25 08:07:40 | CSS-in-JS Themer | `memory_footprint` | `77.3 MB` | **PASS** |
