@@ -3864,3 +3864,4 @@
 | #3833 | 2026-10-25 10:57:00 | Touch Gesture Dispatcher | `bundle_size` | `86.8 KB` | **PASS** |
 | #3834 | 2026-10-25 10:57:20 | Background Video Loop | `frame_render_budget` | `18.1 ms (60fps)` | **PASS** |
 | #3835 | 2026-10-25 10:57:40 | Predictive Arc Canvas | `cpu_usage` | `40.9 %` | **PASS** |
+| #3836 | 2026-10-25 10:58:00 | 3D Particle Renderer | `memory_footprint` | `65.9 MB` | **PASS** |
