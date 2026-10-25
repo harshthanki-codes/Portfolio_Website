@@ -3671,3 +3671,4 @@
 | #3640 | 2026-10-25 09:52:40 | Cache Warmup Service | `animation_fps` | `59.2 fps` | **PASS** |
 | #3641 | 2026-10-25 09:53:00 | Viewport Resize Observer | `gpu_utilization` | `69.8 %` | **PASS** |
 | #3642 | 2026-10-25 09:53:20 | CSS-in-JS Themer | `animation_fps` | `56.0 fps` | **PASS** |
+| #3643 | 2026-10-25 09:53:40 | Predictive Arc Canvas | `time_to_interactive` | `1454.0 ms` | **PASS** |
