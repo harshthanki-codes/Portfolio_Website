@@ -3352,3 +3352,4 @@
 | #3321 | 2026-10-25 08:06:20 | Micro Frontend Loader | `time_to_interactive` | `2216.7 ms` | **PASS** |
 | #3322 | 2026-10-25 08:06:40 | Cache Warmup Service | `cpu_usage` | `34.3 %` | **PASS** |
 | #3323 | 2026-10-25 08:07:00 | 3D Particle Renderer | `gpu_utilization` | `68.3 %` | **PASS** |
+| #3324 | 2026-10-25 08:07:20 | Cache Warmup Service | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
