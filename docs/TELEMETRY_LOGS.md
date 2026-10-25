@@ -3687,3 +3687,4 @@
 | #3656 | 2026-10-25 09:58:00 | Dynamic Font Loader | `memory_footprint` | `78.9 MB` | **PASS** |
 | #3657 | 2026-10-25 09:58:20 | Viewport Resize Observer | `first_contentful_paint` | `1187.7 ms` | **PASS** |
 | #3658 | 2026-10-25 09:58:40 | Progressive Image Loader | `time_to_interactive` | `1861.1 ms` | **PASS** |
+| #3659 | 2026-10-25 09:59:00 | Background Video Loop | `first_contentful_paint` | `1438.0 ms` | **PASS** |
