@@ -3422,3 +3422,4 @@
 | #3391 | 2026-10-25 08:29:40 | SVG Morphing Pipeline | `time_to_interactive` | `2224.4 ms` | **PASS** |
 | #3392 | 2026-10-25 08:30:00 | Viewport Resize Observer | `frame_render_budget` | `25.9 ms (60fps)` | **PASS** |
 | #3393 | 2026-10-25 08:30:20 | Telemetry Beacon | `memory_footprint` | `83.7 MB` | **PASS** |
+| #3394 | 2026-10-25 08:30:40 | CSS-in-JS Themer | `frame_render_budget` | `15.8 ms (60fps)` | **PASS** |
