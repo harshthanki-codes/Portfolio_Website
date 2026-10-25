@@ -3857,3 +3857,4 @@
 | #3826 | 2026-10-25 10:54:40 | Scroll Parallax Manager | `cpu_usage` | `14.9 %` | **PASS** |
 | #3827 | 2026-10-25 10:55:00 | Background Video Loop | `first_contentful_paint` | `1263.7 ms` | **PASS** |
 | #3828 | 2026-10-25 10:55:20 | Lottie Animation Engine | `time_to_interactive` | `1300.9 ms` | **PASS** |
+| #3829 | 2026-10-25 10:55:40 | CSS-in-JS Themer | `jank_events` | `0.2 count` | **PASS** |
