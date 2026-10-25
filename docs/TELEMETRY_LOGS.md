@@ -3487,3 +3487,4 @@
 | #3456 | 2026-10-25 08:51:20 | Micro Frontend Loader | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
 | #3457 | 2026-10-25 08:51:40 | Predictive Arc Canvas | `latency` | `22.7 ms` | **PASS** |
 | #3458 | 2026-10-25 08:52:00 | Interactive Tooltip Engine | `jank_events` | `2.3 count` | **PASS** |
+| #3459 | 2026-10-25 08:52:20 | Viewport Resize Observer | `jank_events` | `0.7 count` | **PASS** |
