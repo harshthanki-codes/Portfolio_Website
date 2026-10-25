@@ -3649,3 +3649,4 @@
 | #3618 | 2026-10-25 09:45:20 | Predictive Arc Canvas | `time_to_interactive` | `2113.1 ms` | **PASS** |
 | #3619 | 2026-10-25 09:45:40 | Viewport Resize Observer | `gpu_utilization` | `23.5 %` | **PASS** |
 | #3620 | 2026-10-25 09:46:00 | Lazy Load Optimizer | `gpu_utilization` | `44.6 %` | **PASS** |
+| #3621 | 2026-10-25 09:46:20 | WebGL Shader Compiler | `gpu_utilization` | `28.2 %` | **PASS** |
