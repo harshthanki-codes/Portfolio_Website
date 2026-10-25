@@ -3635,3 +3635,4 @@
 | #3604 | 2026-10-25 09:40:40 | Cache Warmup Service | `bundle_size` | `147.2 KB` | **PASS** |
 | #3605 | 2026-10-25 09:41:00 | SVG Morphing Pipeline | `memory_footprint` | `61.0 MB` | **PASS** |
 | #3606 | 2026-10-25 09:41:20 | SVG Morphing Pipeline | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
+| #3607 | 2026-10-25 09:41:40 | Micro Frontend Loader | `animation_fps` | `64.8 fps` | **PASS** |
