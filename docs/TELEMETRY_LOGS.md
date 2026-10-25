@@ -3763,3 +3763,4 @@
 | #3732 | 2026-10-25 10:23:20 | 3D Particle Renderer | `memory_footprint` | `99.1 MB` | **PASS** |
 | #3733 | 2026-10-25 10:23:40 | CSS-in-JS Themer | `first_contentful_paint` | `1480.7 ms` | **PASS** |
 | #3734 | 2026-10-25 10:24:00 | Telemetry Beacon | `animation_fps` | `61.2 fps` | **PASS** |
+| #3735 | 2026-10-25 10:24:20 | Predictive Arc Canvas | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
