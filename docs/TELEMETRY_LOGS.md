@@ -3418,3 +3418,4 @@
 | #3387 | 2026-10-25 08:28:20 | Predictive Arc Canvas | `jank_events` | `0.4 count` | **PASS** |
 | #3388 | 2026-10-25 08:28:40 | Progressive Image Loader | `bundle_size` | `196.2 KB` | **PASS** |
 | #3389 | 2026-10-25 08:29:00 | Predictive Arc Canvas | `animation_fps` | `58.3 fps` | **PASS** |
+| #3390 | 2026-10-25 08:29:20 | Viewport Resize Observer | `gpu_utilization` | `27.7 %` | **PASS** |
