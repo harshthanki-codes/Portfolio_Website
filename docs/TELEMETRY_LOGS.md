@@ -3413,3 +3413,4 @@
 | #3382 | 2026-10-25 08:26:40 | SVG Morphing Pipeline | `cpu_usage` | `19.6 %` | **PASS** |
 | #3383 | 2026-10-25 08:27:00 | State Sync Daemon | `time_to_interactive` | `2416.6 ms` | **PASS** |
 | #3384 | 2026-10-25 08:27:20 | CSS-in-JS Themer | `first_contentful_paint` | `1411.8 ms` | **PASS** |
+| #3385 | 2026-10-25 08:27:40 | Background Video Loop | `cpu_usage` | `33.3 %` | **PASS** |
