@@ -3896,3 +3896,4 @@
 | #3865 | 2026-10-25 11:07:40 | WebGL Shader Compiler | `time_to_interactive` | `2253.3 ms` | **PASS** |
 | #3866 | 2026-10-25 11:08:00 | Progressive Image Loader | `first_contentful_paint` | `1404.3 ms` | **PASS** |
 | #3867 | 2026-10-25 11:08:20 | Lottie Animation Engine | `animation_fps` | `59.2 fps` | **PASS** |
+| #3868 | 2026-10-25 11:08:40 | Micro Frontend Loader | `jank_events` | `0.6 count` | **PASS** |
