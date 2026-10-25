@@ -3661,3 +3661,4 @@
 | #3630 | 2026-10-25 09:49:20 | Dynamic Font Loader | `memory_footprint` | `73.8 MB` | **PASS** |
 | #3631 | 2026-10-25 09:49:40 | 3D Particle Renderer | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
 | #3632 | 2026-10-25 09:50:00 | Predictive Arc Canvas | `latency` | `21.5 ms` | **PASS** |
+| #3633 | 2026-10-25 09:50:20 | Viewport Resize Observer | `gpu_utilization` | `36.5 %` | **PASS** |
