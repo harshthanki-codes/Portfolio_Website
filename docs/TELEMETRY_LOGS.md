@@ -3905,3 +3905,4 @@
 | #3874 | 2026-10-25 11:10:40 | 3D Particle Renderer | `jank_events` | `0.3 count` | **PASS** |
 | #3875 | 2026-10-25 11:11:00 | Audio Visualizer | `cpu_usage` | `16.6 %` | **PASS** |
 | #3876 | 2026-10-25 11:11:20 | Viewport Resize Observer | `jank_events` | `1.6 count` | **PASS** |
+| #3877 | 2026-10-25 11:11:40 | 3D Particle Renderer | `cpu_usage` | `30.0 %` | **PASS** |
