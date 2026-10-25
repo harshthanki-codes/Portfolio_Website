@@ -3709,3 +3709,4 @@
 | #3678 | 2026-10-25 10:05:20 | Lazy Load Optimizer | `first_contentful_paint` | `1124.0 ms` | **PASS** |
 | #3679 | 2026-10-25 10:05:40 | Viewport Resize Observer | `latency` | `22.6 ms` | **PASS** |
 | #3680 | 2026-10-25 10:06:00 | 3D Particle Renderer | `memory_footprint` | `97.5 MB` | **PASS** |
+| #3681 | 2026-10-25 10:06:20 | Scroll Parallax Manager | `time_to_interactive` | `1621.2 ms` | **PASS** |
