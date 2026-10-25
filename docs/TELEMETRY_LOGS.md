@@ -3662,3 +3662,4 @@
 | #3631 | 2026-10-25 09:49:40 | 3D Particle Renderer | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
 | #3632 | 2026-10-25 09:50:00 | Predictive Arc Canvas | `latency` | `21.5 ms` | **PASS** |
 | #3633 | 2026-10-25 09:50:20 | Viewport Resize Observer | `gpu_utilization` | `36.5 %` | **PASS** |
+| #3634 | 2026-10-25 09:50:40 | Progressive Image Loader | `jank_events` | `2.5 count` | **PASS** |
