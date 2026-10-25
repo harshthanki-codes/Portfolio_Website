@@ -3518,3 +3518,4 @@
 | #3487 | 2026-10-25 09:01:40 | Scroll Parallax Manager | `latency` | `24.2 ms` | **PASS** |
 | #3488 | 2026-10-25 09:02:00 | Viewport Resize Observer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
 | #3489 | 2026-10-25 09:02:20 | Telemetry Beacon | `memory_footprint` | `63.2 MB` | **PASS** |
+| #3490 | 2026-10-25 09:02:40 | Cache Warmup Service | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
