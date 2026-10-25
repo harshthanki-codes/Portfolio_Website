@@ -3365,3 +3365,4 @@
 | #3334 | 2026-10-25 08:10:40 | 3D Particle Renderer | `jank_events` | `0.3 count` | **PASS** |
 | #3335 | 2026-10-25 08:11:00 | WebGL Shader Compiler | `bundle_size` | `222.0 KB` | **PASS** |
 | #3336 | 2026-10-25 08:11:20 | Viewport Resize Observer | `frame_render_budget` | `24.6 ms (60fps)` | **PASS** |
+| #3337 | 2026-10-25 08:11:40 | Telemetry Beacon | `bundle_size` | `81.0 KB` | **PASS** |
