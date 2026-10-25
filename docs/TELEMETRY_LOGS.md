@@ -3348,3 +3348,4 @@
 | #3317 | 2026-10-25 08:05:00 | Lottie Animation Engine | `first_contentful_paint` | `1103.1 ms` | **PASS** |
 | #3318 | 2026-10-25 08:05:20 | Viewport Resize Observer | `jank_events` | `2.4 count` | **PASS** |
 | #3319 | 2026-10-25 08:05:40 | Progressive Image Loader | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
+| #3320 | 2026-10-25 08:06:00 | Progressive Image Loader | `time_to_interactive` | `2256.8 ms` | **PASS** |
