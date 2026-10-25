@@ -3767,3 +3767,4 @@
 | #3736 | 2026-10-25 10:24:40 | Progressive Image Loader | `time_to_interactive` | `1977.9 ms` | **PASS** |
 | #3737 | 2026-10-25 10:25:00 | Telemetry Beacon | `first_contentful_paint` | `1110.7 ms` | **PASS** |
 | #3738 | 2026-10-25 10:25:20 | Lottie Animation Engine | `first_contentful_paint` | `1215.6 ms` | **PASS** |
+| #3739 | 2026-10-25 10:25:40 | Scroll Parallax Manager | `animation_fps` | `74.0 fps` | **PASS** |
