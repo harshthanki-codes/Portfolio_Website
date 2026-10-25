@@ -3742,3 +3742,4 @@
 | #3711 | 2026-10-25 10:16:20 | Background Video Loop | `cpu_usage` | `26.5 %` | **PASS** |
 | #3712 | 2026-10-25 10:16:40 | WebGL Shader Compiler | `animation_fps` | `65.2 fps` | **PASS** |
 | #3713 | 2026-10-25 10:17:00 | Progressive Image Loader | `animation_fps` | `66.9 fps` | **PASS** |
+| #3714 | 2026-10-25 10:17:20 | 3D Particle Renderer | `bundle_size` | `219.1 KB` | **PASS** |
