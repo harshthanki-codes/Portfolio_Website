@@ -3804,3 +3804,4 @@
 | #3773 | 2026-10-25 10:37:00 | Scroll Parallax Manager | `bundle_size` | `96.3 KB` | **PASS** |
 | #3774 | 2026-10-25 10:37:20 | Scroll Parallax Manager | `frame_render_budget` | `18.0 ms (60fps)` | **PASS** |
 | #3775 | 2026-10-25 10:37:40 | Interactive Tooltip Engine | `first_contentful_paint` | `1150.2 ms` | **PASS** |
+| #3776 | 2026-10-25 10:38:00 | CSS-in-JS Themer | `cpu_usage` | `38.8 %` | **PASS** |
