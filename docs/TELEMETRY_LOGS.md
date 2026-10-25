@@ -3838,3 +3838,4 @@
 | #3807 | 2026-10-25 10:48:20 | Touch Gesture Dispatcher | `jank_events` | `1.4 count` | **PASS** |
 | #3808 | 2026-10-25 10:48:40 | CSS-in-JS Themer | `memory_footprint` | `59.1 MB` | **PASS** |
 | #3809 | 2026-10-25 10:49:00 | Lazy Load Optimizer | `first_contentful_paint` | `1303.4 ms` | **PASS** |
+| #3810 | 2026-10-25 10:49:20 | State Sync Daemon | `first_contentful_paint` | `1230.3 ms` | **PASS** |
