@@ -3367,3 +3367,4 @@
 | #3336 | 2026-10-25 08:11:20 | Viewport Resize Observer | `frame_render_budget` | `24.6 ms (60fps)` | **PASS** |
 | #3337 | 2026-10-25 08:11:40 | Telemetry Beacon | `bundle_size` | `81.0 KB` | **PASS** |
 | #3338 | 2026-10-25 08:12:00 | State Sync Daemon | `time_to_interactive` | `2110.4 ms` | **PASS** |
+| #3339 | 2026-10-25 08:12:20 | State Sync Daemon | `first_contentful_paint` | `940.6 ms` | **PASS** |
