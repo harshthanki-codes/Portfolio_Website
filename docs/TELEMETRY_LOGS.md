@@ -3852,3 +3852,4 @@
 | #3821 | 2026-10-25 10:53:00 | Cache Warmup Service | `cpu_usage` | `17.4 %` | **PASS** |
 | #3822 | 2026-10-25 10:53:20 | Progressive Image Loader | `memory_footprint` | `86.7 MB` | **PASS** |
 | #3823 | 2026-10-25 10:53:40 | Viewport Resize Observer | `gpu_utilization` | `30.1 %` | **PASS** |
+| #3824 | 2026-10-25 10:54:00 | Viewport Resize Observer | `jank_events` | `2.2 count` | **PASS** |
