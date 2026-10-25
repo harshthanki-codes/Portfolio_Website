@@ -3524,3 +3524,4 @@
 | #3493 | 2026-10-25 09:03:40 | CSS-in-JS Themer | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
 | #3494 | 2026-10-25 09:04:00 | 3D Particle Renderer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
 | #3495 | 2026-10-25 09:04:20 | WebGL Shader Compiler | `first_contentful_paint` | `877.7 ms` | **PASS** |
+| #3496 | 2026-10-25 09:04:40 | Audio Visualizer | `frame_render_budget` | `26.9 ms (60fps)` | **PASS** |
