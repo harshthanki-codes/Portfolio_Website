@@ -3533,3 +3533,4 @@
 | #3502 | 2026-10-25 09:06:40 | Touch Gesture Dispatcher | `time_to_interactive` | `2484.8 ms` | **PASS** |
 | #3503 | 2026-10-25 09:07:00 | Cache Warmup Service | `time_to_interactive` | `2135.3 ms` | **PASS** |
 | #3504 | 2026-10-25 09:07:20 | Dynamic Font Loader | `jank_events` | `2.0 count` | **PASS** |
+| #3505 | 2026-10-25 09:07:40 | CSS-in-JS Themer | `animation_fps` | `68.6 fps` | **PASS** |
