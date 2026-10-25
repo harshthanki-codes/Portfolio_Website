@@ -3386,3 +3386,4 @@
 | #3355 | 2026-10-25 08:17:40 | CSS-in-JS Themer | `latency` | `10.4 ms` | **PASS** |
 | #3356 | 2026-10-25 08:18:00 | Audio Visualizer | `cpu_usage` | `11.6 %` | **PASS** |
 | #3357 | 2026-10-25 08:18:20 | Cache Warmup Service | `frame_render_budget` | `21.2 ms (60fps)` | **PASS** |
+| #3358 | 2026-10-25 08:18:40 | Progressive Image Loader | `animation_fps` | `60.5 fps` | **PASS** |
