@@ -3470,3 +3470,4 @@
 | #3439 | 2026-10-25 08:45:40 | Progressive Image Loader | `jank_events` | `1.4 count` | **PASS** |
 | #3440 | 2026-10-25 08:46:00 | Viewport Resize Observer | `animation_fps` | `61.6 fps` | **PASS** |
 | #3441 | 2026-10-25 08:46:20 | Responsive Grid System | `latency` | `17.0 ms` | **PASS** |
+| #3442 | 2026-10-25 08:46:40 | Scroll Parallax Manager | `cpu_usage` | `39.8 %` | **PASS** |
