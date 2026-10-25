@@ -3855,3 +3855,4 @@
 | #3824 | 2026-10-25 10:54:00 | Viewport Resize Observer | `jank_events` | `2.2 count` | **PASS** |
 | #3825 | 2026-10-25 10:54:20 | Lazy Load Optimizer | `time_to_interactive` | `1497.9 ms` | **PASS** |
 | #3826 | 2026-10-25 10:54:40 | Scroll Parallax Manager | `cpu_usage` | `14.9 %` | **PASS** |
+| #3827 | 2026-10-25 10:55:00 | Background Video Loop | `first_contentful_paint` | `1263.7 ms` | **PASS** |
