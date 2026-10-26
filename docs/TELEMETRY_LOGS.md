@@ -4420,3 +4420,4 @@
 | #4386 | 2026-10-26 10:01:00 | CSS-in-JS Themer | `first_contentful_paint` | `1472.6 ms` | **PASS** |
 | #4387 | 2026-10-26 10:01:15 | Telemetry Beacon | `time_to_interactive` | `2366.8 ms` | **PASS** |
 | #4388 | 2026-10-26 10:01:30 | Cache Warmup Service | `animation_fps` | `65.5 fps` | **PASS** |
+| #4389 | 2026-10-26 10:01:45 | Cache Warmup Service | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
