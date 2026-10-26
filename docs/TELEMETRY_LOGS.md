@@ -4026,3 +4026,4 @@
 | #3992 | 2026-10-26 08:22:30 | Interactive Tooltip Engine | `memory_footprint` | `64.4 MB` | **PASS** |
 | #3993 | 2026-10-26 08:22:45 | Audio Visualizer | `bundle_size` | `241.5 KB` | **PASS** |
 | #3994 | 2026-10-26 08:23:00 | Lottie Animation Engine | `memory_footprint` | `83.0 MB` | **PASS** |
+| #3995 | 2026-10-26 08:23:15 | Lottie Animation Engine | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
