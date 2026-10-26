@@ -4032,3 +4032,4 @@
 | #3998 | 2026-10-26 08:24:00 | Touch Gesture Dispatcher | `jank_events` | `2.5 count` | **PASS** |
 | #3999 | 2026-10-26 08:24:15 | Telemetry Beacon | `frame_render_budget` | `20.6 ms (60fps)` | **PASS** |
 | #4000 | 2026-10-26 08:24:30 | Background Video Loop | `latency` | `10.3 ms` | **PASS** |
+| #4001 | 2026-10-26 08:24:45 | Touch Gesture Dispatcher | `time_to_interactive` | `1412.5 ms` | **PASS** |
