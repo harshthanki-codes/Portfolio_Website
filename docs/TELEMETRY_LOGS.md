@@ -3950,3 +3950,4 @@
 | #3916 | 2026-10-26 08:03:30 | Touch Gesture Dispatcher | `frame_render_budget` | `29.6 ms (60fps)` | **PASS** |
 | #3917 | 2026-10-26 08:03:45 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
 | #3918 | 2026-10-26 08:04:00 | Scroll Parallax Manager | `bundle_size` | `214.8 KB` | **PASS** |
+| #3919 | 2026-10-26 08:04:15 | Scroll Parallax Manager | `jank_events` | `0.7 count` | **PASS** |
