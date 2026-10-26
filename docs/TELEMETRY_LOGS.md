@@ -4306,3 +4306,4 @@
 | #4272 | 2026-10-26 09:32:30 | Viewport Resize Observer | `jank_events` | `2.4 count` | **PASS** |
 | #4273 | 2026-10-26 09:32:45 | Cache Warmup Service | `first_contentful_paint` | `1306.2 ms` | **PASS** |
 | #4274 | 2026-10-26 09:33:00 | Audio Visualizer | `bundle_size` | `220.8 KB` | **PASS** |
+| #4275 | 2026-10-26 09:33:15 | Scroll Parallax Manager | `time_to_interactive` | `1746.3 ms` | **PASS** |
