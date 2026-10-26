@@ -4427,3 +4427,4 @@
 | #4393 | 2026-10-26 10:02:45 | Predictive Arc Canvas | `jank_events` | `0.9 count` | **PASS** |
 | #4394 | 2026-10-26 10:03:00 | Dynamic Font Loader | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
 | #4395 | 2026-10-26 10:03:15 | Viewport Resize Observer | `jank_events` | `0.5 count` | **PASS** |
+| #4396 | 2026-10-26 10:03:30 | Audio Visualizer | `first_contentful_paint` | `965.6 ms` | **PASS** |
