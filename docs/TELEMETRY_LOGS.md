@@ -4274,3 +4274,4 @@
 | #4240 | 2026-10-26 09:24:30 | CSS-in-JS Themer | `cpu_usage` | `31.9 %` | **PASS** |
 | #4241 | 2026-10-26 09:24:45 | Telemetry Beacon | `first_contentful_paint` | `1093.3 ms` | **PASS** |
 | #4242 | 2026-10-26 09:25:00 | Lazy Load Optimizer | `animation_fps` | `58.6 fps` | **PASS** |
+| #4243 | 2026-10-26 09:25:15 | Scroll Parallax Manager | `memory_footprint` | `53.6 MB` | **PASS** |
