@@ -4437,3 +4437,4 @@
 | #4403 | 2026-10-26 10:05:15 | Micro Frontend Loader | `jank_events` | `1.0 count` | **PASS** |
 | #4404 | 2026-10-26 10:05:30 | State Sync Daemon | `animation_fps` | `59.5 fps` | **PASS** |
 | #4405 | 2026-10-26 10:05:45 | Predictive Arc Canvas | `frame_render_budget` | `20.7 ms (60fps)` | **PASS** |
+| #4406 | 2026-10-26 10:06:00 | Scroll Parallax Manager | `time_to_interactive` | `2003.4 ms` | **PASS** |
