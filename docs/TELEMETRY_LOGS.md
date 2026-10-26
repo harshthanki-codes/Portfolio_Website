@@ -3969,3 +3969,4 @@
 | #3935 | 2026-10-26 08:08:15 | Background Video Loop | `latency` | `17.2 ms` | **PASS** |
 | #3936 | 2026-10-26 08:08:30 | State Sync Daemon | `frame_render_budget` | `16.9 ms (60fps)` | **PASS** |
 | #3937 | 2026-10-26 08:08:45 | Telemetry Beacon | `cpu_usage` | `40.0 %` | **PASS** |
+| #3938 | 2026-10-26 08:09:00 | Telemetry Beacon | `gpu_utilization` | `43.7 %` | **PASS** |
