@@ -4493,3 +4493,4 @@
 | #4459 | 2026-10-26 10:19:15 | Touch Gesture Dispatcher | `animation_fps` | `70.1 fps` | **PASS** |
 | #4460 | 2026-10-26 10:19:30 | Viewport Resize Observer | `time_to_interactive` | `2470.0 ms` | **PASS** |
 | #4461 | 2026-10-26 10:19:45 | Progressive Image Loader | `jank_events` | `0.8 count` | **PASS** |
+| #4462 | 2026-10-26 10:20:00 | Lottie Animation Engine | `memory_footprint` | `109.7 MB` | **PASS** |
