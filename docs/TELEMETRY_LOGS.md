@@ -3998,3 +3998,4 @@
 | #3964 | 2026-10-26 08:15:30 | Predictive Arc Canvas | `first_contentful_paint` | `1357.0 ms` | **PASS** |
 | #3965 | 2026-10-26 08:15:45 | Scroll Parallax Manager | `gpu_utilization` | `46.4 %` | **PASS** |
 | #3966 | 2026-10-26 08:16:00 | Touch Gesture Dispatcher | `time_to_interactive` | `1449.9 ms` | **PASS** |
+| #3967 | 2026-10-26 08:16:15 | Dynamic Font Loader | `jank_events` | `1.3 count` | **PASS** |
