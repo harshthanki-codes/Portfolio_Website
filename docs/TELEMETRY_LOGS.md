@@ -4404,3 +4404,4 @@
 | #4370 | 2026-10-26 09:57:00 | Lottie Animation Engine | `bundle_size` | `231.5 KB` | **PASS** |
 | #4371 | 2026-10-26 09:57:15 | Viewport Resize Observer | `first_contentful_paint` | `1135.0 ms` | **PASS** |
 | #4372 | 2026-10-26 09:57:30 | Scroll Parallax Manager | `bundle_size` | `175.7 KB` | **PASS** |
+| #4373 | 2026-10-26 09:57:45 | Background Video Loop | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
