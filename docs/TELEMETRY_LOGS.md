@@ -4318,3 +4318,4 @@
 | #4284 | 2026-10-26 09:35:30 | Interactive Tooltip Engine | `time_to_interactive` | `1905.2 ms` | **PASS** |
 | #4285 | 2026-10-26 09:35:45 | Cache Warmup Service | `jank_events` | `2.2 count` | **PASS** |
 | #4286 | 2026-10-26 09:36:00 | Interactive Tooltip Engine | `animation_fps` | `72.0 fps` | **PASS** |
+| #4287 | 2026-10-26 09:36:15 | SVG Morphing Pipeline | `first_contentful_paint` | `1072.4 ms` | **PASS** |
