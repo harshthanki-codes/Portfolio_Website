@@ -3984,3 +3984,4 @@
 | #3950 | 2026-10-26 08:12:00 | State Sync Daemon | `bundle_size` | `165.2 KB` | **PASS** |
 | #3951 | 2026-10-26 08:12:15 | Telemetry Beacon | `jank_events` | `0.1 count` | **PASS** |
 | #3952 | 2026-10-26 08:12:30 | Telemetry Beacon | `jank_events` | `1.8 count` | **PASS** |
+| #3953 | 2026-10-26 08:12:45 | 3D Particle Renderer | `latency` | `10.0 ms` | **PASS** |
