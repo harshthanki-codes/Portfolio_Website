@@ -4016,3 +4016,4 @@
 | #3982 | 2026-10-26 08:20:00 | Viewport Resize Observer | `first_contentful_paint` | `1223.5 ms` | **PASS** |
 | #3983 | 2026-10-26 08:20:15 | Micro Frontend Loader | `animation_fps` | `58.2 fps` | **PASS** |
 | #3984 | 2026-10-26 08:20:30 | Cache Warmup Service | `jank_events` | `0.3 count` | **PASS** |
+| #3985 | 2026-10-26 08:20:45 | Micro Frontend Loader | `jank_events` | `1.4 count` | **PASS** |
