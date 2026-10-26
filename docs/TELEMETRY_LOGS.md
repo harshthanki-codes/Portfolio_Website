@@ -4297,3 +4297,4 @@
 | #4263 | 2026-10-26 09:30:15 | Telemetry Beacon | `jank_events` | `3.0 count` | **PASS** |
 | #4264 | 2026-10-26 09:30:30 | Cache Warmup Service | `memory_footprint` | `80.0 MB` | **PASS** |
 | #4265 | 2026-10-26 09:30:45 | Viewport Resize Observer | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
+| #4266 | 2026-10-26 09:31:00 | 3D Particle Renderer | `jank_events` | `2.3 count` | **PASS** |
