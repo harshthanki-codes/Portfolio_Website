@@ -4421,3 +4421,4 @@
 | #4387 | 2026-10-26 10:01:15 | Telemetry Beacon | `time_to_interactive` | `2366.8 ms` | **PASS** |
 | #4388 | 2026-10-26 10:01:30 | Cache Warmup Service | `animation_fps` | `65.5 fps` | **PASS** |
 | #4389 | 2026-10-26 10:01:45 | Cache Warmup Service | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
+| #4390 | 2026-10-26 10:02:00 | Touch Gesture Dispatcher | `time_to_interactive` | `2409.9 ms` | **PASS** |
