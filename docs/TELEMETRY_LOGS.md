@@ -4188,3 +4188,4 @@
 | #4154 | 2026-10-26 09:03:00 | Predictive Arc Canvas | `time_to_interactive` | `1207.3 ms` | **PASS** |
 | #4155 | 2026-10-26 09:03:15 | 3D Particle Renderer | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
 | #4156 | 2026-10-26 09:03:30 | 3D Particle Renderer | `latency` | `20.1 ms` | **PASS** |
+| #4157 | 2026-10-26 09:03:45 | Scroll Parallax Manager | `frame_render_budget` | `27.4 ms (60fps)` | **PASS** |
