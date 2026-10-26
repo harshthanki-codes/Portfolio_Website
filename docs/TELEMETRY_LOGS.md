@@ -4028,3 +4028,4 @@
 | #3994 | 2026-10-26 08:23:00 | Lottie Animation Engine | `memory_footprint` | `83.0 MB` | **PASS** |
 | #3995 | 2026-10-26 08:23:15 | Lottie Animation Engine | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
 | #3996 | 2026-10-26 08:23:30 | Lottie Animation Engine | `latency` | `12.5 ms` | **PASS** |
+| #3997 | 2026-10-26 08:23:45 | Viewport Resize Observer | `bundle_size` | `209.6 KB` | **PASS** |
