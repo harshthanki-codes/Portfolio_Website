@@ -4095,3 +4095,4 @@
 | #4061 | 2026-10-26 08:39:45 | State Sync Daemon | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
 | #4062 | 2026-10-26 08:40:00 | Telemetry Beacon | `bundle_size` | `120.2 KB` | **PASS** |
 | #4063 | 2026-10-26 08:40:15 | CSS-in-JS Themer | `frame_render_budget` | `28.0 ms (60fps)` | **PASS** |
+| #4064 | 2026-10-26 08:40:30 | Scroll Parallax Manager | `animation_fps` | `63.8 fps` | **PASS** |
