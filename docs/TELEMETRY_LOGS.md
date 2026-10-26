@@ -4066,3 +4066,4 @@
 | #4032 | 2026-10-26 08:32:30 | Background Video Loop | `memory_footprint` | `88.7 MB` | **PASS** |
 | #4033 | 2026-10-26 08:32:45 | Audio Visualizer | `jank_events` | `0.7 count` | **PASS** |
 | #4034 | 2026-10-26 08:33:00 | Cache Warmup Service | `first_contentful_paint` | `1397.3 ms` | **PASS** |
+| #4035 | 2026-10-26 08:33:15 | Progressive Image Loader | `animation_fps` | `58.9 fps` | **PASS** |
