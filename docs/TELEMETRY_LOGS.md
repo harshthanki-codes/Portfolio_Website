@@ -4491,3 +4491,4 @@
 | #4457 | 2026-10-26 10:18:45 | Cache Warmup Service | `memory_footprint` | `102.9 MB` | **PASS** |
 | #4458 | 2026-10-26 10:19:00 | Viewport Resize Observer | `animation_fps` | `70.3 fps` | **PASS** |
 | #4459 | 2026-10-26 10:19:15 | Touch Gesture Dispatcher | `animation_fps` | `70.1 fps` | **PASS** |
+| #4460 | 2026-10-26 10:19:30 | Viewport Resize Observer | `time_to_interactive` | `2470.0 ms` | **PASS** |
