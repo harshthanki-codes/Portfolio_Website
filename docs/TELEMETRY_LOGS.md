@@ -4316,3 +4316,4 @@
 | #4282 | 2026-10-26 09:35:00 | Progressive Image Loader | `animation_fps` | `67.8 fps` | **PASS** |
 | #4283 | 2026-10-26 09:35:15 | Scroll Parallax Manager | `gpu_utilization` | `28.8 %` | **PASS** |
 | #4284 | 2026-10-26 09:35:30 | Interactive Tooltip Engine | `time_to_interactive` | `1905.2 ms` | **PASS** |
+| #4285 | 2026-10-26 09:35:45 | Cache Warmup Service | `jank_events` | `2.2 count` | **PASS** |
