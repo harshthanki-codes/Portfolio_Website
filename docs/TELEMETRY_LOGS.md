@@ -4387,3 +4387,4 @@
 | #4353 | 2026-10-26 09:52:45 | SVG Morphing Pipeline | `jank_events` | `1.2 count` | **PASS** |
 | #4354 | 2026-10-26 09:53:00 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
 | #4355 | 2026-10-26 09:53:15 | Progressive Image Loader | `time_to_interactive` | `2423.4 ms` | **PASS** |
+| #4356 | 2026-10-26 09:53:30 | Cache Warmup Service | `gpu_utilization` | `52.5 %` | **PASS** |
