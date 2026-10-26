@@ -4511,3 +4511,4 @@
 | #4477 | 2026-10-26 10:23:45 | Viewport Resize Observer | `time_to_interactive` | `1564.0 ms` | **PASS** |
 | #4478 | 2026-10-26 10:24:00 | Telemetry Beacon | `latency` | `16.7 ms` | **PASS** |
 | #4479 | 2026-10-26 10:24:15 | State Sync Daemon | `memory_footprint` | `81.2 MB` | **PASS** |
+| #4480 | 2026-10-26 10:24:30 | Dynamic Font Loader | `time_to_interactive` | `2458.1 ms` | **PASS** |
