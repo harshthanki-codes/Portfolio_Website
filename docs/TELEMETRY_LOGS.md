@@ -4022,3 +4022,4 @@
 | #3988 | 2026-10-26 08:21:30 | Cache Warmup Service | `animation_fps` | `65.4 fps` | **PASS** |
 | #3989 | 2026-10-26 08:21:45 | Scroll Parallax Manager | `animation_fps` | `66.4 fps` | **PASS** |
 | #3990 | 2026-10-26 08:22:00 | Lottie Animation Engine | `first_contentful_paint` | `1293.9 ms` | **PASS** |
+| #3991 | 2026-10-26 08:22:15 | Progressive Image Loader | `gpu_utilization` | `33.8 %` | **PASS** |
