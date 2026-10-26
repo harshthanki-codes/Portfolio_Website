@@ -4500,3 +4500,4 @@
 | #4466 | 2026-10-26 10:21:00 | Viewport Resize Observer | `memory_footprint` | `103.2 MB` | **PASS** |
 | #4467 | 2026-10-26 10:21:15 | State Sync Daemon | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #4468 | 2026-10-26 10:21:30 | Responsive Grid System | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
+| #4469 | 2026-10-26 10:21:45 | Background Video Loop | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
