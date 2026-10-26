@@ -3943,3 +3943,4 @@
 | #3909 | 2026-10-26 08:01:45 | CSS-in-JS Themer | `memory_footprint` | `87.8 MB` | **PASS** |
 | #3910 | 2026-10-26 08:02:00 | Background Video Loop | `jank_events` | `1.1 count` | **PASS** |
 | #3911 | 2026-10-26 08:02:15 | Viewport Resize Observer | `bundle_size` | `238.0 KB` | **PASS** |
+| #3912 | 2026-10-26 08:02:30 | Scroll Parallax Manager | `memory_footprint` | `71.9 MB` | **PASS** |
