@@ -4476,3 +4476,4 @@
 | #4442 | 2026-10-26 10:15:00 | Viewport Resize Observer | `memory_footprint` | `84.8 MB` | **PASS** |
 | #4443 | 2026-10-26 10:15:15 | SVG Morphing Pipeline | `time_to_interactive` | `1819.8 ms` | **PASS** |
 | #4444 | 2026-10-26 10:15:30 | Viewport Resize Observer | `memory_footprint` | `74.9 MB` | **PASS** |
+| #4445 | 2026-10-26 10:15:45 | Interactive Tooltip Engine | `time_to_interactive` | `2473.9 ms` | **PASS** |
