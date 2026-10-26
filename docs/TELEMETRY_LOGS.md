@@ -4216,3 +4216,4 @@
 | #4182 | 2026-10-26 09:10:00 | CSS-in-JS Themer | `first_contentful_paint` | `1206.0 ms` | **PASS** |
 | #4183 | 2026-10-26 09:10:15 | Background Video Loop | `gpu_utilization` | `41.7 %` | **PASS** |
 | #4184 | 2026-10-26 09:10:30 | WebGL Shader Compiler | `latency` | `21.6 ms` | **PASS** |
+| #4185 | 2026-10-26 09:10:45 | Lottie Animation Engine | `first_contentful_paint` | `1407.6 ms` | **PASS** |
