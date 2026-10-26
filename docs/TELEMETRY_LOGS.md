@@ -3946,3 +3946,4 @@
 | #3912 | 2026-10-26 08:02:30 | Scroll Parallax Manager | `memory_footprint` | `71.9 MB` | **PASS** |
 | #3913 | 2026-10-26 08:02:45 | Lottie Animation Engine | `gpu_utilization` | `47.9 %` | **PASS** |
 | #3914 | 2026-10-26 08:03:00 | Micro Frontend Loader | `jank_events` | `2.5 count` | **PASS** |
+| #3915 | 2026-10-26 08:03:15 | Scroll Parallax Manager | `frame_render_budget` | `26.6 ms (60fps)` | **PASS** |
