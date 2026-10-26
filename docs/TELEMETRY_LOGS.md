@@ -4502,3 +4502,4 @@
 | #4468 | 2026-10-26 10:21:30 | Responsive Grid System | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
 | #4469 | 2026-10-26 10:21:45 | Background Video Loop | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
 | #4470 | 2026-10-26 10:22:00 | Cache Warmup Service | `time_to_interactive` | `1585.7 ms` | **PASS** |
+| #4471 | 2026-10-26 10:22:15 | SVG Morphing Pipeline | `jank_events` | `2.4 count` | **PASS** |
