@@ -4198,3 +4198,4 @@
 | #4164 | 2026-10-26 09:05:30 | CSS-in-JS Themer | `animation_fps` | `67.2 fps` | **PASS** |
 | #4165 | 2026-10-26 09:05:45 | Progressive Image Loader | `jank_events` | `0.6 count` | **PASS** |
 | #4166 | 2026-10-26 09:06:00 | Micro Frontend Loader | `memory_footprint` | `46.2 MB` | **PASS** |
+| #4167 | 2026-10-26 09:06:15 | Lottie Animation Engine | `frame_render_budget` | `19.4 ms (60fps)` | **PASS** |
