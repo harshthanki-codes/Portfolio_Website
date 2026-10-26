@@ -4204,3 +4204,4 @@
 | #4170 | 2026-10-26 09:07:00 | WebGL Shader Compiler | `gpu_utilization` | `60.3 %` | **PASS** |
 | #4171 | 2026-10-26 09:07:15 | Lottie Animation Engine | `cpu_usage` | `41.4 %` | **PASS** |
 | #4172 | 2026-10-26 09:07:30 | Lottie Animation Engine | `memory_footprint` | `48.1 MB` | **PASS** |
+| #4173 | 2026-10-26 09:07:45 | 3D Particle Renderer | `first_contentful_paint` | `1209.5 ms` | **PASS** |
