@@ -4329,3 +4329,4 @@
 | #4295 | 2026-10-26 09:38:15 | Progressive Image Loader | `gpu_utilization` | `54.6 %` | **PASS** |
 | #4296 | 2026-10-26 09:38:30 | Scroll Parallax Manager | `animation_fps` | `59.2 fps` | **PASS** |
 | #4297 | 2026-10-26 09:38:45 | 3D Particle Renderer | `time_to_interactive` | `1439.9 ms` | **PASS** |
+| #4298 | 2026-10-26 09:39:00 | Progressive Image Loader | `frame_render_budget` | `29.6 ms (60fps)` | **PASS** |
