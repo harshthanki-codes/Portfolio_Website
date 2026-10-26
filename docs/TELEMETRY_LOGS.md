@@ -3982,3 +3982,4 @@
 | #3948 | 2026-10-26 08:11:30 | WebGL Shader Compiler | `jank_events` | `1.0 count` | **PASS** |
 | #3949 | 2026-10-26 08:11:45 | Predictive Arc Canvas | `latency` | `15.8 ms` | **PASS** |
 | #3950 | 2026-10-26 08:12:00 | State Sync Daemon | `bundle_size` | `165.2 KB` | **PASS** |
+| #3951 | 2026-10-26 08:12:15 | Telemetry Beacon | `jank_events` | `0.1 count` | **PASS** |
