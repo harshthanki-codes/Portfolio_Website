@@ -4486,3 +4486,4 @@
 | #4452 | 2026-10-26 10:17:30 | Lottie Animation Engine | `jank_events` | `0.9 count` | **PASS** |
 | #4453 | 2026-10-26 10:17:45 | Progressive Image Loader | `memory_footprint` | `114.3 MB` | **PASS** |
 | #4454 | 2026-10-26 10:18:00 | Scroll Parallax Manager | `first_contentful_paint` | `1409.2 ms` | **PASS** |
+| #4455 | 2026-10-26 10:18:15 | Lottie Animation Engine | `gpu_utilization` | `38.3 %` | **PASS** |
