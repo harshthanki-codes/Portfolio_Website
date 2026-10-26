@@ -4473,3 +4473,4 @@
 | #4439 | 2026-10-26 10:14:15 | 3D Particle Renderer | `memory_footprint` | `72.3 MB` | **PASS** |
 | #4440 | 2026-10-26 10:14:30 | Lottie Animation Engine | `gpu_utilization` | `49.4 %` | **PASS** |
 | #4441 | 2026-10-26 10:14:45 | Telemetry Beacon | `first_contentful_paint` | `1068.6 ms` | **PASS** |
+| #4442 | 2026-10-26 10:15:00 | Viewport Resize Observer | `memory_footprint` | `84.8 MB` | **PASS** |
