@@ -4324,3 +4324,4 @@
 | #4290 | 2026-10-26 09:37:00 | Lottie Animation Engine | `cpu_usage` | `34.4 %` | **PASS** |
 | #4291 | 2026-10-26 09:37:15 | State Sync Daemon | `jank_events` | `1.3 count` | **PASS** |
 | #4292 | 2026-10-26 09:37:30 | WebGL Shader Compiler | `frame_render_budget` | `22.6 ms (60fps)` | **PASS** |
+| #4293 | 2026-10-26 09:37:45 | CSS-in-JS Themer | `first_contentful_paint` | `1482.1 ms` | **PASS** |
