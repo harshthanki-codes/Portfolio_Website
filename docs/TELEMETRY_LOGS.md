@@ -4146,3 +4146,4 @@
 | #4112 | 2026-10-26 08:52:30 | Touch Gesture Dispatcher | `gpu_utilization` | `57.7 %` | **PASS** |
 | #4113 | 2026-10-26 08:52:45 | Scroll Parallax Manager | `animation_fps` | `71.0 fps` | **PASS** |
 | #4114 | 2026-10-26 08:53:00 | CSS-in-JS Themer | `first_contentful_paint` | `950.1 ms` | **PASS** |
+| #4115 | 2026-10-26 08:53:15 | Scroll Parallax Manager | `time_to_interactive` | `1868.8 ms` | **PASS** |
