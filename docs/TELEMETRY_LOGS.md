@@ -4386,3 +4386,4 @@
 | #4352 | 2026-10-26 09:52:30 | Audio Visualizer | `first_contentful_paint` | `1017.4 ms` | **PASS** |
 | #4353 | 2026-10-26 09:52:45 | SVG Morphing Pipeline | `jank_events` | `1.2 count` | **PASS** |
 | #4354 | 2026-10-26 09:53:00 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
+| #4355 | 2026-10-26 09:53:15 | Progressive Image Loader | `time_to_interactive` | `2423.4 ms` | **PASS** |
