@@ -4196,3 +4196,4 @@
 | #4162 | 2026-10-26 09:05:00 | Lottie Animation Engine | `memory_footprint` | `53.3 MB` | **PASS** |
 | #4163 | 2026-10-26 09:05:15 | Audio Visualizer | `time_to_interactive` | `1786.6 ms` | **PASS** |
 | #4164 | 2026-10-26 09:05:30 | CSS-in-JS Themer | `animation_fps` | `67.2 fps` | **PASS** |
+| #4165 | 2026-10-26 09:05:45 | Progressive Image Loader | `jank_events` | `0.6 count` | **PASS** |
