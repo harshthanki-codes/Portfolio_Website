@@ -4479,3 +4479,4 @@
 | #4445 | 2026-10-26 10:15:45 | Interactive Tooltip Engine | `time_to_interactive` | `2473.9 ms` | **PASS** |
 | #4446 | 2026-10-26 10:16:00 | Micro Frontend Loader | `latency` | `13.9 ms` | **PASS** |
 | #4447 | 2026-10-26 10:16:15 | SVG Morphing Pipeline | `time_to_interactive` | `1253.7 ms` | **PASS** |
+| #4448 | 2026-10-26 10:16:30 | Viewport Resize Observer | `jank_events` | `2.6 count` | **PASS** |
