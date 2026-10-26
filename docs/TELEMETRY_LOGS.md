@@ -4399,3 +4399,4 @@
 | #4365 | 2026-10-26 09:55:45 | Viewport Resize Observer | `memory_footprint` | `101.7 MB` | **PASS** |
 | #4366 | 2026-10-26 09:56:00 | Audio Visualizer | `time_to_interactive` | `1577.9 ms` | **PASS** |
 | #4367 | 2026-10-26 09:56:15 | 3D Particle Renderer | `cpu_usage` | `33.2 %` | **PASS** |
+| #4368 | 2026-10-26 09:56:30 | 3D Particle Renderer | `jank_events` | `1.3 count` | **PASS** |
