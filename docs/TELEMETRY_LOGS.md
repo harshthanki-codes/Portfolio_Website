@@ -4528,3 +4528,4 @@
 | #4494 | 2026-10-26 10:28:00 | Telemetry Beacon | `cpu_usage` | `22.3 %` | **PASS** |
 | #4495 | 2026-10-26 10:28:15 | Touch Gesture Dispatcher | `jank_events` | `2.3 count` | **PASS** |
 | #4496 | 2026-10-26 10:28:30 | WebGL Shader Compiler | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
+| #4497 | 2026-10-26 10:28:45 | Lottie Animation Engine | `first_contentful_paint` | `1104.0 ms` | **PASS** |
