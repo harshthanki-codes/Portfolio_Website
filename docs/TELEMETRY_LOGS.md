@@ -3951,3 +3951,4 @@
 | #3917 | 2026-10-26 08:03:45 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
 | #3918 | 2026-10-26 08:04:00 | Scroll Parallax Manager | `bundle_size` | `214.8 KB` | **PASS** |
 | #3919 | 2026-10-26 08:04:15 | Scroll Parallax Manager | `jank_events` | `0.7 count` | **PASS** |
+| #3920 | 2026-10-26 08:04:30 | 3D Particle Renderer | `bundle_size` | `150.6 KB` | **PASS** |
