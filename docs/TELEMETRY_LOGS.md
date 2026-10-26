@@ -4018,3 +4018,4 @@
 | #3984 | 2026-10-26 08:20:30 | Cache Warmup Service | `jank_events` | `0.3 count` | **PASS** |
 | #3985 | 2026-10-26 08:20:45 | Micro Frontend Loader | `jank_events` | `1.4 count` | **PASS** |
 | #3986 | 2026-10-26 08:21:00 | WebGL Shader Compiler | `frame_render_budget` | `28.5 ms (60fps)` | **PASS** |
+| #3987 | 2026-10-26 08:21:15 | Progressive Image Loader | `memory_footprint` | `63.5 MB` | **PASS** |
