@@ -4187,3 +4187,4 @@
 | #4153 | 2026-10-26 09:02:45 | SVG Morphing Pipeline | `memory_footprint` | `76.5 MB` | **PASS** |
 | #4154 | 2026-10-26 09:03:00 | Predictive Arc Canvas | `time_to_interactive` | `1207.3 ms` | **PASS** |
 | #4155 | 2026-10-26 09:03:15 | 3D Particle Renderer | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
+| #4156 | 2026-10-26 09:03:30 | 3D Particle Renderer | `latency` | `20.1 ms` | **PASS** |
