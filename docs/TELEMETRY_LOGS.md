@@ -4078,3 +4078,4 @@
 | #4044 | 2026-10-26 08:35:30 | Micro Frontend Loader | `memory_footprint` | `88.3 MB` | **PASS** |
 | #4045 | 2026-10-26 08:35:45 | Telemetry Beacon | `first_contentful_paint` | `1354.3 ms` | **PASS** |
 | #4046 | 2026-10-26 08:36:00 | CSS-in-JS Themer | `bundle_size` | `233.6 KB` | **PASS** |
+| #4047 | 2026-10-26 08:36:15 | Background Video Loop | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
