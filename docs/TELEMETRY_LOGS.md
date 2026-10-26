@@ -3991,3 +3991,4 @@
 | #3957 | 2026-10-26 08:13:45 | Progressive Image Loader | `gpu_utilization` | `58.2 %` | **PASS** |
 | #3958 | 2026-10-26 08:14:00 | State Sync Daemon | `jank_events` | `2.6 count` | **PASS** |
 | #3959 | 2026-10-26 08:14:15 | SVG Morphing Pipeline | `animation_fps` | `70.0 fps` | **PASS** |
+| #3960 | 2026-10-26 08:14:30 | Cache Warmup Service | `cpu_usage` | `25.5 %` | **PASS** |
