@@ -4293,3 +4293,4 @@
 | #4259 | 2026-10-26 09:29:15 | Background Video Loop | `cpu_usage` | `39.1 %` | **PASS** |
 | #4260 | 2026-10-26 09:29:30 | Cache Warmup Service | `time_to_interactive` | `1640.8 ms` | **PASS** |
 | #4261 | 2026-10-26 09:29:45 | WebGL Shader Compiler | `bundle_size` | `189.2 KB` | **PASS** |
+| #4262 | 2026-10-26 09:30:00 | Scroll Parallax Manager | `animation_fps` | `55.3 fps` | **PASS** |
