@@ -4001,3 +4001,4 @@
 | #3967 | 2026-10-26 08:16:15 | Dynamic Font Loader | `jank_events` | `1.3 count` | **PASS** |
 | #3968 | 2026-10-26 08:16:30 | Dynamic Font Loader | `first_contentful_paint` | `1427.9 ms` | **PASS** |
 | #3969 | 2026-10-26 08:16:45 | Audio Visualizer | `cpu_usage` | `32.5 %` | **PASS** |
+| #3970 | 2026-10-26 08:17:00 | Scroll Parallax Manager | `gpu_utilization` | `52.2 %` | **PASS** |
