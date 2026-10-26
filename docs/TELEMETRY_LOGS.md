@@ -4481,3 +4481,4 @@
 | #4447 | 2026-10-26 10:16:15 | SVG Morphing Pipeline | `time_to_interactive` | `1253.7 ms` | **PASS** |
 | #4448 | 2026-10-26 10:16:30 | Viewport Resize Observer | `jank_events` | `2.6 count` | **PASS** |
 | #4449 | 2026-10-26 10:16:45 | Touch Gesture Dispatcher | `jank_events` | `2.4 count` | **PASS** |
+| #4450 | 2026-10-26 10:17:00 | SVG Morphing Pipeline | `memory_footprint` | `53.6 MB` | **PASS** |
