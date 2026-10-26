@@ -4106,3 +4106,4 @@
 | #4072 | 2026-10-26 08:42:30 | Micro Frontend Loader | `animation_fps` | `70.8 fps` | **PASS** |
 | #4073 | 2026-10-26 08:42:45 | Audio Visualizer | `jank_events` | `2.3 count` | **PASS** |
 | #4074 | 2026-10-26 08:43:00 | Viewport Resize Observer | `gpu_utilization` | `58.4 %` | **PASS** |
+| #4075 | 2026-10-26 08:43:15 | Cache Warmup Service | `gpu_utilization` | `20.8 %` | **PASS** |
