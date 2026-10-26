@@ -4183,3 +4183,4 @@
 | #4149 | 2026-10-26 09:01:45 | Lottie Animation Engine | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
 | #4150 | 2026-10-26 09:02:00 | CSS-in-JS Themer | `memory_footprint` | `104.5 MB` | **PASS** |
 | #4151 | 2026-10-26 09:02:15 | Telemetry Beacon | `jank_events` | `1.4 count` | **PASS** |
+| #4152 | 2026-10-26 09:02:30 | Cache Warmup Service | `memory_footprint` | `62.3 MB` | **PASS** |
