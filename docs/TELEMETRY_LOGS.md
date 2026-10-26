@@ -3978,3 +3978,4 @@
 | #3944 | 2026-10-26 08:10:30 | Cache Warmup Service | `first_contentful_paint` | `1407.6 ms` | **PASS** |
 | #3945 | 2026-10-26 08:10:45 | Interactive Tooltip Engine | `memory_footprint` | `103.6 MB` | **PASS** |
 | #3946 | 2026-10-26 08:11:00 | Audio Visualizer | `animation_fps` | `56.2 fps` | **PASS** |
+| #3947 | 2026-10-26 08:11:15 | Scroll Parallax Manager | `bundle_size` | `94.4 KB` | **PASS** |
