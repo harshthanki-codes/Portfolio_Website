@@ -4160,3 +4160,4 @@
 | #4126 | 2026-10-26 08:56:00 | WebGL Shader Compiler | `latency` | `16.7 ms` | **PASS** |
 | #4127 | 2026-10-26 08:56:15 | Viewport Resize Observer | `cpu_usage` | `14.4 %` | **PASS** |
 | #4128 | 2026-10-26 08:56:30 | Background Video Loop | `first_contentful_paint` | `1131.6 ms` | **PASS** |
+| #4129 | 2026-10-26 08:56:45 | Dynamic Font Loader | `gpu_utilization` | `58.7 %` | **PASS** |
