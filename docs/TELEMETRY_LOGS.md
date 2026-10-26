@@ -4445,3 +4445,4 @@
 | #4411 | 2026-10-26 10:07:15 | Progressive Image Loader | `gpu_utilization` | `32.0 %` | **PASS** |
 | #4412 | 2026-10-26 10:07:30 | State Sync Daemon | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
 | #4413 | 2026-10-26 10:07:45 | Micro Frontend Loader | `cpu_usage` | `21.0 %` | **PASS** |
+| #4414 | 2026-10-26 10:08:00 | Background Video Loop | `latency` | `5.8 ms` | **PASS** |
