@@ -4144,3 +4144,4 @@
 | #4110 | 2026-10-26 08:52:00 | WebGL Shader Compiler | `cpu_usage` | `21.3 %` | **PASS** |
 | #4111 | 2026-10-26 08:52:15 | Telemetry Beacon | `gpu_utilization` | `65.7 %` | **PASS** |
 | #4112 | 2026-10-26 08:52:30 | Touch Gesture Dispatcher | `gpu_utilization` | `57.7 %` | **PASS** |
+| #4113 | 2026-10-26 08:52:45 | Scroll Parallax Manager | `animation_fps` | `71.0 fps` | **PASS** |
