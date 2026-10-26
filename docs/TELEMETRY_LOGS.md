@@ -4166,3 +4166,4 @@
 | #4132 | 2026-10-26 08:57:30 | Background Video Loop | `time_to_interactive` | `1902.1 ms` | **PASS** |
 | #4133 | 2026-10-26 08:57:45 | Background Video Loop | `cpu_usage` | `38.7 %` | **PASS** |
 | #4134 | 2026-10-26 08:58:00 | Lazy Load Optimizer | `bundle_size` | `171.8 KB` | **PASS** |
+| #4135 | 2026-10-26 08:58:15 | Lazy Load Optimizer | `gpu_utilization` | `32.6 %` | **PASS** |
