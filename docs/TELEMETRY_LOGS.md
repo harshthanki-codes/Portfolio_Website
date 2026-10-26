@@ -4054,3 +4054,4 @@
 | #4020 | 2026-10-26 08:29:30 | Dynamic Font Loader | `frame_render_budget` | `27.0 ms (60fps)` | **PASS** |
 | #4021 | 2026-10-26 08:29:45 | Viewport Resize Observer | `first_contentful_paint` | `1477.7 ms` | **PASS** |
 | #4022 | 2026-10-26 08:30:00 | Progressive Image Loader | `first_contentful_paint` | `1152.7 ms` | **PASS** |
+| #4023 | 2026-10-26 08:30:15 | Dynamic Font Loader | `cpu_usage` | `44.3 %` | **PASS** |
