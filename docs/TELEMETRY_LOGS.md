@@ -4244,3 +4244,4 @@
 | #4210 | 2026-10-26 09:17:00 | 3D Particle Renderer | `cpu_usage` | `28.3 %` | **PASS** |
 | #4211 | 2026-10-26 09:17:15 | Responsive Grid System | `animation_fps` | `59.3 fps` | **PASS** |
 | #4212 | 2026-10-26 09:17:30 | CSS-in-JS Themer | `cpu_usage` | `20.2 %` | **PASS** |
+| #4213 | 2026-10-26 09:17:45 | CSS-in-JS Themer | `gpu_utilization` | `56.5 %` | **PASS** |
