@@ -4438,3 +4438,4 @@
 | #4404 | 2026-10-26 10:05:30 | State Sync Daemon | `animation_fps` | `59.5 fps` | **PASS** |
 | #4405 | 2026-10-26 10:05:45 | Predictive Arc Canvas | `frame_render_budget` | `20.7 ms (60fps)` | **PASS** |
 | #4406 | 2026-10-26 10:06:00 | Scroll Parallax Manager | `time_to_interactive` | `2003.4 ms` | **PASS** |
+| #4407 | 2026-10-26 10:06:15 | Scroll Parallax Manager | `first_contentful_paint` | `1061.6 ms` | **PASS** |
