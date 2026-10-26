@@ -4201,3 +4201,4 @@
 | #4167 | 2026-10-26 09:06:15 | Lottie Animation Engine | `frame_render_budget` | `19.4 ms (60fps)` | **PASS** |
 | #4168 | 2026-10-26 09:06:30 | 3D Particle Renderer | `animation_fps` | `69.2 fps` | **PASS** |
 | #4169 | 2026-10-26 09:06:45 | Viewport Resize Observer | `jank_events` | `2.0 count` | **PASS** |
+| #4170 | 2026-10-26 09:07:00 | WebGL Shader Compiler | `gpu_utilization` | `60.3 %` | **PASS** |
