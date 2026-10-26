@@ -4228,3 +4228,4 @@
 | #4194 | 2026-10-26 09:13:00 | Touch Gesture Dispatcher | `jank_events` | `0.4 count` | **PASS** |
 | #4195 | 2026-10-26 09:13:15 | Lottie Animation Engine | `latency` | `13.2 ms` | **PASS** |
 | #4196 | 2026-10-26 09:13:30 | Viewport Resize Observer | `memory_footprint` | `70.3 MB` | **PASS** |
+| #4197 | 2026-10-26 09:13:45 | Scroll Parallax Manager | `gpu_utilization` | `30.8 %` | **PASS** |
