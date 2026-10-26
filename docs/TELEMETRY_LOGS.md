@@ -3939,3 +3939,4 @@
 | #3905 | 2026-10-26 08:00:45 | State Sync Daemon | `cpu_usage` | `14.0 %` | **PASS** |
 | #3906 | 2026-10-26 08:01:00 | State Sync Daemon | `jank_events` | `1.9 count` | **PASS** |
 | #3907 | 2026-10-26 08:01:15 | Interactive Tooltip Engine | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
+| #3908 | 2026-10-26 08:01:30 | State Sync Daemon | `animation_fps` | `60.6 fps` | **PASS** |
