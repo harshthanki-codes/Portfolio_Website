@@ -4483,3 +4483,4 @@
 | #4449 | 2026-10-26 10:16:45 | Touch Gesture Dispatcher | `jank_events` | `2.4 count` | **PASS** |
 | #4450 | 2026-10-26 10:17:00 | SVG Morphing Pipeline | `memory_footprint` | `53.6 MB` | **PASS** |
 | #4451 | 2026-10-26 10:17:15 | 3D Particle Renderer | `frame_render_budget` | `20.9 ms (60fps)` | **PASS** |
+| #4452 | 2026-10-26 10:17:30 | Lottie Animation Engine | `jank_events` | `0.9 count` | **PASS** |
