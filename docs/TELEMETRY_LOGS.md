@@ -4238,3 +4238,4 @@
 | #4204 | 2026-10-26 09:15:30 | CSS-in-JS Themer | `gpu_utilization` | `55.3 %` | **PASS** |
 | #4205 | 2026-10-26 09:15:45 | Lottie Animation Engine | `bundle_size` | `242.5 KB` | **PASS** |
 | #4206 | 2026-10-26 09:16:00 | Responsive Grid System | `gpu_utilization` | `27.7 %` | **PASS** |
+| #4207 | 2026-10-26 09:16:15 | Cache Warmup Service | `gpu_utilization` | `43.8 %` | **PASS** |
