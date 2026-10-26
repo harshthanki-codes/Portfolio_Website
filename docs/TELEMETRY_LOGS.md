@@ -4301,3 +4301,4 @@
 | #4267 | 2026-10-26 09:31:15 | Interactive Tooltip Engine | `jank_events` | `1.9 count` | **PASS** |
 | #4268 | 2026-10-26 09:31:30 | State Sync Daemon | `animation_fps` | `74.0 fps` | **PASS** |
 | #4269 | 2026-10-26 09:31:45 | Audio Visualizer | `cpu_usage` | `27.1 %` | **PASS** |
+| #4270 | 2026-10-26 09:32:00 | Background Video Loop | `animation_fps` | `57.4 fps` | **PASS** |
