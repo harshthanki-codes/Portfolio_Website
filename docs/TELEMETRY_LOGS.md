@@ -4031,3 +4031,4 @@
 | #3997 | 2026-10-26 08:23:45 | Viewport Resize Observer | `bundle_size` | `209.6 KB` | **PASS** |
 | #3998 | 2026-10-26 08:24:00 | Touch Gesture Dispatcher | `jank_events` | `2.5 count` | **PASS** |
 | #3999 | 2026-10-26 08:24:15 | Telemetry Beacon | `frame_render_budget` | `20.6 ms (60fps)` | **PASS** |
+| #4000 | 2026-10-26 08:24:30 | Background Video Loop | `latency` | `10.3 ms` | **PASS** |
