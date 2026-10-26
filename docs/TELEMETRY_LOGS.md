@@ -3934,3 +3934,4 @@
 ## 2026-10-26 Telemetry Entries
 
 | #3902 | 2026-10-26 08:00:00 | State Sync Daemon | `cpu_usage` | `20.5 %` | **PASS** |
+| #3903 | 2026-10-26 08:00:15 | Viewport Resize Observer | `latency` | `23.6 ms` | **PASS** |
