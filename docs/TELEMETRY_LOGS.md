@@ -4209,3 +4209,4 @@
 | #4175 | 2026-10-26 09:08:15 | Background Video Loop | `animation_fps` | `55.8 fps` | **PASS** |
 | #4176 | 2026-10-26 09:08:30 | WebGL Shader Compiler | `latency` | `19.3 ms` | **PASS** |
 | #4177 | 2026-10-26 09:08:45 | Touch Gesture Dispatcher | `latency` | `5.2 ms` | **PASS** |
+| #4178 | 2026-10-26 09:09:00 | Scroll Parallax Manager | `jank_events` | `1.8 count` | **PASS** |
