@@ -3948,3 +3948,4 @@
 | #3914 | 2026-10-26 08:03:00 | Micro Frontend Loader | `jank_events` | `2.5 count` | **PASS** |
 | #3915 | 2026-10-26 08:03:15 | Scroll Parallax Manager | `frame_render_budget` | `26.6 ms (60fps)` | **PASS** |
 | #3916 | 2026-10-26 08:03:30 | Touch Gesture Dispatcher | `frame_render_budget` | `29.6 ms (60fps)` | **PASS** |
+| #3917 | 2026-10-26 08:03:45 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
