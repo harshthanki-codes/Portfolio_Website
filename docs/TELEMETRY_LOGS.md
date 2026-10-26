@@ -4501,3 +4501,4 @@
 | #4467 | 2026-10-26 10:21:15 | State Sync Daemon | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #4468 | 2026-10-26 10:21:30 | Responsive Grid System | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
 | #4469 | 2026-10-26 10:21:45 | Background Video Loop | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
+| #4470 | 2026-10-26 10:22:00 | Cache Warmup Service | `time_to_interactive` | `1585.7 ms` | **PASS** |
