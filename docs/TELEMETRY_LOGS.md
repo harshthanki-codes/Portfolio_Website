@@ -4423,3 +4423,4 @@
 | #4389 | 2026-10-26 10:01:45 | Cache Warmup Service | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
 | #4390 | 2026-10-26 10:02:00 | Touch Gesture Dispatcher | `time_to_interactive` | `2409.9 ms` | **PASS** |
 | #4391 | 2026-10-26 10:02:15 | Touch Gesture Dispatcher | `bundle_size` | `196.6 KB` | **PASS** |
+| #4392 | 2026-10-26 10:02:30 | Progressive Image Loader | `gpu_utilization` | `35.9 %` | **PASS** |
