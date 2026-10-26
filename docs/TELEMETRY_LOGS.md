@@ -4283,3 +4283,4 @@
 | #4249 | 2026-10-26 09:26:45 | Micro Frontend Loader | `animation_fps` | `56.7 fps` | **PASS** |
 | #4250 | 2026-10-26 09:27:00 | Progressive Image Loader | `memory_footprint` | `80.2 MB` | **PASS** |
 | #4251 | 2026-10-26 09:27:15 | SVG Morphing Pipeline | `gpu_utilization` | `20.4 %` | **PASS** |
+| #4252 | 2026-10-26 09:27:30 | Micro Frontend Loader | `gpu_utilization` | `55.4 %` | **PASS** |
