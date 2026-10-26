@@ -4304,3 +4304,4 @@
 | #4270 | 2026-10-26 09:32:00 | Background Video Loop | `animation_fps` | `57.4 fps` | **PASS** |
 | #4271 | 2026-10-26 09:32:15 | Lottie Animation Engine | `cpu_usage` | `15.7 %` | **PASS** |
 | #4272 | 2026-10-26 09:32:30 | Viewport Resize Observer | `jank_events` | `2.4 count` | **PASS** |
+| #4273 | 2026-10-26 09:32:45 | Cache Warmup Service | `first_contentful_paint` | `1306.2 ms` | **PASS** |
