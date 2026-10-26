@@ -4471,3 +4471,4 @@
 | #4437 | 2026-10-26 10:13:45 | Progressive Image Loader | `time_to_interactive` | `1964.0 ms` | **PASS** |
 | #4438 | 2026-10-26 10:14:00 | Telemetry Beacon | `gpu_utilization` | `28.6 %` | **PASS** |
 | #4439 | 2026-10-26 10:14:15 | 3D Particle Renderer | `memory_footprint` | `72.3 MB` | **PASS** |
+| #4440 | 2026-10-26 10:14:30 | Lottie Animation Engine | `gpu_utilization` | `49.4 %` | **PASS** |
