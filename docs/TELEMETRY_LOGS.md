@@ -4782,3 +4782,4 @@
 | #4745 | 2026-10-27 09:00:45 | 3D Particle Renderer | `memory_footprint` | `100.4 MB` | **PASS** |
 | #4746 | 2026-10-27 09:01:00 | 3D Particle Renderer | `bundle_size` | `233.0 KB` | **PASS** |
 | #4747 | 2026-10-27 09:01:15 | Viewport Resize Observer | `time_to_interactive` | `2250.1 ms` | **PASS** |
+| #4748 | 2026-10-27 09:01:30 | Telemetry Beacon | `frame_render_budget` | `15.6 ms (60fps)` | **PASS** |
