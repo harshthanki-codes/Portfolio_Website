@@ -4995,3 +4995,4 @@
 | #4958 | 2026-10-27 09:54:00 | Viewport Resize Observer | `cpu_usage` | `14.4 %` | **PASS** |
 | #4959 | 2026-10-27 09:54:15 | Viewport Resize Observer | `gpu_utilization` | `44.5 %` | **PASS** |
 | #4960 | 2026-10-27 09:54:30 | WebGL Shader Compiler | `cpu_usage` | `15.3 %` | **PASS** |
+| #4961 | 2026-10-27 09:54:45 | Touch Gesture Dispatcher | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
