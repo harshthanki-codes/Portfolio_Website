@@ -4988,3 +4988,4 @@
 | #4951 | 2026-10-27 09:52:15 | State Sync Daemon | `memory_footprint` | `101.7 MB` | **PASS** |
 | #4952 | 2026-10-27 09:52:30 | CSS-in-JS Themer | `latency` | `21.5 ms` | **PASS** |
 | #4953 | 2026-10-27 09:52:45 | Viewport Resize Observer | `memory_footprint` | `66.7 MB` | **PASS** |
+| #4954 | 2026-10-27 09:53:00 | CSS-in-JS Themer | `time_to_interactive` | `2164.0 ms` | **PASS** |
