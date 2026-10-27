@@ -4993,3 +4993,4 @@
 | #4956 | 2026-10-27 09:53:30 | Dynamic Font Loader | `jank_events` | `0.7 count` | **PASS** |
 | #4957 | 2026-10-27 09:53:45 | Dynamic Font Loader | `time_to_interactive` | `2185.3 ms` | **PASS** |
 | #4958 | 2026-10-27 09:54:00 | Viewport Resize Observer | `cpu_usage` | `14.4 %` | **PASS** |
+| #4959 | 2026-10-27 09:54:15 | Viewport Resize Observer | `gpu_utilization` | `44.5 %` | **PASS** |
