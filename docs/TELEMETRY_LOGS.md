@@ -4928,3 +4928,4 @@
 | #4891 | 2026-10-27 09:37:15 | WebGL Shader Compiler | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
 | #4892 | 2026-10-27 09:37:30 | Interactive Tooltip Engine | `gpu_utilization` | `56.8 %` | **PASS** |
 | #4893 | 2026-10-27 09:37:45 | Viewport Resize Observer | `gpu_utilization` | `70.0 %` | **PASS** |
+| #4894 | 2026-10-27 09:38:00 | Viewport Resize Observer | `latency` | `23.1 ms` | **PASS** |
