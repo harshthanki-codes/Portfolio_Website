@@ -4991,3 +4991,4 @@
 | #4954 | 2026-10-27 09:53:00 | CSS-in-JS Themer | `time_to_interactive` | `2164.0 ms` | **PASS** |
 | #4955 | 2026-10-27 09:53:15 | Background Video Loop | `time_to_interactive` | `2251.7 ms` | **PASS** |
 | #4956 | 2026-10-27 09:53:30 | Dynamic Font Loader | `jank_events` | `0.7 count` | **PASS** |
+| #4957 | 2026-10-27 09:53:45 | Dynamic Font Loader | `time_to_interactive` | `2185.3 ms` | **PASS** |
