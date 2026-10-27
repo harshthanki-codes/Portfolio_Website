@@ -4970,3 +4970,4 @@
 | #4933 | 2026-10-27 09:47:45 | Touch Gesture Dispatcher | `animation_fps` | `74.7 fps` | **PASS** |
 | #4934 | 2026-10-27 09:48:00 | State Sync Daemon | `bundle_size` | `213.3 KB` | **PASS** |
 | #4935 | 2026-10-27 09:48:15 | Predictive Arc Canvas | `latency` | `23.4 ms` | **PASS** |
+| #4936 | 2026-10-27 09:48:30 | Scroll Parallax Manager | `jank_events` | `1.9 count` | **PASS** |
