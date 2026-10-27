@@ -4766,3 +4766,4 @@
 | #4729 | 2026-10-27 08:56:45 | Lottie Animation Engine | `latency` | `17.3 ms` | **PASS** |
 | #4730 | 2026-10-27 08:57:00 | Audio Visualizer | `latency` | `12.3 ms` | **PASS** |
 | #4731 | 2026-10-27 08:57:15 | Lottie Animation Engine | `bundle_size` | `177.0 KB` | **PASS** |
+| #4732 | 2026-10-27 08:57:30 | CSS-in-JS Themer | `gpu_utilization` | `27.8 %` | **PASS** |
