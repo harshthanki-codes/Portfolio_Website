@@ -4828,3 +4828,4 @@
 | #4791 | 2026-10-27 09:12:15 | Predictive Arc Canvas | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
 | #4792 | 2026-10-27 09:12:30 | Scroll Parallax Manager | `gpu_utilization` | `58.7 %` | **PASS** |
 | #4793 | 2026-10-27 09:12:45 | Predictive Arc Canvas | `time_to_interactive` | `1743.1 ms` | **PASS** |
+| #4794 | 2026-10-27 09:13:00 | Viewport Resize Observer | `cpu_usage` | `21.6 %` | **PASS** |
