@@ -5125,3 +5125,4 @@
 | #5088 | 2026-10-27 10:26:30 | Predictive Arc Canvas | `time_to_interactive` | `2186.5 ms` | **PASS** |
 | #5089 | 2026-10-27 10:26:45 | Viewport Resize Observer | `jank_events` | `1.2 count` | **PASS** |
 | #5090 | 2026-10-27 10:27:00 | Scroll Parallax Manager | `bundle_size` | `157.3 KB` | **PASS** |
+| #5091 | 2026-10-27 10:27:15 | Scroll Parallax Manager | `first_contentful_paint` | `894.4 ms` | **PASS** |
