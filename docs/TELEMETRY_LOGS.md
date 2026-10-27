@@ -5115,3 +5115,4 @@
 | #5078 | 2026-10-27 10:24:00 | Scroll Parallax Manager | `animation_fps` | `64.3 fps` | **PASS** |
 | #5079 | 2026-10-27 10:24:15 | Viewport Resize Observer | `cpu_usage` | `24.9 %` | **PASS** |
 | #5080 | 2026-10-27 10:24:30 | Background Video Loop | `time_to_interactive` | `1906.2 ms` | **PASS** |
+| #5081 | 2026-10-27 10:24:45 | Scroll Parallax Manager | `gpu_utilization` | `46.9 %` | **PASS** |
