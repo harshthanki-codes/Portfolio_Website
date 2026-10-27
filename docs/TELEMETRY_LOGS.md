@@ -4827,3 +4827,4 @@
 | #4790 | 2026-10-27 09:12:00 | WebGL Shader Compiler | `latency` | `19.1 ms` | **PASS** |
 | #4791 | 2026-10-27 09:12:15 | Predictive Arc Canvas | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
 | #4792 | 2026-10-27 09:12:30 | Scroll Parallax Manager | `gpu_utilization` | `58.7 %` | **PASS** |
+| #4793 | 2026-10-27 09:12:45 | Predictive Arc Canvas | `time_to_interactive` | `1743.1 ms` | **PASS** |
