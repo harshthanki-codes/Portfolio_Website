@@ -4826,3 +4826,4 @@
 | #4789 | 2026-10-27 09:11:45 | Dynamic Font Loader | `jank_events` | `2.6 count` | **PASS** |
 | #4790 | 2026-10-27 09:12:00 | WebGL Shader Compiler | `latency` | `19.1 ms` | **PASS** |
 | #4791 | 2026-10-27 09:12:15 | Predictive Arc Canvas | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
+| #4792 | 2026-10-27 09:12:30 | Scroll Parallax Manager | `gpu_utilization` | `58.7 %` | **PASS** |
