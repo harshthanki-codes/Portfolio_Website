@@ -4887,3 +4887,4 @@
 | #4850 | 2026-10-27 09:27:00 | Scroll Parallax Manager | `cpu_usage` | `44.0 %` | **PASS** |
 | #4851 | 2026-10-27 09:27:15 | State Sync Daemon | `cpu_usage` | `29.1 %` | **PASS** |
 | #4852 | 2026-10-27 09:27:30 | Audio Visualizer | `time_to_interactive` | `2243.5 ms` | **PASS** |
+| #4853 | 2026-10-27 09:27:45 | Cache Warmup Service | `frame_render_budget` | `25.0 ms (60fps)` | **PASS** |
