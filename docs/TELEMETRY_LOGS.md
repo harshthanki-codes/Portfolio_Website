@@ -4901,3 +4901,4 @@
 | #4864 | 2026-10-27 09:30:30 | Scroll Parallax Manager | `gpu_utilization` | `69.0 %` | **PASS** |
 | #4865 | 2026-10-27 09:30:45 | Telemetry Beacon | `memory_footprint` | `108.8 MB` | **PASS** |
 | #4866 | 2026-10-27 09:31:00 | 3D Particle Renderer | `time_to_interactive` | `1468.7 ms` | **PASS** |
+| #4867 | 2026-10-27 09:31:15 | Scroll Parallax Manager | `bundle_size` | `143.6 KB` | **PASS** |
