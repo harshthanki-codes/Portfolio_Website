@@ -4870,3 +4870,4 @@
 | #4833 | 2026-10-27 09:22:45 | Telemetry Beacon | `frame_render_budget` | `29.7 ms (60fps)` | **PASS** |
 | #4834 | 2026-10-27 09:23:00 | Micro Frontend Loader | `frame_render_budget` | `21.5 ms (60fps)` | **PASS** |
 | #4835 | 2026-10-27 09:23:15 | CSS-in-JS Themer | `memory_footprint` | `96.0 MB` | **PASS** |
+| #4836 | 2026-10-27 09:23:30 | Lottie Animation Engine | `latency` | `17.8 ms` | **PASS** |
