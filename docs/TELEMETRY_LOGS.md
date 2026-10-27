@@ -5005,3 +5005,4 @@
 | #4968 | 2026-10-27 09:56:30 | Cache Warmup Service | `frame_render_budget` | `28.7 ms (60fps)` | **PASS** |
 | #4969 | 2026-10-27 09:56:45 | Touch Gesture Dispatcher | `frame_render_budget` | `27.6 ms (60fps)` | **PASS** |
 | #4970 | 2026-10-27 09:57:00 | 3D Particle Renderer | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
+| #4971 | 2026-10-27 09:57:15 | Cache Warmup Service | `latency` | `16.6 ms` | **PASS** |
