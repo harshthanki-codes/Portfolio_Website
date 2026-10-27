@@ -4948,3 +4948,4 @@
 | #4911 | 2026-10-27 09:42:15 | SVG Morphing Pipeline | `bundle_size` | `164.7 KB` | **PASS** |
 | #4912 | 2026-10-27 09:42:30 | Micro Frontend Loader | `time_to_interactive` | `1821.3 ms` | **PASS** |
 | #4913 | 2026-10-27 09:42:45 | Micro Frontend Loader | `memory_footprint` | `102.6 MB` | **PASS** |
+| #4914 | 2026-10-27 09:43:00 | Cache Warmup Service | `cpu_usage` | `40.5 %` | **PASS** |
