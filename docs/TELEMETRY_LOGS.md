@@ -5074,3 +5074,4 @@
 | #5037 | 2026-10-27 10:13:45 | Dynamic Font Loader | `time_to_interactive` | `1490.0 ms` | **PASS** |
 | #5038 | 2026-10-27 10:14:00 | CSS-in-JS Themer | `first_contentful_paint` | `837.1 ms` | **PASS** |
 | #5039 | 2026-10-27 10:14:15 | Interactive Tooltip Engine | `memory_footprint` | `71.1 MB` | **PASS** |
+| #5040 | 2026-10-27 10:14:30 | WebGL Shader Compiler | `time_to_interactive` | `1627.9 ms` | **PASS** |
