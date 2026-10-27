@@ -5065,3 +5065,4 @@
 | #5028 | 2026-10-27 10:11:30 | Micro Frontend Loader | `gpu_utilization` | `58.4 %` | **PASS** |
 | #5029 | 2026-10-27 10:11:45 | SVG Morphing Pipeline | `first_contentful_paint` | `1146.5 ms` | **PASS** |
 | #5030 | 2026-10-27 10:12:00 | Cache Warmup Service | `animation_fps` | `62.7 fps` | **PASS** |
+| #5031 | 2026-10-27 10:12:15 | Lottie Animation Engine | `frame_render_budget` | `17.3 ms (60fps)` | **PASS** |
