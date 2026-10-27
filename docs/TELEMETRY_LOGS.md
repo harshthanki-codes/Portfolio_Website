@@ -4831,3 +4831,4 @@
 | #4794 | 2026-10-27 09:13:00 | Viewport Resize Observer | `cpu_usage` | `21.6 %` | **PASS** |
 | #4795 | 2026-10-27 09:13:15 | Lottie Animation Engine | `jank_events` | `0.3 count` | **PASS** |
 | #4796 | 2026-10-27 09:13:30 | Background Video Loop | `jank_events` | `0.8 count` | **PASS** |
+| #4797 | 2026-10-27 09:13:45 | CSS-in-JS Themer | `jank_events` | `2.0 count` | **PASS** |
