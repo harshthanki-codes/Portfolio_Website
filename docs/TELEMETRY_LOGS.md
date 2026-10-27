@@ -4772,3 +4772,4 @@
 | #4735 | 2026-10-27 08:58:15 | Micro Frontend Loader | `frame_render_budget` | `26.2 ms (60fps)` | **PASS** |
 | #4736 | 2026-10-27 08:58:30 | Micro Frontend Loader | `frame_render_budget` | `29.5 ms (60fps)` | **PASS** |
 | #4737 | 2026-10-27 08:58:45 | Scroll Parallax Manager | `time_to_interactive` | `2213.3 ms` | **PASS** |
+| #4738 | 2026-10-27 08:59:00 | CSS-in-JS Themer | `time_to_interactive` | `1222.4 ms` | **PASS** |
