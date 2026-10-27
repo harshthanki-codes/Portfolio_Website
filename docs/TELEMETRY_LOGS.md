@@ -4692,3 +4692,4 @@
 | #4655 | 2026-10-27 08:38:15 | SVG Morphing Pipeline | `jank_events` | `2.5 count` | **PASS** |
 | #4656 | 2026-10-27 08:38:30 | Telemetry Beacon | `latency` | `18.6 ms` | **PASS** |
 | #4657 | 2026-10-27 08:38:45 | Telemetry Beacon | `time_to_interactive` | `2132.7 ms` | **PASS** |
+| #4658 | 2026-10-27 08:39:00 | Cache Warmup Service | `gpu_utilization` | `31.9 %` | **PASS** |
