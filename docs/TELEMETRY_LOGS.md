@@ -4632,3 +4632,4 @@
 | #4595 | 2026-10-27 08:23:15 | Telemetry Beacon | `cpu_usage` | `15.1 %` | **PASS** |
 | #4596 | 2026-10-27 08:23:30 | Background Video Loop | `time_to_interactive` | `2310.8 ms` | **PASS** |
 | #4597 | 2026-10-27 08:23:45 | Lazy Load Optimizer | `gpu_utilization` | `43.0 %` | **PASS** |
+| #4598 | 2026-10-27 08:24:00 | Viewport Resize Observer | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
