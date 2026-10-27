@@ -4734,3 +4734,4 @@
 | #4697 | 2026-10-27 08:48:45 | WebGL Shader Compiler | `cpu_usage` | `13.6 %` | **PASS** |
 | #4698 | 2026-10-27 08:49:00 | Background Video Loop | `memory_footprint` | `112.9 MB` | **PASS** |
 | #4699 | 2026-10-27 08:49:15 | CSS-in-JS Themer | `bundle_size` | `220.7 KB` | **PASS** |
+| #4700 | 2026-10-27 08:49:30 | Scroll Parallax Manager | `cpu_usage` | `32.2 %` | **PASS** |
