@@ -4843,3 +4843,4 @@
 | #4806 | 2026-10-27 09:16:00 | SVG Morphing Pipeline | `frame_render_budget` | `20.9 ms (60fps)` | **PASS** |
 | #4807 | 2026-10-27 09:16:15 | 3D Particle Renderer | `first_contentful_paint` | `1331.4 ms` | **PASS** |
 | #4808 | 2026-10-27 09:16:30 | Micro Frontend Loader | `first_contentful_paint` | `956.5 ms` | **PASS** |
+| #4809 | 2026-10-27 09:16:45 | WebGL Shader Compiler | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
