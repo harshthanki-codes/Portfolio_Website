@@ -4872,3 +4872,4 @@
 | #4835 | 2026-10-27 09:23:15 | CSS-in-JS Themer | `memory_footprint` | `96.0 MB` | **PASS** |
 | #4836 | 2026-10-27 09:23:30 | Lottie Animation Engine | `latency` | `17.8 ms` | **PASS** |
 | #4837 | 2026-10-27 09:23:45 | Lottie Animation Engine | `first_contentful_paint` | `1476.9 ms` | **PASS** |
+| #4838 | 2026-10-27 09:24:00 | Scroll Parallax Manager | `memory_footprint` | `86.6 MB` | **PASS** |
