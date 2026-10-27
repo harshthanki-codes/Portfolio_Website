@@ -4940,3 +4940,4 @@
 | #4903 | 2026-10-27 09:40:15 | SVG Morphing Pipeline | `memory_footprint` | `101.6 MB` | **PASS** |
 | #4904 | 2026-10-27 09:40:30 | Scroll Parallax Manager | `first_contentful_paint` | `1429.5 ms` | **PASS** |
 | #4905 | 2026-10-27 09:40:45 | Telemetry Beacon | `cpu_usage` | `43.8 %` | **PASS** |
+| #4906 | 2026-10-27 09:41:00 | CSS-in-JS Themer | `animation_fps` | `66.4 fps` | **PASS** |
