@@ -5085,3 +5085,4 @@
 | #5048 | 2026-10-27 10:16:30 | Predictive Arc Canvas | `jank_events` | `2.0 count` | **PASS** |
 | #5049 | 2026-10-27 10:16:45 | Lazy Load Optimizer | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #5050 | 2026-10-27 10:17:00 | Micro Frontend Loader | `first_contentful_paint` | `1252.0 ms` | **PASS** |
+| #5051 | 2026-10-27 10:17:15 | Lottie Animation Engine | `gpu_utilization` | `31.2 %` | **PASS** |
