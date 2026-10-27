@@ -4919,3 +4919,4 @@
 | #4882 | 2026-10-27 09:35:00 | Interactive Tooltip Engine | `animation_fps` | `67.2 fps` | **PASS** |
 | #4883 | 2026-10-27 09:35:15 | Lottie Animation Engine | `memory_footprint` | `86.9 MB` | **PASS** |
 | #4884 | 2026-10-27 09:35:30 | Lottie Animation Engine | `cpu_usage` | `15.2 %` | **PASS** |
+| #4885 | 2026-10-27 09:35:45 | Cache Warmup Service | `animation_fps` | `72.9 fps` | **PASS** |
