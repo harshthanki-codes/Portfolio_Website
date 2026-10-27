@@ -4771,3 +4771,4 @@
 | #4734 | 2026-10-27 08:58:00 | Responsive Grid System | `latency` | `22.5 ms` | **PASS** |
 | #4735 | 2026-10-27 08:58:15 | Micro Frontend Loader | `frame_render_budget` | `26.2 ms (60fps)` | **PASS** |
 | #4736 | 2026-10-27 08:58:30 | Micro Frontend Loader | `frame_render_budget` | `29.5 ms (60fps)` | **PASS** |
+| #4737 | 2026-10-27 08:58:45 | Scroll Parallax Manager | `time_to_interactive` | `2213.3 ms` | **PASS** |
