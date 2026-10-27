@@ -4681,3 +4681,4 @@
 | #4644 | 2026-10-27 08:35:30 | State Sync Daemon | `time_to_interactive` | `2338.2 ms` | **PASS** |
 | #4645 | 2026-10-27 08:35:45 | Micro Frontend Loader | `gpu_utilization` | `48.7 %` | **PASS** |
 | #4646 | 2026-10-27 08:36:00 | Micro Frontend Loader | `cpu_usage` | `34.0 %` | **PASS** |
+| #4647 | 2026-10-27 08:36:15 | Progressive Image Loader | `time_to_interactive` | `1200.9 ms` | **PASS** |
