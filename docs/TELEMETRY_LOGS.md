@@ -5122,3 +5122,4 @@
 | #5085 | 2026-10-27 10:25:45 | Predictive Arc Canvas | `memory_footprint` | `60.1 MB` | **PASS** |
 | #5086 | 2026-10-27 10:26:00 | Background Video Loop | `bundle_size` | `240.4 KB` | **PASS** |
 | #5087 | 2026-10-27 10:26:15 | Predictive Arc Canvas | `cpu_usage` | `32.8 %` | **PASS** |
+| #5088 | 2026-10-27 10:26:30 | Predictive Arc Canvas | `time_to_interactive` | `2186.5 ms` | **PASS** |
