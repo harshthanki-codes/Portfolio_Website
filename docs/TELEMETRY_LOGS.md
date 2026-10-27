@@ -4774,3 +4774,4 @@
 | #4737 | 2026-10-27 08:58:45 | Scroll Parallax Manager | `time_to_interactive` | `2213.3 ms` | **PASS** |
 | #4738 | 2026-10-27 08:59:00 | CSS-in-JS Themer | `time_to_interactive` | `1222.4 ms` | **PASS** |
 | #4739 | 2026-10-27 08:59:15 | Predictive Arc Canvas | `jank_events` | `0.6 count` | **PASS** |
+| #4740 | 2026-10-27 08:59:30 | Cache Warmup Service | `memory_footprint` | `84.8 MB` | **PASS** |
