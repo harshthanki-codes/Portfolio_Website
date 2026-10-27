@@ -4705,3 +4705,4 @@
 | #4668 | 2026-10-27 08:41:30 | WebGL Shader Compiler | `memory_footprint` | `82.8 MB` | **PASS** |
 | #4669 | 2026-10-27 08:41:45 | 3D Particle Renderer | `first_contentful_paint` | `1161.0 ms` | **PASS** |
 | #4670 | 2026-10-27 08:42:00 | Lottie Animation Engine | `cpu_usage` | `21.5 %` | **PASS** |
+| #4671 | 2026-10-27 08:42:15 | Cache Warmup Service | `time_to_interactive` | `1681.1 ms` | **PASS** |
