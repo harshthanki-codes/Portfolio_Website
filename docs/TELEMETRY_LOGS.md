@@ -5128,3 +5128,4 @@
 | #5091 | 2026-10-27 10:27:15 | Scroll Parallax Manager | `first_contentful_paint` | `894.4 ms` | **PASS** |
 | #5092 | 2026-10-27 10:27:30 | Viewport Resize Observer | `time_to_interactive` | `1616.5 ms` | **PASS** |
 | #5093 | 2026-10-27 10:27:45 | Lottie Animation Engine | `first_contentful_paint` | `899.3 ms` | **PASS** |
+| #5094 | 2026-10-27 10:28:00 | Viewport Resize Observer | `jank_events` | `0.3 count` | **PASS** |
