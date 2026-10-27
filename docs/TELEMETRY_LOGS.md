@@ -5004,3 +5004,4 @@
 | #4967 | 2026-10-27 09:56:15 | Audio Visualizer | `time_to_interactive` | `1792.4 ms` | **PASS** |
 | #4968 | 2026-10-27 09:56:30 | Cache Warmup Service | `frame_render_budget` | `28.7 ms (60fps)` | **PASS** |
 | #4969 | 2026-10-27 09:56:45 | Touch Gesture Dispatcher | `frame_render_budget` | `27.6 ms (60fps)` | **PASS** |
+| #4970 | 2026-10-27 09:57:00 | 3D Particle Renderer | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
