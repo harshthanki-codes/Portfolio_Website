@@ -4921,3 +4921,4 @@
 | #4884 | 2026-10-27 09:35:30 | Lottie Animation Engine | `cpu_usage` | `15.2 %` | **PASS** |
 | #4885 | 2026-10-27 09:35:45 | Cache Warmup Service | `animation_fps` | `72.9 fps` | **PASS** |
 | #4886 | 2026-10-27 09:36:00 | Touch Gesture Dispatcher | `first_contentful_paint` | `1225.6 ms` | **PASS** |
+| #4887 | 2026-10-27 09:36:15 | CSS-in-JS Themer | `animation_fps` | `59.6 fps` | **PASS** |
