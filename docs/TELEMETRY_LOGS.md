@@ -4824,3 +4824,4 @@
 | #4787 | 2026-10-27 09:11:15 | WebGL Shader Compiler | `memory_footprint` | `57.6 MB` | **PASS** |
 | #4788 | 2026-10-27 09:11:30 | Scroll Parallax Manager | `animation_fps` | `64.5 fps` | **PASS** |
 | #4789 | 2026-10-27 09:11:45 | Dynamic Font Loader | `jank_events` | `2.6 count` | **PASS** |
+| #4790 | 2026-10-27 09:12:00 | WebGL Shader Compiler | `latency` | `19.1 ms` | **PASS** |
