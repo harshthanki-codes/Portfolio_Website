@@ -4729,3 +4729,4 @@
 | #4692 | 2026-10-27 08:47:30 | CSS-in-JS Themer | `first_contentful_paint` | `1083.1 ms` | **PASS** |
 | #4693 | 2026-10-27 08:47:45 | WebGL Shader Compiler | `bundle_size` | `130.7 KB` | **PASS** |
 | #4694 | 2026-10-27 08:48:00 | SVG Morphing Pipeline | `jank_events` | `2.8 count` | **PASS** |
+| #4695 | 2026-10-27 08:48:15 | SVG Morphing Pipeline | `frame_render_budget` | `25.2 ms (60fps)` | **PASS** |
