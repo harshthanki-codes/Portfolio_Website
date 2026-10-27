@@ -5014,3 +5014,4 @@
 | #4977 | 2026-10-27 09:58:45 | 3D Particle Renderer | `memory_footprint` | `112.4 MB` | **PASS** |
 | #4978 | 2026-10-27 09:59:00 | Viewport Resize Observer | `memory_footprint` | `103.7 MB` | **PASS** |
 | #4979 | 2026-10-27 09:59:15 | WebGL Shader Compiler | `memory_footprint` | `87.5 MB` | **PASS** |
+| #4980 | 2026-10-27 09:59:30 | Touch Gesture Dispatcher | `cpu_usage` | `33.6 %` | **PASS** |
