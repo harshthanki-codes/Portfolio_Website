@@ -4663,3 +4663,4 @@
 | #4626 | 2026-10-27 08:31:00 | 3D Particle Renderer | `latency` | `22.3 ms` | **PASS** |
 | #4627 | 2026-10-27 08:31:15 | Audio Visualizer | `first_contentful_paint` | `837.4 ms` | **PASS** |
 | #4628 | 2026-10-27 08:31:30 | State Sync Daemon | `jank_events` | `0.6 count` | **PASS** |
+| #4629 | 2026-10-27 08:31:45 | CSS-in-JS Themer | `gpu_utilization` | `25.2 %` | **PASS** |
