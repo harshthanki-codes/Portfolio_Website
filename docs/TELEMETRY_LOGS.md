@@ -5079,3 +5079,4 @@
 | #5042 | 2026-10-27 10:15:00 | Progressive Image Loader | `frame_render_budget` | `26.5 ms (60fps)` | **PASS** |
 | #5043 | 2026-10-27 10:15:15 | Viewport Resize Observer | `bundle_size` | `173.2 KB` | **PASS** |
 | #5044 | 2026-10-27 10:15:30 | Audio Visualizer | `bundle_size` | `94.4 KB` | **PASS** |
+| #5045 | 2026-10-27 10:15:45 | Audio Visualizer | `jank_events` | `2.2 count` | **PASS** |
