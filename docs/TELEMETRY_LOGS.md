@@ -4590,3 +4590,4 @@
 | #4553 | 2026-10-27 08:12:45 | Scroll Parallax Manager | `animation_fps` | `64.6 fps` | **PASS** |
 | #4554 | 2026-10-27 08:13:00 | Scroll Parallax Manager | `gpu_utilization` | `23.0 %` | **PASS** |
 | #4555 | 2026-10-27 08:13:15 | WebGL Shader Compiler | `bundle_size` | `244.0 KB` | **PASS** |
+| #4556 | 2026-10-27 08:13:30 | Cache Warmup Service | `animation_fps` | `55.5 fps` | **PASS** |
