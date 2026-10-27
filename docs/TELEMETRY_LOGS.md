@@ -4784,3 +4784,4 @@
 | #4747 | 2026-10-27 09:01:15 | Viewport Resize Observer | `time_to_interactive` | `2250.1 ms` | **PASS** |
 | #4748 | 2026-10-27 09:01:30 | Telemetry Beacon | `frame_render_budget` | `15.6 ms (60fps)` | **PASS** |
 | #4749 | 2026-10-27 09:01:45 | Touch Gesture Dispatcher | `memory_footprint` | `50.0 MB` | **PASS** |
+| #4750 | 2026-10-27 09:02:00 | Micro Frontend Loader | `animation_fps` | `58.4 fps` | **PASS** |
