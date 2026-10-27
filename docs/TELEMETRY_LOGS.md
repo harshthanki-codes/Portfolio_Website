@@ -4977,3 +4977,4 @@
 | #4940 | 2026-10-27 09:49:30 | Audio Visualizer | `animation_fps` | `56.2 fps` | **PASS** |
 | #4941 | 2026-10-27 09:49:45 | 3D Particle Renderer | `animation_fps` | `70.0 fps` | **PASS** |
 | #4942 | 2026-10-27 09:50:00 | Telemetry Beacon | `frame_render_budget` | `24.8 ms (60fps)` | **PASS** |
+| #4943 | 2026-10-27 09:50:15 | Audio Visualizer | `memory_footprint` | `86.1 MB` | **PASS** |
