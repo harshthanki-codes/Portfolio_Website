@@ -4647,3 +4647,4 @@
 | #4610 | 2026-10-27 08:27:00 | Predictive Arc Canvas | `bundle_size` | `91.2 KB` | **PASS** |
 | #4611 | 2026-10-27 08:27:15 | Cache Warmup Service | `gpu_utilization` | `60.4 %` | **PASS** |
 | #4612 | 2026-10-27 08:27:30 | Viewport Resize Observer | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
+| #4613 | 2026-10-27 08:27:45 | Background Video Loop | `gpu_utilization` | `23.8 %` | **PASS** |
