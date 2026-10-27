@@ -5108,3 +5108,4 @@
 | #5071 | 2026-10-27 10:22:15 | Telemetry Beacon | `latency` | `18.0 ms` | **PASS** |
 | #5072 | 2026-10-27 10:22:30 | Predictive Arc Canvas | `time_to_interactive` | `1528.0 ms` | **PASS** |
 | #5073 | 2026-10-27 10:22:45 | 3D Particle Renderer | `bundle_size` | `143.4 KB` | **PASS** |
+| #5074 | 2026-10-27 10:23:00 | Cache Warmup Service | `bundle_size` | `209.1 KB` | **PASS** |
