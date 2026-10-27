@@ -5028,3 +5028,4 @@
 | #4991 | 2026-10-27 10:02:15 | Scroll Parallax Manager | `bundle_size` | `174.4 KB` | **PASS** |
 | #4992 | 2026-10-27 10:02:30 | Lottie Animation Engine | `bundle_size` | `120.2 KB` | **PASS** |
 | #4993 | 2026-10-27 10:02:45 | Predictive Arc Canvas | `frame_render_budget` | `29.9 ms (60fps)` | **PASS** |
+| #4994 | 2026-10-27 10:03:00 | Scroll Parallax Manager | `time_to_interactive` | `2302.6 ms` | **PASS** |
