@@ -5046,3 +5046,4 @@
 | #5009 | 2026-10-27 10:06:45 | Lottie Animation Engine | `first_contentful_paint` | `1217.1 ms` | **PASS** |
 | #5010 | 2026-10-27 10:07:00 | State Sync Daemon | `cpu_usage` | `13.4 %` | **PASS** |
 | #5011 | 2026-10-27 10:07:15 | WebGL Shader Compiler | `bundle_size` | `187.7 KB` | **PASS** |
+| #5012 | 2026-10-27 10:07:30 | Background Video Loop | `memory_footprint` | `49.4 MB` | **PASS** |
