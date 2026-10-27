@@ -4790,3 +4790,4 @@
 | #4753 | 2026-10-27 09:02:45 | Telemetry Beacon | `jank_events` | `2.1 count` | **PASS** |
 | #4754 | 2026-10-27 09:03:00 | Audio Visualizer | `frame_render_budget` | `17.4 ms (60fps)` | **PASS** |
 | #4755 | 2026-10-27 09:03:15 | Background Video Loop | `bundle_size` | `160.5 KB` | **PASS** |
+| #4756 | 2026-10-27 09:03:30 | WebGL Shader Compiler | `time_to_interactive` | `1451.8 ms` | **PASS** |
