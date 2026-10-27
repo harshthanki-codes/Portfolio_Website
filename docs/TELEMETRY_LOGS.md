@@ -4570,3 +4570,4 @@
 | #4533 | 2026-10-27 08:07:45 | Telemetry Beacon | `bundle_size` | `243.1 KB` | **PASS** |
 | #4534 | 2026-10-27 08:08:00 | Lazy Load Optimizer | `jank_events` | `2.3 count` | **PASS** |
 | #4535 | 2026-10-27 08:08:15 | 3D Particle Renderer | `latency` | `22.4 ms` | **PASS** |
+| #4536 | 2026-10-27 08:08:30 | Lazy Load Optimizer | `frame_render_budget` | `19.4 ms (60fps)` | **PASS** |
