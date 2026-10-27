@@ -5116,3 +5116,4 @@
 | #5079 | 2026-10-27 10:24:15 | Viewport Resize Observer | `cpu_usage` | `24.9 %` | **PASS** |
 | #5080 | 2026-10-27 10:24:30 | Background Video Loop | `time_to_interactive` | `1906.2 ms` | **PASS** |
 | #5081 | 2026-10-27 10:24:45 | Scroll Parallax Manager | `gpu_utilization` | `46.9 %` | **PASS** |
+| #5082 | 2026-10-27 10:25:00 | Progressive Image Loader | `jank_events` | `0.8 count` | **PASS** |
