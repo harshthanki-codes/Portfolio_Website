@@ -5131,3 +5131,4 @@
 | #5094 | 2026-10-27 10:28:00 | Viewport Resize Observer | `jank_events` | `0.3 count` | **PASS** |
 | #5095 | 2026-10-27 10:28:15 | Progressive Image Loader | `jank_events` | `1.1 count` | **PASS** |
 | #5096 | 2026-10-27 10:28:30 | State Sync Daemon | `bundle_size` | `161.7 KB` | **PASS** |
+| #5097 | 2026-10-27 10:28:45 | Interactive Tooltip Engine | `animation_fps` | `61.9 fps` | **PASS** |
