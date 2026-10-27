@@ -4860,3 +4860,4 @@
 | #4823 | 2026-10-27 09:20:15 | Viewport Resize Observer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
 | #4824 | 2026-10-27 09:20:30 | Background Video Loop | `gpu_utilization` | `60.5 %` | **PASS** |
 | #4825 | 2026-10-27 09:20:45 | Responsive Grid System | `gpu_utilization` | `36.6 %` | **PASS** |
+| #4826 | 2026-10-27 09:21:00 | Cache Warmup Service | `cpu_usage` | `44.0 %` | **PASS** |
