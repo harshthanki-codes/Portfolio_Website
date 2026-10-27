@@ -4858,3 +4858,4 @@
 | #4821 | 2026-10-27 09:19:45 | 3D Particle Renderer | `cpu_usage` | `16.3 %` | **PASS** |
 | #4822 | 2026-10-27 09:20:00 | SVG Morphing Pipeline | `time_to_interactive` | `2356.8 ms` | **PASS** |
 | #4823 | 2026-10-27 09:20:15 | Viewport Resize Observer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
+| #4824 | 2026-10-27 09:20:30 | Background Video Loop | `gpu_utilization` | `60.5 %` | **PASS** |
