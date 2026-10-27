@@ -5134,3 +5134,4 @@
 | #5097 | 2026-10-27 10:28:45 | Interactive Tooltip Engine | `animation_fps` | `61.9 fps` | **PASS** |
 | #5098 | 2026-10-27 10:29:00 | Micro Frontend Loader | `cpu_usage` | `21.2 %` | **PASS** |
 | #5099 | 2026-10-27 10:29:15 | Interactive Tooltip Engine | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
+| #5100 | 2026-10-27 10:29:30 | Lottie Animation Engine | `latency` | `13.5 ms` | **PASS** |
