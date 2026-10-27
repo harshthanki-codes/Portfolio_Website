@@ -4832,3 +4832,4 @@
 | #4795 | 2026-10-27 09:13:15 | Lottie Animation Engine | `jank_events` | `0.3 count` | **PASS** |
 | #4796 | 2026-10-27 09:13:30 | Background Video Loop | `jank_events` | `0.8 count` | **PASS** |
 | #4797 | 2026-10-27 09:13:45 | CSS-in-JS Themer | `jank_events` | `2.0 count` | **PASS** |
+| #4798 | 2026-10-27 09:14:00 | Background Video Loop | `bundle_size` | `232.1 KB` | **PASS** |
