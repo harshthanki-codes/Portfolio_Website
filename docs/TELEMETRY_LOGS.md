@@ -5025,3 +5025,4 @@
 | #4988 | 2026-10-27 10:01:30 | Dynamic Font Loader | `first_contentful_paint` | `1497.2 ms` | **PASS** |
 | #4989 | 2026-10-27 10:01:45 | Audio Visualizer | `animation_fps` | `58.9 fps` | **PASS** |
 | #4990 | 2026-10-27 10:02:00 | Touch Gesture Dispatcher | `memory_footprint` | `79.9 MB` | **PASS** |
+| #4991 | 2026-10-27 10:02:15 | Scroll Parallax Manager | `bundle_size` | `174.4 KB` | **PASS** |
