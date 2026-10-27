@@ -5020,3 +5020,4 @@
 | #4983 | 2026-10-27 10:00:15 | 3D Particle Renderer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
 | #4984 | 2026-10-27 10:00:30 | Lazy Load Optimizer | `latency` | `10.2 ms` | **PASS** |
 | #4985 | 2026-10-27 10:00:45 | 3D Particle Renderer | `latency` | `23.9 ms` | **PASS** |
+| #4986 | 2026-10-27 10:01:00 | 3D Particle Renderer | `latency` | `13.8 ms` | **PASS** |
