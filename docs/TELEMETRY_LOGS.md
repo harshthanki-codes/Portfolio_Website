@@ -4829,3 +4829,4 @@
 | #4792 | 2026-10-27 09:12:30 | Scroll Parallax Manager | `gpu_utilization` | `58.7 %` | **PASS** |
 | #4793 | 2026-10-27 09:12:45 | Predictive Arc Canvas | `time_to_interactive` | `1743.1 ms` | **PASS** |
 | #4794 | 2026-10-27 09:13:00 | Viewport Resize Observer | `cpu_usage` | `21.6 %` | **PASS** |
+| #4795 | 2026-10-27 09:13:15 | Lottie Animation Engine | `jank_events` | `0.3 count` | **PASS** |
