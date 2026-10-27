@@ -4744,3 +4744,4 @@
 | #4707 | 2026-10-27 08:51:15 | Background Video Loop | `latency` | `13.8 ms` | **PASS** |
 | #4708 | 2026-10-27 08:51:30 | WebGL Shader Compiler | `latency` | `17.6 ms` | **PASS** |
 | #4709 | 2026-10-27 08:51:45 | WebGL Shader Compiler | `latency` | `24.1 ms` | **PASS** |
+| #4710 | 2026-10-27 08:52:00 | Background Video Loop | `cpu_usage` | `37.6 %` | **PASS** |
