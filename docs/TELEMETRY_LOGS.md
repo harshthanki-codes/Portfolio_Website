@@ -4892,3 +4892,4 @@
 | #4855 | 2026-10-27 09:28:15 | Lottie Animation Engine | `jank_events` | `1.4 count` | **PASS** |
 | #4856 | 2026-10-27 09:28:30 | Predictive Arc Canvas | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
 | #4857 | 2026-10-27 09:28:45 | SVG Morphing Pipeline | `frame_render_budget` | `20.5 ms (60fps)` | **PASS** |
+| #4858 | 2026-10-27 09:29:00 | Lottie Animation Engine | `first_contentful_paint` | `1230.7 ms` | **PASS** |
