@@ -4732,3 +4732,4 @@
 | #4695 | 2026-10-27 08:48:15 | SVG Morphing Pipeline | `frame_render_budget` | `25.2 ms (60fps)` | **PASS** |
 | #4696 | 2026-10-27 08:48:30 | 3D Particle Renderer | `animation_fps` | `62.3 fps` | **PASS** |
 | #4697 | 2026-10-27 08:48:45 | WebGL Shader Compiler | `cpu_usage` | `13.6 %` | **PASS** |
+| #4698 | 2026-10-27 08:49:00 | Background Video Loop | `memory_footprint` | `112.9 MB` | **PASS** |
