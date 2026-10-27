@@ -5060,3 +5060,4 @@
 | #5023 | 2026-10-27 10:10:15 | WebGL Shader Compiler | `time_to_interactive` | `2234.6 ms` | **PASS** |
 | #5024 | 2026-10-27 10:10:30 | Scroll Parallax Manager | `bundle_size` | `242.3 KB` | **PASS** |
 | #5025 | 2026-10-27 10:10:45 | Interactive Tooltip Engine | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
+| #5026 | 2026-10-27 10:11:00 | WebGL Shader Compiler | `memory_footprint` | `59.7 MB` | **PASS** |
