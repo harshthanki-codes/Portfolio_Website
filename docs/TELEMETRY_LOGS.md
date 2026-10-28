@@ -5261,3 +5261,4 @@
 | #5221 | 2026-10-28 08:29:45 | Viewport Resize Observer | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
 | #5222 | 2026-10-28 08:30:00 | Micro Frontend Loader | `first_contentful_paint` | `908.1 ms` | **PASS** |
 | #5223 | 2026-10-28 08:30:15 | Telemetry Beacon | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
+| #5224 | 2026-10-28 08:30:30 | CSS-in-JS Themer | `latency` | `13.4 ms` | **PASS** |
