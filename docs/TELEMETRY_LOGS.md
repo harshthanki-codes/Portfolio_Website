@@ -5275,3 +5275,4 @@
 | #5235 | 2026-10-28 08:33:15 | Lottie Animation Engine | `gpu_utilization` | `35.5 %` | **PASS** |
 | #5236 | 2026-10-28 08:33:30 | CSS-in-JS Themer | `frame_render_budget` | `15.5 ms (60fps)` | **PASS** |
 | #5237 | 2026-10-28 08:33:45 | Predictive Arc Canvas | `first_contentful_paint` | `1210.2 ms` | **PASS** |
+| #5238 | 2026-10-28 08:34:00 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
