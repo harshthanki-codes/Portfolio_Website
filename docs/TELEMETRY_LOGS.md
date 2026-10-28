@@ -5438,3 +5438,4 @@
 | #5398 | 2026-10-28 09:14:00 | Micro Frontend Loader | `animation_fps` | `55.4 fps` | **PASS** |
 | #5399 | 2026-10-28 09:14:15 | Dynamic Font Loader | `time_to_interactive` | `2158.9 ms` | **PASS** |
 | #5400 | 2026-10-28 09:14:30 | Responsive Grid System | `gpu_utilization` | `44.7 %` | **PASS** |
+| #5401 | 2026-10-28 09:14:45 | Cache Warmup Service | `jank_events` | `0.9 count` | **PASS** |
