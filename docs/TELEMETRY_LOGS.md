@@ -5209,3 +5209,4 @@
 | #5169 | 2026-10-28 08:16:45 | CSS-in-JS Themer | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
 | #5170 | 2026-10-28 08:17:00 | Lottie Animation Engine | `bundle_size` | `187.7 KB` | **PASS** |
 | #5171 | 2026-10-28 08:17:15 | CSS-in-JS Themer | `jank_events` | `1.2 count` | **PASS** |
+| #5172 | 2026-10-28 08:17:30 | Dynamic Font Loader | `jank_events` | `2.1 count` | **PASS** |
