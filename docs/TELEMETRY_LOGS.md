@@ -5430,3 +5430,4 @@
 | #5390 | 2026-10-28 09:12:00 | WebGL Shader Compiler | `jank_events` | `2.2 count` | **PASS** |
 | #5391 | 2026-10-28 09:12:15 | Viewport Resize Observer | `first_contentful_paint` | `1277.0 ms` | **PASS** |
 | #5392 | 2026-10-28 09:12:30 | SVG Morphing Pipeline | `animation_fps` | `61.9 fps` | **PASS** |
+| #5393 | 2026-10-28 09:12:45 | CSS-in-JS Themer | `first_contentful_paint` | `978.8 ms` | **PASS** |
