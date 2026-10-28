@@ -5333,3 +5333,4 @@
 | #5293 | 2026-10-28 08:47:45 | Telemetry Beacon | `time_to_interactive` | `1749.8 ms` | **PASS** |
 | #5294 | 2026-10-28 08:48:00 | Telemetry Beacon | `cpu_usage` | `34.7 %` | **PASS** |
 | #5295 | 2026-10-28 08:48:15 | Telemetry Beacon | `gpu_utilization` | `40.2 %` | **PASS** |
+| #5296 | 2026-10-28 08:48:30 | SVG Morphing Pipeline | `bundle_size` | `172.3 KB` | **PASS** |
