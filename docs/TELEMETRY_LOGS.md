@@ -5412,3 +5412,4 @@
 | #5372 | 2026-10-28 09:07:30 | CSS-in-JS Themer | `gpu_utilization` | `22.2 %` | **PASS** |
 | #5373 | 2026-10-28 09:07:45 | Interactive Tooltip Engine | `bundle_size` | `169.9 KB` | **PASS** |
 | #5374 | 2026-10-28 09:08:00 | Cache Warmup Service | `memory_footprint` | `74.5 MB` | **PASS** |
+| #5375 | 2026-10-28 09:08:15 | Lottie Animation Engine | `frame_render_budget` | `24.9 ms (60fps)` | **PASS** |
