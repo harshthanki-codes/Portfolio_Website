@@ -5563,3 +5563,4 @@
 | #5523 | 2026-10-28 09:45:15 | Predictive Arc Canvas | `frame_render_budget` | `29.7 ms (60fps)` | **PASS** |
 | #5524 | 2026-10-28 09:45:30 | Predictive Arc Canvas | `latency` | `6.9 ms` | **PASS** |
 | #5525 | 2026-10-28 09:45:45 | Telemetry Beacon | `animation_fps` | `73.6 fps` | **PASS** |
+| #5526 | 2026-10-28 09:46:00 | WebGL Shader Compiler | `cpu_usage` | `26.5 %` | **PASS** |
