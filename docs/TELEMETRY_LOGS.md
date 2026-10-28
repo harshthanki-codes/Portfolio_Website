@@ -5277,3 +5277,4 @@
 | #5237 | 2026-10-28 08:33:45 | Predictive Arc Canvas | `first_contentful_paint` | `1210.2 ms` | **PASS** |
 | #5238 | 2026-10-28 08:34:00 | WebGL Shader Compiler | `jank_events` | `2.4 count` | **PASS** |
 | #5239 | 2026-10-28 08:34:15 | Scroll Parallax Manager | `animation_fps` | `65.4 fps` | **PASS** |
+| #5240 | 2026-10-28 08:34:30 | Telemetry Beacon | `gpu_utilization` | `22.0 %` | **PASS** |
