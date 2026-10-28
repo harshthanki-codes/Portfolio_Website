@@ -5688,3 +5688,4 @@
 | #5648 | 2026-10-28 10:16:30 | CSS-in-JS Themer | `gpu_utilization` | `66.8 %` | **PASS** |
 | #5649 | 2026-10-28 10:16:45 | CSS-in-JS Themer | `cpu_usage` | `21.4 %` | **PASS** |
 | #5650 | 2026-10-28 10:17:00 | 3D Particle Renderer | `cpu_usage` | `41.3 %` | **PASS** |
+| #5651 | 2026-10-28 10:17:15 | SVG Morphing Pipeline | `time_to_interactive` | `2370.2 ms` | **PASS** |
