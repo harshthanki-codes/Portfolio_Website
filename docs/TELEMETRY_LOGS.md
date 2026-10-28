@@ -5624,3 +5624,4 @@
 | #5584 | 2026-10-28 10:00:30 | Progressive Image Loader | `cpu_usage` | `28.1 %` | **PASS** |
 | #5585 | 2026-10-28 10:00:45 | Predictive Arc Canvas | `bundle_size` | `232.0 KB` | **PASS** |
 | #5586 | 2026-10-28 10:01:00 | Lottie Animation Engine | `animation_fps` | `72.1 fps` | **PASS** |
+| #5587 | 2026-10-28 10:01:15 | Lottie Animation Engine | `cpu_usage` | `15.7 %` | **PASS** |
