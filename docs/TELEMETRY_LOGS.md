@@ -5491,3 +5491,4 @@
 | #5451 | 2026-10-28 09:27:15 | 3D Particle Renderer | `animation_fps` | `58.4 fps` | **PASS** |
 | #5452 | 2026-10-28 09:27:30 | Cache Warmup Service | `bundle_size` | `117.8 KB` | **PASS** |
 | #5453 | 2026-10-28 09:27:45 | Progressive Image Loader | `animation_fps` | `64.2 fps` | **PASS** |
+| #5454 | 2026-10-28 09:28:00 | Background Video Loop | `gpu_utilization` | `48.3 %` | **PASS** |
