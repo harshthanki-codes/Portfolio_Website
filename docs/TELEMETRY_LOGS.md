@@ -5187,3 +5187,4 @@
 | #5147 | 2026-10-28 08:11:15 | Viewport Resize Observer | `animation_fps` | `60.2 fps` | **PASS** |
 | #5148 | 2026-10-28 08:11:30 | Telemetry Beacon | `first_contentful_paint` | `1221.0 ms` | **PASS** |
 | #5149 | 2026-10-28 08:11:45 | Telemetry Beacon | `frame_render_budget` | `17.2 ms (60fps)` | **PASS** |
+| #5150 | 2026-10-28 08:12:00 | 3D Particle Renderer | `jank_events` | `2.2 count` | **PASS** |
