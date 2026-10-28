@@ -5644,3 +5644,4 @@
 | #5604 | 2026-10-28 10:05:30 | Dynamic Font Loader | `gpu_utilization` | `40.9 %` | **PASS** |
 | #5605 | 2026-10-28 10:05:45 | Cache Warmup Service | `animation_fps` | `55.6 fps` | **PASS** |
 | #5606 | 2026-10-28 10:06:00 | Touch Gesture Dispatcher | `bundle_size` | `205.7 KB` | **PASS** |
+| #5607 | 2026-10-28 10:06:15 | WebGL Shader Compiler | `animation_fps` | `58.8 fps` | **PASS** |
