@@ -5565,3 +5565,4 @@
 | #5525 | 2026-10-28 09:45:45 | Telemetry Beacon | `animation_fps` | `73.6 fps` | **PASS** |
 | #5526 | 2026-10-28 09:46:00 | WebGL Shader Compiler | `cpu_usage` | `26.5 %` | **PASS** |
 | #5527 | 2026-10-28 09:46:15 | Predictive Arc Canvas | `animation_fps` | `58.0 fps` | **PASS** |
+| #5528 | 2026-10-28 09:46:30 | CSS-in-JS Themer | `gpu_utilization` | `56.8 %` | **PASS** |
