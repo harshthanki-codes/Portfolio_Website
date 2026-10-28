@@ -5211,3 +5211,4 @@
 | #5171 | 2026-10-28 08:17:15 | CSS-in-JS Themer | `jank_events` | `1.2 count` | **PASS** |
 | #5172 | 2026-10-28 08:17:30 | Dynamic Font Loader | `jank_events` | `2.1 count` | **PASS** |
 | #5173 | 2026-10-28 08:17:45 | Responsive Grid System | `jank_events` | `0.1 count` | **PASS** |
+| #5174 | 2026-10-28 08:18:00 | Cache Warmup Service | `jank_events` | `1.3 count` | **PASS** |
