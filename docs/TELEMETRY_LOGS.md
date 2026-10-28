@@ -5263,3 +5263,4 @@
 | #5223 | 2026-10-28 08:30:15 | Telemetry Beacon | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
 | #5224 | 2026-10-28 08:30:30 | CSS-in-JS Themer | `latency` | `13.4 ms` | **PASS** |
 | #5225 | 2026-10-28 08:30:45 | Viewport Resize Observer | `gpu_utilization` | `63.1 %` | **PASS** |
+| #5226 | 2026-10-28 08:31:00 | Progressive Image Loader | `jank_events` | `1.0 count` | **PASS** |
