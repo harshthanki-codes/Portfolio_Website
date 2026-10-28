@@ -5477,3 +5477,4 @@
 | #5437 | 2026-10-28 09:23:45 | CSS-in-JS Themer | `first_contentful_paint` | `1065.4 ms` | **PASS** |
 | #5438 | 2026-10-28 09:24:00 | Responsive Grid System | `animation_fps` | `68.0 fps` | **PASS** |
 | #5439 | 2026-10-28 09:24:15 | Touch Gesture Dispatcher | `bundle_size` | `167.7 KB` | **PASS** |
+| #5440 | 2026-10-28 09:24:30 | Responsive Grid System | `jank_events` | `0.5 count` | **PASS** |
