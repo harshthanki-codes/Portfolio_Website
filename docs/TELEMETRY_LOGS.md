@@ -5626,3 +5626,4 @@
 | #5586 | 2026-10-28 10:01:00 | Lottie Animation Engine | `animation_fps` | `72.1 fps` | **PASS** |
 | #5587 | 2026-10-28 10:01:15 | Lottie Animation Engine | `cpu_usage` | `15.7 %` | **PASS** |
 | #5588 | 2026-10-28 10:01:30 | Interactive Tooltip Engine | `gpu_utilization` | `47.6 %` | **PASS** |
+| #5589 | 2026-10-28 10:01:45 | Dynamic Font Loader | `cpu_usage` | `43.5 %` | **PASS** |
