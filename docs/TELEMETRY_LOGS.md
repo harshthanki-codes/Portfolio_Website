@@ -5469,3 +5469,4 @@
 | #5429 | 2026-10-28 09:21:45 | WebGL Shader Compiler | `first_contentful_paint` | `1241.4 ms` | **PASS** |
 | #5430 | 2026-10-28 09:22:00 | SVG Morphing Pipeline | `jank_events` | `2.7 count` | **PASS** |
 | #5431 | 2026-10-28 09:22:15 | WebGL Shader Compiler | `memory_footprint` | `63.3 MB` | **PASS** |
+| #5432 | 2026-10-28 09:22:30 | WebGL Shader Compiler | `animation_fps` | `74.1 fps` | **PASS** |
