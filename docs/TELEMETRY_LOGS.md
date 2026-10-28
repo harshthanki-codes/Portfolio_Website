@@ -5374,3 +5374,4 @@
 | #5334 | 2026-10-28 08:58:00 | Dynamic Font Loader | `gpu_utilization` | `57.0 %` | **PASS** |
 | #5335 | 2026-10-28 08:58:15 | Dynamic Font Loader | `animation_fps` | `73.1 fps` | **PASS** |
 | #5336 | 2026-10-28 08:58:30 | SVG Morphing Pipeline | `memory_footprint` | `87.1 MB` | **PASS** |
+| #5337 | 2026-10-28 08:58:45 | Cache Warmup Service | `cpu_usage` | `17.4 %` | **PASS** |
