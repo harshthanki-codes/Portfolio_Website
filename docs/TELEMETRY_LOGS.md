@@ -5449,3 +5449,4 @@
 | #5409 | 2026-10-28 09:16:45 | Telemetry Beacon | `bundle_size` | `159.0 KB` | **PASS** |
 | #5410 | 2026-10-28 09:17:00 | Telemetry Beacon | `cpu_usage` | `17.2 %` | **PASS** |
 | #5411 | 2026-10-28 09:17:15 | Touch Gesture Dispatcher | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
+| #5412 | 2026-10-28 09:17:30 | Dynamic Font Loader | `jank_events` | `1.1 count` | **PASS** |
