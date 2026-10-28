@@ -5428,3 +5428,4 @@
 | #5388 | 2026-10-28 09:11:30 | Telemetry Beacon | `latency` | `20.7 ms` | **PASS** |
 | #5389 | 2026-10-28 09:11:45 | Background Video Loop | `animation_fps` | `72.8 fps` | **PASS** |
 | #5390 | 2026-10-28 09:12:00 | WebGL Shader Compiler | `jank_events` | `2.2 count` | **PASS** |
+| #5391 | 2026-10-28 09:12:15 | Viewport Resize Observer | `first_contentful_paint` | `1277.0 ms` | **PASS** |
