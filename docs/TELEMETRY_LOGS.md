@@ -5346,3 +5346,4 @@
 | #5306 | 2026-10-28 08:51:00 | Lottie Animation Engine | `frame_render_budget` | `26.8 ms (60fps)` | **PASS** |
 | #5307 | 2026-10-28 08:51:15 | Interactive Tooltip Engine | `memory_footprint` | `102.5 MB` | **PASS** |
 | #5308 | 2026-10-28 08:51:30 | Touch Gesture Dispatcher | `memory_footprint` | `63.1 MB` | **PASS** |
+| #5309 | 2026-10-28 08:51:45 | Lottie Animation Engine | `animation_fps` | `55.0 fps` | **PASS** |
