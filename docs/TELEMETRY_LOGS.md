@@ -5382,3 +5382,4 @@
 | #5342 | 2026-10-28 09:00:00 | Viewport Resize Observer | `cpu_usage` | `42.1 %` | **PASS** |
 | #5343 | 2026-10-28 09:00:15 | CSS-in-JS Themer | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
 | #5344 | 2026-10-28 09:00:30 | Dynamic Font Loader | `jank_events` | `1.1 count` | **PASS** |
+| #5345 | 2026-10-28 09:00:45 | Telemetry Beacon | `jank_events` | `2.8 count` | **PASS** |
