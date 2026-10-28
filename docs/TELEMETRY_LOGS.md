@@ -5631,3 +5631,4 @@
 | #5591 | 2026-10-28 10:02:15 | Predictive Arc Canvas | `animation_fps` | `65.2 fps` | **PASS** |
 | #5592 | 2026-10-28 10:02:30 | Responsive Grid System | `latency` | `15.9 ms` | **PASS** |
 | #5593 | 2026-10-28 10:02:45 | Cache Warmup Service | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
+| #5594 | 2026-10-28 10:03:00 | Scroll Parallax Manager | `frame_render_budget` | `21.5 ms (60fps)` | **PASS** |
