@@ -5616,3 +5616,4 @@
 | #5576 | 2026-10-28 09:58:30 | Viewport Resize Observer | `memory_footprint` | `106.5 MB` | **PASS** |
 | #5577 | 2026-10-28 09:58:45 | CSS-in-JS Themer | `memory_footprint` | `45.2 MB` | **PASS** |
 | #5578 | 2026-10-28 09:59:00 | Touch Gesture Dispatcher | `latency` | `6.1 ms` | **PASS** |
+| #5579 | 2026-10-28 09:59:15 | Progressive Image Loader | `jank_events` | `0.2 count` | **PASS** |
