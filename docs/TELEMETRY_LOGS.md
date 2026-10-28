@@ -5233,3 +5233,4 @@
 | #5193 | 2026-10-28 08:22:45 | WebGL Shader Compiler | `time_to_interactive` | `1963.6 ms` | **PASS** |
 | #5194 | 2026-10-28 08:23:00 | Responsive Grid System | `cpu_usage` | `24.7 %` | **PASS** |
 | #5195 | 2026-10-28 08:23:15 | Audio Visualizer | `first_contentful_paint` | `1407.2 ms` | **PASS** |
+| #5196 | 2026-10-28 08:23:30 | WebGL Shader Compiler | `gpu_utilization` | `27.2 %` | **PASS** |
