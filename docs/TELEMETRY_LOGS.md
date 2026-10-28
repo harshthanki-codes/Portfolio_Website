@@ -5728,3 +5728,4 @@
 | #5688 | 2026-10-28 10:26:30 | Cache Warmup Service | `first_contentful_paint` | `1343.5 ms` | **PASS** |
 | #5689 | 2026-10-28 10:26:45 | Interactive Tooltip Engine | `memory_footprint` | `61.0 MB` | **PASS** |
 | #5690 | 2026-10-28 10:27:00 | Telemetry Beacon | `cpu_usage` | `40.4 %` | **PASS** |
+| #5691 | 2026-10-28 10:27:15 | Lottie Animation Engine | `jank_events` | `1.6 count` | **PASS** |
