@@ -5265,3 +5265,4 @@
 | #5225 | 2026-10-28 08:30:45 | Viewport Resize Observer | `gpu_utilization` | `63.1 %` | **PASS** |
 | #5226 | 2026-10-28 08:31:00 | Progressive Image Loader | `jank_events` | `1.0 count` | **PASS** |
 | #5227 | 2026-10-28 08:31:15 | 3D Particle Renderer | `bundle_size` | `179.0 KB` | **PASS** |
+| #5228 | 2026-10-28 08:31:30 | WebGL Shader Compiler | `first_contentful_paint` | `1206.1 ms` | **PASS** |
