@@ -5607,3 +5607,4 @@
 | #5567 | 2026-10-28 09:56:15 | Telemetry Beacon | `animation_fps` | `70.1 fps` | **PASS** |
 | #5568 | 2026-10-28 09:56:30 | Dynamic Font Loader | `bundle_size` | `87.5 KB` | **PASS** |
 | #5569 | 2026-10-28 09:56:45 | Telemetry Beacon | `cpu_usage` | `20.3 %` | **PASS** |
+| #5570 | 2026-10-28 09:57:00 | Dynamic Font Loader | `latency` | `18.1 ms` | **PASS** |
