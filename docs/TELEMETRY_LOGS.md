@@ -5602,3 +5602,4 @@
 | #5562 | 2026-10-28 09:55:00 | Touch Gesture Dispatcher | `jank_events` | `0.9 count` | **PASS** |
 | #5563 | 2026-10-28 09:55:15 | Lottie Animation Engine | `first_contentful_paint` | `1474.4 ms` | **PASS** |
 | #5564 | 2026-10-28 09:55:30 | State Sync Daemon | `latency` | `21.1 ms` | **PASS** |
+| #5565 | 2026-10-28 09:55:45 | Viewport Resize Observer | `cpu_usage` | `17.4 %` | **PASS** |
