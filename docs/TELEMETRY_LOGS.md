@@ -5734,3 +5734,4 @@
 | #5694 | 2026-10-28 10:28:00 | WebGL Shader Compiler | `cpu_usage` | `43.3 %` | **PASS** |
 | #5695 | 2026-10-28 10:28:15 | Predictive Arc Canvas | `memory_footprint` | `52.8 MB` | **PASS** |
 | #5696 | 2026-10-28 10:28:30 | Cache Warmup Service | `cpu_usage` | `28.3 %` | **PASS** |
+| #5697 | 2026-10-28 10:28:45 | Viewport Resize Observer | `time_to_interactive` | `1721.5 ms` | **PASS** |
