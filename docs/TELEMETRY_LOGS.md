@@ -5255,3 +5255,4 @@
 | #5215 | 2026-10-28 08:28:15 | Scroll Parallax Manager | `animation_fps` | `60.8 fps` | **PASS** |
 | #5216 | 2026-10-28 08:28:30 | Scroll Parallax Manager | `cpu_usage` | `35.3 %` | **PASS** |
 | #5217 | 2026-10-28 08:28:45 | Micro Frontend Loader | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
+| #5218 | 2026-10-28 08:29:00 | CSS-in-JS Themer | `frame_render_budget` | `18.7 ms (60fps)` | **PASS** |
