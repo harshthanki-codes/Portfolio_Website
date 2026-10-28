@@ -5159,3 +5159,4 @@
 | #5119 | 2026-10-28 08:04:15 | Touch Gesture Dispatcher | `cpu_usage` | `21.6 %` | **PASS** |
 | #5120 | 2026-10-28 08:04:30 | Telemetry Beacon | `first_contentful_paint` | `1020.4 ms` | **PASS** |
 | #5121 | 2026-10-28 08:04:45 | Responsive Grid System | `time_to_interactive` | `1804.8 ms` | **PASS** |
+| #5122 | 2026-10-28 08:05:00 | Telemetry Beacon | `jank_events` | `2.6 count` | **PASS** |
