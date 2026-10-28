@@ -5145,3 +5145,4 @@
 | #5105 | 2026-10-28 08:00:45 | Progressive Image Loader | `animation_fps` | `68.4 fps` | **PASS** |
 | #5106 | 2026-10-28 08:01:00 | Micro Frontend Loader | `memory_footprint` | `54.9 MB` | **PASS** |
 | #5107 | 2026-10-28 08:01:15 | WebGL Shader Compiler | `jank_events` | `2.8 count` | **PASS** |
+| #5108 | 2026-10-28 08:01:30 | Dynamic Font Loader | `jank_events` | `0.5 count` | **PASS** |
