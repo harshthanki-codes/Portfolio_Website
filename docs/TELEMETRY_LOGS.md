@@ -5258,3 +5258,4 @@
 | #5218 | 2026-10-28 08:29:00 | CSS-in-JS Themer | `frame_render_budget` | `18.7 ms (60fps)` | **PASS** |
 | #5219 | 2026-10-28 08:29:15 | WebGL Shader Compiler | `time_to_interactive` | `1598.8 ms` | **PASS** |
 | #5220 | 2026-10-28 08:29:30 | Predictive Arc Canvas | `cpu_usage` | `22.7 %` | **PASS** |
+| #5221 | 2026-10-28 08:29:45 | Viewport Resize Observer | `frame_render_budget` | `18.2 ms (60fps)` | **PASS** |
