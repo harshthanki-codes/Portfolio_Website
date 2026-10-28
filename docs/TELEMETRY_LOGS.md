@@ -5454,3 +5454,4 @@
 | #5414 | 2026-10-28 09:18:00 | 3D Particle Renderer | `gpu_utilization` | `67.4 %` | **PASS** |
 | #5415 | 2026-10-28 09:18:15 | Scroll Parallax Manager | `gpu_utilization` | `45.6 %` | **PASS** |
 | #5416 | 2026-10-28 09:18:30 | Audio Visualizer | `memory_footprint` | `118.4 MB` | **PASS** |
+| #5417 | 2026-10-28 09:18:45 | WebGL Shader Compiler | `memory_footprint` | `76.6 MB` | **PASS** |
