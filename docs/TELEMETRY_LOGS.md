@@ -5540,3 +5540,4 @@
 | #5500 | 2026-10-28 09:39:30 | Touch Gesture Dispatcher | `time_to_interactive` | `1533.3 ms` | **PASS** |
 | #5501 | 2026-10-28 09:39:45 | Touch Gesture Dispatcher | `gpu_utilization` | `20.8 %` | **PASS** |
 | #5502 | 2026-10-28 09:40:00 | Micro Frontend Loader | `animation_fps` | `55.0 fps` | **PASS** |
+| #5503 | 2026-10-28 09:40:15 | Scroll Parallax Manager | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
