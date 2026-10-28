@@ -5214,3 +5214,4 @@
 | #5174 | 2026-10-28 08:18:00 | Cache Warmup Service | `jank_events` | `1.3 count` | **PASS** |
 | #5175 | 2026-10-28 08:18:15 | Progressive Image Loader | `latency` | `9.1 ms` | **PASS** |
 | #5176 | 2026-10-28 08:18:30 | Background Video Loop | `bundle_size` | `117.9 KB` | **PASS** |
+| #5177 | 2026-10-28 08:18:45 | Micro Frontend Loader | `frame_render_budget` | `24.4 ms (60fps)` | **PASS** |
