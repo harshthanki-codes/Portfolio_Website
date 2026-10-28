@@ -5689,3 +5689,4 @@
 | #5649 | 2026-10-28 10:16:45 | CSS-in-JS Themer | `cpu_usage` | `21.4 %` | **PASS** |
 | #5650 | 2026-10-28 10:17:00 | 3D Particle Renderer | `cpu_usage` | `41.3 %` | **PASS** |
 | #5651 | 2026-10-28 10:17:15 | SVG Morphing Pipeline | `time_to_interactive` | `2370.2 ms` | **PASS** |
+| #5652 | 2026-10-28 10:17:30 | Background Video Loop | `animation_fps` | `66.9 fps` | **PASS** |
