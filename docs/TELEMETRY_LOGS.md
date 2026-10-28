@@ -5239,3 +5239,4 @@
 | #5199 | 2026-10-28 08:24:15 | Scroll Parallax Manager | `latency` | `23.8 ms` | **PASS** |
 | #5200 | 2026-10-28 08:24:30 | Scroll Parallax Manager | `time_to_interactive` | `2448.0 ms` | **PASS** |
 | #5201 | 2026-10-28 08:24:45 | Viewport Resize Observer | `bundle_size` | `100.7 KB` | **PASS** |
+| #5202 | 2026-10-28 08:25:00 | Scroll Parallax Manager | `memory_footprint` | `73.3 MB` | **PASS** |
