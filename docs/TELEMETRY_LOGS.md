@@ -5712,3 +5712,4 @@
 | #5672 | 2026-10-28 10:22:30 | SVG Morphing Pipeline | `first_contentful_paint` | `861.4 ms` | **PASS** |
 | #5673 | 2026-10-28 10:22:45 | Viewport Resize Observer | `animation_fps` | `58.9 fps` | **PASS** |
 | #5674 | 2026-10-28 10:23:00 | SVG Morphing Pipeline | `cpu_usage` | `24.0 %` | **PASS** |
+| #5675 | 2026-10-28 10:23:15 | WebGL Shader Compiler | `animation_fps` | `72.6 fps` | **PASS** |
