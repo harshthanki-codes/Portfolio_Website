@@ -5726,3 +5726,4 @@
 | #5686 | 2026-10-28 10:26:00 | Predictive Arc Canvas | `time_to_interactive` | `2496.4 ms` | **PASS** |
 | #5687 | 2026-10-28 10:26:15 | Cache Warmup Service | `cpu_usage` | `29.8 %` | **PASS** |
 | #5688 | 2026-10-28 10:26:30 | Cache Warmup Service | `first_contentful_paint` | `1343.5 ms` | **PASS** |
+| #5689 | 2026-10-28 10:26:45 | Interactive Tooltip Engine | `memory_footprint` | `61.0 MB` | **PASS** |
