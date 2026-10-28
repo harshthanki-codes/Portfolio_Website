@@ -5398,3 +5398,4 @@
 | #5358 | 2026-10-28 09:04:00 | Lottie Animation Engine | `memory_footprint` | `49.2 MB` | **PASS** |
 | #5359 | 2026-10-28 09:04:15 | Responsive Grid System | `animation_fps` | `71.9 fps` | **PASS** |
 | #5360 | 2026-10-28 09:04:30 | CSS-in-JS Themer | `memory_footprint` | `100.5 MB` | **PASS** |
+| #5361 | 2026-10-28 09:04:45 | Scroll Parallax Manager | `bundle_size` | `163.4 KB` | **PASS** |
