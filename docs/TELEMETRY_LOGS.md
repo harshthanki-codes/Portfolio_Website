@@ -5552,3 +5552,4 @@
 | #5512 | 2026-10-28 09:42:30 | Viewport Resize Observer | `memory_footprint` | `51.1 MB` | **PASS** |
 | #5513 | 2026-10-28 09:42:45 | Viewport Resize Observer | `first_contentful_paint` | `896.3 ms` | **PASS** |
 | #5514 | 2026-10-28 09:43:00 | Background Video Loop | `cpu_usage` | `19.1 %` | **PASS** |
+| #5515 | 2026-10-28 09:43:15 | Predictive Arc Canvas | `gpu_utilization` | `37.2 %` | **PASS** |
