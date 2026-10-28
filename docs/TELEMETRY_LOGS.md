@@ -5245,3 +5245,4 @@
 | #5205 | 2026-10-28 08:25:45 | Lottie Animation Engine | `memory_footprint` | `48.8 MB` | **PASS** |
 | #5206 | 2026-10-28 08:26:00 | Progressive Image Loader | `animation_fps` | `61.9 fps` | **PASS** |
 | #5207 | 2026-10-28 08:26:15 | Micro Frontend Loader | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
+| #5208 | 2026-10-28 08:26:30 | Lazy Load Optimizer | `jank_events` | `1.4 count` | **PASS** |
