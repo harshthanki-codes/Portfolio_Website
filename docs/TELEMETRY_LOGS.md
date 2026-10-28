@@ -5473,3 +5473,4 @@
 | #5433 | 2026-10-28 09:22:45 | State Sync Daemon | `animation_fps` | `63.0 fps` | **PASS** |
 | #5434 | 2026-10-28 09:23:00 | SVG Morphing Pipeline | `jank_events` | `1.4 count` | **PASS** |
 | #5435 | 2026-10-28 09:23:15 | Touch Gesture Dispatcher | `time_to_interactive` | `1400.0 ms` | **PASS** |
+| #5436 | 2026-10-28 09:23:30 | Lazy Load Optimizer | `memory_footprint` | `103.3 MB` | **PASS** |
