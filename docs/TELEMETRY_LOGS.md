@@ -5499,3 +5499,4 @@
 | #5459 | 2026-10-28 09:29:15 | Touch Gesture Dispatcher | `first_contentful_paint` | `831.4 ms` | **PASS** |
 | #5460 | 2026-10-28 09:29:30 | WebGL Shader Compiler | `frame_render_budget` | `19.9 ms (60fps)` | **PASS** |
 | #5461 | 2026-10-28 09:29:45 | Viewport Resize Observer | `jank_events` | `2.2 count` | **PASS** |
+| #5462 | 2026-10-28 09:30:00 | State Sync Daemon | `frame_render_budget` | `19.4 ms (60fps)` | **PASS** |
