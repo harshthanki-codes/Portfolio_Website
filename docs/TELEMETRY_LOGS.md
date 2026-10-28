@@ -5510,3 +5510,4 @@
 | #5470 | 2026-10-28 09:32:00 | Lazy Load Optimizer | `memory_footprint` | `82.1 MB` | **PASS** |
 | #5471 | 2026-10-28 09:32:15 | WebGL Shader Compiler | `animation_fps` | `60.8 fps` | **PASS** |
 | #5472 | 2026-10-28 09:32:30 | Background Video Loop | `latency` | `19.4 ms` | **PASS** |
+| #5473 | 2026-10-28 09:32:45 | WebGL Shader Compiler | `latency` | `9.8 ms` | **PASS** |
