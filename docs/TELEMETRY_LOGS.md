@@ -5293,3 +5293,4 @@
 | #5253 | 2026-10-28 08:37:45 | Touch Gesture Dispatcher | `animation_fps` | `73.1 fps` | **PASS** |
 | #5254 | 2026-10-28 08:38:00 | Touch Gesture Dispatcher | `jank_events` | `0.0 count` | **PASS** |
 | #5255 | 2026-10-28 08:38:15 | Viewport Resize Observer | `bundle_size` | `246.9 KB` | **PASS** |
+| #5256 | 2026-10-28 08:38:30 | Lazy Load Optimizer | `gpu_utilization` | `50.5 %` | **PASS** |
