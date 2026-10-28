@@ -5327,3 +5327,4 @@
 | #5287 | 2026-10-28 08:46:15 | Cache Warmup Service | `animation_fps` | `68.0 fps` | **PASS** |
 | #5288 | 2026-10-28 08:46:30 | Progressive Image Loader | `animation_fps` | `67.5 fps` | **PASS** |
 | #5289 | 2026-10-28 08:46:45 | Lazy Load Optimizer | `jank_events` | `2.7 count` | **PASS** |
+| #5290 | 2026-10-28 08:47:00 | Background Video Loop | `bundle_size` | `236.1 KB` | **PASS** |
