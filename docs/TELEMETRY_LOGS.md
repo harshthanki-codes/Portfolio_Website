@@ -5703,3 +5703,4 @@
 | #5663 | 2026-10-28 10:20:15 | Cache Warmup Service | `animation_fps` | `73.8 fps` | **PASS** |
 | #5664 | 2026-10-28 10:20:30 | Lottie Animation Engine | `animation_fps` | `60.4 fps` | **PASS** |
 | #5665 | 2026-10-28 10:20:45 | Responsive Grid System | `gpu_utilization` | `52.6 %` | **PASS** |
+| #5666 | 2026-10-28 10:21:00 | Progressive Image Loader | `jank_events` | `1.1 count` | **PASS** |
