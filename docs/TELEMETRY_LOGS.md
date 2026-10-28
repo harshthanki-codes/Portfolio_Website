@@ -5587,3 +5587,4 @@
 | #5547 | 2026-10-28 09:51:15 | Audio Visualizer | `latency` | `20.3 ms` | **PASS** |
 | #5548 | 2026-10-28 09:51:30 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
 | #5549 | 2026-10-28 09:51:45 | Predictive Arc Canvas | `first_contentful_paint` | `1432.3 ms` | **PASS** |
+| #5550 | 2026-10-28 09:52:00 | 3D Particle Renderer | `gpu_utilization` | `49.3 %` | **PASS** |
