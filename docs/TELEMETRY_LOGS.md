@@ -5222,3 +5222,4 @@
 | #5182 | 2026-10-28 08:20:00 | Telemetry Beacon | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
 | #5183 | 2026-10-28 08:20:15 | Viewport Resize Observer | `first_contentful_paint` | `1037.4 ms` | **PASS** |
 | #5184 | 2026-10-28 08:20:30 | Scroll Parallax Manager | `cpu_usage` | `25.1 %` | **PASS** |
+| #5185 | 2026-10-28 08:20:45 | CSS-in-JS Themer | `cpu_usage` | `26.3 %` | **PASS** |
