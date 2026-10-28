@@ -5557,3 +5557,4 @@
 | #5517 | 2026-10-28 09:43:45 | Viewport Resize Observer | `animation_fps` | `64.0 fps` | **PASS** |
 | #5518 | 2026-10-28 09:44:00 | Scroll Parallax Manager | `time_to_interactive` | `1598.2 ms` | **PASS** |
 | #5519 | 2026-10-28 09:44:15 | Audio Visualizer | `memory_footprint` | `90.7 MB` | **PASS** |
+| #5520 | 2026-10-28 09:44:30 | Scroll Parallax Manager | `jank_events` | `2.5 count` | **PASS** |
