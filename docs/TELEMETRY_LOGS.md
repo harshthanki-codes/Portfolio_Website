@@ -5196,3 +5196,4 @@
 | #5156 | 2026-10-28 08:13:30 | SVG Morphing Pipeline | `cpu_usage` | `31.5 %` | **PASS** |
 | #5157 | 2026-10-28 08:13:45 | Viewport Resize Observer | `cpu_usage` | `22.5 %` | **PASS** |
 | #5158 | 2026-10-28 08:14:00 | Background Video Loop | `memory_footprint` | `118.6 MB` | **PASS** |
+| #5159 | 2026-10-28 08:14:15 | WebGL Shader Compiler | `memory_footprint` | `117.2 MB` | **PASS** |
