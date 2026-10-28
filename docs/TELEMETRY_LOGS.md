@@ -5361,3 +5361,4 @@
 | #5321 | 2026-10-28 08:54:45 | SVG Morphing Pipeline | `latency` | `13.9 ms` | **PASS** |
 | #5322 | 2026-10-28 08:55:00 | WebGL Shader Compiler | `first_contentful_paint` | `930.2 ms` | **PASS** |
 | #5323 | 2026-10-28 08:55:15 | Telemetry Beacon | `cpu_usage` | `36.4 %` | **PASS** |
+| #5324 | 2026-10-28 08:55:30 | Lottie Animation Engine | `cpu_usage` | `23.2 %` | **PASS** |
