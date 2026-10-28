@@ -5389,3 +5389,4 @@
 | #5349 | 2026-10-28 09:01:45 | CSS-in-JS Themer | `animation_fps` | `60.7 fps` | **PASS** |
 | #5350 | 2026-10-28 09:02:00 | Interactive Tooltip Engine | `first_contentful_paint` | `1099.4 ms` | **PASS** |
 | #5351 | 2026-10-28 09:02:15 | State Sync Daemon | `jank_events` | `1.7 count` | **PASS** |
+| #5352 | 2026-10-28 09:02:30 | Scroll Parallax Manager | `cpu_usage` | `20.5 %` | **PASS** |
