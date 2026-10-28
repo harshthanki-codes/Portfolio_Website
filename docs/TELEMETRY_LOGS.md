@@ -5417,3 +5417,4 @@
 | #5377 | 2026-10-28 09:08:45 | Lottie Animation Engine | `first_contentful_paint` | `804.2 ms` | **PASS** |
 | #5378 | 2026-10-28 09:09:00 | 3D Particle Renderer | `cpu_usage` | `28.4 %` | **PASS** |
 | #5379 | 2026-10-28 09:09:15 | Micro Frontend Loader | `jank_events` | `2.9 count` | **PASS** |
+| #5380 | 2026-10-28 09:09:30 | Progressive Image Loader | `animation_fps` | `73.9 fps` | **PASS** |
