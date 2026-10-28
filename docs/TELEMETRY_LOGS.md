@@ -5221,3 +5221,4 @@
 | #5181 | 2026-10-28 08:19:45 | Telemetry Beacon | `animation_fps` | `63.6 fps` | **PASS** |
 | #5182 | 2026-10-28 08:20:00 | Telemetry Beacon | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
 | #5183 | 2026-10-28 08:20:15 | Viewport Resize Observer | `first_contentful_paint` | `1037.4 ms` | **PASS** |
+| #5184 | 2026-10-28 08:20:30 | Scroll Parallax Manager | `cpu_usage` | `25.1 %` | **PASS** |
