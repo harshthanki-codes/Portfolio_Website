@@ -5355,3 +5355,4 @@
 | #5315 | 2026-10-28 08:53:15 | Scroll Parallax Manager | `first_contentful_paint` | `1446.2 ms` | **PASS** |
 | #5316 | 2026-10-28 08:53:30 | Touch Gesture Dispatcher | `bundle_size` | `187.9 KB` | **PASS** |
 | #5317 | 2026-10-28 08:53:45 | Viewport Resize Observer | `gpu_utilization` | `24.0 %` | **PASS** |
+| #5318 | 2026-10-28 08:54:00 | State Sync Daemon | `jank_events` | `0.7 count` | **PASS** |
