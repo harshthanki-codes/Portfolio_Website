@@ -5136,3 +5136,7 @@
 | #5099 | 2026-10-27 10:29:15 | Interactive Tooltip Engine | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
 | #5100 | 2026-10-27 10:29:30 | Lottie Animation Engine | `latency` | `13.5 ms` | **PASS** |
 | #5101 | 2026-10-27 10:29:45 | Scroll Parallax Manager | `cpu_usage` | `36.6 %` | **PASS** |
+
+## 2026-10-28 Telemetry Entries
+
+| #5102 | 2026-10-28 08:00:00 | Background Video Loop | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
