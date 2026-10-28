@@ -5470,3 +5470,4 @@
 | #5430 | 2026-10-28 09:22:00 | SVG Morphing Pipeline | `jank_events` | `2.7 count` | **PASS** |
 | #5431 | 2026-10-28 09:22:15 | WebGL Shader Compiler | `memory_footprint` | `63.3 MB` | **PASS** |
 | #5432 | 2026-10-28 09:22:30 | WebGL Shader Compiler | `animation_fps` | `74.1 fps` | **PASS** |
+| #5433 | 2026-10-28 09:22:45 | State Sync Daemon | `animation_fps` | `63.0 fps` | **PASS** |
