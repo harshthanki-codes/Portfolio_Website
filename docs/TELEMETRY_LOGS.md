@@ -5182,3 +5182,4 @@
 | #5142 | 2026-10-28 08:10:00 | Scroll Parallax Manager | `frame_render_budget` | `18.0 ms (60fps)` | **PASS** |
 | #5143 | 2026-10-28 08:10:15 | Scroll Parallax Manager | `first_contentful_paint` | `1403.2 ms` | **PASS** |
 | #5144 | 2026-10-28 08:10:30 | CSS-in-JS Themer | `jank_events` | `0.7 count` | **PASS** |
+| #5145 | 2026-10-28 08:10:45 | CSS-in-JS Themer | `first_contentful_paint` | `964.6 ms` | **PASS** |
