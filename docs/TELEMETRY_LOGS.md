@@ -5272,3 +5272,4 @@
 | #5232 | 2026-10-28 08:32:30 | Lottie Animation Engine | `jank_events` | `2.6 count` | **PASS** |
 | #5233 | 2026-10-28 08:32:45 | Telemetry Beacon | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
 | #5234 | 2026-10-28 08:33:00 | Cache Warmup Service | `bundle_size` | `200.2 KB` | **PASS** |
+| #5235 | 2026-10-28 08:33:15 | Lottie Animation Engine | `gpu_utilization` | `35.5 %` | **PASS** |
