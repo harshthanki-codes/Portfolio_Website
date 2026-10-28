@@ -5679,3 +5679,4 @@
 | #5639 | 2026-10-28 10:14:15 | WebGL Shader Compiler | `animation_fps` | `57.9 fps` | **PASS** |
 | #5640 | 2026-10-28 10:14:30 | CSS-in-JS Themer | `animation_fps` | `69.5 fps` | **PASS** |
 | #5641 | 2026-10-28 10:14:45 | SVG Morphing Pipeline | `time_to_interactive` | `2259.4 ms` | **PASS** |
+| #5642 | 2026-10-28 10:15:00 | WebGL Shader Compiler | `first_contentful_paint` | `1162.6 ms` | **PASS** |
