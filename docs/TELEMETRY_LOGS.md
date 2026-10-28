@@ -5605,3 +5605,4 @@
 | #5565 | 2026-10-28 09:55:45 | Viewport Resize Observer | `cpu_usage` | `17.4 %` | **PASS** |
 | #5566 | 2026-10-28 09:56:00 | Telemetry Beacon | `latency` | `12.8 ms` | **PASS** |
 | #5567 | 2026-10-28 09:56:15 | Telemetry Beacon | `animation_fps` | `70.1 fps` | **PASS** |
+| #5568 | 2026-10-28 09:56:30 | Dynamic Font Loader | `bundle_size` | `87.5 KB` | **PASS** |
