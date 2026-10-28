@@ -5486,3 +5486,4 @@
 | #5446 | 2026-10-28 09:26:00 | Predictive Arc Canvas | `time_to_interactive` | `2224.4 ms` | **PASS** |
 | #5447 | 2026-10-28 09:26:15 | Dynamic Font Loader | `memory_footprint` | `110.1 MB` | **PASS** |
 | #5448 | 2026-10-28 09:26:30 | Telemetry Beacon | `frame_render_budget` | `26.6 ms (60fps)` | **PASS** |
+| #5449 | 2026-10-28 09:26:45 | Background Video Loop | `cpu_usage` | `24.6 %` | **PASS** |
