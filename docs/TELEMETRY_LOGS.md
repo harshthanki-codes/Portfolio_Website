@@ -5220,3 +5220,4 @@
 | #5180 | 2026-10-28 08:19:30 | Dynamic Font Loader | `cpu_usage` | `24.0 %` | **PASS** |
 | #5181 | 2026-10-28 08:19:45 | Telemetry Beacon | `animation_fps` | `63.6 fps` | **PASS** |
 | #5182 | 2026-10-28 08:20:00 | Telemetry Beacon | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
+| #5183 | 2026-10-28 08:20:15 | Viewport Resize Observer | `first_contentful_paint` | `1037.4 ms` | **PASS** |
