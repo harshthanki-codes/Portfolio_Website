@@ -5190,3 +5190,4 @@
 | #5150 | 2026-10-28 08:12:00 | 3D Particle Renderer | `jank_events` | `2.2 count` | **PASS** |
 | #5151 | 2026-10-28 08:12:15 | 3D Particle Renderer | `bundle_size` | `161.1 KB` | **PASS** |
 | #5152 | 2026-10-28 08:12:30 | 3D Particle Renderer | `latency` | `7.7 ms` | **PASS** |
+| #5153 | 2026-10-28 08:12:45 | Background Video Loop | `first_contentful_paint` | `1382.6 ms` | **PASS** |
