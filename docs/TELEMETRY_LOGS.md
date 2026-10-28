@@ -5550,3 +5550,4 @@
 | #5510 | 2026-10-28 09:42:00 | WebGL Shader Compiler | `jank_events` | `1.1 count` | **PASS** |
 | #5511 | 2026-10-28 09:42:15 | State Sync Daemon | `animation_fps` | `70.9 fps` | **PASS** |
 | #5512 | 2026-10-28 09:42:30 | Viewport Resize Observer | `memory_footprint` | `51.1 MB` | **PASS** |
+| #5513 | 2026-10-28 09:42:45 | Viewport Resize Observer | `first_contentful_paint` | `896.3 ms` | **PASS** |
