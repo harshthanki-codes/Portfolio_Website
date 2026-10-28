@@ -5325,3 +5325,4 @@
 | #5285 | 2026-10-28 08:45:45 | WebGL Shader Compiler | `animation_fps` | `64.5 fps` | **PASS** |
 | #5286 | 2026-10-28 08:46:00 | Dynamic Font Loader | `animation_fps` | `61.7 fps` | **PASS** |
 | #5287 | 2026-10-28 08:46:15 | Cache Warmup Service | `animation_fps` | `68.0 fps` | **PASS** |
+| #5288 | 2026-10-28 08:46:30 | Progressive Image Loader | `animation_fps` | `67.5 fps` | **PASS** |
