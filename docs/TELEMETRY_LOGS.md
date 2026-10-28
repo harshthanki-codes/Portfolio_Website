@@ -5710,3 +5710,4 @@
 | #5670 | 2026-10-28 10:22:00 | WebGL Shader Compiler | `jank_events` | `2.3 count` | **PASS** |
 | #5671 | 2026-10-28 10:22:15 | CSS-in-JS Themer | `latency` | `22.5 ms` | **PASS** |
 | #5672 | 2026-10-28 10:22:30 | SVG Morphing Pipeline | `first_contentful_paint` | `861.4 ms` | **PASS** |
+| #5673 | 2026-10-28 10:22:45 | Viewport Resize Observer | `animation_fps` | `58.9 fps` | **PASS** |
