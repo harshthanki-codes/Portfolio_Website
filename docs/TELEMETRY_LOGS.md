@@ -5452,3 +5452,4 @@
 | #5412 | 2026-10-28 09:17:30 | Dynamic Font Loader | `jank_events` | `1.1 count` | **PASS** |
 | #5413 | 2026-10-28 09:17:45 | Scroll Parallax Manager | `latency` | `7.2 ms` | **PASS** |
 | #5414 | 2026-10-28 09:18:00 | 3D Particle Renderer | `gpu_utilization` | `67.4 %` | **PASS** |
+| #5415 | 2026-10-28 09:18:15 | Scroll Parallax Manager | `gpu_utilization` | `45.6 %` | **PASS** |
