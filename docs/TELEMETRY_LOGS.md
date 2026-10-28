@@ -5332,3 +5332,4 @@
 | #5292 | 2026-10-28 08:47:30 | Dynamic Font Loader | `latency` | `16.6 ms` | **PASS** |
 | #5293 | 2026-10-28 08:47:45 | Telemetry Beacon | `time_to_interactive` | `1749.8 ms` | **PASS** |
 | #5294 | 2026-10-28 08:48:00 | Telemetry Beacon | `cpu_usage` | `34.7 %` | **PASS** |
+| #5295 | 2026-10-28 08:48:15 | Telemetry Beacon | `gpu_utilization` | `40.2 %` | **PASS** |
