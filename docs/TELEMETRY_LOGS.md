@@ -5672,3 +5672,4 @@
 | #5632 | 2026-10-28 10:12:30 | Background Video Loop | `bundle_size` | `148.1 KB` | **PASS** |
 | #5633 | 2026-10-28 10:12:45 | CSS-in-JS Themer | `memory_footprint` | `100.4 MB` | **PASS** |
 | #5634 | 2026-10-28 10:13:00 | Telemetry Beacon | `gpu_utilization` | `47.2 %` | **PASS** |
+| #5635 | 2026-10-28 10:13:15 | State Sync Daemon | `time_to_interactive` | `2487.7 ms` | **PASS** |
