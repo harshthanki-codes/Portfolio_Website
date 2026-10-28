@@ -5600,3 +5600,4 @@
 | #5560 | 2026-10-28 09:54:30 | Lottie Animation Engine | `gpu_utilization` | `23.8 %` | **PASS** |
 | #5561 | 2026-10-28 09:54:45 | Scroll Parallax Manager | `frame_render_budget` | `25.1 ms (60fps)` | **PASS** |
 | #5562 | 2026-10-28 09:55:00 | Touch Gesture Dispatcher | `jank_events` | `0.9 count` | **PASS** |
+| #5563 | 2026-10-28 09:55:15 | Lottie Animation Engine | `first_contentful_paint` | `1474.4 ms` | **PASS** |
