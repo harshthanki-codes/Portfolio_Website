@@ -5433,3 +5433,4 @@
 | #5393 | 2026-10-28 09:12:45 | CSS-in-JS Themer | `first_contentful_paint` | `978.8 ms` | **PASS** |
 | #5394 | 2026-10-28 09:13:00 | Progressive Image Loader | `animation_fps` | `63.9 fps` | **PASS** |
 | #5395 | 2026-10-28 09:13:15 | Telemetry Beacon | `frame_render_budget` | `29.5 ms (60fps)` | **PASS** |
+| #5396 | 2026-10-28 09:13:30 | Micro Frontend Loader | `cpu_usage` | `32.7 %` | **PASS** |
