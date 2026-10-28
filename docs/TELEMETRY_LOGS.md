@@ -5171,3 +5171,4 @@
 | #5131 | 2026-10-28 08:07:15 | Progressive Image Loader | `memory_footprint` | `93.8 MB` | **PASS** |
 | #5132 | 2026-10-28 08:07:30 | Lottie Animation Engine | `memory_footprint` | `84.5 MB` | **PASS** |
 | #5133 | 2026-10-28 08:07:45 | Lottie Animation Engine | `bundle_size` | `230.2 KB` | **PASS** |
+| #5134 | 2026-10-28 08:08:00 | Background Video Loop | `time_to_interactive` | `2397.5 ms` | **PASS** |
