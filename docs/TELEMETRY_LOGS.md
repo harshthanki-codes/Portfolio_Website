@@ -5291,3 +5291,4 @@
 | #5251 | 2026-10-28 08:37:15 | Audio Visualizer | `bundle_size` | `82.7 KB` | **PASS** |
 | #5252 | 2026-10-28 08:37:30 | Lottie Animation Engine | `cpu_usage` | `21.2 %` | **PASS** |
 | #5253 | 2026-10-28 08:37:45 | Touch Gesture Dispatcher | `animation_fps` | `73.1 fps` | **PASS** |
+| #5254 | 2026-10-28 08:38:00 | Touch Gesture Dispatcher | `jank_events` | `0.0 count` | **PASS** |
