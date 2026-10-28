@@ -5227,3 +5227,4 @@
 | #5187 | 2026-10-28 08:21:15 | 3D Particle Renderer | `animation_fps` | `65.5 fps` | **PASS** |
 | #5188 | 2026-10-28 08:21:30 | Audio Visualizer | `first_contentful_paint` | `1268.1 ms` | **PASS** |
 | #5189 | 2026-10-28 08:21:45 | Background Video Loop | `gpu_utilization` | `22.8 %` | **PASS** |
+| #5190 | 2026-10-28 08:22:00 | Viewport Resize Observer | `jank_events` | `2.8 count` | **PASS** |
