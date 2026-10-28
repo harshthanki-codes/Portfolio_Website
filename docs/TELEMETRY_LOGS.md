@@ -5570,3 +5570,4 @@
 | #5530 | 2026-10-28 09:47:00 | Interactive Tooltip Engine | `memory_footprint` | `103.6 MB` | **PASS** |
 | #5531 | 2026-10-28 09:47:15 | Micro Frontend Loader | `animation_fps` | `63.5 fps` | **PASS** |
 | #5532 | 2026-10-28 09:47:30 | Audio Visualizer | `frame_render_budget` | `27.2 ms (60fps)` | **PASS** |
+| #5533 | 2026-10-28 09:47:45 | 3D Particle Renderer | `jank_events` | `0.4 count` | **PASS** |
