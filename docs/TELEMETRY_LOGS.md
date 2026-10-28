@@ -5598,3 +5598,4 @@
 | #5558 | 2026-10-28 09:54:00 | Audio Visualizer | `animation_fps` | `56.8 fps` | **PASS** |
 | #5559 | 2026-10-28 09:54:15 | State Sync Daemon | `latency` | `23.5 ms` | **PASS** |
 | #5560 | 2026-10-28 09:54:30 | Lottie Animation Engine | `gpu_utilization` | `23.8 %` | **PASS** |
+| #5561 | 2026-10-28 09:54:45 | Scroll Parallax Manager | `frame_render_budget` | `25.1 ms (60fps)` | **PASS** |
