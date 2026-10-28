@@ -5489,3 +5489,4 @@
 | #5449 | 2026-10-28 09:26:45 | Background Video Loop | `cpu_usage` | `24.6 %` | **PASS** |
 | #5450 | 2026-10-28 09:27:00 | Background Video Loop | `memory_footprint` | `65.0 MB` | **PASS** |
 | #5451 | 2026-10-28 09:27:15 | 3D Particle Renderer | `animation_fps` | `58.4 fps` | **PASS** |
+| #5452 | 2026-10-28 09:27:30 | Cache Warmup Service | `bundle_size` | `117.8 KB` | **PASS** |
