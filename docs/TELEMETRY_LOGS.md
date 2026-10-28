@@ -5692,3 +5692,4 @@
 | #5652 | 2026-10-28 10:17:30 | Background Video Loop | `animation_fps` | `66.9 fps` | **PASS** |
 | #5653 | 2026-10-28 10:17:45 | Micro Frontend Loader | `memory_footprint` | `110.3 MB` | **PASS** |
 | #5654 | 2026-10-28 10:18:00 | Scroll Parallax Manager | `gpu_utilization` | `40.6 %` | **PASS** |
+| #5655 | 2026-10-28 10:18:15 | Cache Warmup Service | `latency` | `21.6 ms` | **PASS** |
