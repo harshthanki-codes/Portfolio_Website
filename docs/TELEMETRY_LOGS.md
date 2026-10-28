@@ -5619,3 +5619,4 @@
 | #5579 | 2026-10-28 09:59:15 | Progressive Image Loader | `jank_events` | `0.2 count` | **PASS** |
 | #5580 | 2026-10-28 09:59:30 | Responsive Grid System | `jank_events` | `1.0 count` | **PASS** |
 | #5581 | 2026-10-28 09:59:45 | Audio Visualizer | `time_to_interactive` | `1954.9 ms` | **PASS** |
+| #5582 | 2026-10-28 10:00:00 | Cache Warmup Service | `gpu_utilization` | `45.9 %` | **PASS** |
