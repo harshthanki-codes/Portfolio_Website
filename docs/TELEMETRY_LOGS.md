@@ -5226,3 +5226,4 @@
 | #5186 | 2026-10-28 08:21:00 | Background Video Loop | `animation_fps` | `55.2 fps` | **PASS** |
 | #5187 | 2026-10-28 08:21:15 | 3D Particle Renderer | `animation_fps` | `65.5 fps` | **PASS** |
 | #5188 | 2026-10-28 08:21:30 | Audio Visualizer | `first_contentful_paint` | `1268.1 ms` | **PASS** |
+| #5189 | 2026-10-28 08:21:45 | Background Video Loop | `gpu_utilization` | `22.8 %` | **PASS** |
