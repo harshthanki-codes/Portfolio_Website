@@ -5415,3 +5415,4 @@
 | #5375 | 2026-10-28 09:08:15 | Lottie Animation Engine | `frame_render_budget` | `24.9 ms (60fps)` | **PASS** |
 | #5376 | 2026-10-28 09:08:30 | Interactive Tooltip Engine | `animation_fps` | `70.0 fps` | **PASS** |
 | #5377 | 2026-10-28 09:08:45 | Lottie Animation Engine | `first_contentful_paint` | `804.2 ms` | **PASS** |
+| #5378 | 2026-10-28 09:09:00 | 3D Particle Renderer | `cpu_usage` | `28.4 %` | **PASS** |
