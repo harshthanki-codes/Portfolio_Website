@@ -5422,3 +5422,4 @@
 | #5382 | 2026-10-28 09:10:00 | Interactive Tooltip Engine | `animation_fps` | `56.1 fps` | **PASS** |
 | #5383 | 2026-10-28 09:10:15 | 3D Particle Renderer | `frame_render_budget` | `26.5 ms (60fps)` | **PASS** |
 | #5384 | 2026-10-28 09:10:30 | Interactive Tooltip Engine | `bundle_size` | `119.8 KB` | **PASS** |
+| #5385 | 2026-10-28 09:10:45 | WebGL Shader Compiler | `gpu_utilization` | `53.5 %` | **PASS** |
