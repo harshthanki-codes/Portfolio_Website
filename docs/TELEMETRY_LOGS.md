@@ -5548,3 +5548,4 @@
 | #5508 | 2026-10-28 09:41:30 | SVG Morphing Pipeline | `bundle_size` | `164.4 KB` | **PASS** |
 | #5509 | 2026-10-28 09:41:45 | CSS-in-JS Themer | `time_to_interactive` | `2267.8 ms` | **PASS** |
 | #5510 | 2026-10-28 09:42:00 | WebGL Shader Compiler | `jank_events` | `1.1 count` | **PASS** |
+| #5511 | 2026-10-28 09:42:15 | State Sync Daemon | `animation_fps` | `70.9 fps` | **PASS** |
