@@ -5350,3 +5350,4 @@
 | #5310 | 2026-10-28 08:52:00 | Audio Visualizer | `frame_render_budget` | `21.2 ms (60fps)` | **PASS** |
 | #5311 | 2026-10-28 08:52:15 | Background Video Loop | `jank_events` | `0.4 count` | **PASS** |
 | #5312 | 2026-10-28 08:52:30 | Micro Frontend Loader | `first_contentful_paint` | `1483.2 ms` | **PASS** |
+| #5313 | 2026-10-28 08:52:45 | Scroll Parallax Manager | `time_to_interactive` | `1328.8 ms` | **PASS** |
