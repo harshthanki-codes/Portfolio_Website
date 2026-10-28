@@ -5505,3 +5505,4 @@
 | #5465 | 2026-10-28 09:30:45 | Telemetry Beacon | `animation_fps` | `71.6 fps` | **PASS** |
 | #5466 | 2026-10-28 09:31:00 | Lottie Animation Engine | `memory_footprint` | `110.4 MB` | **PASS** |
 | #5467 | 2026-10-28 09:31:15 | CSS-in-JS Themer | `memory_footprint` | `105.2 MB` | **PASS** |
+| #5468 | 2026-10-28 09:31:30 | 3D Particle Renderer | `cpu_usage` | `11.7 %` | **PASS** |
