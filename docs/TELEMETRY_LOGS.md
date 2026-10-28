@@ -5663,3 +5663,4 @@
 | #5623 | 2026-10-28 10:10:15 | Responsive Grid System | `jank_events` | `2.6 count` | **PASS** |
 | #5624 | 2026-10-28 10:10:30 | WebGL Shader Compiler | `gpu_utilization` | `68.2 %` | **PASS** |
 | #5625 | 2026-10-28 10:10:45 | Responsive Grid System | `bundle_size` | `198.9 KB` | **PASS** |
+| #5626 | 2026-10-28 10:11:00 | 3D Particle Renderer | `gpu_utilization` | `30.2 %` | **PASS** |
