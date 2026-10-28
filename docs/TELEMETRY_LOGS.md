@@ -5198,3 +5198,4 @@
 | #5158 | 2026-10-28 08:14:00 | Background Video Loop | `memory_footprint` | `118.6 MB` | **PASS** |
 | #5159 | 2026-10-28 08:14:15 | WebGL Shader Compiler | `memory_footprint` | `117.2 MB` | **PASS** |
 | #5160 | 2026-10-28 08:14:30 | State Sync Daemon | `time_to_interactive` | `1207.0 ms` | **PASS** |
+| #5161 | 2026-10-28 08:14:45 | Lottie Animation Engine | `latency` | `11.4 ms` | **PASS** |
