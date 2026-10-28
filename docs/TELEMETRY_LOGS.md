@@ -5731,3 +5731,4 @@
 | #5691 | 2026-10-28 10:27:15 | Lottie Animation Engine | `jank_events` | `1.6 count` | **PASS** |
 | #5692 | 2026-10-28 10:27:30 | Predictive Arc Canvas | `memory_footprint` | `106.6 MB` | **PASS** |
 | #5693 | 2026-10-28 10:27:45 | State Sync Daemon | `animation_fps` | `63.6 fps` | **PASS** |
+| #5694 | 2026-10-28 10:28:00 | WebGL Shader Compiler | `cpu_usage` | `43.3 %` | **PASS** |
