@@ -5426,3 +5426,4 @@
 | #5386 | 2026-10-28 09:11:00 | State Sync Daemon | `bundle_size` | `209.3 KB` | **PASS** |
 | #5387 | 2026-10-28 09:11:15 | Dynamic Font Loader | `latency` | `19.2 ms` | **PASS** |
 | #5388 | 2026-10-28 09:11:30 | Telemetry Beacon | `latency` | `20.7 ms` | **PASS** |
+| #5389 | 2026-10-28 09:11:45 | Background Video Loop | `animation_fps` | `72.8 fps` | **PASS** |
