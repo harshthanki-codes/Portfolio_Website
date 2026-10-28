@@ -5535,3 +5535,4 @@
 | #5495 | 2026-10-28 09:38:15 | Background Video Loop | `latency` | `14.6 ms` | **PASS** |
 | #5496 | 2026-10-28 09:38:30 | Background Video Loop | `latency` | `23.5 ms` | **PASS** |
 | #5497 | 2026-10-28 09:38:45 | Dynamic Font Loader | `latency` | `5.3 ms` | **PASS** |
+| #5498 | 2026-10-28 09:39:00 | Viewport Resize Observer | `memory_footprint` | `46.7 MB` | **PASS** |
