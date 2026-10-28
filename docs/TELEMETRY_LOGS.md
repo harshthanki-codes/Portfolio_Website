@@ -5511,3 +5511,4 @@
 | #5471 | 2026-10-28 09:32:15 | WebGL Shader Compiler | `animation_fps` | `60.8 fps` | **PASS** |
 | #5472 | 2026-10-28 09:32:30 | Background Video Loop | `latency` | `19.4 ms` | **PASS** |
 | #5473 | 2026-10-28 09:32:45 | WebGL Shader Compiler | `latency` | `9.8 ms` | **PASS** |
+| #5474 | 2026-10-28 09:33:00 | Lottie Animation Engine | `bundle_size` | `94.6 KB` | **PASS** |
