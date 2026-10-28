@@ -5391,3 +5391,4 @@
 | #5351 | 2026-10-28 09:02:15 | State Sync Daemon | `jank_events` | `1.7 count` | **PASS** |
 | #5352 | 2026-10-28 09:02:30 | Scroll Parallax Manager | `cpu_usage` | `20.5 %` | **PASS** |
 | #5353 | 2026-10-28 09:02:45 | Background Video Loop | `jank_events` | `3.0 count` | **PASS** |
+| #5354 | 2026-10-28 09:03:00 | 3D Particle Renderer | `cpu_usage` | `26.4 %` | **PASS** |
