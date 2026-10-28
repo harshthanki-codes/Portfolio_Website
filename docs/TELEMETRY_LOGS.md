@@ -5533,3 +5533,4 @@
 | #5493 | 2026-10-28 09:37:45 | 3D Particle Renderer | `first_contentful_paint` | `908.1 ms` | **PASS** |
 | #5494 | 2026-10-28 09:38:00 | Audio Visualizer | `memory_footprint` | `74.5 MB` | **PASS** |
 | #5495 | 2026-10-28 09:38:15 | Background Video Loop | `latency` | `14.6 ms` | **PASS** |
+| #5496 | 2026-10-28 09:38:30 | Background Video Loop | `latency` | `23.5 ms` | **PASS** |
