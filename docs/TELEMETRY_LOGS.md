@@ -5247,3 +5247,4 @@
 | #5207 | 2026-10-28 08:26:15 | Micro Frontend Loader | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
 | #5208 | 2026-10-28 08:26:30 | Lazy Load Optimizer | `jank_events` | `1.4 count` | **PASS** |
 | #5209 | 2026-10-28 08:26:45 | Micro Frontend Loader | `jank_events` | `1.7 count` | **PASS** |
+| #5210 | 2026-10-28 08:27:00 | Micro Frontend Loader | `first_contentful_paint` | `1140.8 ms` | **PASS** |
