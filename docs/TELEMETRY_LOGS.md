@@ -5427,3 +5427,4 @@
 | #5387 | 2026-10-28 09:11:15 | Dynamic Font Loader | `latency` | `19.2 ms` | **PASS** |
 | #5388 | 2026-10-28 09:11:30 | Telemetry Beacon | `latency` | `20.7 ms` | **PASS** |
 | #5389 | 2026-10-28 09:11:45 | Background Video Loop | `animation_fps` | `72.8 fps` | **PASS** |
+| #5390 | 2026-10-28 09:12:00 | WebGL Shader Compiler | `jank_events` | `2.2 count` | **PASS** |
