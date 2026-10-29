@@ -6889,3 +6889,4 @@
 | #6846 | 2026-10-29 11:10:40 | Micro Frontend Loader | `jank_events` | `2.8 count` | **PASS** |
 | #6847 | 2026-10-29 11:10:50 | State Sync Daemon | `first_contentful_paint` | `1322.2 ms` | **PASS** |
 | #6848 | 2026-10-29 11:11:00 | Dynamic Font Loader | `memory_footprint` | `50.2 MB` | **PASS** |
+| #6849 | 2026-10-29 11:11:10 | Lottie Animation Engine | `gpu_utilization` | `37.8 %` | **PASS** |
