@@ -6021,3 +6021,4 @@
 | #5978 | 2026-10-29 08:46:00 | Viewport Resize Observer | `time_to_interactive` | `1861.9 ms` | **PASS** |
 | #5979 | 2026-10-29 08:46:10 | Dynamic Font Loader | `cpu_usage` | `15.7 %` | **PASS** |
 | #5980 | 2026-10-29 08:46:20 | State Sync Daemon | `animation_fps` | `70.2 fps` | **PASS** |
+| #5981 | 2026-10-29 08:46:30 | CSS-in-JS Themer | `gpu_utilization` | `26.4 %` | **PASS** |
