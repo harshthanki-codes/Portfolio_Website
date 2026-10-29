@@ -6871,3 +6871,4 @@
 | #6828 | 2026-10-29 11:07:40 | SVG Morphing Pipeline | `first_contentful_paint` | `837.2 ms` | **PASS** |
 | #6829 | 2026-10-29 11:07:50 | WebGL Shader Compiler | `time_to_interactive` | `1560.4 ms` | **PASS** |
 | #6830 | 2026-10-29 11:08:00 | CSS-in-JS Themer | `frame_render_budget` | `24.3 ms (60fps)` | **PASS** |
+| #6831 | 2026-10-29 11:08:10 | SVG Morphing Pipeline | `gpu_utilization` | `38.2 %` | **PASS** |
