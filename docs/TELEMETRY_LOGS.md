@@ -6048,3 +6048,4 @@
 | #6005 | 2026-10-29 08:50:30 | Lazy Load Optimizer | `animation_fps` | `68.8 fps` | **PASS** |
 | #6006 | 2026-10-29 08:50:40 | Viewport Resize Observer | `latency` | `12.4 ms` | **PASS** |
 | #6007 | 2026-10-29 08:50:50 | Viewport Resize Observer | `gpu_utilization` | `20.5 %` | **PASS** |
+| #6008 | 2026-10-29 08:51:00 | 3D Particle Renderer | `gpu_utilization` | `52.7 %` | **PASS** |
