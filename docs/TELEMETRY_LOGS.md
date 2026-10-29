@@ -6116,3 +6116,4 @@
 | #6073 | 2026-10-29 09:01:50 | Background Video Loop | `bundle_size` | `125.4 KB` | **PASS** |
 | #6074 | 2026-10-29 09:02:00 | SVG Morphing Pipeline | `gpu_utilization` | `37.8 %` | **PASS** |
 | #6075 | 2026-10-29 09:02:10 | Audio Visualizer | `cpu_usage` | `44.6 %` | **PASS** |
+| #6076 | 2026-10-29 09:02:20 | Cache Warmup Service | `first_contentful_paint` | `927.7 ms` | **PASS** |
