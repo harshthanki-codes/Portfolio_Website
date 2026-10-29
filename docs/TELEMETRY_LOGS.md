@@ -5771,3 +5771,4 @@
 | #5728 | 2026-10-29 08:04:20 | Scroll Parallax Manager | `latency` | `15.5 ms` | **PASS** |
 | #5729 | 2026-10-29 08:04:30 | Background Video Loop | `frame_render_budget` | `22.6 ms (60fps)` | **PASS** |
 | #5730 | 2026-10-29 08:04:40 | Scroll Parallax Manager | `animation_fps` | `56.9 fps` | **PASS** |
+| #5731 | 2026-10-29 08:04:50 | WebGL Shader Compiler | `memory_footprint` | `109.3 MB` | **PASS** |
