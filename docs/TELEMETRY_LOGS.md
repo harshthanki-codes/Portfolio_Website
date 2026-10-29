@@ -6047,3 +6047,4 @@
 | #6004 | 2026-10-29 08:50:20 | Interactive Tooltip Engine | `jank_events` | `0.0 count` | **PASS** |
 | #6005 | 2026-10-29 08:50:30 | Lazy Load Optimizer | `animation_fps` | `68.8 fps` | **PASS** |
 | #6006 | 2026-10-29 08:50:40 | Viewport Resize Observer | `latency` | `12.4 ms` | **PASS** |
+| #6007 | 2026-10-29 08:50:50 | Viewport Resize Observer | `gpu_utilization` | `20.5 %` | **PASS** |
