@@ -5951,3 +5951,4 @@
 | #5908 | 2026-10-29 08:34:20 | Telemetry Beacon | `latency` | `22.8 ms` | **PASS** |
 | #5909 | 2026-10-29 08:34:30 | Viewport Resize Observer | `gpu_utilization` | `34.3 %` | **PASS** |
 | #5910 | 2026-10-29 08:34:40 | Background Video Loop | `cpu_usage` | `35.7 %` | **PASS** |
+| #5911 | 2026-10-29 08:34:50 | Micro Frontend Loader | `cpu_usage` | `32.9 %` | **PASS** |
