@@ -6503,3 +6503,4 @@
 | #6460 | 2026-10-29 10:06:20 | Viewport Resize Observer | `first_contentful_paint` | `1365.0 ms` | **PASS** |
 | #6461 | 2026-10-29 10:06:30 | Lottie Animation Engine | `latency` | `18.9 ms` | **PASS** |
 | #6462 | 2026-10-29 10:06:40 | Lottie Animation Engine | `frame_render_budget` | `16.5 ms (60fps)` | **PASS** |
+| #6463 | 2026-10-29 10:06:50 | 3D Particle Renderer | `gpu_utilization` | `65.8 %` | **PASS** |
