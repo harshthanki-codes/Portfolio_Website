@@ -5810,3 +5810,4 @@
 | #5767 | 2026-10-29 08:10:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1072.0 ms` | **PASS** |
 | #5768 | 2026-10-29 08:11:00 | CSS-in-JS Themer | `first_contentful_paint` | `949.9 ms` | **PASS** |
 | #5769 | 2026-10-29 08:11:10 | Background Video Loop | `jank_events` | `1.5 count` | **PASS** |
+| #5770 | 2026-10-29 08:11:20 | SVG Morphing Pipeline | `memory_footprint` | `62.5 MB` | **PASS** |
