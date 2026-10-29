@@ -6330,3 +6330,4 @@
 | #6287 | 2026-10-29 09:37:30 | Lottie Animation Engine | `time_to_interactive` | `2324.4 ms` | **PASS** |
 | #6288 | 2026-10-29 09:37:40 | Scroll Parallax Manager | `latency` | `18.3 ms` | **PASS** |
 | #6289 | 2026-10-29 09:37:50 | Cache Warmup Service | `animation_fps` | `68.8 fps` | **PASS** |
+| #6290 | 2026-10-29 09:38:00 | State Sync Daemon | `frame_render_budget` | `24.5 ms (60fps)` | **PASS** |
