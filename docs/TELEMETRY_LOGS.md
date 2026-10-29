@@ -6528,3 +6528,4 @@
 | #6485 | 2026-10-29 10:10:30 | SVG Morphing Pipeline | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
 | #6486 | 2026-10-29 10:10:40 | Dynamic Font Loader | `frame_render_budget` | `27.1 ms (60fps)` | **PASS** |
 | #6487 | 2026-10-29 10:10:50 | CSS-in-JS Themer | `bundle_size` | `120.0 KB` | **PASS** |
+| #6488 | 2026-10-29 10:11:00 | Viewport Resize Observer | `jank_events` | `0.4 count` | **PASS** |
