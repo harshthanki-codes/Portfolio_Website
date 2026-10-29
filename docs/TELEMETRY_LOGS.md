@@ -6413,3 +6413,4 @@
 | #6370 | 2026-10-29 09:51:20 | 3D Particle Renderer | `bundle_size` | `95.9 KB` | **PASS** |
 | #6371 | 2026-10-29 09:51:30 | Progressive Image Loader | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
 | #6372 | 2026-10-29 09:51:40 | Audio Visualizer | `gpu_utilization` | `55.0 %` | **PASS** |
+| #6373 | 2026-10-29 09:51:50 | WebGL Shader Compiler | `gpu_utilization` | `37.0 %` | **PASS** |
