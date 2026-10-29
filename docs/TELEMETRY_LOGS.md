@@ -5971,3 +5971,4 @@
 | #5928 | 2026-10-29 08:37:40 | SVG Morphing Pipeline | `first_contentful_paint` | `978.3 ms` | **PASS** |
 | #5929 | 2026-10-29 08:37:50 | State Sync Daemon | `animation_fps` | `72.2 fps` | **PASS** |
 | #5930 | 2026-10-29 08:38:00 | Predictive Arc Canvas | `time_to_interactive` | `1546.8 ms` | **PASS** |
+| #5931 | 2026-10-29 08:38:10 | 3D Particle Renderer | `cpu_usage` | `19.6 %` | **PASS** |
