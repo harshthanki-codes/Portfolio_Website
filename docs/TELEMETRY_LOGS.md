@@ -5767,3 +5767,4 @@
 | #5724 | 2026-10-29 08:03:40 | Responsive Grid System | `first_contentful_paint` | `1494.3 ms` | **PASS** |
 | #5725 | 2026-10-29 08:03:50 | Scroll Parallax Manager | `jank_events` | `0.6 count` | **PASS** |
 | #5726 | 2026-10-29 08:04:00 | Predictive Arc Canvas | `jank_events` | `2.7 count` | **PASS** |
+| #5727 | 2026-10-29 08:04:10 | WebGL Shader Compiler | `frame_render_budget` | `19.0 ms (60fps)` | **PASS** |
