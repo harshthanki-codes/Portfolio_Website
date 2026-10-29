@@ -6486,3 +6486,4 @@
 | #6443 | 2026-10-29 10:03:30 | Interactive Tooltip Engine | `gpu_utilization` | `63.8 %` | **PASS** |
 | #6444 | 2026-10-29 10:03:40 | Progressive Image Loader | `time_to_interactive` | `1803.8 ms` | **PASS** |
 | #6445 | 2026-10-29 10:03:50 | 3D Particle Renderer | `gpu_utilization` | `55.1 %` | **PASS** |
+| #6446 | 2026-10-29 10:04:00 | CSS-in-JS Themer | `jank_events` | `1.8 count` | **PASS** |
