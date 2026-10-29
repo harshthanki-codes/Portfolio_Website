@@ -6200,3 +6200,4 @@
 | #6157 | 2026-10-29 09:15:50 | Progressive Image Loader | `cpu_usage` | `17.2 %` | **PASS** |
 | #6158 | 2026-10-29 09:16:00 | Viewport Resize Observer | `latency` | `19.5 ms` | **PASS** |
 | #6159 | 2026-10-29 09:16:10 | Lottie Animation Engine | `latency` | `7.5 ms` | **PASS** |
+| #6160 | 2026-10-29 09:16:20 | Lottie Animation Engine | `first_contentful_paint` | `1139.2 ms` | **PASS** |
