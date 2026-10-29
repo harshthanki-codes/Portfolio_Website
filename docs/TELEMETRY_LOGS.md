@@ -6142,3 +6142,4 @@
 | #6099 | 2026-10-29 09:06:10 | Dynamic Font Loader | `animation_fps` | `56.0 fps` | **PASS** |
 | #6100 | 2026-10-29 09:06:20 | Telemetry Beacon | `latency` | `24.0 ms` | **PASS** |
 | #6101 | 2026-10-29 09:06:30 | Telemetry Beacon | `time_to_interactive` | `1746.1 ms` | **PASS** |
+| #6102 | 2026-10-29 09:06:40 | Progressive Image Loader | `frame_render_budget` | `26.2 ms (60fps)` | **PASS** |
