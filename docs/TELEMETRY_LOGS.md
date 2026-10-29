@@ -6406,3 +6406,4 @@
 | #6363 | 2026-10-29 09:50:10 | Progressive Image Loader | `bundle_size` | `223.8 KB` | **PASS** |
 | #6364 | 2026-10-29 09:50:20 | Background Video Loop | `jank_events` | `2.2 count` | **PASS** |
 | #6365 | 2026-10-29 09:50:30 | Telemetry Beacon | `jank_events` | `2.2 count` | **PASS** |
+| #6366 | 2026-10-29 09:50:40 | Lottie Animation Engine | `jank_events` | `1.3 count` | **PASS** |
