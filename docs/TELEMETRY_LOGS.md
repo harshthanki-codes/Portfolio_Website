@@ -6105,3 +6105,4 @@
 | #6062 | 2026-10-29 09:00:00 | State Sync Daemon | `frame_render_budget` | `28.0 ms (60fps)` | **PASS** |
 | #6063 | 2026-10-29 09:00:10 | CSS-in-JS Themer | `jank_events` | `0.1 count` | **PASS** |
 | #6064 | 2026-10-29 09:00:20 | State Sync Daemon | `cpu_usage` | `24.7 %` | **PASS** |
+| #6065 | 2026-10-29 09:00:30 | Touch Gesture Dispatcher | `first_contentful_paint` | `1260.6 ms` | **PASS** |
