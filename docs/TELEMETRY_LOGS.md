@@ -6043,3 +6043,4 @@
 | #6000 | 2026-10-29 08:49:40 | Cache Warmup Service | `latency` | `19.9 ms` | **PASS** |
 | #6001 | 2026-10-29 08:49:50 | Micro Frontend Loader | `cpu_usage` | `32.6 %` | **PASS** |
 | #6002 | 2026-10-29 08:50:00 | Scroll Parallax Manager | `time_to_interactive` | `1300.7 ms` | **PASS** |
+| #6003 | 2026-10-29 08:50:10 | Progressive Image Loader | `gpu_utilization` | `24.1 %` | **PASS** |
