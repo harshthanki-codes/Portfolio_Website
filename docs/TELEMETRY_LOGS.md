@@ -5920,3 +5920,4 @@
 | #5877 | 2026-10-29 08:29:10 | State Sync Daemon | `animation_fps` | `73.1 fps` | **PASS** |
 | #5878 | 2026-10-29 08:29:20 | Background Video Loop | `first_contentful_paint` | `802.8 ms` | **PASS** |
 | #5879 | 2026-10-29 08:29:30 | Lazy Load Optimizer | `memory_footprint` | `71.4 MB` | **PASS** |
+| #5880 | 2026-10-29 08:29:40 | Micro Frontend Loader | `jank_events` | `2.7 count` | **PASS** |
