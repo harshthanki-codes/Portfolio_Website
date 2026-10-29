@@ -5853,3 +5853,4 @@
 | #5810 | 2026-10-29 08:18:00 | Telemetry Beacon | `time_to_interactive` | `2317.8 ms` | **PASS** |
 | #5811 | 2026-10-29 08:18:10 | CSS-in-JS Themer | `memory_footprint` | `118.4 MB` | **PASS** |
 | #5812 | 2026-10-29 08:18:20 | WebGL Shader Compiler | `memory_footprint` | `79.8 MB` | **PASS** |
+| #5813 | 2026-10-29 08:18:30 | Scroll Parallax Manager | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
