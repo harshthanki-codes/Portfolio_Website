@@ -6756,3 +6756,4 @@
 | #6713 | 2026-10-29 10:48:30 | Touch Gesture Dispatcher | `frame_render_budget` | `20.0 ms (60fps)` | **PASS** |
 | #6714 | 2026-10-29 10:48:40 | Viewport Resize Observer | `time_to_interactive` | `2220.1 ms` | **PASS** |
 | #6715 | 2026-10-29 10:48:50 | Background Video Loop | `memory_footprint` | `92.7 MB` | **PASS** |
+| #6716 | 2026-10-29 10:49:00 | Micro Frontend Loader | `cpu_usage` | `11.9 %` | **PASS** |
