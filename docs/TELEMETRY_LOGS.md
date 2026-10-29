@@ -5863,3 +5863,4 @@
 | #5820 | 2026-10-29 08:19:40 | SVG Morphing Pipeline | `memory_footprint` | `79.9 MB` | **PASS** |
 | #5821 | 2026-10-29 08:19:50 | Touch Gesture Dispatcher | `jank_events` | `0.6 count` | **PASS** |
 | #5822 | 2026-10-29 08:20:00 | State Sync Daemon | `memory_footprint` | `55.2 MB` | **PASS** |
+| #5823 | 2026-10-29 08:20:10 | Viewport Resize Observer | `jank_events` | `0.0 count` | **PASS** |
