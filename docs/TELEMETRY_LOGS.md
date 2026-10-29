@@ -6543,3 +6543,4 @@
 | #6500 | 2026-10-29 10:13:00 | Lazy Load Optimizer | `jank_events` | `1.4 count` | **PASS** |
 | #6501 | 2026-10-29 10:13:10 | Telemetry Beacon | `cpu_usage` | `18.6 %` | **PASS** |
 | #6502 | 2026-10-29 10:13:20 | Lottie Animation Engine | `bundle_size` | `192.9 KB` | **PASS** |
+| #6503 | 2026-10-29 10:13:30 | Lottie Animation Engine | `animation_fps` | `70.8 fps` | **PASS** |
