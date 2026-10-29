@@ -6441,3 +6441,4 @@
 | #6398 | 2026-10-29 09:56:00 | Micro Frontend Loader | `time_to_interactive` | `1658.1 ms` | **PASS** |
 | #6399 | 2026-10-29 09:56:10 | 3D Particle Renderer | `first_contentful_paint` | `1244.5 ms` | **PASS** |
 | #6400 | 2026-10-29 09:56:20 | Micro Frontend Loader | `gpu_utilization` | `41.6 %` | **PASS** |
+| #6401 | 2026-10-29 09:56:30 | 3D Particle Renderer | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
