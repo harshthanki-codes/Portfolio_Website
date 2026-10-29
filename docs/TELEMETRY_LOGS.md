@@ -6206,3 +6206,4 @@
 | #6163 | 2026-10-29 09:16:50 | Telemetry Beacon | `time_to_interactive` | `1976.0 ms` | **PASS** |
 | #6164 | 2026-10-29 09:17:00 | Cache Warmup Service | `latency` | `5.7 ms` | **PASS** |
 | #6165 | 2026-10-29 09:17:10 | 3D Particle Renderer | `time_to_interactive` | `2207.0 ms` | **PASS** |
+| #6166 | 2026-10-29 09:17:20 | Predictive Arc Canvas | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
