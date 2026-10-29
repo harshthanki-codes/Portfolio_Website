@@ -5835,3 +5835,4 @@
 | #5792 | 2026-10-29 08:15:00 | Lottie Animation Engine | `cpu_usage` | `44.5 %` | **PASS** |
 | #5793 | 2026-10-29 08:15:10 | Responsive Grid System | `time_to_interactive` | `1210.0 ms` | **PASS** |
 | #5794 | 2026-10-29 08:15:20 | 3D Particle Renderer | `first_contentful_paint` | `1480.2 ms` | **PASS** |
+| #5795 | 2026-10-29 08:15:30 | Lottie Animation Engine | `gpu_utilization` | `55.8 %` | **PASS** |
