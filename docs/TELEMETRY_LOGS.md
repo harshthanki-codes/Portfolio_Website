@@ -6005,3 +6005,4 @@
 | #5962 | 2026-10-29 08:43:20 | SVG Morphing Pipeline | `animation_fps` | `65.8 fps` | **PASS** |
 | #5963 | 2026-10-29 08:43:30 | Lazy Load Optimizer | `jank_events` | `2.3 count` | **PASS** |
 | #5964 | 2026-10-29 08:43:40 | Progressive Image Loader | `bundle_size` | `167.4 KB` | **PASS** |
+| #5965 | 2026-10-29 08:43:50 | Dynamic Font Loader | `time_to_interactive` | `1840.1 ms` | **PASS** |
