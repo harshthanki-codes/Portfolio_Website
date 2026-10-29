@@ -5832,3 +5832,4 @@
 | #5789 | 2026-10-29 08:14:30 | Touch Gesture Dispatcher | `latency` | `11.1 ms` | **PASS** |
 | #5790 | 2026-10-29 08:14:40 | Predictive Arc Canvas | `animation_fps` | `65.6 fps` | **PASS** |
 | #5791 | 2026-10-29 08:14:50 | WebGL Shader Compiler | `cpu_usage` | `29.8 %` | **PASS** |
+| #5792 | 2026-10-29 08:15:00 | Lottie Animation Engine | `cpu_usage` | `44.5 %` | **PASS** |
