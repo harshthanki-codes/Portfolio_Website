@@ -6183,3 +6183,4 @@
 | #6140 | 2026-10-29 09:13:00 | WebGL Shader Compiler | `animation_fps` | `66.0 fps` | **PASS** |
 | #6141 | 2026-10-29 09:13:10 | Predictive Arc Canvas | `jank_events` | `1.2 count` | **PASS** |
 | #6142 | 2026-10-29 09:13:20 | Touch Gesture Dispatcher | `latency` | `16.7 ms` | **PASS** |
+| #6143 | 2026-10-29 09:13:30 | Predictive Arc Canvas | `memory_footprint` | `116.7 MB` | **PASS** |
