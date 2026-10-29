@@ -6492,3 +6492,4 @@
 | #6449 | 2026-10-29 10:04:30 | State Sync Daemon | `bundle_size` | `151.0 KB` | **PASS** |
 | #6450 | 2026-10-29 10:04:40 | State Sync Daemon | `first_contentful_paint` | `1456.5 ms` | **PASS** |
 | #6451 | 2026-10-29 10:04:50 | Touch Gesture Dispatcher | `memory_footprint` | `66.4 MB` | **PASS** |
+| #6452 | 2026-10-29 10:05:00 | Cache Warmup Service | `memory_footprint` | `60.5 MB` | **PASS** |
