@@ -6807,3 +6807,4 @@
 | #6764 | 2026-10-29 10:57:00 | Cache Warmup Service | `cpu_usage` | `38.2 %` | **PASS** |
 | #6765 | 2026-10-29 10:57:10 | Scroll Parallax Manager | `first_contentful_paint` | `1284.5 ms` | **PASS** |
 | #6766 | 2026-10-29 10:57:20 | Lottie Animation Engine | `bundle_size` | `133.3 KB` | **PASS** |
+| #6767 | 2026-10-29 10:57:30 | Lottie Animation Engine | `gpu_utilization` | `24.4 %` | **PASS** |
