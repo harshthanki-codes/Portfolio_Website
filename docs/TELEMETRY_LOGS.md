@@ -6062,3 +6062,4 @@
 | #6019 | 2026-10-29 08:52:50 | Scroll Parallax Manager | `cpu_usage` | `33.2 %` | **PASS** |
 | #6020 | 2026-10-29 08:53:00 | Telemetry Beacon | `jank_events` | `2.4 count` | **PASS** |
 | #6021 | 2026-10-29 08:53:10 | Telemetry Beacon | `time_to_interactive` | `1537.6 ms` | **PASS** |
+| #6022 | 2026-10-29 08:53:20 | WebGL Shader Compiler | `latency` | `7.1 ms` | **PASS** |
