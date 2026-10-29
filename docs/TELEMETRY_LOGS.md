@@ -6800,3 +6800,4 @@
 | #6757 | 2026-10-29 10:55:50 | Scroll Parallax Manager | `time_to_interactive` | `1417.5 ms` | **PASS** |
 | #6758 | 2026-10-29 10:56:00 | Cache Warmup Service | `bundle_size` | `246.3 KB` | **PASS** |
 | #6759 | 2026-10-29 10:56:10 | Micro Frontend Loader | `cpu_usage` | `14.0 %` | **PASS** |
+| #6760 | 2026-10-29 10:56:20 | Progressive Image Loader | `memory_footprint` | `117.4 MB` | **PASS** |
