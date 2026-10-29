@@ -6284,3 +6284,4 @@
 | #6241 | 2026-10-29 09:29:50 | Cache Warmup Service | `memory_footprint` | `92.0 MB` | **PASS** |
 | #6242 | 2026-10-29 09:30:00 | Scroll Parallax Manager | `cpu_usage` | `39.5 %` | **PASS** |
 | #6243 | 2026-10-29 09:30:10 | Progressive Image Loader | `cpu_usage` | `19.6 %` | **PASS** |
+| #6244 | 2026-10-29 09:30:20 | Scroll Parallax Manager | `gpu_utilization` | `27.2 %` | **PASS** |
