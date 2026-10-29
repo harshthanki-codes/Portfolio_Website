@@ -5874,3 +5874,4 @@
 | #5831 | 2026-10-29 08:21:30 | Viewport Resize Observer | `frame_render_budget` | `28.5 ms (60fps)` | **PASS** |
 | #5832 | 2026-10-29 08:21:40 | Responsive Grid System | `bundle_size` | `219.9 KB` | **PASS** |
 | #5833 | 2026-10-29 08:21:50 | Cache Warmup Service | `bundle_size` | `179.7 KB` | **PASS** |
+| #5834 | 2026-10-29 08:22:00 | 3D Particle Renderer | `animation_fps` | `67.2 fps` | **PASS** |
