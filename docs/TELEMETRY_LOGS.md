@@ -5826,3 +5826,4 @@
 | #5783 | 2026-10-29 08:13:30 | Touch Gesture Dispatcher | `time_to_interactive` | `1430.9 ms` | **PASS** |
 | #5784 | 2026-10-29 08:13:40 | CSS-in-JS Themer | `animation_fps` | `57.8 fps` | **PASS** |
 | #5785 | 2026-10-29 08:13:50 | Micro Frontend Loader | `bundle_size` | `81.1 KB` | **PASS** |
+| #5786 | 2026-10-29 08:14:00 | Background Video Loop | `memory_footprint` | `110.6 MB` | **PASS** |
