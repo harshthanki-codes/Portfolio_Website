@@ -5912,3 +5912,4 @@
 | #5869 | 2026-10-29 08:27:50 | Viewport Resize Observer | `animation_fps` | `68.7 fps` | **PASS** |
 | #5870 | 2026-10-29 08:28:00 | WebGL Shader Compiler | `first_contentful_paint` | `974.1 ms` | **PASS** |
 | #5871 | 2026-10-29 08:28:10 | Scroll Parallax Manager | `first_contentful_paint` | `935.0 ms` | **PASS** |
+| #5872 | 2026-10-29 08:28:20 | SVG Morphing Pipeline | `gpu_utilization` | `49.9 %` | **PASS** |
