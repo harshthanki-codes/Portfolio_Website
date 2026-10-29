@@ -5816,3 +5816,4 @@
 | #5773 | 2026-10-29 08:11:50 | Telemetry Beacon | `time_to_interactive` | `2050.6 ms` | **PASS** |
 | #5774 | 2026-10-29 08:12:00 | 3D Particle Renderer | `frame_render_budget` | `17.6 ms (60fps)` | **PASS** |
 | #5775 | 2026-10-29 08:12:10 | Telemetry Beacon | `latency` | `19.5 ms` | **PASS** |
+| #5776 | 2026-10-29 08:12:20 | WebGL Shader Compiler | `cpu_usage` | `43.8 %` | **PASS** |
