@@ -6604,3 +6604,4 @@
 | #6561 | 2026-10-29 10:23:10 | Scroll Parallax Manager | `time_to_interactive` | `1409.3 ms` | **PASS** |
 | #6562 | 2026-10-29 10:23:20 | Cache Warmup Service | `time_to_interactive` | `1680.5 ms` | **PASS** |
 | #6563 | 2026-10-29 10:23:30 | Background Video Loop | `time_to_interactive` | `2461.9 ms` | **PASS** |
+| #6564 | 2026-10-29 10:23:40 | WebGL Shader Compiler | `memory_footprint` | `99.0 MB` | **PASS** |
