@@ -6292,3 +6292,4 @@
 | #6249 | 2026-10-29 09:31:10 | Scroll Parallax Manager | `latency` | `22.7 ms` | **PASS** |
 | #6250 | 2026-10-29 09:31:20 | Background Video Loop | `memory_footprint` | `82.0 MB` | **PASS** |
 | #6251 | 2026-10-29 09:31:30 | Audio Visualizer | `gpu_utilization` | `58.1 %` | **PASS** |
+| #6252 | 2026-10-29 09:31:40 | Scroll Parallax Manager | `animation_fps` | `68.1 fps` | **PASS** |
