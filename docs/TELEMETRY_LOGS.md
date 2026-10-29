@@ -6470,3 +6470,4 @@
 | #6427 | 2026-10-29 10:00:50 | Background Video Loop | `time_to_interactive` | `1461.2 ms` | **PASS** |
 | #6428 | 2026-10-29 10:01:00 | Lottie Animation Engine | `animation_fps` | `69.9 fps` | **PASS** |
 | #6429 | 2026-10-29 10:01:10 | Audio Visualizer | `cpu_usage` | `26.2 %` | **PASS** |
+| #6430 | 2026-10-29 10:01:20 | Micro Frontend Loader | `memory_footprint` | `80.0 MB` | **PASS** |
