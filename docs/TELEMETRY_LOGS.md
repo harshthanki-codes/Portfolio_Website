@@ -6920,3 +6920,4 @@
 | #6877 | 2026-10-29 11:15:50 | Viewport Resize Observer | `cpu_usage` | `18.0 %` | **PASS** |
 | #6878 | 2026-10-29 11:16:00 | SVG Morphing Pipeline | `gpu_utilization` | `42.7 %` | **PASS** |
 | #6879 | 2026-10-29 11:16:10 | Interactive Tooltip Engine | `first_contentful_paint` | `1235.1 ms` | **PASS** |
+| #6880 | 2026-10-29 11:16:20 | Background Video Loop | `cpu_usage` | `40.0 %` | **PASS** |
