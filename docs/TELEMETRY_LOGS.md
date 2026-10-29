@@ -6709,3 +6709,4 @@
 | #6666 | 2026-10-29 10:40:40 | CSS-in-JS Themer | `memory_footprint` | `89.6 MB` | **PASS** |
 | #6667 | 2026-10-29 10:40:50 | CSS-in-JS Themer | `jank_events` | `0.4 count` | **PASS** |
 | #6668 | 2026-10-29 10:41:00 | Viewport Resize Observer | `cpu_usage` | `38.0 %` | **PASS** |
+| #6669 | 2026-10-29 10:41:10 | WebGL Shader Compiler | `time_to_interactive` | `2145.2 ms` | **PASS** |
