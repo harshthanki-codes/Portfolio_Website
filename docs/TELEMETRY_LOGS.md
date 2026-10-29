@@ -6545,3 +6545,4 @@
 | #6502 | 2026-10-29 10:13:20 | Lottie Animation Engine | `bundle_size` | `192.9 KB` | **PASS** |
 | #6503 | 2026-10-29 10:13:30 | Lottie Animation Engine | `animation_fps` | `70.8 fps` | **PASS** |
 | #6504 | 2026-10-29 10:13:40 | Micro Frontend Loader | `time_to_interactive` | `2041.6 ms` | **PASS** |
+| #6505 | 2026-10-29 10:13:50 | Dynamic Font Loader | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
