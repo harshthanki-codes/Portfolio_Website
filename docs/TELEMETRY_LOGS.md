@@ -6619,3 +6619,4 @@
 | #6576 | 2026-10-29 10:25:40 | Dynamic Font Loader | `jank_events` | `2.9 count` | **PASS** |
 | #6577 | 2026-10-29 10:25:50 | Responsive Grid System | `memory_footprint` | `113.0 MB` | **PASS** |
 | #6578 | 2026-10-29 10:26:00 | Viewport Resize Observer | `bundle_size` | `123.4 KB` | **PASS** |
+| #6579 | 2026-10-29 10:26:10 | Background Video Loop | `cpu_usage` | `12.4 %` | **PASS** |
