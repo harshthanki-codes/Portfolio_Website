@@ -6175,3 +6175,4 @@
 | #6132 | 2026-10-29 09:11:40 | Background Video Loop | `memory_footprint` | `75.2 MB` | **PASS** |
 | #6133 | 2026-10-29 09:11:50 | Viewport Resize Observer | `bundle_size` | `240.9 KB` | **PASS** |
 | #6134 | 2026-10-29 09:12:00 | Viewport Resize Observer | `gpu_utilization` | `42.6 %` | **PASS** |
+| #6135 | 2026-10-29 09:12:10 | Dynamic Font Loader | `first_contentful_paint` | `823.0 ms` | **PASS** |
