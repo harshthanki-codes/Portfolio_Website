@@ -6332,3 +6332,4 @@
 | #6289 | 2026-10-29 09:37:50 | Cache Warmup Service | `animation_fps` | `68.8 fps` | **PASS** |
 | #6290 | 2026-10-29 09:38:00 | State Sync Daemon | `frame_render_budget` | `24.5 ms (60fps)` | **PASS** |
 | #6291 | 2026-10-29 09:38:10 | Cache Warmup Service | `animation_fps` | `64.5 fps` | **PASS** |
+| #6292 | 2026-10-29 09:38:20 | Cache Warmup Service | `memory_footprint` | `66.2 MB` | **PASS** |
