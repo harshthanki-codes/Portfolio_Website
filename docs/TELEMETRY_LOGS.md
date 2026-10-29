@@ -5774,3 +5774,4 @@
 | #5731 | 2026-10-29 08:04:50 | WebGL Shader Compiler | `memory_footprint` | `109.3 MB` | **PASS** |
 | #5732 | 2026-10-29 08:05:00 | State Sync Daemon | `memory_footprint` | `115.4 MB` | **PASS** |
 | #5733 | 2026-10-29 08:05:10 | Predictive Arc Canvas | `first_contentful_paint` | `1061.1 ms` | **PASS** |
+| #5734 | 2026-10-29 08:05:20 | CSS-in-JS Themer | `time_to_interactive` | `1274.5 ms` | **PASS** |
