@@ -5748,3 +5748,4 @@
 | #5705 | 2026-10-29 08:00:30 | Audio Visualizer | `jank_events` | `1.4 count` | **PASS** |
 | #5706 | 2026-10-29 08:00:40 | Audio Visualizer | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
 | #5707 | 2026-10-29 08:00:50 | Viewport Resize Observer | `cpu_usage` | `42.5 %` | **PASS** |
+| #5708 | 2026-10-29 08:01:00 | Scroll Parallax Manager | `latency` | `10.5 ms` | **PASS** |
