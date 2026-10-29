@@ -6014,3 +6014,4 @@
 | #5971 | 2026-10-29 08:44:50 | Scroll Parallax Manager | `gpu_utilization` | `31.6 %` | **PASS** |
 | #5972 | 2026-10-29 08:45:00 | CSS-in-JS Themer | `gpu_utilization` | `33.9 %` | **PASS** |
 | #5973 | 2026-10-29 08:45:10 | Lottie Animation Engine | `animation_fps` | `71.2 fps` | **PASS** |
+| #5974 | 2026-10-29 08:45:20 | SVG Morphing Pipeline | `gpu_utilization` | `57.7 %` | **PASS** |
