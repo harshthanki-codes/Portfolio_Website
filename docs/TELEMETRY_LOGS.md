@@ -6778,3 +6778,4 @@
 | #6735 | 2026-10-29 10:52:10 | CSS-in-JS Themer | `latency` | `13.3 ms` | **PASS** |
 | #6736 | 2026-10-29 10:52:20 | 3D Particle Renderer | `bundle_size` | `83.3 KB` | **PASS** |
 | #6737 | 2026-10-29 10:52:30 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
+| #6738 | 2026-10-29 10:52:40 | Predictive Arc Canvas | `time_to_interactive` | `1229.3 ms` | **PASS** |
