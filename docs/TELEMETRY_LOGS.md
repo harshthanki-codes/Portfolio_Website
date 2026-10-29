@@ -6225,3 +6225,4 @@
 | #6182 | 2026-10-29 09:20:00 | Viewport Resize Observer | `memory_footprint` | `66.8 MB` | **PASS** |
 | #6183 | 2026-10-29 09:20:10 | SVG Morphing Pipeline | `gpu_utilization` | `40.6 %` | **PASS** |
 | #6184 | 2026-10-29 09:20:20 | WebGL Shader Compiler | `time_to_interactive` | `1589.4 ms` | **PASS** |
+| #6185 | 2026-10-29 09:20:30 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
