@@ -6868,3 +6868,4 @@
 | #6825 | 2026-10-29 11:07:10 | Telemetry Beacon | `memory_footprint` | `96.3 MB` | **PASS** |
 | #6826 | 2026-10-29 11:07:20 | Background Video Loop | `memory_footprint` | `97.6 MB` | **PASS** |
 | #6827 | 2026-10-29 11:07:30 | Telemetry Beacon | `memory_footprint` | `54.6 MB` | **PASS** |
+| #6828 | 2026-10-29 11:07:40 | SVG Morphing Pipeline | `first_contentful_paint` | `837.2 ms` | **PASS** |
