@@ -6255,3 +6255,4 @@
 | #6212 | 2026-10-29 09:25:00 | Progressive Image Loader | `cpu_usage` | `12.1 %` | **PASS** |
 | #6213 | 2026-10-29 09:25:10 | Dynamic Font Loader | `gpu_utilization` | `53.2 %` | **PASS** |
 | #6214 | 2026-10-29 09:25:20 | WebGL Shader Compiler | `jank_events` | `1.7 count` | **PASS** |
+| #6215 | 2026-10-29 09:25:30 | Background Video Loop | `frame_render_budget` | `29.6 ms (60fps)` | **PASS** |
