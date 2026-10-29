@@ -6661,3 +6661,4 @@
 | #6618 | 2026-10-29 10:32:40 | WebGL Shader Compiler | `animation_fps` | `58.0 fps` | **PASS** |
 | #6619 | 2026-10-29 10:32:50 | Dynamic Font Loader | `latency` | `10.9 ms` | **PASS** |
 | #6620 | 2026-10-29 10:33:00 | Lottie Animation Engine | `time_to_interactive` | `1420.9 ms` | **PASS** |
+| #6621 | 2026-10-29 10:33:10 | Scroll Parallax Manager | `animation_fps` | `69.1 fps` | **PASS** |
