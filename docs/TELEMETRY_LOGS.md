@@ -6648,3 +6648,4 @@
 | #6605 | 2026-10-29 10:30:30 | Dynamic Font Loader | `first_contentful_paint` | `800.0 ms` | **PASS** |
 | #6606 | 2026-10-29 10:30:40 | Background Video Loop | `bundle_size` | `125.4 KB` | **PASS** |
 | #6607 | 2026-10-29 10:30:50 | Telemetry Beacon | `memory_footprint` | `64.6 MB` | **PASS** |
+| #6608 | 2026-10-29 10:31:00 | Background Video Loop | `time_to_interactive` | `1966.1 ms` | **PASS** |
