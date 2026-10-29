@@ -6875,3 +6875,4 @@
 | #6832 | 2026-10-29 11:08:20 | CSS-in-JS Themer | `frame_render_budget` | `25.0 ms (60fps)` | **PASS** |
 | #6833 | 2026-10-29 11:08:30 | Cache Warmup Service | `gpu_utilization` | `69.7 %` | **PASS** |
 | #6834 | 2026-10-29 11:08:40 | 3D Particle Renderer | `time_to_interactive` | `1957.7 ms` | **PASS** |
+| #6835 | 2026-10-29 11:08:50 | Background Video Loop | `latency` | `19.9 ms` | **PASS** |
