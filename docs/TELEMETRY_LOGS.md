@@ -6269,3 +6269,4 @@
 | #6226 | 2026-10-29 09:27:20 | State Sync Daemon | `time_to_interactive` | `1689.8 ms` | **PASS** |
 | #6227 | 2026-10-29 09:27:30 | Touch Gesture Dispatcher | `jank_events` | `0.5 count` | **PASS** |
 | #6228 | 2026-10-29 09:27:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1402.9 ms` | **PASS** |
+| #6229 | 2026-10-29 09:27:50 | Lazy Load Optimizer | `latency` | `15.6 ms` | **PASS** |
