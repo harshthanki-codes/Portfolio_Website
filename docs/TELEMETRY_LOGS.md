@@ -6205,3 +6205,4 @@
 | #6162 | 2026-10-29 09:16:40 | Progressive Image Loader | `bundle_size` | `227.0 KB` | **PASS** |
 | #6163 | 2026-10-29 09:16:50 | Telemetry Beacon | `time_to_interactive` | `1976.0 ms` | **PASS** |
 | #6164 | 2026-10-29 09:17:00 | Cache Warmup Service | `latency` | `5.7 ms` | **PASS** |
+| #6165 | 2026-10-29 09:17:10 | 3D Particle Renderer | `time_to_interactive` | `2207.0 ms` | **PASS** |
