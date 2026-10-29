@@ -6246,3 +6246,4 @@
 | #6203 | 2026-10-29 09:23:30 | SVG Morphing Pipeline | `animation_fps` | `58.9 fps` | **PASS** |
 | #6204 | 2026-10-29 09:23:40 | Background Video Loop | `first_contentful_paint` | `961.2 ms` | **PASS** |
 | #6205 | 2026-10-29 09:23:50 | Cache Warmup Service | `animation_fps` | `72.7 fps` | **PASS** |
+| #6206 | 2026-10-29 09:24:00 | WebGL Shader Compiler | `gpu_utilization` | `53.9 %` | **PASS** |
