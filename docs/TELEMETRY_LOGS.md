@@ -6404,3 +6404,4 @@
 | #6361 | 2026-10-29 09:49:50 | Background Video Loop | `gpu_utilization` | `27.7 %` | **PASS** |
 | #6362 | 2026-10-29 09:50:00 | 3D Particle Renderer | `time_to_interactive` | `1382.8 ms` | **PASS** |
 | #6363 | 2026-10-29 09:50:10 | Progressive Image Loader | `bundle_size` | `223.8 KB` | **PASS** |
+| #6364 | 2026-10-29 09:50:20 | Background Video Loop | `jank_events` | `2.2 count` | **PASS** |
