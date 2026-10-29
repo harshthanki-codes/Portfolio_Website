@@ -5980,3 +5980,4 @@
 | #5937 | 2026-10-29 08:39:10 | Touch Gesture Dispatcher | `animation_fps` | `68.3 fps` | **PASS** |
 | #5938 | 2026-10-29 08:39:20 | Micro Frontend Loader | `cpu_usage` | `13.4 %` | **PASS** |
 | #5939 | 2026-10-29 08:39:30 | WebGL Shader Compiler | `time_to_interactive` | `2430.7 ms` | **PASS** |
+| #5940 | 2026-10-29 08:39:40 | SVG Morphing Pipeline | `jank_events` | `0.5 count` | **PASS** |
