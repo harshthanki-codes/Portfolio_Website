@@ -6867,3 +6867,4 @@
 | #6824 | 2026-10-29 11:07:00 | 3D Particle Renderer | `memory_footprint` | `64.8 MB` | **PASS** |
 | #6825 | 2026-10-29 11:07:10 | Telemetry Beacon | `memory_footprint` | `96.3 MB` | **PASS** |
 | #6826 | 2026-10-29 11:07:20 | Background Video Loop | `memory_footprint` | `97.6 MB` | **PASS** |
+| #6827 | 2026-10-29 11:07:30 | Telemetry Beacon | `memory_footprint` | `54.6 MB` | **PASS** |
