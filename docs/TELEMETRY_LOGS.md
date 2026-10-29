@@ -6054,3 +6054,4 @@
 | #6011 | 2026-10-29 08:51:30 | Audio Visualizer | `time_to_interactive` | `2489.2 ms` | **PASS** |
 | #6012 | 2026-10-29 08:51:40 | Touch Gesture Dispatcher | `animation_fps` | `70.0 fps` | **PASS** |
 | #6013 | 2026-10-29 08:51:50 | Responsive Grid System | `memory_footprint` | `109.2 MB` | **PASS** |
+| #6014 | 2026-10-29 08:52:00 | WebGL Shader Compiler | `frame_render_budget` | `20.6 ms (60fps)` | **PASS** |
