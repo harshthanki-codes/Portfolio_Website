@@ -6038,3 +6038,4 @@
 | #5995 | 2026-10-29 08:48:50 | Scroll Parallax Manager | `cpu_usage` | `10.8 %` | **PASS** |
 | #5996 | 2026-10-29 08:49:00 | Background Video Loop | `latency` | `12.4 ms` | **PASS** |
 | #5997 | 2026-10-29 08:49:10 | State Sync Daemon | `bundle_size` | `185.9 KB` | **PASS** |
+| #5998 | 2026-10-29 08:49:20 | SVG Morphing Pipeline | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
