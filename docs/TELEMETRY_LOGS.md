@@ -5910,3 +5910,4 @@
 | #5867 | 2026-10-29 08:27:30 | Telemetry Beacon | `gpu_utilization` | `47.0 %` | **PASS** |
 | #5868 | 2026-10-29 08:27:40 | Interactive Tooltip Engine | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
 | #5869 | 2026-10-29 08:27:50 | Viewport Resize Observer | `animation_fps` | `68.7 fps` | **PASS** |
+| #5870 | 2026-10-29 08:28:00 | WebGL Shader Compiler | `first_contentful_paint` | `974.1 ms` | **PASS** |
