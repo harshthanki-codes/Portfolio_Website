@@ -5820,3 +5820,4 @@
 | #5777 | 2026-10-29 08:12:30 | Telemetry Beacon | `latency` | `14.5 ms` | **PASS** |
 | #5778 | 2026-10-29 08:12:40 | Telemetry Beacon | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
 | #5779 | 2026-10-29 08:12:50 | State Sync Daemon | `jank_events` | `1.9 count` | **PASS** |
+| #5780 | 2026-10-29 08:13:00 | Touch Gesture Dispatcher | `jank_events` | `2.3 count` | **PASS** |
