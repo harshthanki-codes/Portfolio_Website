@@ -5804,3 +5804,4 @@
 | #5761 | 2026-10-29 08:09:50 | Predictive Arc Canvas | `time_to_interactive` | `1953.8 ms` | **PASS** |
 | #5762 | 2026-10-29 08:10:00 | Touch Gesture Dispatcher | `jank_events` | `1.3 count` | **PASS** |
 | #5763 | 2026-10-29 08:10:10 | Audio Visualizer | `time_to_interactive` | `1645.8 ms` | **PASS** |
+| #5764 | 2026-10-29 08:10:20 | Interactive Tooltip Engine | `gpu_utilization` | `58.9 %` | **PASS** |
