@@ -6906,3 +6906,4 @@
 | #6863 | 2026-10-29 11:13:30 | CSS-in-JS Themer | `time_to_interactive` | `2049.0 ms` | **PASS** |
 | #6864 | 2026-10-29 11:13:40 | SVG Morphing Pipeline | `cpu_usage` | `26.1 %` | **PASS** |
 | #6865 | 2026-10-29 11:13:50 | Audio Visualizer | `bundle_size` | `241.6 KB` | **PASS** |
+| #6866 | 2026-10-29 11:14:00 | Scroll Parallax Manager | `animation_fps` | `68.3 fps` | **PASS** |
