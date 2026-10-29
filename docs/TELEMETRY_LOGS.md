@@ -6003,3 +6003,4 @@
 | #5960 | 2026-10-29 08:43:00 | State Sync Daemon | `gpu_utilization` | `43.2 %` | **PASS** |
 | #5961 | 2026-10-29 08:43:10 | SVG Morphing Pipeline | `first_contentful_paint` | `921.0 ms` | **PASS** |
 | #5962 | 2026-10-29 08:43:20 | SVG Morphing Pipeline | `animation_fps` | `65.8 fps` | **PASS** |
+| #5963 | 2026-10-29 08:43:30 | Lazy Load Optimizer | `jank_events` | `2.3 count` | **PASS** |
