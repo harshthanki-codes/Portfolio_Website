@@ -5966,3 +5966,4 @@
 | #5923 | 2026-10-29 08:36:50 | Viewport Resize Observer | `memory_footprint` | `102.3 MB` | **PASS** |
 | #5924 | 2026-10-29 08:37:00 | SVG Morphing Pipeline | `time_to_interactive` | `1236.8 ms` | **PASS** |
 | #5925 | 2026-10-29 08:37:10 | Interactive Tooltip Engine | `time_to_interactive` | `1709.9 ms` | **PASS** |
+| #5926 | 2026-10-29 08:37:20 | Background Video Loop | `animation_fps` | `74.4 fps` | **PASS** |
