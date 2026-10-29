@@ -6825,3 +6825,4 @@
 | #6782 | 2026-10-29 11:00:00 | Scroll Parallax Manager | `bundle_size` | `104.8 KB` | **PASS** |
 | #6783 | 2026-10-29 11:00:10 | Lazy Load Optimizer | `jank_events` | `1.8 count` | **PASS** |
 | #6784 | 2026-10-29 11:00:20 | Scroll Parallax Manager | `cpu_usage` | `12.3 %` | **PASS** |
+| #6785 | 2026-10-29 11:00:30 | Progressive Image Loader | `frame_render_budget` | `21.6 ms (60fps)` | **PASS** |
