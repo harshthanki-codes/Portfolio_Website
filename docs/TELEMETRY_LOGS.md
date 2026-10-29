@@ -6727,3 +6727,4 @@
 | #6684 | 2026-10-29 10:43:40 | Touch Gesture Dispatcher | `memory_footprint` | `107.7 MB` | **PASS** |
 | #6685 | 2026-10-29 10:43:50 | Viewport Resize Observer | `jank_events` | `2.2 count` | **PASS** |
 | #6686 | 2026-10-29 10:44:00 | Telemetry Beacon | `first_contentful_paint` | `1493.5 ms` | **PASS** |
+| #6687 | 2026-10-29 10:44:10 | Viewport Resize Observer | `gpu_utilization` | `43.4 %` | **PASS** |
