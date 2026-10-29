@@ -6369,3 +6369,4 @@
 | #6326 | 2026-10-29 09:44:00 | Dynamic Font Loader | `frame_render_budget` | `24.9 ms (60fps)` | **PASS** |
 | #6327 | 2026-10-29 09:44:10 | Progressive Image Loader | `memory_footprint` | `78.2 MB` | **PASS** |
 | #6328 | 2026-10-29 09:44:20 | Telemetry Beacon | `time_to_interactive` | `1957.5 ms` | **PASS** |
+| #6329 | 2026-10-29 09:44:30 | Interactive Tooltip Engine | `gpu_utilization` | `42.2 %` | **PASS** |
