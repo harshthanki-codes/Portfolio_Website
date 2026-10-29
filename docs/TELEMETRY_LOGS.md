@@ -6329,3 +6329,4 @@
 | #6286 | 2026-10-29 09:37:20 | Lottie Animation Engine | `jank_events` | `1.4 count` | **PASS** |
 | #6287 | 2026-10-29 09:37:30 | Lottie Animation Engine | `time_to_interactive` | `2324.4 ms` | **PASS** |
 | #6288 | 2026-10-29 09:37:40 | Scroll Parallax Manager | `latency` | `18.3 ms` | **PASS** |
+| #6289 | 2026-10-29 09:37:50 | Cache Warmup Service | `animation_fps` | `68.8 fps` | **PASS** |
