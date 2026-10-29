@@ -6649,3 +6649,4 @@
 | #6606 | 2026-10-29 10:30:40 | Background Video Loop | `bundle_size` | `125.4 KB` | **PASS** |
 | #6607 | 2026-10-29 10:30:50 | Telemetry Beacon | `memory_footprint` | `64.6 MB` | **PASS** |
 | #6608 | 2026-10-29 10:31:00 | Background Video Loop | `time_to_interactive` | `1966.1 ms` | **PASS** |
+| #6609 | 2026-10-29 10:31:10 | Touch Gesture Dispatcher | `cpu_usage` | `38.6 %` | **PASS** |
