@@ -6456,3 +6456,4 @@
 | #6413 | 2026-10-29 09:58:30 | Viewport Resize Observer | `first_contentful_paint` | `1359.6 ms` | **PASS** |
 | #6414 | 2026-10-29 09:58:40 | Lottie Animation Engine | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
 | #6415 | 2026-10-29 09:58:50 | Scroll Parallax Manager | `jank_events` | `0.9 count` | **PASS** |
+| #6416 | 2026-10-29 09:59:00 | 3D Particle Renderer | `latency` | `5.9 ms` | **PASS** |
