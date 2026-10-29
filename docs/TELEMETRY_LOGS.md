@@ -6451,3 +6451,4 @@
 | #6408 | 2026-10-29 09:57:40 | Micro Frontend Loader | `latency` | `19.0 ms` | **PASS** |
 | #6409 | 2026-10-29 09:57:50 | Lottie Animation Engine | `first_contentful_paint` | `810.8 ms` | **PASS** |
 | #6410 | 2026-10-29 09:58:00 | Micro Frontend Loader | `jank_events` | `2.4 count` | **PASS** |
+| #6411 | 2026-10-29 09:58:10 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
