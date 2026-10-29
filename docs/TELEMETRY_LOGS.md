@@ -6248,3 +6248,4 @@
 | #6205 | 2026-10-29 09:23:50 | Cache Warmup Service | `animation_fps` | `72.7 fps` | **PASS** |
 | #6206 | 2026-10-29 09:24:00 | WebGL Shader Compiler | `gpu_utilization` | `53.9 %` | **PASS** |
 | #6207 | 2026-10-29 09:24:10 | Progressive Image Loader | `jank_events` | `2.1 count` | **PASS** |
+| #6208 | 2026-10-29 09:24:20 | Lottie Animation Engine | `bundle_size` | `198.2 KB` | **PASS** |
