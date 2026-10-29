@@ -5840,3 +5840,4 @@
 | #5797 | 2026-10-29 08:15:50 | Cache Warmup Service | `time_to_interactive` | `2352.1 ms` | **PASS** |
 | #5798 | 2026-10-29 08:16:00 | Telemetry Beacon | `cpu_usage` | `22.8 %` | **PASS** |
 | #5799 | 2026-10-29 08:16:10 | Predictive Arc Canvas | `gpu_utilization` | `56.4 %` | **PASS** |
+| #5800 | 2026-10-29 08:16:20 | Telemetry Beacon | `latency` | `6.3 ms` | **PASS** |
