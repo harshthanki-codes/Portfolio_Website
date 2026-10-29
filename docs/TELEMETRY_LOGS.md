@@ -6571,3 +6571,4 @@
 | #6528 | 2026-10-29 10:17:40 | CSS-in-JS Themer | `gpu_utilization` | `47.8 %` | **PASS** |
 | #6529 | 2026-10-29 10:17:50 | Cache Warmup Service | `jank_events` | `0.6 count` | **PASS** |
 | #6530 | 2026-10-29 10:18:00 | Scroll Parallax Manager | `animation_fps` | `57.4 fps` | **PASS** |
+| #6531 | 2026-10-29 10:18:10 | Micro Frontend Loader | `time_to_interactive` | `1217.1 ms` | **PASS** |
