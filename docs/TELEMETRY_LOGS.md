@@ -6107,3 +6107,4 @@
 | #6064 | 2026-10-29 09:00:20 | State Sync Daemon | `cpu_usage` | `24.7 %` | **PASS** |
 | #6065 | 2026-10-29 09:00:30 | Touch Gesture Dispatcher | `first_contentful_paint` | `1260.6 ms` | **PASS** |
 | #6066 | 2026-10-29 09:00:40 | State Sync Daemon | `cpu_usage` | `22.8 %` | **PASS** |
+| #6067 | 2026-10-29 09:00:50 | Background Video Loop | `latency` | `23.1 ms` | **PASS** |
