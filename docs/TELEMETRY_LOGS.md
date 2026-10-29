@@ -6924,3 +6924,4 @@
 | #6881 | 2026-10-29 11:16:30 | Dynamic Font Loader | `first_contentful_paint` | `1175.4 ms` | **PASS** |
 | #6882 | 2026-10-29 11:16:40 | State Sync Daemon | `time_to_interactive` | `2104.1 ms` | **PASS** |
 | #6883 | 2026-10-29 11:16:50 | Interactive Tooltip Engine | `first_contentful_paint` | `1063.5 ms` | **PASS** |
+| #6884 | 2026-10-29 11:17:00 | Background Video Loop | `jank_events` | `1.6 count` | **PASS** |
