@@ -6566,3 +6566,4 @@
 | #6523 | 2026-10-29 10:16:50 | Audio Visualizer | `time_to_interactive` | `2447.7 ms` | **PASS** |
 | #6524 | 2026-10-29 10:17:00 | 3D Particle Renderer | `bundle_size` | `207.8 KB` | **PASS** |
 | #6525 | 2026-10-29 10:17:10 | Touch Gesture Dispatcher | `jank_events` | `1.0 count` | **PASS** |
+| #6526 | 2026-10-29 10:17:20 | Background Video Loop | `animation_fps` | `69.7 fps` | **PASS** |
