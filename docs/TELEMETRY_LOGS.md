@@ -5793,3 +5793,4 @@
 | #5750 | 2026-10-29 08:08:00 | Audio Visualizer | `latency` | `15.9 ms` | **PASS** |
 | #5751 | 2026-10-29 08:08:10 | Audio Visualizer | `bundle_size` | `241.8 KB` | **PASS** |
 | #5752 | 2026-10-29 08:08:20 | WebGL Shader Compiler | `jank_events` | `2.5 count` | **PASS** |
+| #5753 | 2026-10-29 08:08:30 | Interactive Tooltip Engine | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
