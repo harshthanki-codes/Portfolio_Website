@@ -5845,3 +5845,4 @@
 | #5802 | 2026-10-29 08:16:40 | Scroll Parallax Manager | `memory_footprint` | `60.3 MB` | **PASS** |
 | #5803 | 2026-10-29 08:16:50 | Viewport Resize Observer | `time_to_interactive` | `1265.7 ms` | **PASS** |
 | #5804 | 2026-10-29 08:17:00 | 3D Particle Renderer | `animation_fps` | `69.2 fps` | **PASS** |
+| #5805 | 2026-10-29 08:17:10 | Viewport Resize Observer | `gpu_utilization` | `64.0 %` | **PASS** |
