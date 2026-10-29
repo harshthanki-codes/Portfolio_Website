@@ -6902,3 +6902,4 @@
 | #6859 | 2026-10-29 11:12:50 | State Sync Daemon | `gpu_utilization` | `20.3 %` | **PASS** |
 | #6860 | 2026-10-29 11:13:00 | Micro Frontend Loader | `jank_events` | `0.5 count` | **PASS** |
 | #6861 | 2026-10-29 11:13:10 | State Sync Daemon | `time_to_interactive` | `2482.3 ms` | **PASS** |
+| #6862 | 2026-10-29 11:13:20 | SVG Morphing Pipeline | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
