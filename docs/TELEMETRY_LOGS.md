@@ -6119,3 +6119,4 @@
 | #6076 | 2026-10-29 09:02:20 | Cache Warmup Service | `first_contentful_paint` | `927.7 ms` | **PASS** |
 | #6077 | 2026-10-29 09:02:30 | Lazy Load Optimizer | `first_contentful_paint` | `1024.4 ms` | **PASS** |
 | #6078 | 2026-10-29 09:02:40 | Dynamic Font Loader | `animation_fps` | `67.6 fps` | **PASS** |
+| #6079 | 2026-10-29 09:02:50 | Dynamic Font Loader | `animation_fps` | `59.4 fps` | **PASS** |
