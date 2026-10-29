@@ -6900,3 +6900,4 @@
 | #6857 | 2026-10-29 11:12:30 | SVG Morphing Pipeline | `frame_render_budget` | `26.7 ms (60fps)` | **PASS** |
 | #6858 | 2026-10-29 11:12:40 | Background Video Loop | `animation_fps` | `73.2 fps` | **PASS** |
 | #6859 | 2026-10-29 11:12:50 | State Sync Daemon | `gpu_utilization` | `20.3 %` | **PASS** |
+| #6860 | 2026-10-29 11:13:00 | Micro Frontend Loader | `jank_events` | `0.5 count` | **PASS** |
