@@ -6068,3 +6068,4 @@
 | #6025 | 2026-10-29 08:53:50 | Audio Visualizer | `first_contentful_paint` | `1204.4 ms` | **PASS** |
 | #6026 | 2026-10-29 08:54:00 | Scroll Parallax Manager | `animation_fps` | `65.3 fps` | **PASS** |
 | #6027 | 2026-10-29 08:54:10 | State Sync Daemon | `cpu_usage` | `29.9 %` | **PASS** |
+| #6028 | 2026-10-29 08:54:20 | Scroll Parallax Manager | `time_to_interactive` | `2466.2 ms` | **PASS** |
