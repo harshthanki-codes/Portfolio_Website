@@ -5898,3 +5898,4 @@
 | #5855 | 2026-10-29 08:25:30 | Cache Warmup Service | `bundle_size` | `208.1 KB` | **PASS** |
 | #5856 | 2026-10-29 08:25:40 | Dynamic Font Loader | `time_to_interactive` | `2286.7 ms` | **PASS** |
 | #5857 | 2026-10-29 08:25:50 | Progressive Image Loader | `gpu_utilization` | `42.3 %` | **PASS** |
+| #5858 | 2026-10-29 08:26:00 | 3D Particle Renderer | `gpu_utilization` | `47.2 %` | **PASS** |
