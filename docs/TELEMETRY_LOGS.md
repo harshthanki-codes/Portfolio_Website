@@ -5908,3 +5908,4 @@
 | #5865 | 2026-10-29 08:27:10 | 3D Particle Renderer | `time_to_interactive` | `2303.5 ms` | **PASS** |
 | #5866 | 2026-10-29 08:27:20 | Telemetry Beacon | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
 | #5867 | 2026-10-29 08:27:30 | Telemetry Beacon | `gpu_utilization` | `47.0 %` | **PASS** |
+| #5868 | 2026-10-29 08:27:40 | Interactive Tooltip Engine | `frame_render_budget` | `28.4 ms (60fps)` | **PASS** |
