@@ -6637,3 +6637,4 @@
 | #6594 | 2026-10-29 10:28:40 | Viewport Resize Observer | `memory_footprint` | `74.4 MB` | **PASS** |
 | #6595 | 2026-10-29 10:28:50 | CSS-in-JS Themer | `bundle_size` | `168.6 KB` | **PASS** |
 | #6596 | 2026-10-29 10:29:00 | Interactive Tooltip Engine | `jank_events` | `1.1 count` | **PASS** |
+| #6597 | 2026-10-29 10:29:10 | Cache Warmup Service | `bundle_size` | `94.5 KB` | **PASS** |
