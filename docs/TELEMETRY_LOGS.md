@@ -5866,3 +5866,4 @@
 | #5823 | 2026-10-29 08:20:10 | Viewport Resize Observer | `jank_events` | `0.0 count` | **PASS** |
 | #5824 | 2026-10-29 08:20:20 | Cache Warmup Service | `time_to_interactive` | `1641.9 ms` | **PASS** |
 | #5825 | 2026-10-29 08:20:30 | SVG Morphing Pipeline | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
+| #5826 | 2026-10-29 08:20:40 | SVG Morphing Pipeline | `bundle_size` | `81.0 KB` | **PASS** |
