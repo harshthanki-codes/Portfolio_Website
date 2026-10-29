@@ -6387,3 +6387,4 @@
 | #6344 | 2026-10-29 09:47:00 | Responsive Grid System | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
 | #6345 | 2026-10-29 09:47:10 | 3D Particle Renderer | `latency` | `6.6 ms` | **PASS** |
 | #6346 | 2026-10-29 09:47:20 | SVG Morphing Pipeline | `cpu_usage` | `11.2 %` | **PASS** |
+| #6347 | 2026-10-29 09:47:30 | Scroll Parallax Manager | `time_to_interactive` | `2188.1 ms` | **PASS** |
