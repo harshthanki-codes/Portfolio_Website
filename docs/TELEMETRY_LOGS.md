@@ -6918,3 +6918,4 @@
 | #6875 | 2026-10-29 11:15:30 | Micro Frontend Loader | `time_to_interactive` | `1464.2 ms` | **PASS** |
 | #6876 | 2026-10-29 11:15:40 | WebGL Shader Compiler | `cpu_usage` | `27.4 %` | **PASS** |
 | #6877 | 2026-10-29 11:15:50 | Viewport Resize Observer | `cpu_usage` | `18.0 %` | **PASS** |
+| #6878 | 2026-10-29 11:16:00 | SVG Morphing Pipeline | `gpu_utilization` | `42.7 %` | **PASS** |
