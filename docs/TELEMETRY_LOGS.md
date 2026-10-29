@@ -6599,3 +6599,4 @@
 | #6556 | 2026-10-29 10:22:20 | Viewport Resize Observer | `time_to_interactive` | `2283.5 ms` | **PASS** |
 | #6557 | 2026-10-29 10:22:30 | Background Video Loop | `bundle_size` | `142.3 KB` | **PASS** |
 | #6558 | 2026-10-29 10:22:40 | State Sync Daemon | `jank_events` | `0.8 count` | **PASS** |
+| #6559 | 2026-10-29 10:22:50 | State Sync Daemon | `jank_events` | `2.4 count` | **PASS** |
