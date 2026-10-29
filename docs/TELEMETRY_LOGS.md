@@ -6646,3 +6646,4 @@
 | #6603 | 2026-10-29 10:30:10 | Background Video Loop | `jank_events` | `2.8 count` | **PASS** |
 | #6604 | 2026-10-29 10:30:20 | State Sync Daemon | `jank_events` | `0.1 count` | **PASS** |
 | #6605 | 2026-10-29 10:30:30 | Dynamic Font Loader | `first_contentful_paint` | `800.0 ms` | **PASS** |
+| #6606 | 2026-10-29 10:30:40 | Background Video Loop | `bundle_size` | `125.4 KB` | **PASS** |
