@@ -6567,3 +6567,4 @@
 | #6524 | 2026-10-29 10:17:00 | 3D Particle Renderer | `bundle_size` | `207.8 KB` | **PASS** |
 | #6525 | 2026-10-29 10:17:10 | Touch Gesture Dispatcher | `jank_events` | `1.0 count` | **PASS** |
 | #6526 | 2026-10-29 10:17:20 | Background Video Loop | `animation_fps` | `69.7 fps` | **PASS** |
+| #6527 | 2026-10-29 10:17:30 | Cache Warmup Service | `latency` | `12.3 ms` | **PASS** |
