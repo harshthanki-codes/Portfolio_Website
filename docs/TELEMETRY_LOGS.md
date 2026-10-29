@@ -6061,3 +6061,4 @@
 | #6018 | 2026-10-29 08:52:40 | Touch Gesture Dispatcher | `animation_fps` | `60.0 fps` | **PASS** |
 | #6019 | 2026-10-29 08:52:50 | Scroll Parallax Manager | `cpu_usage` | `33.2 %` | **PASS** |
 | #6020 | 2026-10-29 08:53:00 | Telemetry Beacon | `jank_events` | `2.4 count` | **PASS** |
+| #6021 | 2026-10-29 08:53:10 | Telemetry Beacon | `time_to_interactive` | `1537.6 ms` | **PASS** |
