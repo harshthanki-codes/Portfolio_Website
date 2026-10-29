@@ -108,13 +108,24 @@ export const MobileNavDrawer: React.FC = () => {
 
             {/* Bottom Meta */}
             <div className="pt-6 border-t border-[var(--border-subtle)] space-y-3 font-mono text-[var(--text-xs)]">
+              <button
+                type="button"
+                onClick={() => {
+                  setIsOpen(false);
+                  window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }));
+                }}
+                className="touch-target w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/15 text-white text-center font-bold transition-colors flex items-center justify-center gap-2 border border-white/10"
+              >
+                <Terminal className="w-4 h-4 text-orange-400" />
+                <span>Open Systems Console (⌘K)</span>
+              </button>
               <div className="text-[var(--text-tertiary)]">
                 Harsh Thanki · AI Architect &amp; Solutions Engineer
               </div>
               <a
                 href="#scoper"
                 onClick={handleLinkClick}
-                className="touch-target w-full py-2.5 px-4 bg-[var(--accent)] text-[var(--accent-text)] text-center font-bold hover:bg-[var(--accent-hover)] transition-colors block shadow-sm"
+                className="touch-target w-full py-2.5 px-4 bg-[var(--accent)] text-[var(--accent-text)] text-center font-bold hover:bg-[var(--accent-hover)] transition-colors block shadow-sm rounded-xl"
               >
                 Scope Project &rarr;
               </a>

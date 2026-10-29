@@ -238,8 +238,8 @@ export const CommandPalette: React.FC = () => {
 
   return (
     <>
-      {/* Floating HUD Trigger Pill */}
-      <div className="fixed bottom-5 right-5 z-40">
+      {/* Floating HUD Trigger Pill - Hidden on mobile (<sm) to prevent overlapping bottom content, visible on sm+ */}
+      <div className="fixed bottom-5 right-5 z-40 hidden sm:block">
         <button
           type="button"
           onClick={() => {
