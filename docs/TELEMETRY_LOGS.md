@@ -5811,3 +5811,4 @@
 | #5768 | 2026-10-29 08:11:00 | CSS-in-JS Themer | `first_contentful_paint` | `949.9 ms` | **PASS** |
 | #5769 | 2026-10-29 08:11:10 | Background Video Loop | `jank_events` | `1.5 count` | **PASS** |
 | #5770 | 2026-10-29 08:11:20 | SVG Morphing Pipeline | `memory_footprint` | `62.5 MB` | **PASS** |
+| #5771 | 2026-10-29 08:11:30 | Predictive Arc Canvas | `time_to_interactive` | `1282.0 ms` | **PASS** |
