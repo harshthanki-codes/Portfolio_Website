@@ -6430,3 +6430,4 @@
 | #6387 | 2026-10-29 09:54:10 | Interactive Tooltip Engine | `time_to_interactive` | `1687.9 ms` | **PASS** |
 | #6388 | 2026-10-29 09:54:20 | Progressive Image Loader | `jank_events` | `0.9 count` | **PASS** |
 | #6389 | 2026-10-29 09:54:30 | Predictive Arc Canvas | `animation_fps` | `63.5 fps` | **PASS** |
+| #6390 | 2026-10-29 09:54:40 | Interactive Tooltip Engine | `gpu_utilization` | `21.4 %` | **PASS** |
