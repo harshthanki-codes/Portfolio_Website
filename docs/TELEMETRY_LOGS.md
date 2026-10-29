@@ -6494,3 +6494,4 @@
 | #6451 | 2026-10-29 10:04:50 | Touch Gesture Dispatcher | `memory_footprint` | `66.4 MB` | **PASS** |
 | #6452 | 2026-10-29 10:05:00 | Cache Warmup Service | `memory_footprint` | `60.5 MB` | **PASS** |
 | #6453 | 2026-10-29 10:05:10 | Viewport Resize Observer | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
+| #6454 | 2026-10-29 10:05:20 | Progressive Image Loader | `gpu_utilization` | `23.6 %` | **PASS** |
