@@ -6244,3 +6244,4 @@
 | #6201 | 2026-10-29 09:23:10 | Progressive Image Loader | `latency` | `17.9 ms` | **PASS** |
 | #6202 | 2026-10-29 09:23:20 | Lottie Animation Engine | `jank_events` | `1.9 count` | **PASS** |
 | #6203 | 2026-10-29 09:23:30 | SVG Morphing Pipeline | `animation_fps` | `58.9 fps` | **PASS** |
+| #6204 | 2026-10-29 09:23:40 | Background Video Loop | `first_contentful_paint` | `961.2 ms` | **PASS** |
