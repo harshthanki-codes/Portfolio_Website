@@ -6428,3 +6428,4 @@
 | #6385 | 2026-10-29 09:53:50 | WebGL Shader Compiler | `first_contentful_paint` | `1119.7 ms` | **PASS** |
 | #6386 | 2026-10-29 09:54:00 | State Sync Daemon | `latency` | `22.4 ms` | **PASS** |
 | #6387 | 2026-10-29 09:54:10 | Interactive Tooltip Engine | `time_to_interactive` | `1687.9 ms` | **PASS** |
+| #6388 | 2026-10-29 09:54:20 | Progressive Image Loader | `jank_events` | `0.9 count` | **PASS** |
