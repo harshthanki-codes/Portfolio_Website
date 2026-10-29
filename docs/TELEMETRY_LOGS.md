@@ -6267,3 +6267,4 @@
 | #6224 | 2026-10-29 09:27:00 | CSS-in-JS Themer | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
 | #6225 | 2026-10-29 09:27:10 | Micro Frontend Loader | `memory_footprint` | `111.2 MB` | **PASS** |
 | #6226 | 2026-10-29 09:27:20 | State Sync Daemon | `time_to_interactive` | `1689.8 ms` | **PASS** |
+| #6227 | 2026-10-29 09:27:30 | Touch Gesture Dispatcher | `jank_events` | `0.5 count` | **PASS** |
