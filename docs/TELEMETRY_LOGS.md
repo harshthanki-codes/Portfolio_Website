@@ -6176,3 +6176,4 @@
 | #6133 | 2026-10-29 09:11:50 | Viewport Resize Observer | `bundle_size` | `240.9 KB` | **PASS** |
 | #6134 | 2026-10-29 09:12:00 | Viewport Resize Observer | `gpu_utilization` | `42.6 %` | **PASS** |
 | #6135 | 2026-10-29 09:12:10 | Dynamic Font Loader | `first_contentful_paint` | `823.0 ms` | **PASS** |
+| #6136 | 2026-10-29 09:12:20 | WebGL Shader Compiler | `gpu_utilization` | `60.3 %` | **PASS** |
