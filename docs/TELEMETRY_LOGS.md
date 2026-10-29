@@ -6035,3 +6035,4 @@
 | #5992 | 2026-10-29 08:48:20 | Scroll Parallax Manager | `cpu_usage` | `27.7 %` | **PASS** |
 | #5993 | 2026-10-29 08:48:30 | CSS-in-JS Themer | `animation_fps` | `65.6 fps` | **PASS** |
 | #5994 | 2026-10-29 08:48:40 | Interactive Tooltip Engine | `memory_footprint` | `62.0 MB` | **PASS** |
+| #5995 | 2026-10-29 08:48:50 | Scroll Parallax Manager | `cpu_usage` | `10.8 %` | **PASS** |
