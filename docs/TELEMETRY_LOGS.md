@@ -6509,3 +6509,4 @@
 | #6466 | 2026-10-29 10:07:20 | SVG Morphing Pipeline | `jank_events` | `1.1 count` | **PASS** |
 | #6467 | 2026-10-29 10:07:30 | CSS-in-JS Themer | `time_to_interactive` | `1868.1 ms` | **PASS** |
 | #6468 | 2026-10-29 10:07:40 | Telemetry Beacon | `memory_footprint` | `112.3 MB` | **PASS** |
+| #6469 | 2026-10-29 10:07:50 | Cache Warmup Service | `first_contentful_paint` | `1407.0 ms` | **PASS** |
