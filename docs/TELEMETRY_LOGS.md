@@ -5789,3 +5789,4 @@
 | #5746 | 2026-10-29 08:07:20 | Lazy Load Optimizer | `time_to_interactive` | `1981.9 ms` | **PASS** |
 | #5747 | 2026-10-29 08:07:30 | CSS-in-JS Themer | `jank_events` | `0.7 count` | **PASS** |
 | #5748 | 2026-10-29 08:07:40 | SVG Morphing Pipeline | `memory_footprint` | `46.8 MB` | **PASS** |
+| #5749 | 2026-10-29 08:07:50 | Micro Frontend Loader | `cpu_usage` | `15.8 %` | **PASS** |
