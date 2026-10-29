@@ -6097,3 +6097,4 @@
 | #6054 | 2026-10-29 08:58:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1366.1 ms` | **PASS** |
 | #6055 | 2026-10-29 08:58:50 | Lottie Animation Engine | `first_contentful_paint` | `1070.7 ms` | **PASS** |
 | #6056 | 2026-10-29 08:59:00 | Background Video Loop | `latency` | `22.7 ms` | **PASS** |
+| #6057 | 2026-10-29 08:59:10 | Micro Frontend Loader | `first_contentful_paint` | `1105.5 ms` | **PASS** |
