@@ -5818,3 +5818,4 @@
 | #5775 | 2026-10-29 08:12:10 | Telemetry Beacon | `latency` | `19.5 ms` | **PASS** |
 | #5776 | 2026-10-29 08:12:20 | WebGL Shader Compiler | `cpu_usage` | `43.8 %` | **PASS** |
 | #5777 | 2026-10-29 08:12:30 | Telemetry Beacon | `latency` | `14.5 ms` | **PASS** |
+| #5778 | 2026-10-29 08:12:40 | Telemetry Beacon | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
