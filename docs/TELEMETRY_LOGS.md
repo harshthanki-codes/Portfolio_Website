@@ -5777,3 +5777,4 @@
 | #5734 | 2026-10-29 08:05:20 | CSS-in-JS Themer | `time_to_interactive` | `1274.5 ms` | **PASS** |
 | #5735 | 2026-10-29 08:05:30 | Lazy Load Optimizer | `memory_footprint` | `76.1 MB` | **PASS** |
 | #5736 | 2026-10-29 08:05:40 | Background Video Loop | `animation_fps` | `59.4 fps` | **PASS** |
+| #5737 | 2026-10-29 08:05:50 | Lottie Animation Engine | `cpu_usage` | `16.4 %` | **PASS** |
