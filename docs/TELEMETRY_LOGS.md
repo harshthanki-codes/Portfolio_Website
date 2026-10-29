@@ -5891,3 +5891,4 @@
 | #5848 | 2026-10-29 08:24:20 | Cache Warmup Service | `bundle_size` | `103.0 KB` | **PASS** |
 | #5849 | 2026-10-29 08:24:30 | Progressive Image Loader | `jank_events` | `1.9 count` | **PASS** |
 | #5850 | 2026-10-29 08:24:40 | 3D Particle Renderer | `frame_render_budget` | `25.4 ms (60fps)` | **PASS** |
+| #5851 | 2026-10-29 08:24:50 | Lazy Load Optimizer | `time_to_interactive` | `1828.0 ms` | **PASS** |
