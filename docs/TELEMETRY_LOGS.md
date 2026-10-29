@@ -6454,3 +6454,4 @@
 | #6411 | 2026-10-29 09:58:10 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
 | #6412 | 2026-10-29 09:58:20 | Audio Visualizer | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
 | #6413 | 2026-10-29 09:58:30 | Viewport Resize Observer | `first_contentful_paint` | `1359.6 ms` | **PASS** |
+| #6414 | 2026-10-29 09:58:40 | Lottie Animation Engine | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
