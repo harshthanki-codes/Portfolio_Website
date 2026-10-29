@@ -6069,3 +6069,4 @@
 | #6026 | 2026-10-29 08:54:00 | Scroll Parallax Manager | `animation_fps` | `65.3 fps` | **PASS** |
 | #6027 | 2026-10-29 08:54:10 | State Sync Daemon | `cpu_usage` | `29.9 %` | **PASS** |
 | #6028 | 2026-10-29 08:54:20 | Scroll Parallax Manager | `time_to_interactive` | `2466.2 ms` | **PASS** |
+| #6029 | 2026-10-29 08:54:30 | Predictive Arc Canvas | `time_to_interactive` | `1791.4 ms` | **PASS** |
