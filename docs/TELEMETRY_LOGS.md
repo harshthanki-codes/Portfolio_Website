@@ -6560,3 +6560,4 @@
 | #6517 | 2026-10-29 10:15:50 | Lottie Animation Engine | `gpu_utilization` | `38.4 %` | **PASS** |
 | #6518 | 2026-10-29 10:16:00 | Lottie Animation Engine | `animation_fps` | `55.5 fps` | **PASS** |
 | #6519 | 2026-10-29 10:16:10 | Cache Warmup Service | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
+| #6520 | 2026-10-29 10:16:20 | SVG Morphing Pipeline | `first_contentful_paint` | `1486.7 ms` | **PASS** |
