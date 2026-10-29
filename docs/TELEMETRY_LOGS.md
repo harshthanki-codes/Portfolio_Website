@@ -6733,3 +6733,4 @@
 | #6690 | 2026-10-29 10:44:40 | Scroll Parallax Manager | `cpu_usage` | `27.3 %` | **PASS** |
 | #6691 | 2026-10-29 10:44:50 | Touch Gesture Dispatcher | `latency` | `7.9 ms` | **PASS** |
 | #6692 | 2026-10-29 10:45:00 | Cache Warmup Service | `bundle_size` | `157.8 KB` | **PASS** |
+| #6693 | 2026-10-29 10:45:10 | WebGL Shader Compiler | `cpu_usage` | `40.0 %` | **PASS** |
