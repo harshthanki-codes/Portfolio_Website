@@ -6353,3 +6353,4 @@
 | #6310 | 2026-10-29 09:41:20 | Lazy Load Optimizer | `animation_fps` | `68.6 fps` | **PASS** |
 | #6311 | 2026-10-29 09:41:30 | 3D Particle Renderer | `memory_footprint` | `63.5 MB` | **PASS** |
 | #6312 | 2026-10-29 09:41:40 | Lottie Animation Engine | `jank_events` | `0.3 count` | **PASS** |
+| #6313 | 2026-10-29 09:41:50 | Background Video Loop | `first_contentful_paint` | `1021.7 ms` | **PASS** |
