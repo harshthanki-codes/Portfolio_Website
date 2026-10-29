@@ -6804,3 +6804,4 @@
 | #6761 | 2026-10-29 10:56:30 | Telemetry Beacon | `bundle_size` | `177.2 KB` | **PASS** |
 | #6762 | 2026-10-29 10:56:40 | SVG Morphing Pipeline | `first_contentful_paint` | `1047.3 ms` | **PASS** |
 | #6763 | 2026-10-29 10:56:50 | CSS-in-JS Themer | `time_to_interactive` | `1907.6 ms` | **PASS** |
+| #6764 | 2026-10-29 10:57:00 | Cache Warmup Service | `cpu_usage` | `38.2 %` | **PASS** |
