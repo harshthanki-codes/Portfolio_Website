@@ -6822,3 +6822,4 @@
 | #6779 | 2026-10-29 10:59:30 | Dynamic Font Loader | `memory_footprint` | `46.1 MB` | **PASS** |
 | #6780 | 2026-10-29 10:59:40 | 3D Particle Renderer | `gpu_utilization` | `44.4 %` | **PASS** |
 | #6781 | 2026-10-29 10:59:50 | 3D Particle Renderer | `gpu_utilization` | `37.6 %` | **PASS** |
+| #6782 | 2026-10-29 11:00:00 | Scroll Parallax Manager | `bundle_size` | `104.8 KB` | **PASS** |
