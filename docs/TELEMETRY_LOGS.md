@@ -6049,3 +6049,4 @@
 | #6006 | 2026-10-29 08:50:40 | Viewport Resize Observer | `latency` | `12.4 ms` | **PASS** |
 | #6007 | 2026-10-29 08:50:50 | Viewport Resize Observer | `gpu_utilization` | `20.5 %` | **PASS** |
 | #6008 | 2026-10-29 08:51:00 | 3D Particle Renderer | `gpu_utilization` | `52.7 %` | **PASS** |
+| #6009 | 2026-10-29 08:51:10 | Viewport Resize Observer | `jank_events` | `0.9 count` | **PASS** |
