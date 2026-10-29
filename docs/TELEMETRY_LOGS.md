@@ -6729,3 +6729,4 @@
 | #6686 | 2026-10-29 10:44:00 | Telemetry Beacon | `first_contentful_paint` | `1493.5 ms` | **PASS** |
 | #6687 | 2026-10-29 10:44:10 | Viewport Resize Observer | `gpu_utilization` | `43.4 %` | **PASS** |
 | #6688 | 2026-10-29 10:44:20 | Interactive Tooltip Engine | `first_contentful_paint` | `1484.2 ms` | **PASS** |
+| #6689 | 2026-10-29 10:44:30 | Interactive Tooltip Engine | `time_to_interactive` | `2329.2 ms` | **PASS** |
