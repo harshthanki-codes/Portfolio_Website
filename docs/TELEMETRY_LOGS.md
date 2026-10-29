@@ -5787,3 +5787,4 @@
 | #5744 | 2026-10-29 08:07:00 | Interactive Tooltip Engine | `bundle_size` | `145.0 KB` | **PASS** |
 | #5745 | 2026-10-29 08:07:10 | SVG Morphing Pipeline | `jank_events` | `2.0 count` | **PASS** |
 | #5746 | 2026-10-29 08:07:20 | Lazy Load Optimizer | `time_to_interactive` | `1981.9 ms` | **PASS** |
+| #5747 | 2026-10-29 08:07:30 | CSS-in-JS Themer | `jank_events` | `0.7 count` | **PASS** |
