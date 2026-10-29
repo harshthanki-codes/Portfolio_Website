@@ -6813,3 +6813,4 @@
 | #6770 | 2026-10-29 10:58:00 | Lottie Animation Engine | `first_contentful_paint` | `1484.9 ms` | **PASS** |
 | #6771 | 2026-10-29 10:58:10 | Cache Warmup Service | `jank_events` | `0.5 count` | **PASS** |
 | #6772 | 2026-10-29 10:58:20 | State Sync Daemon | `first_contentful_paint` | `1288.7 ms` | **PASS** |
+| #6773 | 2026-10-29 10:58:30 | 3D Particle Renderer | `time_to_interactive` | `1206.7 ms` | **PASS** |
