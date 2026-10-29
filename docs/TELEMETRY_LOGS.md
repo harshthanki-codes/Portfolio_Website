@@ -6352,3 +6352,4 @@
 | #6309 | 2026-10-29 09:41:10 | CSS-in-JS Themer | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
 | #6310 | 2026-10-29 09:41:20 | Lazy Load Optimizer | `animation_fps` | `68.6 fps` | **PASS** |
 | #6311 | 2026-10-29 09:41:30 | 3D Particle Renderer | `memory_footprint` | `63.5 MB` | **PASS** |
+| #6312 | 2026-10-29 09:41:40 | Lottie Animation Engine | `jank_events` | `0.3 count` | **PASS** |
