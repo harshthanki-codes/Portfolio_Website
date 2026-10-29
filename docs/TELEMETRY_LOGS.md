@@ -6252,3 +6252,4 @@
 | #6209 | 2026-10-29 09:24:30 | Responsive Grid System | `bundle_size` | `161.1 KB` | **PASS** |
 | #6210 | 2026-10-29 09:24:40 | Interactive Tooltip Engine | `frame_render_budget` | `24.9 ms (60fps)` | **PASS** |
 | #6211 | 2026-10-29 09:24:50 | Progressive Image Loader | `time_to_interactive` | `2031.4 ms` | **PASS** |
+| #6212 | 2026-10-29 09:25:00 | Progressive Image Loader | `cpu_usage` | `12.1 %` | **PASS** |
