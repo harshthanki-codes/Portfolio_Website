@@ -5902,3 +5902,4 @@
 | #5859 | 2026-10-29 08:26:10 | Telemetry Beacon | `animation_fps` | `72.7 fps` | **PASS** |
 | #5860 | 2026-10-29 08:26:20 | Viewport Resize Observer | `cpu_usage` | `13.2 %` | **PASS** |
 | #5861 | 2026-10-29 08:26:30 | Audio Visualizer | `latency` | `18.2 ms` | **PASS** |
+| #5862 | 2026-10-29 08:26:40 | Dynamic Font Loader | `memory_footprint` | `108.5 MB` | **PASS** |
