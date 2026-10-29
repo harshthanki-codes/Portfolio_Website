@@ -6885,3 +6885,4 @@
 | #6842 | 2026-10-29 11:10:00 | CSS-in-JS Themer | `latency` | `17.1 ms` | **PASS** |
 | #6843 | 2026-10-29 11:10:10 | CSS-in-JS Themer | `frame_render_budget` | `25.4 ms (60fps)` | **PASS** |
 | #6844 | 2026-10-29 11:10:20 | State Sync Daemon | `time_to_interactive` | `2489.3 ms` | **PASS** |
+| #6845 | 2026-10-29 11:10:30 | Interactive Tooltip Engine | `jank_events` | `1.7 count` | **PASS** |
