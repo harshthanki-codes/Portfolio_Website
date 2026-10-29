@@ -6843,3 +6843,4 @@
 | #6800 | 2026-10-29 11:03:00 | State Sync Daemon | `jank_events` | `1.1 count` | **PASS** |
 | #6801 | 2026-10-29 11:03:10 | Responsive Grid System | `animation_fps` | `55.9 fps` | **PASS** |
 | #6802 | 2026-10-29 11:03:20 | Interactive Tooltip Engine | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
+| #6803 | 2026-10-29 11:03:30 | 3D Particle Renderer | `animation_fps` | `71.4 fps` | **PASS** |
