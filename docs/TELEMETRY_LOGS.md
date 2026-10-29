@@ -6335,3 +6335,4 @@
 | #6292 | 2026-10-29 09:38:20 | Cache Warmup Service | `memory_footprint` | `66.2 MB` | **PASS** |
 | #6293 | 2026-10-29 09:38:30 | Telemetry Beacon | `time_to_interactive` | `2493.6 ms` | **PASS** |
 | #6294 | 2026-10-29 09:38:40 | Telemetry Beacon | `cpu_usage` | `35.3 %` | **PASS** |
+| #6295 | 2026-10-29 09:38:50 | Touch Gesture Dispatcher | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
