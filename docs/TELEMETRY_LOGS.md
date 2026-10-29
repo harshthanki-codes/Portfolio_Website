@@ -6608,3 +6608,4 @@
 | #6565 | 2026-10-29 10:23:50 | Cache Warmup Service | `animation_fps` | `55.2 fps` | **PASS** |
 | #6566 | 2026-10-29 10:24:00 | Responsive Grid System | `jank_events` | `1.0 count` | **PASS** |
 | #6567 | 2026-10-29 10:24:10 | Micro Frontend Loader | `latency` | `9.3 ms` | **PASS** |
+| #6568 | 2026-10-29 10:24:20 | Scroll Parallax Manager | `memory_footprint` | `68.7 MB` | **PASS** |
