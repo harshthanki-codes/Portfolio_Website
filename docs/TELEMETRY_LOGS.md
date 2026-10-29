@@ -5784,3 +5784,4 @@
 | #5741 | 2026-10-29 08:06:30 | WebGL Shader Compiler | `memory_footprint` | `59.8 MB` | **PASS** |
 | #5742 | 2026-10-29 08:06:40 | Touch Gesture Dispatcher | `jank_events` | `2.9 count` | **PASS** |
 | #5743 | 2026-10-29 08:06:50 | Audio Visualizer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
+| #5744 | 2026-10-29 08:07:00 | Interactive Tooltip Engine | `bundle_size` | `145.0 KB` | **PASS** |
