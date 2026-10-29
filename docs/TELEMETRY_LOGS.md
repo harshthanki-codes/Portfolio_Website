@@ -5788,3 +5788,4 @@
 | #5745 | 2026-10-29 08:07:10 | SVG Morphing Pipeline | `jank_events` | `2.0 count` | **PASS** |
 | #5746 | 2026-10-29 08:07:20 | Lazy Load Optimizer | `time_to_interactive` | `1981.9 ms` | **PASS** |
 | #5747 | 2026-10-29 08:07:30 | CSS-in-JS Themer | `jank_events` | `0.7 count` | **PASS** |
+| #5748 | 2026-10-29 08:07:40 | SVG Morphing Pipeline | `memory_footprint` | `46.8 MB` | **PASS** |
