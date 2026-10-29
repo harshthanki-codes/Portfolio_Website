@@ -5881,3 +5881,4 @@
 | #5838 | 2026-10-29 08:22:40 | Viewport Resize Observer | `animation_fps` | `63.7 fps` | **PASS** |
 | #5839 | 2026-10-29 08:22:50 | Micro Frontend Loader | `latency` | `13.1 ms` | **PASS** |
 | #5840 | 2026-10-29 08:23:00 | Scroll Parallax Manager | `animation_fps` | `61.4 fps` | **PASS** |
+| #5841 | 2026-10-29 08:23:10 | WebGL Shader Compiler | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
