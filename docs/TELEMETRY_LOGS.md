@@ -5946,3 +5946,4 @@
 | #5903 | 2026-10-29 08:33:30 | 3D Particle Renderer | `bundle_size` | `170.9 KB` | **PASS** |
 | #5904 | 2026-10-29 08:33:40 | Cache Warmup Service | `frame_render_budget` | `21.2 ms (60fps)` | **PASS** |
 | #5905 | 2026-10-29 08:33:50 | Interactive Tooltip Engine | `gpu_utilization` | `30.5 %` | **PASS** |
+| #5906 | 2026-10-29 08:34:00 | Cache Warmup Service | `animation_fps` | `74.6 fps` | **PASS** |
