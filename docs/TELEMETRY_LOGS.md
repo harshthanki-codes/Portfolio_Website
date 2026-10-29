@@ -6415,3 +6415,4 @@
 | #6372 | 2026-10-29 09:51:40 | Audio Visualizer | `gpu_utilization` | `55.0 %` | **PASS** |
 | #6373 | 2026-10-29 09:51:50 | WebGL Shader Compiler | `gpu_utilization` | `37.0 %` | **PASS** |
 | #6374 | 2026-10-29 09:52:00 | State Sync Daemon | `time_to_interactive` | `1719.9 ms` | **PASS** |
+| #6375 | 2026-10-29 09:52:10 | Progressive Image Loader | `gpu_utilization` | `22.1 %` | **PASS** |
