@@ -5976,3 +5976,4 @@
 | #5933 | 2026-10-29 08:38:30 | Cache Warmup Service | `animation_fps` | `71.2 fps` | **PASS** |
 | #5934 | 2026-10-29 08:38:40 | Cache Warmup Service | `animation_fps` | `65.9 fps` | **PASS** |
 | #5935 | 2026-10-29 08:38:50 | SVG Morphing Pipeline | `animation_fps` | `75.0 fps` | **PASS** |
+| #5936 | 2026-10-29 08:39:00 | Interactive Tooltip Engine | `time_to_interactive` | `1381.3 ms` | **PASS** |
