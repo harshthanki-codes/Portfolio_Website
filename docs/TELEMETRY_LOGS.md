@@ -6587,3 +6587,4 @@
 | #6544 | 2026-10-29 10:20:20 | CSS-in-JS Themer | `bundle_size` | `247.4 KB` | **PASS** |
 | #6545 | 2026-10-29 10:20:30 | Background Video Loop | `first_contentful_paint` | `1036.9 ms` | **PASS** |
 | #6546 | 2026-10-29 10:20:40 | CSS-in-JS Themer | `latency` | `14.8 ms` | **PASS** |
+| #6547 | 2026-10-29 10:20:50 | Progressive Image Loader | `animation_fps` | `63.5 fps` | **PASS** |
