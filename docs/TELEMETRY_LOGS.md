@@ -6605,3 +6605,4 @@
 | #6562 | 2026-10-29 10:23:20 | Cache Warmup Service | `time_to_interactive` | `1680.5 ms` | **PASS** |
 | #6563 | 2026-10-29 10:23:30 | Background Video Loop | `time_to_interactive` | `2461.9 ms` | **PASS** |
 | #6564 | 2026-10-29 10:23:40 | WebGL Shader Compiler | `memory_footprint` | `99.0 MB` | **PASS** |
+| #6565 | 2026-10-29 10:23:50 | Cache Warmup Service | `animation_fps` | `55.2 fps` | **PASS** |
