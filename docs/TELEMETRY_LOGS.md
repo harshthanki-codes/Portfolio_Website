@@ -5906,3 +5906,4 @@
 | #5863 | 2026-10-29 08:26:50 | Scroll Parallax Manager | `time_to_interactive` | `1886.5 ms` | **PASS** |
 | #5864 | 2026-10-29 08:27:00 | 3D Particle Renderer | `animation_fps` | `56.0 fps` | **PASS** |
 | #5865 | 2026-10-29 08:27:10 | 3D Particle Renderer | `time_to_interactive` | `2303.5 ms` | **PASS** |
+| #5866 | 2026-10-29 08:27:20 | Telemetry Beacon | `frame_render_budget` | `22.9 ms (60fps)` | **PASS** |
