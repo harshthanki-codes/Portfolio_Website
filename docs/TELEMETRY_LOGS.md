@@ -6869,3 +6869,4 @@
 | #6826 | 2026-10-29 11:07:20 | Background Video Loop | `memory_footprint` | `97.6 MB` | **PASS** |
 | #6827 | 2026-10-29 11:07:30 | Telemetry Beacon | `memory_footprint` | `54.6 MB` | **PASS** |
 | #6828 | 2026-10-29 11:07:40 | SVG Morphing Pipeline | `first_contentful_paint` | `837.2 ms` | **PASS** |
+| #6829 | 2026-10-29 11:07:50 | WebGL Shader Compiler | `time_to_interactive` | `1560.4 ms` | **PASS** |
