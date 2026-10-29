@@ -5763,3 +5763,4 @@
 | #5720 | 2026-10-29 08:03:00 | Touch Gesture Dispatcher | `time_to_interactive` | `1953.6 ms` | **PASS** |
 | #5721 | 2026-10-29 08:03:10 | Interactive Tooltip Engine | `cpu_usage` | `13.0 %` | **PASS** |
 | #5722 | 2026-10-29 08:03:20 | Lazy Load Optimizer | `latency` | `11.5 ms` | **PASS** |
+| #5723 | 2026-10-29 08:03:30 | Touch Gesture Dispatcher | `animation_fps` | `69.8 fps` | **PASS** |
