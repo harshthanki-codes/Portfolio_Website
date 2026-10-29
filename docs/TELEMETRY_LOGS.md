@@ -5783,3 +5783,4 @@
 | #5740 | 2026-10-29 08:06:20 | Telemetry Beacon | `time_to_interactive` | `1623.8 ms` | **PASS** |
 | #5741 | 2026-10-29 08:06:30 | WebGL Shader Compiler | `memory_footprint` | `59.8 MB` | **PASS** |
 | #5742 | 2026-10-29 08:06:40 | Touch Gesture Dispatcher | `jank_events` | `2.9 count` | **PASS** |
+| #5743 | 2026-10-29 08:06:50 | Audio Visualizer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
