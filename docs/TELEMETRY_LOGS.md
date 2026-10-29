@@ -5883,3 +5883,4 @@
 | #5840 | 2026-10-29 08:23:00 | Scroll Parallax Manager | `animation_fps` | `61.4 fps` | **PASS** |
 | #5841 | 2026-10-29 08:23:10 | WebGL Shader Compiler | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
 | #5842 | 2026-10-29 08:23:20 | Audio Visualizer | `latency` | `24.1 ms` | **PASS** |
+| #5843 | 2026-10-29 08:23:30 | Predictive Arc Canvas | `jank_events` | `0.2 count` | **PASS** |
