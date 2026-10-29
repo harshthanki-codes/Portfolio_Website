@@ -5992,3 +5992,4 @@
 | #5949 | 2026-10-29 08:41:10 | Dynamic Font Loader | `cpu_usage` | `24.3 %` | **PASS** |
 | #5950 | 2026-10-29 08:41:20 | Dynamic Font Loader | `first_contentful_paint` | `1126.8 ms` | **PASS** |
 | #5951 | 2026-10-29 08:41:30 | Interactive Tooltip Engine | `jank_events` | `1.7 count` | **PASS** |
+| #5952 | 2026-10-29 08:41:40 | Progressive Image Loader | `animation_fps` | `57.0 fps` | **PASS** |
