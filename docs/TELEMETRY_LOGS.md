@@ -6131,3 +6131,4 @@
 | #6088 | 2026-10-29 09:04:20 | Micro Frontend Loader | `frame_render_budget` | `22.0 ms (60fps)` | **PASS** |
 | #6089 | 2026-10-29 09:04:30 | Background Video Loop | `latency` | `15.6 ms` | **PASS** |
 | #6090 | 2026-10-29 09:04:40 | State Sync Daemon | `bundle_size` | `165.1 KB` | **PASS** |
+| #6091 | 2026-10-29 09:04:50 | Interactive Tooltip Engine | `cpu_usage` | `38.0 %` | **PASS** |
