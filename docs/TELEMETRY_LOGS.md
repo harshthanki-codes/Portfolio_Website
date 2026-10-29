@@ -6258,3 +6258,4 @@
 | #6215 | 2026-10-29 09:25:30 | Background Video Loop | `frame_render_budget` | `29.6 ms (60fps)` | **PASS** |
 | #6216 | 2026-10-29 09:25:40 | Responsive Grid System | `cpu_usage` | `42.8 %` | **PASS** |
 | #6217 | 2026-10-29 09:25:50 | Micro Frontend Loader | `bundle_size` | `137.3 KB` | **PASS** |
+| #6218 | 2026-10-29 09:26:00 | Background Video Loop | `jank_events` | `2.3 count` | **PASS** |
