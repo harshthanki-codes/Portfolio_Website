@@ -6027,3 +6027,4 @@
 | #5984 | 2026-10-29 08:47:00 | Lazy Load Optimizer | `memory_footprint` | `93.1 MB` | **PASS** |
 | #5985 | 2026-10-29 08:47:10 | State Sync Daemon | `memory_footprint` | `91.0 MB` | **PASS** |
 | #5986 | 2026-10-29 08:47:20 | CSS-in-JS Themer | `animation_fps` | `66.3 fps` | **PASS** |
+| #5987 | 2026-10-29 08:47:30 | SVG Morphing Pipeline | `latency` | `13.8 ms` | **PASS** |
