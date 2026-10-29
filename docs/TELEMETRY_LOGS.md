@@ -6473,3 +6473,4 @@
 | #6430 | 2026-10-29 10:01:20 | Micro Frontend Loader | `memory_footprint` | `80.0 MB` | **PASS** |
 | #6431 | 2026-10-29 10:01:30 | 3D Particle Renderer | `memory_footprint` | `58.5 MB` | **PASS** |
 | #6432 | 2026-10-29 10:01:40 | Telemetry Beacon | `time_to_interactive` | `1338.7 ms` | **PASS** |
+| #6433 | 2026-10-29 10:01:50 | WebGL Shader Compiler | `memory_footprint` | `49.1 MB` | **PASS** |
