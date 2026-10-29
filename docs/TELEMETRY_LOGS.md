@@ -5981,3 +5981,4 @@
 | #5938 | 2026-10-29 08:39:20 | Micro Frontend Loader | `cpu_usage` | `13.4 %` | **PASS** |
 | #5939 | 2026-10-29 08:39:30 | WebGL Shader Compiler | `time_to_interactive` | `2430.7 ms` | **PASS** |
 | #5940 | 2026-10-29 08:39:40 | SVG Morphing Pipeline | `jank_events` | `0.5 count` | **PASS** |
+| #5941 | 2026-10-29 08:39:50 | Lazy Load Optimizer | `animation_fps` | `56.4 fps` | **PASS** |
