@@ -6008,3 +6008,4 @@
 | #5965 | 2026-10-29 08:43:50 | Dynamic Font Loader | `time_to_interactive` | `1840.1 ms` | **PASS** |
 | #5966 | 2026-10-29 08:44:00 | WebGL Shader Compiler | `first_contentful_paint` | `1319.1 ms` | **PASS** |
 | #5967 | 2026-10-29 08:44:10 | Background Video Loop | `animation_fps` | `61.7 fps` | **PASS** |
+| #5968 | 2026-10-29 08:44:20 | State Sync Daemon | `animation_fps` | `69.7 fps` | **PASS** |
