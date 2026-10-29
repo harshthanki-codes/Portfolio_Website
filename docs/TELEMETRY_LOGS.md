@@ -6338,3 +6338,4 @@
 | #6295 | 2026-10-29 09:38:50 | Touch Gesture Dispatcher | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
 | #6296 | 2026-10-29 09:39:00 | Lottie Animation Engine | `jank_events` | `2.2 count` | **PASS** |
 | #6297 | 2026-10-29 09:39:10 | 3D Particle Renderer | `first_contentful_paint` | `1462.0 ms` | **PASS** |
+| #6298 | 2026-10-29 09:39:20 | WebGL Shader Compiler | `cpu_usage` | `18.6 %` | **PASS** |
