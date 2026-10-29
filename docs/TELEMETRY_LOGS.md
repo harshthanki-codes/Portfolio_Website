@@ -6123,3 +6123,4 @@
 | #6080 | 2026-10-29 09:03:00 | Lottie Animation Engine | `time_to_interactive` | `2330.2 ms` | **PASS** |
 | #6081 | 2026-10-29 09:03:10 | Progressive Image Loader | `animation_fps` | `72.2 fps` | **PASS** |
 | #6082 | 2026-10-29 09:03:20 | Lazy Load Optimizer | `latency` | `7.2 ms` | **PASS** |
+| #6083 | 2026-10-29 09:03:30 | 3D Particle Renderer | `first_contentful_paint` | `1445.0 ms` | **PASS** |
