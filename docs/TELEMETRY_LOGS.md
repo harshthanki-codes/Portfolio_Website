@@ -5867,3 +5867,4 @@
 | #5824 | 2026-10-29 08:20:20 | Cache Warmup Service | `time_to_interactive` | `1641.9 ms` | **PASS** |
 | #5825 | 2026-10-29 08:20:30 | SVG Morphing Pipeline | `frame_render_budget` | `27.8 ms (60fps)` | **PASS** |
 | #5826 | 2026-10-29 08:20:40 | SVG Morphing Pipeline | `bundle_size` | `81.0 KB` | **PASS** |
+| #5827 | 2026-10-29 08:20:50 | Lottie Animation Engine | `gpu_utilization` | `37.9 %` | **PASS** |
