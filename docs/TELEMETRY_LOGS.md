@@ -6377,3 +6377,4 @@
 | #6334 | 2026-10-29 09:45:20 | 3D Particle Renderer | `memory_footprint` | `114.2 MB` | **PASS** |
 | #6335 | 2026-10-29 09:45:30 | 3D Particle Renderer | `time_to_interactive` | `1380.9 ms` | **PASS** |
 | #6336 | 2026-10-29 09:45:40 | WebGL Shader Compiler | `gpu_utilization` | `69.7 %` | **PASS** |
+| #6337 | 2026-10-29 09:45:50 | Scroll Parallax Manager | `latency` | `12.1 ms` | **PASS** |
