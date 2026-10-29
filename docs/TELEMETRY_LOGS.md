@@ -5871,3 +5871,4 @@
 | #5828 | 2026-10-29 08:21:00 | Progressive Image Loader | `memory_footprint` | `65.2 MB` | **PASS** |
 | #5829 | 2026-10-29 08:21:10 | SVG Morphing Pipeline | `frame_render_budget` | `16.6 ms (60fps)` | **PASS** |
 | #5830 | 2026-10-29 08:21:20 | Micro Frontend Loader | `time_to_interactive` | `1581.3 ms` | **PASS** |
+| #5831 | 2026-10-29 08:21:30 | Viewport Resize Observer | `frame_render_budget` | `28.5 ms (60fps)` | **PASS** |
