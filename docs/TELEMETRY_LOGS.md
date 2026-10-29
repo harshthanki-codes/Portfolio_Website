@@ -5889,3 +5889,4 @@
 | #5846 | 2026-10-29 08:24:00 | Dynamic Font Loader | `jank_events` | `1.3 count` | **PASS** |
 | #5847 | 2026-10-29 08:24:10 | Lazy Load Optimizer | `time_to_interactive` | `2111.3 ms` | **PASS** |
 | #5848 | 2026-10-29 08:24:20 | Cache Warmup Service | `bundle_size` | `103.0 KB` | **PASS** |
+| #5849 | 2026-10-29 08:24:30 | Progressive Image Loader | `jank_events` | `1.9 count` | **PASS** |
