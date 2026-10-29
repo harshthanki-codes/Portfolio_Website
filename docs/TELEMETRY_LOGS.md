@@ -5752,3 +5752,4 @@
 | #5709 | 2026-10-29 08:01:10 | SVG Morphing Pipeline | `animation_fps` | `55.9 fps` | **PASS** |
 | #5710 | 2026-10-29 08:01:20 | Dynamic Font Loader | `first_contentful_paint` | `1173.0 ms` | **PASS** |
 | #5711 | 2026-10-29 08:01:30 | Interactive Tooltip Engine | `first_contentful_paint` | `1120.4 ms` | **PASS** |
+| #5712 | 2026-10-29 08:01:40 | Viewport Resize Observer | `latency` | `14.2 ms` | **PASS** |
