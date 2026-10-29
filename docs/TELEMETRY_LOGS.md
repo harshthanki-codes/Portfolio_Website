@@ -5968,3 +5968,4 @@
 | #5925 | 2026-10-29 08:37:10 | Interactive Tooltip Engine | `time_to_interactive` | `1709.9 ms` | **PASS** |
 | #5926 | 2026-10-29 08:37:20 | Background Video Loop | `animation_fps` | `74.4 fps` | **PASS** |
 | #5927 | 2026-10-29 08:37:30 | Interactive Tooltip Engine | `animation_fps` | `65.1 fps` | **PASS** |
+| #5928 | 2026-10-29 08:37:40 | SVG Morphing Pipeline | `first_contentful_paint` | `978.3 ms` | **PASS** |
