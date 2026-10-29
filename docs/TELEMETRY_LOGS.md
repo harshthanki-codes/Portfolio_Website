@@ -6501,3 +6501,4 @@
 | #6458 | 2026-10-29 10:06:00 | Micro Frontend Loader | `frame_render_budget` | `27.5 ms (60fps)` | **PASS** |
 | #6459 | 2026-10-29 10:06:10 | Lottie Animation Engine | `gpu_utilization` | `32.1 %` | **PASS** |
 | #6460 | 2026-10-29 10:06:20 | Viewport Resize Observer | `first_contentful_paint` | `1365.0 ms` | **PASS** |
+| #6461 | 2026-10-29 10:06:30 | Lottie Animation Engine | `latency` | `18.9 ms` | **PASS** |
