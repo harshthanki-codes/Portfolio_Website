@@ -6438,3 +6438,4 @@
 | #6395 | 2026-10-29 09:55:30 | Cache Warmup Service | `jank_events` | `1.8 count` | **PASS** |
 | #6396 | 2026-10-29 09:55:40 | Dynamic Font Loader | `jank_events` | `1.8 count` | **PASS** |
 | #6397 | 2026-10-29 09:55:50 | Background Video Loop | `first_contentful_paint` | `907.5 ms` | **PASS** |
+| #6398 | 2026-10-29 09:56:00 | Micro Frontend Loader | `time_to_interactive` | `1658.1 ms` | **PASS** |
