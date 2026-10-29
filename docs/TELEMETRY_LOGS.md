@@ -6887,3 +6887,4 @@
 | #6844 | 2026-10-29 11:10:20 | State Sync Daemon | `time_to_interactive` | `2489.3 ms` | **PASS** |
 | #6845 | 2026-10-29 11:10:30 | Interactive Tooltip Engine | `jank_events` | `1.7 count` | **PASS** |
 | #6846 | 2026-10-29 11:10:40 | Micro Frontend Loader | `jank_events` | `2.8 count` | **PASS** |
+| #6847 | 2026-10-29 11:10:50 | State Sync Daemon | `first_contentful_paint` | `1322.2 ms` | **PASS** |
