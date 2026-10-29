@@ -6482,3 +6482,4 @@
 | #6439 | 2026-10-29 10:02:50 | Interactive Tooltip Engine | `animation_fps` | `71.9 fps` | **PASS** |
 | #6440 | 2026-10-29 10:03:00 | Telemetry Beacon | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
 | #6441 | 2026-10-29 10:03:10 | SVG Morphing Pipeline | `memory_footprint` | `98.4 MB` | **PASS** |
+| #6442 | 2026-10-29 10:03:20 | SVG Morphing Pipeline | `first_contentful_paint` | `1003.5 ms` | **PASS** |
