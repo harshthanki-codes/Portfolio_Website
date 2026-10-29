@@ -6282,3 +6282,4 @@
 | #6239 | 2026-10-29 09:29:30 | Viewport Resize Observer | `cpu_usage` | `41.7 %` | **PASS** |
 | #6240 | 2026-10-29 09:29:40 | Background Video Loop | `bundle_size` | `238.7 KB` | **PASS** |
 | #6241 | 2026-10-29 09:29:50 | Cache Warmup Service | `memory_footprint` | `92.0 MB` | **PASS** |
+| #6242 | 2026-10-29 09:30:00 | Scroll Parallax Manager | `cpu_usage` | `39.5 %` | **PASS** |
