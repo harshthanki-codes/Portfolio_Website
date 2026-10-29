@@ -6209,3 +6209,4 @@
 | #6166 | 2026-10-29 09:17:20 | Predictive Arc Canvas | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
 | #6167 | 2026-10-29 09:17:30 | Predictive Arc Canvas | `bundle_size` | `120.9 KB` | **PASS** |
 | #6168 | 2026-10-29 09:17:40 | Predictive Arc Canvas | `animation_fps` | `69.7 fps` | **PASS** |
+| #6169 | 2026-10-29 09:17:50 | Telemetry Beacon | `cpu_usage` | `18.1 %` | **PASS** |
