@@ -6229,3 +6229,4 @@
 | #6186 | 2026-10-29 09:20:40 | CSS-in-JS Themer | `gpu_utilization` | `43.5 %` | **PASS** |
 | #6187 | 2026-10-29 09:20:50 | 3D Particle Renderer | `time_to_interactive` | `2483.2 ms` | **PASS** |
 | #6188 | 2026-10-29 09:21:00 | Scroll Parallax Manager | `gpu_utilization` | `59.5 %` | **PASS** |
+| #6189 | 2026-10-29 09:21:10 | 3D Particle Renderer | `time_to_interactive` | `1639.5 ms` | **PASS** |
