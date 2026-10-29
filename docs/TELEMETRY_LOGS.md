@@ -5895,3 +5895,4 @@
 | #5852 | 2026-10-29 08:25:00 | Viewport Resize Observer | `latency` | `21.2 ms` | **PASS** |
 | #5853 | 2026-10-29 08:25:10 | Dynamic Font Loader | `frame_render_budget` | `17.0 ms (60fps)` | **PASS** |
 | #5854 | 2026-10-29 08:25:20 | SVG Morphing Pipeline | `cpu_usage` | `26.2 %` | **PASS** |
+| #5855 | 2026-10-29 08:25:30 | Cache Warmup Service | `bundle_size` | `208.1 KB` | **PASS** |
