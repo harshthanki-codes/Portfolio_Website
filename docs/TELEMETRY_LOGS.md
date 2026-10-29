@@ -5785,3 +5785,4 @@
 | #5742 | 2026-10-29 08:06:40 | Touch Gesture Dispatcher | `jank_events` | `2.9 count` | **PASS** |
 | #5743 | 2026-10-29 08:06:50 | Audio Visualizer | `frame_render_budget` | `24.0 ms (60fps)` | **PASS** |
 | #5744 | 2026-10-29 08:07:00 | Interactive Tooltip Engine | `bundle_size` | `145.0 KB` | **PASS** |
+| #5745 | 2026-10-29 08:07:10 | SVG Morphing Pipeline | `jank_events` | `2.0 count` | **PASS** |
