@@ -6614,3 +6614,4 @@
 | #6571 | 2026-10-29 10:24:50 | State Sync Daemon | `latency` | `23.4 ms` | **PASS** |
 | #6572 | 2026-10-29 10:25:00 | Lottie Animation Engine | `time_to_interactive` | `1981.4 ms` | **PASS** |
 | #6573 | 2026-10-29 10:25:10 | Background Video Loop | `animation_fps` | `72.6 fps` | **PASS** |
+| #6574 | 2026-10-29 10:25:20 | Scroll Parallax Manager | `latency` | `20.0 ms` | **PASS** |
