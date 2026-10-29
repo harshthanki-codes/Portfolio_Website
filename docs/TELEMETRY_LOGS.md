@@ -5861,3 +5861,4 @@
 | #5818 | 2026-10-29 08:19:20 | CSS-in-JS Themer | `time_to_interactive` | `2301.9 ms` | **PASS** |
 | #5819 | 2026-10-29 08:19:30 | Scroll Parallax Manager | `frame_render_budget` | `15.1 ms (60fps)` | **PASS** |
 | #5820 | 2026-10-29 08:19:40 | SVG Morphing Pipeline | `memory_footprint` | `79.9 MB` | **PASS** |
+| #5821 | 2026-10-29 08:19:50 | Touch Gesture Dispatcher | `jank_events` | `0.6 count` | **PASS** |
