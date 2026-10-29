@@ -5814,3 +5814,4 @@
 | #5771 | 2026-10-29 08:11:30 | Predictive Arc Canvas | `time_to_interactive` | `1282.0 ms` | **PASS** |
 | #5772 | 2026-10-29 08:11:40 | Scroll Parallax Manager | `bundle_size` | `166.2 KB` | **PASS** |
 | #5773 | 2026-10-29 08:11:50 | Telemetry Beacon | `time_to_interactive` | `2050.6 ms` | **PASS** |
+| #5774 | 2026-10-29 08:12:00 | 3D Particle Renderer | `frame_render_budget` | `17.6 ms (60fps)` | **PASS** |
