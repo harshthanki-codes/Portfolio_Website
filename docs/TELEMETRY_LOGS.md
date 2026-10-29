@@ -6308,3 +6308,4 @@
 | #6265 | 2026-10-29 09:33:50 | Touch Gesture Dispatcher | `jank_events` | `1.4 count` | **PASS** |
 | #6266 | 2026-10-29 09:34:00 | Telemetry Beacon | `memory_footprint` | `91.5 MB` | **PASS** |
 | #6267 | 2026-10-29 09:34:10 | Viewport Resize Observer | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
+| #6268 | 2026-10-29 09:34:20 | Lazy Load Optimizer | `gpu_utilization` | `30.7 %` | **PASS** |
