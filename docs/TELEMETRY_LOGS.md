@@ -6496,3 +6496,4 @@
 | #6453 | 2026-10-29 10:05:10 | Viewport Resize Observer | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
 | #6454 | 2026-10-29 10:05:20 | Progressive Image Loader | `gpu_utilization` | `23.6 %` | **PASS** |
 | #6455 | 2026-10-29 10:05:30 | Progressive Image Loader | `frame_render_budget` | `16.9 ms (60fps)` | **PASS** |
+| #6456 | 2026-10-29 10:05:40 | Progressive Image Loader | `frame_render_budget` | `15.9 ms (60fps)` | **PASS** |
