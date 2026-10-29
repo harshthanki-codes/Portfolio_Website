@@ -6548,3 +6548,4 @@
 | #6505 | 2026-10-29 10:13:50 | Dynamic Font Loader | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
 | #6506 | 2026-10-29 10:14:00 | Touch Gesture Dispatcher | `first_contentful_paint` | `803.3 ms` | **PASS** |
 | #6507 | 2026-10-29 10:14:10 | Interactive Tooltip Engine | `jank_events` | `0.1 count` | **PASS** |
+| #6508 | 2026-10-29 10:14:20 | Cache Warmup Service | `latency` | `8.5 ms` | **PASS** |
