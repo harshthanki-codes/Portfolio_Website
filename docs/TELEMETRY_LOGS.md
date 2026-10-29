@@ -5904,3 +5904,4 @@
 | #5861 | 2026-10-29 08:26:30 | Audio Visualizer | `latency` | `18.2 ms` | **PASS** |
 | #5862 | 2026-10-29 08:26:40 | Dynamic Font Loader | `memory_footprint` | `108.5 MB` | **PASS** |
 | #5863 | 2026-10-29 08:26:50 | Scroll Parallax Manager | `time_to_interactive` | `1886.5 ms` | **PASS** |
+| #5864 | 2026-10-29 08:27:00 | 3D Particle Renderer | `animation_fps` | `56.0 fps` | **PASS** |
