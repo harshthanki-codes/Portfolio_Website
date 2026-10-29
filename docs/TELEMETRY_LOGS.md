@@ -6699,3 +6699,4 @@
 | #6656 | 2026-10-29 10:39:00 | Background Video Loop | `frame_render_budget` | `25.9 ms (60fps)` | **PASS** |
 | #6657 | 2026-10-29 10:39:10 | Telemetry Beacon | `latency` | `24.9 ms` | **PASS** |
 | #6658 | 2026-10-29 10:39:20 | SVG Morphing Pipeline | `latency` | `9.5 ms` | **PASS** |
+| #6659 | 2026-10-29 10:39:30 | Cache Warmup Service | `time_to_interactive` | `1661.8 ms` | **PASS** |
