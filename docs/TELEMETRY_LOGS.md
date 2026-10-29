@@ -6289,3 +6289,4 @@
 | #6246 | 2026-10-29 09:30:40 | Lazy Load Optimizer | `frame_render_budget` | `28.1 ms (60fps)` | **PASS** |
 | #6247 | 2026-10-29 09:30:50 | Predictive Arc Canvas | `animation_fps` | `56.5 fps` | **PASS** |
 | #6248 | 2026-10-29 09:31:00 | Viewport Resize Observer | `jank_events` | `2.0 count` | **PASS** |
+| #6249 | 2026-10-29 09:31:10 | Scroll Parallax Manager | `latency` | `22.7 ms` | **PASS** |
