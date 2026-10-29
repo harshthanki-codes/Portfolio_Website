@@ -6933,3 +6933,4 @@
 | #6890 | 2026-10-29 11:18:00 | Dynamic Font Loader | `cpu_usage` | `38.3 %` | **PASS** |
 | #6891 | 2026-10-29 11:18:10 | SVG Morphing Pipeline | `time_to_interactive` | `1973.1 ms` | **PASS** |
 | #6892 | 2026-10-29 11:18:20 | CSS-in-JS Themer | `bundle_size` | `84.4 KB` | **PASS** |
+| #6893 | 2026-10-29 11:18:30 | CSS-in-JS Themer | `gpu_utilization` | `59.0 %` | **PASS** |
