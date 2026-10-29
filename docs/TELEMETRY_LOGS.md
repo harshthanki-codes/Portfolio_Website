@@ -6914,3 +6914,4 @@
 | #6871 | 2026-10-29 11:14:50 | Interactive Tooltip Engine | `first_contentful_paint` | `973.0 ms` | **PASS** |
 | #6872 | 2026-10-29 11:15:00 | CSS-in-JS Themer | `latency` | `6.8 ms` | **PASS** |
 | #6873 | 2026-10-29 11:15:10 | Interactive Tooltip Engine | `animation_fps` | `61.1 fps` | **PASS** |
+| #6874 | 2026-10-29 11:15:20 | Viewport Resize Observer | `memory_footprint` | `62.1 MB` | **PASS** |
