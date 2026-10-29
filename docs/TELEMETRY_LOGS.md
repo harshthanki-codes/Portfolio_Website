@@ -6242,3 +6242,4 @@
 | #6199 | 2026-10-29 09:22:50 | Cache Warmup Service | `latency` | `6.5 ms` | **PASS** |
 | #6200 | 2026-10-29 09:23:00 | Background Video Loop | `memory_footprint` | `91.8 MB` | **PASS** |
 | #6201 | 2026-10-29 09:23:10 | Progressive Image Loader | `latency` | `17.9 ms` | **PASS** |
+| #6202 | 2026-10-29 09:23:20 | Lottie Animation Engine | `jank_events` | `1.9 count` | **PASS** |
