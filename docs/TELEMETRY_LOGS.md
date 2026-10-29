@@ -6453,3 +6453,4 @@
 | #6410 | 2026-10-29 09:58:00 | Micro Frontend Loader | `jank_events` | `2.4 count` | **PASS** |
 | #6411 | 2026-10-29 09:58:10 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
 | #6412 | 2026-10-29 09:58:20 | Audio Visualizer | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
+| #6413 | 2026-10-29 09:58:30 | Viewport Resize Observer | `first_contentful_paint` | `1359.6 ms` | **PASS** |
