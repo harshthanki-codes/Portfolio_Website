@@ -6781,3 +6781,4 @@
 | #6738 | 2026-10-29 10:52:40 | Predictive Arc Canvas | `time_to_interactive` | `1229.3 ms` | **PASS** |
 | #6739 | 2026-10-29 10:52:50 | Telemetry Beacon | `memory_footprint` | `116.3 MB` | **PASS** |
 | #6740 | 2026-10-29 10:53:00 | 3D Particle Renderer | `frame_render_budget` | `20.9 ms (60fps)` | **PASS** |
+| #6741 | 2026-10-29 10:53:10 | Touch Gesture Dispatcher | `jank_events` | `0.9 count` | **PASS** |
