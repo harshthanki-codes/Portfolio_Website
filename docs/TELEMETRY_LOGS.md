@@ -6602,3 +6602,4 @@
 | #6559 | 2026-10-29 10:22:50 | State Sync Daemon | `jank_events` | `2.4 count` | **PASS** |
 | #6560 | 2026-10-29 10:23:00 | State Sync Daemon | `bundle_size` | `170.2 KB` | **PASS** |
 | #6561 | 2026-10-29 10:23:10 | Scroll Parallax Manager | `time_to_interactive` | `1409.3 ms` | **PASS** |
+| #6562 | 2026-10-29 10:23:20 | Cache Warmup Service | `time_to_interactive` | `1680.5 ms` | **PASS** |
