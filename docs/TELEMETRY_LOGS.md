@@ -6419,3 +6419,4 @@
 | #6376 | 2026-10-29 09:52:20 | Viewport Resize Observer | `gpu_utilization` | `43.7 %` | **PASS** |
 | #6377 | 2026-10-29 09:52:30 | Responsive Grid System | `memory_footprint` | `73.4 MB` | **PASS** |
 | #6378 | 2026-10-29 09:52:40 | Touch Gesture Dispatcher | `bundle_size` | `113.0 KB` | **PASS** |
+| #6379 | 2026-10-29 09:52:50 | Scroll Parallax Manager | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
