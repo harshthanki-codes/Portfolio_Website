@@ -5954,3 +5954,4 @@
 | #5911 | 2026-10-29 08:34:50 | Micro Frontend Loader | `cpu_usage` | `32.9 %` | **PASS** |
 | #5912 | 2026-10-29 08:35:00 | Telemetry Beacon | `first_contentful_paint` | `852.1 ms` | **PASS** |
 | #5913 | 2026-10-29 08:35:10 | State Sync Daemon | `frame_render_budget` | `21.0 ms (60fps)` | **PASS** |
+| #5914 | 2026-10-29 08:35:20 | Scroll Parallax Manager | `cpu_usage` | `14.7 %` | **PASS** |
