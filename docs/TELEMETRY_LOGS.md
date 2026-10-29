@@ -6296,3 +6296,4 @@
 | #6253 | 2026-10-29 09:31:50 | Progressive Image Loader | `time_to_interactive` | `2425.9 ms` | **PASS** |
 | #6254 | 2026-10-29 09:32:00 | Responsive Grid System | `time_to_interactive` | `2309.7 ms` | **PASS** |
 | #6255 | 2026-10-29 09:32:10 | Background Video Loop | `memory_footprint` | `114.4 MB` | **PASS** |
+| #6256 | 2026-10-29 09:32:20 | Background Video Loop | `latency` | `16.7 ms` | **PASS** |
