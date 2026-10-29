@@ -6514,3 +6514,4 @@
 | #6471 | 2026-10-29 10:08:10 | Touch Gesture Dispatcher | `bundle_size` | `117.6 KB` | **PASS** |
 | #6472 | 2026-10-29 10:08:20 | Touch Gesture Dispatcher | `jank_events` | `0.5 count` | **PASS** |
 | #6473 | 2026-10-29 10:08:30 | State Sync Daemon | `bundle_size` | `170.6 KB` | **PASS** |
+| #6474 | 2026-10-29 10:08:40 | Scroll Parallax Manager | `gpu_utilization` | `36.5 %` | **PASS** |
