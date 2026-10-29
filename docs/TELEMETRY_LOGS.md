@@ -6279,3 +6279,4 @@
 | #6236 | 2026-10-29 09:29:00 | Viewport Resize Observer | `bundle_size` | `194.9 KB` | **PASS** |
 | #6237 | 2026-10-29 09:29:10 | State Sync Daemon | `first_contentful_paint` | `843.7 ms` | **PASS** |
 | #6238 | 2026-10-29 09:29:20 | Cache Warmup Service | `gpu_utilization` | `28.8 %` | **PASS** |
+| #6239 | 2026-10-29 09:29:30 | Viewport Resize Observer | `cpu_usage` | `41.7 %` | **PASS** |
