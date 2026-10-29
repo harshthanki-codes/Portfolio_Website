@@ -6084,3 +6084,4 @@
 | #6041 | 2026-10-29 08:56:30 | WebGL Shader Compiler | `cpu_usage` | `39.5 %` | **PASS** |
 | #6042 | 2026-10-29 08:56:40 | Micro Frontend Loader | `animation_fps` | `65.6 fps` | **PASS** |
 | #6043 | 2026-10-29 08:56:50 | CSS-in-JS Themer | `jank_events` | `1.7 count` | **PASS** |
+| #6044 | 2026-10-29 08:57:00 | Background Video Loop | `first_contentful_paint` | `1298.3 ms` | **PASS** |
