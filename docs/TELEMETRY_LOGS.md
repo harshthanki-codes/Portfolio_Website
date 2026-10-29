@@ -6379,3 +6379,4 @@
 | #6336 | 2026-10-29 09:45:40 | WebGL Shader Compiler | `gpu_utilization` | `69.7 %` | **PASS** |
 | #6337 | 2026-10-29 09:45:50 | Scroll Parallax Manager | `latency` | `12.1 ms` | **PASS** |
 | #6338 | 2026-10-29 09:46:00 | Touch Gesture Dispatcher | `bundle_size` | `162.1 KB` | **PASS** |
+| #6339 | 2026-10-29 09:46:10 | WebGL Shader Compiler | `first_contentful_paint` | `839.8 ms` | **PASS** |
