@@ -6089,3 +6089,4 @@
 | #6046 | 2026-10-29 08:57:20 | WebGL Shader Compiler | `jank_events` | `0.7 count` | **PASS** |
 | #6047 | 2026-10-29 08:57:30 | Progressive Image Loader | `gpu_utilization` | `39.4 %` | **PASS** |
 | #6048 | 2026-10-29 08:57:40 | Predictive Arc Canvas | `memory_footprint` | `49.7 MB` | **PASS** |
+| #6049 | 2026-10-29 08:57:50 | Background Video Loop | `latency` | `13.8 ms` | **PASS** |
