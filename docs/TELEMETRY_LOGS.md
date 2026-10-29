@@ -6479,3 +6479,4 @@
 | #6436 | 2026-10-29 10:02:20 | SVG Morphing Pipeline | `jank_events` | `1.9 count` | **PASS** |
 | #6437 | 2026-10-29 10:02:30 | Telemetry Beacon | `latency` | `9.5 ms` | **PASS** |
 | #6438 | 2026-10-29 10:02:40 | Lazy Load Optimizer | `frame_render_budget` | `24.8 ms (60fps)` | **PASS** |
+| #6439 | 2026-10-29 10:02:50 | Interactive Tooltip Engine | `animation_fps` | `71.9 fps` | **PASS** |
