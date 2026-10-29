@@ -5755,3 +5755,4 @@
 | #5712 | 2026-10-29 08:01:40 | Viewport Resize Observer | `latency` | `14.2 ms` | **PASS** |
 | #5713 | 2026-10-29 08:01:50 | 3D Particle Renderer | `first_contentful_paint` | `1262.0 ms` | **PASS** |
 | #5714 | 2026-10-29 08:02:00 | Lottie Animation Engine | `first_contentful_paint` | `859.4 ms` | **PASS** |
+| #5715 | 2026-10-29 08:02:10 | Interactive Tooltip Engine | `bundle_size` | `84.9 KB` | **PASS** |
