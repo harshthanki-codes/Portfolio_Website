@@ -6096,3 +6096,4 @@
 | #6053 | 2026-10-29 08:58:30 | Lottie Animation Engine | `animation_fps` | `71.3 fps` | **PASS** |
 | #6054 | 2026-10-29 08:58:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1366.1 ms` | **PASS** |
 | #6055 | 2026-10-29 08:58:50 | Lottie Animation Engine | `first_contentful_paint` | `1070.7 ms` | **PASS** |
+| #6056 | 2026-10-29 08:59:00 | Background Video Loop | `latency` | `22.7 ms` | **PASS** |
