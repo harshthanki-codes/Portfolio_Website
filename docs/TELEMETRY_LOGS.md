@@ -5739,3 +5739,7 @@
 | #5699 | 2026-10-28 10:29:15 | Responsive Grid System | `jank_events` | `0.7 count` | **PASS** |
 | #5700 | 2026-10-28 10:29:30 | Predictive Arc Canvas | `frame_render_budget` | `18.1 ms (60fps)` | **PASS** |
 | #5701 | 2026-10-28 10:29:45 | SVG Morphing Pipeline | `memory_footprint` | `119.6 MB` | **PASS** |
+
+## 2026-10-29 Telemetry Entries
+
+| #5702 | 2026-10-29 08:00:00 | Viewport Resize Observer | `first_contentful_paint` | `1388.3 ms` | **PASS** |
