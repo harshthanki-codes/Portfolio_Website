@@ -6320,3 +6320,4 @@
 | #6277 | 2026-10-29 09:35:50 | WebGL Shader Compiler | `latency` | `17.7 ms` | **PASS** |
 | #6278 | 2026-10-29 09:36:00 | Telemetry Beacon | `cpu_usage` | `38.1 %` | **PASS** |
 | #6279 | 2026-10-29 09:36:10 | CSS-in-JS Themer | `jank_events` | `2.9 count` | **PASS** |
+| #6280 | 2026-10-29 09:36:20 | CSS-in-JS Themer | `jank_events` | `2.3 count` | **PASS** |
