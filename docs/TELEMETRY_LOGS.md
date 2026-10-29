@@ -6179,3 +6179,4 @@
 | #6136 | 2026-10-29 09:12:20 | WebGL Shader Compiler | `gpu_utilization` | `60.3 %` | **PASS** |
 | #6137 | 2026-10-29 09:12:30 | Scroll Parallax Manager | `first_contentful_paint` | `1013.6 ms` | **PASS** |
 | #6138 | 2026-10-29 09:12:40 | CSS-in-JS Themer | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
+| #6139 | 2026-10-29 09:12:50 | Interactive Tooltip Engine | `jank_events` | `1.7 count` | **PASS** |
