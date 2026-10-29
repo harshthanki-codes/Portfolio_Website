@@ -6052,3 +6052,4 @@
 | #6009 | 2026-10-29 08:51:10 | Viewport Resize Observer | `jank_events` | `0.9 count` | **PASS** |
 | #6010 | 2026-10-29 08:51:20 | Dynamic Font Loader | `jank_events` | `1.4 count` | **PASS** |
 | #6011 | 2026-10-29 08:51:30 | Audio Visualizer | `time_to_interactive` | `2489.2 ms` | **PASS** |
+| #6012 | 2026-10-29 08:51:40 | Touch Gesture Dispatcher | `animation_fps` | `70.0 fps` | **PASS** |
