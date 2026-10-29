@@ -6703,3 +6703,4 @@
 | #6660 | 2026-10-29 10:39:40 | 3D Particle Renderer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
 | #6661 | 2026-10-29 10:39:50 | Touch Gesture Dispatcher | `animation_fps` | `61.6 fps` | **PASS** |
 | #6662 | 2026-10-29 10:40:00 | Scroll Parallax Manager | `gpu_utilization` | `57.5 %` | **PASS** |
+| #6663 | 2026-10-29 10:40:10 | Viewport Resize Observer | `cpu_usage` | `17.1 %` | **PASS** |
