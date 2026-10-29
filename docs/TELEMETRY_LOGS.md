@@ -6181,3 +6181,4 @@
 | #6138 | 2026-10-29 09:12:40 | CSS-in-JS Themer | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
 | #6139 | 2026-10-29 09:12:50 | Interactive Tooltip Engine | `jank_events` | `1.7 count` | **PASS** |
 | #6140 | 2026-10-29 09:13:00 | WebGL Shader Compiler | `animation_fps` | `66.0 fps` | **PASS** |
+| #6141 | 2026-10-29 09:13:10 | Predictive Arc Canvas | `jank_events` | `1.2 count` | **PASS** |
