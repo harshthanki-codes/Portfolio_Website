@@ -6671,3 +6671,4 @@
 | #6628 | 2026-10-29 10:34:20 | Lottie Animation Engine | `jank_events` | `2.4 count` | **PASS** |
 | #6629 | 2026-10-29 10:34:30 | Cache Warmup Service | `memory_footprint` | `89.7 MB` | **PASS** |
 | #6630 | 2026-10-29 10:34:40 | Responsive Grid System | `gpu_utilization` | `38.3 %` | **PASS** |
+| #6631 | 2026-10-29 10:34:50 | Cache Warmup Service | `gpu_utilization` | `39.1 %` | **PASS** |
