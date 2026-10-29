@@ -6040,3 +6040,4 @@
 | #5997 | 2026-10-29 08:49:10 | State Sync Daemon | `bundle_size` | `185.9 KB` | **PASS** |
 | #5998 | 2026-10-29 08:49:20 | SVG Morphing Pipeline | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
 | #5999 | 2026-10-29 08:49:30 | SVG Morphing Pipeline | `bundle_size` | `174.4 KB` | **PASS** |
+| #6000 | 2026-10-29 08:49:40 | Cache Warmup Service | `latency` | `19.9 ms` | **PASS** |
