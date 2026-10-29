@@ -6011,3 +6011,4 @@
 | #5968 | 2026-10-29 08:44:20 | State Sync Daemon | `animation_fps` | `69.7 fps` | **PASS** |
 | #5969 | 2026-10-29 08:44:30 | Lazy Load Optimizer | `jank_events` | `1.5 count` | **PASS** |
 | #5970 | 2026-10-29 08:44:40 | Audio Visualizer | `bundle_size` | `89.8 KB` | **PASS** |
+| #5971 | 2026-10-29 08:44:50 | Scroll Parallax Manager | `gpu_utilization` | `31.6 %` | **PASS** |
