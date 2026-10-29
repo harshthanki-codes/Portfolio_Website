@@ -6750,3 +6750,4 @@
 | #6707 | 2026-10-29 10:47:30 | Lottie Animation Engine | `animation_fps` | `56.3 fps` | **PASS** |
 | #6708 | 2026-10-29 10:47:40 | Dynamic Font Loader | `first_contentful_paint` | `929.0 ms` | **PASS** |
 | #6709 | 2026-10-29 10:47:50 | SVG Morphing Pipeline | `frame_render_budget` | `15.3 ms (60fps)` | **PASS** |
+| #6710 | 2026-10-29 10:48:00 | Lottie Animation Engine | `memory_footprint` | `87.4 MB` | **PASS** |
