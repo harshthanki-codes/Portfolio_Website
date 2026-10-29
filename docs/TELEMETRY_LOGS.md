@@ -6849,3 +6849,4 @@
 | #6806 | 2026-10-29 11:04:00 | Lazy Load Optimizer | `animation_fps` | `66.5 fps` | **PASS** |
 | #6807 | 2026-10-29 11:04:10 | Viewport Resize Observer | `frame_render_budget` | `21.7 ms (60fps)` | **PASS** |
 | #6808 | 2026-10-29 11:04:20 | Cache Warmup Service | `jank_events` | `1.3 count` | **PASS** |
+| #6809 | 2026-10-29 11:04:30 | Lazy Load Optimizer | `memory_footprint` | `109.0 MB` | **PASS** |
