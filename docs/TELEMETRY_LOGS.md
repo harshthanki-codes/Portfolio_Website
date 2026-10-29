@@ -5824,3 +5824,4 @@
 | #5781 | 2026-10-29 08:13:10 | Viewport Resize Observer | `time_to_interactive` | `1636.5 ms` | **PASS** |
 | #5782 | 2026-10-29 08:13:20 | Micro Frontend Loader | `animation_fps` | `61.5 fps` | **PASS** |
 | #5783 | 2026-10-29 08:13:30 | Touch Gesture Dispatcher | `time_to_interactive` | `1430.9 ms` | **PASS** |
+| #5784 | 2026-10-29 08:13:40 | CSS-in-JS Themer | `animation_fps` | `57.8 fps` | **PASS** |
