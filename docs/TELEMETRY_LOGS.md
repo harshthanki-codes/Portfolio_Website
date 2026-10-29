@@ -6227,3 +6227,4 @@
 | #6184 | 2026-10-29 09:20:20 | WebGL Shader Compiler | `time_to_interactive` | `1589.4 ms` | **PASS** |
 | #6185 | 2026-10-29 09:20:30 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
 | #6186 | 2026-10-29 09:20:40 | CSS-in-JS Themer | `gpu_utilization` | `43.5 %` | **PASS** |
+| #6187 | 2026-10-29 09:20:50 | 3D Particle Renderer | `time_to_interactive` | `2483.2 ms` | **PASS** |
