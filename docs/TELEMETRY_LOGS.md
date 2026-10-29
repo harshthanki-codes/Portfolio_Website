@@ -6903,3 +6903,4 @@
 | #6860 | 2026-10-29 11:13:00 | Micro Frontend Loader | `jank_events` | `0.5 count` | **PASS** |
 | #6861 | 2026-10-29 11:13:10 | State Sync Daemon | `time_to_interactive` | `2482.3 ms` | **PASS** |
 | #6862 | 2026-10-29 11:13:20 | SVG Morphing Pipeline | `frame_render_budget` | `20.1 ms (60fps)` | **PASS** |
+| #6863 | 2026-10-29 11:13:30 | CSS-in-JS Themer | `time_to_interactive` | `2049.0 ms` | **PASS** |
