@@ -6580,3 +6580,4 @@
 | #6537 | 2026-10-29 10:19:10 | WebGL Shader Compiler | `first_contentful_paint` | `949.0 ms` | **PASS** |
 | #6538 | 2026-10-29 10:19:20 | Predictive Arc Canvas | `gpu_utilization` | `58.5 %` | **PASS** |
 | #6539 | 2026-10-29 10:19:30 | CSS-in-JS Themer | `frame_render_budget` | `21.0 ms (60fps)` | **PASS** |
+| #6540 | 2026-10-29 10:19:40 | Dynamic Font Loader | `gpu_utilization` | `30.5 %` | **PASS** |
