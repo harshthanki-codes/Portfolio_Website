@@ -5854,3 +5854,4 @@
 | #5811 | 2026-10-29 08:18:10 | CSS-in-JS Themer | `memory_footprint` | `118.4 MB` | **PASS** |
 | #5812 | 2026-10-29 08:18:20 | WebGL Shader Compiler | `memory_footprint` | `79.8 MB` | **PASS** |
 | #5813 | 2026-10-29 08:18:30 | Scroll Parallax Manager | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
+| #5814 | 2026-10-29 08:18:40 | 3D Particle Renderer | `gpu_utilization` | `26.8 %` | **PASS** |
