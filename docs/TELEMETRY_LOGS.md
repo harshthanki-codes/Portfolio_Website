@@ -6941,3 +6941,4 @@
 | #6898 | 2026-10-29 11:19:20 | Viewport Resize Observer | `memory_footprint` | `69.9 MB` | **PASS** |
 | #6899 | 2026-10-29 11:19:30 | State Sync Daemon | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
 | #6900 | 2026-10-29 11:19:40 | State Sync Daemon | `jank_events` | `1.0 count` | **PASS** |
+| #6901 | 2026-10-29 11:19:50 | 3D Particle Renderer | `memory_footprint` | `73.2 MB` | **PASS** |
