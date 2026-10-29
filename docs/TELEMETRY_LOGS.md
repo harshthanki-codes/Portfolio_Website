@@ -6111,3 +6111,4 @@
 | #6068 | 2026-10-29 09:01:00 | WebGL Shader Compiler | `first_contentful_paint` | `880.9 ms` | **PASS** |
 | #6069 | 2026-10-29 09:01:10 | Interactive Tooltip Engine | `memory_footprint` | `99.0 MB` | **PASS** |
 | #6070 | 2026-10-29 09:01:20 | Audio Visualizer | `bundle_size` | `116.4 KB` | **PASS** |
+| #6071 | 2026-10-29 09:01:30 | WebGL Shader Compiler | `gpu_utilization` | `41.3 %` | **PASS** |
