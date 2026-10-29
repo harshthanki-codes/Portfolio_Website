@@ -6642,3 +6642,4 @@
 | #6599 | 2026-10-29 10:29:30 | Scroll Parallax Manager | `latency` | `23.3 ms` | **PASS** |
 | #6600 | 2026-10-29 10:29:40 | State Sync Daemon | `jank_events` | `2.9 count` | **PASS** |
 | #6601 | 2026-10-29 10:29:50 | Lazy Load Optimizer | `cpu_usage` | `23.9 %` | **PASS** |
+| #6602 | 2026-10-29 10:30:00 | Background Video Loop | `frame_render_budget` | `15.7 ms (60fps)` | **PASS** |
