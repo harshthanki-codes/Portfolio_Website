@@ -5821,3 +5821,4 @@
 | #5778 | 2026-10-29 08:12:40 | Telemetry Beacon | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
 | #5779 | 2026-10-29 08:12:50 | State Sync Daemon | `jank_events` | `1.9 count` | **PASS** |
 | #5780 | 2026-10-29 08:13:00 | Touch Gesture Dispatcher | `jank_events` | `2.3 count` | **PASS** |
+| #5781 | 2026-10-29 08:13:10 | Viewport Resize Observer | `time_to_interactive` | `1636.5 ms` | **PASS** |
