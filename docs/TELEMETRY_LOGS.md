@@ -6820,3 +6820,4 @@
 | #6777 | 2026-10-29 10:59:10 | 3D Particle Renderer | `memory_footprint` | `97.5 MB` | **PASS** |
 | #6778 | 2026-10-29 10:59:20 | Responsive Grid System | `memory_footprint` | `94.0 MB` | **PASS** |
 | #6779 | 2026-10-29 10:59:30 | Dynamic Font Loader | `memory_footprint` | `46.1 MB` | **PASS** |
+| #6780 | 2026-10-29 10:59:40 | 3D Particle Renderer | `gpu_utilization` | `44.4 %` | **PASS** |
