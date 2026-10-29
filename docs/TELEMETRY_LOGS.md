@@ -6434,3 +6434,4 @@
 | #6391 | 2026-10-29 09:54:50 | Cache Warmup Service | `first_contentful_paint` | `893.1 ms` | **PASS** |
 | #6392 | 2026-10-29 09:55:00 | Telemetry Beacon | `cpu_usage` | `44.4 %` | **PASS** |
 | #6393 | 2026-10-29 09:55:10 | Dynamic Font Loader | `time_to_interactive` | `1618.4 ms` | **PASS** |
+| #6394 | 2026-10-29 09:55:20 | 3D Particle Renderer | `jank_events` | `2.2 count` | **PASS** |
