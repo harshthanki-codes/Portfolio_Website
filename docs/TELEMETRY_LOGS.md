@@ -6009,3 +6009,4 @@
 | #5966 | 2026-10-29 08:44:00 | WebGL Shader Compiler | `first_contentful_paint` | `1319.1 ms` | **PASS** |
 | #5967 | 2026-10-29 08:44:10 | Background Video Loop | `animation_fps` | `61.7 fps` | **PASS** |
 | #5968 | 2026-10-29 08:44:20 | State Sync Daemon | `animation_fps` | `69.7 fps` | **PASS** |
+| #5969 | 2026-10-29 08:44:30 | Lazy Load Optimizer | `jank_events` | `1.5 count` | **PASS** |
