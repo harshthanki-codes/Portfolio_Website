@@ -6280,3 +6280,4 @@
 | #6237 | 2026-10-29 09:29:10 | State Sync Daemon | `first_contentful_paint` | `843.7 ms` | **PASS** |
 | #6238 | 2026-10-29 09:29:20 | Cache Warmup Service | `gpu_utilization` | `28.8 %` | **PASS** |
 | #6239 | 2026-10-29 09:29:30 | Viewport Resize Observer | `cpu_usage` | `41.7 %` | **PASS** |
+| #6240 | 2026-10-29 09:29:40 | Background Video Loop | `bundle_size` | `238.7 KB` | **PASS** |
