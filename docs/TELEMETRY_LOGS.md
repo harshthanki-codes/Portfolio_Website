@@ -6334,3 +6334,4 @@
 | #6291 | 2026-10-29 09:38:10 | Cache Warmup Service | `animation_fps` | `64.5 fps` | **PASS** |
 | #6292 | 2026-10-29 09:38:20 | Cache Warmup Service | `memory_footprint` | `66.2 MB` | **PASS** |
 | #6293 | 2026-10-29 09:38:30 | Telemetry Beacon | `time_to_interactive` | `2493.6 ms` | **PASS** |
+| #6294 | 2026-10-29 09:38:40 | Telemetry Beacon | `cpu_usage` | `35.3 %` | **PASS** |
