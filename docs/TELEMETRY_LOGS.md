@@ -5802,3 +5802,4 @@
 | #5759 | 2026-10-29 08:09:30 | Progressive Image Loader | `time_to_interactive` | `2182.0 ms` | **PASS** |
 | #5760 | 2026-10-29 08:09:40 | Cache Warmup Service | `frame_render_budget` | `22.3 ms (60fps)` | **PASS** |
 | #5761 | 2026-10-29 08:09:50 | Predictive Arc Canvas | `time_to_interactive` | `1953.8 ms` | **PASS** |
+| #5762 | 2026-10-29 08:10:00 | Touch Gesture Dispatcher | `jank_events` | `1.3 count` | **PASS** |
