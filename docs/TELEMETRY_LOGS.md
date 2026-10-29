@@ -6409,3 +6409,4 @@
 | #6366 | 2026-10-29 09:50:40 | Lottie Animation Engine | `jank_events` | `1.3 count` | **PASS** |
 | #6367 | 2026-10-29 09:50:50 | Interactive Tooltip Engine | `cpu_usage` | `30.3 %` | **PASS** |
 | #6368 | 2026-10-29 09:51:00 | State Sync Daemon | `latency` | `6.4 ms` | **PASS** |
+| #6369 | 2026-10-29 09:51:10 | Lottie Animation Engine | `memory_footprint` | `103.1 MB` | **PASS** |
