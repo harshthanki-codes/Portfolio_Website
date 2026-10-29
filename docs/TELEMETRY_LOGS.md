@@ -6600,3 +6600,4 @@
 | #6557 | 2026-10-29 10:22:30 | Background Video Loop | `bundle_size` | `142.3 KB` | **PASS** |
 | #6558 | 2026-10-29 10:22:40 | State Sync Daemon | `jank_events` | `0.8 count` | **PASS** |
 | #6559 | 2026-10-29 10:22:50 | State Sync Daemon | `jank_events` | `2.4 count` | **PASS** |
+| #6560 | 2026-10-29 10:23:00 | State Sync Daemon | `bundle_size` | `170.2 KB` | **PASS** |
