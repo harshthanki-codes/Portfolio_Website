@@ -6489,3 +6489,4 @@
 | #6446 | 2026-10-29 10:04:00 | CSS-in-JS Themer | `jank_events` | `1.8 count` | **PASS** |
 | #6447 | 2026-10-29 10:04:10 | State Sync Daemon | `gpu_utilization` | `54.6 %` | **PASS** |
 | #6448 | 2026-10-29 10:04:20 | SVG Morphing Pipeline | `latency` | `11.4 ms` | **PASS** |
+| #6449 | 2026-10-29 10:04:30 | State Sync Daemon | `bundle_size` | `151.0 KB` | **PASS** |
