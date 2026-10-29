@@ -6114,3 +6114,4 @@
 | #6071 | 2026-10-29 09:01:30 | WebGL Shader Compiler | `gpu_utilization` | `41.3 %` | **PASS** |
 | #6072 | 2026-10-29 09:01:40 | Lazy Load Optimizer | `jank_events` | `0.6 count` | **PASS** |
 | #6073 | 2026-10-29 09:01:50 | Background Video Loop | `bundle_size` | `125.4 KB` | **PASS** |
+| #6074 | 2026-10-29 09:02:00 | SVG Morphing Pipeline | `gpu_utilization` | `37.8 %` | **PASS** |
