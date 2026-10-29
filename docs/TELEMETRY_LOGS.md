@@ -6475,3 +6475,4 @@
 | #6432 | 2026-10-29 10:01:40 | Telemetry Beacon | `time_to_interactive` | `1338.7 ms` | **PASS** |
 | #6433 | 2026-10-29 10:01:50 | WebGL Shader Compiler | `memory_footprint` | `49.1 MB` | **PASS** |
 | #6434 | 2026-10-29 10:02:00 | Touch Gesture Dispatcher | `latency` | `20.7 ms` | **PASS** |
+| #6435 | 2026-10-29 10:02:10 | Lottie Animation Engine | `bundle_size` | `129.9 KB` | **PASS** |
