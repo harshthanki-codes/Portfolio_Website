@@ -6667,3 +6667,4 @@
 | #6624 | 2026-10-29 10:33:40 | Scroll Parallax Manager | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
 | #6625 | 2026-10-29 10:33:50 | Lazy Load Optimizer | `time_to_interactive` | `1420.7 ms` | **PASS** |
 | #6626 | 2026-10-29 10:34:00 | Touch Gesture Dispatcher | `first_contentful_paint` | `1347.1 ms` | **PASS** |
+| #6627 | 2026-10-29 10:34:10 | WebGL Shader Compiler | `gpu_utilization` | `57.3 %` | **PASS** |
