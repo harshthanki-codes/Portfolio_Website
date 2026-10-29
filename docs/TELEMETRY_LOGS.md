@@ -5901,3 +5901,4 @@
 | #5858 | 2026-10-29 08:26:00 | 3D Particle Renderer | `gpu_utilization` | `47.2 %` | **PASS** |
 | #5859 | 2026-10-29 08:26:10 | Telemetry Beacon | `animation_fps` | `72.7 fps` | **PASS** |
 | #5860 | 2026-10-29 08:26:20 | Viewport Resize Observer | `cpu_usage` | `13.2 %` | **PASS** |
+| #5861 | 2026-10-29 08:26:30 | Audio Visualizer | `latency` | `18.2 ms` | **PASS** |
