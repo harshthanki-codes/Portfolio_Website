@@ -6374,3 +6374,4 @@
 | #6331 | 2026-10-29 09:44:50 | Telemetry Beacon | `time_to_interactive` | `1506.8 ms` | **PASS** |
 | #6332 | 2026-10-29 09:45:00 | State Sync Daemon | `bundle_size` | `182.7 KB` | **PASS** |
 | #6333 | 2026-10-29 09:45:10 | Micro Frontend Loader | `frame_render_budget` | `20.5 ms (60fps)` | **PASS** |
+| #6334 | 2026-10-29 09:45:20 | 3D Particle Renderer | `memory_footprint` | `114.2 MB` | **PASS** |
