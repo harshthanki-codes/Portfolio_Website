@@ -6401,3 +6401,4 @@
 | #6358 | 2026-10-29 09:49:20 | Audio Visualizer | `gpu_utilization` | `53.6 %` | **PASS** |
 | #6359 | 2026-10-29 09:49:30 | 3D Particle Renderer | `time_to_interactive` | `1398.6 ms` | **PASS** |
 | #6360 | 2026-10-29 09:49:40 | Interactive Tooltip Engine | `memory_footprint` | `96.4 MB` | **PASS** |
+| #6361 | 2026-10-29 09:49:50 | Background Video Loop | `gpu_utilization` | `27.7 %` | **PASS** |
