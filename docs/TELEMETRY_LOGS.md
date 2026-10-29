@@ -6883,3 +6883,4 @@
 | #6840 | 2026-10-29 11:09:40 | Responsive Grid System | `bundle_size` | `214.2 KB` | **PASS** |
 | #6841 | 2026-10-29 11:09:50 | Predictive Arc Canvas | `time_to_interactive` | `2405.6 ms` | **PASS** |
 | #6842 | 2026-10-29 11:10:00 | CSS-in-JS Themer | `latency` | `17.1 ms` | **PASS** |
+| #6843 | 2026-10-29 11:10:10 | CSS-in-JS Themer | `frame_render_budget` | `25.4 ms (60fps)` | **PASS** |
