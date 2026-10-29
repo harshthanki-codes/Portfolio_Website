@@ -6336,3 +6336,4 @@
 | #6293 | 2026-10-29 09:38:30 | Telemetry Beacon | `time_to_interactive` | `2493.6 ms` | **PASS** |
 | #6294 | 2026-10-29 09:38:40 | Telemetry Beacon | `cpu_usage` | `35.3 %` | **PASS** |
 | #6295 | 2026-10-29 09:38:50 | Touch Gesture Dispatcher | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
+| #6296 | 2026-10-29 09:39:00 | Lottie Animation Engine | `jank_events` | `2.2 count` | **PASS** |
