@@ -6754,3 +6754,4 @@
 | #6711 | 2026-10-29 10:48:10 | Micro Frontend Loader | `bundle_size` | `155.7 KB` | **PASS** |
 | #6712 | 2026-10-29 10:48:20 | Micro Frontend Loader | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
 | #6713 | 2026-10-29 10:48:30 | Touch Gesture Dispatcher | `frame_render_budget` | `20.0 ms (60fps)` | **PASS** |
+| #6714 | 2026-10-29 10:48:40 | Viewport Resize Observer | `time_to_interactive` | `2220.1 ms` | **PASS** |
