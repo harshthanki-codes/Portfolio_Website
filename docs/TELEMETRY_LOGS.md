@@ -5795,3 +5795,4 @@
 | #5752 | 2026-10-29 08:08:20 | WebGL Shader Compiler | `jank_events` | `2.5 count` | **PASS** |
 | #5753 | 2026-10-29 08:08:30 | Interactive Tooltip Engine | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
 | #5754 | 2026-10-29 08:08:40 | 3D Particle Renderer | `first_contentful_paint` | `1099.4 ms` | **PASS** |
+| #5755 | 2026-10-29 08:08:50 | Interactive Tooltip Engine | `cpu_usage` | `14.2 %` | **PASS** |
