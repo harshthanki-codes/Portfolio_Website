@@ -6400,3 +6400,4 @@
 | #6357 | 2026-10-29 09:49:10 | Dynamic Font Loader | `time_to_interactive` | `1240.3 ms` | **PASS** |
 | #6358 | 2026-10-29 09:49:20 | Audio Visualizer | `gpu_utilization` | `53.6 %` | **PASS** |
 | #6359 | 2026-10-29 09:49:30 | 3D Particle Renderer | `time_to_interactive` | `1398.6 ms` | **PASS** |
+| #6360 | 2026-10-29 09:49:40 | Interactive Tooltip Engine | `memory_footprint` | `96.4 MB` | **PASS** |
