@@ -6028,3 +6028,4 @@
 | #5985 | 2026-10-29 08:47:10 | State Sync Daemon | `memory_footprint` | `91.0 MB` | **PASS** |
 | #5986 | 2026-10-29 08:47:20 | CSS-in-JS Themer | `animation_fps` | `66.3 fps` | **PASS** |
 | #5987 | 2026-10-29 08:47:30 | SVG Morphing Pipeline | `latency` | `13.8 ms` | **PASS** |
+| #5988 | 2026-10-29 08:47:40 | Audio Visualizer | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
