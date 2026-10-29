@@ -6500,3 +6500,4 @@
 | #6457 | 2026-10-29 10:05:50 | Interactive Tooltip Engine | `memory_footprint` | `84.8 MB` | **PASS** |
 | #6458 | 2026-10-29 10:06:00 | Micro Frontend Loader | `frame_render_budget` | `27.5 ms (60fps)` | **PASS** |
 | #6459 | 2026-10-29 10:06:10 | Lottie Animation Engine | `gpu_utilization` | `32.1 %` | **PASS** |
+| #6460 | 2026-10-29 10:06:20 | Viewport Resize Observer | `first_contentful_paint` | `1365.0 ms` | **PASS** |
