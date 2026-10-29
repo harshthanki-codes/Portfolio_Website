@@ -6568,3 +6568,4 @@
 | #6525 | 2026-10-29 10:17:10 | Touch Gesture Dispatcher | `jank_events` | `1.0 count` | **PASS** |
 | #6526 | 2026-10-29 10:17:20 | Background Video Loop | `animation_fps` | `69.7 fps` | **PASS** |
 | #6527 | 2026-10-29 10:17:30 | Cache Warmup Service | `latency` | `12.3 ms` | **PASS** |
+| #6528 | 2026-10-29 10:17:40 | CSS-in-JS Themer | `gpu_utilization` | `47.8 %` | **PASS** |
