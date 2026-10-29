@@ -6254,3 +6254,4 @@
 | #6211 | 2026-10-29 09:24:50 | Progressive Image Loader | `time_to_interactive` | `2031.4 ms` | **PASS** |
 | #6212 | 2026-10-29 09:25:00 | Progressive Image Loader | `cpu_usage` | `12.1 %` | **PASS** |
 | #6213 | 2026-10-29 09:25:10 | Dynamic Font Loader | `gpu_utilization` | `53.2 %` | **PASS** |
+| #6214 | 2026-10-29 09:25:20 | WebGL Shader Compiler | `jank_events` | `1.7 count` | **PASS** |
