@@ -5798,3 +5798,4 @@
 | #5755 | 2026-10-29 08:08:50 | Interactive Tooltip Engine | `cpu_usage` | `14.2 %` | **PASS** |
 | #5756 | 2026-10-29 08:09:00 | 3D Particle Renderer | `jank_events` | `2.2 count` | **PASS** |
 | #5757 | 2026-10-29 08:09:10 | SVG Morphing Pipeline | `frame_render_budget` | `27.2 ms (60fps)` | **PASS** |
+| #5758 | 2026-10-29 08:09:20 | Cache Warmup Service | `time_to_interactive` | `1737.9 ms` | **PASS** |
