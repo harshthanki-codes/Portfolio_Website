@@ -5849,3 +5849,4 @@
 | #5806 | 2026-10-29 08:17:20 | SVG Morphing Pipeline | `memory_footprint` | `81.7 MB` | **PASS** |
 | #5807 | 2026-10-29 08:17:30 | Micro Frontend Loader | `latency` | `9.3 ms` | **PASS** |
 | #5808 | 2026-10-29 08:17:40 | Viewport Resize Observer | `latency` | `11.1 ms` | **PASS** |
+| #5809 | 2026-10-29 08:17:50 | SVG Morphing Pipeline | `cpu_usage` | `29.5 %` | **PASS** |
