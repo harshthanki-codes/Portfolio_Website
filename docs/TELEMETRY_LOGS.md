@@ -6531,3 +6531,4 @@
 | #6488 | 2026-10-29 10:11:00 | Viewport Resize Observer | `jank_events` | `0.4 count` | **PASS** |
 | #6489 | 2026-10-29 10:11:10 | Viewport Resize Observer | `memory_footprint` | `58.5 MB` | **PASS** |
 | #6490 | 2026-10-29 10:11:20 | State Sync Daemon | `jank_events` | `2.3 count` | **PASS** |
+| #6491 | 2026-10-29 10:11:30 | Viewport Resize Observer | `cpu_usage` | `27.0 %` | **PASS** |
