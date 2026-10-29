@@ -5974,3 +5974,4 @@
 | #5931 | 2026-10-29 08:38:10 | 3D Particle Renderer | `cpu_usage` | `19.6 %` | **PASS** |
 | #5932 | 2026-10-29 08:38:20 | 3D Particle Renderer | `latency` | `19.9 ms` | **PASS** |
 | #5933 | 2026-10-29 08:38:30 | Cache Warmup Service | `animation_fps` | `71.2 fps` | **PASS** |
+| #5934 | 2026-10-29 08:38:40 | Cache Warmup Service | `animation_fps` | `65.9 fps` | **PASS** |
