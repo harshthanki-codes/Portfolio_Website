@@ -8135,3 +8135,4 @@
 | #8089 | 2026-10-30 11:17:50 | Cache Warmup Service | `jank_events` | `1.9 count` | **PASS** |
 | #8090 | 2026-10-30 11:18:00 | Audio Visualizer | `gpu_utilization` | `63.7 %` | **PASS** |
 | #8091 | 2026-10-30 11:18:10 | Progressive Image Loader | `latency` | `15.4 ms` | **PASS** |
+| #8092 | 2026-10-30 11:18:20 | Background Video Loop | `cpu_usage` | `34.6 %` | **PASS** |
