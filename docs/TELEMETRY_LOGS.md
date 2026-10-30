@@ -7618,3 +7618,4 @@
 | #7572 | 2026-10-30 09:51:40 | SVG Morphing Pipeline | `latency` | `12.2 ms` | **PASS** |
 | #7573 | 2026-10-30 09:51:50 | Background Video Loop | `animation_fps` | `60.1 fps` | **PASS** |
 | #7574 | 2026-10-30 09:52:00 | Progressive Image Loader | `frame_render_budget` | `19.3 ms (60fps)` | **PASS** |
+| #7575 | 2026-10-30 09:52:10 | WebGL Shader Compiler | `cpu_usage` | `31.0 %` | **PASS** |
