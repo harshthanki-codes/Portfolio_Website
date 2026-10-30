@@ -8007,3 +8007,4 @@
 | #7961 | 2026-10-30 10:56:30 | 3D Particle Renderer | `jank_events` | `0.2 count` | **PASS** |
 | #7962 | 2026-10-30 10:56:40 | 3D Particle Renderer | `memory_footprint` | `94.6 MB` | **PASS** |
 | #7963 | 2026-10-30 10:56:50 | Telemetry Beacon | `first_contentful_paint` | `1185.2 ms` | **PASS** |
+| #7964 | 2026-10-30 10:57:00 | Predictive Arc Canvas | `animation_fps` | `67.8 fps` | **PASS** |
