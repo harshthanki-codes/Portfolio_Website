@@ -7480,3 +7480,4 @@
 | #7434 | 2026-10-30 09:28:40 | 3D Particle Renderer | `gpu_utilization` | `49.3 %` | **PASS** |
 | #7435 | 2026-10-30 09:28:50 | CSS-in-JS Themer | `gpu_utilization` | `22.0 %` | **PASS** |
 | #7436 | 2026-10-30 09:29:00 | Viewport Resize Observer | `time_to_interactive` | `2157.5 ms` | **PASS** |
+| #7437 | 2026-10-30 09:29:10 | Micro Frontend Loader | `cpu_usage` | `13.7 %` | **PASS** |
