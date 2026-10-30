@@ -7343,3 +7343,4 @@
 | #7297 | 2026-10-30 09:05:50 | Viewport Resize Observer | `animation_fps` | `62.6 fps` | **PASS** |
 | #7298 | 2026-10-30 09:06:00 | Telemetry Beacon | `gpu_utilization` | `22.3 %` | **PASS** |
 | #7299 | 2026-10-30 09:06:10 | Micro Frontend Loader | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
+| #7300 | 2026-10-30 09:06:20 | Dynamic Font Loader | `jank_events` | `1.8 count` | **PASS** |
