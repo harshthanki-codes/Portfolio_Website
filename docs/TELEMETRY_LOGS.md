@@ -7319,3 +7319,4 @@
 | #7273 | 2026-10-30 09:01:50 | SVG Morphing Pipeline | `gpu_utilization` | `58.1 %` | **PASS** |
 | #7274 | 2026-10-30 09:02:00 | WebGL Shader Compiler | `latency` | `20.5 ms` | **PASS** |
 | #7275 | 2026-10-30 09:02:10 | Dynamic Font Loader | `gpu_utilization` | `64.6 %` | **PASS** |
+| #7276 | 2026-10-30 09:02:20 | Scroll Parallax Manager | `jank_events` | `0.8 count` | **PASS** |
