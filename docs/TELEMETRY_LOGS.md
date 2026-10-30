@@ -7463,3 +7463,4 @@
 | #7417 | 2026-10-30 09:25:50 | WebGL Shader Compiler | `frame_render_budget` | `19.1 ms (60fps)` | **PASS** |
 | #7418 | 2026-10-30 09:26:00 | WebGL Shader Compiler | `time_to_interactive` | `1375.4 ms` | **PASS** |
 | #7419 | 2026-10-30 09:26:10 | State Sync Daemon | `jank_events` | `0.5 count` | **PASS** |
+| #7420 | 2026-10-30 09:26:20 | WebGL Shader Compiler | `first_contentful_paint` | `1049.3 ms` | **PASS** |
