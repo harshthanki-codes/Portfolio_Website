@@ -7610,3 +7610,4 @@
 | #7564 | 2026-10-30 09:50:20 | Viewport Resize Observer | `cpu_usage` | `42.5 %` | **PASS** |
 | #7565 | 2026-10-30 09:50:30 | Interactive Tooltip Engine | `cpu_usage` | `14.7 %` | **PASS** |
 | #7566 | 2026-10-30 09:50:40 | Cache Warmup Service | `jank_events` | `1.1 count` | **PASS** |
+| #7567 | 2026-10-30 09:50:50 | WebGL Shader Compiler | `gpu_utilization` | `42.4 %` | **PASS** |
