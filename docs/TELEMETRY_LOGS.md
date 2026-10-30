@@ -8092,3 +8092,4 @@
 | #8046 | 2026-10-30 11:10:40 | WebGL Shader Compiler | `first_contentful_paint` | `1304.3 ms` | **PASS** |
 | #8047 | 2026-10-30 11:10:50 | CSS-in-JS Themer | `bundle_size` | `191.8 KB` | **PASS** |
 | #8048 | 2026-10-30 11:11:00 | Telemetry Beacon | `jank_events` | `2.8 count` | **PASS** |
+| #8049 | 2026-10-30 11:11:10 | Dynamic Font Loader | `bundle_size` | `223.9 KB` | **PASS** |
