@@ -7780,3 +7780,4 @@
 | #7734 | 2026-10-30 10:18:40 | State Sync Daemon | `memory_footprint` | `62.2 MB` | **PASS** |
 | #7735 | 2026-10-30 10:18:50 | State Sync Daemon | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
 | #7736 | 2026-10-30 10:19:00 | Background Video Loop | `jank_events` | `2.8 count` | **PASS** |
+| #7737 | 2026-10-30 10:19:10 | Predictive Arc Canvas | `bundle_size` | `154.3 KB` | **PASS** |
