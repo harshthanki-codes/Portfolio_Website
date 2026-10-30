@@ -7028,3 +7028,4 @@
 | #6982 | 2026-10-30 08:13:20 | SVG Morphing Pipeline | `animation_fps` | `71.2 fps` | **PASS** |
 | #6983 | 2026-10-30 08:13:30 | CSS-in-JS Themer | `first_contentful_paint` | `1181.5 ms` | **PASS** |
 | #6984 | 2026-10-30 08:13:40 | SVG Morphing Pipeline | `bundle_size` | `230.3 KB` | **PASS** |
+| #6985 | 2026-10-30 08:13:50 | CSS-in-JS Themer | `animation_fps` | `63.6 fps` | **PASS** |
