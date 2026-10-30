@@ -8024,3 +8024,4 @@
 | #7978 | 2026-10-30 10:59:20 | Scroll Parallax Manager | `gpu_utilization` | `50.6 %` | **PASS** |
 | #7979 | 2026-10-30 10:59:30 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
 | #7980 | 2026-10-30 10:59:40 | CSS-in-JS Themer | `gpu_utilization` | `40.0 %` | **PASS** |
+| #7981 | 2026-10-30 10:59:50 | Dynamic Font Loader | `gpu_utilization` | `59.6 %` | **PASS** |
