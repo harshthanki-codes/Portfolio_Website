@@ -7108,3 +7108,4 @@
 | #7062 | 2026-10-30 08:26:40 | Telemetry Beacon | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
 | #7063 | 2026-10-30 08:26:50 | Touch Gesture Dispatcher | `jank_events` | `2.0 count` | **PASS** |
 | #7064 | 2026-10-30 08:27:00 | Audio Visualizer | `bundle_size` | `133.5 KB` | **PASS** |
+| #7065 | 2026-10-30 08:27:10 | 3D Particle Renderer | `gpu_utilization` | `48.3 %` | **PASS** |
