@@ -7658,3 +7658,4 @@
 | #7612 | 2026-10-30 09:58:20 | Viewport Resize Observer | `bundle_size` | `235.8 KB` | **PASS** |
 | #7613 | 2026-10-30 09:58:30 | Lottie Animation Engine | `frame_render_budget` | `21.8 ms (60fps)` | **PASS** |
 | #7614 | 2026-10-30 09:58:40 | Progressive Image Loader | `frame_render_budget` | `29.9 ms (60fps)` | **PASS** |
+| #7615 | 2026-10-30 09:58:50 | Scroll Parallax Manager | `jank_events` | `1.4 count` | **PASS** |
