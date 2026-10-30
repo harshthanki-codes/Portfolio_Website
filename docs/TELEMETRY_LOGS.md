@@ -7555,3 +7555,4 @@
 | #7509 | 2026-10-30 09:41:10 | Predictive Arc Canvas | `latency` | `9.2 ms` | **PASS** |
 | #7510 | 2026-10-30 09:41:20 | Dynamic Font Loader | `frame_render_budget` | `22.8 ms (60fps)` | **PASS** |
 | #7511 | 2026-10-30 09:41:30 | Lottie Animation Engine | `memory_footprint` | `106.5 MB` | **PASS** |
+| #7512 | 2026-10-30 09:41:40 | Lottie Animation Engine | `cpu_usage` | `22.5 %` | **PASS** |
