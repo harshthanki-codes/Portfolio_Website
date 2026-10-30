@@ -7450,3 +7450,4 @@
 | #7404 | 2026-10-30 09:23:40 | SVG Morphing Pipeline | `jank_events` | `2.5 count` | **PASS** |
 | #7405 | 2026-10-30 09:23:50 | Touch Gesture Dispatcher | `frame_render_budget` | `25.1 ms (60fps)` | **PASS** |
 | #7406 | 2026-10-30 09:24:00 | State Sync Daemon | `latency` | `17.4 ms` | **PASS** |
+| #7407 | 2026-10-30 09:24:10 | Lottie Animation Engine | `animation_fps` | `71.1 fps` | **PASS** |
