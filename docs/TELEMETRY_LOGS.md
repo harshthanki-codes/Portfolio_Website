@@ -8122,3 +8122,4 @@
 | #8076 | 2026-10-30 11:15:40 | Background Video Loop | `animation_fps` | `56.5 fps` | **PASS** |
 | #8077 | 2026-10-30 11:15:50 | SVG Morphing Pipeline | `time_to_interactive` | `1898.7 ms` | **PASS** |
 | #8078 | 2026-10-30 11:16:00 | Dynamic Font Loader | `bundle_size` | `129.2 KB` | **PASS** |
+| #8079 | 2026-10-30 11:16:10 | Background Video Loop | `frame_render_budget` | `24.3 ms (60fps)` | **PASS** |
