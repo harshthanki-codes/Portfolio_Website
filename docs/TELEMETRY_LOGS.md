@@ -8029,3 +8029,4 @@
 | #7983 | 2026-10-30 11:00:10 | Viewport Resize Observer | `latency` | `19.4 ms` | **PASS** |
 | #7984 | 2026-10-30 11:00:20 | Touch Gesture Dispatcher | `time_to_interactive` | `2210.2 ms` | **PASS** |
 | #7985 | 2026-10-30 11:00:30 | Lazy Load Optimizer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
+| #7986 | 2026-10-30 11:00:40 | Lazy Load Optimizer | `jank_events` | `0.2 count` | **PASS** |
