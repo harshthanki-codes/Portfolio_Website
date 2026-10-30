@@ -8130,3 +8130,4 @@
 | #8084 | 2026-10-30 11:17:00 | Scroll Parallax Manager | `memory_footprint` | `65.1 MB` | **PASS** |
 | #8085 | 2026-10-30 11:17:10 | Responsive Grid System | `time_to_interactive` | `1960.6 ms` | **PASS** |
 | #8086 | 2026-10-30 11:17:20 | Audio Visualizer | `gpu_utilization` | `53.5 %` | **PASS** |
+| #8087 | 2026-10-30 11:17:30 | WebGL Shader Compiler | `time_to_interactive` | `2456.3 ms` | **PASS** |
