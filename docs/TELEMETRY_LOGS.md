@@ -6990,3 +6990,4 @@
 | #6944 | 2026-10-30 08:07:00 | Interactive Tooltip Engine | `time_to_interactive` | `1844.8 ms` | **PASS** |
 | #6945 | 2026-10-30 08:07:10 | Progressive Image Loader | `animation_fps` | `73.9 fps` | **PASS** |
 | #6946 | 2026-10-30 08:07:20 | Touch Gesture Dispatcher | `animation_fps` | `63.0 fps` | **PASS** |
+| #6947 | 2026-10-30 08:07:30 | Background Video Loop | `cpu_usage` | `23.5 %` | **PASS** |
