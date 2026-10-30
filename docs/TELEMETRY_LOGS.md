@@ -8056,3 +8056,4 @@
 | #8010 | 2026-10-30 11:04:40 | Predictive Arc Canvas | `time_to_interactive` | `2390.7 ms` | **PASS** |
 | #8011 | 2026-10-30 11:04:50 | Scroll Parallax Manager | `gpu_utilization` | `48.0 %` | **PASS** |
 | #8012 | 2026-10-30 11:05:00 | Touch Gesture Dispatcher | `jank_events` | `1.3 count` | **PASS** |
+| #8013 | 2026-10-30 11:05:10 | Progressive Image Loader | `cpu_usage` | `43.7 %` | **PASS** |
