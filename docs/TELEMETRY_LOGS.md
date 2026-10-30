@@ -8080,3 +8080,4 @@
 | #8034 | 2026-10-30 11:08:40 | Progressive Image Loader | `first_contentful_paint` | `1409.8 ms` | **PASS** |
 | #8035 | 2026-10-30 11:08:50 | Lottie Animation Engine | `memory_footprint` | `49.3 MB` | **PASS** |
 | #8036 | 2026-10-30 11:09:00 | Cache Warmup Service | `memory_footprint` | `55.0 MB` | **PASS** |
+| #8037 | 2026-10-30 11:09:10 | Scroll Parallax Manager | `animation_fps` | `71.0 fps` | **PASS** |
