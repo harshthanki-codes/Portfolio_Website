@@ -7030,3 +7030,4 @@
 | #6984 | 2026-10-30 08:13:40 | SVG Morphing Pipeline | `bundle_size` | `230.3 KB` | **PASS** |
 | #6985 | 2026-10-30 08:13:50 | CSS-in-JS Themer | `animation_fps` | `63.6 fps` | **PASS** |
 | #6986 | 2026-10-30 08:14:00 | Predictive Arc Canvas | `animation_fps` | `68.1 fps` | **PASS** |
+| #6987 | 2026-10-30 08:14:10 | Lottie Animation Engine | `latency` | `6.2 ms` | **PASS** |
