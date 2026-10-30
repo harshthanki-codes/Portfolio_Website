@@ -7914,3 +7914,4 @@
 | #7868 | 2026-10-30 10:41:00 | Scroll Parallax Manager | `latency` | `24.5 ms` | **PASS** |
 | #7869 | 2026-10-30 10:41:10 | State Sync Daemon | `gpu_utilization` | `64.2 %` | **PASS** |
 | #7870 | 2026-10-30 10:41:20 | Responsive Grid System | `memory_footprint` | `48.5 MB` | **PASS** |
+| #7871 | 2026-10-30 10:41:30 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
