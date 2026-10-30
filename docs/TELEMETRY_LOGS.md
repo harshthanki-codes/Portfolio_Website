@@ -7507,3 +7507,4 @@
 | #7461 | 2026-10-30 09:33:10 | 3D Particle Renderer | `memory_footprint` | `97.3 MB` | **PASS** |
 | #7462 | 2026-10-30 09:33:20 | Dynamic Font Loader | `time_to_interactive` | `1421.6 ms` | **PASS** |
 | #7463 | 2026-10-30 09:33:30 | State Sync Daemon | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
+| #7464 | 2026-10-30 09:33:40 | Progressive Image Loader | `jank_events` | `1.8 count` | **PASS** |
