@@ -7702,3 +7702,4 @@
 | #7656 | 2026-10-30 10:05:40 | WebGL Shader Compiler | `time_to_interactive` | `2027.2 ms` | **PASS** |
 | #7657 | 2026-10-30 10:05:50 | WebGL Shader Compiler | `first_contentful_paint` | `1472.9 ms` | **PASS** |
 | #7658 | 2026-10-30 10:06:00 | Viewport Resize Observer | `cpu_usage` | `39.8 %` | **PASS** |
+| #7659 | 2026-10-30 10:06:10 | Lottie Animation Engine | `jank_events` | `0.6 count` | **PASS** |
