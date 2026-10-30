@@ -7413,3 +7413,4 @@
 | #7367 | 2026-10-30 09:17:30 | WebGL Shader Compiler | `jank_events` | `2.9 count` | **PASS** |
 | #7368 | 2026-10-30 09:17:40 | Background Video Loop | `animation_fps` | `59.5 fps` | **PASS** |
 | #7369 | 2026-10-30 09:17:50 | Interactive Tooltip Engine | `gpu_utilization` | `69.1 %` | **PASS** |
+| #7370 | 2026-10-30 09:18:00 | Interactive Tooltip Engine | `time_to_interactive` | `1244.6 ms` | **PASS** |
