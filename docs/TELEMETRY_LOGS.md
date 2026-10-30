@@ -7621,3 +7621,4 @@
 | #7575 | 2026-10-30 09:52:10 | WebGL Shader Compiler | `cpu_usage` | `31.0 %` | **PASS** |
 | #7576 | 2026-10-30 09:52:20 | WebGL Shader Compiler | `jank_events` | `0.6 count` | **PASS** |
 | #7577 | 2026-10-30 09:52:30 | Interactive Tooltip Engine | `jank_events` | `1.6 count` | **PASS** |
+| #7578 | 2026-10-30 09:52:40 | Cache Warmup Service | `memory_footprint` | `59.6 MB` | **PASS** |
