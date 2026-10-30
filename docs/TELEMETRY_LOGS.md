@@ -8011,3 +8011,4 @@
 | #7965 | 2026-10-30 10:57:10 | Telemetry Beacon | `memory_footprint` | `101.2 MB` | **PASS** |
 | #7966 | 2026-10-30 10:57:20 | Telemetry Beacon | `time_to_interactive` | `1916.7 ms` | **PASS** |
 | #7967 | 2026-10-30 10:57:30 | 3D Particle Renderer | `bundle_size` | `136.1 KB` | **PASS** |
+| #7968 | 2026-10-30 10:57:40 | Touch Gesture Dispatcher | `jank_events` | `2.3 count` | **PASS** |
