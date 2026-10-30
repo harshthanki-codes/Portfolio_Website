@@ -7917,3 +7917,4 @@
 | #7871 | 2026-10-30 10:41:30 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
 | #7872 | 2026-10-30 10:41:40 | Lottie Animation Engine | `latency` | `19.8 ms` | **PASS** |
 | #7873 | 2026-10-30 10:41:50 | Lazy Load Optimizer | `frame_render_budget` | `21.9 ms (60fps)` | **PASS** |
+| #7874 | 2026-10-30 10:42:00 | WebGL Shader Compiler | `memory_footprint` | `64.2 MB` | **PASS** |
