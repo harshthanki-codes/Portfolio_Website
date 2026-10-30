@@ -8067,3 +8067,4 @@
 | #8021 | 2026-10-30 11:06:30 | SVG Morphing Pipeline | `jank_events` | `1.7 count` | **PASS** |
 | #8022 | 2026-10-30 11:06:40 | Touch Gesture Dispatcher | `cpu_usage` | `13.0 %` | **PASS** |
 | #8023 | 2026-10-30 11:06:50 | Touch Gesture Dispatcher | `frame_render_budget` | `15.6 ms (60fps)` | **PASS** |
+| #8024 | 2026-10-30 11:07:00 | Micro Frontend Loader | `cpu_usage` | `27.2 %` | **PASS** |
