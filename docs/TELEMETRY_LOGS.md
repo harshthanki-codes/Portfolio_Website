@@ -7539,3 +7539,4 @@
 | #7493 | 2026-10-30 09:38:30 | Lazy Load Optimizer | `jank_events` | `2.5 count` | **PASS** |
 | #7494 | 2026-10-30 09:38:40 | Viewport Resize Observer | `gpu_utilization` | `64.1 %` | **PASS** |
 | #7495 | 2026-10-30 09:38:50 | Background Video Loop | `gpu_utilization` | `47.1 %` | **PASS** |
+| #7496 | 2026-10-30 09:39:00 | Viewport Resize Observer | `animation_fps` | `60.0 fps` | **PASS** |
