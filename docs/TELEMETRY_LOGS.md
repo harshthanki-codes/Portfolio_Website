@@ -7461,3 +7461,4 @@
 | #7415 | 2026-10-30 09:25:30 | Lazy Load Optimizer | `first_contentful_paint` | `850.3 ms` | **PASS** |
 | #7416 | 2026-10-30 09:25:40 | Telemetry Beacon | `animation_fps` | `56.7 fps` | **PASS** |
 | #7417 | 2026-10-30 09:25:50 | WebGL Shader Compiler | `frame_render_budget` | `19.1 ms (60fps)` | **PASS** |
+| #7418 | 2026-10-30 09:26:00 | WebGL Shader Compiler | `time_to_interactive` | `1375.4 ms` | **PASS** |
