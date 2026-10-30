@@ -7161,3 +7161,4 @@
 | #7115 | 2026-10-30 08:35:30 | Touch Gesture Dispatcher | `time_to_interactive` | `2003.6 ms` | **PASS** |
 | #7116 | 2026-10-30 08:35:40 | Cache Warmup Service | `latency` | `16.0 ms` | **PASS** |
 | #7117 | 2026-10-30 08:35:50 | Background Video Loop | `frame_render_budget` | `29.9 ms (60fps)` | **PASS** |
+| #7118 | 2026-10-30 08:36:00 | Lottie Animation Engine | `gpu_utilization` | `45.2 %` | **PASS** |
