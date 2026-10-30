@@ -7597,3 +7597,4 @@
 | #7551 | 2026-10-30 09:48:10 | Cache Warmup Service | `frame_render_budget` | `16.9 ms (60fps)` | **PASS** |
 | #7552 | 2026-10-30 09:48:20 | Background Video Loop | `first_contentful_paint` | `1346.3 ms` | **PASS** |
 | #7553 | 2026-10-30 09:48:30 | Viewport Resize Observer | `bundle_size` | `209.4 KB` | **PASS** |
+| #7554 | 2026-10-30 09:48:40 | 3D Particle Renderer | `jank_events` | `0.3 count` | **PASS** |
