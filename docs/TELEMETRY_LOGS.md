@@ -7573,3 +7573,4 @@
 | #7527 | 2026-10-30 09:44:10 | Telemetry Beacon | `jank_events` | `2.8 count` | **PASS** |
 | #7528 | 2026-10-30 09:44:20 | Progressive Image Loader | `latency` | `13.7 ms` | **PASS** |
 | #7529 | 2026-10-30 09:44:30 | Touch Gesture Dispatcher | `jank_events` | `0.6 count` | **PASS** |
+| #7530 | 2026-10-30 09:44:40 | WebGL Shader Compiler | `frame_render_budget` | `15.4 ms (60fps)` | **PASS** |
