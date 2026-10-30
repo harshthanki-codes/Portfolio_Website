@@ -8103,3 +8103,4 @@
 | #8057 | 2026-10-30 11:12:30 | Predictive Arc Canvas | `cpu_usage` | `33.0 %` | **PASS** |
 | #8058 | 2026-10-30 11:12:40 | Viewport Resize Observer | `cpu_usage` | `10.3 %` | **PASS** |
 | #8059 | 2026-10-30 11:12:50 | Background Video Loop | `bundle_size` | `204.1 KB` | **PASS** |
+| #8060 | 2026-10-30 11:13:00 | SVG Morphing Pipeline | `frame_render_budget` | `16.5 ms (60fps)` | **PASS** |
