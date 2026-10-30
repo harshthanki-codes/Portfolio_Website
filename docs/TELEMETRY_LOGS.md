@@ -7963,3 +7963,4 @@
 | #7917 | 2026-10-30 10:49:10 | Dynamic Font Loader | `animation_fps` | `60.1 fps` | **PASS** |
 | #7918 | 2026-10-30 10:49:20 | Background Video Loop | `cpu_usage` | `38.3 %` | **PASS** |
 | #7919 | 2026-10-30 10:49:30 | Dynamic Font Loader | `jank_events` | `1.5 count` | **PASS** |
+| #7920 | 2026-10-30 10:49:40 | State Sync Daemon | `gpu_utilization` | `45.8 %` | **PASS** |
