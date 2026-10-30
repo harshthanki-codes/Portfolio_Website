@@ -7961,3 +7961,4 @@
 | #7915 | 2026-10-30 10:48:50 | WebGL Shader Compiler | `frame_render_budget` | `21.9 ms (60fps)` | **PASS** |
 | #7916 | 2026-10-30 10:49:00 | Touch Gesture Dispatcher | `frame_render_budget` | `23.7 ms (60fps)` | **PASS** |
 | #7917 | 2026-10-30 10:49:10 | Dynamic Font Loader | `animation_fps` | `60.1 fps` | **PASS** |
+| #7918 | 2026-10-30 10:49:20 | Background Video Loop | `cpu_usage` | `38.3 %` | **PASS** |
