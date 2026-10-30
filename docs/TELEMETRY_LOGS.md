@@ -8054,3 +8054,4 @@
 | #8008 | 2026-10-30 11:04:20 | Predictive Arc Canvas | `bundle_size` | `110.0 KB` | **PASS** |
 | #8009 | 2026-10-30 11:04:30 | Background Video Loop | `animation_fps` | `67.2 fps` | **PASS** |
 | #8010 | 2026-10-30 11:04:40 | Predictive Arc Canvas | `time_to_interactive` | `2390.7 ms` | **PASS** |
+| #8011 | 2026-10-30 11:04:50 | Scroll Parallax Manager | `gpu_utilization` | `48.0 %` | **PASS** |
