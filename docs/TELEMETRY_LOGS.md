@@ -7757,3 +7757,4 @@
 | #7711 | 2026-10-30 10:14:50 | 3D Particle Renderer | `frame_render_budget` | `28.3 ms (60fps)` | **PASS** |
 | #7712 | 2026-10-30 10:15:00 | Lottie Animation Engine | `time_to_interactive` | `1976.2 ms` | **PASS** |
 | #7713 | 2026-10-30 10:15:10 | 3D Particle Renderer | `animation_fps` | `68.0 fps` | **PASS** |
+| #7714 | 2026-10-30 10:15:20 | Telemetry Beacon | `bundle_size` | `192.5 KB` | **PASS** |
