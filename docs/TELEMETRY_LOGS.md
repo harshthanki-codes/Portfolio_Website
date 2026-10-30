@@ -7424,3 +7424,4 @@
 | #7378 | 2026-10-30 09:19:20 | SVG Morphing Pipeline | `latency` | `13.9 ms` | **PASS** |
 | #7379 | 2026-10-30 09:19:30 | Viewport Resize Observer | `memory_footprint` | `50.9 MB` | **PASS** |
 | #7380 | 2026-10-30 09:19:40 | Cache Warmup Service | `jank_events` | `2.3 count` | **PASS** |
+| #7381 | 2026-10-30 09:19:50 | Cache Warmup Service | `cpu_usage` | `31.2 %` | **PASS** |
