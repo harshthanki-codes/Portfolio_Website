@@ -7799,3 +7799,4 @@
 | #7753 | 2026-10-30 10:21:50 | Scroll Parallax Manager | `jank_events` | `2.1 count` | **PASS** |
 | #7754 | 2026-10-30 10:22:00 | WebGL Shader Compiler | `first_contentful_paint` | `1010.8 ms` | **PASS** |
 | #7755 | 2026-10-30 10:22:10 | Responsive Grid System | `memory_footprint` | `60.7 MB` | **PASS** |
+| #7756 | 2026-10-30 10:22:20 | Micro Frontend Loader | `frame_render_budget` | `19.4 ms (60fps)` | **PASS** |
