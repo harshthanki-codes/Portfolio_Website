@@ -7868,3 +7868,4 @@
 | #7822 | 2026-10-30 10:33:20 | Telemetry Beacon | `bundle_size` | `108.3 KB` | **PASS** |
 | #7823 | 2026-10-30 10:33:30 | Progressive Image Loader | `jank_events` | `0.2 count` | **PASS** |
 | #7824 | 2026-10-30 10:33:40 | Cache Warmup Service | `cpu_usage` | `18.8 %` | **PASS** |
+| #7825 | 2026-10-30 10:33:50 | Dynamic Font Loader | `frame_render_budget` | `20.0 ms (60fps)` | **PASS** |
