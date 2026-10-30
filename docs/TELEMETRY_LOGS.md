@@ -7392,3 +7392,4 @@
 | #7346 | 2026-10-30 09:14:00 | 3D Particle Renderer | `time_to_interactive` | `1943.0 ms` | **PASS** |
 | #7347 | 2026-10-30 09:14:10 | Viewport Resize Observer | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
 | #7348 | 2026-10-30 09:14:20 | Lazy Load Optimizer | `bundle_size` | `115.3 KB` | **PASS** |
+| #7349 | 2026-10-30 09:14:30 | Background Video Loop | `first_contentful_paint` | `801.4 ms` | **PASS** |
