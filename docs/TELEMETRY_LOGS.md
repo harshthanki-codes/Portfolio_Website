@@ -7423,3 +7423,4 @@
 | #7377 | 2026-10-30 09:19:10 | Scroll Parallax Manager | `cpu_usage` | `27.2 %` | **PASS** |
 | #7378 | 2026-10-30 09:19:20 | SVG Morphing Pipeline | `latency` | `13.9 ms` | **PASS** |
 | #7379 | 2026-10-30 09:19:30 | Viewport Resize Observer | `memory_footprint` | `50.9 MB` | **PASS** |
+| #7380 | 2026-10-30 09:19:40 | Cache Warmup Service | `jank_events` | `2.3 count` | **PASS** |
