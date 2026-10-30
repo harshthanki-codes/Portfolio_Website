@@ -7751,3 +7751,4 @@
 | #7705 | 2026-10-30 10:13:50 | Scroll Parallax Manager | `time_to_interactive` | `1385.2 ms` | **PASS** |
 | #7706 | 2026-10-30 10:14:00 | WebGL Shader Compiler | `latency` | `10.9 ms` | **PASS** |
 | #7707 | 2026-10-30 10:14:10 | WebGL Shader Compiler | `memory_footprint` | `61.9 MB` | **PASS** |
+| #7708 | 2026-10-30 10:14:20 | Touch Gesture Dispatcher | `gpu_utilization` | `45.5 %` | **PASS** |
