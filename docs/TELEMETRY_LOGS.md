@@ -7058,3 +7058,4 @@
 | #7012 | 2026-10-30 08:18:20 | Scroll Parallax Manager | `animation_fps` | `67.6 fps` | **PASS** |
 | #7013 | 2026-10-30 08:18:30 | Background Video Loop | `gpu_utilization` | `64.0 %` | **PASS** |
 | #7014 | 2026-10-30 08:18:40 | Predictive Arc Canvas | `time_to_interactive` | `1239.2 ms` | **PASS** |
+| #7015 | 2026-10-30 08:18:50 | Cache Warmup Service | `memory_footprint` | `46.5 MB` | **PASS** |
