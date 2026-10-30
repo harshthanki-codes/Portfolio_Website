@@ -7860,3 +7860,4 @@
 | #7814 | 2026-10-30 10:32:00 | Touch Gesture Dispatcher | `time_to_interactive` | `1754.4 ms` | **PASS** |
 | #7815 | 2026-10-30 10:32:10 | SVG Morphing Pipeline | `memory_footprint` | `82.2 MB` | **PASS** |
 | #7816 | 2026-10-30 10:32:20 | Touch Gesture Dispatcher | `jank_events` | `2.0 count` | **PASS** |
+| #7817 | 2026-10-30 10:32:30 | Background Video Loop | `animation_fps` | `58.6 fps` | **PASS** |
