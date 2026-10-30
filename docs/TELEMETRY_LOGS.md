@@ -7389,3 +7389,4 @@
 | #7343 | 2026-10-30 09:13:30 | State Sync Daemon | `gpu_utilization` | `21.8 %` | **PASS** |
 | #7344 | 2026-10-30 09:13:40 | 3D Particle Renderer | `latency` | `19.9 ms` | **PASS** |
 | #7345 | 2026-10-30 09:13:50 | Predictive Arc Canvas | `memory_footprint` | `94.0 MB` | **PASS** |
+| #7346 | 2026-10-30 09:14:00 | 3D Particle Renderer | `time_to_interactive` | `1943.0 ms` | **PASS** |
