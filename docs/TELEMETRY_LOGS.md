@@ -7410,3 +7410,4 @@
 | #7364 | 2026-10-30 09:17:00 | Micro Frontend Loader | `time_to_interactive` | `1911.4 ms` | **PASS** |
 | #7365 | 2026-10-30 09:17:10 | SVG Morphing Pipeline | `time_to_interactive` | `2313.7 ms` | **PASS** |
 | #7366 | 2026-10-30 09:17:20 | Audio Visualizer | `cpu_usage` | `21.7 %` | **PASS** |
+| #7367 | 2026-10-30 09:17:30 | WebGL Shader Compiler | `jank_events` | `2.9 count` | **PASS** |
