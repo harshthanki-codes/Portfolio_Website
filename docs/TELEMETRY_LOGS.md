@@ -7929,3 +7929,4 @@
 | #7883 | 2026-10-30 10:43:30 | Micro Frontend Loader | `cpu_usage` | `34.4 %` | **PASS** |
 | #7884 | 2026-10-30 10:43:40 | Lottie Animation Engine | `jank_events` | `1.5 count` | **PASS** |
 | #7885 | 2026-10-30 10:43:50 | Progressive Image Loader | `jank_events` | `3.0 count` | **PASS** |
+| #7886 | 2026-10-30 10:44:00 | Lottie Animation Engine | `first_contentful_paint` | `1094.9 ms` | **PASS** |
