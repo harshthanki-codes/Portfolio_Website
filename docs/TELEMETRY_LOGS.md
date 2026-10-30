@@ -7810,3 +7810,4 @@
 | #7764 | 2026-10-30 10:23:40 | CSS-in-JS Themer | `first_contentful_paint` | `1157.0 ms` | **PASS** |
 | #7765 | 2026-10-30 10:23:50 | WebGL Shader Compiler | `cpu_usage` | `18.0 %` | **PASS** |
 | #7766 | 2026-10-30 10:24:00 | State Sync Daemon | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
+| #7767 | 2026-10-30 10:24:10 | CSS-in-JS Themer | `jank_events` | `0.0 count` | **PASS** |
