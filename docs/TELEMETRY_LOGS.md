@@ -8055,3 +8055,4 @@
 | #8009 | 2026-10-30 11:04:30 | Background Video Loop | `animation_fps` | `67.2 fps` | **PASS** |
 | #8010 | 2026-10-30 11:04:40 | Predictive Arc Canvas | `time_to_interactive` | `2390.7 ms` | **PASS** |
 | #8011 | 2026-10-30 11:04:50 | Scroll Parallax Manager | `gpu_utilization` | `48.0 %` | **PASS** |
+| #8012 | 2026-10-30 11:05:00 | Touch Gesture Dispatcher | `jank_events` | `1.3 count` | **PASS** |
