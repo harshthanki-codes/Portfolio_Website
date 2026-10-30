@@ -7313,3 +7313,4 @@
 | #7267 | 2026-10-30 09:00:50 | Scroll Parallax Manager | `jank_events` | `2.1 count` | **PASS** |
 | #7268 | 2026-10-30 09:01:00 | Interactive Tooltip Engine | `time_to_interactive` | `1664.6 ms` | **PASS** |
 | #7269 | 2026-10-30 09:01:10 | Touch Gesture Dispatcher | `gpu_utilization` | `41.8 %` | **PASS** |
+| #7270 | 2026-10-30 09:01:20 | Touch Gesture Dispatcher | `gpu_utilization` | `32.3 %` | **PASS** |
