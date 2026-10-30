@@ -7839,3 +7839,4 @@
 | #7793 | 2026-10-30 10:28:30 | Lazy Load Optimizer | `first_contentful_paint` | `945.6 ms` | **PASS** |
 | #7794 | 2026-10-30 10:28:40 | Audio Visualizer | `animation_fps` | `72.3 fps` | **PASS** |
 | #7795 | 2026-10-30 10:28:50 | Audio Visualizer | `animation_fps` | `56.5 fps` | **PASS** |
+| #7796 | 2026-10-30 10:29:00 | Audio Visualizer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
