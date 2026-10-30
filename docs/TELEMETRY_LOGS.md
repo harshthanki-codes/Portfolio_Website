@@ -7004,3 +7004,4 @@
 | #6958 | 2026-10-30 08:09:20 | Viewport Resize Observer | `gpu_utilization` | `59.7 %` | **PASS** |
 | #6959 | 2026-10-30 08:09:30 | State Sync Daemon | `gpu_utilization` | `70.0 %` | **PASS** |
 | #6960 | 2026-10-30 08:09:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1109.2 ms` | **PASS** |
+| #6961 | 2026-10-30 08:09:50 | WebGL Shader Compiler | `time_to_interactive` | `1621.3 ms` | **PASS** |
