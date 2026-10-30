@@ -7746,3 +7746,4 @@
 | #7700 | 2026-10-30 10:13:00 | SVG Morphing Pipeline | `latency` | `12.4 ms` | **PASS** |
 | #7701 | 2026-10-30 10:13:10 | Micro Frontend Loader | `time_to_interactive` | `1949.1 ms` | **PASS** |
 | #7702 | 2026-10-30 10:13:20 | 3D Particle Renderer | `frame_render_budget` | `19.5 ms (60fps)` | **PASS** |
+| #7703 | 2026-10-30 10:13:30 | 3D Particle Renderer | `frame_render_budget` | `22.0 ms (60fps)` | **PASS** |
