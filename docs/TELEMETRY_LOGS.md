@@ -7198,3 +7198,4 @@
 | #7152 | 2026-10-30 08:41:40 | State Sync Daemon | `time_to_interactive` | `1869.5 ms` | **PASS** |
 | #7153 | 2026-10-30 08:41:50 | Micro Frontend Loader | `memory_footprint` | `96.1 MB` | **PASS** |
 | #7154 | 2026-10-30 08:42:00 | CSS-in-JS Themer | `frame_render_budget` | `20.5 ms (60fps)` | **PASS** |
+| #7155 | 2026-10-30 08:42:10 | Cache Warmup Service | `first_contentful_paint` | `1407.7 ms` | **PASS** |
