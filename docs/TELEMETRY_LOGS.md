@@ -7220,3 +7220,4 @@
 | #7174 | 2026-10-30 08:45:20 | 3D Particle Renderer | `time_to_interactive` | `2462.8 ms` | **PASS** |
 | #7175 | 2026-10-30 08:45:30 | Scroll Parallax Manager | `jank_events` | `2.2 count` | **PASS** |
 | #7176 | 2026-10-30 08:45:40 | Dynamic Font Loader | `first_contentful_paint` | `1217.6 ms` | **PASS** |
+| #7177 | 2026-10-30 08:45:50 | Progressive Image Loader | `jank_events` | `2.1 count` | **PASS** |
