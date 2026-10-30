@@ -7301,3 +7301,4 @@
 | #7255 | 2026-10-30 08:58:50 | CSS-in-JS Themer | `jank_events` | `1.2 count` | **PASS** |
 | #7256 | 2026-10-30 08:59:00 | Touch Gesture Dispatcher | `gpu_utilization` | `67.4 %` | **PASS** |
 | #7257 | 2026-10-30 08:59:10 | Background Video Loop | `bundle_size` | `100.9 KB` | **PASS** |
+| #7258 | 2026-10-30 08:59:20 | Lottie Animation Engine | `jank_events` | `2.3 count` | **PASS** |
