@@ -7321,3 +7321,4 @@
 | #7275 | 2026-10-30 09:02:10 | Dynamic Font Loader | `gpu_utilization` | `64.6 %` | **PASS** |
 | #7276 | 2026-10-30 09:02:20 | Scroll Parallax Manager | `jank_events` | `0.8 count` | **PASS** |
 | #7277 | 2026-10-30 09:02:30 | Telemetry Beacon | `jank_events` | `2.0 count` | **PASS** |
+| #7278 | 2026-10-30 09:02:40 | Cache Warmup Service | `jank_events` | `0.5 count` | **PASS** |
