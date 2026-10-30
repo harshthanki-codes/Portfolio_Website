@@ -7896,3 +7896,4 @@
 | #7850 | 2026-10-30 10:38:00 | Viewport Resize Observer | `jank_events` | `0.7 count` | **PASS** |
 | #7851 | 2026-10-30 10:38:10 | Responsive Grid System | `latency` | `9.5 ms` | **PASS** |
 | #7852 | 2026-10-30 10:38:20 | Lazy Load Optimizer | `animation_fps` | `55.2 fps` | **PASS** |
+| #7853 | 2026-10-30 10:38:30 | Viewport Resize Observer | `frame_render_budget` | `19.0 ms (60fps)` | **PASS** |
