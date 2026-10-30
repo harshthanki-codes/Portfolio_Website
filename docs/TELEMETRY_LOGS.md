@@ -8074,3 +8074,4 @@
 | #8028 | 2026-10-30 11:07:40 | Interactive Tooltip Engine | `latency` | `20.6 ms` | **PASS** |
 | #8029 | 2026-10-30 11:07:50 | Cache Warmup Service | `time_to_interactive` | `1242.2 ms` | **PASS** |
 | #8030 | 2026-10-30 11:08:00 | SVG Morphing Pipeline | `latency` | `15.6 ms` | **PASS** |
+| #8031 | 2026-10-30 11:08:10 | Touch Gesture Dispatcher | `jank_events` | `0.9 count` | **PASS** |
