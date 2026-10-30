@@ -8104,3 +8104,4 @@
 | #8058 | 2026-10-30 11:12:40 | Viewport Resize Observer | `cpu_usage` | `10.3 %` | **PASS** |
 | #8059 | 2026-10-30 11:12:50 | Background Video Loop | `bundle_size` | `204.1 KB` | **PASS** |
 | #8060 | 2026-10-30 11:13:00 | SVG Morphing Pipeline | `frame_render_budget` | `16.5 ms (60fps)` | **PASS** |
+| #8061 | 2026-10-30 11:13:10 | 3D Particle Renderer | `cpu_usage` | `19.4 %` | **PASS** |
