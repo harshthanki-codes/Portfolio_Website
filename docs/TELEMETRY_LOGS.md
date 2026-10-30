@@ -7812,3 +7812,4 @@
 | #7766 | 2026-10-30 10:24:00 | State Sync Daemon | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
 | #7767 | 2026-10-30 10:24:10 | CSS-in-JS Themer | `jank_events` | `0.0 count` | **PASS** |
 | #7768 | 2026-10-30 10:24:20 | Scroll Parallax Manager | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
+| #7769 | 2026-10-30 10:24:30 | WebGL Shader Compiler | `frame_render_budget` | `25.7 ms (60fps)` | **PASS** |
