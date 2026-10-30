@@ -7511,3 +7511,4 @@
 | #7465 | 2026-10-30 09:33:50 | 3D Particle Renderer | `bundle_size` | `207.5 KB` | **PASS** |
 | #7466 | 2026-10-30 09:34:00 | Telemetry Beacon | `bundle_size` | `120.1 KB` | **PASS** |
 | #7467 | 2026-10-30 09:34:10 | Viewport Resize Observer | `gpu_utilization` | `37.6 %` | **PASS** |
+| #7468 | 2026-10-30 09:34:20 | Progressive Image Loader | `gpu_utilization` | `47.9 %` | **PASS** |
