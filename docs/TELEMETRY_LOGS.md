@@ -7126,3 +7126,4 @@
 | #7080 | 2026-10-30 08:29:40 | Scroll Parallax Manager | `gpu_utilization` | `47.0 %` | **PASS** |
 | #7081 | 2026-10-30 08:29:50 | Micro Frontend Loader | `gpu_utilization` | `40.3 %` | **PASS** |
 | #7082 | 2026-10-30 08:30:00 | Cache Warmup Service | `gpu_utilization` | `45.2 %` | **PASS** |
+| #7083 | 2026-10-30 08:30:10 | Interactive Tooltip Engine | `animation_fps` | `68.5 fps` | **PASS** |
