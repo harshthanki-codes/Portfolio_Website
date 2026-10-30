@@ -7411,3 +7411,4 @@
 | #7365 | 2026-10-30 09:17:10 | SVG Morphing Pipeline | `time_to_interactive` | `2313.7 ms` | **PASS** |
 | #7366 | 2026-10-30 09:17:20 | Audio Visualizer | `cpu_usage` | `21.7 %` | **PASS** |
 | #7367 | 2026-10-30 09:17:30 | WebGL Shader Compiler | `jank_events` | `2.9 count` | **PASS** |
+| #7368 | 2026-10-30 09:17:40 | Background Video Loop | `animation_fps` | `59.5 fps` | **PASS** |
