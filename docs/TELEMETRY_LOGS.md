@@ -7373,3 +7373,4 @@
 | #7327 | 2026-10-30 09:10:50 | Scroll Parallax Manager | `frame_render_budget` | `22.8 ms (60fps)` | **PASS** |
 | #7328 | 2026-10-30 09:11:00 | Viewport Resize Observer | `bundle_size` | `123.6 KB` | **PASS** |
 | #7329 | 2026-10-30 09:11:10 | SVG Morphing Pipeline | `bundle_size` | `177.9 KB` | **PASS** |
+| #7330 | 2026-10-30 09:11:20 | Scroll Parallax Manager | `time_to_interactive` | `2418.1 ms` | **PASS** |
