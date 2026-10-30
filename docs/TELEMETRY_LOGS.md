@@ -7821,3 +7821,4 @@
 | #7775 | 2026-10-30 10:25:30 | Lottie Animation Engine | `animation_fps` | `74.5 fps` | **PASS** |
 | #7776 | 2026-10-30 10:25:40 | Scroll Parallax Manager | `bundle_size` | `217.4 KB` | **PASS** |
 | #7777 | 2026-10-30 10:25:50 | Telemetry Beacon | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
+| #7778 | 2026-10-30 10:26:00 | Background Video Loop | `bundle_size` | `229.4 KB` | **PASS** |
