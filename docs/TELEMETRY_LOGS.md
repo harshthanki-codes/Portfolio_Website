@@ -7055,3 +7055,4 @@
 | #7009 | 2026-10-30 08:17:50 | Scroll Parallax Manager | `jank_events` | `0.7 count` | **PASS** |
 | #7010 | 2026-10-30 08:18:00 | Predictive Arc Canvas | `gpu_utilization` | `22.3 %` | **PASS** |
 | #7011 | 2026-10-30 08:18:10 | Telemetry Beacon | `latency` | `18.8 ms` | **PASS** |
+| #7012 | 2026-10-30 08:18:20 | Scroll Parallax Manager | `animation_fps` | `67.6 fps` | **PASS** |
