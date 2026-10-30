@@ -7754,3 +7754,4 @@
 | #7708 | 2026-10-30 10:14:20 | Touch Gesture Dispatcher | `gpu_utilization` | `45.5 %` | **PASS** |
 | #7709 | 2026-10-30 10:14:30 | 3D Particle Renderer | `first_contentful_paint` | `1272.3 ms` | **PASS** |
 | #7710 | 2026-10-30 10:14:40 | 3D Particle Renderer | `latency` | `16.7 ms` | **PASS** |
+| #7711 | 2026-10-30 10:14:50 | 3D Particle Renderer | `frame_render_budget` | `28.3 ms (60fps)` | **PASS** |
