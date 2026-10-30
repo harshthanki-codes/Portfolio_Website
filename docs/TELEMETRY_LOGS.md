@@ -7912,3 +7912,4 @@
 | #7866 | 2026-10-30 10:40:40 | Scroll Parallax Manager | `animation_fps` | `55.1 fps` | **PASS** |
 | #7867 | 2026-10-30 10:40:50 | State Sync Daemon | `jank_events` | `0.5 count` | **PASS** |
 | #7868 | 2026-10-30 10:41:00 | Scroll Parallax Manager | `latency` | `24.5 ms` | **PASS** |
+| #7869 | 2026-10-30 10:41:10 | State Sync Daemon | `gpu_utilization` | `64.2 %` | **PASS** |
