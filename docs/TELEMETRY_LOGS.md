@@ -6963,3 +6963,4 @@
 | #6917 | 2026-10-30 08:02:30 | Viewport Resize Observer | `bundle_size` | `101.7 KB` | **PASS** |
 | #6918 | 2026-10-30 08:02:40 | Predictive Arc Canvas | `time_to_interactive` | `2274.7 ms` | **PASS** |
 | #6919 | 2026-10-30 08:02:50 | Dynamic Font Loader | `latency` | `16.7 ms` | **PASS** |
+| #6920 | 2026-10-30 08:03:00 | Scroll Parallax Manager | `memory_footprint` | `71.6 MB` | **PASS** |
