@@ -7783,3 +7783,4 @@
 | #7737 | 2026-10-30 10:19:10 | Predictive Arc Canvas | `bundle_size` | `154.3 KB` | **PASS** |
 | #7738 | 2026-10-30 10:19:20 | Background Video Loop | `cpu_usage` | `39.0 %` | **PASS** |
 | #7739 | 2026-10-30 10:19:30 | Predictive Arc Canvas | `latency` | `24.0 ms` | **PASS** |
+| #7740 | 2026-10-30 10:19:40 | Cache Warmup Service | `time_to_interactive` | `2380.9 ms` | **PASS** |
