@@ -7670,3 +7670,4 @@
 | #7624 | 2026-10-30 10:00:20 | WebGL Shader Compiler | `memory_footprint` | `114.1 MB` | **PASS** |
 | #7625 | 2026-10-30 10:00:30 | CSS-in-JS Themer | `jank_events` | `2.6 count` | **PASS** |
 | #7626 | 2026-10-30 10:00:40 | Interactive Tooltip Engine | `animation_fps` | `68.8 fps` | **PASS** |
+| #7627 | 2026-10-30 10:00:50 | Scroll Parallax Manager | `memory_footprint` | `77.3 MB` | **PASS** |
