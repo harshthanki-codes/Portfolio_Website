@@ -7794,3 +7794,4 @@
 | #7748 | 2026-10-30 10:21:00 | State Sync Daemon | `jank_events` | `0.5 count` | **PASS** |
 | #7749 | 2026-10-30 10:21:10 | State Sync Daemon | `cpu_usage` | `30.3 %` | **PASS** |
 | #7750 | 2026-10-30 10:21:20 | Telemetry Beacon | `first_contentful_paint` | `971.9 ms` | **PASS** |
+| #7751 | 2026-10-30 10:21:30 | Audio Visualizer | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
