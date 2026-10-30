@@ -7202,3 +7202,4 @@
 | #7156 | 2026-10-30 08:42:20 | CSS-in-JS Themer | `jank_events` | `2.7 count` | **PASS** |
 | #7157 | 2026-10-30 08:42:30 | Telemetry Beacon | `animation_fps` | `62.9 fps` | **PASS** |
 | #7158 | 2026-10-30 08:42:40 | Lazy Load Optimizer | `jank_events` | `1.9 count` | **PASS** |
+| #7159 | 2026-10-30 08:42:50 | Lottie Animation Engine | `jank_events` | `0.6 count` | **PASS** |
