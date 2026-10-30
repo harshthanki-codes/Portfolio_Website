@@ -7630,3 +7630,4 @@
 | #7584 | 2026-10-30 09:53:40 | Dynamic Font Loader | `first_contentful_paint` | `1309.9 ms` | **PASS** |
 | #7585 | 2026-10-30 09:53:50 | Telemetry Beacon | `animation_fps` | `56.4 fps` | **PASS** |
 | #7586 | 2026-10-30 09:54:00 | Micro Frontend Loader | `latency` | `17.7 ms` | **PASS** |
+| #7587 | 2026-10-30 09:54:10 | Viewport Resize Observer | `first_contentful_paint` | `1325.7 ms` | **PASS** |
