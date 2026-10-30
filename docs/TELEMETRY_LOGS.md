@@ -8112,3 +8112,4 @@
 | #8066 | 2026-10-30 11:14:00 | Progressive Image Loader | `gpu_utilization` | `47.4 %` | **PASS** |
 | #8067 | 2026-10-30 11:14:10 | Background Video Loop | `latency` | `19.3 ms` | **PASS** |
 | #8068 | 2026-10-30 11:14:20 | Background Video Loop | `time_to_interactive` | `2108.2 ms` | **PASS** |
+| #8069 | 2026-10-30 11:14:30 | Interactive Tooltip Engine | `animation_fps` | `67.7 fps` | **PASS** |
