@@ -7571,3 +7571,4 @@
 | #7525 | 2026-10-30 09:43:50 | CSS-in-JS Themer | `jank_events` | `2.9 count` | **PASS** |
 | #7526 | 2026-10-30 09:44:00 | WebGL Shader Compiler | `cpu_usage` | `33.8 %` | **PASS** |
 | #7527 | 2026-10-30 09:44:10 | Telemetry Beacon | `jank_events` | `2.8 count` | **PASS** |
+| #7528 | 2026-10-30 09:44:20 | Progressive Image Loader | `latency` | `13.7 ms` | **PASS** |
