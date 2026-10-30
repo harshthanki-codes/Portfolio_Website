@@ -7368,3 +7368,4 @@
 | #7322 | 2026-10-30 09:10:00 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
 | #7323 | 2026-10-30 09:10:10 | Cache Warmup Service | `animation_fps` | `63.3 fps` | **PASS** |
 | #7324 | 2026-10-30 09:10:20 | Telemetry Beacon | `frame_render_budget` | `16.8 ms (60fps)` | **PASS** |
+| #7325 | 2026-10-30 09:10:30 | Predictive Arc Canvas | `gpu_utilization` | `45.2 %` | **PASS** |
