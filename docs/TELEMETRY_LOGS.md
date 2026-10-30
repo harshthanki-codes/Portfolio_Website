@@ -7390,3 +7390,4 @@
 | #7344 | 2026-10-30 09:13:40 | 3D Particle Renderer | `latency` | `19.9 ms` | **PASS** |
 | #7345 | 2026-10-30 09:13:50 | Predictive Arc Canvas | `memory_footprint` | `94.0 MB` | **PASS** |
 | #7346 | 2026-10-30 09:14:00 | 3D Particle Renderer | `time_to_interactive` | `1943.0 ms` | **PASS** |
+| #7347 | 2026-10-30 09:14:10 | Viewport Resize Observer | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
