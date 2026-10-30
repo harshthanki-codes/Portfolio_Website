@@ -7339,3 +7339,4 @@
 | #7293 | 2026-10-30 09:05:10 | WebGL Shader Compiler | `time_to_interactive` | `1225.8 ms` | **PASS** |
 | #7294 | 2026-10-30 09:05:20 | Micro Frontend Loader | `cpu_usage` | `20.5 %` | **PASS** |
 | #7295 | 2026-10-30 09:05:30 | Micro Frontend Loader | `time_to_interactive` | `1520.9 ms` | **PASS** |
+| #7296 | 2026-10-30 09:05:40 | Micro Frontend Loader | `jank_events` | `1.9 count` | **PASS** |
