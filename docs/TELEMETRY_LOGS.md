@@ -7685,3 +7685,4 @@
 | #7639 | 2026-10-30 10:02:50 | Viewport Resize Observer | `latency` | `13.2 ms` | **PASS** |
 | #7640 | 2026-10-30 10:03:00 | Telemetry Beacon | `frame_render_budget` | `16.1 ms (60fps)` | **PASS** |
 | #7641 | 2026-10-30 10:03:10 | Micro Frontend Loader | `jank_events` | `2.7 count` | **PASS** |
+| #7642 | 2026-10-30 10:03:20 | Cache Warmup Service | `frame_render_budget` | `29.0 ms (60fps)` | **PASS** |
