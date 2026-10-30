@@ -8077,3 +8077,4 @@
 | #8031 | 2026-10-30 11:08:10 | Touch Gesture Dispatcher | `jank_events` | `0.9 count` | **PASS** |
 | #8032 | 2026-10-30 11:08:20 | Cache Warmup Service | `jank_events` | `0.8 count` | **PASS** |
 | #8033 | 2026-10-30 11:08:30 | Lottie Animation Engine | `frame_render_budget` | `17.4 ms (60fps)` | **PASS** |
+| #8034 | 2026-10-30 11:08:40 | Progressive Image Loader | `first_contentful_paint` | `1409.8 ms` | **PASS** |
