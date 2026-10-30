@@ -7446,3 +7446,4 @@
 | #7400 | 2026-10-30 09:23:00 | Progressive Image Loader | `cpu_usage` | `18.9 %` | **PASS** |
 | #7401 | 2026-10-30 09:23:10 | Viewport Resize Observer | `bundle_size` | `109.3 KB` | **PASS** |
 | #7402 | 2026-10-30 09:23:20 | Lazy Load Optimizer | `frame_render_budget` | `23.7 ms (60fps)` | **PASS** |
+| #7403 | 2026-10-30 09:23:30 | Lazy Load Optimizer | `jank_events` | `2.0 count` | **PASS** |
