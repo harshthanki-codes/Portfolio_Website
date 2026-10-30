@@ -7523,3 +7523,4 @@
 | #7477 | 2026-10-30 09:35:50 | Scroll Parallax Manager | `jank_events` | `2.6 count` | **PASS** |
 | #7478 | 2026-10-30 09:36:00 | Cache Warmup Service | `latency` | `19.3 ms` | **PASS** |
 | #7479 | 2026-10-30 09:36:10 | Cache Warmup Service | `animation_fps` | `72.5 fps` | **PASS** |
+| #7480 | 2026-10-30 09:36:20 | Telemetry Beacon | `bundle_size` | `199.3 KB` | **PASS** |
