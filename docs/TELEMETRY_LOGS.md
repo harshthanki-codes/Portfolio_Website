@@ -7184,3 +7184,4 @@
 | #7138 | 2026-10-30 08:39:20 | WebGL Shader Compiler | `jank_events` | `0.2 count` | **PASS** |
 | #7139 | 2026-10-30 08:39:30 | Touch Gesture Dispatcher | `memory_footprint` | `117.8 MB` | **PASS** |
 | #7140 | 2026-10-30 08:39:40 | Touch Gesture Dispatcher | `bundle_size` | `220.0 KB` | **PASS** |
+| #7141 | 2026-10-30 08:39:50 | Predictive Arc Canvas | `cpu_usage` | `16.8 %` | **PASS** |
