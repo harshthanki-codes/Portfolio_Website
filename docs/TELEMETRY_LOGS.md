@@ -7598,3 +7598,4 @@
 | #7552 | 2026-10-30 09:48:20 | Background Video Loop | `first_contentful_paint` | `1346.3 ms` | **PASS** |
 | #7553 | 2026-10-30 09:48:30 | Viewport Resize Observer | `bundle_size` | `209.4 KB` | **PASS** |
 | #7554 | 2026-10-30 09:48:40 | 3D Particle Renderer | `jank_events` | `0.3 count` | **PASS** |
+| #7555 | 2026-10-30 09:48:50 | Background Video Loop | `bundle_size` | `165.7 KB` | **PASS** |
