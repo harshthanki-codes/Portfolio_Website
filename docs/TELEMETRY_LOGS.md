@@ -7786,3 +7786,4 @@
 | #7740 | 2026-10-30 10:19:40 | Cache Warmup Service | `time_to_interactive` | `2380.9 ms` | **PASS** |
 | #7741 | 2026-10-30 10:19:50 | Touch Gesture Dispatcher | `memory_footprint` | `106.7 MB` | **PASS** |
 | #7742 | 2026-10-30 10:20:00 | Viewport Resize Observer | `frame_render_budget` | `19.1 ms (60fps)` | **PASS** |
+| #7743 | 2026-10-30 10:20:10 | Viewport Resize Observer | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
