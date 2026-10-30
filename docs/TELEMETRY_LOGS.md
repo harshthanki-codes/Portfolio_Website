@@ -7880,3 +7880,4 @@
 | #7834 | 2026-10-30 10:35:20 | WebGL Shader Compiler | `memory_footprint` | `72.5 MB` | **PASS** |
 | #7835 | 2026-10-30 10:35:30 | Progressive Image Loader | `first_contentful_paint` | `1397.5 ms` | **PASS** |
 | #7836 | 2026-10-30 10:35:40 | Audio Visualizer | `jank_events` | `0.8 count` | **PASS** |
+| #7837 | 2026-10-30 10:35:50 | 3D Particle Renderer | `jank_events` | `2.3 count` | **PASS** |
