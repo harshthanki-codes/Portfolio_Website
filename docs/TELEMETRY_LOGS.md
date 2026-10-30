@@ -8125,3 +8125,4 @@
 | #8079 | 2026-10-30 11:16:10 | Background Video Loop | `frame_render_budget` | `24.3 ms (60fps)` | **PASS** |
 | #8080 | 2026-10-30 11:16:20 | WebGL Shader Compiler | `first_contentful_paint` | `851.3 ms` | **PASS** |
 | #8081 | 2026-10-30 11:16:30 | SVG Morphing Pipeline | `time_to_interactive` | `2249.2 ms` | **PASS** |
+| #8082 | 2026-10-30 11:16:40 | 3D Particle Renderer | `time_to_interactive` | `2029.4 ms` | **PASS** |
