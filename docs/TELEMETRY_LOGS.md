@@ -7788,3 +7788,4 @@
 | #7742 | 2026-10-30 10:20:00 | Viewport Resize Observer | `frame_render_budget` | `19.1 ms (60fps)` | **PASS** |
 | #7743 | 2026-10-30 10:20:10 | Viewport Resize Observer | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
 | #7744 | 2026-10-30 10:20:20 | Micro Frontend Loader | `animation_fps` | `61.9 fps` | **PASS** |
+| #7745 | 2026-10-30 10:20:30 | CSS-in-JS Themer | `frame_render_budget` | `27.6 ms (60fps)` | **PASS** |
