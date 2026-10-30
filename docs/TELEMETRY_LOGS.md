@@ -7966,3 +7966,4 @@
 | #7920 | 2026-10-30 10:49:40 | State Sync Daemon | `gpu_utilization` | `45.8 %` | **PASS** |
 | #7921 | 2026-10-30 10:49:50 | Scroll Parallax Manager | `jank_events` | `1.4 count` | **PASS** |
 | #7922 | 2026-10-30 10:50:00 | Background Video Loop | `jank_events` | `0.9 count` | **PASS** |
+| #7923 | 2026-10-30 10:50:10 | Lottie Animation Engine | `cpu_usage` | `15.1 %` | **PASS** |
