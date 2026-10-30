@@ -7483,3 +7483,4 @@
 | #7437 | 2026-10-30 09:29:10 | Micro Frontend Loader | `cpu_usage` | `13.7 %` | **PASS** |
 | #7438 | 2026-10-30 09:29:20 | Scroll Parallax Manager | `jank_events` | `0.0 count` | **PASS** |
 | #7439 | 2026-10-30 09:29:30 | Viewport Resize Observer | `memory_footprint` | `84.8 MB` | **PASS** |
+| #7440 | 2026-10-30 09:29:40 | 3D Particle Renderer | `gpu_utilization` | `58.0 %` | **PASS** |
