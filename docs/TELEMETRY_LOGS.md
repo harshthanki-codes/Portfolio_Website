@@ -7337,3 +7337,4 @@
 | #7291 | 2026-10-30 09:04:50 | Audio Visualizer | `time_to_interactive` | `2387.1 ms` | **PASS** |
 | #7292 | 2026-10-30 09:05:00 | Telemetry Beacon | `jank_events` | `0.2 count` | **PASS** |
 | #7293 | 2026-10-30 09:05:10 | WebGL Shader Compiler | `time_to_interactive` | `1225.8 ms` | **PASS** |
+| #7294 | 2026-10-30 09:05:20 | Micro Frontend Loader | `cpu_usage` | `20.5 %` | **PASS** |
