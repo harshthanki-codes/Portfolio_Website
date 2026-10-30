@@ -7492,3 +7492,4 @@
 | #7446 | 2026-10-30 09:30:40 | Viewport Resize Observer | `frame_render_budget` | `18.3 ms (60fps)` | **PASS** |
 | #7447 | 2026-10-30 09:30:50 | 3D Particle Renderer | `jank_events` | `0.4 count` | **PASS** |
 | #7448 | 2026-10-30 09:31:00 | Cache Warmup Service | `bundle_size` | `202.0 KB` | **PASS** |
+| #7449 | 2026-10-30 09:31:10 | Cache Warmup Service | `cpu_usage` | `22.8 %` | **PASS** |
