@@ -7442,3 +7442,4 @@
 | #7396 | 2026-10-30 09:22:20 | Cache Warmup Service | `first_contentful_paint` | `1071.2 ms` | **PASS** |
 | #7397 | 2026-10-30 09:22:30 | Lottie Animation Engine | `latency` | `12.8 ms` | **PASS** |
 | #7398 | 2026-10-30 09:22:40 | SVG Morphing Pipeline | `first_contentful_paint` | `902.2 ms` | **PASS** |
+| #7399 | 2026-10-30 09:22:50 | SVG Morphing Pipeline | `frame_render_budget` | `26.3 ms (60fps)` | **PASS** |
