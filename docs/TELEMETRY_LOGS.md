@@ -7768,3 +7768,4 @@
 | #7722 | 2026-10-30 10:16:40 | State Sync Daemon | `memory_footprint` | `47.7 MB` | **PASS** |
 | #7723 | 2026-10-30 10:16:50 | Interactive Tooltip Engine | `jank_events` | `1.6 count` | **PASS** |
 | #7724 | 2026-10-30 10:17:00 | Cache Warmup Service | `first_contentful_paint` | `1043.4 ms` | **PASS** |
+| #7725 | 2026-10-30 10:17:10 | Touch Gesture Dispatcher | `jank_events` | `1.8 count` | **PASS** |
