@@ -7281,3 +7281,4 @@
 | #7235 | 2026-10-30 08:55:30 | State Sync Daemon | `cpu_usage` | `27.8 %` | **PASS** |
 | #7236 | 2026-10-30 08:55:40 | Background Video Loop | `animation_fps` | `63.0 fps` | **PASS** |
 | #7237 | 2026-10-30 08:55:50 | Audio Visualizer | `bundle_size` | `98.2 KB` | **PASS** |
+| #7238 | 2026-10-30 08:56:00 | Background Video Loop | `latency` | `16.3 ms` | **PASS** |
