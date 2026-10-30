@@ -7084,3 +7084,4 @@
 | #7038 | 2026-10-30 08:22:40 | Telemetry Beacon | `memory_footprint` | `119.0 MB` | **PASS** |
 | #7039 | 2026-10-30 08:22:50 | Audio Visualizer | `animation_fps` | `67.3 fps` | **PASS** |
 | #7040 | 2026-10-30 08:23:00 | Dynamic Font Loader | `jank_events` | `2.5 count` | **PASS** |
+| #7041 | 2026-10-30 08:23:10 | WebGL Shader Compiler | `jank_events` | `1.3 count` | **PASS** |
