@@ -7465,3 +7465,4 @@
 | #7419 | 2026-10-30 09:26:10 | State Sync Daemon | `jank_events` | `0.5 count` | **PASS** |
 | #7420 | 2026-10-30 09:26:20 | WebGL Shader Compiler | `first_contentful_paint` | `1049.3 ms` | **PASS** |
 | #7421 | 2026-10-30 09:26:30 | Viewport Resize Observer | `latency` | `6.3 ms` | **PASS** |
+| #7422 | 2026-10-30 09:26:40 | Cache Warmup Service | `gpu_utilization` | `50.6 %` | **PASS** |
