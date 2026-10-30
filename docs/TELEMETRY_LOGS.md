@@ -7726,3 +7726,4 @@
 | #7680 | 2026-10-30 10:09:40 | Background Video Loop | `memory_footprint` | `77.6 MB` | **PASS** |
 | #7681 | 2026-10-30 10:09:50 | Interactive Tooltip Engine | `latency` | `8.3 ms` | **PASS** |
 | #7682 | 2026-10-30 10:10:00 | Micro Frontend Loader | `memory_footprint` | `114.1 MB` | **PASS** |
+| #7683 | 2026-10-30 10:10:10 | Background Video Loop | `gpu_utilization` | `30.4 %` | **PASS** |
