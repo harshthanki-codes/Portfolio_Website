@@ -7627,3 +7627,4 @@
 | #7581 | 2026-10-30 09:53:10 | Scroll Parallax Manager | `jank_events` | `2.1 count` | **PASS** |
 | #7582 | 2026-10-30 09:53:20 | Dynamic Font Loader | `bundle_size` | `190.4 KB` | **PASS** |
 | #7583 | 2026-10-30 09:53:30 | SVG Morphing Pipeline | `time_to_interactive` | `1849.4 ms` | **PASS** |
+| #7584 | 2026-10-30 09:53:40 | Dynamic Font Loader | `first_contentful_paint` | `1309.9 ms` | **PASS** |
