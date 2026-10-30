@@ -7980,3 +7980,4 @@
 | #7934 | 2026-10-30 10:52:00 | Lottie Animation Engine | `jank_events` | `2.3 count` | **PASS** |
 | #7935 | 2026-10-30 10:52:10 | Viewport Resize Observer | `latency` | `11.5 ms` | **PASS** |
 | #7936 | 2026-10-30 10:52:20 | Dynamic Font Loader | `latency` | `10.5 ms` | **PASS** |
+| #7937 | 2026-10-30 10:52:30 | Micro Frontend Loader | `animation_fps` | `64.2 fps` | **PASS** |
