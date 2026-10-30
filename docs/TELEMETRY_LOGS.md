@@ -7396,3 +7396,4 @@
 | #7350 | 2026-10-30 09:14:40 | Lottie Animation Engine | `cpu_usage` | `40.8 %` | **PASS** |
 | #7351 | 2026-10-30 09:14:50 | SVG Morphing Pipeline | `animation_fps` | `63.2 fps` | **PASS** |
 | #7352 | 2026-10-30 09:15:00 | Micro Frontend Loader | `gpu_utilization` | `41.9 %` | **PASS** |
+| #7353 | 2026-10-30 09:15:10 | Micro Frontend Loader | `frame_render_budget` | `17.2 ms (60fps)` | **PASS** |
