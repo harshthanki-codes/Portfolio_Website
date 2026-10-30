@@ -7944,3 +7944,4 @@
 | #7898 | 2026-10-30 10:46:00 | Telemetry Beacon | `memory_footprint` | `55.4 MB` | **PASS** |
 | #7899 | 2026-10-30 10:46:10 | 3D Particle Renderer | `jank_events` | `0.5 count` | **PASS** |
 | #7900 | 2026-10-30 10:46:20 | SVG Morphing Pipeline | `memory_footprint` | `112.5 MB` | **PASS** |
+| #7901 | 2026-10-30 10:46:30 | SVG Morphing Pipeline | `frame_render_budget` | `29.5 ms (60fps)` | **PASS** |
