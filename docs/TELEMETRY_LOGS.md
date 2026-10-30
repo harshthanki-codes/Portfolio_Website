@@ -7484,3 +7484,4 @@
 | #7438 | 2026-10-30 09:29:20 | Scroll Parallax Manager | `jank_events` | `0.0 count` | **PASS** |
 | #7439 | 2026-10-30 09:29:30 | Viewport Resize Observer | `memory_footprint` | `84.8 MB` | **PASS** |
 | #7440 | 2026-10-30 09:29:40 | 3D Particle Renderer | `gpu_utilization` | `58.0 %` | **PASS** |
+| #7441 | 2026-10-30 09:29:50 | Lottie Animation Engine | `jank_events` | `1.8 count` | **PASS** |
