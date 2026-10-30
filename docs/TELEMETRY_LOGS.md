@@ -6992,3 +6992,4 @@
 | #6946 | 2026-10-30 08:07:20 | Touch Gesture Dispatcher | `animation_fps` | `63.0 fps` | **PASS** |
 | #6947 | 2026-10-30 08:07:30 | Background Video Loop | `cpu_usage` | `23.5 %` | **PASS** |
 | #6948 | 2026-10-30 08:07:40 | Lazy Load Optimizer | `latency` | `8.0 ms` | **PASS** |
+| #6949 | 2026-10-30 08:07:50 | Scroll Parallax Manager | `cpu_usage` | `44.6 %` | **PASS** |
