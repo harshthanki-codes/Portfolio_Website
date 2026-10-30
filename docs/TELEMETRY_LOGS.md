@@ -7163,3 +7163,4 @@
 | #7117 | 2026-10-30 08:35:50 | Background Video Loop | `frame_render_budget` | `29.9 ms (60fps)` | **PASS** |
 | #7118 | 2026-10-30 08:36:00 | Lottie Animation Engine | `gpu_utilization` | `45.2 %` | **PASS** |
 | #7119 | 2026-10-30 08:36:10 | Touch Gesture Dispatcher | `animation_fps` | `64.4 fps` | **PASS** |
+| #7120 | 2026-10-30 08:36:20 | Scroll Parallax Manager | `animation_fps` | `66.1 fps` | **PASS** |
