@@ -7538,3 +7538,4 @@
 | #7492 | 2026-10-30 09:38:20 | Cache Warmup Service | `frame_render_budget` | `18.5 ms (60fps)` | **PASS** |
 | #7493 | 2026-10-30 09:38:30 | Lazy Load Optimizer | `jank_events` | `2.5 count` | **PASS** |
 | #7494 | 2026-10-30 09:38:40 | Viewport Resize Observer | `gpu_utilization` | `64.1 %` | **PASS** |
+| #7495 | 2026-10-30 09:38:50 | Background Video Loop | `gpu_utilization` | `47.1 %` | **PASS** |
