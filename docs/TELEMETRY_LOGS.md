@@ -7827,3 +7827,4 @@
 | #7781 | 2026-10-30 10:26:30 | Progressive Image Loader | `animation_fps` | `55.4 fps` | **PASS** |
 | #7782 | 2026-10-30 10:26:40 | Predictive Arc Canvas | `time_to_interactive` | `1261.7 ms` | **PASS** |
 | #7783 | 2026-10-30 10:26:50 | Telemetry Beacon | `bundle_size` | `100.7 KB` | **PASS** |
+| #7784 | 2026-10-30 10:27:00 | Scroll Parallax Manager | `memory_footprint` | `110.5 MB` | **PASS** |
