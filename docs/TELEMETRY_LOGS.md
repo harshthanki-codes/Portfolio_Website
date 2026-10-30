@@ -6981,3 +6981,4 @@
 | #6935 | 2026-10-30 08:05:30 | State Sync Daemon | `cpu_usage` | `43.3 %` | **PASS** |
 | #6936 | 2026-10-30 08:05:40 | Touch Gesture Dispatcher | `bundle_size` | `122.5 KB` | **PASS** |
 | #6937 | 2026-10-30 08:05:50 | Lazy Load Optimizer | `jank_events` | `2.9 count` | **PASS** |
+| #6938 | 2026-10-30 08:06:00 | Viewport Resize Observer | `jank_events` | `1.6 count` | **PASS** |
