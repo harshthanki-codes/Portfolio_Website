@@ -7818,3 +7818,4 @@
 | #7772 | 2026-10-30 10:25:00 | Lottie Animation Engine | `time_to_interactive` | `1380.7 ms` | **PASS** |
 | #7773 | 2026-10-30 10:25:10 | Background Video Loop | `animation_fps` | `62.2 fps` | **PASS** |
 | #7774 | 2026-10-30 10:25:20 | Audio Visualizer | `first_contentful_paint` | `1048.5 ms` | **PASS** |
+| #7775 | 2026-10-30 10:25:30 | Lottie Animation Engine | `animation_fps` | `74.5 fps` | **PASS** |
