@@ -6967,3 +6967,4 @@
 | #6921 | 2026-10-30 08:03:10 | State Sync Daemon | `latency` | `15.0 ms` | **PASS** |
 | #6922 | 2026-10-30 08:03:20 | 3D Particle Renderer | `time_to_interactive` | `2493.4 ms` | **PASS** |
 | #6923 | 2026-10-30 08:03:30 | Scroll Parallax Manager | `animation_fps` | `74.5 fps` | **PASS** |
+| #6924 | 2026-10-30 08:03:40 | 3D Particle Renderer | `memory_footprint` | `84.1 MB` | **PASS** |
