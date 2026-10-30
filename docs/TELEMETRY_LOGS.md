@@ -7478,3 +7478,4 @@
 | #7432 | 2026-10-30 09:28:20 | 3D Particle Renderer | `latency` | `18.9 ms` | **PASS** |
 | #7433 | 2026-10-30 09:28:30 | Viewport Resize Observer | `cpu_usage` | `40.7 %` | **PASS** |
 | #7434 | 2026-10-30 09:28:40 | 3D Particle Renderer | `gpu_utilization` | `49.3 %` | **PASS** |
+| #7435 | 2026-10-30 09:28:50 | CSS-in-JS Themer | `gpu_utilization` | `22.0 %` | **PASS** |
