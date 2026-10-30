@@ -7345,3 +7345,4 @@
 | #7299 | 2026-10-30 09:06:10 | Micro Frontend Loader | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
 | #7300 | 2026-10-30 09:06:20 | Dynamic Font Loader | `jank_events` | `1.8 count` | **PASS** |
 | #7301 | 2026-10-30 09:06:30 | SVG Morphing Pipeline | `memory_footprint` | `108.0 MB` | **PASS** |
+| #7302 | 2026-10-30 09:06:40 | Cache Warmup Service | `gpu_utilization` | `24.3 %` | **PASS** |
