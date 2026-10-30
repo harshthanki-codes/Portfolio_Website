@@ -7973,3 +7973,4 @@
 | #7927 | 2026-10-30 10:50:50 | Responsive Grid System | `gpu_utilization` | `37.9 %` | **PASS** |
 | #7928 | 2026-10-30 10:51:00 | Lottie Animation Engine | `cpu_usage` | `10.5 %` | **PASS** |
 | #7929 | 2026-10-30 10:51:10 | Interactive Tooltip Engine | `animation_fps` | `61.8 fps` | **PASS** |
+| #7930 | 2026-10-30 10:51:20 | Interactive Tooltip Engine | `frame_render_budget` | `27.7 ms (60fps)` | **PASS** |
