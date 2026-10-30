@@ -7366,3 +7366,4 @@
 | #7320 | 2026-10-30 09:09:40 | Dynamic Font Loader | `frame_render_budget` | `27.0 ms (60fps)` | **PASS** |
 | #7321 | 2026-10-30 09:09:50 | Viewport Resize Observer | `latency` | `6.3 ms` | **PASS** |
 | #7322 | 2026-10-30 09:10:00 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
+| #7323 | 2026-10-30 09:10:10 | Cache Warmup Service | `animation_fps` | `63.3 fps` | **PASS** |
