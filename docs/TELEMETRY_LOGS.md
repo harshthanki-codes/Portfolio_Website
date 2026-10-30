@@ -7609,3 +7609,4 @@
 | #7563 | 2026-10-30 09:50:10 | Viewport Resize Observer | `gpu_utilization` | `40.6 %` | **PASS** |
 | #7564 | 2026-10-30 09:50:20 | Viewport Resize Observer | `cpu_usage` | `42.5 %` | **PASS** |
 | #7565 | 2026-10-30 09:50:30 | Interactive Tooltip Engine | `cpu_usage` | `14.7 %` | **PASS** |
+| #7566 | 2026-10-30 09:50:40 | Cache Warmup Service | `jank_events` | `1.1 count` | **PASS** |
