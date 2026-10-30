@@ -7656,3 +7656,4 @@
 | #7610 | 2026-10-30 09:58:00 | Cache Warmup Service | `animation_fps` | `69.4 fps` | **PASS** |
 | #7611 | 2026-10-30 09:58:10 | WebGL Shader Compiler | `time_to_interactive` | `1526.0 ms` | **PASS** |
 | #7612 | 2026-10-30 09:58:20 | Viewport Resize Observer | `bundle_size` | `235.8 KB` | **PASS** |
+| #7613 | 2026-10-30 09:58:30 | Lottie Animation Engine | `frame_render_budget` | `21.8 ms (60fps)` | **PASS** |
