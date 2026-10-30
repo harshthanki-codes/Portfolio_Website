@@ -8109,3 +8109,4 @@
 | #8063 | 2026-10-30 11:13:30 | SVG Morphing Pipeline | `first_contentful_paint` | `1084.9 ms` | **PASS** |
 | #8064 | 2026-10-30 11:13:40 | Dynamic Font Loader | `animation_fps` | `65.8 fps` | **PASS** |
 | #8065 | 2026-10-30 11:13:50 | WebGL Shader Compiler | `cpu_usage` | `15.4 %` | **PASS** |
+| #8066 | 2026-10-30 11:14:00 | Progressive Image Loader | `gpu_utilization` | `47.4 %` | **PASS** |
