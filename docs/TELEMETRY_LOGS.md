@@ -7086,3 +7086,4 @@
 | #7040 | 2026-10-30 08:23:00 | Dynamic Font Loader | `jank_events` | `2.5 count` | **PASS** |
 | #7041 | 2026-10-30 08:23:10 | WebGL Shader Compiler | `jank_events` | `1.3 count` | **PASS** |
 | #7042 | 2026-10-30 08:23:20 | State Sync Daemon | `time_to_interactive` | `1589.3 ms` | **PASS** |
+| #7043 | 2026-10-30 08:23:30 | CSS-in-JS Themer | `frame_render_budget` | `19.9 ms (60fps)` | **PASS** |
