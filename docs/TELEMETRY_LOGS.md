@@ -7885,3 +7885,4 @@
 | #7839 | 2026-10-30 10:36:10 | State Sync Daemon | `memory_footprint` | `118.8 MB` | **PASS** |
 | #7840 | 2026-10-30 10:36:20 | Viewport Resize Observer | `gpu_utilization` | `47.0 %` | **PASS** |
 | #7841 | 2026-10-30 10:36:30 | Telemetry Beacon | `jank_events` | `0.4 count` | **PASS** |
+| #7842 | 2026-10-30 10:36:40 | Micro Frontend Loader | `time_to_interactive` | `1944.8 ms` | **PASS** |
