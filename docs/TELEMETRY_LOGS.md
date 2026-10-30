@@ -8005,3 +8005,4 @@
 | #7959 | 2026-10-30 10:56:10 | Progressive Image Loader | `memory_footprint` | `53.6 MB` | **PASS** |
 | #7960 | 2026-10-30 10:56:20 | Micro Frontend Loader | `first_contentful_paint` | `987.2 ms` | **PASS** |
 | #7961 | 2026-10-30 10:56:30 | 3D Particle Renderer | `jank_events` | `0.2 count` | **PASS** |
+| #7962 | 2026-10-30 10:56:40 | 3D Particle Renderer | `memory_footprint` | `94.6 MB` | **PASS** |
