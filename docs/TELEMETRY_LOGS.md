@@ -7808,3 +7808,4 @@
 | #7762 | 2026-10-30 10:23:20 | Cache Warmup Service | `gpu_utilization` | `47.0 %` | **PASS** |
 | #7763 | 2026-10-30 10:23:30 | WebGL Shader Compiler | `jank_events` | `2.7 count` | **PASS** |
 | #7764 | 2026-10-30 10:23:40 | CSS-in-JS Themer | `first_contentful_paint` | `1157.0 ms` | **PASS** |
+| #7765 | 2026-10-30 10:23:50 | WebGL Shader Compiler | `cpu_usage` | `18.0 %` | **PASS** |
