@@ -7927,3 +7927,4 @@
 | #7881 | 2026-10-30 10:43:10 | Interactive Tooltip Engine | `frame_render_budget` | `16.4 ms (60fps)` | **PASS** |
 | #7882 | 2026-10-30 10:43:20 | Scroll Parallax Manager | `frame_render_budget` | `22.2 ms (60fps)` | **PASS** |
 | #7883 | 2026-10-30 10:43:30 | Micro Frontend Loader | `cpu_usage` | `34.4 %` | **PASS** |
+| #7884 | 2026-10-30 10:43:40 | Lottie Animation Engine | `jank_events` | `1.5 count` | **PASS** |
