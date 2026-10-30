@@ -8110,3 +8110,4 @@
 | #8064 | 2026-10-30 11:13:40 | Dynamic Font Loader | `animation_fps` | `65.8 fps` | **PASS** |
 | #8065 | 2026-10-30 11:13:50 | WebGL Shader Compiler | `cpu_usage` | `15.4 %` | **PASS** |
 | #8066 | 2026-10-30 11:14:00 | Progressive Image Loader | `gpu_utilization` | `47.4 %` | **PASS** |
+| #8067 | 2026-10-30 11:14:10 | Background Video Loop | `latency` | `19.3 ms` | **PASS** |
