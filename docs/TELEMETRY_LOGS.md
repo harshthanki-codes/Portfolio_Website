@@ -7431,3 +7431,4 @@
 | #7385 | 2026-10-30 09:20:30 | Dynamic Font Loader | `jank_events` | `2.0 count` | **PASS** |
 | #7386 | 2026-10-30 09:20:40 | SVG Morphing Pipeline | `animation_fps` | `67.1 fps` | **PASS** |
 | #7387 | 2026-10-30 09:20:50 | WebGL Shader Compiler | `frame_render_budget` | `15.5 ms (60fps)` | **PASS** |
+| #7388 | 2026-10-30 09:21:00 | SVG Morphing Pipeline | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
