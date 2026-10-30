@@ -8023,3 +8023,4 @@
 | #7977 | 2026-10-30 10:59:10 | Predictive Arc Canvas | `memory_footprint` | `102.1 MB` | **PASS** |
 | #7978 | 2026-10-30 10:59:20 | Scroll Parallax Manager | `gpu_utilization` | `50.6 %` | **PASS** |
 | #7979 | 2026-10-30 10:59:30 | 3D Particle Renderer | `jank_events` | `0.6 count` | **PASS** |
+| #7980 | 2026-10-30 10:59:40 | CSS-in-JS Themer | `gpu_utilization` | `40.0 %` | **PASS** |
