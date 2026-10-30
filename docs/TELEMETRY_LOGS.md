@@ -8123,3 +8123,4 @@
 | #8077 | 2026-10-30 11:15:50 | SVG Morphing Pipeline | `time_to_interactive` | `1898.7 ms` | **PASS** |
 | #8078 | 2026-10-30 11:16:00 | Dynamic Font Loader | `bundle_size` | `129.2 KB` | **PASS** |
 | #8079 | 2026-10-30 11:16:10 | Background Video Loop | `frame_render_budget` | `24.3 ms (60fps)` | **PASS** |
+| #8080 | 2026-10-30 11:16:20 | WebGL Shader Compiler | `first_contentful_paint` | `851.3 ms` | **PASS** |
