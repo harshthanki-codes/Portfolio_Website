@@ -7806,3 +7806,4 @@
 | #7760 | 2026-10-30 10:23:00 | Lottie Animation Engine | `time_to_interactive` | `1671.9 ms` | **PASS** |
 | #7761 | 2026-10-30 10:23:10 | Responsive Grid System | `cpu_usage` | `28.7 %` | **PASS** |
 | #7762 | 2026-10-30 10:23:20 | Cache Warmup Service | `gpu_utilization` | `47.0 %` | **PASS** |
+| #7763 | 2026-10-30 10:23:30 | WebGL Shader Compiler | `jank_events` | `2.7 count` | **PASS** |
