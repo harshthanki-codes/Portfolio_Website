@@ -7024,3 +7024,4 @@
 | #6978 | 2026-10-30 08:12:40 | Telemetry Beacon | `animation_fps` | `55.2 fps` | **PASS** |
 | #6979 | 2026-10-30 08:12:50 | SVG Morphing Pipeline | `cpu_usage` | `35.2 %` | **PASS** |
 | #6980 | 2026-10-30 08:13:00 | Lazy Load Optimizer | `cpu_usage` | `21.5 %` | **PASS** |
+| #6981 | 2026-10-30 08:13:10 | Interactive Tooltip Engine | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
