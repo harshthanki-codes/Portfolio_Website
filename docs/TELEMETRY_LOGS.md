@@ -7093,3 +7093,4 @@
 | #7047 | 2026-10-30 08:24:10 | WebGL Shader Compiler | `time_to_interactive` | `2380.2 ms` | **PASS** |
 | #7048 | 2026-10-30 08:24:20 | Telemetry Beacon | `animation_fps` | `68.8 fps` | **PASS** |
 | #7049 | 2026-10-30 08:24:30 | Micro Frontend Loader | `memory_footprint` | `60.1 MB` | **PASS** |
+| #7050 | 2026-10-30 08:24:40 | Dynamic Font Loader | `cpu_usage` | `27.1 %` | **PASS** |
