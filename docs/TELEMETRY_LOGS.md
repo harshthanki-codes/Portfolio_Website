@@ -7823,3 +7823,4 @@
 | #7777 | 2026-10-30 10:25:50 | Telemetry Beacon | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
 | #7778 | 2026-10-30 10:26:00 | Background Video Loop | `bundle_size` | `229.4 KB` | **PASS** |
 | #7779 | 2026-10-30 10:26:10 | State Sync Daemon | `bundle_size` | `249.0 KB` | **PASS** |
+| #7780 | 2026-10-30 10:26:20 | Cache Warmup Service | `animation_fps` | `57.9 fps` | **PASS** |
