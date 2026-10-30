@@ -7875,3 +7875,4 @@
 | #7829 | 2026-10-30 10:34:30 | Cache Warmup Service | `jank_events` | `0.4 count` | **PASS** |
 | #7830 | 2026-10-30 10:34:40 | WebGL Shader Compiler | `animation_fps` | `65.0 fps` | **PASS** |
 | #7831 | 2026-10-30 10:34:50 | WebGL Shader Compiler | `time_to_interactive` | `1882.9 ms` | **PASS** |
+| #7832 | 2026-10-30 10:35:00 | Progressive Image Loader | `latency` | `17.9 ms` | **PASS** |
