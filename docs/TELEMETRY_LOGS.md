@@ -7782,3 +7782,4 @@
 | #7736 | 2026-10-30 10:19:00 | Background Video Loop | `jank_events` | `2.8 count` | **PASS** |
 | #7737 | 2026-10-30 10:19:10 | Predictive Arc Canvas | `bundle_size` | `154.3 KB` | **PASS** |
 | #7738 | 2026-10-30 10:19:20 | Background Video Loop | `cpu_usage` | `39.0 %` | **PASS** |
+| #7739 | 2026-10-30 10:19:30 | Predictive Arc Canvas | `latency` | `24.0 ms` | **PASS** |
