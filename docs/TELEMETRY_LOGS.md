@@ -7690,3 +7690,4 @@
 | #7644 | 2026-10-30 10:03:40 | Scroll Parallax Manager | `latency` | `10.6 ms` | **PASS** |
 | #7645 | 2026-10-30 10:03:50 | State Sync Daemon | `cpu_usage` | `29.5 %` | **PASS** |
 | #7646 | 2026-10-30 10:04:00 | Background Video Loop | `animation_fps` | `55.8 fps` | **PASS** |
+| #7647 | 2026-10-30 10:04:10 | Background Video Loop | `latency` | `9.3 ms` | **PASS** |
