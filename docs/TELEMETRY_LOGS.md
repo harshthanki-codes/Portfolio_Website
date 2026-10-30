@@ -7079,3 +7079,4 @@
 | #7033 | 2026-10-30 08:21:50 | State Sync Daemon | `cpu_usage` | `11.4 %` | **PASS** |
 | #7034 | 2026-10-30 08:22:00 | State Sync Daemon | `bundle_size` | `222.3 KB` | **PASS** |
 | #7035 | 2026-10-30 08:22:10 | Progressive Image Loader | `first_contentful_paint` | `1181.2 ms` | **PASS** |
+| #7036 | 2026-10-30 08:22:20 | State Sync Daemon | `jank_events` | `2.5 count` | **PASS** |
