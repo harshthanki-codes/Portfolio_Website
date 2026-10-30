@@ -7505,3 +7505,4 @@
 | #7459 | 2026-10-30 09:32:50 | Background Video Loop | `first_contentful_paint` | `823.5 ms` | **PASS** |
 | #7460 | 2026-10-30 09:33:00 | 3D Particle Renderer | `first_contentful_paint` | `1048.6 ms` | **PASS** |
 | #7461 | 2026-10-30 09:33:10 | 3D Particle Renderer | `memory_footprint` | `97.3 MB` | **PASS** |
+| #7462 | 2026-10-30 09:33:20 | Dynamic Font Loader | `time_to_interactive` | `1421.6 ms` | **PASS** |
