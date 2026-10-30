@@ -7692,3 +7692,4 @@
 | #7646 | 2026-10-30 10:04:00 | Background Video Loop | `animation_fps` | `55.8 fps` | **PASS** |
 | #7647 | 2026-10-30 10:04:10 | Background Video Loop | `latency` | `9.3 ms` | **PASS** |
 | #7648 | 2026-10-30 10:04:20 | Progressive Image Loader | `time_to_interactive` | `1914.9 ms` | **PASS** |
+| #7649 | 2026-10-30 10:04:30 | 3D Particle Renderer | `bundle_size` | `99.9 KB` | **PASS** |
