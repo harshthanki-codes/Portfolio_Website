@@ -8809,3 +8809,4 @@
 | #8760 | 2026-10-31 09:49:40 | Predictive Arc Canvas | `jank_events` | `0.7 count` | **PASS** |
 | #8761 | 2026-10-31 09:49:50 | SVG Morphing Pipeline | `frame_render_budget` | `15.3 ms (60fps)` | **PASS** |
 | #8762 | 2026-10-31 09:50:00 | Cache Warmup Service | `latency` | `15.2 ms` | **PASS** |
+| #8763 | 2026-10-31 09:50:10 | Touch Gesture Dispatcher | `animation_fps` | `70.6 fps` | **PASS** |
