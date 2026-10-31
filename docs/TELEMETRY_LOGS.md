@@ -8184,3 +8184,4 @@
 | #8135 | 2026-10-31 08:05:30 | Scroll Parallax Manager | `cpu_usage` | `44.9 %` | **PASS** |
 | #8136 | 2026-10-31 08:05:40 | Lottie Animation Engine | `time_to_interactive` | `2128.6 ms` | **PASS** |
 | #8137 | 2026-10-31 08:05:50 | Cache Warmup Service | `cpu_usage` | `21.9 %` | **PASS** |
+| #8138 | 2026-10-31 08:06:00 | WebGL Shader Compiler | `animation_fps` | `55.8 fps` | **PASS** |
