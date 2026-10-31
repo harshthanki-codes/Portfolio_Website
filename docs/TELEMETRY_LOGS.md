@@ -8784,3 +8784,4 @@
 | #8735 | 2026-10-31 09:45:30 | Cache Warmup Service | `animation_fps` | `70.9 fps` | **PASS** |
 | #8736 | 2026-10-31 09:45:40 | 3D Particle Renderer | `frame_render_budget` | `26.8 ms (60fps)` | **PASS** |
 | #8737 | 2026-10-31 09:45:50 | SVG Morphing Pipeline | `time_to_interactive` | `1792.2 ms` | **PASS** |
+| #8738 | 2026-10-31 09:46:00 | Lazy Load Optimizer | `jank_events` | `1.7 count` | **PASS** |
