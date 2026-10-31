@@ -8178,3 +8178,4 @@
 | #8129 | 2026-10-31 08:04:30 | Scroll Parallax Manager | `memory_footprint` | `82.0 MB` | **PASS** |
 | #8130 | 2026-10-31 08:04:40 | Scroll Parallax Manager | `time_to_interactive` | `1509.8 ms` | **PASS** |
 | #8131 | 2026-10-31 08:04:50 | State Sync Daemon | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
+| #8132 | 2026-10-31 08:05:00 | State Sync Daemon | `gpu_utilization` | `48.6 %` | **PASS** |
