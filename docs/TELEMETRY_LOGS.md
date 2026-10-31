@@ -8786,3 +8786,4 @@
 | #8737 | 2026-10-31 09:45:50 | SVG Morphing Pipeline | `time_to_interactive` | `1792.2 ms` | **PASS** |
 | #8738 | 2026-10-31 09:46:00 | Lazy Load Optimizer | `jank_events` | `1.7 count` | **PASS** |
 | #8739 | 2026-10-31 09:46:10 | SVG Morphing Pipeline | `gpu_utilization` | `23.5 %` | **PASS** |
+| #8740 | 2026-10-31 09:46:20 | Touch Gesture Dispatcher | `animation_fps` | `60.9 fps` | **PASS** |
