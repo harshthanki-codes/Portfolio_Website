@@ -9191,3 +9191,4 @@
 | #9142 | 2026-10-31 10:53:20 | Dynamic Font Loader | `animation_fps` | `74.6 fps` | **PASS** |
 | #9143 | 2026-10-31 10:53:30 | SVG Morphing Pipeline | `frame_render_budget` | `15.8 ms (60fps)` | **PASS** |
 | #9144 | 2026-10-31 10:53:40 | Dynamic Font Loader | `memory_footprint` | `79.3 MB` | **PASS** |
+| #9145 | 2026-10-31 10:53:50 | 3D Particle Renderer | `latency` | `22.4 ms` | **PASS** |
