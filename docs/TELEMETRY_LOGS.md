@@ -8863,3 +8863,4 @@
 | #8814 | 2026-10-31 09:58:40 | WebGL Shader Compiler | `time_to_interactive` | `2117.4 ms` | **PASS** |
 | #8815 | 2026-10-31 09:58:50 | Background Video Loop | `time_to_interactive` | `1385.8 ms` | **PASS** |
 | #8816 | 2026-10-31 09:59:00 | Interactive Tooltip Engine | `cpu_usage` | `28.6 %` | **PASS** |
+| #8817 | 2026-10-31 09:59:10 | WebGL Shader Compiler | `cpu_usage` | `30.8 %` | **PASS** |
