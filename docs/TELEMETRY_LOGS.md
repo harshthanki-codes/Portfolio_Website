@@ -9019,3 +9019,4 @@
 | #8970 | 2026-10-31 10:24:40 | Interactive Tooltip Engine | `latency` | `12.4 ms` | **PASS** |
 | #8971 | 2026-10-31 10:24:50 | Cache Warmup Service | `frame_render_budget` | `29.5 ms (60fps)` | **PASS** |
 | #8972 | 2026-10-31 10:25:00 | Interactive Tooltip Engine | `time_to_interactive` | `1879.3 ms` | **PASS** |
+| #8973 | 2026-10-31 10:25:10 | Cache Warmup Service | `gpu_utilization` | `24.5 %` | **PASS** |
