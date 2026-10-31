@@ -8407,3 +8407,4 @@
 | #8358 | 2026-10-31 08:42:40 | Background Video Loop | `time_to_interactive` | `2326.3 ms` | **PASS** |
 | #8359 | 2026-10-31 08:42:50 | WebGL Shader Compiler | `memory_footprint` | `50.6 MB` | **PASS** |
 | #8360 | 2026-10-31 08:43:00 | Interactive Tooltip Engine | `first_contentful_paint` | `1380.5 ms` | **PASS** |
+| #8361 | 2026-10-31 08:43:10 | Cache Warmup Service | `cpu_usage` | `30.9 %` | **PASS** |
