@@ -8269,3 +8269,4 @@
 | #8220 | 2026-10-31 08:19:40 | Viewport Resize Observer | `time_to_interactive` | `1412.3 ms` | **PASS** |
 | #8221 | 2026-10-31 08:19:50 | Micro Frontend Loader | `bundle_size` | `128.0 KB` | **PASS** |
 | #8222 | 2026-10-31 08:20:00 | Micro Frontend Loader | `animation_fps` | `59.8 fps` | **PASS** |
+| #8223 | 2026-10-31 08:20:10 | Background Video Loop | `frame_render_budget` | `29.7 ms (60fps)` | **PASS** |
