@@ -8319,3 +8319,4 @@
 | #8270 | 2026-10-31 08:28:00 | Micro Frontend Loader | `memory_footprint` | `51.9 MB` | **PASS** |
 | #8271 | 2026-10-31 08:28:10 | Dynamic Font Loader | `gpu_utilization` | `66.4 %` | **PASS** |
 | #8272 | 2026-10-31 08:28:20 | CSS-in-JS Themer | `cpu_usage` | `38.1 %` | **PASS** |
+| #8273 | 2026-10-31 08:28:30 | Dynamic Font Loader | `latency` | `11.4 ms` | **PASS** |
