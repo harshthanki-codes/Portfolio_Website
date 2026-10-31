@@ -8956,3 +8956,4 @@
 | #8907 | 2026-10-31 10:14:10 | CSS-in-JS Themer | `animation_fps` | `70.8 fps` | **PASS** |
 | #8908 | 2026-10-31 10:14:20 | CSS-in-JS Themer | `frame_render_budget` | `19.8 ms (60fps)` | **PASS** |
 | #8909 | 2026-10-31 10:14:30 | Lottie Animation Engine | `first_contentful_paint` | `1236.9 ms` | **PASS** |
+| #8910 | 2026-10-31 10:14:40 | CSS-in-JS Themer | `gpu_utilization` | `33.6 %` | **PASS** |
