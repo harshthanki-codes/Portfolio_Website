@@ -8570,3 +8570,4 @@
 | #8521 | 2026-10-31 09:09:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1300.3 ms` | **PASS** |
 | #8522 | 2026-10-31 09:10:00 | WebGL Shader Compiler | `first_contentful_paint` | `1105.8 ms` | **PASS** |
 | #8523 | 2026-10-31 09:10:10 | Cache Warmup Service | `jank_events` | `0.3 count` | **PASS** |
+| #8524 | 2026-10-31 09:10:20 | Dynamic Font Loader | `cpu_usage` | `23.7 %` | **PASS** |
