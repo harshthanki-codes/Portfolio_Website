@@ -9261,3 +9261,4 @@
 | #9212 | 2026-10-31 11:05:00 | Viewport Resize Observer | `cpu_usage` | `25.0 %` | **PASS** |
 | #9213 | 2026-10-31 11:05:10 | 3D Particle Renderer | `jank_events` | `1.2 count` | **PASS** |
 | #9214 | 2026-10-31 11:05:20 | WebGL Shader Compiler | `bundle_size` | `186.9 KB` | **PASS** |
+| #9215 | 2026-10-31 11:05:30 | Lottie Animation Engine | `animation_fps` | `64.9 fps` | **PASS** |
