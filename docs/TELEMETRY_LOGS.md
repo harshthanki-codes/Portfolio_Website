@@ -8483,3 +8483,4 @@
 | #8434 | 2026-10-31 08:55:20 | Viewport Resize Observer | `bundle_size` | `131.2 KB` | **PASS** |
 | #8435 | 2026-10-31 08:55:30 | Interactive Tooltip Engine | `animation_fps` | `65.1 fps` | **PASS** |
 | #8436 | 2026-10-31 08:55:40 | Scroll Parallax Manager | `time_to_interactive` | `1643.7 ms` | **PASS** |
+| #8437 | 2026-10-31 08:55:50 | Scroll Parallax Manager | `time_to_interactive` | `2041.8 ms` | **PASS** |
