@@ -8806,3 +8806,4 @@
 | #8757 | 2026-10-31 09:49:10 | Background Video Loop | `gpu_utilization` | `48.3 %` | **PASS** |
 | #8758 | 2026-10-31 09:49:20 | WebGL Shader Compiler | `time_to_interactive` | `2434.4 ms` | **PASS** |
 | #8759 | 2026-10-31 09:49:30 | Responsive Grid System | `animation_fps` | `70.5 fps` | **PASS** |
+| #8760 | 2026-10-31 09:49:40 | Predictive Arc Canvas | `jank_events` | `0.7 count` | **PASS** |
