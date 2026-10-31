@@ -9324,3 +9324,4 @@
 | #9275 | 2026-10-31 11:15:30 | Dynamic Font Loader | `jank_events` | `2.0 count` | **PASS** |
 | #9276 | 2026-10-31 11:15:40 | Dynamic Font Loader | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
 | #9277 | 2026-10-31 11:15:50 | Interactive Tooltip Engine | `frame_render_budget` | `15.9 ms (60fps)` | **PASS** |
+| #9278 | 2026-10-31 11:16:00 | Telemetry Beacon | `cpu_usage` | `35.3 %` | **PASS** |
