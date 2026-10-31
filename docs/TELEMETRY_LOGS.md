@@ -9215,3 +9215,4 @@
 | #9166 | 2026-10-31 10:57:20 | State Sync Daemon | `animation_fps` | `68.5 fps` | **PASS** |
 | #9167 | 2026-10-31 10:57:30 | 3D Particle Renderer | `cpu_usage` | `26.3 %` | **PASS** |
 | #9168 | 2026-10-31 10:57:40 | Background Video Loop | `time_to_interactive` | `1973.5 ms` | **PASS** |
+| #9169 | 2026-10-31 10:57:50 | Scroll Parallax Manager | `time_to_interactive` | `2488.4 ms` | **PASS** |
