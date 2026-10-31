@@ -9254,3 +9254,4 @@
 | #9205 | 2026-10-31 11:03:50 | 3D Particle Renderer | `jank_events` | `0.2 count` | **PASS** |
 | #9206 | 2026-10-31 11:04:00 | Background Video Loop | `animation_fps` | `58.5 fps` | **PASS** |
 | #9207 | 2026-10-31 11:04:10 | Progressive Image Loader | `first_contentful_paint` | `1426.8 ms` | **PASS** |
+| #9208 | 2026-10-31 11:04:20 | WebGL Shader Compiler | `animation_fps` | `70.3 fps` | **PASS** |
