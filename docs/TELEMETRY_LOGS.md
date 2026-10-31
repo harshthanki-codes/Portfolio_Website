@@ -9037,3 +9037,4 @@
 | #8988 | 2026-10-31 10:27:40 | Progressive Image Loader | `animation_fps` | `59.8 fps` | **PASS** |
 | #8989 | 2026-10-31 10:27:50 | Audio Visualizer | `first_contentful_paint` | `1115.1 ms` | **PASS** |
 | #8990 | 2026-10-31 10:28:00 | 3D Particle Renderer | `first_contentful_paint` | `1456.9 ms` | **PASS** |
+| #8991 | 2026-10-31 10:28:10 | Audio Visualizer | `latency` | `20.4 ms` | **PASS** |
