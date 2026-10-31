@@ -8813,3 +8813,4 @@
 | #8764 | 2026-10-31 09:50:20 | Viewport Resize Observer | `gpu_utilization` | `26.4 %` | **PASS** |
 | #8765 | 2026-10-31 09:50:30 | Lottie Animation Engine | `memory_footprint` | `87.5 MB` | **PASS** |
 | #8766 | 2026-10-31 09:50:40 | Viewport Resize Observer | `jank_events` | `1.6 count` | **PASS** |
+| #8767 | 2026-10-31 09:50:50 | Lazy Load Optimizer | `animation_fps` | `59.0 fps` | **PASS** |
