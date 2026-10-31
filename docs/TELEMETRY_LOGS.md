@@ -8382,3 +8382,4 @@
 | #8333 | 2026-10-31 08:38:30 | Background Video Loop | `gpu_utilization` | `68.5 %` | **PASS** |
 | #8334 | 2026-10-31 08:38:40 | SVG Morphing Pipeline | `gpu_utilization` | `30.5 %` | **PASS** |
 | #8335 | 2026-10-31 08:38:50 | State Sync Daemon | `first_contentful_paint` | `1070.0 ms` | **PASS** |
+| #8336 | 2026-10-31 08:39:00 | Background Video Loop | `cpu_usage` | `17.4 %` | **PASS** |
