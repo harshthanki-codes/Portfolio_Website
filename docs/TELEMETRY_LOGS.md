@@ -8768,3 +8768,4 @@
 | #8719 | 2026-10-31 09:42:50 | Cache Warmup Service | `first_contentful_paint` | `807.9 ms` | **PASS** |
 | #8720 | 2026-10-31 09:43:00 | CSS-in-JS Themer | `gpu_utilization` | `22.7 %` | **PASS** |
 | #8721 | 2026-10-31 09:43:10 | Background Video Loop | `animation_fps` | `73.5 fps` | **PASS** |
+| #8722 | 2026-10-31 09:43:20 | Viewport Resize Observer | `latency` | `16.8 ms` | **PASS** |
