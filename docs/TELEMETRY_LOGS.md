@@ -8551,3 +8551,4 @@
 | #8502 | 2026-10-31 09:06:40 | Viewport Resize Observer | `animation_fps` | `72.2 fps` | **PASS** |
 | #8503 | 2026-10-31 09:06:50 | Interactive Tooltip Engine | `gpu_utilization` | `55.9 %` | **PASS** |
 | #8504 | 2026-10-31 09:07:00 | WebGL Shader Compiler | `frame_render_budget` | `24.1 ms (60fps)` | **PASS** |
+| #8505 | 2026-10-31 09:07:10 | Lottie Animation Engine | `cpu_usage` | `28.2 %` | **PASS** |
