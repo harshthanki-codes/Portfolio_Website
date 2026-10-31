@@ -8728,3 +8728,4 @@
 | #8679 | 2026-10-31 09:36:10 | State Sync Daemon | `frame_render_budget` | `26.8 ms (60fps)` | **PASS** |
 | #8680 | 2026-10-31 09:36:20 | WebGL Shader Compiler | `first_contentful_paint` | `937.1 ms` | **PASS** |
 | #8681 | 2026-10-31 09:36:30 | State Sync Daemon | `jank_events` | `0.3 count` | **PASS** |
+| #8682 | 2026-10-31 09:36:40 | Viewport Resize Observer | `cpu_usage` | `38.3 %` | **PASS** |
