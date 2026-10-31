@@ -8592,3 +8592,4 @@
 | #8543 | 2026-10-31 09:13:30 | CSS-in-JS Themer | `memory_footprint` | `57.1 MB` | **PASS** |
 | #8544 | 2026-10-31 09:13:40 | State Sync Daemon | `time_to_interactive` | `2389.4 ms` | **PASS** |
 | #8545 | 2026-10-31 09:13:50 | Background Video Loop | `bundle_size` | `230.7 KB` | **PASS** |
+| #8546 | 2026-10-31 09:14:00 | State Sync Daemon | `cpu_usage` | `28.5 %` | **PASS** |
