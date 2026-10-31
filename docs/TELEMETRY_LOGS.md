@@ -8467,3 +8467,4 @@
 | #8418 | 2026-10-31 08:52:40 | Dynamic Font Loader | `time_to_interactive` | `2051.8 ms` | **PASS** |
 | #8419 | 2026-10-31 08:52:50 | CSS-in-JS Themer | `animation_fps` | `63.4 fps` | **PASS** |
 | #8420 | 2026-10-31 08:53:00 | Viewport Resize Observer | `time_to_interactive` | `2396.6 ms` | **PASS** |
+| #8421 | 2026-10-31 08:53:10 | Lazy Load Optimizer | `jank_events` | `0.9 count` | **PASS** |
