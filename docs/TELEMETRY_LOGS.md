@@ -8668,3 +8668,4 @@
 | #8619 | 2026-10-31 09:26:10 | CSS-in-JS Themer | `first_contentful_paint` | `1430.6 ms` | **PASS** |
 | #8620 | 2026-10-31 09:26:20 | Touch Gesture Dispatcher | `time_to_interactive` | `1492.2 ms` | **PASS** |
 | #8621 | 2026-10-31 09:26:30 | Predictive Arc Canvas | `jank_events` | `2.4 count` | **PASS** |
+| #8622 | 2026-10-31 09:26:40 | Interactive Tooltip Engine | `gpu_utilization` | `47.0 %` | **PASS** |
