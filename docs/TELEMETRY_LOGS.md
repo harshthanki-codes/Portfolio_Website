@@ -9198,3 +9198,4 @@
 | #9149 | 2026-10-31 10:54:30 | Cache Warmup Service | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
 | #9150 | 2026-10-31 10:54:40 | Cache Warmup Service | `cpu_usage` | `40.3 %` | **PASS** |
 | #9151 | 2026-10-31 10:54:50 | Cache Warmup Service | `time_to_interactive` | `2474.1 ms` | **PASS** |
+| #9152 | 2026-10-31 10:55:00 | Micro Frontend Loader | `memory_footprint` | `53.7 MB` | **PASS** |
