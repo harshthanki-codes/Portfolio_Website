@@ -8604,3 +8604,4 @@
 | #8555 | 2026-10-31 09:15:30 | Audio Visualizer | `first_contentful_paint` | `1349.2 ms` | **PASS** |
 | #8556 | 2026-10-31 09:15:40 | Viewport Resize Observer | `time_to_interactive` | `1752.0 ms` | **PASS** |
 | #8557 | 2026-10-31 09:15:50 | Touch Gesture Dispatcher | `latency` | `9.3 ms` | **PASS** |
+| #8558 | 2026-10-31 09:16:00 | 3D Particle Renderer | `memory_footprint` | `85.1 MB` | **PASS** |
