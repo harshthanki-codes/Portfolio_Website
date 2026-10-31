@@ -8359,3 +8359,4 @@
 | #8310 | 2026-10-31 08:34:40 | Telemetry Beacon | `bundle_size` | `219.7 KB` | **PASS** |
 | #8311 | 2026-10-31 08:34:50 | Background Video Loop | `memory_footprint` | `61.1 MB` | **PASS** |
 | #8312 | 2026-10-31 08:35:00 | Lottie Animation Engine | `memory_footprint` | `118.1 MB` | **PASS** |
+| #8313 | 2026-10-31 08:35:10 | Cache Warmup Service | `memory_footprint` | `79.5 MB` | **PASS** |
