@@ -8763,3 +8763,4 @@
 | #8714 | 2026-10-31 09:42:00 | Scroll Parallax Manager | `latency` | `7.6 ms` | **PASS** |
 | #8715 | 2026-10-31 09:42:10 | Background Video Loop | `time_to_interactive` | `2476.6 ms` | **PASS** |
 | #8716 | 2026-10-31 09:42:20 | Micro Frontend Loader | `latency` | `13.0 ms` | **PASS** |
+| #8717 | 2026-10-31 09:42:30 | Scroll Parallax Manager | `animation_fps` | `70.5 fps` | **PASS** |
