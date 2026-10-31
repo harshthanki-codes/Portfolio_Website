@@ -8596,3 +8596,4 @@
 | #8547 | 2026-10-31 09:14:10 | Interactive Tooltip Engine | `cpu_usage` | `26.3 %` | **PASS** |
 | #8548 | 2026-10-31 09:14:20 | Predictive Arc Canvas | `jank_events` | `0.8 count` | **PASS** |
 | #8549 | 2026-10-31 09:14:30 | Progressive Image Loader | `latency` | `20.4 ms` | **PASS** |
+| #8550 | 2026-10-31 09:14:40 | Progressive Image Loader | `first_contentful_paint` | `1414.3 ms` | **PASS** |
