@@ -8468,3 +8468,4 @@
 | #8419 | 2026-10-31 08:52:50 | CSS-in-JS Themer | `animation_fps` | `63.4 fps` | **PASS** |
 | #8420 | 2026-10-31 08:53:00 | Viewport Resize Observer | `time_to_interactive` | `2396.6 ms` | **PASS** |
 | #8421 | 2026-10-31 08:53:10 | Lazy Load Optimizer | `jank_events` | `0.9 count` | **PASS** |
+| #8422 | 2026-10-31 08:53:20 | Interactive Tooltip Engine | `first_contentful_paint` | `1141.3 ms` | **PASS** |
