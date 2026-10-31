@@ -8380,3 +8380,4 @@
 | #8331 | 2026-10-31 08:38:10 | Scroll Parallax Manager | `animation_fps` | `70.0 fps` | **PASS** |
 | #8332 | 2026-10-31 08:38:20 | Telemetry Beacon | `animation_fps` | `67.4 fps` | **PASS** |
 | #8333 | 2026-10-31 08:38:30 | Background Video Loop | `gpu_utilization` | `68.5 %` | **PASS** |
+| #8334 | 2026-10-31 08:38:40 | SVG Morphing Pipeline | `gpu_utilization` | `30.5 %` | **PASS** |
