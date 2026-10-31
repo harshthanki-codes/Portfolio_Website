@@ -8499,3 +8499,4 @@
 | #8450 | 2026-10-31 08:58:00 | Progressive Image Loader | `jank_events` | `2.1 count` | **PASS** |
 | #8451 | 2026-10-31 08:58:10 | Scroll Parallax Manager | `jank_events` | `2.2 count` | **PASS** |
 | #8452 | 2026-10-31 08:58:20 | Dynamic Font Loader | `animation_fps` | `61.8 fps` | **PASS** |
+| #8453 | 2026-10-31 08:58:30 | Background Video Loop | `jank_events` | `0.0 count` | **PASS** |
