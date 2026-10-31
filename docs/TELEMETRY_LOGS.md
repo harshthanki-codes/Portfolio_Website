@@ -9125,3 +9125,4 @@
 | #9076 | 2026-10-31 10:42:20 | Interactive Tooltip Engine | `cpu_usage` | `34.3 %` | **PASS** |
 | #9077 | 2026-10-31 10:42:30 | Cache Warmup Service | `latency` | `14.4 ms` | **PASS** |
 | #9078 | 2026-10-31 10:42:40 | Scroll Parallax Manager | `frame_render_budget` | `26.4 ms (60fps)` | **PASS** |
+| #9079 | 2026-10-31 10:42:50 | Interactive Tooltip Engine | `gpu_utilization` | `37.8 %` | **PASS** |
