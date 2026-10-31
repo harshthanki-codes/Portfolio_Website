@@ -8612,3 +8612,4 @@
 | #8563 | 2026-10-31 09:16:50 | CSS-in-JS Themer | `jank_events` | `2.6 count` | **PASS** |
 | #8564 | 2026-10-31 09:17:00 | Progressive Image Loader | `frame_render_budget` | `19.2 ms (60fps)` | **PASS** |
 | #8565 | 2026-10-31 09:17:10 | Progressive Image Loader | `jank_events` | `1.6 count` | **PASS** |
+| #8566 | 2026-10-31 09:17:20 | SVG Morphing Pipeline | `time_to_interactive` | `2158.1 ms` | **PASS** |
