@@ -8290,3 +8290,4 @@
 | #8241 | 2026-10-31 08:23:10 | State Sync Daemon | `memory_footprint` | `61.8 MB` | **PASS** |
 | #8242 | 2026-10-31 08:23:20 | Viewport Resize Observer | `bundle_size` | `133.3 KB` | **PASS** |
 | #8243 | 2026-10-31 08:23:30 | Viewport Resize Observer | `time_to_interactive` | `2445.4 ms` | **PASS** |
+| #8244 | 2026-10-31 08:23:40 | Predictive Arc Canvas | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
