@@ -8823,3 +8823,4 @@
 | #8774 | 2026-10-31 09:52:00 | Viewport Resize Observer | `jank_events` | `0.4 count` | **PASS** |
 | #8775 | 2026-10-31 09:52:10 | Telemetry Beacon | `bundle_size` | `246.3 KB` | **PASS** |
 | #8776 | 2026-10-31 09:52:20 | WebGL Shader Compiler | `bundle_size` | `128.7 KB` | **PASS** |
+| #8777 | 2026-10-31 09:52:30 | 3D Particle Renderer | `frame_render_budget` | `29.3 ms (60fps)` | **PASS** |
