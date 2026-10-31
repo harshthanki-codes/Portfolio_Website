@@ -9021,3 +9021,4 @@
 | #8972 | 2026-10-31 10:25:00 | Interactive Tooltip Engine | `time_to_interactive` | `1879.3 ms` | **PASS** |
 | #8973 | 2026-10-31 10:25:10 | Cache Warmup Service | `gpu_utilization` | `24.5 %` | **PASS** |
 | #8974 | 2026-10-31 10:25:20 | WebGL Shader Compiler | `frame_render_budget` | `25.0 ms (60fps)` | **PASS** |
+| #8975 | 2026-10-31 10:25:30 | Cache Warmup Service | `frame_render_budget` | `28.0 ms (60fps)` | **PASS** |
