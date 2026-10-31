@@ -8490,3 +8490,4 @@
 | #8441 | 2026-10-31 08:56:30 | CSS-in-JS Themer | `jank_events` | `1.3 count` | **PASS** |
 | #8442 | 2026-10-31 08:56:40 | 3D Particle Renderer | `first_contentful_paint` | `1357.1 ms` | **PASS** |
 | #8443 | 2026-10-31 08:56:50 | Touch Gesture Dispatcher | `jank_events` | `2.2 count` | **PASS** |
+| #8444 | 2026-10-31 08:57:00 | Audio Visualizer | `gpu_utilization` | `32.5 %` | **PASS** |
