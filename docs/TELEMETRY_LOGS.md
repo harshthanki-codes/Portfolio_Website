@@ -9119,3 +9119,4 @@
 | #9070 | 2026-10-31 10:41:20 | Progressive Image Loader | `time_to_interactive` | `1460.0 ms` | **PASS** |
 | #9071 | 2026-10-31 10:41:30 | Progressive Image Loader | `frame_render_budget` | `29.8 ms (60fps)` | **PASS** |
 | #9072 | 2026-10-31 10:41:40 | Telemetry Beacon | `first_contentful_paint` | `1104.9 ms` | **PASS** |
+| #9073 | 2026-10-31 10:41:50 | Background Video Loop | `memory_footprint` | `119.5 MB` | **PASS** |
