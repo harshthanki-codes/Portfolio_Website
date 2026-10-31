@@ -8915,3 +8915,4 @@
 | #8866 | 2026-10-31 10:07:20 | 3D Particle Renderer | `bundle_size` | `208.0 KB` | **PASS** |
 | #8867 | 2026-10-31 10:07:30 | Micro Frontend Loader | `memory_footprint` | `64.6 MB` | **PASS** |
 | #8868 | 2026-10-31 10:07:40 | Viewport Resize Observer | `time_to_interactive` | `1806.2 ms` | **PASS** |
+| #8869 | 2026-10-31 10:07:50 | Scroll Parallax Manager | `gpu_utilization` | `23.6 %` | **PASS** |
