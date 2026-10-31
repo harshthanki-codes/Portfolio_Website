@@ -8873,3 +8873,4 @@
 | #8824 | 2026-10-31 10:00:20 | Touch Gesture Dispatcher | `latency` | `7.0 ms` | **PASS** |
 | #8825 | 2026-10-31 10:00:30 | Lottie Animation Engine | `memory_footprint` | `61.3 MB` | **PASS** |
 | #8826 | 2026-10-31 10:00:40 | WebGL Shader Compiler | `first_contentful_paint` | `1172.2 ms` | **PASS** |
+| #8827 | 2026-10-31 10:00:50 | CSS-in-JS Themer | `first_contentful_paint` | `1075.4 ms` | **PASS** |
