@@ -8354,3 +8354,4 @@
 | #8305 | 2026-10-31 08:33:50 | Background Video Loop | `gpu_utilization` | `55.9 %` | **PASS** |
 | #8306 | 2026-10-31 08:34:00 | Audio Visualizer | `time_to_interactive` | `2359.0 ms` | **PASS** |
 | #8307 | 2026-10-31 08:34:10 | Responsive Grid System | `latency` | `5.8 ms` | **PASS** |
+| #8308 | 2026-10-31 08:34:20 | WebGL Shader Compiler | `time_to_interactive` | `1831.4 ms` | **PASS** |
