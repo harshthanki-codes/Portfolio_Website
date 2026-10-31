@@ -8762,3 +8762,4 @@
 | #8713 | 2026-10-31 09:41:50 | Lottie Animation Engine | `jank_events` | `1.7 count` | **PASS** |
 | #8714 | 2026-10-31 09:42:00 | Scroll Parallax Manager | `latency` | `7.6 ms` | **PASS** |
 | #8715 | 2026-10-31 09:42:10 | Background Video Loop | `time_to_interactive` | `2476.6 ms` | **PASS** |
+| #8716 | 2026-10-31 09:42:20 | Micro Frontend Loader | `latency` | `13.0 ms` | **PASS** |
