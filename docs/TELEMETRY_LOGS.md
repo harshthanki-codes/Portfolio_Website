@@ -8861,3 +8861,4 @@
 | #8812 | 2026-10-31 09:58:20 | Predictive Arc Canvas | `jank_events` | `2.5 count` | **PASS** |
 | #8813 | 2026-10-31 09:58:30 | Responsive Grid System | `bundle_size` | `227.2 KB` | **PASS** |
 | #8814 | 2026-10-31 09:58:40 | WebGL Shader Compiler | `time_to_interactive` | `2117.4 ms` | **PASS** |
+| #8815 | 2026-10-31 09:58:50 | Background Video Loop | `time_to_interactive` | `1385.8 ms` | **PASS** |
