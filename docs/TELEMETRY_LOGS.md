@@ -8636,3 +8636,4 @@
 | #8587 | 2026-10-31 09:20:50 | Lottie Animation Engine | `time_to_interactive` | `1352.8 ms` | **PASS** |
 | #8588 | 2026-10-31 09:21:00 | Telemetry Beacon | `first_contentful_paint` | `1255.6 ms` | **PASS** |
 | #8589 | 2026-10-31 09:21:10 | WebGL Shader Compiler | `frame_render_budget` | `25.3 ms (60fps)` | **PASS** |
+| #8590 | 2026-10-31 09:21:20 | Telemetry Beacon | `gpu_utilization` | `50.9 %` | **PASS** |
