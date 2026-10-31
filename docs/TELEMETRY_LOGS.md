@@ -9341,3 +9341,4 @@
 | #9292 | 2026-10-31 11:18:20 | Scroll Parallax Manager | `time_to_interactive` | `2092.9 ms` | **PASS** |
 | #9293 | 2026-10-31 11:18:30 | WebGL Shader Compiler | `jank_events` | `0.1 count` | **PASS** |
 | #9294 | 2026-10-31 11:18:40 | Predictive Arc Canvas | `time_to_interactive` | `1893.8 ms` | **PASS** |
+| #9295 | 2026-10-31 11:18:50 | Dynamic Font Loader | `jank_events` | `3.0 count` | **PASS** |
