@@ -8554,3 +8554,4 @@
 | #8505 | 2026-10-31 09:07:10 | Lottie Animation Engine | `cpu_usage` | `28.2 %` | **PASS** |
 | #8506 | 2026-10-31 09:07:20 | Background Video Loop | `animation_fps` | `66.5 fps` | **PASS** |
 | #8507 | 2026-10-31 09:07:30 | Dynamic Font Loader | `frame_render_budget` | `29.1 ms (60fps)` | **PASS** |
+| #8508 | 2026-10-31 09:07:40 | Viewport Resize Observer | `frame_render_budget` | `18.9 ms (60fps)` | **PASS** |
