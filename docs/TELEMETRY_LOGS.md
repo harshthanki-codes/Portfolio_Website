@@ -8265,3 +8265,4 @@
 | #8216 | 2026-10-31 08:19:00 | Cache Warmup Service | `first_contentful_paint` | `1303.1 ms` | **PASS** |
 | #8217 | 2026-10-31 08:19:10 | Dynamic Font Loader | `first_contentful_paint` | `856.7 ms` | **PASS** |
 | #8218 | 2026-10-31 08:19:20 | WebGL Shader Compiler | `gpu_utilization` | `66.7 %` | **PASS** |
+| #8219 | 2026-10-31 08:19:30 | Progressive Image Loader | `jank_events` | `1.2 count` | **PASS** |
