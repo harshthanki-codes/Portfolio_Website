@@ -8326,3 +8326,4 @@
 | #8277 | 2026-10-31 08:29:10 | State Sync Daemon | `jank_events` | `0.7 count` | **PASS** |
 | #8278 | 2026-10-31 08:29:20 | SVG Morphing Pipeline | `latency` | `24.1 ms` | **PASS** |
 | #8279 | 2026-10-31 08:29:30 | 3D Particle Renderer | `animation_fps` | `71.6 fps` | **PASS** |
+| #8280 | 2026-10-31 08:29:40 | 3D Particle Renderer | `time_to_interactive` | `2097.9 ms` | **PASS** |
