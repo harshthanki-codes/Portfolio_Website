@@ -8900,3 +8900,4 @@
 | #8851 | 2026-10-31 10:04:50 | Telemetry Beacon | `time_to_interactive` | `2145.4 ms` | **PASS** |
 | #8852 | 2026-10-31 10:05:00 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
 | #8853 | 2026-10-31 10:05:10 | Telemetry Beacon | `gpu_utilization` | `23.5 %` | **PASS** |
+| #8854 | 2026-10-31 10:05:20 | Progressive Image Loader | `gpu_utilization` | `55.3 %` | **PASS** |
