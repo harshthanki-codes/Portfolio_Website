@@ -8375,3 +8375,4 @@
 | #8326 | 2026-10-31 08:37:20 | Lazy Load Optimizer | `jank_events` | `2.0 count` | **PASS** |
 | #8327 | 2026-10-31 08:37:30 | Background Video Loop | `time_to_interactive` | `2126.3 ms` | **PASS** |
 | #8328 | 2026-10-31 08:37:40 | Lottie Animation Engine | `cpu_usage` | `10.3 %` | **PASS** |
+| #8329 | 2026-10-31 08:37:50 | WebGL Shader Compiler | `gpu_utilization` | `57.9 %` | **PASS** |
