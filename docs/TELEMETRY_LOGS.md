@@ -8524,3 +8524,4 @@
 | #8475 | 2026-10-31 09:02:10 | Viewport Resize Observer | `time_to_interactive` | `2216.8 ms` | **PASS** |
 | #8476 | 2026-10-31 09:02:20 | WebGL Shader Compiler | `frame_render_budget` | `20.2 ms (60fps)` | **PASS** |
 | #8477 | 2026-10-31 09:02:30 | Responsive Grid System | `latency` | `8.2 ms` | **PASS** |
+| #8478 | 2026-10-31 09:02:40 | Predictive Arc Canvas | `animation_fps` | `63.0 fps` | **PASS** |
