@@ -9014,3 +9014,4 @@
 | #8965 | 2026-10-31 10:23:50 | Audio Visualizer | `first_contentful_paint` | `1457.1 ms` | **PASS** |
 | #8966 | 2026-10-31 10:24:00 | Lottie Animation Engine | `first_contentful_paint` | `908.9 ms` | **PASS** |
 | #8967 | 2026-10-31 10:24:10 | Audio Visualizer | `jank_events` | `1.7 count` | **PASS** |
+| #8968 | 2026-10-31 10:24:20 | SVG Morphing Pipeline | `frame_render_budget` | `18.3 ms (60fps)` | **PASS** |
