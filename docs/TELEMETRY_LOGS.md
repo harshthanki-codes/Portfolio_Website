@@ -8475,3 +8475,4 @@
 | #8426 | 2026-10-31 08:54:00 | Lazy Load Optimizer | `jank_events` | `0.7 count` | **PASS** |
 | #8427 | 2026-10-31 08:54:10 | Predictive Arc Canvas | `first_contentful_paint` | `1377.6 ms` | **PASS** |
 | #8428 | 2026-10-31 08:54:20 | Dynamic Font Loader | `bundle_size` | `178.4 KB` | **PASS** |
+| #8429 | 2026-10-31 08:54:30 | Dynamic Font Loader | `gpu_utilization` | `42.8 %` | **PASS** |
