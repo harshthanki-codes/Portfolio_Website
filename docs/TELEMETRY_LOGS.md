@@ -9257,3 +9257,4 @@
 | #9208 | 2026-10-31 11:04:20 | WebGL Shader Compiler | `animation_fps` | `70.3 fps` | **PASS** |
 | #9209 | 2026-10-31 11:04:30 | Scroll Parallax Manager | `first_contentful_paint` | `1074.6 ms` | **PASS** |
 | #9210 | 2026-10-31 11:04:40 | Micro Frontend Loader | `memory_footprint` | `93.1 MB` | **PASS** |
+| #9211 | 2026-10-31 11:04:50 | 3D Particle Renderer | `animation_fps` | `58.8 fps` | **PASS** |
