@@ -8911,3 +8911,4 @@
 | #8862 | 2026-10-31 10:06:40 | Viewport Resize Observer | `cpu_usage` | `37.6 %` | **PASS** |
 | #8863 | 2026-10-31 10:06:50 | SVG Morphing Pipeline | `memory_footprint` | `117.2 MB` | **PASS** |
 | #8864 | 2026-10-31 10:07:00 | Interactive Tooltip Engine | `animation_fps` | `65.5 fps` | **PASS** |
+| #8865 | 2026-10-31 10:07:10 | Background Video Loop | `cpu_usage` | `21.6 %` | **PASS** |
