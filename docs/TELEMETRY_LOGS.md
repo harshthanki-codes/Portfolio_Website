@@ -8530,3 +8530,4 @@
 | #8481 | 2026-10-31 09:03:10 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
 | #8482 | 2026-10-31 09:03:20 | Background Video Loop | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
 | #8483 | 2026-10-31 09:03:30 | WebGL Shader Compiler | `latency` | `6.6 ms` | **PASS** |
+| #8484 | 2026-10-31 09:03:40 | Cache Warmup Service | `memory_footprint` | `97.5 MB` | **PASS** |
