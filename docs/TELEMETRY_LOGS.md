@@ -8735,3 +8735,4 @@
 | #8686 | 2026-10-31 09:37:20 | Dynamic Font Loader | `jank_events` | `2.3 count` | **PASS** |
 | #8687 | 2026-10-31 09:37:30 | SVG Morphing Pipeline | `first_contentful_paint` | `888.1 ms` | **PASS** |
 | #8688 | 2026-10-31 09:37:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1483.4 ms` | **PASS** |
+| #8689 | 2026-10-31 09:37:50 | Touch Gesture Dispatcher | `animation_fps` | `68.9 fps` | **PASS** |
