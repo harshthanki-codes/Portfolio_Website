@@ -8633,3 +8633,4 @@
 | #8584 | 2026-10-31 09:20:20 | Viewport Resize Observer | `memory_footprint` | `96.6 MB` | **PASS** |
 | #8585 | 2026-10-31 09:20:30 | Touch Gesture Dispatcher | `first_contentful_paint` | `1246.3 ms` | **PASS** |
 | #8586 | 2026-10-31 09:20:40 | Cache Warmup Service | `time_to_interactive` | `2282.6 ms` | **PASS** |
+| #8587 | 2026-10-31 09:20:50 | Lottie Animation Engine | `time_to_interactive` | `1352.8 ms` | **PASS** |
