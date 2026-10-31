@@ -8626,3 +8626,4 @@
 | #8577 | 2026-10-31 09:19:10 | Scroll Parallax Manager | `gpu_utilization` | `57.9 %` | **PASS** |
 | #8578 | 2026-10-31 09:19:20 | Telemetry Beacon | `bundle_size` | `188.7 KB` | **PASS** |
 | #8579 | 2026-10-31 09:19:30 | Interactive Tooltip Engine | `memory_footprint` | `75.3 MB` | **PASS** |
+| #8580 | 2026-10-31 09:19:40 | 3D Particle Renderer | `frame_render_budget` | `18.7 ms (60fps)` | **PASS** |
