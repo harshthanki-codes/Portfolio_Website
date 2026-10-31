@@ -8432,3 +8432,4 @@
 | #8383 | 2026-10-31 08:46:50 | Background Video Loop | `time_to_interactive` | `2131.8 ms` | **PASS** |
 | #8384 | 2026-10-31 08:47:00 | Touch Gesture Dispatcher | `memory_footprint` | `52.7 MB` | **PASS** |
 | #8385 | 2026-10-31 08:47:10 | Cache Warmup Service | `animation_fps` | `56.6 fps` | **PASS** |
+| #8386 | 2026-10-31 08:47:20 | Progressive Image Loader | `cpu_usage` | `12.1 %` | **PASS** |
