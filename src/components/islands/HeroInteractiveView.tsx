@@ -131,19 +131,19 @@ export const HeroInteractiveView: React.FC = () => {
       </div>
 
       {/* Dynamic Metrics Array */}
-      <div className="grid grid-cols-3 gap-2 sm:gap-2.5 font-mono text-[var(--text-xs)]">
+      <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 font-mono text-[var(--text-xs)]">
         {current.metrics.map((m, idx) => (
           <div 
             key={idx}
             className="p-2 sm:p-2.5 rounded-xl bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors shadow-xs flex flex-col justify-between"
           >
-            <div className="text-[var(--text-tertiary)] text-[9px] sm:text-[10px] uppercase tracking-wider truncate font-semibold">
+            <div className="text-[var(--text-tertiary)] text-[8.5px] sm:text-[10px] uppercase tracking-wider truncate font-semibold">
               {m.label}
             </div>
             <div className="text-[var(--text-primary)] font-bold text-xs sm:text-base my-0.5 tracking-tight truncate">
               {m.value}
             </div>
-            <div className="text-[9px] sm:text-[10px] text-[var(--accent)] font-medium truncate">
+            <div className="text-[8.5px] sm:text-[10px] text-[var(--accent)] font-medium leading-tight line-clamp-2">
               {m.sub}
             </div>
           </div>

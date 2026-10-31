@@ -199,24 +199,24 @@ export const HeroFallbackDiagram: React.FC = () => {
                 </span>
 
                 <div className="min-w-0">
-                  <div className="flex items-center flex-wrap gap-2">
-                    <span className="font-sans font-semibold text-xs sm:text-sm text-[var(--text-primary)] leading-tight whitespace-nowrap">
+                  <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
+                    <span className="font-sans font-semibold text-xs sm:text-sm text-[var(--text-primary)] leading-tight">
                       {tier.name}
                     </span>
 
                     {isNodeActive && (
-                      <span className="inline-flex items-center px-2 py-0.5 text-[9px] font-mono rounded-full bg-[var(--accent)] text-[var(--accent-text)] font-bold tracking-wider shrink-0">
+                      <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[8.5px] sm:text-[9px] font-mono rounded-full bg-[var(--accent)] text-[var(--accent-text)] font-bold tracking-wider shrink-0">
                         RESOLVING
                       </span>
                     )}
                     {isNodeRerouted && (
-                      <span className="inline-flex items-center px-2 py-0.5 text-[9px] font-mono rounded-full bg-white/10 text-white/60 border border-white/10 font-semibold tracking-wider shrink-0">
+                      <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[8.5px] sm:text-[9px] font-mono rounded-full bg-white/10 text-white/60 border border-white/10 font-semibold tracking-wider shrink-0">
                         REROUTED
                       </span>
                     )}
                   </div>
                   
-                  <div className="text-[11px] text-[var(--text-tertiary)] font-sans mt-0.5 leading-snug">
+                  <div className="text-[10px] sm:text-[11px] text-[var(--text-tertiary)] font-sans mt-0.5 leading-snug truncate max-w-[150px] sm:max-w-none">
                     {tier.provider}
                   </div>
                 </div>
