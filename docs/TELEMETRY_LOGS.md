@@ -8453,3 +8453,4 @@
 | #8404 | 2026-10-31 08:50:20 | Background Video Loop | `memory_footprint` | `73.1 MB` | **PASS** |
 | #8405 | 2026-10-31 08:50:30 | Predictive Arc Canvas | `bundle_size` | `146.4 KB` | **PASS** |
 | #8406 | 2026-10-31 08:50:40 | State Sync Daemon | `time_to_interactive` | `1580.2 ms` | **PASS** |
+| #8407 | 2026-10-31 08:50:50 | Cache Warmup Service | `latency` | `5.8 ms` | **PASS** |
