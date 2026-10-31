@@ -9262,3 +9262,4 @@
 | #9213 | 2026-10-31 11:05:10 | 3D Particle Renderer | `jank_events` | `1.2 count` | **PASS** |
 | #9214 | 2026-10-31 11:05:20 | WebGL Shader Compiler | `bundle_size` | `186.9 KB` | **PASS** |
 | #9215 | 2026-10-31 11:05:30 | Lottie Animation Engine | `animation_fps` | `64.9 fps` | **PASS** |
+| #9216 | 2026-10-31 11:05:40 | CSS-in-JS Themer | `cpu_usage` | `34.1 %` | **PASS** |
