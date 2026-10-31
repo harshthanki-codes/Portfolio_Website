@@ -8815,3 +8815,4 @@
 | #8766 | 2026-10-31 09:50:40 | Viewport Resize Observer | `jank_events` | `1.6 count` | **PASS** |
 | #8767 | 2026-10-31 09:50:50 | Lazy Load Optimizer | `animation_fps` | `59.0 fps` | **PASS** |
 | #8768 | 2026-10-31 09:51:00 | WebGL Shader Compiler | `jank_events` | `0.5 count` | **PASS** |
+| #8769 | 2026-10-31 09:51:10 | Predictive Arc Canvas | `latency` | `20.9 ms` | **PASS** |
