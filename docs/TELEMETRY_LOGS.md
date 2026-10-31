@@ -8424,3 +8424,4 @@
 | #8375 | 2026-10-31 08:45:30 | Telemetry Beacon | `memory_footprint` | `111.7 MB` | **PASS** |
 | #8376 | 2026-10-31 08:45:40 | Background Video Loop | `memory_footprint` | `109.1 MB` | **PASS** |
 | #8377 | 2026-10-31 08:45:50 | Telemetry Beacon | `cpu_usage` | `25.5 %` | **PASS** |
+| #8378 | 2026-10-31 08:46:00 | 3D Particle Renderer | `jank_events` | `1.0 count` | **PASS** |
