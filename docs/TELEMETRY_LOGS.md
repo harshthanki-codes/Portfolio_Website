@@ -8989,3 +8989,4 @@
 | #8940 | 2026-10-31 10:19:40 | 3D Particle Renderer | `memory_footprint` | `77.0 MB` | **PASS** |
 | #8941 | 2026-10-31 10:19:50 | Predictive Arc Canvas | `latency` | `21.2 ms` | **PASS** |
 | #8942 | 2026-10-31 10:20:00 | Touch Gesture Dispatcher | `gpu_utilization` | `60.9 %` | **PASS** |
+| #8943 | 2026-10-31 10:20:10 | WebGL Shader Compiler | `time_to_interactive` | `2165.4 ms` | **PASS** |
