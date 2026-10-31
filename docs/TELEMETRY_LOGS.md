@@ -8715,3 +8715,4 @@
 | #8666 | 2026-10-31 09:34:00 | Predictive Arc Canvas | `time_to_interactive` | `2288.1 ms` | **PASS** |
 | #8667 | 2026-10-31 09:34:10 | Lazy Load Optimizer | `jank_events` | `0.9 count` | **PASS** |
 | #8668 | 2026-10-31 09:34:20 | Dynamic Font Loader | `animation_fps` | `55.4 fps` | **PASS** |
+| #8669 | 2026-10-31 09:34:30 | Dynamic Font Loader | `jank_events` | `1.9 count` | **PASS** |
