@@ -8884,3 +8884,4 @@
 | #8835 | 2026-10-31 10:02:10 | Predictive Arc Canvas | `cpu_usage` | `38.8 %` | **PASS** |
 | #8836 | 2026-10-31 10:02:20 | Background Video Loop | `cpu_usage` | `34.6 %` | **PASS** |
 | #8837 | 2026-10-31 10:02:30 | Viewport Resize Observer | `animation_fps` | `60.7 fps` | **PASS** |
+| #8838 | 2026-10-31 10:02:40 | Interactive Tooltip Engine | `frame_render_budget` | `24.9 ms (60fps)` | **PASS** |
