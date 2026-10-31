@@ -8485,3 +8485,4 @@
 | #8436 | 2026-10-31 08:55:40 | Scroll Parallax Manager | `time_to_interactive` | `1643.7 ms` | **PASS** |
 | #8437 | 2026-10-31 08:55:50 | Scroll Parallax Manager | `time_to_interactive` | `2041.8 ms` | **PASS** |
 | #8438 | 2026-10-31 08:56:00 | Viewport Resize Observer | `gpu_utilization` | `40.9 %` | **PASS** |
+| #8439 | 2026-10-31 08:56:10 | SVG Morphing Pipeline | `time_to_interactive` | `1962.3 ms` | **PASS** |
