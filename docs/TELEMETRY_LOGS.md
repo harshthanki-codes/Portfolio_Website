@@ -8337,3 +8337,4 @@
 | #8288 | 2026-10-31 08:31:00 | Dynamic Font Loader | `jank_events` | `2.9 count` | **PASS** |
 | #8289 | 2026-10-31 08:31:10 | WebGL Shader Compiler | `cpu_usage` | `20.0 %` | **PASS** |
 | #8290 | 2026-10-31 08:31:20 | CSS-in-JS Themer | `cpu_usage` | `13.2 %` | **PASS** |
+| #8291 | 2026-10-31 08:31:30 | Lottie Animation Engine | `time_to_interactive` | `2027.6 ms` | **PASS** |
