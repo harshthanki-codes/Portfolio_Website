@@ -8323,3 +8323,4 @@
 | #8274 | 2026-10-31 08:28:40 | Micro Frontend Loader | `memory_footprint` | `52.3 MB` | **PASS** |
 | #8275 | 2026-10-31 08:28:50 | Lottie Animation Engine | `frame_render_budget` | `27.3 ms (60fps)` | **PASS** |
 | #8276 | 2026-10-31 08:29:00 | Background Video Loop | `jank_events` | `2.1 count` | **PASS** |
+| #8277 | 2026-10-31 08:29:10 | State Sync Daemon | `jank_events` | `0.7 count` | **PASS** |
