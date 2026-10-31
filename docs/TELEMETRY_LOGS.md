@@ -8737,3 +8737,4 @@
 | #8688 | 2026-10-31 09:37:40 | Touch Gesture Dispatcher | `first_contentful_paint` | `1483.4 ms` | **PASS** |
 | #8689 | 2026-10-31 09:37:50 | Touch Gesture Dispatcher | `animation_fps` | `68.9 fps` | **PASS** |
 | #8690 | 2026-10-31 09:38:00 | Telemetry Beacon | `memory_footprint` | `88.5 MB` | **PASS** |
+| #8691 | 2026-10-31 09:38:10 | Lottie Animation Engine | `gpu_utilization` | `68.5 %` | **PASS** |
