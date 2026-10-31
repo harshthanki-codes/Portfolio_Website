@@ -8588,3 +8588,4 @@
 | #8539 | 2026-10-31 09:12:50 | SVG Morphing Pipeline | `gpu_utilization` | `48.3 %` | **PASS** |
 | #8540 | 2026-10-31 09:13:00 | Background Video Loop | `jank_events` | `1.6 count` | **PASS** |
 | #8541 | 2026-10-31 09:13:10 | Cache Warmup Service | `cpu_usage` | `17.2 %` | **PASS** |
+| #8542 | 2026-10-31 09:13:20 | SVG Morphing Pipeline | `memory_footprint` | `77.6 MB` | **PASS** |
