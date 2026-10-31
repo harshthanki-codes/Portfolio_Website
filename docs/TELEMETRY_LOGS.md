@@ -8605,3 +8605,4 @@
 | #8556 | 2026-10-31 09:15:40 | Viewport Resize Observer | `time_to_interactive` | `1752.0 ms` | **PASS** |
 | #8557 | 2026-10-31 09:15:50 | Touch Gesture Dispatcher | `latency` | `9.3 ms` | **PASS** |
 | #8558 | 2026-10-31 09:16:00 | 3D Particle Renderer | `memory_footprint` | `85.1 MB` | **PASS** |
+| #8559 | 2026-10-31 09:16:10 | Viewport Resize Observer | `memory_footprint` | `104.0 MB` | **PASS** |
