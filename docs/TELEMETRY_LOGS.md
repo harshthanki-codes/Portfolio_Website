@@ -9316,3 +9316,4 @@
 | #9267 | 2026-10-31 11:14:10 | WebGL Shader Compiler | `bundle_size` | `85.2 KB` | **PASS** |
 | #9268 | 2026-10-31 11:14:20 | Audio Visualizer | `time_to_interactive` | `2050.6 ms` | **PASS** |
 | #9269 | 2026-10-31 11:14:30 | Dynamic Font Loader | `first_contentful_paint` | `1313.5 ms` | **PASS** |
+| #9270 | 2026-10-31 11:14:40 | 3D Particle Renderer | `bundle_size` | `204.0 KB` | **PASS** |
