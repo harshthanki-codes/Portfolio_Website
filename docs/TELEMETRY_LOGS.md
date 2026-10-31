@@ -8922,3 +8922,4 @@
 | #8873 | 2026-10-31 10:08:30 | Progressive Image Loader | `jank_events` | `0.0 count` | **PASS** |
 | #8874 | 2026-10-31 10:08:40 | Micro Frontend Loader | `bundle_size` | `227.4 KB` | **PASS** |
 | #8875 | 2026-10-31 10:08:50 | Viewport Resize Observer | `cpu_usage` | `44.0 %` | **PASS** |
+| #8876 | 2026-10-31 10:09:00 | Viewport Resize Observer | `latency` | `24.9 ms` | **PASS** |
