@@ -9196,3 +9196,4 @@
 | #9147 | 2026-10-31 10:54:10 | State Sync Daemon | `latency` | `17.5 ms` | **PASS** |
 | #9148 | 2026-10-31 10:54:20 | Responsive Grid System | `time_to_interactive` | `2122.4 ms` | **PASS** |
 | #9149 | 2026-10-31 10:54:30 | Cache Warmup Service | `frame_render_budget` | `21.3 ms (60fps)` | **PASS** |
+| #9150 | 2026-10-31 10:54:40 | Cache Warmup Service | `cpu_usage` | `40.3 %` | **PASS** |
