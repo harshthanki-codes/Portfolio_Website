@@ -8999,3 +8999,4 @@
 | #8950 | 2026-10-31 10:21:20 | Audio Visualizer | `cpu_usage` | `16.0 %` | **PASS** |
 | #8951 | 2026-10-31 10:21:30 | Audio Visualizer | `animation_fps` | `69.5 fps` | **PASS** |
 | #8952 | 2026-10-31 10:21:40 | Lazy Load Optimizer | `animation_fps` | `61.5 fps` | **PASS** |
+| #8953 | 2026-10-31 10:21:50 | Lottie Animation Engine | `jank_events` | `0.4 count` | **PASS** |
