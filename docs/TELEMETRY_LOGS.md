@@ -8192,3 +8192,4 @@
 | #8143 | 2026-10-31 08:06:50 | Audio Visualizer | `time_to_interactive` | `1699.6 ms` | **PASS** |
 | #8144 | 2026-10-31 08:07:00 | Audio Visualizer | `memory_footprint` | `71.9 MB` | **PASS** |
 | #8145 | 2026-10-31 08:07:10 | Telemetry Beacon | `cpu_usage` | `20.5 %` | **PASS** |
+| #8146 | 2026-10-31 08:07:20 | Micro Frontend Loader | `gpu_utilization` | `47.5 %` | **PASS** |
