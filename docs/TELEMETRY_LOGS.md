@@ -8387,3 +8387,4 @@
 | #8338 | 2026-10-31 08:39:20 | Micro Frontend Loader | `gpu_utilization` | `56.5 %` | **PASS** |
 | #8339 | 2026-10-31 08:39:30 | Dynamic Font Loader | `jank_events` | `1.4 count` | **PASS** |
 | #8340 | 2026-10-31 08:39:40 | 3D Particle Renderer | `time_to_interactive` | `1955.3 ms` | **PASS** |
+| #8341 | 2026-10-31 08:39:50 | Background Video Loop | `jank_events` | `1.1 count` | **PASS** |
