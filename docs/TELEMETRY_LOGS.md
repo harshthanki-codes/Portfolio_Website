@@ -8619,3 +8619,4 @@
 | #8570 | 2026-10-31 09:18:00 | Lottie Animation Engine | `memory_footprint` | `92.9 MB` | **PASS** |
 | #8571 | 2026-10-31 09:18:10 | Cache Warmup Service | `first_contentful_paint` | `1086.4 ms` | **PASS** |
 | #8572 | 2026-10-31 09:18:20 | Audio Visualizer | `memory_footprint` | `71.8 MB` | **PASS** |
+| #8573 | 2026-10-31 09:18:30 | Telemetry Beacon | `gpu_utilization` | `45.1 %` | **PASS** |
