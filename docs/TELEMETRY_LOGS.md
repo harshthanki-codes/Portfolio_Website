@@ -8529,3 +8529,4 @@
 | #8480 | 2026-10-31 09:03:00 | Progressive Image Loader | `memory_footprint` | `105.0 MB` | **PASS** |
 | #8481 | 2026-10-31 09:03:10 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
 | #8482 | 2026-10-31 09:03:20 | Background Video Loop | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
+| #8483 | 2026-10-31 09:03:30 | WebGL Shader Compiler | `latency` | `6.6 ms` | **PASS** |
