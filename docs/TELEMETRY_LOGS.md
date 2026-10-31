@@ -8520,3 +8520,4 @@
 | #8471 | 2026-10-31 09:01:30 | Scroll Parallax Manager | `gpu_utilization` | `42.6 %` | **PASS** |
 | #8472 | 2026-10-31 09:01:40 | Progressive Image Loader | `gpu_utilization` | `38.1 %` | **PASS** |
 | #8473 | 2026-10-31 09:01:50 | Dynamic Font Loader | `animation_fps` | `59.7 fps` | **PASS** |
+| #8474 | 2026-10-31 09:02:00 | Dynamic Font Loader | `first_contentful_paint` | `1471.1 ms` | **PASS** |
