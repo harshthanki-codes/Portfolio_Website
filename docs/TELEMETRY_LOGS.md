@@ -9217,3 +9217,4 @@
 | #9168 | 2026-10-31 10:57:40 | Background Video Loop | `time_to_interactive` | `1973.5 ms` | **PASS** |
 | #9169 | 2026-10-31 10:57:50 | Scroll Parallax Manager | `time_to_interactive` | `2488.4 ms` | **PASS** |
 | #9170 | 2026-10-31 10:58:00 | Viewport Resize Observer | `first_contentful_paint` | `995.9 ms` | **PASS** |
+| #9171 | 2026-10-31 10:58:10 | Viewport Resize Observer | `memory_footprint` | `66.2 MB` | **PASS** |
