@@ -8892,3 +8892,4 @@
 | #8843 | 2026-10-31 10:03:30 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
 | #8844 | 2026-10-31 10:03:40 | Touch Gesture Dispatcher | `gpu_utilization` | `35.6 %` | **PASS** |
 | #8845 | 2026-10-31 10:03:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1309.9 ms` | **PASS** |
+| #8846 | 2026-10-31 10:04:00 | State Sync Daemon | `time_to_interactive` | `1574.0 ms` | **PASS** |
