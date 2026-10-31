@@ -8281,3 +8281,4 @@
 | #8232 | 2026-10-31 08:21:40 | 3D Particle Renderer | `frame_render_budget` | `16.7 ms (60fps)` | **PASS** |
 | #8233 | 2026-10-31 08:21:50 | CSS-in-JS Themer | `memory_footprint` | `96.5 MB` | **PASS** |
 | #8234 | 2026-10-31 08:22:00 | Progressive Image Loader | `animation_fps` | `69.6 fps` | **PASS** |
+| #8235 | 2026-10-31 08:22:10 | Viewport Resize Observer | `time_to_interactive` | `1688.1 ms` | **PASS** |
