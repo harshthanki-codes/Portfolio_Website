@@ -8830,3 +8830,4 @@
 | #8781 | 2026-10-31 09:53:10 | CSS-in-JS Themer | `jank_events` | `1.5 count` | **PASS** |
 | #8782 | 2026-10-31 09:53:20 | Micro Frontend Loader | `latency` | `18.9 ms` | **PASS** |
 | #8783 | 2026-10-31 09:53:30 | Telemetry Beacon | `first_contentful_paint` | `1044.8 ms` | **PASS** |
+| #8784 | 2026-10-31 09:53:40 | Background Video Loop | `gpu_utilization` | `56.0 %` | **PASS** |
