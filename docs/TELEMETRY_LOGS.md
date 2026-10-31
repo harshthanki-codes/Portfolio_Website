@@ -8411,3 +8411,4 @@
 | #8362 | 2026-10-31 08:43:20 | SVG Morphing Pipeline | `animation_fps` | `63.3 fps` | **PASS** |
 | #8363 | 2026-10-31 08:43:30 | Predictive Arc Canvas | `memory_footprint` | `81.5 MB` | **PASS** |
 | #8364 | 2026-10-31 08:43:40 | CSS-in-JS Themer | `frame_render_budget` | `17.9 ms (60fps)` | **PASS** |
+| #8365 | 2026-10-31 08:43:50 | SVG Morphing Pipeline | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
