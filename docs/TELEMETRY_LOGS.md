@@ -9121,3 +9121,4 @@
 | #9072 | 2026-10-31 10:41:40 | Telemetry Beacon | `first_contentful_paint` | `1104.9 ms` | **PASS** |
 | #9073 | 2026-10-31 10:41:50 | Background Video Loop | `memory_footprint` | `119.5 MB` | **PASS** |
 | #9074 | 2026-10-31 10:42:00 | Audio Visualizer | `first_contentful_paint` | `1363.5 ms` | **PASS** |
+| #9075 | 2026-10-31 10:42:10 | Progressive Image Loader | `cpu_usage` | `42.2 %` | **PASS** |
