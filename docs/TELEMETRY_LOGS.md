@@ -8674,3 +8674,4 @@
 | #8625 | 2026-10-31 09:27:10 | Scroll Parallax Manager | `gpu_utilization` | `62.4 %` | **PASS** |
 | #8626 | 2026-10-31 09:27:20 | Touch Gesture Dispatcher | `animation_fps` | `62.9 fps` | **PASS** |
 | #8627 | 2026-10-31 09:27:30 | Predictive Arc Canvas | `animation_fps` | `65.2 fps` | **PASS** |
+| #8628 | 2026-10-31 09:27:40 | Cache Warmup Service | `time_to_interactive` | `2046.3 ms` | **PASS** |
