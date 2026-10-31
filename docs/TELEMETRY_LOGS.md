@@ -8196,3 +8196,4 @@
 | #8147 | 2026-10-31 08:07:30 | Micro Frontend Loader | `latency` | `20.8 ms` | **PASS** |
 | #8148 | 2026-10-31 08:07:40 | Cache Warmup Service | `frame_render_budget` | `22.7 ms (60fps)` | **PASS** |
 | #8149 | 2026-10-31 08:07:50 | State Sync Daemon | `frame_render_budget` | `23.7 ms (60fps)` | **PASS** |
+| #8150 | 2026-10-31 08:08:00 | Scroll Parallax Manager | `gpu_utilization` | `64.1 %` | **PASS** |
