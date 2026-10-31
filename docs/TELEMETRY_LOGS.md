@@ -8891,3 +8891,4 @@
 | #8842 | 2026-10-31 10:03:20 | Background Video Loop | `cpu_usage` | `31.4 %` | **PASS** |
 | #8843 | 2026-10-31 10:03:30 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
 | #8844 | 2026-10-31 10:03:40 | Touch Gesture Dispatcher | `gpu_utilization` | `35.6 %` | **PASS** |
+| #8845 | 2026-10-31 10:03:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1309.9 ms` | **PASS** |
