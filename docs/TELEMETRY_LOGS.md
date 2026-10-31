@@ -8614,3 +8614,4 @@
 | #8565 | 2026-10-31 09:17:10 | Progressive Image Loader | `jank_events` | `1.6 count` | **PASS** |
 | #8566 | 2026-10-31 09:17:20 | SVG Morphing Pipeline | `time_to_interactive` | `2158.1 ms` | **PASS** |
 | #8567 | 2026-10-31 09:17:30 | 3D Particle Renderer | `frame_render_budget` | `27.3 ms (60fps)` | **PASS** |
+| #8568 | 2026-10-31 09:17:40 | Progressive Image Loader | `time_to_interactive` | `2495.5 ms` | **PASS** |
