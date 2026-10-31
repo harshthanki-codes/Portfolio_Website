@@ -9259,3 +9259,4 @@
 | #9210 | 2026-10-31 11:04:40 | Micro Frontend Loader | `memory_footprint` | `93.1 MB` | **PASS** |
 | #9211 | 2026-10-31 11:04:50 | 3D Particle Renderer | `animation_fps` | `58.8 fps` | **PASS** |
 | #9212 | 2026-10-31 11:05:00 | Viewport Resize Observer | `cpu_usage` | `25.0 %` | **PASS** |
+| #9213 | 2026-10-31 11:05:10 | 3D Particle Renderer | `jank_events` | `1.2 count` | **PASS** |
