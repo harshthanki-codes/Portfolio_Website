@@ -9117,3 +9117,4 @@
 | #9068 | 2026-10-31 10:41:00 | Background Video Loop | `jank_events` | `2.6 count` | **PASS** |
 | #9069 | 2026-10-31 10:41:10 | SVG Morphing Pipeline | `jank_events` | `2.2 count` | **PASS** |
 | #9070 | 2026-10-31 10:41:20 | Progressive Image Loader | `time_to_interactive` | `1460.0 ms` | **PASS** |
+| #9071 | 2026-10-31 10:41:30 | Progressive Image Loader | `frame_render_budget` | `29.8 ms (60fps)` | **PASS** |
