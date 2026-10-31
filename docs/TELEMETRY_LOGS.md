@@ -9098,3 +9098,4 @@
 | #9049 | 2026-10-31 10:37:50 | State Sync Daemon | `memory_footprint` | `81.8 MB` | **PASS** |
 | #9050 | 2026-10-31 10:38:00 | Audio Visualizer | `memory_footprint` | `88.9 MB` | **PASS** |
 | #9051 | 2026-10-31 10:38:10 | Lottie Animation Engine | `cpu_usage` | `30.5 %` | **PASS** |
+| #9052 | 2026-10-31 10:38:20 | Lottie Animation Engine | `animation_fps` | `61.4 fps` | **PASS** |
