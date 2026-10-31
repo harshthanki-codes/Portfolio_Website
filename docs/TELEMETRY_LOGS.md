@@ -8422,3 +8422,4 @@
 | #8373 | 2026-10-31 08:45:10 | Touch Gesture Dispatcher | `latency` | `23.6 ms` | **PASS** |
 | #8374 | 2026-10-31 08:45:20 | Viewport Resize Observer | `jank_events` | `0.8 count` | **PASS** |
 | #8375 | 2026-10-31 08:45:30 | Telemetry Beacon | `memory_footprint` | `111.7 MB` | **PASS** |
+| #8376 | 2026-10-31 08:45:40 | Background Video Loop | `memory_footprint` | `109.1 MB` | **PASS** |
