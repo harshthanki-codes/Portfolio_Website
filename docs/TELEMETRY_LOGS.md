@@ -8404,3 +8404,4 @@
 | #8355 | 2026-10-31 08:42:10 | Progressive Image Loader | `cpu_usage` | `33.7 %` | **PASS** |
 | #8356 | 2026-10-31 08:42:20 | Dynamic Font Loader | `animation_fps` | `69.3 fps` | **PASS** |
 | #8357 | 2026-10-31 08:42:30 | Viewport Resize Observer | `memory_footprint` | `113.0 MB` | **PASS** |
+| #8358 | 2026-10-31 08:42:40 | Background Video Loop | `time_to_interactive` | `2326.3 ms` | **PASS** |
