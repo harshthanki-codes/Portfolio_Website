@@ -8975,3 +8975,4 @@
 | #8926 | 2026-10-31 10:17:20 | CSS-in-JS Themer | `time_to_interactive` | `1776.8 ms` | **PASS** |
 | #8927 | 2026-10-31 10:17:30 | Audio Visualizer | `memory_footprint` | `45.7 MB` | **PASS** |
 | #8928 | 2026-10-31 10:17:40 | 3D Particle Renderer | `memory_footprint` | `65.6 MB` | **PASS** |
+| #8929 | 2026-10-31 10:17:50 | Background Video Loop | `memory_footprint` | `95.0 MB` | **PASS** |
