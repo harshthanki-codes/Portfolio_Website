@@ -8306,3 +8306,4 @@
 | #8257 | 2026-10-31 08:25:50 | Lottie Animation Engine | `bundle_size` | `203.5 KB` | **PASS** |
 | #8258 | 2026-10-31 08:26:00 | CSS-in-JS Themer | `time_to_interactive` | `1595.8 ms` | **PASS** |
 | #8259 | 2026-10-31 08:26:10 | Micro Frontend Loader | `jank_events` | `0.1 count` | **PASS** |
+| #8260 | 2026-10-31 08:26:20 | Cache Warmup Service | `animation_fps` | `60.9 fps` | **PASS** |
