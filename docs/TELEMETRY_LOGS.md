@@ -8645,3 +8645,4 @@
 | #8596 | 2026-10-31 09:22:20 | Scroll Parallax Manager | `memory_footprint` | `103.2 MB` | **PASS** |
 | #8597 | 2026-10-31 09:22:30 | 3D Particle Renderer | `jank_events` | `0.5 count` | **PASS** |
 | #8598 | 2026-10-31 09:22:40 | Viewport Resize Observer | `latency` | `10.5 ms` | **PASS** |
+| #8599 | 2026-10-31 09:22:50 | Cache Warmup Service | `animation_fps` | `65.4 fps` | **PASS** |
