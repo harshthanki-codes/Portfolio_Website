@@ -8688,3 +8688,4 @@
 | #8639 | 2026-10-31 09:29:30 | Audio Visualizer | `time_to_interactive` | `1971.1 ms` | **PASS** |
 | #8640 | 2026-10-31 09:29:40 | Background Video Loop | `bundle_size` | `230.1 KB` | **PASS** |
 | #8641 | 2026-10-31 09:29:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1376.6 ms` | **PASS** |
+| #8642 | 2026-10-31 09:30:00 | 3D Particle Renderer | `first_contentful_paint` | `1456.7 ms` | **PASS** |
