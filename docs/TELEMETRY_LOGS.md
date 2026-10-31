@@ -8179,3 +8179,4 @@
 | #8130 | 2026-10-31 08:04:40 | Scroll Parallax Manager | `time_to_interactive` | `1509.8 ms` | **PASS** |
 | #8131 | 2026-10-31 08:04:50 | State Sync Daemon | `frame_render_budget` | `20.4 ms (60fps)` | **PASS** |
 | #8132 | 2026-10-31 08:05:00 | State Sync Daemon | `gpu_utilization` | `48.6 %` | **PASS** |
+| #8133 | 2026-10-31 08:05:10 | 3D Particle Renderer | `first_contentful_paint` | `1011.2 ms` | **PASS** |
