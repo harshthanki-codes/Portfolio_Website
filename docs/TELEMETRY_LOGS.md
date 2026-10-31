@@ -8877,3 +8877,4 @@
 | #8828 | 2026-10-31 10:01:00 | Lottie Animation Engine | `jank_events` | `1.1 count` | **PASS** |
 | #8829 | 2026-10-31 10:01:10 | 3D Particle Renderer | `latency` | `19.9 ms` | **PASS** |
 | #8830 | 2026-10-31 10:01:20 | Progressive Image Loader | `time_to_interactive` | `2063.9 ms` | **PASS** |
+| #8831 | 2026-10-31 10:01:30 | Progressive Image Loader | `first_contentful_paint` | `1118.5 ms` | **PASS** |
