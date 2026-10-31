@@ -8904,3 +8904,4 @@
 | #8855 | 2026-10-31 10:05:30 | Background Video Loop | `cpu_usage` | `10.2 %` | **PASS** |
 | #8856 | 2026-10-31 10:05:40 | CSS-in-JS Themer | `bundle_size` | `242.4 KB` | **PASS** |
 | #8857 | 2026-10-31 10:05:50 | CSS-in-JS Themer | `bundle_size` | `89.7 KB` | **PASS** |
+| #8858 | 2026-10-31 10:06:00 | Scroll Parallax Manager | `jank_events` | `1.9 count` | **PASS** |
