@@ -8329,3 +8329,4 @@
 | #8280 | 2026-10-31 08:29:40 | 3D Particle Renderer | `time_to_interactive` | `2097.9 ms` | **PASS** |
 | #8281 | 2026-10-31 08:29:50 | Lottie Animation Engine | `gpu_utilization` | `69.2 %` | **PASS** |
 | #8282 | 2026-10-31 08:30:00 | SVG Morphing Pipeline | `latency` | `19.7 ms` | **PASS** |
+| #8283 | 2026-10-31 08:30:10 | SVG Morphing Pipeline | `cpu_usage` | `34.0 %` | **PASS** |
