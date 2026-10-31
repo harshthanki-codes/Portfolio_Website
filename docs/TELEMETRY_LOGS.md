@@ -8203,3 +8203,4 @@
 | #8154 | 2026-10-31 08:08:40 | 3D Particle Renderer | `animation_fps` | `68.9 fps` | **PASS** |
 | #8155 | 2026-10-31 08:08:50 | CSS-in-JS Themer | `frame_render_budget` | `23.9 ms (60fps)` | **PASS** |
 | #8156 | 2026-10-31 08:09:00 | Cache Warmup Service | `first_contentful_paint` | `1184.4 ms` | **PASS** |
+| #8157 | 2026-10-31 08:09:10 | CSS-in-JS Themer | `memory_footprint` | `96.0 MB` | **PASS** |
