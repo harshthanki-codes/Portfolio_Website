@@ -8731,3 +8731,4 @@
 | #8682 | 2026-10-31 09:36:40 | Viewport Resize Observer | `cpu_usage` | `38.3 %` | **PASS** |
 | #8683 | 2026-10-31 09:36:50 | Responsive Grid System | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
 | #8684 | 2026-10-31 09:37:00 | Scroll Parallax Manager | `time_to_interactive` | `2269.8 ms` | **PASS** |
+| #8685 | 2026-10-31 09:37:10 | Interactive Tooltip Engine | `gpu_utilization` | `30.9 %` | **PASS** |
