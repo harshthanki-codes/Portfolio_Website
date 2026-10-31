@@ -9300,3 +9300,4 @@
 | #9251 | 2026-10-31 11:11:30 | Lottie Animation Engine | `gpu_utilization` | `64.1 %` | **PASS** |
 | #9252 | 2026-10-31 11:11:40 | CSS-in-JS Themer | `cpu_usage` | `12.5 %` | **PASS** |
 | #9253 | 2026-10-31 11:11:50 | Viewport Resize Observer | `first_contentful_paint` | `1135.9 ms` | **PASS** |
+| #9254 | 2026-10-31 11:12:00 | SVG Morphing Pipeline | `gpu_utilization` | `24.3 %` | **PASS** |
