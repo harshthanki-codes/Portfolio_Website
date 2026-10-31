@@ -8643,3 +8643,4 @@
 | #8594 | 2026-10-31 09:22:00 | CSS-in-JS Themer | `frame_render_budget` | `23.4 ms (60fps)` | **PASS** |
 | #8595 | 2026-10-31 09:22:10 | 3D Particle Renderer | `cpu_usage` | `32.4 %` | **PASS** |
 | #8596 | 2026-10-31 09:22:20 | Scroll Parallax Manager | `memory_footprint` | `103.2 MB` | **PASS** |
+| #8597 | 2026-10-31 09:22:30 | 3D Particle Renderer | `jank_events` | `0.5 count` | **PASS** |
