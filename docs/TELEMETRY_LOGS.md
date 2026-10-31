@@ -8675,3 +8675,4 @@
 | #8626 | 2026-10-31 09:27:20 | Touch Gesture Dispatcher | `animation_fps` | `62.9 fps` | **PASS** |
 | #8627 | 2026-10-31 09:27:30 | Predictive Arc Canvas | `animation_fps` | `65.2 fps` | **PASS** |
 | #8628 | 2026-10-31 09:27:40 | Cache Warmup Service | `time_to_interactive` | `2046.3 ms` | **PASS** |
+| #8629 | 2026-10-31 09:27:50 | Touch Gesture Dispatcher | `memory_footprint` | `84.3 MB` | **PASS** |
