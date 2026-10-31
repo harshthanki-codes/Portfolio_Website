@@ -8917,3 +8917,4 @@
 | #8868 | 2026-10-31 10:07:40 | Viewport Resize Observer | `time_to_interactive` | `1806.2 ms` | **PASS** |
 | #8869 | 2026-10-31 10:07:50 | Scroll Parallax Manager | `gpu_utilization` | `23.6 %` | **PASS** |
 | #8870 | 2026-10-31 10:08:00 | Lottie Animation Engine | `jank_events` | `2.1 count` | **PASS** |
+| #8871 | 2026-10-31 10:08:10 | Viewport Resize Observer | `first_contentful_paint` | `1404.8 ms` | **PASS** |
