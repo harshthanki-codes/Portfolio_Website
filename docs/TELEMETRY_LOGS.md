@@ -8317,3 +8317,4 @@
 | #8268 | 2026-10-31 08:27:40 | State Sync Daemon | `animation_fps` | `68.4 fps` | **PASS** |
 | #8269 | 2026-10-31 08:27:50 | Lottie Animation Engine | `gpu_utilization` | `40.3 %` | **PASS** |
 | #8270 | 2026-10-31 08:28:00 | Micro Frontend Loader | `memory_footprint` | `51.9 MB` | **PASS** |
+| #8271 | 2026-10-31 08:28:10 | Dynamic Font Loader | `gpu_utilization` | `66.4 %` | **PASS** |
