@@ -9033,3 +9033,4 @@
 | #8984 | 2026-10-31 10:27:00 | Micro Frontend Loader | `animation_fps` | `70.2 fps` | **PASS** |
 | #8985 | 2026-10-31 10:27:10 | Telemetry Beacon | `memory_footprint` | `66.5 MB` | **PASS** |
 | #8986 | 2026-10-31 10:27:20 | Dynamic Font Loader | `time_to_interactive` | `1739.9 ms` | **PASS** |
+| #8987 | 2026-10-31 10:27:30 | Dynamic Font Loader | `gpu_utilization` | `50.7 %` | **PASS** |
