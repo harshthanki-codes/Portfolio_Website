@@ -8373,3 +8373,4 @@
 | #8324 | 2026-10-31 08:37:00 | Responsive Grid System | `time_to_interactive` | `1259.6 ms` | **PASS** |
 | #8325 | 2026-10-31 08:37:10 | SVG Morphing Pipeline | `cpu_usage` | `33.7 %` | **PASS** |
 | #8326 | 2026-10-31 08:37:20 | Lazy Load Optimizer | `jank_events` | `2.0 count` | **PASS** |
+| #8327 | 2026-10-31 08:37:30 | Background Video Loop | `time_to_interactive` | `2126.3 ms` | **PASS** |
