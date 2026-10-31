@@ -8699,3 +8699,4 @@
 | #8650 | 2026-10-31 09:31:20 | SVG Morphing Pipeline | `time_to_interactive` | `2399.5 ms` | **PASS** |
 | #8651 | 2026-10-31 09:31:30 | Background Video Loop | `first_contentful_paint` | `913.3 ms` | **PASS** |
 | #8652 | 2026-10-31 09:31:40 | CSS-in-JS Themer | `frame_render_budget` | `17.1 ms (60fps)` | **PASS** |
+| #8653 | 2026-10-31 09:31:50 | Telemetry Beacon | `frame_render_budget` | `23.3 ms (60fps)` | **PASS** |
