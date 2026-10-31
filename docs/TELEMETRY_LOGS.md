@@ -8389,3 +8389,4 @@
 | #8340 | 2026-10-31 08:39:40 | 3D Particle Renderer | `time_to_interactive` | `1955.3 ms` | **PASS** |
 | #8341 | 2026-10-31 08:39:50 | Background Video Loop | `jank_events` | `1.1 count` | **PASS** |
 | #8342 | 2026-10-31 08:40:00 | CSS-in-JS Themer | `gpu_utilization` | `25.8 %` | **PASS** |
+| #8343 | 2026-10-31 08:40:10 | Lazy Load Optimizer | `cpu_usage` | `15.1 %` | **PASS** |
