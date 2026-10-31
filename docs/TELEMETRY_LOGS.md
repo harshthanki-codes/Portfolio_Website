@@ -8575,3 +8575,4 @@
 | #8526 | 2026-10-31 09:10:40 | Lottie Animation Engine | `bundle_size` | `155.2 KB` | **PASS** |
 | #8527 | 2026-10-31 09:10:50 | Telemetry Beacon | `cpu_usage` | `18.0 %` | **PASS** |
 | #8528 | 2026-10-31 09:11:00 | Dynamic Font Loader | `frame_render_budget` | `26.0 ms (60fps)` | **PASS** |
+| #8529 | 2026-10-31 09:11:10 | Dynamic Font Loader | `gpu_utilization` | `44.5 %` | **PASS** |
