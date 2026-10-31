@@ -8230,3 +8230,4 @@
 | #8181 | 2026-10-31 08:13:10 | WebGL Shader Compiler | `gpu_utilization` | `51.8 %` | **PASS** |
 | #8182 | 2026-10-31 08:13:20 | Audio Visualizer | `first_contentful_paint` | `1435.8 ms` | **PASS** |
 | #8183 | 2026-10-31 08:13:30 | Responsive Grid System | `first_contentful_paint` | `1020.2 ms` | **PASS** |
+| #8184 | 2026-10-31 08:13:40 | 3D Particle Renderer | `frame_render_budget` | `22.3 ms (60fps)` | **PASS** |
