@@ -8566,3 +8566,4 @@
 | #8517 | 2026-10-31 09:09:10 | Viewport Resize Observer | `first_contentful_paint` | `1304.9 ms` | **PASS** |
 | #8518 | 2026-10-31 09:09:20 | Progressive Image Loader | `gpu_utilization` | `48.2 %` | **PASS** |
 | #8519 | 2026-10-31 09:09:30 | Telemetry Beacon | `gpu_utilization` | `52.5 %` | **PASS** |
+| #8520 | 2026-10-31 09:09:40 | Cache Warmup Service | `cpu_usage` | `42.0 %` | **PASS** |
