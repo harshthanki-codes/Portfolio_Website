@@ -9343,3 +9343,4 @@
 | #9294 | 2026-10-31 11:18:40 | Predictive Arc Canvas | `time_to_interactive` | `1893.8 ms` | **PASS** |
 | #9295 | 2026-10-31 11:18:50 | Dynamic Font Loader | `jank_events` | `3.0 count` | **PASS** |
 | #9296 | 2026-10-31 11:19:00 | State Sync Daemon | `memory_footprint` | `79.6 MB` | **PASS** |
+| #9297 | 2026-10-31 11:19:10 | Lottie Animation Engine | `time_to_interactive` | `2300.7 ms` | **PASS** |
