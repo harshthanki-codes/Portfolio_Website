@@ -8328,3 +8328,4 @@
 | #8279 | 2026-10-31 08:29:30 | 3D Particle Renderer | `animation_fps` | `71.6 fps` | **PASS** |
 | #8280 | 2026-10-31 08:29:40 | 3D Particle Renderer | `time_to_interactive` | `2097.9 ms` | **PASS** |
 | #8281 | 2026-10-31 08:29:50 | Lottie Animation Engine | `gpu_utilization` | `69.2 %` | **PASS** |
+| #8282 | 2026-10-31 08:30:00 | SVG Morphing Pipeline | `latency` | `19.7 ms` | **PASS** |
