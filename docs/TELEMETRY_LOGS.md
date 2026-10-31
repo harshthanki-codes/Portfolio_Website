@@ -9130,3 +9130,4 @@
 | #9081 | 2026-10-31 10:43:10 | Viewport Resize Observer | `cpu_usage` | `31.5 %` | **PASS** |
 | #9082 | 2026-10-31 10:43:20 | Dynamic Font Loader | `animation_fps` | `63.2 fps` | **PASS** |
 | #9083 | 2026-10-31 10:43:30 | 3D Particle Renderer | `time_to_interactive` | `2161.3 ms` | **PASS** |
+| #9084 | 2026-10-31 10:43:40 | Viewport Resize Observer | `memory_footprint` | `109.2 MB` | **PASS** |
