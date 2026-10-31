@@ -8827,3 +8827,4 @@
 | #8778 | 2026-10-31 09:52:40 | Dynamic Font Loader | `bundle_size` | `86.0 KB` | **PASS** |
 | #8779 | 2026-10-31 09:52:50 | Predictive Arc Canvas | `animation_fps` | `59.7 fps` | **PASS** |
 | #8780 | 2026-10-31 09:53:00 | Predictive Arc Canvas | `first_contentful_paint` | `1266.0 ms` | **PASS** |
+| #8781 | 2026-10-31 09:53:10 | CSS-in-JS Themer | `jank_events` | `1.5 count` | **PASS** |
