@@ -8325,3 +8325,4 @@
 | #8276 | 2026-10-31 08:29:00 | Background Video Loop | `jank_events` | `2.1 count` | **PASS** |
 | #8277 | 2026-10-31 08:29:10 | State Sync Daemon | `jank_events` | `0.7 count` | **PASS** |
 | #8278 | 2026-10-31 08:29:20 | SVG Morphing Pipeline | `latency` | `24.1 ms` | **PASS** |
+| #8279 | 2026-10-31 08:29:30 | 3D Particle Renderer | `animation_fps` | `71.6 fps` | **PASS** |
