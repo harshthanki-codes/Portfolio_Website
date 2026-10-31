@@ -8852,3 +8852,4 @@
 | #8803 | 2026-10-31 09:56:50 | Lottie Animation Engine | `gpu_utilization` | `41.8 %` | **PASS** |
 | #8804 | 2026-10-31 09:57:00 | Touch Gesture Dispatcher | `cpu_usage` | `23.7 %` | **PASS** |
 | #8805 | 2026-10-31 09:57:10 | Progressive Image Loader | `frame_render_budget` | `16.8 ms (60fps)` | **PASS** |
+| #8806 | 2026-10-31 09:57:20 | Progressive Image Loader | `gpu_utilization` | `46.8 %` | **PASS** |
