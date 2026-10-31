@@ -8770,3 +8770,4 @@
 | #8721 | 2026-10-31 09:43:10 | Background Video Loop | `animation_fps` | `73.5 fps` | **PASS** |
 | #8722 | 2026-10-31 09:43:20 | Viewport Resize Observer | `latency` | `16.8 ms` | **PASS** |
 | #8723 | 2026-10-31 09:43:30 | Telemetry Beacon | `jank_events` | `1.4 count` | **PASS** |
+| #8724 | 2026-10-31 09:43:40 | Lazy Load Optimizer | `animation_fps` | `63.0 fps` | **PASS** |
