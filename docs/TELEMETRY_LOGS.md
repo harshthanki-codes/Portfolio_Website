@@ -8906,3 +8906,4 @@
 | #8857 | 2026-10-31 10:05:50 | CSS-in-JS Themer | `bundle_size` | `89.7 KB` | **PASS** |
 | #8858 | 2026-10-31 10:06:00 | Scroll Parallax Manager | `jank_events` | `1.9 count` | **PASS** |
 | #8859 | 2026-10-31 10:06:10 | Cache Warmup Service | `cpu_usage` | `44.6 %` | **PASS** |
+| #8860 | 2026-10-31 10:06:20 | CSS-in-JS Themer | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
