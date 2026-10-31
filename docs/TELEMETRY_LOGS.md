@@ -9220,3 +9220,4 @@
 | #9171 | 2026-10-31 10:58:10 | Viewport Resize Observer | `memory_footprint` | `66.2 MB` | **PASS** |
 | #9172 | 2026-10-31 10:58:20 | Scroll Parallax Manager | `memory_footprint` | `52.4 MB` | **PASS** |
 | #9173 | 2026-10-31 10:58:30 | SVG Morphing Pipeline | `bundle_size` | `85.6 KB` | **PASS** |
+| #9174 | 2026-10-31 10:58:40 | Lottie Animation Engine | `latency` | `17.2 ms` | **PASS** |
