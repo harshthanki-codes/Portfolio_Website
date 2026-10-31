@@ -8528,3 +8528,4 @@
 | #8479 | 2026-10-31 09:02:50 | Audio Visualizer | `frame_render_budget` | `28.7 ms (60fps)` | **PASS** |
 | #8480 | 2026-10-31 09:03:00 | Progressive Image Loader | `memory_footprint` | `105.0 MB` | **PASS** |
 | #8481 | 2026-10-31 09:03:10 | Telemetry Beacon | `jank_events` | `0.7 count` | **PASS** |
+| #8482 | 2026-10-31 09:03:20 | Background Video Loop | `frame_render_budget` | `23.8 ms (60fps)` | **PASS** |
