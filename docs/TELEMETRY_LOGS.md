@@ -9027,3 +9027,4 @@
 | #8978 | 2026-10-31 10:26:00 | State Sync Daemon | `gpu_utilization` | `51.9 %` | **PASS** |
 | #8979 | 2026-10-31 10:26:10 | 3D Particle Renderer | `first_contentful_paint` | `889.3 ms` | **PASS** |
 | #8980 | 2026-10-31 10:26:20 | Predictive Arc Canvas | `gpu_utilization` | `25.5 %` | **PASS** |
+| #8981 | 2026-10-31 10:26:30 | Background Video Loop | `memory_footprint` | `58.6 MB` | **PASS** |
