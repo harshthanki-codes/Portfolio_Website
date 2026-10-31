@@ -8646,3 +8646,4 @@
 | #8597 | 2026-10-31 09:22:30 | 3D Particle Renderer | `jank_events` | `0.5 count` | **PASS** |
 | #8598 | 2026-10-31 09:22:40 | Viewport Resize Observer | `latency` | `10.5 ms` | **PASS** |
 | #8599 | 2026-10-31 09:22:50 | Cache Warmup Service | `animation_fps` | `65.4 fps` | **PASS** |
+| #8600 | 2026-10-31 09:23:00 | Progressive Image Loader | `first_contentful_paint` | `839.7 ms` | **PASS** |
