@@ -8446,3 +8446,4 @@
 | #8397 | 2026-10-31 08:49:10 | Touch Gesture Dispatcher | `jank_events` | `1.8 count` | **PASS** |
 | #8398 | 2026-10-31 08:49:20 | State Sync Daemon | `latency` | `16.4 ms` | **PASS** |
 | #8399 | 2026-10-31 08:49:30 | Progressive Image Loader | `gpu_utilization` | `36.6 %` | **PASS** |
+| #8400 | 2026-10-31 08:49:40 | Predictive Arc Canvas | `gpu_utilization` | `55.0 %` | **PASS** |
