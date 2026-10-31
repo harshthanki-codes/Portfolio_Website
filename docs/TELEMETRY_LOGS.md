@@ -8858,3 +8858,4 @@
 | #8809 | 2026-10-31 09:57:50 | State Sync Daemon | `first_contentful_paint` | `1336.1 ms` | **PASS** |
 | #8810 | 2026-10-31 09:58:00 | Lottie Animation Engine | `cpu_usage` | `28.1 %` | **PASS** |
 | #8811 | 2026-10-31 09:58:10 | Viewport Resize Observer | `frame_render_budget` | `25.0 ms (60fps)` | **PASS** |
+| #8812 | 2026-10-31 09:58:20 | Predictive Arc Canvas | `jank_events` | `2.5 count` | **PASS** |
