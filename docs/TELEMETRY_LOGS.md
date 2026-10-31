@@ -8953,3 +8953,4 @@
 | #8904 | 2026-10-31 10:13:40 | Micro Frontend Loader | `gpu_utilization` | `52.9 %` | **PASS** |
 | #8905 | 2026-10-31 10:13:50 | Telemetry Beacon | `gpu_utilization` | `63.2 %` | **PASS** |
 | #8906 | 2026-10-31 10:14:00 | Background Video Loop | `frame_render_budget` | `23.2 ms (60fps)` | **PASS** |
+| #8907 | 2026-10-31 10:14:10 | CSS-in-JS Themer | `animation_fps` | `70.8 fps` | **PASS** |
