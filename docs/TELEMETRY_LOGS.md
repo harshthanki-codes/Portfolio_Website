@@ -8283,3 +8283,4 @@
 | #8234 | 2026-10-31 08:22:00 | Progressive Image Loader | `animation_fps` | `69.6 fps` | **PASS** |
 | #8235 | 2026-10-31 08:22:10 | Viewport Resize Observer | `time_to_interactive` | `1688.1 ms` | **PASS** |
 | #8236 | 2026-10-31 08:22:20 | SVG Morphing Pipeline | `jank_events` | `2.0 count` | **PASS** |
+| #8237 | 2026-10-31 08:22:30 | SVG Morphing Pipeline | `memory_footprint` | `98.2 MB` | **PASS** |
