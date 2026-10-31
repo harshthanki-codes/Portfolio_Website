@@ -8936,3 +8936,4 @@
 | #8887 | 2026-10-31 10:10:50 | Micro Frontend Loader | `jank_events` | `2.8 count` | **PASS** |
 | #8888 | 2026-10-31 10:11:00 | Scroll Parallax Manager | `first_contentful_paint` | `974.4 ms` | **PASS** |
 | #8889 | 2026-10-31 10:11:10 | State Sync Daemon | `cpu_usage` | `17.0 %` | **PASS** |
+| #8890 | 2026-10-31 10:11:20 | Background Video Loop | `first_contentful_paint` | `1253.3 ms` | **PASS** |
