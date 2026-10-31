@@ -8730,3 +8730,4 @@
 | #8681 | 2026-10-31 09:36:30 | State Sync Daemon | `jank_events` | `0.3 count` | **PASS** |
 | #8682 | 2026-10-31 09:36:40 | Viewport Resize Observer | `cpu_usage` | `38.3 %` | **PASS** |
 | #8683 | 2026-10-31 09:36:50 | Responsive Grid System | `frame_render_budget` | `25.8 ms (60fps)` | **PASS** |
+| #8684 | 2026-10-31 09:37:00 | Scroll Parallax Manager | `time_to_interactive` | `2269.8 ms` | **PASS** |
