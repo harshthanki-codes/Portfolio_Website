@@ -8820,3 +8820,4 @@
 | #8771 | 2026-10-31 09:51:30 | Progressive Image Loader | `bundle_size` | `239.8 KB` | **PASS** |
 | #8772 | 2026-10-31 09:51:40 | CSS-in-JS Themer | `frame_render_budget` | `21.1 ms (60fps)` | **PASS** |
 | #8773 | 2026-10-31 09:51:50 | Telemetry Beacon | `time_to_interactive` | `1336.8 ms` | **PASS** |
+| #8774 | 2026-10-31 09:52:00 | Viewport Resize Observer | `jank_events` | `0.4 count` | **PASS** |
