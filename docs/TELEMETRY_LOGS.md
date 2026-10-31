@@ -8981,3 +8981,4 @@
 | #8932 | 2026-10-31 10:18:20 | WebGL Shader Compiler | `jank_events` | `1.8 count` | **PASS** |
 | #8933 | 2026-10-31 10:18:30 | Responsive Grid System | `gpu_utilization` | `47.7 %` | **PASS** |
 | #8934 | 2026-10-31 10:18:40 | WebGL Shader Compiler | `frame_render_budget` | `26.8 ms (60fps)` | **PASS** |
+| #8935 | 2026-10-31 10:18:50 | SVG Morphing Pipeline | `frame_render_budget` | `25.5 ms (60fps)` | **PASS** |
