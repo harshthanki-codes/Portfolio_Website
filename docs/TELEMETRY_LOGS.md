@@ -8518,3 +8518,4 @@
 | #8469 | 2026-10-31 09:01:10 | 3D Particle Renderer | `time_to_interactive` | `2103.8 ms` | **PASS** |
 | #8470 | 2026-10-31 09:01:20 | Viewport Resize Observer | `bundle_size` | `208.7 KB` | **PASS** |
 | #8471 | 2026-10-31 09:01:30 | Scroll Parallax Manager | `gpu_utilization` | `42.6 %` | **PASS** |
+| #8472 | 2026-10-31 09:01:40 | Progressive Image Loader | `gpu_utilization` | `38.1 %` | **PASS** |
