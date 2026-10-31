@@ -8867,3 +8867,4 @@
 | #8818 | 2026-10-31 09:59:20 | Lottie Animation Engine | `latency` | `12.0 ms` | **PASS** |
 | #8819 | 2026-10-31 09:59:30 | State Sync Daemon | `time_to_interactive` | `2045.3 ms` | **PASS** |
 | #8820 | 2026-10-31 09:59:40 | Interactive Tooltip Engine | `frame_render_budget` | `26.2 ms (60fps)` | **PASS** |
+| #8821 | 2026-10-31 09:59:50 | Background Video Loop | `cpu_usage` | `10.0 %` | **PASS** |
