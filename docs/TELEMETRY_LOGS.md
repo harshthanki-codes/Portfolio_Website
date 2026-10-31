@@ -8307,3 +8307,4 @@
 | #8258 | 2026-10-31 08:26:00 | CSS-in-JS Themer | `time_to_interactive` | `1595.8 ms` | **PASS** |
 | #8259 | 2026-10-31 08:26:10 | Micro Frontend Loader | `jank_events` | `0.1 count` | **PASS** |
 | #8260 | 2026-10-31 08:26:20 | Cache Warmup Service | `animation_fps` | `60.9 fps` | **PASS** |
+| #8261 | 2026-10-31 08:26:30 | State Sync Daemon | `animation_fps` | `55.7 fps` | **PASS** |
