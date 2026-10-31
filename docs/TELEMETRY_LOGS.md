@@ -8811,3 +8811,4 @@
 | #8762 | 2026-10-31 09:50:00 | Cache Warmup Service | `latency` | `15.2 ms` | **PASS** |
 | #8763 | 2026-10-31 09:50:10 | Touch Gesture Dispatcher | `animation_fps` | `70.6 fps` | **PASS** |
 | #8764 | 2026-10-31 09:50:20 | Viewport Resize Observer | `gpu_utilization` | `26.4 %` | **PASS** |
+| #8765 | 2026-10-31 09:50:30 | Lottie Animation Engine | `memory_footprint` | `87.5 MB` | **PASS** |
