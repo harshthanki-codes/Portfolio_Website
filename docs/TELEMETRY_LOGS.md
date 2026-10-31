@@ -8842,3 +8842,4 @@
 | #8793 | 2026-10-31 09:55:10 | Predictive Arc Canvas | `latency` | `8.3 ms` | **PASS** |
 | #8794 | 2026-10-31 09:55:20 | State Sync Daemon | `time_to_interactive` | `2221.9 ms` | **PASS** |
 | #8795 | 2026-10-31 09:55:30 | Predictive Arc Canvas | `memory_footprint` | `77.3 MB` | **PASS** |
+| #8796 | 2026-10-31 09:55:40 | Touch Gesture Dispatcher | `jank_events` | `1.4 count` | **PASS** |
