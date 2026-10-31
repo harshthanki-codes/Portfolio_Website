@@ -9102,3 +9102,4 @@
 | #9053 | 2026-10-31 10:38:30 | Responsive Grid System | `jank_events` | `2.0 count` | **PASS** |
 | #9054 | 2026-10-31 10:38:40 | Background Video Loop | `bundle_size` | `237.1 KB` | **PASS** |
 | #9055 | 2026-10-31 10:38:50 | Cache Warmup Service | `time_to_interactive` | `2157.9 ms` | **PASS** |
+| #9056 | 2026-10-31 10:39:00 | Background Video Loop | `jank_events` | `1.2 count` | **PASS** |
