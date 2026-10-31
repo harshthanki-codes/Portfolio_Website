@@ -9338,3 +9338,4 @@
 | #9289 | 2026-10-31 11:17:50 | Dynamic Font Loader | `jank_events` | `2.3 count` | **PASS** |
 | #9290 | 2026-10-31 11:18:00 | Viewport Resize Observer | `frame_render_budget` | `25.6 ms (60fps)` | **PASS** |
 | #9291 | 2026-10-31 11:18:10 | SVG Morphing Pipeline | `gpu_utilization` | `36.4 %` | **PASS** |
+| #9292 | 2026-10-31 11:18:20 | Scroll Parallax Manager | `time_to_interactive` | `2092.9 ms` | **PASS** |
