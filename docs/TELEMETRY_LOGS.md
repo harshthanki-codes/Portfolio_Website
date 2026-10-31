@@ -8677,3 +8677,4 @@
 | #8628 | 2026-10-31 09:27:40 | Cache Warmup Service | `time_to_interactive` | `2046.3 ms` | **PASS** |
 | #8629 | 2026-10-31 09:27:50 | Touch Gesture Dispatcher | `memory_footprint` | `84.3 MB` | **PASS** |
 | #8630 | 2026-10-31 09:28:00 | WebGL Shader Compiler | `jank_events` | `2.1 count` | **PASS** |
+| #8631 | 2026-10-31 09:28:10 | Scroll Parallax Manager | `jank_events` | `1.9 count` | **PASS** |
