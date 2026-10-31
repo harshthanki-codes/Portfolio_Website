@@ -8954,3 +8954,4 @@
 | #8905 | 2026-10-31 10:13:50 | Telemetry Beacon | `gpu_utilization` | `63.2 %` | **PASS** |
 | #8906 | 2026-10-31 10:14:00 | Background Video Loop | `frame_render_budget` | `23.2 ms (60fps)` | **PASS** |
 | #8907 | 2026-10-31 10:14:10 | CSS-in-JS Themer | `animation_fps` | `70.8 fps` | **PASS** |
+| #8908 | 2026-10-31 10:14:20 | CSS-in-JS Themer | `frame_render_budget` | `19.8 ms (60fps)` | **PASS** |
