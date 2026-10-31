@@ -8511,3 +8511,4 @@
 | #8462 | 2026-10-31 09:00:00 | Interactive Tooltip Engine | `animation_fps` | `72.2 fps` | **PASS** |
 | #8463 | 2026-10-31 09:00:10 | Progressive Image Loader | `bundle_size` | `118.7 KB` | **PASS** |
 | #8464 | 2026-10-31 09:00:20 | CSS-in-JS Themer | `latency` | `21.8 ms` | **PASS** |
+| #8465 | 2026-10-31 09:00:30 | Progressive Image Loader | `first_contentful_paint` | `1364.4 ms` | **PASS** |
