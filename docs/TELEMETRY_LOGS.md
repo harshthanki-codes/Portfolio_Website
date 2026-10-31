@@ -8974,3 +8974,4 @@
 | #8925 | 2026-10-31 10:17:10 | Lottie Animation Engine | `animation_fps` | `62.6 fps` | **PASS** |
 | #8926 | 2026-10-31 10:17:20 | CSS-in-JS Themer | `time_to_interactive` | `1776.8 ms` | **PASS** |
 | #8927 | 2026-10-31 10:17:30 | Audio Visualizer | `memory_footprint` | `45.7 MB` | **PASS** |
+| #8928 | 2026-10-31 10:17:40 | 3D Particle Renderer | `memory_footprint` | `65.6 MB` | **PASS** |
