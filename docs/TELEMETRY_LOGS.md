@@ -8238,3 +8238,4 @@
 | #8189 | 2026-10-31 08:14:30 | Background Video Loop | `frame_render_budget` | `23.0 ms (60fps)` | **PASS** |
 | #8190 | 2026-10-31 08:14:40 | Lottie Animation Engine | `latency` | `10.3 ms` | **PASS** |
 | #8191 | 2026-10-31 08:14:50 | Lottie Animation Engine | `cpu_usage` | `43.9 %` | **PASS** |
+| #8192 | 2026-10-31 08:15:00 | Lottie Animation Engine | `bundle_size` | `125.1 KB` | **PASS** |
