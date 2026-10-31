@@ -8875,3 +8875,4 @@
 | #8826 | 2026-10-31 10:00:40 | WebGL Shader Compiler | `first_contentful_paint` | `1172.2 ms` | **PASS** |
 | #8827 | 2026-10-31 10:00:50 | CSS-in-JS Themer | `first_contentful_paint` | `1075.4 ms` | **PASS** |
 | #8828 | 2026-10-31 10:01:00 | Lottie Animation Engine | `jank_events` | `1.1 count` | **PASS** |
+| #8829 | 2026-10-31 10:01:10 | 3D Particle Renderer | `latency` | `19.9 ms` | **PASS** |
