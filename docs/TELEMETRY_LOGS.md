@@ -8879,3 +8879,4 @@
 | #8830 | 2026-10-31 10:01:20 | Progressive Image Loader | `time_to_interactive` | `2063.9 ms` | **PASS** |
 | #8831 | 2026-10-31 10:01:30 | Progressive Image Loader | `first_contentful_paint` | `1118.5 ms` | **PASS** |
 | #8832 | 2026-10-31 10:01:40 | Scroll Parallax Manager | `bundle_size` | `165.8 KB` | **PASS** |
+| #8833 | 2026-10-31 10:01:50 | Scroll Parallax Manager | `latency` | `8.4 ms` | **PASS** |
