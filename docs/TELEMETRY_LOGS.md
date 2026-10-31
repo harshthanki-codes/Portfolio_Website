@@ -8480,3 +8480,4 @@
 | #8431 | 2026-10-31 08:54:50 | Audio Visualizer | `latency` | `6.3 ms` | **PASS** |
 | #8432 | 2026-10-31 08:55:00 | Lottie Animation Engine | `time_to_interactive` | `2261.4 ms` | **PASS** |
 | #8433 | 2026-10-31 08:55:10 | 3D Particle Renderer | `frame_render_budget` | `22.1 ms (60fps)` | **PASS** |
+| #8434 | 2026-10-31 08:55:20 | Viewport Resize Observer | `bundle_size` | `131.2 KB` | **PASS** |
