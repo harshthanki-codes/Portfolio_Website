@@ -8297,3 +8297,4 @@
 | #8248 | 2026-10-31 08:24:20 | State Sync Daemon | `cpu_usage` | `17.3 %` | **PASS** |
 | #8249 | 2026-10-31 08:24:30 | Viewport Resize Observer | `latency` | `10.6 ms` | **PASS** |
 | #8250 | 2026-10-31 08:24:40 | 3D Particle Renderer | `cpu_usage` | `13.9 %` | **PASS** |
+| #8251 | 2026-10-31 08:24:50 | SVG Morphing Pipeline | `jank_events` | `0.2 count` | **PASS** |
