@@ -8358,3 +8358,4 @@
 | #8309 | 2026-10-31 08:34:30 | Telemetry Beacon | `jank_events` | `2.6 count` | **PASS** |
 | #8310 | 2026-10-31 08:34:40 | Telemetry Beacon | `bundle_size` | `219.7 KB` | **PASS** |
 | #8311 | 2026-10-31 08:34:50 | Background Video Loop | `memory_footprint` | `61.1 MB` | **PASS** |
+| #8312 | 2026-10-31 08:35:00 | Lottie Animation Engine | `memory_footprint` | `118.1 MB` | **PASS** |
