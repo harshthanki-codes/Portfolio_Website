@@ -8266,3 +8266,4 @@
 | #8217 | 2026-10-31 08:19:10 | Dynamic Font Loader | `first_contentful_paint` | `856.7 ms` | **PASS** |
 | #8218 | 2026-10-31 08:19:20 | WebGL Shader Compiler | `gpu_utilization` | `66.7 %` | **PASS** |
 | #8219 | 2026-10-31 08:19:30 | Progressive Image Loader | `jank_events` | `1.2 count` | **PASS** |
+| #8220 | 2026-10-31 08:19:40 | Viewport Resize Observer | `time_to_interactive` | `1412.3 ms` | **PASS** |
