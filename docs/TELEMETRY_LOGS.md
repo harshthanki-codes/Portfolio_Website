@@ -9253,3 +9253,4 @@
 | #9204 | 2026-10-31 11:03:40 | Micro Frontend Loader | `gpu_utilization` | `59.2 %` | **PASS** |
 | #9205 | 2026-10-31 11:03:50 | 3D Particle Renderer | `jank_events` | `0.2 count` | **PASS** |
 | #9206 | 2026-10-31 11:04:00 | Background Video Loop | `animation_fps` | `58.5 fps` | **PASS** |
+| #9207 | 2026-10-31 11:04:10 | Progressive Image Loader | `first_contentful_paint` | `1426.8 ms` | **PASS** |
