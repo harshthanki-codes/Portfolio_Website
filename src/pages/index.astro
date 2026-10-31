@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LiquidMetalHero from '../components/islands/LiquidMetalHero';
 import Hero from '../components/Hero.astro';
 import SolutionsSection from '../components/SolutionsSection.astro';
 import { ProjectsSection } from '../components/islands/ProjectsSection';
@@ -14,8 +13,7 @@ import { CommandPalette } from '../components/islands/CommandPalette';
 ---
 
 <Layout>
-  <LiquidMetalHero client:load />
-  <!-- <Hero /> -->
+  <Hero />
   <SolutionsSection />
   <ProjectsSection client:load />
   <TelemetrySection />

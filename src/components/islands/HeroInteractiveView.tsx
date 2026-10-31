@@ -60,7 +60,7 @@ const PERSONAS: PersonaData[] = [
     metrics: [
       { label: 'Data Security', value: '100% Airgapped', sub: 'Zero Cloud Data-Leakage' },
       { label: 'Catalog Speedup', value: '85% Faster', sub: '8 hr ➔ 72 min Onboarding' },
-      { label: 'Batch Reliability', value: '99.8% Success', sub: 'Distributed Validation & Rollback' }
+      { label: 'Batch Reliability', value: '99.8% Success', sub: 'Distributed Rollback' }
     ]
   },
   {
@@ -82,43 +82,47 @@ export const HeroInteractiveView: React.FC = () => {
   const current = PERSONAS.find(p => p.id === activePersona) || PERSONAS[0];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {/* Persona Selection Bar */}
-      <div className="flex items-center gap-1.5 p-1 bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded-full max-w-fit overflow-x-auto no-scrollbar shadow-xs">
-        <span className="text-[10px] font-mono text-[var(--text-tertiary)] px-2 uppercase tracking-wider hidden sm:inline-block font-semibold">
+      <div className="flex items-center gap-1.5 p-1 bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] rounded-2xl sm:rounded-full max-w-full overflow-x-auto no-scrollbar shadow-xs">
+        <span className="text-[10px] font-mono text-[var(--text-tertiary)] px-2 uppercase tracking-wider hidden sm:inline-block font-semibold shrink-0">
           Tailor View:
         </span>
-        {PERSONAS.map(p => {
-          const Icon = p.icon;
-          const isSelected = activePersona === p.id;
-          return (
-            <button
-              key={p.id}
-              type="button"
-              onClick={() => setActivePersona(p.id)}
-              className={`touch-target px-3 py-1.5 rounded-full font-mono text-[11px] font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap ${
-                isSelected 
-                  ? 'bg-[var(--accent-gradient)] text-[var(--accent-text)] shadow-xs' 
-                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface)]'
-              }`}
-              aria-pressed={isSelected}
-            >
-              <Icon className="w-3 h-3" />
-              <span>{p.label}</span>
-            </button>
-          );
-        })}
+        <div className="flex items-center gap-1 min-w-max">
+          {PERSONAS.map(p => {
+            const Icon = p.icon;
+            const isSelected = activePersona === p.id;
+            return (
+              <button
+                key={p.id}
+                type="button"
+                onClick={() => setActivePersona(p.id)}
+                className={`touch-target px-2.5 sm:px-3 py-1.5 rounded-full font-mono text-[10px] sm:text-[11px] font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap ${
+                  isSelected 
+                    ? 'bg-[var(--accent-gradient)] text-white shadow-xs' 
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface)]'
+                }`}
+                aria-pressed={isSelected}
+              >
+                <Icon className="w-3 h-3 shrink-0" />
+                <span>{p.label}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Dynamic Narrative Callout */}
-      <div className="p-3.5 rounded-[var(--radius-md)] border border-[var(--accent-border)] bg-[var(--accent-subtle)] transition-all flex items-start gap-2.5">
+      <div className="p-3 sm:p-3.5 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] transition-all flex items-start gap-2.5">
         <Zap className="w-4 h-4 text-[var(--accent)] shrink-0 mt-0.5" />
-        <div className="min-w-0">
-          <div className="flex items-center gap-2 mb-0.5">
-            <span className="font-mono text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-[var(--accent)] text-[var(--accent-text)] font-bold">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
+            <span className="font-mono text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-[var(--accent)] text-white font-bold">
               {current.badge}
             </span>
-            <span className="font-mono text-[10px] text-[var(--text-secondary)]">Verified Value Proposition</span>
+            <span className="font-mono text-[10px] text-[var(--text-secondary)]">
+              Verified Value Proposition
+            </span>
           </div>
           <p className="text-xs sm:text-[13px] text-[var(--text-primary)] font-sans leading-relaxed">
             {current.highlightText}
@@ -127,19 +131,19 @@ export const HeroInteractiveView: React.FC = () => {
       </div>
 
       {/* Dynamic Metrics Array */}
-      <div className="grid grid-cols-3 gap-2.5 py-2 font-mono text-[var(--text-xs)]">
+      <div className="grid grid-cols-3 gap-2 sm:gap-2.5 font-mono text-[var(--text-xs)]">
         {current.metrics.map((m, idx) => (
           <div 
             key={idx}
-            className="p-2.5 rounded-[var(--radius-sm)] bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors shadow-xs"
+            className="p-2 sm:p-2.5 rounded-xl bg-[var(--bg-surface-raised)] border border-[var(--border-subtle)] hover:border-[var(--accent-border)] transition-colors shadow-xs flex flex-col justify-between"
           >
             <div className="text-[var(--text-tertiary)] text-[9px] sm:text-[10px] uppercase tracking-wider truncate font-semibold">
               {m.label}
             </div>
-            <div className="text-[var(--text-primary)] font-bold text-sm sm:text-[var(--text-base)] mt-0.5">
+            <div className="text-[var(--text-primary)] font-bold text-xs sm:text-base my-0.5 tracking-tight truncate">
               {m.value}
             </div>
-            <div className="text-[9px] sm:text-[10px] text-[var(--accent)] font-medium truncate mt-0.5">
+            <div className="text-[9px] sm:text-[10px] text-[var(--accent)] font-medium truncate">
               {m.sub}
             </div>
           </div>

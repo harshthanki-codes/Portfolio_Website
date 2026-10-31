@@ -129,14 +129,14 @@ export default function PredictiveArcBackground({
       // Center and apex calculations adapted per device class
       const mouseOffset = opt.interactive ? (currentMouseX - 0.5) * (width * (isMobile ? 0.22 : 0.15)) : 0;
       const centerX = width / 2 + mouseOffset;
-      const apexY = isMobile ? height * 0.16 : height * 0.22;
-      const spreadX = isMobile ? width * 2.2 : isTablet ? width * 1.7 : is4K ? width * 1.5 : width * 1.45;
-      const curveR = isMobile ? height * 0.38 : height * opt.archHeight;
+      const apexY = isMobile ? height * 0.06 : height * 0.20;
+      const spreadX = isMobile ? width * 2.8 : isTablet ? width * 1.7 : is4K ? width * 1.5 : width * 1.45;
+      const curveR = isMobile ? height * 0.52 : height * opt.archHeight;
 
       ctx.globalCompositeOperation = isLight ? 'source-over' : 'lighter';
 
       const s = isMobile ? Math.max(5, opt.spacing) : is4K ? Math.max(7, opt.spacing) : Math.max(3, opt.spacing);
-      const dot = isMobile ? Math.max(4.2, opt.dotSize * 0.85) : is4K ? opt.dotSize * 1.25 : opt.dotSize;
+      const dot = isMobile ? Math.max(3.8, opt.dotSize * 0.75) : is4K ? opt.dotSize * 1.25 : opt.dotSize;
 
       for (let x = 0; x < width; x += s) {
         const normX = (x - centerX) / (spreadX / 2);
@@ -144,7 +144,7 @@ export default function PredictiveArcBackground({
 
         for (let y = 0; y < height; y += s) {
           const distY = Math.abs(y - targetY);
-          const baseBand = isMobile ? 110 : 140;
+          const baseBand = isMobile ? 85 : 140;
           const bandWidth = (baseBand + (1 - Math.min(1, Math.abs(normX))) * 80) * opt.thickness;
 
           if (distY >= bandWidth) continue;
