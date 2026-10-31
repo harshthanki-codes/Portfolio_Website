@@ -8376,3 +8376,4 @@
 | #8327 | 2026-10-31 08:37:30 | Background Video Loop | `time_to_interactive` | `2126.3 ms` | **PASS** |
 | #8328 | 2026-10-31 08:37:40 | Lottie Animation Engine | `cpu_usage` | `10.3 %` | **PASS** |
 | #8329 | 2026-10-31 08:37:50 | WebGL Shader Compiler | `gpu_utilization` | `57.9 %` | **PASS** |
+| #8330 | 2026-10-31 08:38:00 | Telemetry Beacon | `animation_fps` | `69.8 fps` | **PASS** |
