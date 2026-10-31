@@ -8960,3 +8960,4 @@
 | #8911 | 2026-10-31 10:14:50 | Touch Gesture Dispatcher | `jank_events` | `0.7 count` | **PASS** |
 | #8912 | 2026-10-31 10:15:00 | Audio Visualizer | `frame_render_budget` | `28.9 ms (60fps)` | **PASS** |
 | #8913 | 2026-10-31 10:15:10 | Micro Frontend Loader | `memory_footprint` | `80.5 MB` | **PASS** |
+| #8914 | 2026-10-31 10:15:20 | Background Video Loop | `bundle_size` | `116.7 KB` | **PASS** |
