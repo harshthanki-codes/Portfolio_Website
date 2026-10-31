@@ -8194,3 +8194,4 @@
 | #8145 | 2026-10-31 08:07:10 | Telemetry Beacon | `cpu_usage` | `20.5 %` | **PASS** |
 | #8146 | 2026-10-31 08:07:20 | Micro Frontend Loader | `gpu_utilization` | `47.5 %` | **PASS** |
 | #8147 | 2026-10-31 08:07:30 | Micro Frontend Loader | `latency` | `20.8 ms` | **PASS** |
+| #8148 | 2026-10-31 08:07:40 | Cache Warmup Service | `frame_render_budget` | `22.7 ms (60fps)` | **PASS** |
