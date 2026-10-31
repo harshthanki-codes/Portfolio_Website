@@ -8540,3 +8540,4 @@
 | #8491 | 2026-10-31 09:04:50 | State Sync Daemon | `jank_events` | `2.5 count` | **PASS** |
 | #8492 | 2026-10-31 09:05:00 | Viewport Resize Observer | `animation_fps` | `59.4 fps` | **PASS** |
 | #8493 | 2026-10-31 09:05:10 | Predictive Arc Canvas | `animation_fps` | `57.6 fps` | **PASS** |
+| #8494 | 2026-10-31 09:05:20 | Lazy Load Optimizer | `gpu_utilization` | `28.2 %` | **PASS** |
