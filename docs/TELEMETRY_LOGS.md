@@ -8950,3 +8950,4 @@
 | #8901 | 2026-10-31 10:13:10 | Interactive Tooltip Engine | `frame_render_budget` | `18.9 ms (60fps)` | **PASS** |
 | #8902 | 2026-10-31 10:13:20 | Cache Warmup Service | `frame_render_budget` | `20.3 ms (60fps)` | **PASS** |
 | #8903 | 2026-10-31 10:13:30 | Background Video Loop | `time_to_interactive` | `1670.1 ms` | **PASS** |
+| #8904 | 2026-10-31 10:13:40 | Micro Frontend Loader | `gpu_utilization` | `52.9 %` | **PASS** |
