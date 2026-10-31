@@ -9092,3 +9092,4 @@
 | #9043 | 2026-10-31 10:36:50 | Touch Gesture Dispatcher | `bundle_size` | `164.6 KB` | **PASS** |
 | #9044 | 2026-10-31 10:37:00 | 3D Particle Renderer | `jank_events` | `2.1 count` | **PASS** |
 | #9045 | 2026-10-31 10:37:10 | 3D Particle Renderer | `cpu_usage` | `10.6 %` | **PASS** |
+| #9046 | 2026-10-31 10:37:20 | Viewport Resize Observer | `cpu_usage` | `13.9 %` | **PASS** |
