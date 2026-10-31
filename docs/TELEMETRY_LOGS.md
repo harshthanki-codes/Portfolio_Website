@@ -8651,3 +8651,4 @@
 | #8602 | 2026-10-31 09:23:20 | Micro Frontend Loader | `time_to_interactive` | `1625.9 ms` | **PASS** |
 | #8603 | 2026-10-31 09:23:30 | Micro Frontend Loader | `frame_render_budget` | `29.3 ms (60fps)` | **PASS** |
 | #8604 | 2026-10-31 09:23:40 | Cache Warmup Service | `first_contentful_paint` | `1220.1 ms` | **PASS** |
+| #8605 | 2026-10-31 09:23:50 | Background Video Loop | `gpu_utilization` | `44.0 %` | **PASS** |
