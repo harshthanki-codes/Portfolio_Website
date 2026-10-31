@@ -8414,3 +8414,4 @@
 | #8365 | 2026-10-31 08:43:50 | SVG Morphing Pipeline | `frame_render_budget` | `20.8 ms (60fps)` | **PASS** |
 | #8366 | 2026-10-31 08:44:00 | WebGL Shader Compiler | `frame_render_budget` | `18.4 ms (60fps)` | **PASS** |
 | #8367 | 2026-10-31 08:44:10 | Viewport Resize Observer | `animation_fps` | `61.5 fps` | **PASS** |
+| #8368 | 2026-10-31 08:44:20 | Background Video Loop | `first_contentful_paint` | `822.1 ms` | **PASS** |
