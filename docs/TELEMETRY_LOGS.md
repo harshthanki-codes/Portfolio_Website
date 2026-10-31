@@ -8513,3 +8513,4 @@
 | #8464 | 2026-10-31 09:00:20 | CSS-in-JS Themer | `latency` | `21.8 ms` | **PASS** |
 | #8465 | 2026-10-31 09:00:30 | Progressive Image Loader | `first_contentful_paint` | `1364.4 ms` | **PASS** |
 | #8466 | 2026-10-31 09:00:40 | Touch Gesture Dispatcher | `animation_fps` | `69.3 fps` | **PASS** |
+| #8467 | 2026-10-31 09:00:50 | Touch Gesture Dispatcher | `jank_events` | `0.6 count` | **PASS** |
