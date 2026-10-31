@@ -8239,3 +8239,4 @@
 | #8190 | 2026-10-31 08:14:40 | Lottie Animation Engine | `latency` | `10.3 ms` | **PASS** |
 | #8191 | 2026-10-31 08:14:50 | Lottie Animation Engine | `cpu_usage` | `43.9 %` | **PASS** |
 | #8192 | 2026-10-31 08:15:00 | Lottie Animation Engine | `bundle_size` | `125.1 KB` | **PASS** |
+| #8193 | 2026-10-31 08:15:10 | State Sync Daemon | `time_to_interactive` | `2438.3 ms` | **PASS** |
