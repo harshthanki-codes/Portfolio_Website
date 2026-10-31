@@ -8397,3 +8397,4 @@
 | #8348 | 2026-10-31 08:41:00 | CSS-in-JS Themer | `animation_fps` | `60.9 fps` | **PASS** |
 | #8349 | 2026-10-31 08:41:10 | WebGL Shader Compiler | `jank_events` | `0.4 count` | **PASS** |
 | #8350 | 2026-10-31 08:41:20 | Responsive Grid System | `jank_events` | `2.6 count` | **PASS** |
+| #8351 | 2026-10-31 08:41:30 | Lazy Load Optimizer | `cpu_usage` | `19.9 %` | **PASS** |
