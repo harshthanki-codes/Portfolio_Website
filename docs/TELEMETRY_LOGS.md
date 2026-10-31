@@ -9132,3 +9132,4 @@
 | #9083 | 2026-10-31 10:43:30 | 3D Particle Renderer | `time_to_interactive` | `2161.3 ms` | **PASS** |
 | #9084 | 2026-10-31 10:43:40 | Viewport Resize Observer | `memory_footprint` | `109.2 MB` | **PASS** |
 | #9085 | 2026-10-31 10:43:50 | Interactive Tooltip Engine | `frame_render_budget` | `29.4 ms (60fps)` | **PASS** |
+| #9086 | 2026-10-31 10:44:00 | Interactive Tooltip Engine | `first_contentful_paint` | `931.7 ms` | **PASS** |
