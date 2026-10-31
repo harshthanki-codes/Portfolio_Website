@@ -8866,3 +8866,4 @@
 | #8817 | 2026-10-31 09:59:10 | WebGL Shader Compiler | `cpu_usage` | `30.8 %` | **PASS** |
 | #8818 | 2026-10-31 09:59:20 | Lottie Animation Engine | `latency` | `12.0 ms` | **PASS** |
 | #8819 | 2026-10-31 09:59:30 | State Sync Daemon | `time_to_interactive` | `2045.3 ms` | **PASS** |
+| #8820 | 2026-10-31 09:59:40 | Interactive Tooltip Engine | `frame_render_budget` | `26.2 ms (60fps)` | **PASS** |
