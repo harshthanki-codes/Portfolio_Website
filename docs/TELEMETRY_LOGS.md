@@ -8200,3 +8200,4 @@
 | #8151 | 2026-10-31 08:08:10 | Viewport Resize Observer | `memory_footprint` | `86.4 MB` | **PASS** |
 | #8152 | 2026-10-31 08:08:20 | Dynamic Font Loader | `animation_fps` | `69.1 fps` | **PASS** |
 | #8153 | 2026-10-31 08:08:30 | Viewport Resize Observer | `frame_render_budget` | `22.8 ms (60fps)` | **PASS** |
+| #8154 | 2026-10-31 08:08:40 | 3D Particle Renderer | `animation_fps` | `68.9 fps` | **PASS** |
