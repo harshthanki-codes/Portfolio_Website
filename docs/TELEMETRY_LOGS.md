@@ -8901,3 +8901,4 @@
 | #8852 | 2026-10-31 10:05:00 | 3D Particle Renderer | `jank_events` | `0.1 count` | **PASS** |
 | #8853 | 2026-10-31 10:05:10 | Telemetry Beacon | `gpu_utilization` | `23.5 %` | **PASS** |
 | #8854 | 2026-10-31 10:05:20 | Progressive Image Loader | `gpu_utilization` | `55.3 %` | **PASS** |
+| #8855 | 2026-10-31 10:05:30 | Background Video Loop | `cpu_usage` | `10.2 %` | **PASS** |
