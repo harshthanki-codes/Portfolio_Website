@@ -9345,3 +9345,4 @@
 | #9296 | 2026-10-31 11:19:00 | State Sync Daemon | `memory_footprint` | `79.6 MB` | **PASS** |
 | #9297 | 2026-10-31 11:19:10 | Lottie Animation Engine | `time_to_interactive` | `2300.7 ms` | **PASS** |
 | #9298 | 2026-10-31 11:19:20 | Cache Warmup Service | `first_contentful_paint` | `932.6 ms` | **PASS** |
+| #9299 | 2026-10-31 11:19:30 | Interactive Tooltip Engine | `animation_fps` | `71.1 fps` | **PASS** |
