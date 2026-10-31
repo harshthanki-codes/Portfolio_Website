@@ -8569,3 +8569,4 @@
 | #8520 | 2026-10-31 09:09:40 | Cache Warmup Service | `cpu_usage` | `42.0 %` | **PASS** |
 | #8521 | 2026-10-31 09:09:50 | Touch Gesture Dispatcher | `first_contentful_paint` | `1300.3 ms` | **PASS** |
 | #8522 | 2026-10-31 09:10:00 | WebGL Shader Compiler | `first_contentful_paint` | `1105.8 ms` | **PASS** |
+| #8523 | 2026-10-31 09:10:10 | Cache Warmup Service | `jank_events` | `0.3 count` | **PASS** |
