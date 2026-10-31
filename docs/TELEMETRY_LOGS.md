@@ -8175,3 +8175,4 @@
 | #8126 | 2026-10-31 08:04:00 | Interactive Tooltip Engine | `jank_events` | `0.5 count` | **PASS** |
 | #8127 | 2026-10-31 08:04:10 | Lazy Load Optimizer | `latency` | `12.5 ms` | **PASS** |
 | #8128 | 2026-10-31 08:04:20 | Lazy Load Optimizer | `bundle_size` | `232.4 KB` | **PASS** |
+| #8129 | 2026-10-31 08:04:30 | Scroll Parallax Manager | `memory_footprint` | `82.0 MB` | **PASS** |
