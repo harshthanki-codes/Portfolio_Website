@@ -8456,3 +8456,4 @@
 | #8407 | 2026-10-31 08:50:50 | Cache Warmup Service | `latency` | `5.8 ms` | **PASS** |
 | #8408 | 2026-10-31 08:51:00 | Touch Gesture Dispatcher | `jank_events` | `1.7 count` | **PASS** |
 | #8409 | 2026-10-31 08:51:10 | WebGL Shader Compiler | `latency` | `6.7 ms` | **PASS** |
+| #8410 | 2026-10-31 08:51:20 | Background Video Loop | `memory_footprint` | `69.7 MB` | **PASS** |
