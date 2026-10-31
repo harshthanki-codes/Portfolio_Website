@@ -8807,3 +8807,4 @@
 | #8758 | 2026-10-31 09:49:20 | WebGL Shader Compiler | `time_to_interactive` | `2434.4 ms` | **PASS** |
 | #8759 | 2026-10-31 09:49:30 | Responsive Grid System | `animation_fps` | `70.5 fps` | **PASS** |
 | #8760 | 2026-10-31 09:49:40 | Predictive Arc Canvas | `jank_events` | `0.7 count` | **PASS** |
+| #8761 | 2026-10-31 09:49:50 | SVG Morphing Pipeline | `frame_render_budget` | `15.3 ms (60fps)` | **PASS** |
