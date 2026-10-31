@@ -8639,3 +8639,4 @@
 | #8590 | 2026-10-31 09:21:20 | Telemetry Beacon | `gpu_utilization` | `50.9 %` | **PASS** |
 | #8591 | 2026-10-31 09:21:30 | WebGL Shader Compiler | `memory_footprint` | `106.9 MB` | **PASS** |
 | #8592 | 2026-10-31 09:21:40 | Background Video Loop | `cpu_usage` | `20.6 %` | **PASS** |
+| #8593 | 2026-10-31 09:21:50 | Telemetry Beacon | `time_to_interactive` | `2468.5 ms` | **PASS** |
