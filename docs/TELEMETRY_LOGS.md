@@ -8641,3 +8641,4 @@
 | #8592 | 2026-10-31 09:21:40 | Background Video Loop | `cpu_usage` | `20.6 %` | **PASS** |
 | #8593 | 2026-10-31 09:21:50 | Telemetry Beacon | `time_to_interactive` | `2468.5 ms` | **PASS** |
 | #8594 | 2026-10-31 09:22:00 | CSS-in-JS Themer | `frame_render_budget` | `23.4 ms (60fps)` | **PASS** |
+| #8595 | 2026-10-31 09:22:10 | 3D Particle Renderer | `cpu_usage` | `32.4 %` | **PASS** |
