@@ -9307,3 +9307,4 @@
 | #9258 | 2026-10-31 11:12:40 | SVG Morphing Pipeline | `frame_render_budget` | `19.6 ms (60fps)` | **PASS** |
 | #9259 | 2026-10-31 11:12:50 | Viewport Resize Observer | `bundle_size` | `158.3 KB` | **PASS** |
 | #9260 | 2026-10-31 11:13:00 | CSS-in-JS Themer | `jank_events` | `1.5 count` | **PASS** |
+| #9261 | 2026-10-31 11:13:10 | State Sync Daemon | `latency` | `6.8 ms` | **PASS** |
