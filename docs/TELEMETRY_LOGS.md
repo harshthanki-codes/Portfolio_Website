@@ -9322,3 +9322,4 @@
 | #9273 | 2026-10-31 11:15:10 | Lazy Load Optimizer | `gpu_utilization` | `26.1 %` | **PASS** |
 | #9274 | 2026-10-31 11:15:20 | Viewport Resize Observer | `bundle_size` | `89.6 KB` | **PASS** |
 | #9275 | 2026-10-31 11:15:30 | Dynamic Font Loader | `jank_events` | `2.0 count` | **PASS** |
+| #9276 | 2026-10-31 11:15:40 | Dynamic Font Loader | `frame_render_budget` | `23.6 ms (60fps)` | **PASS** |
