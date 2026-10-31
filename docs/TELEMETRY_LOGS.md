@@ -8207,3 +8207,4 @@
 | #8158 | 2026-10-31 08:09:20 | Interactive Tooltip Engine | `cpu_usage` | `18.7 %` | **PASS** |
 | #8159 | 2026-10-31 08:09:30 | Progressive Image Loader | `frame_render_budget` | `26.1 ms (60fps)` | **PASS** |
 | #8160 | 2026-10-31 08:09:40 | Telemetry Beacon | `animation_fps` | `67.1 fps` | **PASS** |
+| #8161 | 2026-10-31 08:09:50 | Progressive Image Loader | `bundle_size` | `99.5 KB` | **PASS** |
