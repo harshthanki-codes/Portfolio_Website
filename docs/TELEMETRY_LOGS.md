@@ -8889,3 +8889,4 @@
 | #8840 | 2026-10-31 10:03:00 | Viewport Resize Observer | `bundle_size` | `235.1 KB` | **PASS** |
 | #8841 | 2026-10-31 10:03:10 | Predictive Arc Canvas | `time_to_interactive` | `2433.8 ms` | **PASS** |
 | #8842 | 2026-10-31 10:03:20 | Background Video Loop | `cpu_usage` | `31.4 %` | **PASS** |
+| #8843 | 2026-10-31 10:03:30 | Micro Frontend Loader | `jank_events` | `0.7 count` | **PASS** |
