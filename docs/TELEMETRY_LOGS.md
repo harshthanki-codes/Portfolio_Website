@@ -8717,3 +8717,4 @@
 | #8668 | 2026-10-31 09:34:20 | Dynamic Font Loader | `animation_fps` | `55.4 fps` | **PASS** |
 | #8669 | 2026-10-31 09:34:30 | Dynamic Font Loader | `jank_events` | `1.9 count` | **PASS** |
 | #8670 | 2026-10-31 09:34:40 | Responsive Grid System | `jank_events` | `1.5 count` | **PASS** |
+| #8671 | 2026-10-31 09:34:50 | Progressive Image Loader | `jank_events` | `1.6 count` | **PASS** |
