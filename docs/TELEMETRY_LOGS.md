@@ -9313,3 +9313,4 @@
 | #9264 | 2026-10-31 11:13:40 | Micro Frontend Loader | `time_to_interactive` | `2241.8 ms` | **PASS** |
 | #9265 | 2026-10-31 11:13:50 | Cache Warmup Service | `time_to_interactive` | `1275.1 ms` | **PASS** |
 | #9266 | 2026-10-31 11:14:00 | Viewport Resize Observer | `memory_footprint` | `108.9 MB` | **PASS** |
+| #9267 | 2026-10-31 11:14:10 | WebGL Shader Compiler | `bundle_size` | `85.2 KB` | **PASS** |
