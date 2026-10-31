@@ -8679,3 +8679,4 @@
 | #8630 | 2026-10-31 09:28:00 | WebGL Shader Compiler | `jank_events` | `2.1 count` | **PASS** |
 | #8631 | 2026-10-31 09:28:10 | Scroll Parallax Manager | `jank_events` | `1.9 count` | **PASS** |
 | #8632 | 2026-10-31 09:28:20 | Scroll Parallax Manager | `animation_fps` | `61.6 fps` | **PASS** |
+| #8633 | 2026-10-31 09:28:30 | Interactive Tooltip Engine | `gpu_utilization` | `50.5 %` | **PASS** |
