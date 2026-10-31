@@ -8416,3 +8416,4 @@
 | #8367 | 2026-10-31 08:44:10 | Viewport Resize Observer | `animation_fps` | `61.5 fps` | **PASS** |
 | #8368 | 2026-10-31 08:44:20 | Background Video Loop | `first_contentful_paint` | `822.1 ms` | **PASS** |
 | #8369 | 2026-10-31 08:44:30 | Telemetry Beacon | `first_contentful_paint` | `1290.0 ms` | **PASS** |
+| #8370 | 2026-10-31 08:44:40 | Scroll Parallax Manager | `memory_footprint` | `114.2 MB` | **PASS** |
