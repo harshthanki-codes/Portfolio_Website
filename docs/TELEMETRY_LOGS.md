@@ -9266,3 +9266,4 @@
 | #9217 | 2026-10-31 11:05:50 | Scroll Parallax Manager | `cpu_usage` | `36.7 %` | **PASS** |
 | #9218 | 2026-10-31 11:06:00 | Touch Gesture Dispatcher | `cpu_usage` | `30.6 %` | **PASS** |
 | #9219 | 2026-10-31 11:06:10 | Interactive Tooltip Engine | `animation_fps` | `59.9 fps` | **PASS** |
+| #9220 | 2026-10-31 11:06:20 | WebGL Shader Compiler | `first_contentful_paint` | `1330.8 ms` | **PASS** |
