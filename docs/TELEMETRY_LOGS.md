@@ -8761,3 +8761,4 @@
 | #8712 | 2026-10-31 09:41:40 | State Sync Daemon | `memory_footprint` | `68.2 MB` | **PASS** |
 | #8713 | 2026-10-31 09:41:50 | Lottie Animation Engine | `jank_events` | `1.7 count` | **PASS** |
 | #8714 | 2026-10-31 09:42:00 | Scroll Parallax Manager | `latency` | `7.6 ms` | **PASS** |
+| #8715 | 2026-10-31 09:42:10 | Background Video Loop | `time_to_interactive` | `2476.6 ms` | **PASS** |
