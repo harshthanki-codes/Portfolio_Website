@@ -8487,3 +8487,4 @@
 | #8438 | 2026-10-31 08:56:00 | Viewport Resize Observer | `gpu_utilization` | `40.9 %` | **PASS** |
 | #8439 | 2026-10-31 08:56:10 | SVG Morphing Pipeline | `time_to_interactive` | `1962.3 ms` | **PASS** |
 | #8440 | 2026-10-31 08:56:20 | Predictive Arc Canvas | `bundle_size` | `186.3 KB` | **PASS** |
+| #8441 | 2026-10-31 08:56:30 | CSS-in-JS Themer | `jank_events` | `1.3 count` | **PASS** |
