@@ -8261,3 +8261,4 @@
 | #8212 | 2026-10-31 08:18:20 | Lottie Animation Engine | `memory_footprint` | `69.9 MB` | **PASS** |
 | #8213 | 2026-10-31 08:18:30 | Touch Gesture Dispatcher | `frame_render_budget` | `23.1 ms (60fps)` | **PASS** |
 | #8214 | 2026-10-31 08:18:40 | Progressive Image Loader | `frame_render_budget` | `16.2 ms (60fps)` | **PASS** |
+| #8215 | 2026-10-31 08:18:50 | 3D Particle Renderer | `gpu_utilization` | `57.2 %` | **PASS** |
