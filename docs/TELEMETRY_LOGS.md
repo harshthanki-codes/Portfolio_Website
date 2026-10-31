@@ -9275,3 +9275,4 @@
 | #9226 | 2026-10-31 11:07:20 | CSS-in-JS Themer | `latency` | `16.8 ms` | **PASS** |
 | #9227 | 2026-10-31 11:07:30 | Touch Gesture Dispatcher | `first_contentful_paint` | `1134.0 ms` | **PASS** |
 | #9228 | 2026-10-31 11:07:40 | Micro Frontend Loader | `time_to_interactive` | `1303.6 ms` | **PASS** |
+| #9229 | 2026-10-31 11:07:50 | Background Video Loop | `cpu_usage` | `27.7 %` | **PASS** |
