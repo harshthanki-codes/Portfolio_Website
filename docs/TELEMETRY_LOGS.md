@@ -8883,3 +8883,4 @@
 | #8834 | 2026-10-31 10:02:00 | SVG Morphing Pipeline | `jank_events` | `1.1 count` | **PASS** |
 | #8835 | 2026-10-31 10:02:10 | Predictive Arc Canvas | `cpu_usage` | `38.8 %` | **PASS** |
 | #8836 | 2026-10-31 10:02:20 | Background Video Loop | `cpu_usage` | `34.6 %` | **PASS** |
+| #8837 | 2026-10-31 10:02:30 | Viewport Resize Observer | `animation_fps` | `60.7 fps` | **PASS** |
