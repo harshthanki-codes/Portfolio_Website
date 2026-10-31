@@ -9218,3 +9218,4 @@
 | #9169 | 2026-10-31 10:57:50 | Scroll Parallax Manager | `time_to_interactive` | `2488.4 ms` | **PASS** |
 | #9170 | 2026-10-31 10:58:00 | Viewport Resize Observer | `first_contentful_paint` | `995.9 ms` | **PASS** |
 | #9171 | 2026-10-31 10:58:10 | Viewport Resize Observer | `memory_footprint` | `66.2 MB` | **PASS** |
+| #9172 | 2026-10-31 10:58:20 | Scroll Parallax Manager | `memory_footprint` | `52.4 MB` | **PASS** |
