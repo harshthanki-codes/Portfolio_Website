@@ -8609,3 +8609,4 @@
 | #8560 | 2026-10-31 09:16:20 | Scroll Parallax Manager | `first_contentful_paint` | `1044.0 ms` | **PASS** |
 | #8561 | 2026-10-31 09:16:30 | 3D Particle Renderer | `cpu_usage` | `35.5 %` | **PASS** |
 | #8562 | 2026-10-31 09:16:40 | CSS-in-JS Themer | `bundle_size` | `230.5 KB` | **PASS** |
+| #8563 | 2026-10-31 09:16:50 | CSS-in-JS Themer | `jank_events` | `2.6 count` | **PASS** |
