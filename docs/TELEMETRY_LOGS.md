@@ -8789,3 +8789,4 @@
 | #8740 | 2026-10-31 09:46:20 | Touch Gesture Dispatcher | `animation_fps` | `60.9 fps` | **PASS** |
 | #8741 | 2026-10-31 09:46:30 | CSS-in-JS Themer | `bundle_size` | `173.1 KB` | **PASS** |
 | #8742 | 2026-10-31 09:46:40 | Progressive Image Loader | `frame_render_budget` | `16.0 ms (60fps)` | **PASS** |
+| #8743 | 2026-10-31 09:46:50 | Viewport Resize Observer | `time_to_interactive` | `1461.4 ms` | **PASS** |
