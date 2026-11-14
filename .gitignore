@@ -1,40 +1,51 @@
-# build output
+# Next.js build output
+.next/
+out/
+
+# Astro legacy build output
 dist/
-# generated types
 .astro/
+_astro/
+.prerender/
 
-# dependencies
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
 
-# logs
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
 
+# Scripts & temporary tools
+generate_contributions_*.py
+finish_*.py
+contribution.txt
+*.pyc
+__pycache__/
 
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 .DS_Store
 
-# jetbrains setting folder
-.idea/
-
-# unignore source data
-!src/data/
-
-# Unignore website images and assets (overriding machine-wide global gitignore)
-!*.png
-!*.jpg
-!*.jpeg
-!*.webp
-!*.svg
-!*.ico
+# Static and public media assets allowed
 !public/
 !public/**
-!images/
-!images/**
-
