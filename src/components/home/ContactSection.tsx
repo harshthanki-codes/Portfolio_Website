@@ -1,17 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { Mail, CheckCircle2, AlertCircle, Copy, ArrowRight, ShieldCheck } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Copy, ArrowRight } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    _hp: '', // Honeypot trap
+    _hp: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -35,18 +33,21 @@ export const ContactSection: React.FC = () => {
         return;
       }
 
-      // If on static export (e.g. GitHub Pages without Node runtime)
+      // Static fallback for GitHub Pages
       if (res.status === 404 || res.status === 405) {
-        window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+        window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
+          formData.name
+        )}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
         setStatus('success');
         return;
       }
 
       const data = await res.json();
       throw new Error(data.error || 'Failed to dispatch inquiry.');
-    } catch (err: any) {
-      // Fallback for static environments: direct mailto
-      window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+    } catch {
+      window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
+        formData.name
+      )}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
       setStatus('success');
     }
   };
@@ -58,143 +59,136 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 scroll-mt-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-        <SectionHeading
-          number="04"
-          tag="DISPATCH INQUIRY"
-          title="Direct Contact & Engineering Inquiries"
-          subtitle="Looking to discuss local LLM architecture, failover inference DAGs, or contract engineering roles? Send an inquiry or reach out directly."
-        />
+    <section id="contact" className="py-20 sm:py-24 scroll-mt-16">
+      <div className="max-w-5xl mx-auto px-6 space-y-14">
+        {/* Section Header */}
+        <div className="space-y-2 pb-6 border-b border-[var(--border)]">
+          <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
+            04 / CONTACT & INQUIRIES
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
+            Direct Engineering Inquiry
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Contact Direct Card (5 cols) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Direct channels (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
-            <Card variant="raised" className="p-6 space-y-4">
-              <div className="flex items-center gap-2 pb-3 border-b border-[var(--border-subtle)]">
-                <ShieldCheck className="w-4 h-4 text-[var(--accent)]" />
-                <span className="font-mono text-xs uppercase font-bold text-[var(--text-primary)]">
-                  Verified Channels
+            <p className="text-sm sm:text-base font-sans text-[var(--text-secondary)] leading-relaxed">
+              Available for full-time senior engineering roles, technical advisory, and on-premise LLM infrastructure consulting.
+            </p>
+
+            <div className="space-y-3 pt-4 border-t border-[var(--border)]">
+              <div className="font-mono text-xs text-[var(--text-tertiary)] uppercase tracking-wider">
+                Direct Email Channel
+              </div>
+              <div className="flex items-center justify-between gap-3 p-3 bg-[var(--surface)] border border-[var(--border)] rounded-sm">
+                <span className="font-mono text-xs text-[var(--text-primary)] font-medium truncate">
+                  harshthanki203@gmail.com
                 </span>
+                <button
+                  onClick={copyEmail}
+                  className="p-1.5 border border-[var(--border)] hover:border-[var(--accent)] text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors rounded-sm shrink-0"
+                  aria-label="Copy email address"
+                >
+                  {copied ? (
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  ) : (
+                    <Copy className="w-4 h-4" />
+                  )}
+                </button>
               </div>
-
-              <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-                Direct messages are routed to my personal inbox with rate-limiting and cryptographic spam filtering.
-              </p>
-
-              <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-[var(--radius-xs)] space-y-2">
-                <div className="font-mono text-[11px] text-[var(--text-tertiary)]">
-                  Primary Email:
-                </div>
-                <div className="flex items-center justify-between gap-2">
-                  <span className="font-mono text-xs text-[var(--text-primary)] font-semibold truncate">
-                    harshthanki203@gmail.com
-                  </span>
-                  <button
-                    onClick={copyEmail}
-                    className="p-1.5 border border-[var(--border)] hover:border-[var(--accent)] rounded-[var(--radius-xs)] text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors shrink-0"
-                    aria-label="Copy email address"
-                  >
-                    {copied ? (
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    ) : (
-                      <Copy className="w-3.5 h-3.5" />
-                    )}
-                  </button>
-                </div>
-              </div>
-
-              <div className="pt-2 font-mono text-[11px] text-[var(--text-tertiary)] space-y-1">
+              <div className="font-mono text-[11px] text-[var(--text-tertiary)] space-y-1">
                 <div>Location: Ahmedabad, Gujarat, India (UTC +05:30)</div>
-                <div>Response SLA: &lt; 24 business hours</div>
+                <div>Typical Response SLA: &lt; 24 hours</div>
               </div>
-            </Card>
+            </div>
           </div>
 
-          {/* Form Card (7 cols) */}
+          {/* Right Column: Clean Editorial Form (7 cols) */}
           <div className="lg:col-span-7">
-            <Card variant="default" className="p-6 sm:p-8">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Honeypot field (hidden from visual users) */}
-                <input
-                  type="text"
-                  name="_hp"
-                  value={formData._hp}
-                  onChange={(e) => setFormData({ ...formData, _hp: e.target.value })}
-                  style={{ display: 'none' }}
-                  tabIndex={-1}
-                  autoComplete="off"
-                />
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot trap */}
+              <input
+                type="text"
+                name="_hp"
+                value={formData._hp}
+                onChange={(e) => setFormData({ ...formData, _hp: e.target.value })}
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="font-mono text-xs text-[var(--text-secondary)] block">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="e.g. Jane Doe"
-                      className="w-full bg-[var(--surface-raised)] border border-[var(--border)] rounded-[var(--radius-xs)] px-3 py-2 text-xs font-mono text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none focus:border-[var(--accent)]"
-                    />
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="font-mono text-xs text-[var(--text-secondary)] block">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="jane@company.com"
-                      className="w-full bg-[var(--surface-raised)] border border-[var(--border)] rounded-[var(--radius-xs)] px-3 py-2 text-xs font-mono text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none focus:border-[var(--accent)]"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
                   <label className="font-mono text-xs text-[var(--text-secondary)] block">
-                    Engineering Brief / Message *
+                    Your Name
                   </label>
-                  <textarea
+                  <input
+                    type="text"
                     required
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Describe your architecture requirements, timeline, or engineering role..."
-                    className="w-full bg-[var(--surface-raised)] border border-[var(--border)] rounded-[var(--radius-xs)] px-3 py-2 text-xs font-mono text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none focus:border-[var(--accent)] resize-y"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="e.g. Elena Rostova"
+                    className="w-full bg-transparent border-b border-[var(--border-strong)] focus:border-[var(--accent)] py-2 text-sm font-sans text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none transition-colors"
                   />
                 </div>
 
-                {status === 'error' && (
-                  <div className="p-3 bg-red-950/20 border border-red-500/30 rounded-[var(--radius-xs)] flex items-center gap-2 text-xs font-mono text-red-400">
-                    <AlertCircle className="w-4 h-4 shrink-0" />
-                    <span>{errorMessage}</span>
-                  </div>
-                )}
+                <div className="space-y-2">
+                  <label className="font-mono text-xs text-[var(--text-secondary)] block">
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="elena@company.com"
+                    className="w-full bg-transparent border-b border-[var(--border-strong)] focus:border-[var(--accent)] py-2 text-sm font-sans text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none transition-colors"
+                  />
+                </div>
+              </div>
 
-                {status === 'success' && (
-                  <div className="p-3 bg-emerald-950/20 border border-emerald-500/30 rounded-[var(--radius-xs)] flex items-center gap-2 text-xs font-mono text-emerald-400">
-                    <CheckCircle2 className="w-4 h-4 shrink-0" />
-                    <span>Message received. I will review and reply within 24 hours.</span>
-                  </div>
-                )}
+              <div className="space-y-2 pt-2">
+                <label className="font-mono text-xs text-[var(--text-secondary)] block">
+                  Project Brief or Inquiry
+                </label>
+                <textarea
+                  required
+                  rows={4}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="Outline your architecture scope, timeline, or engineering role..."
+                  className="w-full bg-transparent border-b border-[var(--border-strong)] focus:border-[var(--accent)] py-2 text-sm font-sans text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none transition-colors resize-y"
+                />
+              </div>
 
+              {status === 'error' && (
+                <div className="p-3 bg-red-950/20 border border-red-500/30 text-xs font-mono text-red-400 flex items-center gap-2">
+                  <AlertCircle className="w-4 h-4 shrink-0" />
+                  <span>{errorMessage}</span>
+                </div>
+              )}
+
+              {status === 'success' && (
+                <div className="p-3 bg-emerald-950/20 border border-emerald-500/30 text-xs font-mono text-emerald-400 flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" />
+                  <span>Message dispatched. I will review and reply within 24 business hours.</span>
+                </div>
+              )}
+
+              <div className="pt-2">
                 <Button
                   type="submit"
                   size="md"
                   variant="primary"
                   isLoading={status === 'loading'}
-                  className="w-full sm:w-auto"
+                  rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
-                  Dispatch Message
+                  Send Message
                 </Button>
-              </form>
-            </Card>
+              </div>
+            </form>
           </div>
         </div>
       </div>

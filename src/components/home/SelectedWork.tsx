@@ -1,91 +1,77 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { ArrowUpRight, Cpu, Layers, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { getFeaturedProjects } from '@/data/projects';
-import { Card } from '@/components/ui/Card';
-import { Tag } from '@/components/ui/Tag';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { Button } from '@/components/ui/Button';
 
 export const SelectedWork: React.FC = () => {
   const projects = getFeaturedProjects();
 
   return (
-    <section id="work" className="py-20 border-b border-[var(--border)] scroll-mt-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-        <SectionHeading
-          number="01"
-          tag="CASE STUDIES"
-          title="Engineered Systems & Production Architecture"
-          subtitle="Deep-dive architectural breakdowns of on-premise fine-tuning pipelines, fault-tolerant ingestion DAGs, and high-throughput financial cores."
-        />
+    <section id="work" className="py-20 sm:py-24 border-b border-[var(--border)] scroll-mt-16">
+      <div className="max-w-5xl mx-auto px-6 space-y-14">
+        {/* Editorial Section Masthead */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-[var(--border)]">
+          <div className="space-y-2">
+            <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
+              01 / SELECTED WORK
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
+              Production Systems & Architecture
+            </h2>
+          </div>
+          <p className="text-xs sm:text-sm font-sans text-[var(--text-secondary)] max-w-sm leading-relaxed">
+            Detailed breakdowns of on-premise fine-tuning pipelines, multimodal failover DAGs, and high-throughput financial engines.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project) => (
-            <Card
+        {/* Clean Editorial List with Hairline Separators */}
+        <div className="divide-y divide-[var(--border)]">
+          {projects.map((project, idx) => (
+            <article
               key={project.slug}
-              variant="default"
-              showCrosshairs
-              className="flex flex-col justify-between p-6 hover:border-[var(--border-strong)] hover:shadow-[var(--shadow-md)] transition-all group"
+              className="py-10 first:pt-0 last:pb-0 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start group"
             >
-              <div className="space-y-4">
-                {/* Meta header */}
-                <div className="flex items-center justify-between gap-2">
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.categories.map((cat) => (
-                      <Tag key={cat} variant="default" size="sm">
-                        {cat}
-                      </Tag>
-                    ))}
-                  </div>
-                  <Tag variant="accent" size="sm">
-                    {project.status}
-                  </Tag>
+              {/* Left Column: Number & Domain (3 cols) */}
+              <div className="lg:col-span-3 space-y-2 font-mono text-xs text-[var(--text-tertiary)]">
+                <div className="text-xs font-semibold text-[var(--accent)]">
+                  0{idx + 1} // CASE STUDY
                 </div>
-
-                {/* Title & Tagline */}
-                <div className="space-y-1.5">
-                  <h3 className="text-lg font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
-                    <NextLink href={`/work/${project.slug}`} className="focus:outline-none">
-                      {project.title}
-                    </NextLink>
-                  </h3>
-                  <p className="text-xs text-[var(--text-secondary)] line-clamp-2 leading-relaxed">
-                    {project.tagline}
-                  </p>
+                <div className="text-[11px] text-[var(--text-secondary)] tracking-wider uppercase">
+                  {project.categories.join(' • ')}
                 </div>
+              </div>
 
-                {/* Architecture Invariant / Problem */}
-                <div className="p-3 bg-[var(--surface-raised)] border border-[var(--border-subtle)] rounded-[var(--radius-xs)] font-mono text-xs space-y-1.5">
-                  <div className="text-[10px] uppercase text-[var(--text-tertiary)] tracking-wider">
-                    Core Architectural Challenge
-                  </div>
-                  <p className="text-[11px] text-[var(--text-secondary)] line-clamp-2">
-                    {project.problem}
-                  </p>
-                </div>
+              {/* Center Column: Title, Tagline & Result (7 cols) */}
+              <div className="lg:col-span-7 space-y-3">
+                <h3 className="text-xl sm:text-2xl font-serif text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
+                  <NextLink href={`/work/${project.slug}`}>
+                    {project.title}
+                  </NextLink>
+                </h3>
 
-                {/* Verified Metric Highlight */}
-                <div className="pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between font-mono text-xs">
-                  <span className="text-[var(--text-tertiary)] text-[11px]">Primary Result:</span>
-                  <span className="font-semibold text-emerald-400">
+                <p className="text-xs sm:text-sm font-sans text-[var(--text-secondary)] leading-relaxed">
+                  {project.tagline}
+                </p>
+
+                <div className="pt-1 flex flex-col sm:flex-row sm:items-center gap-2 text-xs font-mono">
+                  <span className="text-[var(--accent)] font-medium">Benchmark Result:</span>
+                  <span className="text-[var(--text-primary)] font-medium">
                     {project.evaluation[0]?.ours || project.resultHeadline}
                   </span>
                 </div>
               </div>
 
-              {/* Action Link Footer */}
-              <div className="pt-6 mt-4 border-t border-[var(--border)] flex items-center justify-between">
-                <span className="font-mono text-[11px] text-[var(--text-tertiary)]">
-                  {project.readingTime}
-                </span>
-                <NextLink href={`/work/${project.slug}`}>
-                  <Button size="sm" variant="outline" rightIcon={<ArrowUpRight className="w-3.5 h-3.5" />}>
-                    Read Case Study
-                  </Button>
+              {/* Right Column: Deep-Dive Link (2 cols) */}
+              <div className="lg:col-span-2 flex lg:justify-end pt-1">
+                <NextLink
+                  href={`/work/${project.slug}`}
+                  className="inline-flex items-center gap-1 text-xs font-mono text-[var(--text-secondary)] group-hover:text-[var(--accent)] transition-colors"
+                >
+                  <span>Read Study</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </NextLink>
               </div>
-            </Card>
+            </article>
           ))}
         </div>
       </div>
