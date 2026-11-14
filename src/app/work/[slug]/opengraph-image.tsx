@@ -1,5 +1,12 @@
 import { ImageResponse } from 'next/og';
-import { getProjectBySlug } from '@/data/projects';
+import { getProjectBySlug, getAllProjects } from '@/data/projects';
+
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  const projects = getAllProjects();
+  return projects.map((p) => ({ slug: p.slug }));
+}
 
 export const alt = 'Harsh Thanki — Systems Architecture Case Study';
 export const size = { width: 1200, height: 630 };

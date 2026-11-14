@@ -29,17 +29,25 @@ export const ContactSection: React.FC = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || 'Failed to dispatch inquiry.');
+      if (res.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '', _hp: '' });
+        return;
       }
 
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '', _hp: '' });
+      // If on static export (e.g. GitHub Pages without Node runtime)
+      if (res.status === 404 || res.status === 405) {
+        window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+        setStatus('success');
+        return;
+      }
+
+      const data = await res.json();
+      throw new Error(data.error || 'Failed to dispatch inquiry.');
     } catch (err: any) {
-      setStatus('error');
-      setErrorMessage(err.message || 'An error occurred. Please try again.');
+      // Fallback for static environments: direct mailto
+      window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+      setStatus('success');
     }
   };
 

@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getAllProjects } from '@/data/projects';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://harshthanki-codes.github.io/Portfolio_Website';
   const projects = getAllProjects();
