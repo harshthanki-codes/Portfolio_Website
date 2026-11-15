@@ -10,7 +10,7 @@ export const ThemeToggle: React.FC = () => {
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem('portfolio-theme') as 'dark' | 'light' | null;
-    const initialTheme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const initialTheme = stored || 'dark';
     setTheme(initialTheme);
     applyTheme(initialTheme);
   }, []);
@@ -19,9 +19,11 @@ export const ThemeToggle: React.FC = () => {
     const root = document.documentElement;
     if (newTheme === 'dark') {
       root.classList.add('dark');
+      root.classList.remove('light');
       root.setAttribute('data-theme', 'dark');
     } else {
       root.classList.remove('dark');
+      root.classList.add('light');
       root.setAttribute('data-theme', 'light');
     }
     localStorage.setItem('portfolio-theme', newTheme);
@@ -39,7 +41,7 @@ export const ThemeToggle: React.FC = () => {
         aria-label="Toggle Theme"
         className="w-8 h-8 rounded-[var(--radius-xs)] border border-[var(--border)] flex items-center justify-center text-[var(--text-secondary)] opacity-0"
       >
-        <Moon className="w-4 h-4" />
+        <Sun className="w-4 h-4" />
       </button>
     );
   }
@@ -48,7 +50,7 @@ export const ThemeToggle: React.FC = () => {
     <button
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-      className="w-8 h-8 rounded-[var(--radius-xs)] border border-[var(--border)] bg-[var(--surface-raised)] hover:border-[var(--accent)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+      className="w-8 h-8 rounded-[var(--radius-xs)] border border-[var(--hairline)] bg-[var(--surface)] hover:border-[var(--accent)] flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
     >
       {theme === 'dark' ? (
         <Sun className="w-4 h-4 transition-transform hover:rotate-45" />

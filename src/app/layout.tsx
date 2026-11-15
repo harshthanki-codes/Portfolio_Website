@@ -1,52 +1,53 @@
 import type { Metadata } from 'next';
-import { Newsreader, Inter, JetBrains_Mono } from 'next/font/google';
+import { Instrument_Serif, Geist, Geist_Mono } from 'next/font/google';
 import '@/styles/globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { CommandPalette } from '@/components/ui/CommandPalette';
 import { SmoothScroll } from '@/components/motion/SmoothScroll';
+import { QuietSignalBackground } from '@/components/motion/QuietSignalBackground';
 
-// Editorial Serif for Headlines (Max 2 weights: 400, 600)
-const newsreader = Newsreader({
+// Display Serif Face (Instrument Serif)
+const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
+  weight: ['400'],
   style: ['normal', 'italic'],
-  weight: ['400', '600'],
-  variable: '--font-serif',
+  variable: '--font-instrument-serif',
   display: 'swap',
 });
 
-// Clean Sans for Body (Max 2 weights: 400, 500)
-const inter = Inter({
+// Sans Body Face (Geist)
+const geist = Geist({
   subsets: ['latin'],
   weight: ['400', '500'],
-  variable: '--font-sans',
+  variable: '--font-geist',
   display: 'swap',
 });
 
-// Monospace ONLY for small labels and numbers (Max 2 weights: 400, 500)
-const jetbrainsMono = JetBrains_Mono({
+// Monospace Face (Geist Mono - numbers & tiny labels only)
+const geistMono = Geist_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
-  variable: '--font-mono',
+  variable: '--font-geist-mono',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://harshthanki-codes.github.io/Portfolio_Website'),
   title: {
-    default: 'Harsh Thanki — AI Systems Architect',
+    default: 'Harsh Thanki — AI engineer',
     template: '%s | Harsh Thanki',
   },
   description:
-    'AI Systems Architect engineering deterministic LLM backends, fault-tolerant inference DAGs, and local open-weights engines with zero marginal token cost.',
+    'AI engineer in Ahmedabad building deterministic open-weights AI systems, failover pipelines, and local inference runtimes.',
   authors: [{ name: 'Harsh Thanki', url: 'https://github.com/harshthanki-codes' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://harshthanki-codes.github.io/Portfolio_Website/',
-    title: 'Harsh Thanki — AI Systems Architect',
+    title: 'Harsh Thanki — AI engineer',
     description:
-      'Deterministic LLM backends, failover inference DAGs, and on-premise fine-tuning at zero marginal token cost.',
+      'AI systems that run on your own hardware. On-premise fine-tuning, failover inference DAGs, and local open-weights engines with zero marginal token cost.',
   },
 };
 
@@ -58,22 +59,25 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${newsreader.variable} ${inter.variable} ${jetbrainsMono.variable} dark`}
+      className={`${instrumentSerif.variable} ${geist.variable} ${geistMono.variable} dark`}
       data-theme="dark"
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[var(--background)] text-[var(--text-primary)] font-sans antialiased selection:bg-[var(--accent)] selection:text-white">
+      <body className="min-h-screen bg-[var(--background)] text-[var(--text-primary)] font-sans antialiased selection:bg-[var(--accent)] selection:text-[var(--accent-text)] relative">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[var(--accent)] text-white font-mono text-xs font-medium rounded-sm shadow-md"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[var(--accent)] text-[var(--accent-text)] font-mono text-xs font-medium rounded-[var(--radius)] shadow-md"
         >
           Skip to main content
         </a>
 
+        {/* Quiet Signal Living Background */}
+        <QuietSignalBackground />
+
         <SmoothScroll>
           <CommandPalette />
           <Navbar />
-          <main id="main-content">{children}</main>
+          <main id="main-content" className="relative z-10">{children}</main>
           <Footer />
         </SmoothScroll>
       </body>

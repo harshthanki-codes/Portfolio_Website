@@ -2,96 +2,157 @@
 
 @layer base {
   :root {
-    /* Editorial Light (Warm Paper) */
-    --background: #fbfbf9;
-    --surface: #ffffff;
-    --surface-raised: #f3f3ee;
-    --border: #e6e6de;
-    --border-strong: #d0d0c4;
-    --border-subtle: #f0f0ea;
+    /* Editorial Dark (Default) */
+    --background: #0A0A0B;
+    --surface: #111113;
+    --surface-raised: #17171A;
+    --border: #26262B;
+    --hairline: #26262B;
+    --border-strong: #3A3A40;
+    --border-subtle: #1C1C20;
 
-    --text-primary: #18191a;
-    --text-secondary: #5a5c5f;
-    --text-tertiary: #54575c;
-    --text-disabled: #8a8d93;
+    --text-primary: #F3EFE6;
+    --text-secondary: #9B978E;
+    --text-muted: #9B978E;
+    --text-tertiary: #9c9c94;
+    --text-disabled: #5E5D58;
 
-    /* Restrained Warm Terracotta Accent */
-    --accent: #c45b35;
-    --accent-hover: #b04e2a;
-    --accent-subtle: rgba(196, 91, 53, 0.08);
-    --accent-border: rgba(196, 91, 53, 0.25);
-    --accent-text: #ffffff;
+    /* Warm Terracotta / Ochre Accent */
+    --accent: #FF7A3D;
+    --accent-hover: #FFA06E;
+    --accent-subtle: rgba(255, 122, 61, 0.08);
+    --accent-border: rgba(255, 122, 61, 0.3);
+    --accent-text: #0A0A0B;
 
-    --font-serif: var(--font-serif), "Newsreader", Georgia, serif;
-    --font-sans: var(--font-sans), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: var(--font-mono), "JetBrains Mono", monospace;
+    --font-serif: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
+    --font-sans: var(--font-geist), "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
+
+    --radius: 14px;
+    --radius-sm: 8px;
+    --radius-xs: 4px;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  [data-theme="dark"],
-  .dark {
-    /* Editorial Dark (Warm Charcoal & Onyx) */
-    --background: #0e0f12;
-    --surface: #14161b;
-    --surface-raised: #1b1d24;
-    --border: rgba(255, 255, 255, 0.08);
-    --border-strong: rgba(255, 255, 255, 0.16);
-    --border-subtle: rgba(255, 255, 255, 0.04);
+  [data-theme="light"],
+  .light {
+    /* Light "Paper" Theme */
+    --background: #F4F0E6;
+    --surface: #FBF8F1;
+    --surface-raised: #FFFFFF;
+    --border: #D9D3C5;
+    --hairline: #D9D3C5;
+    --border-strong: #C4BDAE;
+    --border-subtle: #EAE4D7;
 
-    --text-primary: #f5f5f0;
-    --text-secondary: #a3a39c;
-    --text-tertiary: #9c9c94;
-    --text-disabled: #5a5a54;
+    --text-primary: #0E0E10;
+    --text-secondary: #5E5B55;
+    --text-muted: #5E5B55;
+    --text-tertiary: #6E6A63;
+    --text-disabled: #A5A096;
 
-    /* Restrained Terracotta / Warm Ochre */
-    --accent: #d97746;
-    --accent-hover: #e58c5f;
-    --accent-subtle: rgba(217, 119, 70, 0.12);
-    --accent-border: rgba(217, 119, 70, 0.3);
-    --accent-text: #ffffff;
+    /* Terracotta Accent */
+    --accent: #D9531A;
+    --accent-hover: #BF4513;
+    --accent-subtle: rgba(217, 83, 26, 0.08);
+    --accent-border: rgba(217, 83, 26, 0.25);
+    --accent-text: #FFFFFF;
+
+    --font-serif: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
+    --font-sans: var(--font-geist), "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
+
+    --radius: 14px;
+    --radius-sm: 8px;
+    --radius-xs: 4px;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   * {
     border-color: var(--border);
   }
 
-  html {
+  body {
     background-color: var(--background);
     color: var(--text-primary);
-    font-family: var(--font-sans);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  /* Large Serif Display for Headlines */
-  h1, h2, h3, .font-display {
-    font-family: var(--font-serif);
-    letter-spacing: -0.02em;
-    font-feature-settings: "kern" 1, "liga" 1;
-  }
-
-  /* Monospace ONLY for small metadata tags, numbers & timestamps */
-  .mono-label, code, pre, .font-mono {
-    font-family: var(--font-mono);
-    letter-spacing: 0.04em;
-    font-feature-settings: "tnum" 1;
-  }
-
-  /* High-contrast accessible focus ring */
-  :focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out);
   }
 }
 
-/* Reduced Motion Override */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+/* Subtle SVG Film Grain Overlay (4% opacity) */
+.bg-film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Soft Ambient Glows (6-10% warm terracotta) */
+.bg-ambient-glows {
+  background-image: radial-gradient(circle at 18% 12%, rgba(255, 122, 61, 0.08) 0%, transparent 45%),
+                    radial-gradient(circle at 82% 40%, rgba(255, 122, 61, 0.05) 0%, transparent 40%);
+}
+
+[data-theme="light"] .bg-ambient-glows {
+  background-image: radial-gradient(circle at 18% 12%, rgba(217, 83, 26, 0.05) 0%, transparent 45%),
+                    radial-gradient(circle at 82% 40%, rgba(217, 83, 26, 0.03) 0%, transparent 40%);
+}
+
+/* Typography Utility Classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Subtle hairline borders */
+.hairline-border {
+  border: 1px solid var(--hairline);
+}
+
+/* Monospace label styling - small, restrained */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Editorial line-by-line reveal animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(105%);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 640ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
 }

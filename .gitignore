@@ -48,4 +48,8 @@ __pycache__/
 
 # Static and public media assets allowed
 !public/
+
+# Design references and screenshots
+docs/refs/
+screenshots/
 !public/**
