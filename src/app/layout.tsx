@@ -5,7 +5,6 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { CommandPalette } from '@/components/ui/CommandPalette';
 import { SmoothScroll } from '@/components/motion/SmoothScroll';
-import { CustomCursor } from '@/components/motion/CustomCursor';
 
 // Editorial Serif for Headlines (Max 2 weights: 400, 600)
 const newsreader = Newsreader({
@@ -72,7 +71,6 @@ export default function RootLayout({
         </a>
 
         <SmoothScroll>
-          <CustomCursor />
           <CommandPalette />
           <Navbar />
           <main id="main-content">{children}</main>

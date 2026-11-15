@@ -1,8 +1,5 @@
 import React from 'react';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { Card } from '@/components/ui/Card';
-import { Tag } from '@/components/ui/Tag';
-import { Cpu, Database, Shield, Zap, GitBranch } from 'lucide-react';
+import { Cpu, Database, Shield, Zap } from 'lucide-react';
 
 interface SkillGroup {
   id: string;
@@ -29,7 +26,7 @@ export const SkillsSection: React.FC = () => {
     {
       id: 'finetuning',
       category: 'Fine-Tuning & Quantization',
-      icon: <Zap className="w-4 h-4 text-amber-400" />,
+      icon: <Zap className="w-4 h-4 text-[var(--accent)]" />,
       description: 'Domain adaptation of open-weights models under consumer VRAM constraints.',
       skills: [
         { name: 'QLoRA & PEFT', context: '4-bit BitsAndBytes parameter-efficient tuning' },
@@ -41,7 +38,7 @@ export const SkillsSection: React.FC = () => {
     {
       id: 'backend',
       category: 'Backend & High-Throughput Engines',
-      icon: <Database className="w-4 h-4 text-emerald-400" />,
+      icon: <Database className="w-4 h-4 text-[var(--accent)]" />,
       description: 'Relational data modeling, asynchronous queuing, and transactional integrity.',
       skills: [
         { name: 'Python & FastAPI', context: 'High-concurrency async endpoints & streaming' },
@@ -53,7 +50,7 @@ export const SkillsSection: React.FC = () => {
     {
       id: 'guardrails',
       category: 'Evaluation & Security Guardrails',
-      icon: <Shield className="w-4 h-4 text-cyan-400" />,
+      icon: <Shield className="w-4 h-4 text-[var(--accent)]" />,
       description: 'Formal verification, AST parsing, and zero-trust perimeter enforcement.',
       skills: [
         { name: 'AST Syntax Validation', context: 'Pre-execution schema and code interception' },
@@ -65,44 +62,53 @@ export const SkillsSection: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 border-b border-[var(--border)] scroll-mt-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-        <SectionHeading
-          number="03"
-          tag="CORE STACK"
-          title="Skills Grouped by What I Have Shipped In Production"
-          subtitle="A concrete inventory of production-tested frameworks, runtimes, and engineering patterns I use to deliver reliable systems."
-        />
+    <section id="skills" className="py-20 sm:py-24 border-b border-[var(--border)] scroll-mt-16">
+      <div className="max-w-5xl mx-auto px-6 space-y-14">
+        {/* Editorial Section Masthead */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-[var(--border)]">
+          <div className="space-y-2">
+            <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
+              03 / PRODUCTION TOOLING
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
+              Skills Grouped by Shipped Production Code
+            </h2>
+          </div>
+          <p className="text-xs sm:text-sm font-sans text-[var(--text-secondary)] max-w-sm leading-relaxed">
+            Concrete inventory of battle-tested frameworks, runtimes, and engineering patterns used in deployed production systems.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Editorial Grid with Hairline Dividers */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {skillGroups.map((group) => (
-            <Card key={group.id} variant="default" className="p-6 space-y-4">
-              <div className="flex items-center gap-2 pb-3 border-b border-[var(--border-subtle)]">
+            <div key={group.id} className="space-y-4">
+              <div className="flex items-center gap-2 pb-3 border-b border-[var(--border)]">
                 {group.icon}
-                <h3 className="font-mono text-sm font-bold text-[var(--text-primary)]">
+                <h3 className="font-serif text-lg font-normal text-[var(--text-primary)]">
                   {group.category}
                 </h3>
               </div>
-              <p className="text-xs text-[var(--text-secondary)]">
+              <p className="text-xs font-sans text-[var(--text-secondary)] leading-relaxed">
                 {group.description}
               </p>
 
-              <div className="space-y-2.5 pt-2">
+              <div className="divide-y divide-[var(--border)] border-t border-b border-[var(--border)]">
                 {group.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="p-2.5 bg-[var(--surface-raised)] border border-[var(--border-subtle)] rounded-[var(--radius-xs)] flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-mono text-xs"
+                    className="py-2.5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 text-xs"
                   >
-                    <span className="font-semibold text-[var(--text-primary)]">
+                    <span className="font-mono font-medium text-[var(--text-primary)]">
                       {skill.name}
                     </span>
-                    <span className="text-[11px] text-[var(--text-tertiary)]">
+                    <span className="font-sans text-[11px] text-[var(--text-tertiary)]">
                       {skill.context}
                     </span>
                   </div>
                 ))}
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>

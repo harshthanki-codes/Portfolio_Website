@@ -12,8 +12,8 @@
 
     --text-primary: #18191a;
     --text-secondary: #5a5c5f;
-    --text-tertiary: #878a8f;
-    --text-disabled: #b5b8be;
+    --text-tertiary: #54575c;
+    --text-disabled: #8a8d93;
 
     /* Restrained Warm Terracotta Accent */
     --accent: #c45b35;
@@ -38,9 +38,9 @@
     --border-subtle: rgba(255, 255, 255, 0.04);
 
     --text-primary: #f5f5f0;
-    --text-secondary: #9e9e98;
-    --text-tertiary: #60605a;
-    --text-disabled: #3d3e3a;
+    --text-secondary: #a3a39c;
+    --text-tertiary: #9c9c94;
+    --text-disabled: #5a5a54;
 
     /* Restrained Terracotta / Warm Ochre */
     --accent: #d97746;

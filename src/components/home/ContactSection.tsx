@@ -64,7 +64,7 @@ export const ContactSection: React.FC = () => {
         {/* Section Header */}
         <div className="space-y-2 pb-6 border-b border-[var(--border)]">
           <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
-            04 / CONTACT & INQUIRIES
+            06 / CONTACT & INQUIRIES
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
             Direct Engineering Inquiry

@@ -174,8 +174,8 @@ export const PROJECTS_DATA: ProjectData[] = [
     id: 'multimodal-voice-failover-dag',
     slug: 'multimodal-voice-failover-dag',
     title: 'Multimodal Voice-to-Order Ingestion & 7-Tier Failover DAG',
-    tagline: 'End-to-end multimodal audio ingestion converting complex multilingual voice calls into verified ERP orders with zero drops.',
-    resultHeadline: '0% order drop rate across multilingual dialect calls with a sub-220ms 7-tier failover DAG circuit breaker.',
+    tagline: 'End-to-end multimodal audio ingestion converting complex multilingual voice calls into verified ERP orders with 99.98% order preservation.',
+    resultHeadline: '99.98% order preservation across dialect calls with sub-220ms 7-tier failover DAG circuit breaking.',
     status: 'Field Testing',
     statusDetail: 'Field testing with active enterprise supply chain operators',
     statusWeight: 2,
@@ -370,7 +370,7 @@ export const PROJECTS_DATA: ProjectData[] = [
         { id: '1', label: 'Outbound Browser Traffic', sub: 'DoH Bypasses Stripped via GPO', type: 'input' },
         { id: '2', label: 'Local DNS Proxy', sub: 'Strict In-Memory Domain Whitelist', type: 'process' },
         { id: '3', label: 'Fails-Closed Watchdog', sub: 'Process Integrity & IPC Heartbeat', type: 'decision' },
-        { id: '4', label: 'Whitelisted Gateway', sub: 'Zero Exfiltration Routing', type: 'output' }
+        { id: '4', label: 'Whitelisted Gateway', sub: 'Policy-Enforced Egress Routing', type: 'output' }
       ],
       edges: [
         { from: '1', to: '2' },

@@ -65,16 +65,21 @@ export const Hero: React.FC = () => {
           {/* Portrait Column (4 cols) — Perfectly framed */}
           <div className="lg:col-span-4 flex justify-start lg:justify-end">
             <div className="relative w-44 h-52 sm:w-56 sm:h-68 rounded-sm overflow-hidden border border-[var(--border-strong)] bg-[var(--surface)] shadow-md group">
-              <img
-                src={getAssetPath('/harsh-thanki-transparent.png')}
-                alt="Harsh Thanki — AI Systems Architect"
-                width={224}
-                height={272}
-                className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = getAssetPath('/images/harsh-thanki-transparent.png');
-                }}
-              />
+              <picture className="w-full h-full block">
+                <source srcSet={getAssetPath('/harsh-thanki-transparent.webp')} type="image/webp" />
+                <img
+                  src={getAssetPath('/harsh-thanki-transparent.png')}
+                  alt="Harsh Thanki — AI Systems Architect"
+                  width={224}
+                  height={272}
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = getAssetPath('/images/harsh-thanki-transparent.png');
+                  }}
+                />
+              </picture>
               <div className="absolute bottom-0 inset-x-0 p-2 bg-[var(--background)]/90 backdrop-blur-sm border-t border-[var(--border)] font-mono text-[10px] text-[var(--text-tertiary)] flex items-center justify-between">
                 <span>HARSH THANKI</span>
                 <span>AHMEDABAD, IN</span>

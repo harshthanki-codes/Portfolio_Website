@@ -7,7 +7,7 @@ export const AboutSection: React.FC = () => {
         {/* Section Masthead */}
         <div className="space-y-2 pb-6 border-b border-[var(--border)]">
           <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
-            02 / ABOUT & CREDENTIALS
+            04 / ABOUT & CREDENTIALS
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
             Engineering Principles & Credentials

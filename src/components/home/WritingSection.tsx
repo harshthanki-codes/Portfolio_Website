@@ -46,7 +46,7 @@ export const WritingSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-[var(--border)]">
           <div className="space-y-2">
             <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
-              03 / TECHNICAL WRITING & NOTES
+              05 / TECHNICAL WRITING & NOTES
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
               Architecture Essays & Benchmark Logs

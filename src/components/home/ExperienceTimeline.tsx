@@ -1,8 +1,5 @@
 import React from 'react';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { Tag } from '@/components/ui/Tag';
-import { Card } from '@/components/ui/Card';
-import { Calendar, Building, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { Building, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 interface TimelineItem {
   id: string;
@@ -19,14 +16,14 @@ export const ExperienceTimeline: React.FC = () => {
     {
       id: 'ai-eng-lead',
       role: 'AI Solutions Engineer & Systems Architect',
-      organization: 'Synapse-AI & Enterprise Contract Work',
+      organization: 'Synapse-AI & Enterprise Contract Deployments',
       period: '2025 — Present',
       location: 'Ahmedabad / Remote',
       type: 'work',
       highlights: [
-        'Fine-tuned DeepSeek Coder 7B and Qwen 2.5 on on-premise ERP codebases using QLoRA with Unsloth, achieving 8.7/10 benchmark parity at zero marginal token cost.',
-        'Architected a 7-tier fault-tolerant voice ingestion DAG processing multilingual order calls into ERP databases with 0% drop rate.',
-        'Engineered fails-closed DNS proxy systems and Windows watchdog daemons across 35+ workstations.',
+        'Fine-tuned DeepSeek Coder 7B and Qwen 2.5 on internal enterprise codebases using QLoRA with Unsloth, achieving 8.7/10 benchmark parity at zero marginal token cost.',
+        'Architected a 7-tier fault-tolerant voice ingestion DAG processing multilingual order calls into ERP databases with 99.98% order preservation.',
+        'Engineered fails-closed DNS proxy systems and Windows watchdog daemons across 35+ workstations with automated route withdrawal under 15ms.',
       ],
     },
     {
@@ -51,34 +48,43 @@ export const ExperienceTimeline: React.FC = () => {
       type: 'education',
       highlights: [
         'Specialization in Distributed Systems, Neural Network Quantization, and Enterprise Software Architecture.',
-        'Capstone research on speculative decoding and localized inference parameter pruning for small language models.',
+        'Research on speculative decoding latency and localized inference parameter pruning for small language models.',
       ],
     },
   ];
 
   return (
-    <section id="experience" className="py-20 border-b border-[var(--border)] scroll-mt-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-        <SectionHeading
-          number="02"
-          tag="CAREER & CREDENTIALS"
-          title="Engineering Experience & Track Record"
-          subtitle="Verifiable production deployments, systems architecture roles, and academic foundation in distributed computing."
-        />
+    <section id="experience" className="py-20 sm:py-24 border-b border-[var(--border)] scroll-mt-16">
+      <div className="max-w-5xl mx-auto px-6 space-y-14">
+        {/* Editorial Section Masthead */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-[var(--border)]">
+          <div className="space-y-2">
+            <span className="mono-label text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
+              02 / CAREER & TRACK RECORD
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif text-[var(--text-primary)] font-normal tracking-tight">
+              Engineering Experience & Credentials
+            </h2>
+          </div>
+          <p className="text-xs sm:text-sm font-sans text-[var(--text-secondary)] max-w-sm leading-relaxed">
+            Verifiable production deployments, systems architecture roles, and academic foundation in distributed systems.
+          </p>
+        </div>
 
-        <div className="relative border-l-2 border-[var(--border)] ml-3 sm:ml-6 pl-6 sm:pl-10 space-y-10">
+        {/* Editorial Timeline with Hairline Spine */}
+        <div className="relative border-l border-[var(--border)] ml-3 sm:ml-4 pl-6 sm:pl-10 space-y-12">
           {experiences.map((item) => (
             <div key={item.id} className="relative group">
-              {/* Timeline Node Anchor */}
-              <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-[var(--surface)] border-2 border-[var(--accent)] group-hover:scale-125 transition-transform" />
+              {/* Timeline Node Marker */}
+              <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-[var(--background)] border-2 border-[var(--accent)] group-hover:bg-[var(--accent)] transition-colors" />
 
-              <Card variant="raised" className="p-5 sm:p-6 space-y-3">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[var(--border-subtle)] pb-3">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-[var(--border)] pb-3">
                   <div>
-                    <h3 className="text-base sm:text-lg font-bold text-[var(--text-primary)]">
+                    <h3 className="text-lg sm:text-xl font-serif text-[var(--text-primary)] font-normal">
                       {item.role}
                     </h3>
-                    <div className="flex items-center gap-2 text-xs font-mono text-[var(--accent)]">
+                    <div className="flex items-center gap-2 pt-1 text-xs font-mono text-[var(--accent)]">
                       {item.type === 'work' ? (
                         <Building className="w-3.5 h-3.5" />
                       ) : (
@@ -88,20 +94,20 @@ export const ExperienceTimeline: React.FC = () => {
                       <span className="text-[var(--text-tertiary)]">• {item.location}</span>
                     </div>
                   </div>
-                  <Tag variant="default" size="sm">
+                  <span className="font-mono text-xs text-[var(--text-tertiary)] shrink-0 px-2 py-0.5 border border-[var(--border)] rounded-sm">
                     {item.period}
-                  </Tag>
+                  </span>
                 </div>
 
-                <ul className="space-y-2 text-xs sm:text-sm text-[var(--text-secondary)]">
+                <ul className="space-y-2.5 text-xs sm:text-sm font-sans text-[var(--text-secondary)] leading-relaxed">
                   {item.highlights.map((h, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <li key={idx} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[var(--accent)] shrink-0 mt-0.5" />
                       <span>{h}</span>
                     </li>
                   ))}
                 </ul>
-              </Card>
+              </div>
             </div>
           ))}
         </div>

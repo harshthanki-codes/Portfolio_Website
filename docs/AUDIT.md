@@ -2,17 +2,17 @@
 **Role:** Senior Frontend Engineer & Product Designer  
 **Repository:** `harshthanki-codes/Portfolio_Website`  
 **Date:** November 2026  
-**Status:** Audit Complete — No Source Code Files Modified  
+**Status:** Audit Complete — Evaluated Against Current Codebase & Static GitHub Pages Deployment  
 
 ---
 
 ## Executive Summary
 
-This repository hosts the personal portfolio of **Harsh Thanki**, an AI Solutions Engineer and Full-Stack Architect. The site currently presents an ambitious, high-density "mission control / systems observability" theme featuring interactive architecture simulators, telemetry grids, and failover visualizers.
+This audit evaluates the personal engineering portfolio of **Harsh Thanki**, an AI Systems Architect specializing in deterministic LLM backends, on-premise fine-tuning (PEFT/QLoRA), failover inference DAGs, and enterprise systems engineering.
 
-While the technical craftsmanship and ambition behind the custom visualizers are evident, the repository suffers from **significant architectural sprawl, visual over-stimulation, unoptimized bundle weight, conflicting design languages, and severe repository hygiene issues** (including thousands of automated telemetry/commit-generation entries and committed build artifacts that harm professional credibility).
+The repository recently underwent a major architectural migration from a legacy Astro codebase to **Next.js 16.4.6 App Router, TypeScript, and Tailwind CSS v4**, adopting an **Editorial Dark** design language (Newsreader serif display, Inter sans body, restrained terracotta `#d97746` accent, and hairline dividers).
 
-This audit delivers an unvarnished, deep-dive evaluation across six core dimensions, followed by a definitive architectural roadmap and a prioritized top-10 action list.
+While the visual maturity, typographic hierarchy, and engineering depth have improved dramatically over the previous sci-fi simulator aesthetic, critical gaps remain across **deployment architecture (Next.js route handlers vs. static GitHub Pages), missing static assets (broken resume link), leftover dependency bloat, unmounted components, and legacy git history pollution**.
 
 ---
 
@@ -20,166 +20,180 @@ This audit delivers an unvarnished, deep-dive evaluation across six core dimensi
 
 ### 1.1 Core Architecture & Dependencies
 ```
-Runtime & Build:  Node.js 22 LTS / Vite 6.x
-Core Framework:   Astro ^7.2.9 (Islands Architecture, static output mode)
-UI Library:       React ^19.2.8 + React-DOM ^19.2.8 (Client Hydration Islands)
-Styling:          Tailwind CSS ^4.3.3 via @tailwindcss/vite (Vite native plugin)
-Graphics & 3D:    Three.js ^0.185.1, @react-three/fiber ^9.8.1, @react-three/drei ^10.7.9,
-                  @designcodeio/threeui ^1.2.0 (Orphaned / Unmounted in production)
-Animation:        Framer Motion ^13.4.5, Canvas-Confetti ^1.9.4
-Icons:            Lucide React ^1.34.0
-Content & SEO:    @astrojs/mdx ^4.4.16, @astrojs/sitemap ^3.7.2
+Runtime & Engine:       Node.js v24.14.0 / npm 11.14.1 (Target: >=18.0.0; CI: Node 22 LTS)
+Core Framework:         Next.js ^16.4.6 (App Router, Turbopack)
+UI Library:             React ^19.2.8 + React-DOM ^19.2.8
+TypeScript:             v7.0.2 (strict: true, moduleResolution: bundler)
+Styling:                Tailwind CSS ^4.3.3 via @tailwindcss/postcss ^4.3.5 & PostCSS ^8.5.33
+Motion & Scrolling:     Lenis ^1.3.27 (smooth scrolling), Framer Motion ^13.4.5
+Icons:                  Lucide React ^1.34.0
+Schema Validation:      Zod ^4.6.7
+Fonts:                  next/font/google (Newsreader, Inter, JetBrains Mono)
 ```
 
-### 1.2 Configuration Details
-- **`astro.config.mjs`:**
-  - `site`: `'https://harshthanki-codes.github.io'`
-  - `base`: `'/Portfolio_Website'`
-  - Output Mode: `static` (SSG)
-  - Integrations: `tailwind()` (via Vite plugin), `mdx()`, `react()`, `sitemap()`
-- **TypeScript (`tsconfig.json`):**
-  - Extends `astro/tsconfigs/strict`.
-  - Path mapping: `@/*` mapped to `src/*`.
+### 1.2 Orphaned & Leftover Dependencies in `package.json`
+Although the application has migrated to Next.js App Router, `package.json` still retains obsolete dependencies from the previous Astro build:
+- `astro: ^7.2.9`
+- `@astrojs/mdx: ^7.0.8`
+- `@astrojs/react: ^6.0.4`
+- `@astrojs/sitemap: ^3.7.3`
+- `@tailwindcss/vite: ^4.3.3`
 
-### 1.3 Build Pipeline & CI/CD Deployment
-- **Deployment Target:** GitHub Pages (`gh-pages` / Actions environment).
-- **GitHub Workflow:** `.github/workflows/deploy.yml` triggers on push to `main` branch.
-- **Actions Used:**
-  - `actions/checkout@v4`
-  - `withastro/action@v3` (running on Node.js 22)
-  - `actions/deploy-pages@v4`
-- **Build Output:** Statically compiles to `dist/`, generating `/index.html` (207 KB uncompressed HTML) and `sitemap-index.xml`.
+*Impact:* These dead packages inflate `node_modules`, slow down `npm install` and CI runs, and create confusion regarding the actual project build toolchain.
 
-### 1.4 Critical Configuration Defects
-1. **Repository Root Pollution:** Multiple build artifacts (`_astro/`, `dist/`, `.prerender/`, `index.html.bak`, `liquid.html`, `liquid.json`) are committed directly to the git repository despite `dist/` being in `.gitignore`.
-2. **Missing Subpath Routing Guardrails:** Asset references that do not prepend Astro's `import.meta.env.BASE_URL` risk 404s when hosted under subpaths like `/Portfolio_Website/`.
-3. **Dead Weight in `package.json`:** Heavy 3D rendering dependencies (`@react-three/fiber`, `@react-three/drei`, `three`, `@designcodeio/threeui`) total over 85MB in `node_modules` and add Vite pre-bundling overhead, despite being disabled in production index.
+### 1.3 Build Pipeline & GitHub Pages Deployment Setup
+- **Static Export Configuration (`next.config.ts`):**
+  - `output: 'export'` (compiles static HTML/CSS/JS to `./out`)
+  - `basePath: '/Portfolio_Website'` (required for GitHub Pages subpath hosting)
+  - `trailingSlash: true` (ensures subpaths resolve correctly without server rewrite rules)
+  - `images: { unoptimized: true }` (required because GitHub Pages lacks a Node.js image optimization runtime)
+- **CI/CD Workflows (`.github/workflows/`):**
+  - **`deploy.yml`:** Dual-deployment pipeline triggered on push to `main`:
+    1. Compiles static site via `npm run build` with `NEXT_PUBLIC_SITE_URL`.
+    2. Uploads and deploys `./out` to GitHub Pages using `actions/upload-pages-artifact@v3` and `actions/deploy-pages@v4`.
+    3. As a resilient fallback, deploys `./out` to the `gh-pages` branch using `JamesIves/github-pages-deploy-action@v4`.
+  - **`ci.yml`:** Runs `npx tsc --noEmit` and `npm run build` on PRs and pushes to `main`.
+- **Architectural Disconnect:** Next.js Route Handlers (`src/app/api/contact/route.ts` and `src/app/api/demo/route.ts`) are compiled as dynamic server endpoints in local Node.js environments. On static GitHub Pages, these server endpoints **cannot execute**. The frontend relies on client-side fallbacks (`mailto:` for contact submissions, and simulated streaming for demo evaluations).
 
 ---
 
 ## 2. Content Inventory & Critique
 
-### 2.1 Section-by-Section Breakdown
+### 2.1 Section-by-Section Assessment
 
-| Section | Component | Purpose | Assessment & Weaknesses |
+| Section / Component | Current Implementation | Status | Critique & Weaknesses |
 | :--- | :--- | :--- | :--- |
-| **Header / Nav** | `Navbar.astro` + `MobileNavDrawer.tsx` | Site navigation, status indicator, resume download | Status badge ("Available Q4 2026") looks fine, but header is overly tall on mobile; navigation pills duplicate command palette options. |
-| **Hero** | `Hero.astro` + `HeroInteractiveView.tsx` | Positioning statement, CTA, terminal HUD | **Weakness:** Heavy buzzword density ("Zero Marginal Token Cost", "Fails-Closed Architecture", "7-Tier Failover"). Terminal simulator is a 2021 developer trope that hides value behind synthetic logs. |
-| **Solutions** | `SolutionsSection.astro` + `SolutionsShowcase.tsx` | 3 Enterprise capability pillars | Overly abstract. Interactive tabs show simulated live system logs instead of real customer problem-to-outcome metrics. |
-| **Projects** | `ProjectsSection.tsx` | Filterable project catalog (7 projects) | Good technical depth, but contains exaggerated claims (e.g., "0% transaction loss across $4.2M", "35+ enterprise workstations deployed"). |
-| **Telemetry** | `TelemetrySection.astro` + `TelemetryWidget.tsx` | Real-time system latency & uptime metrics | **Fictitious data disguised as telemetry.** Shows animated canvas sine waves, synthetic latency (14ms), and fake memory usage. Technical evaluators see through this immediately. |
-| **Skills Matrix** | `SkillsSection.astro` | Technical competencies across 4 domains | High volume of buzzwords. Lacks distinction between foundational expertise (Python, TypeScript, SQL) vs superficial tool mention (vLLM, SIMD, Triton). |
-| **Experience** | `ExperienceSection.astro` | Career timeline & education | **Date Conflicts:** Lists Master of Computer Applications (MCA) at Alliance University (2024–2026) while concurrently claiming full-time Senior AI Solutions Engineer roles. Raises resume verification concerns. |
-| **About / Ethos** | `AboutSection.astro` | Personal background, philosophy, photo | Features an unoptimized photo with CSS background effects. Text repeats talking points already stated in Hero and Solutions. |
-| **Project Scoper** | `ProjectScoper.tsx` | Interactive budget & scope estimator | Novel concept, but produces synthetic calculations that do not convert to real client proposals. Clutters the portfolio bottom. |
-| **Contact** | `ContactSection.astro` | Inquiry form & social channels | Bare `mailto:` link exposes personal email to scrapers; form lacks backend handling or clear submission feedback. |
-| **Global HUD** | `PredictiveArcBackground.tsx` | Animated background particle arc canvas | **Performance Killer:** Continuously runs `requestAnimationFrame` drawing math loops across 100% of viewport width/height, causing mobile throttling and fan spin. |
+| **Navbar** (`Navbar.tsx`) | 4 navigation links (`Work`, `About`, `Writing`, `Contact`), theme toggle, direct Resume PDF link, hidden `⌘K` palette. | **Good** | Clean, minimalist, and functional. Resume link currently 404s due to missing asset in `public/`. |
+| **Hero** (`Hero.tsx`) | 7-word headline (*"Engineering deterministic backends for enterprise LLM systems."*), one proof point, two CTA buttons, portrait with subpath fallback. | **Strong** | Within the 8-word cap. Explains value in under 7 seconds. The proof metric ("8.7/10 on ERP ORM evaluation") requires clear benchmark methodology. |
+| **Selected Work** (`SelectedWork.tsx`) | Editorial list with hairline dividers featuring 4 flagship case studies. | **Strong** | High clarity. Replaced heavy boxed cards with open typographic hierarchy. Benchmark numbers displayed cleanly. |
+| **About & Credentials** (`AboutSection.tsx`) | Architectural quote, Alliance University MCA (2024–2026) status, core systems competencies, and geographic availability. | **Solid** | Reconciled previous chronological conflicts. Clearly outlines local inference focus and backend constraints. |
+| **Writing & Essays** (`WritingSection.tsx`) | 3 technical architecture articles linking to the evaluation dashboard (`/eval`) and deep-dive case studies. | **Good** | Ties directly to portfolio proof points. |
+| **Experience Timeline** (`ExperienceTimeline.tsx`) | Interactive milestone timeline with metrics and company details. | **Orphaned** | Implemented in `src/components/home/ExperienceTimeline.tsx`, but **not imported or rendered in `src/app/page.tsx`**. Dead code on homepage. |
+| **Skills Matrix** (`SkillsSection.tsx`) | Competency matrix grouped by production tooling. | **Orphaned** | Implemented in `src/components/home/SkillsSection.tsx`, but **not imported or rendered in `src/app/page.tsx`**. |
+| **Interactive Pipeline** (`LlmPipelineDiagram.tsx`) | Animated SVG speculative inference topology diagram. | **Orphaned** | Implemented but currently unmounted on the homepage. |
+| **Contact Section** (`ContactSection.tsx`) | Direct email display (`harsh.h.thanki@gmail.com`), copy button, form with Zod validation, honeypot, and mailto fallback. | **Solid** | Fully updated email, functional fallback for static hosting. |
+| **Footer** (`Footer.tsx`) | Copyright, status, social links (GitHub, LinkedIn, Email). | **Good** | Minimal, compliant, and properly aligned. |
 
----
+### 2.2 Case Studies Inventory (`src/data/projects.ts` & `/work/[slug]`)
 
-### 2.2 Project Inventory & Claim Scrutiny
-
-| Project ID | Title | Key Claims | Credibility Assessment & Recommendations |
-| :--- | :--- | :--- | :--- |
-| `erp-llm-foundation` | Enterprise Neural ERP Platform | "Sub-80ms hybrid search across 32K+ SKU catalog with zero hallucination guarantee" | **High Risk:** Stating a "zero hallucination guarantee" in LLM engineering is technically impossible and immediately flagged by AI researchers/managers. Soften to "deterministic guardrails with <0.1% ungrounded assertions". |
-| `financial-ledger-multi-currency` | Real-Time Financial Settlement Core | "0% transaction loss across $4.2M testnet settlements with formal verification" | If this is a personal project or student sandbox, citing $4.2M testnet settlement without verifiable mainnet proof sounds inflated. Clarify whether this is an academic benchmark or production enterprise system. |
-| `multimodal-voice-failover-dag` | 7-Tier Multimodal Voice Failover | "Sub-220ms glass-to-glass latency with zero audio dropouts" | Excellent technical premise. Should focus on the actual architecture diagram and error-boundary code rather than simulated HUD animations. |
-| `fails-closed-dns-watchdog` | Fails-Closed DNS & BGP Watchdog | "Sub-15ms anomaly interception with automated route withdrawal" | Strong systems engineering angle. Good open-source credibility if backed by a public GitHub repo link. |
-| `neural-voice-cloning-studio` | Neural Audio Synthesis & Cloaking | "Few-shot voice adaptation in <3s with anti-spoofing watermarking" | Timely and relevant. Ensure ethical considerations and synthetic watermarking algorithms are highlighted. |
-| `meeting-intelligence-mesh` | Decentralized Meeting Mesh | "On-device transcription with zero telemetry and differential privacy" | Strong product potential. Highlight WebAssembly/Whisper local inference constraints. |
-| `legal-docket-extraction-pipeline` | Legal Docket Extraction & OCR | "Automated CAPTCHA bypass and docket normalization" | **Red Flag:** Highlighting "CAPTCHA bypass" as a key feature raises legal/terms-of-service compliance concerns for enterprise clients. Reframe around "Multi-modal OCR and unstructured document digitization". |
+1. **`erp-llm-foundation` (Autonomous Enterprise ERP Intelligence Engine):**
+   - *Headline:* 8.7 / 10 benchmark score matching frontier commercial APIs on internal ERP ORM reasoning with $0 marginal token cost.
+   - *Architecture:* QLoRA 4-bit quantization, Unsloth FastLoRA, air-gapped Ollama runtime, transparent CLI interception proxy.
+   - *Critique:* Technically rigorous narrative. Demonstrates real-world understanding of private on-premise inference.
+2. **`multimodal-voice-failover-dag` (7-Tier Multimodal Voice Failover):**
+   - *Headline:* Sub-220ms glass-to-glass latency with zero audio dropouts across noisy multi-lingual industrial environments.
+   - *Architecture:* Ingestion webhook, acoustic multimodal reasoning, 7-tier circuit-breaker fallback mesh, RapidFuzz matching, async ERP queue.
+   - *Critique:* Strong systems resilience narrative. Soften absolute claim ("zero audio dropouts") to "99.98% order preservation under heavy packet loss".
+3. **`financial-ledger-multi-currency` (Real-Time Financial Settlement Core):**
+   - *Headline:* 0ms UI-blocking synchronous operations across 50,000+ ledger entries.
+   - *Architecture:* In-memory FX rate cache (Redis), compound indexed DB rollups, batch ORM resolver, PostgreSQL.
+   - *Critique:* Demonstrates foundational backend systems engineering and database query optimization.
+4. **`fails-closed-dns-watchdog` (Fails-Closed DNS & BGP Routing Watchdog):**
+   - *Headline:* Sub-15ms anomaly interception with automated route withdrawal.
+   - *Architecture:* In-memory domain whitelist, process integrity heartbeat, fails-closed watchdog.
+   - *Critique:* Solid infrastructure and security case study.
 
 ---
 
 ## 3. Design Problems
 
-### 3.1 Visual Hierarchy & Aesthetic Cohesion
-1. **The "Sci-Fi HUD" Fatigue:** The site uses neon cybernetic styling (glowing status dots, monospace metric tables, simulated command consoles, terminal green and amber accents) combined with glassmorphism (`backdrop-blur-md`). This aesthetic is ubiquitous among junior portfolios and signals "toy project" rather than mature enterprise software design.
-2. **Typography Clashes:**
-   - Primary: `Geist` (clean geometric sans).
-   - Monospace: `JetBrains Mono` (code/metrics).
-   - Editorial Serif: `Newsreader` (italic accents in headings).
-   - *Problem:* Three distinct font families loaded simultaneously creates visual dissonance. The uppercase monospace labels are overused on nearly every card, reducing typographic contrast.
-3. **Color Palette Inconsistencies:** The color system shifts arbitrarily between Emerald Green (`#10b981`), Cyber Cyan (`#06b6d4`), Amber Orange (`#f59e0b`), and Violet (`#8b5cf6`). Without a disciplined primary/secondary semantic tokens hierarchy, the eye has nowhere to rest.
+### 3.1 Typography & Font Scale
+- **Font Stack:** Three Google Fonts loaded via `next/font/google`:
+  - Display: `Newsreader` (serif, weights 400 and 600, normal & italic).
+  - Body: `Inter` (sans, weights 400 and 500).
+  - Metadata / Labels: `JetBrains Mono` (monospace, weights 400 and 500).
+- **Rule Adherence:** Max 2 font weights per family is respected.
+- **Problem Areas:**
+  - While restrained, using three distinct font families on one page requires strict discipline. In some components, monospace is used for full descriptive sentences rather than strictly for numeric metrics and small uppercase category labels.
+  - Headings in case studies mix serif and sans elements inconsistently.
 
-### 3.2 Mobile Layout & Responsive UX
-1. **Hero Viewport Overcrowding:** On screens below 400px width (iPhone SE, Galaxy S21), the combination of status pill, headline with serif italic word, subtitle, CTA button row, and interactive simulator pushes all relevant content below a 1200px scroll depth.
-2. **Horizontal Padding Compression:** Multiple cards in `ProjectsSection.tsx` and `SolutionsShowcase.tsx` use `px-6 py-5` with nested grid badges that wrap awkwardly into 3–4 tiny rows on 360px viewport widths.
-3. **Fixed Floating Elements:** The Command Palette trigger, back-to-top button, and theme toggle compete for touch targets at the viewport periphery, causing accidental clicks on mobile devices.
+### 3.2 Color System & Contrast
+- **Palette Tokens (`src/styles/globals.css`):**
+  - Dark Theme: Base `#0e0f12`, Surface `#14161b`, Border `rgba(255, 255, 255, 0.08)`.
+  - Accent: Warm Terracotta `#d97746` (hover `#e58c5f`).
+- **Contrast Ratios (WCAG 2.1 AA):**
+  - Primary text (`#f5f5f0` on `#0e0f12`): **16.5:1** (Passes AAA).
+  - Secondary text (`#9e9e98` on `#0e0f12`): **6.2:1** (Passes AA).
+  - **Failing Contrast:** Tertiary micro-labels using `var(--text-tertiary)` (`#60605a`) at 10px–11px produce a contrast ratio of **3.2:1**, failing the WCAG AA threshold of 4.5:1 for small text.
+
+### 3.3 Layout, Spacing & Mobile Ergonomics
+- **Strengths:** 
+  - Hairline dividers and open whitespace successfully replaced the cluttered boxed card styling.
+  - Mobile layout at 390px viewport width is cleanly padded (`px-6`, `py-20`), with hero portrait stacking below the headline without layout overflow.
+- **Weaknesses:**
+  - The desktop custom cursor (`CustomCursor.tsx`) creates an unnecessary visual layer. While disabled on touch devices via pointer media queries, custom cursors are widely regarded by senior engineering hiring managers as an anti-pattern that introduces perceptible pointer lag.
 
 ---
 
 ## 4. Engineering, Performance, Accessibility & SEO
 
-### 4.1 Performance Analysis
+### 4.1 Performance Analysis & Asset Weight
 
-| Metric / Asset | Current Measurement | Target Benchmark | Severity |
+| Asset / Metric | Current Value | Target Benchmark | Severity |
 | :--- | :--- | :--- | :--- |
-| **Initial HTML Weight** | 207 KB (`index.html`) | < 45 KB | **High** |
-| **Main JS Bundle** | 184 KB (`client.*.js`) | < 60 KB | **High** |
-| **Main CSS Bundle** | 112 KB (`index.*.css`) | < 25 KB | **Medium** |
-| **Hero Image (`harsh-thanki-transparent.png`)** | 294 KB (uncompressed PNG) | < 30 KB (WebP/AVIF) | **High** |
-| **Background Arc Canvas** | 60 FPS continuous animation loop | CSS gradient or passive SVG | **Critical** |
-| **Google Fonts Requests** | 3 separate `@import` fonts | 1 self-hosted subset variable font | **Medium** |
+| **Initial HTML Weight** | ~67 KB (`out/index.html`) | < 50 KB | Low |
+| **Client JS Chunks** | ~120 KB gzip (Next.js, Framer Motion, Lenis) | < 100 KB | Medium |
+| **Hero Image (`harsh-thanki-transparent.png`)** | **294 KB** (Uncompressed PNG) | < 30 KB (WebP/AVIF) | **High** |
+| **Outdoor Portrait (`harsh-thanki-outdoor.jpg`)** | **270 KB** (JPEG) | < 35 KB (WebP/AVIF) | **High** |
+| **Active Stylesheet** | 2.5 KB (`src/styles/globals.css`) | < 20 KB | Excellent |
+| **Legacy Stylesheet (`src/styles/global.css`)** | 6.1 KB (Unused leftover from Astro) | 0 KB (Delete) | Low |
 
-- **Root Causes of Bloat:**
-  1. `PredictiveArcBackground.tsx` runs `client:load`, forcing React hydration immediately on initial parse before user interaction.
-  2. Hero images use raw `<img>` tags pointing to large PNG/JPEG files rather than Astro's `<Image />` component with automatic WebP/AVIF conversion and responsive `srcset`.
-  3. Inline SVG icons and massive data arrays embedded in page source inflate HTML to over 200KB.
+- **Root Causes of Image Bloat:**
+  Because GitHub Pages uses static export (`images: { unoptimized: true }`), Next.js does not run an on-demand image compression server. Large raw PNGs (294 KB) are served directly. Converting these images to static `.webp` or `.avif` will reduce asset size by over 88%.
 
-### 4.2 Accessibility (WCAG 2.1 AA Gaps)
-1. **Insufficient Color Contrast:** Monospace micro-labels (`text-[10px] text-[var(--text-tertiary)]`) exhibit a contrast ratio of ~2.8:1 against `#0a0d14` backgrounds (fails WCAG AA threshold of 4.5:1).
-2. **Missing Live Region Announcements:** State transitions in `SolutionsShowcase.tsx` and `TelemetryWidget.tsx` trigger visual changes without `aria-live="polite"` attributes, rendering them invisible to screen readers.
-3. **Non-semantic Interactive Triggers:** Several clickable card headers and filter chips use `<div>` with `onClick` handlers rather than native `<button>` elements, lacking keyboard `Enter`/`Space` activation and focus rings.
+### 4.2 Accessibility (a11y)
+- **Skip Link:** Implemented in `layout.tsx` with accessible focus state (`#main-content`).
+- **Focus Rings:** High-contrast accessible focus ring (`outline: 2px solid var(--accent); outline-offset: 3px`) defined globally.
+- **Keyboard Navigation:** Command palette (`⌘K`), theme toggle, and contact form are fully operable via keyboard.
+- **Defects:**
+  - Tertiary text color (`#60605a`) fails WCAG AA minimum contrast ratio.
+  - Some architecture flow nodes in `/work/[slug]` rely solely on color to convey state (input vs process vs fallback).
 
 ### 4.3 SEO & Discoverability
-1. **Base Path Canonical Discrepancy:** The canonical URL is hardcoded in `Layout.astro` as `https://harshthanki-codes.github.io/Portfolio_Website/`. If accessed via custom domain or without trailing slash, it introduces canonical duplication.
-2. **Missing Dynamic Open Graph Images:** OpenGraph image points to a static generic photo rather than an auto-generated 1200x630 card showcasing name, title, and key project metrics.
-3. **Overstuffed JSON-LD:** The JSON-LD schema includes 7 extensive project entities with synthetic ratings and mock reviews, which search engine quality guidelines classify as spammy structured data.
+- **Next.js Metadata API:** Implemented in `layout.tsx`, `page.tsx`, and `work/[slug]/page.tsx` with canonical URLs (`https://harshthanki-codes.github.io/Portfolio_Website/`).
+- **Dynamic OG Images:** Dynamic Open Graph image generation implemented at `src/app/work/[slug]/opengraph-image.tsx` using Next.js ImageResponse.
+- **Robots & Sitemap:** Statically generated `robots.txt` and `sitemap.xml` exported to `./out`.
+- **Gaps:** The homepage lacks a root-level `opengraph-image.tsx` or `og-image.png` in `public/`, falling back to metadata text.
+
+### 4.4 Broken Links & Missing Files
+- **Critical Broken Link:** The Resume download button across `Navbar.tsx`, `Hero.tsx`, and `Footer.tsx` links to `Harsh_Thanki_Resume.pdf`. **This file does not exist in `public/`**, resulting in an immediate 404 error when clicked.
 
 ---
 
 ## 5. Security, Privacy & Repository Hygiene
 
-### 5.1 Repository Hygiene Emergency (High Priority)
-1. **Committed Contribution Generator Scripts:**
-   The repository contains **12+ Python scripts directly in the root directory**:
-   - `finish_day8.py`
-   - `generate_contributions_day4.py` through `generate_contributions_day14.py`
-   - `contribution.txt`
-   *Impact:* Anyone browsing the GitHub repository or checking the commit tree sees these scripts. This immediately invalidates the GitHub contribution graph and severely damages professional trust with engineering hiring teams.
-2. **Git Commit History Pollution:**
-   The git history contains over **9,000 automated dummy commits** (e.g. `chore: telemetry entry #9301 for SVG Morphing Pipeline`, `test(simulator): assert chaos recovery benchmark on llama-3.3 70b`).
-   *Impact:* `git log` is impossible to navigate; code archaeology is broken; repository clone size is bloated.
-3. **Committed Production Build Folders:**
-   The repository contains tracked versions of `_astro/` (dozens of hashed JS/CSS files) and `dist/` in git tracking, causing merge conflicts and clutter.
+### 5.1 Secrets & Sensitive Keys
+- **API Keys:** Zero production API keys or tokens are committed.
+- **`.env` Architecture:** `.env.local` is properly excluded in `.gitignore`. `.env.example` contains sanitized placeholders (`RESEND_API_KEY=re_123456789_abcdefg`).
+- **Email Address:** Updated across the codebase to `harsh.h.thanki@gmail.com`. Direct public plaintext email exposure remains susceptible to automated web scrapers.
 
-### 5.2 Personal Data & Privacy Risks
-1. **Direct Public Email Exposure:** `harshthanki203@gmail.com` and `harsh.h.thanki@gmail.com` are committed in plain text in components and git authors, resulting in active spam harvesting.
-2. **Specific Geographic Data:** Explicitly listing city and region without business proxy or generic country-level designation exposes unnecessary personal location data.
-3. **Absence of Rate Limiting / Honey Pot:** The contact form has no honeypot field or Turnstile/reCAPTCHA protection, leaving any hooked webhook vulnerable to spam floods.
+### 5.2 Git History Hygiene
+- **Purged Files:** Legacy contribution generator scripts (`generate_contributions_*.py`, `finish_day8.py`, `contribution.txt`) and old build folders (`_astro/`, `dist/`) were purged from the working tree in commit `cc57e26b`.
+- **Historical Git Log Pollution:** The repository's git history still contains thousands of automated commits (e.g. `chore: telemetry entry #9301...`). Anyone cloning the repository or inspecting git commit frequency sees thousands of artificial commits, which remains a visible red flag for engineering hiring teams.
 
 ---
 
-## 6. Strategic Architectural Recommendation: Refactor vs. Migrate
+## 6. Strategic Architectural Recommendation: Next.js vs. Astro
 
-### Options Evaluated:
-- **Option A:** Migrate to **Next.js (App Router) + TypeScript + Tailwind v4**
-- **Option B:** Refactor in place with **Astro (Static Islands) + React + Tailwind v4**
+### Comparison Matrix
 
-| Criteria | Next.js App Router | Astro v5/v7 (Current Stack) | Winner |
+| Evaluation Dimension | Next.js 16 (App Router) [Current Stack] | Astro v5/v7 [Previous Stack] | Verdict |
 | :--- | :--- | :--- | :--- |
-| **Default JS Shipped** | 80KB–120KB (React runtime, hydration manifest) | **0 KB** (HTML only, hydrate on demand) | **Astro** |
-| **GitHub Pages Hosting** | Requires `output: 'export'`, disables dynamic ISR/SSR features | Native static generation with zero config | **Astro** |
-| **Build Speed** | 35–60s on GitHub Actions | **4–9s** on GitHub Actions | **Astro** |
-| **Tailwind v4 Integration** | Supported via PostCSS or `@tailwindcss/postcss` | Native Vite integration (`@tailwindcss/vite`) | **Tie** |
-| **Component Flexibility** | React only | Multi-framework (React, Svelte, or pure Astro) | **Astro** |
-| **Maintenance Burden** | High (frequent App Router breaking changes) | Minimal (clean static HTML output) | **Astro** |
+| **Ecosystem & Relevance** | Industry standard for modern full-stack React 19 engineering roles. | Content/blog-focused static generator. | **Next.js** |
+| **Component Model** | Unified React 19 server/client components with native metadata. | Mixed islands architecture (`.astro` + React client hydration). | **Next.js** |
+| **GitHub Pages Fit** | Requires `output: 'export'`, disables server-side route handlers. | Native SSG with zero configuration. | **Astro** |
+| **Image Optimization** | Requires unoptimized static export unless pre-compressed. | Automatic build-time WebP/AVIF generation. | **Astro** |
+| **Build Speed** | 12–18s static export. | 4–6s static build. | **Astro** |
+| **Type Safety & Metadata** | Built-in Next.js typed routes, dynamic metadata, and OG generation. | Plugin-dependent (`@astrojs/sitemap`). | **Next.js** |
 
-### Definitive Verdict: **Refactor in Place with Astro.**
-Migrating to Next.js would be a regression for this specific use case. A portfolio website is an inherently static document with a few interactive widgets. Next.js App Router introduces unnecessary node-runtime abstractions, hydration weight, and friction with static GitHub Pages deployments.
+### Definitive Recommendation: **Retain & Perfect Next.js App Router.**
+The migration from Astro to Next.js App Router has already been executed. Reverting to Astro now would introduce unnecessary engineering churn without providing tangible end-user value.
 
-Astro is the industry benchmark for content-first, high-performance static portfolios. The current problems in this codebase are **not framework limitations**; they are **content styling choices, unoptimized image delivery, unnecessary 3D libraries, and poor repository hygiene**. Refactoring in place preserves the blazing fast SSG architecture while drastically reducing complexity.
+Next.js provides a stronger hiring signal for senior AI/systems engineers building modern web applications. However, because GitHub Pages is a purely static host, the project must be treated as a **first-class static Next.js export**:
+1. Pre-compress all static image assets into WebP/AVIF.
+2. Remove unused Astro dependencies from `package.json`.
+3. Provide robust client-side fallbacks for any dynamic features.
+4. (Optional) Deploy to Vercel to unlock the full potential of Next.js Route Handlers (`/api/contact` and `/api/demo`).
 
 ---
 
@@ -187,16 +201,16 @@ Astro is the industry benchmark for content-first, high-performance static portf
 
 | Priority | Action Item | Target File / Area | Expected Impact |
 | :---: | :--- | :--- | :--- |
-| **1** | **Purge Contribution Scripts & Clean Repo Root**<br>Delete `generate_contributions_*.py`, `finish_day8.py`, `contribution.txt`, `_astro/`, `index.html.bak`, `liquid.*`. Update `.gitignore` to strictly exclude `_astro/`, `.prerender/`, and all temporary scripts. | Repo Root, `.gitignore` | Eliminates critical red flags for recruiters; restores immediate repository credibility. |
-| **2** | **Prune Heavy Unused 3D Dependencies**<br>Remove `three`, `@react-three/fiber`, `@react-three/drei`, `@designcodeio/threeui`, and `canvas-confetti`. Remove orphaned components `LiquidMetalHero.tsx`, `BrunoWorld3D.tsx`, `CyberRoverPlayground.tsx`. | `package.json`, `src/components/islands/` | Reduces `node_modules` by >80MB; eliminates Vite bundling latency; trims bundle size. |
-| **3** | **Kill Continuous Background Particle Canvas**<br>Replace `PredictiveArcBackground.tsx` (`client:load` requestAnimationFrame canvas) with a modern, static, hardware-accelerated subtle CSS radial gradient or lightweight static SVG. | `src/layouts/Layout.astro` | Drops mobile CPU/GPU utilization to 0%; eliminates battery drain and scroll stutter. |
-| **4** | **Tone Down "Sci-Fi HUD" & Synthetic Telemetry**<br>De-emphasize fictitious live telemetry grids. Replace the terminal simulator with a clean, high-impact product architecture breakdown that highlights real technical problem-solving. | `Hero.astro`, `TelemetrySection.astro` | Shifts tone from "gamer / hobbyist" to "serious senior software engineer". |
-| **5** | **Calibrate Resume Claims & Eliminate Inconsistencies**<br>Remove impossible claims ("zero hallucination guarantee"). Reconcile timeline overlap between full-time roles and ongoing Master's degree studies. | `src/data/projects.ts`, `ExperienceSection.astro` | Passes strict corporate background checks and senior technical screening. |
-| **6** | **Implement Native Astro Image Optimization**<br>Convert raw `<img>` tags (`harsh-thanki-transparent.png` ~294KB, `harsh-thanki-outdoor.jpg` ~270KB) to Astro's `<Image />` component with automated WebP/AVIF format delivery, explicit dimensions, and responsive `srcset`. | `Hero.astro`, `AboutSection.astro` | Cuts image payload by >85% (~500KB saved); prevents Cumulative Layout Shift (CLS). |
-| **7** | **Standardize Typography & Design Tokens**<br>Eliminate the three-font clash. Standardize on `Geist` for all UI copy and headings, reserving `JetBrains Mono` strictly for inline code blocks and terminal logs. Remove editorial serif italics from technical headings. | `Layout.astro`, `src/styles/` | Establishes a cohesive, modern Swiss/Nordic minimalist engineering aesthetic. |
-| **8** | **Fix Mobile Density & Touch Ergonomics**<br>Streamline Hero layout for screens <400px. Convert dense multi-line badge grids into scrollable horizontal chips or simplified summaries. Ensure all touch targets meet 44x44px standards. | `src/components/islands/`, `src/layouts/` | Guarantees flawless mobile evaluation on recruiters' phones. |
-| **9** | **Refactor Island Hydration Directives**<br>Audit all interactive islands: shift from `client:load` to `client:visible` or `client:idle` (e.g. `SolutionsShowcase`, `ProjectsSection`, `ProjectScoper`). | `src/pages/index.astro` | Delays client-side JavaScript execution until needed, boosting PageSpeed score to 98+. |
-| **10** | **Secure Contact Channels & Form Spam Protection**<br>Replace raw `mailto:` text with an obfuscated mailto or modern contact form connected to Formspree / Cloudflare Turnstile. | `ContactSection.astro` | Protects personal mailbox from automated web crawlers and scraping bots. |
+| **1** | **Fix Broken Resume Link**<br>Add the actual `Harsh_Thanki_Resume.pdf` to `public/` or link to an external Google Drive / LinkedIn PDF to eliminate the immediate 404 error on the primary hero CTA. | `public/Harsh_Thanki_Resume.pdf` | Prevents recruiter drop-off on primary conversion button. |
+| **2** | **Prune Orphaned Astro Dependencies**<br>Remove `astro`, `@astrojs/mdx`, `@astrojs/react`, `@astrojs/sitemap`, and `@tailwindcss/vite` from `package.json`. Run `npm install` to update `package-lock.json`. | `package.json`, `package-lock.json` | Cleans `node_modules`, speeds up CI build times, clarifies tech stack. |
+| **3** | **Mount or Delete Orphaned Homepage Components**<br>Integrate `ExperienceTimeline.tsx` and `SkillsSection.tsx` into `src/app/page.tsx` under a unified narrative, or delete them to eliminate dead code. | `src/app/page.tsx`, `src/components/home/` | Completes the homepage narrative with concrete work history and skills. |
+| **4** | **Compress & Optimize Heavy Hero Images**<br>Convert `harsh-thanki-transparent.png` (294 KB) and `harsh-thanki-outdoor.jpg` (270 KB) to static `.webp` and `.avif` (<30 KB). | `public/`, `Hero.tsx` | Cuts page payload by >500 KB; significantly improves mobile LCP and Lighthouse score. |
+| **5** | **Remove Legacy Orphaned Stylesheet**<br>Delete `src/styles/global.css` (6.1 KB leftover from Astro) so `src/styles/globals.css` is the single source of truth. | `src/styles/global.css` | Eliminates CSS duplication and prevents developer styling confusion. |
+| **6** | **Fix WCAG AA Contrast on Micro-Labels**<br>Adjust `--text-tertiary` from `#60605a` (3.2:1 contrast ratio) to `#82827a` (4.6:1 contrast ratio) in `globals.css` to meet WCAG AA standards for small text. | `src/styles/globals.css` | Achieves 100% Accessibility score on Lighthouse. |
+| **7** | **Remove Desktop Custom Cursor Gimmick**<br>Remove `CustomCursor.tsx` from `layout.tsx`. Native OS cursor provides lower latency and avoids distracting hiring reviewers. | `src/components/motion/CustomCursor.tsx`, `layout.tsx` | Improves Interaction to Next Paint (INP) and restores clean native cursor behavior. |
+| **8** | **Add Root Homepage Open Graph Image**<br>Generate or add a designated 1200x630 `public/og-image.png` or `src/app/opengraph-image.tsx` for rich social link previews on LinkedIn, Twitter, and WhatsApp. | `src/app/opengraph-image.tsx` | Ensures crisp social previews across social platforms. |
+| **9** | **Calibrate Absolute Claims in Case Studies**<br>Refine absolute engineering claims (e.g. "zero audio dropouts", "zero exfiltration") to precise statistical bounds (e.g. "<0.02% dropped packets under simulated jitter") in `projects.ts`. | `src/data/projects.ts` | Strengthens technical credibility with senior engineering evaluators. |
+| **10** | **Squash & Clean Git History**<br>Create a clean orphan branch (`git checkout --orphan clean-main`) and commit the polished codebase to permanently purge the ~9,000 automated dummy commits. | Git repository history | Restores genuine repository credibility and eliminates recruiter red flags. |
 
 ---
 
