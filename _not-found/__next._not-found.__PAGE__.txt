@@ -1,29 +1,30 @@
 2:"$Sreact.fragment"
-3:"/Portfolio_Website/_next/static/chunks/2xmwnrl89o5lr.js"
-4:"/Portfolio_Website/_next/static/chunks/06-l0ufscvr5k.js"
-5:I[39756,["$3","$4"],"default"]
-6:I[37457,["$3","$4"],"default"]
-b:"/Portfolio_Website/_next/static/chunks/3wa83o3e82d_0.js"
-c:I[5014,["$3","$4","$b"],"default"]
-d:I[22016,["$3","$4","$b"],""]
-e:I[59544,["$3","$4","$b"],"Button"]
-f:I[97367,["$3","$4"],"OutletBoundary"]
-10:"$Sreact.suspense"
-13:"ViewportBoundary"
-14:I[97367,["$3","$4"],"$13"]
-15:"MetadataBoundary"
-16:I[97367,["$3","$4"],"$15"]
+3:"/Portfolio_Website/_next/static/chunks/3qfy96eoyh-ek.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+a:"/Portfolio_Website/_next/static/chunks/2i_9md_jiisdx.js"
+b:"/Portfolio_Website/_next/static/chunks/02pbwwtb4vl15.js"
+c:"/Portfolio_Website/_next/static/chunks/3wa83o3e82d_0.js"
+d:I[5014,["$a","$b","$c"],"default"]
+e:I[22016,["$a","$b","$c"],""]
+f:I[59544,["$a","$b","$c"],"Button"]
+10:I[97367,["$3"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[97367,["$3"],"$14"]
+16:"MetadataBoundary"
+17:I[97367,["$3"],"$16"]
+7:X
+7:C
 8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"min-h-[70vh] flex items-center justify-center px-4 sm:px-6","children":["$","div",null,{"className":"relative rounded-[var(--radius-sm)] p-5 transition-all duration-200 bg-[var(--surface)] border border-[var(--border)] shadow-[var(--shadow-sm)] blueprint-crosshair max-w-md w-full p-8 text-center space-y-6","children":[["$","div",null,{"className":"w-12 h-12 mx-auto rounded-[var(--radius-xs)] bg-[var(--surface-raised)] border border-[var(--border)] flex items-center justify-center text-[var(--accent)]","children":["$","$Ld",null,{"iconNode":[["path",{"d":"M12 19h8","key":"baeox8"}],["path",{"d":"m4 17 6-6-6-6","key":"1yngyt"}]],"className":"lucide-terminal w-6 h-6"}]}],["$","div",null,{"className":"space-y-2","children":[["$","div",null,{"className":"font-mono text-xs uppercase tracking-widest text-[var(--accent)] font-semibold","children":"ERROR 404 // ROUTE NOT FOUND"}],["$","h1",null,{"className":"text-2xl font-bold text-[var(--text-primary)]","children":"Missing Invariant Boundary"}],["$","p",null,{"className":"text-xs font-mono text-[var(--text-secondary)] leading-relaxed","children":"The requested URI does not match any route handler, static case study, or design document in this deployment."}]]}],["$","div",null,{"className":"pt-2","children":["$","$Le",null,{"href":"/","children":["$","$Lf",null,{"size":"md","variant":"primary","leftIcon":["$","$Ld",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left w-4 h-4"}],"children":"Return to Overview"}]}]}]]}]}],[["$","script","script-0",{"src":"/Portfolio_Website/_next/static/chunks/3wa83o3e82d_0.js","async":true}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":"$@13","v":null,"s":"$8"}}]]
+1:[["children",{"s":"/_not-found","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L15",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Harsh Thanki — AI Systems Architect"}],["$","meta","1",{"name":"description","content":"AI Systems Architect engineering deterministic LLM backends, fault-tolerant inference DAGs, and local open-weights engines with zero marginal token cost."}],["$","link","2",{"rel":"author","href":"https://github.com/harshthanki-codes"}],["$","meta","3",{"name":"author","content":"Harsh Thanki"}],["$","link","4",{"rel":"manifest","href":"/Portfolio_Website/manifest.webmanifest"}],["$","meta","5",{"property":"og:title","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","6",{"property":"og:description","content":"Deterministic LLM backends, failover inference DAGs, and on-premise fine-tuning at zero marginal token cost."}],["$","meta","7",{"property":"og:url","content":"https://harshthanki-codes.github.io/Portfolio_Website/"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:image","content":"https://harshthanki-codes.github.io/Portfolio_Website/opengraph-image?6e5f3db753d0226f"}],["$","meta","10",{"property":"og:image:type","content":"image/png"}],["$","meta","11",{"property":"og:image:width","content":"1200"}],["$","meta","12",{"property":"og:image:height","content":"630"}],["$","meta","13",{"property":"og:image:alt","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","14",{"property":"og:type","content":"website"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","17",{"name":"twitter:description","content":"Deterministic LLM backends, failover inference DAGs, and on-premise fine-tuning at zero marginal token cost."}],["$","meta","18",{"name":"twitter:image","content":"https://harshthanki-codes.github.io/Portfolio_Website/opengraph-image?6e5f3db753d0226f"}],["$","meta","19",{"name":"twitter:image:alt","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","20",{"name":"twitter:image:type","content":"image/png"}],["$","meta","21",{"name":"twitter:image:width","content":"1200"}],["$","meta","22",{"name":"twitter:image:height","content":"630"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@18","v":null,"s":"$8"}},"a":"$@19","u":"$@1a","b":"2AHs0Wcf4-L3s0npRYPU3"}
+12:null
+1a:true
+8:300
 8:C
-9:X
-a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"min-h-[70vh] flex items-center justify-center px-4 sm:px-6","children":["$","div",null,{"className":"relative rounded-[var(--radius-sm)] p-5 transition-all duration-200 bg-[var(--surface)] border border-[var(--border)] shadow-[var(--shadow-sm)] blueprint-crosshair max-w-md w-full p-8 text-center space-y-6","children":[["$","div",null,{"className":"w-12 h-12 mx-auto rounded-[var(--radius-xs)] bg-[var(--surface-raised)] border border-[var(--border)] flex items-center justify-center text-[var(--accent)]","children":["$","$Lc",null,{"iconNode":[["path",{"d":"M12 19h8","key":"baeox8"}],["path",{"d":"m4 17 6-6-6-6","key":"1yngyt"}]],"className":"lucide-terminal w-6 h-6"}]}],["$","div",null,{"className":"space-y-2","children":[["$","div",null,{"className":"font-mono text-xs uppercase tracking-widest text-[var(--accent)] font-semibold","children":"ERROR 404 // ROUTE NOT FOUND"}],["$","h1",null,{"className":"text-2xl font-bold text-[var(--text-primary)]","children":"Missing Invariant Boundary"}],["$","p",null,{"className":"text-xs font-mono text-[var(--text-secondary)] leading-relaxed","children":"The requested URI does not match any route handler, static case study, or design document in this deployment."}]]}],["$","div",null,{"className":"pt-2","children":["$","$Ld",null,{"href":"/","children":["$","$Le",null,{"size":"md","variant":"primary","leftIcon":["$","$Lc",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left w-4 h-4"}],"children":"Return to Overview"}]}]}]]}]}],[["$","script","script-0",{"src":"/Portfolio_Website/_next/static/chunks/3wa83o3e82d_0.js","async":true}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"p":"$@12","v":null,"s":"$9"}}]]
-1:[["children",{"s":"/_not-found","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
-0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L14",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$10",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Harsh Thanki — AI Systems Architect"}],["$","meta","1",{"name":"description","content":"AI Systems Architect engineering deterministic LLM backends, fault-tolerant inference DAGs, and local open-weights engines with zero marginal token cost."}],["$","link","2",{"rel":"author","href":"https://github.com/harshthanki-codes"}],["$","meta","3",{"name":"author","content":"Harsh Thanki"}],["$","link","4",{"rel":"manifest","href":"/Portfolio_Website/manifest.webmanifest"}],["$","meta","5",{"property":"og:title","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","6",{"property":"og:description","content":"Deterministic LLM backends, failover inference DAGs, and on-premise fine-tuning at zero marginal token cost."}],["$","meta","7",{"property":"og:url","content":"https://harshthanki-codes.github.io/Portfolio_Website/"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Harsh Thanki — AI Systems Architect"}],["$","meta","12",{"name":"twitter:description","content":"Deterministic LLM backends, failover inference DAGs, and on-premise fine-tuning at zero marginal token cost."}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@17","v":null,"s":"$9"}},"a":"$@18","u":"$@19","b":"JoV71YhfKbBtqzMW25P4z"}
-11:null
-19:true
-9:300
-9:C
-18:0
-7:"$undefined"
-17:"$undefined"
-12:"$undefined"
+19:0
+6:"$undefined"
+18:"$undefined"
+13:"$undefined"
