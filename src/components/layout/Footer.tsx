@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="mailto:harshthanki203@gmail.com"
+              href="mailto:harsh.h.thanki@gmail.com"
               aria-label="Email Contact"
               className="p-2 border border-[var(--border)] rounded-[var(--radius-xs)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors flex items-center gap-1.5"
             >

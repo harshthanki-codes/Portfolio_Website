@@ -62,8 +62,8 @@ export const CommandPalette: React.FC = () => {
       shortcut: 'CE',
       icon: <Mail className="w-4 h-4 text-amber-400" />,
       action: () => {
-        navigator.clipboard.writeText('harshthanki203@gmail.com');
-        alert('Email copied to clipboard: harshthanki203@gmail.com');
+        navigator.clipboard.writeText('harsh.h.thanki@gmail.com');
+        alert('Email copied to clipboard: harsh.h.thanki@gmail.com');
       },
     },
     // Projects

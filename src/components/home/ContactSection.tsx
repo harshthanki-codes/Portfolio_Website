@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
 
       // Static fallback for GitHub Pages
       if (res.status === 404 || res.status === 405) {
-        window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
+        window.location.href = `mailto:harsh.h.thanki@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
           formData.name
         )}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
         setStatus('success');
@@ -45,7 +45,7 @@ export const ContactSection: React.FC = () => {
       const data = await res.json();
       throw new Error(data.error || 'Failed to dispatch inquiry.');
     } catch {
-      window.location.href = `mailto:harshthanki203@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
+      window.location.href = `mailto:harsh.h.thanki@gmail.com?subject=Engineering Inquiry from ${encodeURIComponent(
         formData.name
       )}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
       setStatus('success');
@@ -53,7 +53,7 @@ export const ContactSection: React.FC = () => {
   };
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('harshthanki203@gmail.com');
+    navigator.clipboard.writeText('harsh.h.thanki@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
   };
@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
               </div>
               <div className="flex items-center justify-between gap-3 p-3 bg-[var(--surface)] border border-[var(--border)] rounded-sm">
                 <span className="font-mono text-xs text-[var(--text-primary)] font-medium truncate">
-                  harshthanki203@gmail.com
+                  harsh.h.thanki@gmail.com
                 </span>
                 <button
                   onClick={copyEmail}

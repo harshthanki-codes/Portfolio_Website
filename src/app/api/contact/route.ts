@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
         },
         body: JSON.stringify({
           from: 'Portfolio Contact <onboarding@resend.dev>',
-          to: process.env.CONTACT_NOTIFICATION_EMAIL || 'harshthanki203@gmail.com',
+          to: process.env.CONTACT_NOTIFICATION_EMAIL || 'harsh.h.thanki@gmail.com',
           subject: `Engineering Inquiry from ${name}`,
           text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         }),
