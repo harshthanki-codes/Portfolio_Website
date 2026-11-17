@@ -3,13 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { getAssetPath } from '@/lib/paths';
 
 export const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Prevent background scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden';
@@ -24,115 +22,103 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { label: 'Work', href: '#work', number: '01' },
     { label: 'About', href: '#about', number: '02' },
-    { label: 'Notes', href: '#notes', number: '03' },
-    { label: 'Contact', href: '#contact', number: '04' },
+    { label: 'Contact', href: '#contact', number: '03' },
   ];
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b border-[var(--hairline)] bg-[var(--background)]/90 backdrop-blur-md transition-colors">
+      <header className="sticky top-0 z-40 w-full border-b border-[#6C84EE] bg-[#1237D1]/95 backdrop-blur-sm transition-colors">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           {/* Wordmark */}
           <NextLink
             href="/"
-            className="group flex items-baseline gap-2 font-serif text-xl tracking-tight text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+            className="group flex items-baseline gap-2 font-headline font-bold text-lg sm:text-xl tracking-tight text-white hover:text-[#FFE45C] transition-colors"
           >
-            <span className="font-normal">Harsh Thanki</span>
-            <span className="mono-label text-[11px] font-normal text-[var(--text-muted)] tracking-wider">
+            <span>Harsh Thanki</span>
+            <span className="font-mono text-[11px] font-normal text-[#BCC5F7] tracking-wider">
               / AI engineer
             </span>
           </NextLink>
 
-          {/* Desktop 4-Item Navigation */}
+          {/* Desktop 4-Item Navigation (Work, About, Contact, Resume) - No Notes link */}
           <nav className="hidden md:flex items-center gap-8" aria-label="Main Navigation">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-sans text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+                className="text-sm font-body text-[#BCC5F7] hover:text-white transition-colors"
               >
-                {link.label}
+                <span className="font-mono text-[10px] text-[#BCC5F7]/70 mr-1.5">{link.number}</span>
+                <span>{link.label}</span>
               </a>
             ))}
-          </nav>
 
-          {/* Secondary Controls: Resume + Theme + Hamburger */}
-          <div className="flex items-center gap-3 sm:gap-4">
             <a
               href={getAssetPath('/Harsh_Thanki_Resume.pdf')}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors py-1.5 px-2.5 rounded-[var(--radius)] border border-[var(--hairline)] hover:border-[var(--accent)]"
+              className="inline-flex items-center gap-1 px-3 py-1.5 border border-[#6C84EE] hover:border-[#FFE45C] hover:text-[#FFE45C] font-mono text-xs text-white transition-colors"
             >
               <span>Resume</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
+          </nav>
 
-            <ThemeToggle />
-
-            {/* Mobile Menu Hamburger Button */}
+          {/* Mobile Hamburger Toggle */}
+          <div className="flex md:hidden items-center gap-3">
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
-              aria-expanded={mobileOpen}
-              className="md:hidden p-2 text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors rounded-[var(--radius)] focus-visible:outline-2 focus-visible:outline-[var(--accent)]"
+              aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
+              className="w-10 h-10 border border-[#6C84EE] flex items-center justify-center text-white hover:border-[#FFE45C] hover:text-[#FFE45C] transition-colors"
             >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Full-Screen Mobile Drawer with Large Serif Links */}
+      {/* Full-Screen Mobile Drawer */}
       {mobileOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label="Mobile Navigation"
-          className="fixed inset-0 top-16 z-50 bg-[var(--background)] flex flex-col justify-between px-6 py-10 md:hidden overflow-y-auto animate-fadeIn"
-        >
-          <div className="space-y-6">
-            <div className="mono-label text-xs text-[var(--accent)] tracking-widest uppercase pb-4 border-b border-[var(--hairline)]">
-              Menu // Navigation
-            </div>
-
-            <nav className="flex flex-col space-y-4 pt-2">
-              {navLinks.map((link, idx) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="group flex items-baseline justify-between py-2 border-b border-[var(--hairline)] hover:border-[var(--accent)] transition-colors"
-                  style={{ animationDelay: `${idx * 60}ms` }}
-                >
-                  <span className="font-serif text-3xl sm:text-4xl text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
-                    {link.label}
-                  </span>
-                  <span className="font-mono text-xs text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors">
-                    {link.number}
-                  </span>
-                </a>
-              ))}
-            </nav>
+        <div className="fixed inset-0 z-50 bg-[#1237D1] p-6 flex flex-col justify-between md:hidden bg-blueprint-grid">
+          <div className="flex items-center justify-between pb-6 border-b border-[#6C84EE]">
+            <span className="font-headline font-bold text-xl text-white">Harsh Thanki</span>
+            <button
+              onClick={() => setMobileOpen(false)}
+              aria-label="Close Navigation"
+              className="w-11 h-11 border border-[#6C84EE] flex items-center justify-center text-white"
+            >
+              <X className="w-6 h-6" />
+            </button>
           </div>
 
-          {/* Mobile Drawer Bottom Colophon & Resume */}
-          <div className="pt-8 space-y-4 border-t border-[var(--hairline)]">
+          <div className="flex flex-col gap-6 py-12">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="font-headline font-bold text-4xl text-white hover:text-[#FFE45C] transition-colors flex items-baseline gap-4"
+              >
+                <span className="font-mono text-xs text-[#BCC5F7]">{link.number}</span>
+                <span>{link.label}</span>
+              </a>
+            ))}
+
             <a
               href={getAssetPath('/Harsh_Thanki_Resume.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="w-full flex items-center justify-between p-3.5 bg-[var(--surface)] border border-[var(--hairline)] rounded-[var(--radius)] text-sm font-mono text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+              className="inline-flex items-center justify-center gap-2 py-3 px-4 border border-[#FFE45C] text-[#FFE45C] font-mono text-sm font-semibold mt-4"
             >
               <span>Download Resume (PDF)</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
+          </div>
 
-            <div className="flex items-center justify-between text-xs font-mono text-[var(--text-muted)] pt-2">
-              <span>Ahmedabad, India</span>
-              <span>harsh.h.thanki@gmail.com</span>
-            </div>
+          <div className="pt-6 border-t border-[#6C84EE] font-mono text-xs text-[#BCC5F7]">
+            <div>HARSH THANKI // AI ENGINEER</div>
+            <div className="text-[10px] text-[#BCC5F7]/70 mt-1">AHMEDABAD, INDIA · LOCAL INFERENCE ARCHITECTURES</div>
           </div>
         </div>
       )}

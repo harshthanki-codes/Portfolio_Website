@@ -14,7 +14,7 @@ const items: TocItem[] = [
   { id: 'decisions', number: '03', label: 'Key Decisions' },
   { id: 'evaluation', number: '04', label: 'Evaluation Matrix' },
   { id: 'economics', number: '05', label: 'Cost & Latency' },
-  { id: 'failures', number: '06', label: 'Production Lessons' },
+  { id: 'failures', number: '06', label: 'What Broke' },
   { id: 'roadmap', number: '07', label: 'Next Steps' },
 ];
 
@@ -39,29 +39,24 @@ export const CaseStudyToc: React.FC = () => {
   }, []);
 
   return (
-    <nav aria-label="Table of contents" className="space-y-4">
-      <div className="font-mono text-[11px] text-[var(--accent)] tracking-[0.15em] uppercase font-medium">
-        CONTENTS
+    <nav aria-label="Table of contents" className="p-4 bg-white border border-[#6C84EE] text-[#0A1450] space-y-4">
+      <div className="font-mono text-[11px] text-[#1237D1] tracking-[0.15em] uppercase font-bold border-b border-[#6C84EE]/30 pb-2">
+        SPECIFICATION INDEX
       </div>
-      <ul className="space-y-2.5 font-mono text-xs">
+      <ul className="space-y-2 font-mono text-xs">
         {items.map((item) => {
           const isActive = activeId === item.id;
           return (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
-                className={`flex items-center gap-2 py-1 transition-colors ${
+                className={`flex items-center gap-2 py-1 px-1.5 transition-colors ${
                   isActive
-                    ? 'text-[var(--text-primary)] font-semibold'
-                    : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'
+                    ? 'bg-[#1237D1] text-white font-bold'
+                    : 'text-[#0A1450]/80 hover:text-[#1237D1] hover:bg-[#F3F5FF]'
                 }`}
               >
-                <span
-                  className={`w-1.5 h-1.5 rounded-full transition-transform ${
-                    isActive ? 'bg-[var(--accent)] scale-125' : 'bg-[var(--hairline)]'
-                  }`}
-                />
-                <span className="text-[10px] text-[var(--accent)]">{item.number}</span>
+                <span className="text-[10px] opacity-70">{item.number}</span>
                 <span className="truncate">{item.label}</span>
               </a>
             </li>

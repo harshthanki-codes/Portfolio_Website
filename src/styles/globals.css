@@ -2,157 +2,120 @@
 
 @layer base {
   :root {
-    /* Editorial Dark (Default) */
-    --background: #0A0A0B;
-    --surface: #111113;
-    --surface-raised: #17171A;
-    --border: #26262B;
-    --hairline: #26262B;
-    --border-strong: #3A3A40;
-    --border-subtle: #1C1C20;
+    /* Blueprint Color Palette */
+    --ground: #1237D1;
+    --deep: #0C2699;
+    --paper: #F3F5FF;
+    --muted: #BCC5F7;
+    --hairline: #6C84EE;
+    --yellow: #FFE45C;
+    --ink: #0A1450;
 
-    --text-primary: #F3EFE6;
-    --text-secondary: #9B978E;
-    --text-muted: #9B978E;
-    --text-tertiary: #9c9c94;
-    --text-disabled: #5E5D58;
+    /* Defaults mapped to Blueprint */
+    --background: #1237D1;
+    --surface: #0C2699;
+    --surface-raised: #1237D1;
+    --border: #6C84EE;
+    --text-primary: #FFFFFF;
+    --text-muted: #BCC5F7;
+    --accent: #FFE45C;
 
-    /* Warm Terracotta / Ochre Accent */
-    --accent: #FF7A3D;
-    --accent-hover: #FFA06E;
-    --accent-subtle: rgba(255, 122, 61, 0.08);
-    --accent-border: rgba(255, 122, 61, 0.3);
-    --accent-text: #0A0A0B;
+    --font-bricolage: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-hanken: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
 
-    --font-serif: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
-    --font-sans: var(--font-geist), "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
-
-    --radius: 14px;
-    --radius-sm: 8px;
-    --radius-xs: 4px;
-    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  [data-theme="light"],
-  .light {
-    /* Light "Paper" Theme */
-    --background: #F4F0E6;
-    --surface: #FBF8F1;
-    --surface-raised: #FFFFFF;
-    --border: #D9D3C5;
-    --hairline: #D9D3C5;
-    --border-strong: #C4BDAE;
-    --border-subtle: #EAE4D7;
-
-    --text-primary: #0E0E10;
-    --text-secondary: #5E5B55;
-    --text-muted: #5E5B55;
-    --text-tertiary: #6E6A63;
-    --text-disabled: #A5A096;
-
-    /* Terracotta Accent */
-    --accent: #D9531A;
-    --accent-hover: #BF4513;
-    --accent-subtle: rgba(217, 83, 26, 0.08);
-    --accent-border: rgba(217, 83, 26, 0.25);
-    --accent-text: #FFFFFF;
-
-    --font-serif: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
-    --font-sans: var(--font-geist), "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
-
-    --radius: 14px;
-    --radius-sm: 8px;
-    --radius-xs: 4px;
-    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    /* Sharp corners everywhere */
+    --radius: 0px;
   }
 
   * {
-    border-color: var(--border);
+    border-color: var(--hairline);
+    border-radius: 0 !important;
   }
 
   body {
-    background-color: var(--background);
-    color: var(--text-primary);
-    font-feature-settings: "rlig" 1, "calt" 1;
-    transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out);
+    background-color: var(--ground);
+    color: #FFFFFF;
+    font-family: var(--font-hanken), sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Accessible 3px yellow focus outline */
+  *:focus-visible {
+    outline: 3px solid var(--yellow) !important;
+    outline-offset: 2px !important;
   }
 }
 
-/* Subtle SVG Film Grain Overlay (4% opacity) */
-.bg-film-grain {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+/* Blueprint 56px Grid + Top-Right Radial Glow */
+.bg-blueprint-grid {
+  background-color: #1237D1;
+  background-image:
+    radial-gradient(circle at 85% 12%, rgba(108, 132, 238, 0.28) 0%, transparent 55%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 56px 56px, 56px 56px;
 }
 
-/* Soft Ambient Glows (6-10% warm terracotta) */
-.bg-ambient-glows {
-  background-image: radial-gradient(circle at 18% 12%, rgba(255, 122, 61, 0.08) 0%, transparent 45%),
-                    radial-gradient(circle at 82% 40%, rgba(255, 122, 61, 0.05) 0%, transparent 40%);
+/* Deep Panel Grid */
+.bg-blueprint-deep {
+  background-color: #0C2699;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
 }
 
-[data-theme="light"] .bg-ambient-glows {
-  background-image: radial-gradient(circle at 18% 12%, rgba(217, 83, 26, 0.05) 0%, transparent 45%),
-                    radial-gradient(circle at 82% 40%, rgba(217, 83, 26, 0.03) 0%, transparent 40%);
+/* Paper Grid */
+.bg-blueprint-paper {
+  background-color: #F3F5FF;
+  background-image:
+    linear-gradient(to right, rgba(12, 38, 153, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(12, 38, 153, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
 }
 
 /* Typography Utility Classes */
-.font-serif {
-  font-family: var(--font-serif);
+.font-headline {
+  font-family: var(--font-bricolage), sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 0.96;
 }
 
-.font-sans {
-  font-family: var(--font-sans);
+.font-body {
+  font-family: var(--font-hanken), sans-serif;
 }
 
 .font-mono {
-  font-family: var(--font-mono);
+  font-family: var(--font-jetbrains), monospace;
 }
 
-/* Subtle hairline borders */
-.hairline-border {
-  border: 1px solid var(--hairline);
+/* Caret blinking animation for speculative decoding */
+@keyframes caretBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
 
-/* Monospace label styling - small, restrained */
-.mono-label {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.animate-caret {
+  animation: caretBlink 800ms infinite;
 }
 
-/* Editorial line-by-line reveal animation */
-@keyframes slideUp {
-  0% {
-    transform: translateY(105%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-slideUp {
-  animation: slideUp 640ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-/* Custom Scrollbar */
+/* Custom Blueprint Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: #0C2699;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
+  background: #6C84EE;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--border-strong);
+  background: #FFE45C;
 }

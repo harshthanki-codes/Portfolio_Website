@@ -11,8 +11,8 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-[var(--hairline)] bg-[var(--background)] py-8 px-4 sm:px-6">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-[var(--text-muted)]">
+    <footer className="border-t border-[#6C84EE] bg-[#0C2699] py-8 px-4 sm:px-6">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-[#BCC5F7]">
         <div>
           © 2026 Harsh Thanki · AI engineer · Ahmedabad, India
         </div>
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
           <a
             href="#top"
             onClick={scrollToTop}
-            className="hover:text-[var(--text-primary)] transition-colors inline-flex items-center gap-1"
+            className="hover:text-white transition-colors inline-flex items-center gap-1 min-h-[44px]"
           >
             <span>Top</span>
             <ArrowUp className="w-3.5 h-3.5" />
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             href="https://github.com/harshthanki-codes"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--text-primary)] transition-colors"
+            className="hover:text-white transition-colors min-h-[44px] flex items-center"
           >
             GitHub
           </a>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
             href="https://linkedin.com/in/harsh-thanki"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--text-primary)] transition-colors"
+            className="hover:text-white transition-colors min-h-[44px] flex items-center"
           >
             LinkedIn
           </a>
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
             href={getAssetPath('/Harsh_Thanki_Resume.pdf')}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--accent)] transition-colors"
+            className="hover:text-[#FFE45C] transition-colors min-h-[44px] flex items-center"
           >
             Resume (PDF)
           </a>
