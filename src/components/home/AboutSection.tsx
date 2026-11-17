@@ -57,21 +57,21 @@ export const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="py-16 sm:py-24 border-b border-[#6C84EE] bg-[#0C2699] bg-blueprint-deep scroll-mt-20"
+      className="py-16 sm:py-24 border-b border-[#E2DFD8] bg-[#F7F5F2] bg-warm-grid scroll-mt-20"
       aria-label="How I Work and Engineering Experience"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#6C84EE]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E2DFD8]">
           <div className="space-y-2">
-            <span className="font-mono text-xs font-bold text-[#BCC5F7] tracking-wider uppercase">
+            <span className="font-mono text-xs font-bold text-[#FF5A36] tracking-wider uppercase">
               04 // HOW I WORK & TIMELINE
             </span>
-            <h2 className="font-headline font-extrabold text-3xl sm:text-5xl text-white tracking-[-0.035em]">
+            <h2 className="font-headline font-extrabold text-3xl sm:text-5xl text-[#16161D] tracking-[-0.035em]">
               Engineering Principles & Track Record
             </h2>
           </div>
-          <p className="font-body text-sm sm:text-base text-[#BCC5F7] max-w-md">
+          <p className="font-body text-sm sm:text-base text-[#5C5B66] max-w-md">
             Production deployments, academic research, and system invariants.
           </p>
         </div>
@@ -80,54 +80,54 @@ export const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column (5 cols): Pull Quote & Core Stance */}
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
-            <div className="p-6 sm:p-8 border border-[#6C84EE] bg-[#1237D1] space-y-5">
-              <span className="font-mono text-[10px] text-[#BCC5F7] uppercase tracking-wider block">
+            <div className="p-6 sm:p-8 border border-[#2D2D38] bg-[#16161D] space-y-5">
+              <span className="font-mono text-[10px] text-[#A3A1B0] uppercase tracking-wider block">
                 CORE STANCE // SPEC-02
               </span>
 
-              <blockquote className="font-headline font-bold text-2xl sm:text-3xl text-white leading-tight border-l-4 border-[#FFE45C] pl-4">
+              <blockquote className="font-headline font-bold text-2xl sm:text-3xl text-[#F7F5F2] leading-tight border-l-4 border-[#FF5A36] pl-4">
                 "Deterministic architecture over probabilistic guesswork."
               </blockquote>
 
-              <p className="font-body text-sm text-[#BCC5F7] leading-relaxed">
+              <p className="font-body text-sm text-[#A3A1B0] leading-relaxed">
                 I build systems where open language models operate reliably inside real enterprise constraints. Rather than tethering business workflows to volatile cloud API rate limits, I fine-tune weights locally (QLoRA, Ollama) and isolate execution behind strict circuit-breaker DAGs.
               </p>
 
-              <div className="pt-3 border-t border-[#6C84EE]/60 font-mono text-xs text-white">
+              <div className="pt-3 border-t border-[#2D2D38] font-mono text-xs text-[#F7F5F2]">
                 <div>ALLIANCE UNIVERSITY // MCA (2024–2026)</div>
-                <div className="text-[11px] text-[#BCC5F7] mt-0.5">Specialization in Neural Quantization & Concurrency</div>
+                <div className="text-[11px] text-[#A3A1B0] mt-0.5">Specialization in Neural Quantization & Concurrency</div>
               </div>
             </div>
           </div>
 
           {/* Right Column (7 cols): Quiet Vertical Timeline */}
-          <div className="lg:col-span-7 relative border-l border-[#6C84EE] ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-10">
+          <div className="lg:col-span-7 relative border-l border-[#E2DFD8] ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-10">
             {timeline.map((item) => (
               <div key={item.id} className="relative space-y-3">
                 {/* Timeline Node Point */}
-                <span className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3 h-3 bg-[#1237D1] border-2 border-[#FFE45C]" />
+                <span className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3 h-3 bg-[#16161D] border-2 border-[#FF5A36]" />
 
-                <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[#6C84EE]/40 pb-2">
-                  <h3 className="font-headline font-bold text-xl text-white">
+                <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[#E2DFD8] pb-2">
+                  <h3 className="font-headline font-bold text-xl text-[#16161D]">
                     {item.role}
                   </h3>
-                  <span className="font-mono text-xs text-[#FFE45C] font-semibold">
+                  <span className="font-mono text-xs text-[#FF5A36] font-semibold">
                     {item.period}
                   </span>
                 </div>
 
-                <div className="font-mono text-xs text-[#BCC5F7]">
+                <div className="font-mono text-xs text-[#5C5B66]">
                   {item.organization} · {item.location}
                 </div>
 
-                <p className="font-body text-sm text-[#BCC5F7] leading-relaxed">
+                <p className="font-body text-sm text-[#5C5B66] leading-relaxed">
                   {item.summary}
                 </p>
 
                 <ul className="space-y-1.5 pt-1">
                   {item.highlights.map((h, hIdx) => (
-                    <li key={hIdx} className="font-body text-xs text-white/90 flex items-start gap-2">
-                      <span className="font-mono text-[#FFE45C] font-bold">›</span>
+                    <li key={hIdx} className="font-body text-xs text-[#16161D] flex items-start gap-2">
+                      <span className="font-mono text-[#FF5A36] font-bold">›</span>
                       <span>{h}</span>
                     </li>
                   ))}

@@ -43,20 +43,20 @@ export const BreakATierDemo: React.FC = () => {
   return (
     <section
       id="break-a-tier"
-      className="py-16 sm:py-24 border-b border-[#6C84EE] bg-[#F3F5FF] text-[#0A1450] bg-blueprint-paper"
+      className="py-16 sm:py-24 border-b border-[#E2DFD8] bg-[#F7F5F2] text-[#16161D] bg-warm-grid"
       aria-label="Failover DAG Simulation Demo"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10">
         {/* Header & Controls */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#6C84EE]/50">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E2DFD8]">
           <div className="space-y-2">
-            <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#1237D1] uppercase tracking-wider">
+            <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#FF5A36] uppercase tracking-wider">
               <span>02 // INTERACTIVE ARCHITECTURE SIMULATOR</span>
             </div>
-            <h2 className="font-headline font-extrabold text-3xl sm:text-4xl text-[#0A1450] tracking-[-0.035em]">
+            <h2 className="font-headline font-extrabold text-3xl sm:text-4xl text-[#16161D] tracking-[-0.035em]">
               Break a Tier: 7-Tier Multimodal Failover DAG
             </h2>
-            <p className="font-body text-sm sm:text-base text-[#0A1450]/80 max-w-2xl">
+            <p className="font-body text-sm sm:text-base text-[#5C5B66] max-w-2xl">
               Click any tier button below to simulate an infrastructure failure. The deterministic state machine instantly routes the acoustic voice order to the next healthy layer without dropping packets.
             </p>
           </div>
@@ -64,7 +64,7 @@ export const BreakATierDemo: React.FC = () => {
           <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={resetAll}
-              className="inline-flex items-center gap-2 px-4 py-2 border border-[#6C84EE] bg-white text-[#0A1450] font-mono text-xs font-bold hover:bg-[#1237D1] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-[#2D2D38] bg-white text-[#16161D] font-mono text-xs font-bold hover:bg-[#16161D] hover:text-[#F7F5F2] transition-colors"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Reset Tiers</span>
@@ -76,16 +76,16 @@ export const BreakATierDemo: React.FC = () => {
         <div
           className={`p-5 border transition-all ${
             allDown
-              ? 'bg-[#FFE45C] border-[#0A1450] text-[#0A1450]'
-              : 'bg-[#0C2699] border-[#6C84EE] text-white'
+              ? 'bg-[#FF5A36] border-[#16161D] text-white'
+              : 'bg-[#16161D] border border-[#2D2D38] text-[#F7F5F2]'
           }`}
         >
           <div className="flex items-start sm:items-center justify-between gap-4 flex-col sm:flex-row">
             <div className="flex items-center gap-3">
               {allDown ? (
-                <AlertTriangle className="w-5 h-5 text-[#0A1450] shrink-0" />
+                <AlertTriangle className="w-5 h-5 text-white shrink-0" />
               ) : (
-                <ShieldCheck className="w-5 h-5 text-[#FFE45C] shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-[#FF5A36] shrink-0" />
               )}
               <div className="font-headline font-bold text-base sm:text-lg tracking-tight">
                 {allDown
@@ -114,10 +114,10 @@ export const BreakATierDemo: React.FC = () => {
                 aria-label={`Toggle Tier ${tier.id}: ${tier.name}`}
                 className={`p-4 text-left border flex flex-col justify-between min-h-[140px] transition-all relative ${
                   isDown
-                    ? 'border-dashed border-[#6C84EE]/60 bg-[#E5E9FF]/40 text-[#0A1450]/40'
+                    ? 'border-dashed border-[#5C5B66]/40 bg-[#E2DFD8]/40 text-[#5C5B66]/60'
                     : isHandling
-                    ? 'border-[#1237D1] bg-[#1237D1] text-white shadow-md'
-                    : 'border-[#6C84EE] bg-white text-[#0A1450] hover:border-[#1237D1]'
+                    ? 'border-[#FF5A36] bg-[#16161D] text-[#F7F5F2] shadow-sm'
+                    : 'border-[#E2DFD8] bg-white text-[#16161D] hover:border-[#16161D]'
                 }`}
               >
                 <div className="space-y-1">
@@ -126,10 +126,10 @@ export const BreakATierDemo: React.FC = () => {
                     <span
                       className={`px-1 py-0.5 border text-[9px] ${
                         isDown
-                          ? 'border-[#0A1450]/30 text-[#0A1450]/50'
+                          ? 'border-current opacity-60'
                           : isHandling
-                          ? 'border-[#FFE45C] text-[#FFE45C]'
-                          : 'border-[#6C84EE] text-[#1237D1]'
+                          ? 'border-[#FF5A36] text-[#FF5A36]'
+                          : 'border-[#E2DFD8] text-[#5C5B66]'
                       }`}
                     >
                       {isDown ? 'DOWN' : isHandling ? 'HANDLING' : 'STANDBY'}
@@ -155,9 +155,9 @@ export const BreakATierDemo: React.FC = () => {
         </div>
 
         {/* Technical Caption */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-xs text-[#0A1450]/70 pt-2 border-t border-[#6C84EE]/30">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-xs text-[#5C5B66] pt-2 border-t border-[#E2DFD8]">
           <div>
-            <span className="font-bold text-[#0A1450]">CAPTION:</span> Simulation, not live traffic.
+            <span className="font-bold text-[#16161D]">CAPTION:</span> Simulation, not live traffic.
           </div>
           <div>Circuit-breaker DAG validated against 10,000 synthetic audio drop trials.</div>
         </div>

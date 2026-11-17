@@ -60,10 +60,10 @@ export default function RootLayout({
       className={`${bricolage.variable} ${hanken.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[#1237D1] text-white font-body antialiased selection:bg-[#FFE45C] selection:text-[#0A1450] relative">
+      <body className="min-h-screen bg-[#F7F5F2] text-[#16161D] font-body antialiased selection:bg-[#FF5A36] selection:text-white relative">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[#FFE45C] text-[#0A1450] font-mono text-xs font-bold border border-[#0A1450]"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[#FF5A36] text-white font-mono text-xs font-bold border border-[#16161D]"
         >
           Skip to main content
         </a>

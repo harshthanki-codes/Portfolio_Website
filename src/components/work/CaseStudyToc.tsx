@@ -39,8 +39,8 @@ export const CaseStudyToc: React.FC = () => {
   }, []);
 
   return (
-    <nav aria-label="Table of contents" className="p-4 bg-white border border-[#6C84EE] text-[#0A1450] space-y-4">
-      <div className="font-mono text-[11px] text-[#1237D1] tracking-[0.15em] uppercase font-bold border-b border-[#6C84EE]/30 pb-2">
+    <nav aria-label="Table of contents" className="p-4 bg-white border border-[#E2DFD8] text-[#16161D] space-y-4">
+      <div className="font-mono text-[11px] text-[#FF5A36] tracking-[0.15em] uppercase font-bold border-b border-[#E2DFD8] pb-2">
         SPECIFICATION INDEX
       </div>
       <ul className="space-y-2 font-mono text-xs">
@@ -52,8 +52,8 @@ export const CaseStudyToc: React.FC = () => {
                 href={`#${item.id}`}
                 className={`flex items-center gap-2 py-1 px-1.5 transition-colors ${
                   isActive
-                    ? 'bg-[#1237D1] text-white font-bold'
-                    : 'text-[#0A1450]/80 hover:text-[#1237D1] hover:bg-[#F3F5FF]'
+                    ? 'bg-[#16161D] text-white font-bold border-l-2 border-[#FF5A36]'
+                    : 'text-[#5C5B66] hover:text-[#16161D] hover:bg-[#F7F5F2]'
                 }`}
               >
                 <span className="text-[10px] opacity-70">{item.number}</span>

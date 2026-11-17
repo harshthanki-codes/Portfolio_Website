@@ -65,18 +65,18 @@ export const ContactSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="py-16 sm:py-24 bg-[#FFE45C] text-[#0A1450] border-b border-[#0A1450] scroll-mt-20"
+      className="py-16 sm:py-24 bg-[#FF5A36] text-[#16161D] border-b border-[#16161D] scroll-mt-20"
       aria-label="Contact and Inquiries"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10 sm:space-y-14">
         {/* Masthead Tag */}
-        <div className="flex items-center justify-between border-b border-[#0A1450]/30 pb-3 font-mono text-xs font-bold uppercase tracking-wider text-[#0A1450]">
+        <div className="flex items-center justify-between border-b border-[#16161D]/30 pb-3 font-mono text-xs font-bold uppercase tracking-wider text-[#16161D]">
           <span>05 // DIRECT INQUIRIES & CONTRACTS</span>
           <span>RESPONSE WINDOW &lt; 24H</span>
         </div>
 
         {/* Huge 15vw Headline */}
-        <h2 className="font-headline font-extrabold text-[15vw] leading-[0.88] tracking-[-0.04em] text-[#0A1450] select-none">
+        <h2 className="font-headline font-extrabold text-[15vw] leading-[0.88] tracking-[-0.04em] text-[#16161D] select-none">
           Let's talk.
         </h2>
 
@@ -84,28 +84,28 @@ export const ContactSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left Column (5 cols): Direct Email & Copy Button */}
           <div className="lg:col-span-5 space-y-6">
-            <p className="font-body text-base sm:text-lg text-[#0A1450] leading-relaxed">
+            <p className="font-body text-base sm:text-lg text-[#16161D] leading-relaxed">
               Available for AI engineering engagements, local LLM fine-tuning pipelines, and distributed fault-tolerant backend architectures.
             </p>
 
-            <div className="p-5 border-2 border-[#0A1450] bg-white space-y-3">
-              <span className="font-mono text-[10px] text-[#0A1450]/80 uppercase tracking-wider block font-bold">
+            <div className="p-5 border-2 border-[#16161D] bg-white space-y-3">
+              <span className="font-mono text-[10px] text-[#5C5B66] uppercase tracking-wider block font-bold">
                 PRIMARY EMAIL CHANNEL
               </span>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
-                <span className="font-mono text-sm sm:text-base font-bold text-[#0A1450] select-all break-all">
+                <span className="font-mono text-sm sm:text-base font-bold text-[#16161D] select-all break-all">
                   harsh.h.thanki@gmail.com
                 </span>
 
                 <button
                   onClick={copyEmail}
-                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-[#0A1450] text-[#FFE45C] font-mono text-xs font-bold hover:bg-[#1237D1] transition-colors shrink-0 min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-[#16161D] text-white font-mono text-xs font-bold hover:bg-[#2D2D38] transition-colors shrink-0 min-h-[44px]"
                   aria-label="Copy email address"
                 >
                   {copied ? (
                     <>
-                      <Check className="w-4 h-4 text-[#FFE45C]" />
+                      <Check className="w-4 h-4 text-[#FF5A36]" />
                       <span>Copied!</span>
                     </>
                   ) : (
@@ -118,16 +118,16 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="font-mono text-xs text-[#0A1450]/80 space-y-1">
+            <div className="font-mono text-xs text-[#16161D]/80 space-y-1">
               <div>LOCATION: Ahmedabad, India · Remote Globally</div>
               <div>PGP / VERIFIED COMMS AVAILABLE ON REQUEST</div>
             </div>
           </div>
 
           {/* Right Column (7 cols): Minimal Form */}
-          <div className="lg:col-span-7 p-6 sm:p-8 border-2 border-[#0A1450] bg-white text-[#0A1450]">
+          <div className="lg:col-span-7 p-6 sm:p-8 border-2 border-[#16161D] bg-white text-[#16161D]">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="font-mono text-xs font-bold uppercase tracking-wider text-[#0A1450] border-b border-[#0A1450]/20 pb-2">
+              <div className="font-mono text-xs font-bold uppercase tracking-wider text-[#16161D] border-b border-[#16161D]/20 pb-2">
                 PROJECT CONTEXT DISPATCH
               </div>
 
@@ -145,7 +145,7 @@ export const ContactSection: React.FC = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label htmlFor="name" className="block font-mono text-xs text-[#0A1450] font-bold">
+                  <label htmlFor="name" className="block font-mono text-xs text-[#16161D] font-bold">
                     NAME *
                   </label>
                   <input
@@ -155,12 +155,12 @@ export const ContactSection: React.FC = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Alex Mercer"
-                    className="w-full px-3.5 py-2.5 border border-[#0A1450] bg-[#F3F5FF] text-[#0A1450] font-body text-sm min-h-[44px]"
+                    className="w-full px-3.5 py-2.5 border border-[#16161D] bg-[#F7F5F2] text-[#16161D] font-body text-sm min-h-[44px]"
                   />
                 </div>
 
                 <div className="space-y-1">
-                  <label htmlFor="email" className="block font-mono text-xs text-[#0A1450] font-bold">
+                  <label htmlFor="email" className="block font-mono text-xs text-[#16161D] font-bold">
                     EMAIL *
                   </label>
                   <input
@@ -170,13 +170,13 @@ export const ContactSection: React.FC = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="alex@company.com"
-                    className="w-full px-3.5 py-2.5 border border-[#0A1450] bg-[#F3F5FF] text-[#0A1450] font-body text-sm min-h-[44px]"
+                    className="w-full px-3.5 py-2.5 border border-[#16161D] bg-[#F7F5F2] text-[#16161D] font-body text-sm min-h-[44px]"
                   />
                 </div>
               </div>
 
               <div className="space-y-1">
-                <label htmlFor="message" className="block font-mono text-xs text-[#0A1450] font-bold">
+                <label htmlFor="message" className="block font-mono text-xs text-[#16161D] font-bold">
                   SYSTEM CONTEXT / PROJECT SCOPE *
                 </label>
                 <textarea
@@ -186,7 +186,7 @@ export const ContactSection: React.FC = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Describe your model fine-tuning goals, latency requirements, or target infrastructure..."
-                  className="w-full px-3.5 py-2.5 border border-[#0A1450] bg-[#F3F5FF] text-[#0A1450] font-body text-sm min-h-[44px] resize-y"
+                  className="w-full px-3.5 py-2.5 border border-[#16161D] bg-[#F7F5F2] text-[#16161D] font-body text-sm min-h-[44px] resize-y"
                 />
               </div>
 
@@ -197,7 +197,7 @@ export const ContactSection: React.FC = () => {
               )}
 
               {status === 'success' && (
-                <div className="p-3 border border-[#0A1450] bg-[#FFE45C] text-[#0A1450] font-mono text-xs font-bold">
+                <div className="p-3 border border-[#16161D] bg-[#16161D] text-[#F7F5F2] font-mono text-xs font-bold">
                   Inquiry dispatched! Opening direct email client fallback.
                 </div>
               )}
@@ -205,10 +205,10 @@ export const ContactSection: React.FC = () => {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#0A1450] text-white font-headline font-bold text-sm hover:bg-[#1237D1] transition-colors min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#16161D] text-white font-headline font-bold text-sm hover:bg-[#2D2D38] transition-colors min-h-[44px]"
               >
                 <span>{status === 'loading' ? 'Dispatching...' : 'Dispatch Inquiry'}</span>
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 text-[#FF5A36]" />
               </button>
             </form>
           </div>
