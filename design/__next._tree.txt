@@ -1,8 +1,7 @@
-:HL["/Portfolio_Website/_next/static/chunks/38lxhsgso-ohv.css","style"]
-:HL["/Portfolio_Website/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/Portfolio_Website/_next/static/media/75cb990346c55dc4-s.p.40bho2kviej2o.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Portfolio_Website/_next/static/chunks/07nv_e3penpst.css","style"]
 :HL["/Portfolio_Website/_next/static/media/9a321a2c78eff0b5-s.p.1bkzbscqrt8rl.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/Portfolio_Website/_next/static/media/a6fd56cd89ea0e72-s.p.1hij5ex6k3v9q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Portfolio_Website/_next/static/media/9b9a73d6d06344b9-s.p.3z61h48msb3kj.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Portfolio_Website/_next/static/media/b8dfa3d21eb22018-s.p.3lxpqujs87tck.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
-1:[["children",{"s":"design","h":64,"c":"$Q2"}]]
-0:{"b":"2AHs0Wcf4-L3s0npRYPU3","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+1:[["children",{"s":"design","h":96,"c":"$Q2"}]]
+0:{"b":"pOy7q-YG1JJaV3bVGGZWv","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
