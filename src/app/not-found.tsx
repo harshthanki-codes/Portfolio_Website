@@ -1,37 +1,37 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
-import { ArrowLeft, Terminal } from 'lucide-react';
+import { Container } from '@/components/ui/Container';
+import { Label } from '@/components/ui/Label';
+import { assetPath } from '@/lib/paths';
 
 export default function NotFound() {
   return (
-    <div className="min-h-[70vh] flex items-center justify-center px-4 sm:px-6">
-      <Card variant="default" showCrosshairs className="max-w-md w-full p-8 text-center space-y-6">
-        <div className="w-12 h-12 mx-auto rounded-[var(--radius-xs)] bg-[var(--surface-raised)] border border-[var(--border)] flex items-center justify-center text-[var(--accent)]">
-          <Terminal className="w-6 h-6" />
-        </div>
+    <main className="min-h-[75vh] flex items-center justify-center bg-[#F7F5F2] py-20">
+      <Container className="max-w-[720px]">
+        <div className="border border-[#16161D] p-8 md:p-14 bg-white text-center space-y-6">
+          <Label tone="muted">Error 404 · Missing Route</Label>
 
-        <div className="space-y-2">
-          <div className="font-mono text-xs uppercase tracking-widest text-[var(--accent)] font-semibold">
-            ERROR 404 // ROUTE NOT FOUND
-          </div>
-          <h1 className="text-2xl font-bold text-[var(--text-primary)]">
-            Missing Invariant Boundary
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#16161D] tracking-tight leading-[0.96]"
+            style={{ fontFamily: 'var(--font-display), sans-serif' }}
+          >
+            Page not found.
           </h1>
-          <p className="text-xs font-mono text-[var(--text-secondary)] leading-relaxed">
-            The requested URI does not match any route handler, static case study, or design document in this deployment.
-          </p>
-        </div>
 
-        <div className="pt-2">
-          <NextLink href="/">
-            <Button size="md" variant="primary" leftIcon={<ArrowLeft className="w-4 h-4" />}>
-              Return to Overview
-            </Button>
-          </NextLink>
+          <p className="text-base sm:text-lg text-[#55555F] max-w-[48ch] mx-auto leading-relaxed font-body">
+            The requested page does not exist or has moved. Every case study and proof metric is indexed on the main overview.
+          </p>
+
+          <div className="pt-4 flex justify-center">
+            <NextLink href={assetPath('/')}>
+              <Button variant="coral" className="min-w-[200px]">
+                Return to Overview →
+              </Button>
+            </NextLink>
+          </div>
         </div>
-      </Card>
-    </div>
+      </Container>
+    </main>
   );
 }
