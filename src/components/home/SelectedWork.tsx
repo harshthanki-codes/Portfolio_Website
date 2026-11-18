@@ -22,7 +22,7 @@ export const SelectedWork: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E8E3DC]">
           <div className="space-y-3 max-w-2xl">
             <Label tone="muted">Selected Work · 03</Label>
-            <h2 className="type-h2 text-[#16161D]">
+            <h2 className="type-h2 text-[#16161D] reveal-heading">
               Production AI Systems & Backends.
             </h2>
             <p className="type-body text-[#55555F]">

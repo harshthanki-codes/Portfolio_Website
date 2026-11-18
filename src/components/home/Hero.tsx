@@ -152,7 +152,7 @@ export const Hero: React.FC = () => {
   const currentFrame = reducedMotion ? FRAMES[5] : FRAMES[frameIndex];
 
   return (
-    <Section tone="ink" className="pt-16 pb-20 sm:pt-24 sm:pb-28 bg-ink-grid border-b border-[#2D2D38]">
+    <section className="pt-16 pb-20 sm:pt-24 sm:pb-28 border-b border-[#2D2D38]/60 relative z-10">
       <Container>
         <div className="max-w-4xl space-y-8 sm:space-y-10">
           {/* Top Label & Replay Control */}
@@ -255,6 +255,6 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </Container>
-    </Section>
+    </section>
   );
 };

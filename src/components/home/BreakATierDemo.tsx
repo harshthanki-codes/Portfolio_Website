@@ -59,7 +59,7 @@ export const BreakATierDemo: React.FC = () => {
             <div className="flex items-center gap-2">
               <Label tone="muted">Simulation · 02</Label>
             </div>
-            <h2 className="type-h2 text-[#16161D]">
+            <h2 className="type-h2 text-[#16161D] reveal-heading">
               Break a tier.
             </h2>
             <p className="type-body text-[#55555F]">

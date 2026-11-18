@@ -47,7 +47,7 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* Enormous Display: "Let's talk." */}
-        <h2 className="type-hero text-[#16161D] select-none">
+        <h2 className="type-hero text-[#16161D] select-none reveal-heading">
           Let's talk.
         </h2>
 

@@ -97,9 +97,8 @@ export const ProofStrip: React.FC = () => {
   }, [hasAnimated]);
 
   return (
-    <Section
-      tone="ink"
-      className="py-16 sm:py-24 border-b border-[#2D2D38] bg-[#16161D]"
+    <section
+      className="py-16 sm:py-24 border-b border-[#2D2D38] relative z-10"
       aria-label="Verified Proof Points"
     >
       <Container>
@@ -146,6 +145,6 @@ export const ProofStrip: React.FC = () => {
           })}
         </div>
       </Container>
-    </Section>
+    </section>
   );
 };

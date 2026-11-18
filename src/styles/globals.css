@@ -145,8 +145,27 @@
   will-change: transform;
 }
 
+/* Phase 7: Headings slide up 16px and fade in once (500ms) */
+.reveal-heading {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms cubic-bezier(0.16, 1, 0.3, 1), transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-heading.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Respect prefers-reduced-motion everywhere */
 @media (prefers-reduced-motion: reduce) {
+  .reveal-heading {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   *,
   *::before,
   *::after {
