@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { ArrowRight, Mail, RotateCcw } from 'lucide-react';
-import { getAssetPath } from '@/lib/paths';
+import { EMAIL } from '@/lib/site';
+import { Button } from '@/components/ui/Button';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 
 interface TokenItem {
   text: string;
@@ -15,12 +17,12 @@ interface DecodingFrame {
 }
 
 const FRAMES: DecodingFrame[] = [
-  // Frame 0: [] (Buffer empty)
+  // Frame 0: Initial buffer
   {
     tokens: [],
-    statusText: '[SPECULATIVE_DECODER] Prompt loaded. Initializing KV cache. Draft buffer: []',
+    statusText: 'INITIALIZING SPECULATIVE STREAM // DRAFT BUFFER [ ]',
   },
-  // Frame 1: 4 draft words "AI systems that ride"
+  // Frame 1: 1.5B draft tokens
   {
     tokens: [
       { text: 'AI', state: 'draft' },
@@ -28,9 +30,9 @@ const FRAMES: DecodingFrame[] = [
       { text: 'that', state: 'draft' },
       { text: 'ride', state: 'draft' },
     ],
-    statusText: '[SPECULATIVE_DECODER] Draft model generated 4 speculative tokens: [AI, systems, that, ride]',
+    statusText: '1.5B DRAFT MODEL GENERATED 4 SPECULATIVE TOKENS',
   },
-  // Frame 2: first 3 verified, "ride" rejected
+  // Frame 2: 7B target verification - "ride" rejected
   {
     tokens: [
       { text: 'AI', state: 'verified' },
@@ -38,9 +40,9 @@ const FRAMES: DecodingFrame[] = [
       { text: 'that', state: 'verified' },
       { text: 'ride', state: 'rejected' },
     ],
-    statusText: '[SPECULATIVE_DECODER] Target model verification: 3 accepted, 1 rejected ("ride" ✗)',
+    statusText: '7B VERIFIER: 3 ACCEPTED, 1 REJECTED ("ride" ✗)',
   },
-  // Frame 3: "run" verified + 4 new drafts "on your own servers."
+  // Frame 3: corrected token + new draft tokens
   {
     tokens: [
       { text: 'AI', state: 'verified' },
@@ -52,9 +54,9 @@ const FRAMES: DecodingFrame[] = [
       { text: 'own', state: 'draft' },
       { text: 'servers.', state: 'draft' },
     ],
-    statusText: '[SPECULATIVE_DECODER] Fallback token "run" verified. Speculating suffix: [on, your, own, servers.]',
+    statusText: 'FALLBACK VERIFIED "run". SPECULATING REMAINING SUFFIX...',
   },
-  // Frame 4: 3 verified, "servers." rejected
+  // Frame 4: 7B verification - "servers." rejected
   {
     tokens: [
       { text: 'AI', state: 'verified' },
@@ -66,9 +68,9 @@ const FRAMES: DecodingFrame[] = [
       { text: 'own', state: 'verified' },
       { text: 'servers.', state: 'rejected' },
     ],
-    statusText: '[SPECULATIVE_DECODER] Target model verification: 3 accepted, 1 rejected ("servers." ✗)',
+    statusText: '7B VERIFIER: 3 ACCEPTED, 1 REJECTED ("servers." ✗)',
   },
-  // Frame 5: all 8 verified with "hardware."
+  // Frame 5: complete verified headline
   {
     tokens: [
       { text: 'AI', state: 'verified' },
@@ -80,7 +82,7 @@ const FRAMES: DecodingFrame[] = [
       { text: 'own', state: 'verified' },
       { text: 'hardware.', state: 'verified' },
     ],
-    statusText: '[SPECULATIVE_DECODER] Speculative decoding complete. 8/8 tokens verified without API latency.',
+    statusText: 'SPECULATIVE DECODING COMPLETE. 8/8 TOKENS VERIFIED ON LOCAL HARDWARE.',
   },
 ];
 
@@ -89,218 +91,170 @@ export const Hero: React.FC = () => {
   const [reducedMotion, setReducedMotion] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const startLoop = useCallback((startFrame = 0) => {
+  const startPlayback = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
 
-    let current = startFrame;
+    let current = 0;
     setFrameIndex(current);
 
-    const step = () => {
-      // Determine duration of current frame
-      // Frame 5 holds ~4600 ms, others hold 1150 ms
-      const duration = current === 5 ? 4600 : 1150;
+    const durations = [750, 1150, 1150, 1150, 1150]; // 5 frames leading to frame 5 which holds
+
+    const step = (idx: number) => {
+      if (idx >= FRAMES.length - 1) {
+        setFrameIndex(FRAMES.length - 1);
+        return; // Plays once, then holds the correct headline
+      }
 
       timerRef.current = setTimeout(() => {
-        current = (current + 1) % FRAMES.length;
-        setFrameIndex(current);
-        step();
-      }, duration);
+        const next = idx + 1;
+        setFrameIndex(next);
+        step(next);
+      }, durations[idx] || 1150);
     };
 
-    step();
+    step(0);
   }, []);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mediaQuery.matches) {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq.matches) {
       setReducedMotion(true);
       setFrameIndex(5);
       return;
     }
 
-    startLoop(0);
+    startPlayback();
 
-    const handleChange = (e: MediaQueryListEvent) => {
+    const handler = (e: MediaQueryListEvent) => {
       if (e.matches) {
         setReducedMotion(true);
         if (timerRef.current) clearTimeout(timerRef.current);
         setFrameIndex(5);
       } else {
         setReducedMotion(false);
-        startLoop(0);
+        startPlayback();
       }
     };
 
-    mediaQuery.addEventListener('change', handleChange);
+    mq.addEventListener('change', handler);
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
-      mediaQuery.removeEventListener('change', handleChange);
+      mq.removeEventListener('change', handler);
     };
-  }, [startLoop]);
+  }, [startPlayback]);
 
-  const handleReplay = () => {
+  const handleReplay = (e: React.MouseEvent) => {
+    e.preventDefault();
     if (reducedMotion) return;
-    startLoop(0);
+    startPlayback();
   };
 
   const currentFrame = reducedMotion ? FRAMES[5] : FRAMES[frameIndex];
 
   return (
-    <section className="relative pt-12 pb-20 sm:pt-20 sm:pb-28 border-b border-[#2D2D38] bg-ink-grid overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-          {/* Main Column: Decoding Terminal & Speculative Masthead (8 cols) */}
-          <div className="lg:col-span-8 space-y-6 sm:space-y-8">
-            {/* Live Indicator (Coral Signal) */}
-            <div className="flex flex-wrap items-center justify-between gap-3 font-mono text-xs">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 bg-[#FF5A36] animate-pulse" />
-                <span className="text-[#A3A1B0] tracking-wider uppercase">
-                  AI ENGINEER // AHMEDABAD, INDIA
-                </span>
-              </div>
-
-              {/* Speculative Decoding Legend & Replay */}
-              <div className="flex items-center gap-3 text-[11px]">
-                <div className="hidden sm:flex items-center gap-2">
-                  <span className="border-b border-dashed border-[#A3A1B0] text-[#A3A1B0] px-1">
-                    Draft
-                  </span>
-                  <span className="text-[#F7F5F2] px-1">
-                    Verified
-                  </span>
-                  <span className="bg-[#FF5A36] text-white line-through px-1 font-bold">
-                    Rejected
-                  </span>
-                </div>
-
-                <button
-                  onClick={handleReplay}
-                  aria-label="Replay Speculative Decoding Sequence"
-                  className="inline-flex items-center gap-1 px-2.5 py-1 border border-[#2D2D38] text-[#A3A1B0] hover:text-[#F7F5F2] hover:border-[#FF5A36] transition-colors"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  <span>Replay</span>
-                </button>
-              </div>
+    <Section tone="ink" className="pt-16 pb-20 sm:pt-24 sm:pb-28 bg-ink-grid border-b border-[#2D2D38]">
+      <Container>
+        <div className="max-w-4xl space-y-8 sm:space-y-10">
+          {/* Top Label & Replay Control */}
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.12em]">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 bg-[#FF5A36]" aria-hidden="true" />
+              <span className="text-[#F7F5F2] font-medium">AI engineer · Ahmedabad</span>
             </div>
 
-            {/* Speculative Decoding Headline */}
-            <div className="space-y-4">
-              <div className="p-5 sm:p-6 bg-[#21212B] border border-[#2D2D38] space-y-4">
-                <div className="flex items-center justify-between border-b border-[#2D2D38] pb-2 font-mono text-[11px] text-[#A3A1B0]">
-                  <span>SPECULATIVE_STREAM // FRAME 0{frameIndex}/05</span>
-                  <span className="text-[#FF5A36]">1150ms / step</span>
-                </div>
-
-                {/* Real h1 with Accessible Aria Label */}
-                <h1
-                  aria-label="AI systems that run on your own hardware."
-                  className="font-headline font-extrabold text-3xl sm:text-5xl lg:text-[3.5rem] tracking-[-0.035em] leading-[0.96] text-[#F7F5F2] min-h-[96px] sm:min-h-[140px] flex flex-wrap items-baseline gap-x-2.5 gap-y-1.5"
-                >
-                  {currentFrame.tokens.length === 0 ? (
-                    <span className="text-[#A3A1B0]/40 font-mono text-2xl sm:text-4xl">[]</span>
-                  ) : (
-                    currentFrame.tokens.map((tok, idx) => {
-                      if (tok.state === 'rejected') {
-                        return (
-                          <span
-                            key={idx}
-                            className="bg-[#FF5A36] text-white line-through font-bold px-1.5 py-0.5 inline-block"
-                          >
-                            {tok.text}
-                          </span>
-                        );
-                      }
-                      if (tok.state === 'draft') {
-                        return (
-                          <span
-                            key={idx}
-                            className="border-b-2 border-dashed border-[#A3A1B0] text-[#A3A1B0] inline-block"
-                          >
-                            {tok.text}
-                          </span>
-                        );
-                      }
-                      return (
-                        <span key={idx} className="text-[#F7F5F2] inline-block">
-                          {tok.text}
-                        </span>
-                      );
-                    })
-                  )}
-
-                  {/* Blinking Coral Caret */}
-                  <span className="inline-block w-2 sm:w-2.5 h-6 sm:h-9 bg-[#FF5A36] animate-caret align-baseline ml-1" />
-                </h1>
-
-                {/* One-Line Technical Status Text */}
-                <div className="pt-2 border-t border-[#2D2D38] font-mono text-[11px] text-[#A3A1B0] truncate">
-                  {currentFrame.statusText}
-                </div>
-              </div>
-            </div>
-
-            {/* Subhead: ~18 words, plain verbs, no banned buzzwords */}
-            <p className="text-base sm:text-lg font-body text-[#A3A1B0] max-w-2xl leading-relaxed">
-              I fine-tune open models, build the pipelines around them, and test them until they stop failing.
-            </p>
-
-            {/* Two Action Buttons */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3.5 pt-1">
-              <a
-                href="#work"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF5A36] text-white font-headline font-bold text-sm hover:bg-[#E04826] transition-colors border border-transparent"
+            <div className="flex items-center gap-4 text-[11px] lowercase text-[#B9B9C4]">
+              <span className="hidden sm:inline">
+                <span className="text-[#FF5A36] underline decoration-1 underline-offset-4">coral</span> = drafted by a 1.5B model · <span className="text-[#F7F5F2]">white</span> = verified by a 7B model
+              </span>
+              <button
+                type="button"
+                onClick={handleReplay}
+                className="font-mono text-xs uppercase tracking-wider text-[#B9B9C4] hover:text-[#F7F5F2] active:text-[#FF5A36] underline decoration-1 underline-offset-4 cursor-pointer"
+                aria-label="Replay speculative decoding animation"
               >
-                <span>See the work</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#21212B] border border-[#2D2D38] text-[#F7F5F2] font-body text-sm hover:border-[#FF5A36] hover:text-[#FF5A36] transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                <span>Contact</span>
-              </a>
+                Replay
+              </button>
             </div>
           </div>
 
-          {/* Right Column: Technical Blueprint Portrait Card (4 cols) */}
-          <div className="lg:col-span-4 flex justify-start lg:justify-end">
-            <div className="w-full max-w-xs bg-[#21212B] border border-[#2D2D38] p-3 space-y-3">
-              <div className="flex items-center justify-between font-mono text-[10px] text-[#A3A1B0] border-b border-[#2D2D38] pb-2">
-                <span>SYSTEM OPERATOR // SPEC-01</span>
-                <span>AHMEDABAD, IN</span>
-              </div>
+          {/* Reserved Height Speculative Headline Container */}
+          <div className="min-h-[160px] sm:min-h-[220px] lg:min-h-[280px] flex items-start">
+            <h1
+              aria-label="AI systems that run on your own hardware."
+              className="type-hero text-[#F7F5F2] flex flex-wrap items-baseline gap-x-3 gap-y-2 select-none"
+            >
+              {/* Visually hidden text for instant semantic and SEO availability */}
+              <span className="sr-only">AI systems that run on your own hardware.</span>
 
-              <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#2D2D38] bg-[#16161D]">
-                <picture className="w-full h-full block">
-                  <source srcSet={getAssetPath('/harsh-thanki-transparent.webp')} type="image/webp" />
-                  <img
-                    src={getAssetPath('/harsh-thanki-transparent.png')}
-                    alt="Harsh Thanki — AI engineer"
-                    width={280}
-                    height={350}
-                    fetchPriority="high"
-                    decoding="async"
-                    className="w-full h-full object-cover object-top filter grayscale contrast-110"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = getAssetPath('/images/harsh-thanki-transparent.png');
-                    }}
-                  />
-                </picture>
-              </div>
+              {reducedMotion ? (
+                <span>AI systems that run on your own hardware.</span>
+              ) : currentFrame.tokens.length === 0 ? (
+                <span className="text-[#B9B9C4]/40 font-mono text-3xl sm:text-5xl">[]</span>
+              ) : (
+                currentFrame.tokens.map((tok, idx) => {
+                  if (tok.state === 'rejected') {
+                    // Struck through in coral, text on coral is ink
+                    return (
+                      <span
+                        key={idx}
+                        className="bg-[#FF5A36] text-[#16161D] line-through px-1.5 inline-block font-extrabold"
+                      >
+                        {tok.text}
+                      </span>
+                    );
+                  }
+                  if (tok.state === 'draft') {
+                    // Drafted in coral with thin coral underline
+                    return (
+                      <span
+                        key={idx}
+                        className="text-[#FF5A36] underline decoration-1 underline-offset-8 inline-block"
+                      >
+                        {tok.text}
+                      </span>
+                    );
+                  }
+                  // Verified in paper-white
+                  return (
+                    <span key={idx} className="text-[#F7F5F2] inline-block">
+                      {tok.text}
+                    </span>
+                  );
+                })
+              )}
 
-              <div className="font-mono text-[11px] text-[#A3A1B0] space-y-1 pt-1">
-                <div className="text-[#F7F5F2] font-bold">Harsh Thanki</div>
-                <div>AI engineer · Local Inference Architecture</div>
-                <div className="text-[10px] text-[#A3A1B0]/70">Alliance University · MCA (2024–2026)</div>
-              </div>
-            </div>
+              {/* Blinking Caret (hidden if motion reduced or finished) */}
+              {!reducedMotion && frameIndex < 5 && (
+                <span className="inline-block w-2.5 sm:w-3.5 h-[0.8em] bg-[#FF5A36] animate-caret align-baseline ml-1" />
+              )}
+            </h1>
+          </div>
+
+          {/* Subheading: muted-ink, 20px, max 62ch */}
+          <p className="font-body text-lg sm:text-[20px] text-[#B9B9C4] leading-[1.6] max-w-[62ch]">
+            I fine-tune open models, build the pipelines around them, and test them until they stop failing.
+          </p>
+
+          {/* Action Buttons: coral "See the work", outline "Email me" */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <Button
+              variant="coral"
+              href="#work"
+              className="text-base font-bold min-h-[48px]"
+            >
+              See the work
+            </Button>
+
+            <Button
+              variant="outline"
+              href={`mailto:${EMAIL}`}
+              className="text-base font-bold min-h-[48px] text-[#F7F5F2] border-[#F7F5F2]"
+            >
+              Email me
+            </Button>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
