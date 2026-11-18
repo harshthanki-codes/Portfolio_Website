@@ -5,10 +5,17 @@ export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
   const projects = getAllProjects();
-  return projects.map((p) => ({ slug: p.slug }));
+  const params: { slug: string }[] = [];
+  projects.forEach((p) => {
+    params.push({ slug: p.slug });
+    if (p.aliases) {
+      p.aliases.forEach((alias) => params.push({ slug: alias }));
+    }
+  });
+  return params;
 }
 
-export const alt = 'Harsh Thanki — Systems Architecture Case Study';
+export const alt = 'Harsh Thanki | Case Study';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -16,9 +23,10 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
-  const title = project?.title || 'Systems Architecture Case Study';
-  const headline = project?.resultHeadline || 'AI & Enterprise Systems Engineering';
-  const category = project?.categories[0] || 'AI/ML Engineering';
+  const title = project?.title || 'Production AI Case Study';
+  const tagline = project?.tagline || 'AI engineering systems and local inference.';
+  const tag = project?.tag || 'AI/ML Engineering';
+  const metric = project?.keyMetric || 'Production Benchmark';
 
   return new ImageResponse(
     (
@@ -29,51 +37,54 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          backgroundColor: '#090b0e',
-          padding: '60px',
-          fontFamily: 'monospace',
-          border: '12px solid #161b22',
+          backgroundColor: '#16161D',
+          padding: '64px',
+          position: 'relative',
         }}
       >
-        {/* Top Header */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        {/* Top Coral Accent Bar */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '8px',
+            backgroundColor: '#FF5A36',
+          }}
+        />
+
+        {/* Header: Label & Role */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            fontFamily: 'monospace',
+            fontSize: '18px',
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+            color: '#B9B9C4',
+          }}
+        >
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div
-              style={{
-                width: '18px',
-                height: '18px',
-                backgroundColor: '#f59e0b',
-                borderRadius: '2px',
-              }}
-            />
-            <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#f0f6fc' }}>
-              HARSH THANKI // SYSTEMS ARCHITECTURE
-            </span>
+            <div style={{ width: '12px', height: '12px', backgroundColor: '#FF5A36' }} />
+            <span style={{ color: '#F7F5F2', fontWeight: 'bold' }}>HARSH THANKI // CASE STUDY</span>
           </div>
-          <span
-            style={{
-              fontSize: '18px',
-              color: '#f59e0b',
-              border: '1px solid #f59e0b',
-              padding: '6px 14px',
-              borderRadius: '4px',
-              textTransform: 'uppercase',
-            }}
-          >
-            {category}
-          </span>
+          <span style={{ color: '#FF5A36' }}>{tag}</span>
         </div>
 
-        {/* Center Headline */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        {/* Center: Paper Headline */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div
             style={{
-              fontSize: '44px',
-              fontWeight: 'bold',
-              color: '#ffffff',
-              lineHeight: '1.2',
-              maxHeight: '180px',
-              overflow: 'hidden',
+              fontSize: '56px',
+              fontWeight: 800,
+              color: '#F7F5F2',
+              lineHeight: 1.05,
+              letterSpacing: '-0.04em',
+              fontFamily: 'sans-serif',
+              maxWidth: '1000px',
             }}
           >
             {title}
@@ -81,35 +92,34 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           <div
             style={{
               fontSize: '22px',
-              color: '#8b949e',
-              lineHeight: '1.4',
+              color: '#B9B9C4',
+              lineHeight: 1.4,
+              fontFamily: 'sans-serif',
+              maxWidth: '900px',
             }}
           >
-            {headline}
+            {tagline}
           </div>
         </div>
 
-        {/* Bottom Metrics Bar */}
+        {/* Bottom Metric */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            borderTop: '2px solid #21262d',
+            borderTop: '1px solid #2D2D38',
             paddingTop: '24px',
+            fontFamily: 'monospace',
+            fontSize: '16px',
+            color: '#B9B9C4',
           }}
         >
-          <div style={{ display: 'flex', gap: '32px' }}>
-            <span style={{ fontSize: '18px', color: '#10b981' }}>
-              ● Zero Single Point of Failure
-            </span>
-            <span style={{ fontSize: '18px', color: '#f59e0b' }}>
-              ● Formal Verification Passed
-            </span>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            <span>KEY RESULT:</span>
+            <span style={{ color: '#FF5A36', fontWeight: 'bold' }}>{metric}</span>
           </div>
-          <span style={{ fontSize: '18px', color: '#6e7681' }}>
-            harshthanki-codes.github.io
-          </span>
+          <div>HARSH THANKI · AI ENGINEER</div>
         </div>
       </div>
     ),

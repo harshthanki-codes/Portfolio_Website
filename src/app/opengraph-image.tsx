@@ -1,7 +1,8 @@
 import { ImageResponse } from 'next/og';
+import { SITE } from '@/lib/site';
 
 export const dynamic = 'force-static';
-export const alt = 'Harsh Thanki — AI Systems Architect';
+export const alt = 'Harsh Thanki | AI engineer';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -15,117 +16,98 @@ export default async function Image() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          backgroundColor: '#0e0f12',
+          backgroundColor: '#16161D',
           padding: '64px',
-          border: '12px solid #14161b',
+          position: 'relative',
         }}
       >
-        {/* Top Header */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div
-              style={{
-                width: '16px',
-                height: '16px',
-                backgroundColor: '#d97746',
-                borderRadius: '50%',
-              }}
-            />
-            <span
-              style={{
-                fontSize: '22px',
-                fontFamily: 'monospace',
-                fontWeight: 600,
-                color: '#d97746',
-                letterSpacing: '0.1em',
-              }}
-            >
-              HARSH THANKI // AI.SYS
-            </span>
-          </div>
-          <span
-            style={{
-              fontSize: '16px',
-              fontFamily: 'monospace',
-              color: '#9c9c94',
-              letterSpacing: '0.05em',
-            }}
-          >
-            AHMEDABAD, IN • OPEN-WEIGHTS INFERENCE
-          </span>
-        </div>
+        {/* Top Coral Accent Bar */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '8px',
+            backgroundColor: '#FF5A36',
+          }}
+        />
 
-        {/* Center Content: Headline & Subtitle */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <h1
-            style={{
-              fontSize: '52px',
-              fontWeight: 400,
-              color: '#f5f5f0',
-              lineHeight: 1.15,
-              margin: 0,
-              letterSpacing: '-0.02em',
-            }}
-          >
-            Engineering deterministic backends for enterprise LLM systems.
-          </h1>
-          <p
-            style={{
-              fontSize: '24px',
-              color: '#a3a39c',
-              lineHeight: 1.4,
-              margin: 0,
-            }}
-          >
-            On-premise fine-tuning (PEFT/QLoRA), 7-tier failover DAGs, and zero marginal token cost runtimes.
-          </p>
-        </div>
-
-        {/* Bottom Metrics Bar */}
+        {/* Header: Label & Role */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            borderTop: '2px solid rgba(255, 255, 255, 0.1)',
-            paddingTop: '24px',
             fontFamily: 'monospace',
+            fontSize: '18px',
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+            color: '#B9B9C4',
           }}
         >
-          <div style={{ display: 'flex', gap: '32px' }}>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ fontSize: '13px', color: '#9c9c94', textTransform: 'uppercase' }}>
-                Benchmark Score
-              </div>
-              <div style={{ fontSize: '20px', fontWeight: 600, color: '#f5f5f0', marginTop: '4px' }}>
-                8.7 / 10 Parity
-              </div>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ fontSize: '13px', color: '#9c9c94', textTransform: 'uppercase' }}>
-                Order Preservation
-              </div>
-              <div style={{ fontSize: '20px', fontWeight: 600, color: '#f5f5f0', marginTop: '4px' }}>
-                99.98% Under Jitter
-              </div>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ fontSize: '13px', color: '#9c9c94', textTransform: 'uppercase' }}>
-                Marginal Token Cost
-              </div>
-              <div style={{ fontSize: '20px', fontWeight: 600, color: '#d97746', marginTop: '4px' }}>
-                $0.00 / Query
-              </div>
-            </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '12px', height: '12px', backgroundColor: '#FF5A36' }} />
+            <span style={{ color: '#F7F5F2', fontWeight: 'bold' }}>{SITE.name}</span>
           </div>
-          <span style={{ fontSize: '14px', color: '#d97746' }}>
-            harshthanki-codes.github.io/Portfolio_Website/
-          </span>
+          <span>AI ENGINEER · AHMEDABAD</span>
+        </div>
+
+        {/* Center: Paper Headline */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <div
+            style={{
+              fontSize: '64px',
+              fontWeight: 800,
+              color: '#F7F5F2',
+              lineHeight: 1.05,
+              letterSpacing: '-0.04em',
+              fontFamily: 'sans-serif',
+            }}
+          >
+            AI systems that run on your own hardware.
+          </div>
+          <div
+            style={{
+              fontSize: '24px',
+              color: '#B9B9C4',
+              lineHeight: 1.4,
+              fontFamily: 'sans-serif',
+              maxWidth: '900px',
+            }}
+          >
+            I fine-tune open models, build the pipelines around them, and test them until they stop failing.
+          </div>
+        </div>
+
+        {/* Bottom Proof Metrics */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            borderTop: '1px solid #2D2D38',
+            paddingTop: '24px',
+            fontFamily: 'monospace',
+            fontSize: '16px',
+            color: '#B9B9C4',
+          }}
+        >
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <span style={{ color: '#FF5A36', fontWeight: 'bold' }}>8.7/10</span>
+            <span>ERP Coding Test</span>
+          </div>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <span style={{ color: '#FF5A36', fontWeight: 'bold' }}>96.8%</span>
+            <span>SKU Acoustic Match</span>
+          </div>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <span style={{ color: '#FF5A36', fontWeight: 'bold' }}>&lt;140ms</span>
+            <span>Watchdog Revival</span>
+          </div>
         </div>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }
