@@ -1,167 +1,193 @@
 'use client';
 
 import React, { useState } from 'react';
-import { RotateCcw, AlertTriangle, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
+import { Label } from '@/components/ui/Label';
+import { Button } from '@/components/ui/Button';
 
-interface TierDefinition {
+interface Tier {
   id: number;
   name: string;
   hardware: string;
-  latencyTarget: string;
+  latency: string;
+  latencyPercent: number; // 0-100 for latency bar
 }
 
-const TIERS: TierDefinition[] = [
-  { id: 1, name: 'Local Whisper Large-v3', hardware: 'Edge RTX 4090 (On-Prem)', latencyTarget: '< 450ms' },
-  { id: 2, name: 'Speculative 1.5B Fast-Path', hardware: 'Local FP16 Draft Node', latencyTarget: '< 180ms' },
-  { id: 3, name: 'Internal Quantized GGUF Node', hardware: 'Air-Gapped Workstation', latencyTarget: '< 650ms' },
-  { id: 4, name: 'Regional On-Premise Backup', hardware: 'Secondary Cluster LAN', latencyTarget: '< 920ms' },
-  { id: 5, name: 'Air-Gapped HA Buffer Queue', hardware: 'Persisted SQLite Invariant', latencyTarget: '0ms drop' },
-  { id: 6, name: 'Encrypted Cloud Private Gateway', hardware: 'Dedicated VPC Endpoint', latencyTarget: '< 1200ms' },
-  { id: 7, name: 'Human Operator Intervention Buffer', hardware: 'Synchronous Warehouse Dispatch', latencyTarget: 'Fallback' },
+const TIERS: Tier[] = [
+  { id: 1, name: 'Local Whisper Large-v3', hardware: 'Edge RTX 4090 (On-Prem)', latency: '<450ms', latencyPercent: 35 },
+  { id: 2, name: 'Speculative 1.5B Fast-Path', hardware: 'Local FP16 Draft Node', latency: '<180ms', latencyPercent: 18 },
+  { id: 3, name: 'Internal Quantized GGUF Node', hardware: 'Air-Gapped Workstation', latency: '<650ms', latencyPercent: 50 },
+  { id: 4, name: 'Regional On-Premise Backup', hardware: 'Secondary Cluster LAN', latency: '<920ms', latencyPercent: 70 },
+  { id: 5, name: 'Air-Gapped HA Buffer Queue', hardware: 'Persisted SQLite Invariant', latency: '0ms drop', latencyPercent: 10 },
+  { id: 6, name: 'Encrypted Cloud Private Gateway', hardware: 'Dedicated VPC Endpoint', latency: '<1200ms', latencyPercent: 90 },
+  { id: 7, name: 'Human Operator Intervention Buffer', hardware: 'Synchronous Warehouse Dispatch', latency: 'Fallback', latencyPercent: 100 },
 ];
 
 export const BreakATierDemo: React.FC = () => {
-  // Array tracking whether tier is down (true = down, false = healthy)
-  const [downTiers, setDownTiers] = useState<boolean[]>([false, false, false, false, false, false, false]);
+  // Array tracking whether tier is down (true = killed, false = alive)
+  const [killedTiers, setKilledTiers] = useState<boolean[]>([
+    false, false, false, false, false, false, false
+  ]);
 
-  const toggleTier = (index: number) => {
-    setDownTiers((prev) => {
+  const liveIndex = killedTiers.findIndex((k) => !k);
+  const allKilled = liveIndex === -1;
+
+  const killCurrentLive = () => {
+    if (liveIndex === -1) return;
+    setKilledTiers((prev) => {
       const next = [...prev];
-      next[index] = !next[index];
+      next[liveIndex] = true;
       return next;
     });
   };
 
-  const resetAll = () => {
-    setDownTiers([false, false, false, false, false, false, false]);
+  const resetTiers = () => {
+    setKilledTiers([false, false, false, false, false, false, false]);
   };
 
-  // Find first tier that is not marked down
-  const activeTierIndex = downTiers.findIndex((isDown) => !isDown);
-  const allDown = activeTierIndex === -1;
-
   return (
-    <section
-      id="break-a-tier"
-      className="py-16 sm:py-24 border-b border-[#E2DFD8] bg-[#F7F5F2] text-[#16161D] bg-warm-grid"
-      aria-label="Failover DAG Simulation Demo"
+    <Section
+      tone="paper"
+      className="py-16 sm:py-24 border-b border-[#E8E3DC] bg-[#F7F5F2]"
+      aria-label="Failover DAG Simulation"
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10">
-        {/* Header & Controls */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E2DFD8]">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#FF5A36] uppercase tracking-wider">
-              <span>02 // INTERACTIVE ARCHITECTURE SIMULATOR</span>
+      <Container className="space-y-10">
+        {/* Header Block */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E8E3DC]">
+          <div className="space-y-3 max-w-2xl">
+            <div className="flex items-center gap-2">
+              <Label tone="muted">Simulation · 02</Label>
             </div>
-            <h2 className="font-headline font-extrabold text-3xl sm:text-4xl text-[#16161D] tracking-[-0.035em]">
-              Break a Tier: 7-Tier Multimodal Failover DAG
+            <h2 className="type-h2 text-[#16161D]">
+              Break a tier.
             </h2>
-            <p className="font-body text-sm sm:text-base text-[#5C5B66] max-w-2xl">
-              Click any tier button below to simulate an infrastructure failure. The deterministic state machine instantly routes the acoustic voice order to the next healthy layer without dropping packets.
+            <p className="type-body text-[#55555F]">
+              My voice-order system has seven fallbacks. Kill one and watch the next take over.
             </p>
           </div>
 
-          <div className="flex items-center gap-3 shrink-0">
-            <button
-              onClick={resetAll}
-              className="inline-flex items-center gap-2 px-4 py-2 border border-[#2D2D38] bg-white text-[#16161D] font-mono text-xs font-bold hover:bg-[#16161D] hover:text-[#F7F5F2] transition-colors"
+          <div className="shrink-0 flex items-center gap-3">
+            <Button
+              variant="outline"
+              onClick={resetTiers}
+              className="text-xs uppercase font-mono tracking-wider min-h-[48px] px-5 text-[#16161D] border-[#16161D]"
             >
-              <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset Tiers</span>
-            </button>
+              Reset All
+            </Button>
           </div>
         </div>
 
-        {/* Live Status Banner */}
+        {/* Live Accessibility Status Banner */}
         <div
+          aria-live="polite"
           className={`p-5 border transition-all ${
-            allDown
-              ? 'bg-[#FF5A36] border-[#16161D] text-white'
-              : 'bg-[#16161D] border border-[#2D2D38] text-[#F7F5F2]'
+            allKilled
+              ? 'bg-[#16161D] text-[#F7F5F2] border-[#16161D]'
+              : 'bg-[#E8E3DC] text-[#16161D] border-[#E8E3DC]'
           }`}
         >
-          <div className="flex items-start sm:items-center justify-between gap-4 flex-col sm:flex-row">
-            <div className="flex items-center gap-3">
-              {allDown ? (
-                <AlertTriangle className="w-5 h-5 text-white shrink-0" />
-              ) : (
-                <ShieldCheck className="w-5 h-5 text-[#FF5A36] shrink-0" />
-              )}
-              <div className="font-headline font-bold text-base sm:text-lg tracking-tight">
-                {allDown
-                  ? 'All seven tiers are down. The order waits for a person. Nothing is dropped.'
-                  : `Voice order handled by Tier ${activeTierIndex + 1}: ${TIERS[activeTierIndex].name}.`}
-              </div>
-            </div>
-
-            <div className="font-mono text-xs font-semibold px-2.5 py-1 border border-current shrink-0">
-              {allDown ? 'HUMAN QUEUE HOLD' : `STATUS: ACTIVE [T${activeTierIndex + 1}]`}
-            </div>
+          <div className="flex items-center justify-between gap-4 font-mono text-xs sm:text-sm">
+            <span className="font-bold">
+              {allKilled
+                ? 'Nothing left. This is why there are seven.'
+                : `Voice traffic actively routed to Tier 0${liveIndex + 1}: ${TIERS[liveIndex].name} (${TIERS[liveIndex].hardware}).`}
+            </span>
+            <span className="shrink-0 font-bold uppercase tracking-wider text-[11px]">
+              {allKilled ? '[ ALL FAILED ]' : `[ ACTIVE: T0${liveIndex + 1} ]`}
+            </span>
           </div>
         </div>
 
-        {/* 7 Tier Interactive Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3">
+        {/* Seven Rows by Priority */}
+        <div className="divide-y divide-[#E8E3DC] border-y border-[#E8E3DC]">
           {TIERS.map((tier, idx) => {
-            const isDown = downTiers[idx];
-            const isHandling = idx === activeTierIndex;
+            const isKilled = killedTiers[idx];
+            const isLive = idx === liveIndex;
 
             return (
-              <button
+              <div
                 key={tier.id}
-                onClick={() => toggleTier(idx)}
-                aria-pressed={isDown}
-                aria-label={`Toggle Tier ${tier.id}: ${tier.name}`}
-                className={`p-4 text-left border flex flex-col justify-between min-h-[140px] transition-all relative ${
-                  isDown
-                    ? 'border-dashed border-[#5C5B66]/40 bg-[#E2DFD8]/40 text-[#5C5B66]/60'
-                    : isHandling
-                    ? 'border-[#FF5A36] bg-[#16161D] text-[#F7F5F2] shadow-sm'
-                    : 'border-[#E2DFD8] bg-white text-[#16161D] hover:border-[#16161D]'
+                className={`py-4 transition-all duration-300 ${
+                  isKilled
+                    ? 'bg-[#16161D]/5 opacity-60'
+                    : isLive
+                    ? 'bg-white'
+                    : 'bg-transparent'
                 }`}
               >
-                <div className="space-y-1">
-                  <div className="flex items-center justify-between font-mono text-[10px] uppercase font-bold">
-                    <span>T0{tier.id}</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-2">
+                  {/* Left: Priority + Tier Name */}
+                  <div className="flex items-center gap-3 min-w-[280px]">
+                    <span className="font-mono text-xs font-bold text-[#55555F] w-8">
+                      0{tier.id}
+                    </span>
                     <span
-                      className={`px-1 py-0.5 border text-[9px] ${
-                        isDown
-                          ? 'border-current opacity-60'
-                          : isHandling
-                          ? 'border-[#FF5A36] text-[#FF5A36]'
-                          : 'border-[#E2DFD8] text-[#5C5B66]'
+                      className={`font-mono text-sm sm:text-base font-bold ${
+                        isKilled
+                          ? 'line-through text-[#55555F]'
+                          : isLive
+                          ? 'text-[#16161D]'
+                          : 'text-[#16161D]'
                       }`}
                     >
-                      {isDown ? 'DOWN' : isHandling ? 'HANDLING' : 'STANDBY'}
+                      {tier.name}
                     </span>
                   </div>
 
-                  <div
-                    className={`font-headline font-bold text-sm leading-snug pt-1 ${
-                      isDown ? 'line-through' : ''
-                    }`}
-                  >
-                    {tier.name}
+                  {/* Middle: Hardware & Thin Latency Bar */}
+                  <div className="flex-1 max-w-md mx-0 sm:mx-6 space-y-1">
+                    <div className="flex items-center justify-between text-xs font-mono text-[#55555F]">
+                      <span className="truncate">{tier.hardware}</span>
+                      <span>{tier.latency}</span>
+                    </div>
+                    {/* Thin Latency Bar */}
+                    <div className="w-full h-1 bg-[#E8E3DC] overflow-hidden">
+                      <div
+                        className={`h-full transition-all duration-400 ${
+                          isKilled
+                            ? 'bg-[#55555F]/40'
+                            : isLive
+                            ? 'bg-[#FF5A36]'
+                            : 'bg-[#55555F]'
+                        }`}
+                        style={{ width: `${tier.latencyPercent}%` }}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Right: Status Pill or Interactive Button */}
+                  <div className="shrink-0 flex items-center justify-end">
+                    {isLive ? (
+                      <button
+                        type="button"
+                        onClick={killCurrentLive}
+                        aria-label={`Kill Tier ${tier.id}: ${tier.name}`}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#FF5A36] text-[#16161D] font-mono text-xs font-extrabold uppercase tracking-wider cursor-pointer border border-[#FF5A36] hover:bg-[#e64e2c] active:bg-[#cc4222] min-h-[44px]"
+                      >
+                        <span className="w-2 h-2 bg-[#16161D]" aria-hidden="true" />
+                        <span>LIVE — CLICK TO KILL</span>
+                      </button>
+                    ) : isKilled ? (
+                      <span className="inline-flex items-center px-3 py-1.5 bg-[#16161D] text-[#F7F5F2] font-mono text-xs font-bold line-through">
+                        KILLED
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center px-3 py-1.5 bg-[#E8E3DC] text-[#55555F] font-mono text-xs font-medium">
+                        STANDBY
+                      </span>
+                    )}
                   </div>
                 </div>
-
-                <div className="pt-3 border-t border-current/20 font-mono text-[10px] space-y-0.5">
-                  <div className="truncate">{tier.hardware}</div>
-                  <div className="text-[9px] opacity-80">{tier.latencyTarget}</div>
-                </div>
-              </button>
+              </div>
             );
           })}
         </div>
 
-        {/* Technical Caption */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-xs text-[#5C5B66] pt-2 border-t border-[#E2DFD8]">
-          <div>
-            <span className="font-bold text-[#16161D]">CAPTION:</span> Simulation, not live traffic.
-          </div>
-          <div>Circuit-breaker DAG validated against 10,000 synthetic audio drop trials.</div>
+        <div className="text-xs font-mono text-[#55555F] pt-2">
+          Simulation of 7-tier circuit-breaker state machine. Click the live tier to simulate runtime network, hardware, or model failure.
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
