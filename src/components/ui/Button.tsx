@@ -1,75 +1,106 @@
-'use client';
+import React from 'react';
+import NextLink from 'next/link';
 
-import React, { forwardRef } from 'react';
-import { clsx } from 'clsx';
-import { Loader2 } from 'lucide-react';
+export type ButtonVariant = 'coral' | 'ink' | 'outline' | 'primary' | 'secondary' | 'ghost';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
+interface ButtonBaseProps {
+  variant?: ButtonVariant;
+  size?: 'sm' | 'md' | 'lg' | string;
+  disabled?: boolean;
   isLoading?: boolean;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
+  className?: string;
+  children: React.ReactNode;
 }
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      className,
-      variant = 'primary',
-      size = 'md',
-      isLoading = false,
-      disabled = false,
-      leftIcon,
-      rightIcon,
-      children,
-      ...props
-    },
-    ref
-  ) => {
-    const baseStyles =
-      'inline-flex items-center justify-center font-mono font-medium transition-all duration-200 cursor-pointer select-none disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]';
+type ButtonAsButton = ButtonBaseProps &
+  React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    href?: undefined;
+  };
 
-    const sizeStyles = {
-      sm: 'text-xs px-3 py-1.5 gap-1.5 rounded-[var(--radius-xs)]',
-      md: 'text-sm px-4 py-2 gap-2 rounded-[var(--radius-sm)]',
-      lg: 'text-base px-6 py-3 gap-2.5 rounded-[var(--radius-md)]',
-    };
+type ButtonAsLink = ButtonBaseProps &
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+    href: string;
+  };
 
-    const variantStyles = {
-      primary:
-        'bg-[var(--accent)] text-[var(--accent-text)] font-semibold shadow-sm hover:bg-[var(--accent-hover)] active:bg-[var(--accent-active)] border border-transparent',
-      secondary:
-        'bg-[var(--surface-raised)] text-[var(--text-primary)] border border-[var(--border)] hover:bg-[var(--surface)] hover:border-[var(--border-strong)] active:bg-[var(--surface-raised)]',
-      outline:
-        'bg-transparent text-[var(--text-primary)] border border-[var(--border-strong)] hover:border-[var(--accent)] hover:text-[var(--accent)] active:bg-[var(--accent-subtle)]',
-      ghost:
-        'bg-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--accent-subtle)] active:bg-[var(--surface-raised)]',
-    };
+export type ButtonProps = ButtonAsButton | ButtonAsLink;
+
+export const Button: React.FC<ButtonProps> = ({
+  variant = 'coral',
+  size = 'md',
+  isLoading = false,
+  leftIcon,
+  rightIcon,
+  className = '',
+  children,
+  href,
+  disabled,
+  ...props
+}) => {
+  // Map legacy variants to Ink and Coral design system
+  const normalizedVariant =
+    variant === 'primary' ? 'coral' :
+    variant === 'secondary' ? 'ink' :
+    variant === 'ghost' ? 'outline' :
+    variant;
+
+  const variantClasses: Record<'coral' | 'ink' | 'outline', string> = {
+    coral:
+      'bg-[#FF5A36] text-[#16161D] font-bold border border-[#FF5A36] hover:bg-[#e64e2c] active:bg-[#cc4222]',
+    ink:
+      'bg-[#16161D] text-[#F7F5F2] font-bold border border-[#16161D] hover:bg-[#252530] active:bg-[#0E0E12]',
+    outline:
+      'bg-transparent text-current font-bold border border-current hover:bg-current/10 active:bg-current/20',
+  };
+
+  const baseClasses =
+    'inline-flex items-center justify-center gap-2 min-h-[48px] px-6 text-base tracking-tight transition-colors select-none font-display cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed';
+
+  const content = (
+    <>
+      {isLoading ? (
+        <span className="w-4 h-4 border-2 border-current border-t-transparent animate-spin" />
+      ) : (
+        leftIcon
+      )}
+      <span>{children}</span>
+      {!isLoading && rightIcon}
+    </>
+  );
+
+  if (href) {
+    const isExternal = href.startsWith('http') || href.startsWith('mailto:');
+    if (isExternal) {
+      return (
+        <a
+          href={href}
+          className={`${baseClasses} ${variantClasses[normalizedVariant]} ${className}`}
+          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+        >
+          {content}
+        </a>
+      );
+    }
 
     return (
-      <button
-        ref={ref}
-        disabled={disabled || isLoading}
-        aria-busy={isLoading}
-        className={clsx(
-          baseStyles,
-          sizeStyles[size],
-          variantStyles[variant],
-          className
-        )}
-        {...props}
+      <NextLink
+        href={href}
+        className={`${baseClasses} ${variantClasses[normalizedVariant]} ${className}`}
+        {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
-        {isLoading ? (
-          <Loader2 className="w-4 h-4 animate-spin text-current" />
-        ) : (
-          leftIcon
-        )}
-        <span>{children}</span>
-        {!isLoading && rightIcon}
-      </button>
+        {content}
+      </NextLink>
     );
   }
-);
 
-Button.displayName = 'Button';
+  return (
+    <button
+      disabled={disabled || isLoading}
+      className={`${baseClasses} ${variantClasses[normalizedVariant]} ${className}`}
+      {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+    >
+      {content}
+    </button>
+  );
+};

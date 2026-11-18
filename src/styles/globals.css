@@ -1,33 +1,26 @@
 @import "tailwindcss";
 
+@theme {
+  --color-paper: #F7F5F2;
+  --color-ink: #16161D;
+  --color-coral: #FF5A36;
+  --color-sand: #E8E3DC;
+  --color-muted: #55555F;
+  --color-muted-ink: #B9B9C4;
+
+  --font-display: var(--font-bricolage), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: var(--font-hanken), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
 @layer base {
   :root {
-    /* Ink and Coral Palette */
-    --warm-white: #F7F5F2;
+    --paper: #F7F5F2;
     --ink: #16161D;
     --coral: #FF5A36;
-    --coral-hover: #E04826;
-
-    /* Theme Tokens */
-    --background: #F7F5F2;
-    --surface-hero: #16161D;
-    --surface-card: #FFFFFF;
-    --surface-dark: #21212B;
-
-    --text-primary: #16161D;
-    --text-muted: #5C5B66;
-    --text-light: #F7F5F2;
-    --text-light-muted: #A3A1B0;
-
-    --border-light: #E2DFD8;
-    --border-dark: #2D2D38;
-    --border-dark-strong: #353542;
-
-    --font-bricolage: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-hanken: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-jetbrains: "JetBrains Mono", monospace;
-
-    /* Sharp technical blueprint corners */
+    --sand: #E8E3DC;
+    --muted: #55555F;
+    --muted-ink: #B9B9C4;
     --radius: 0px;
   }
 
@@ -35,63 +28,105 @@
     border-radius: 0 !important;
   }
 
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--paper);
+    color: var(--ink);
+  }
+
   body {
-    background-color: var(--warm-white);
-    color: var(--text-primary);
-    font-family: var(--font-hanken), sans-serif;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
-  /* Accessible 3px Coral focus outline */
+  /* Keyboard focus states: 3px coral outline on paper by default */
   *:focus-visible {
-    outline: 3px solid var(--coral) !important;
+    outline: 3px solid #FF5A36 !important;
     outline-offset: 2px !important;
+  }
+
+  /* Keyboard focus states on ink surfaces: 3px paper outline */
+  [data-tone="ink"] *:focus-visible,
+  .tone-ink *:focus-visible,
+  header.tone-ink *:focus-visible,
+  footer.tone-ink *:focus-visible {
+    outline: 3px solid #F7F5F2 !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Keyboard focus states on coral surfaces: 3px ink outline */
+  [data-tone="coral"] *:focus-visible,
+  .tone-coral *:focus-visible {
+    outline: 3px solid #16161D !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: #FF5A36;
+    color: #16161D;
   }
 }
 
-/* Ink Hero Block Grid + Soft Coral Radial Glow */
+/* Faint paper grid at 6% opacity, 48px cells for ink blocks */
 .bg-ink-grid {
   background-color: #16161D;
   background-image:
-    radial-gradient(circle at 85% 12%, rgba(255, 90, 54, 0.12) 0%, transparent 55%),
-    linear-gradient(to right, rgba(247, 245, 242, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(247, 245, 242, 0.05) 1px, transparent 1px);
-  background-size: 100% 100%, 56px 56px, 56px 56px;
+    linear-gradient(to right, rgba(247, 245, 242, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 245, 242, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-/* Warm White Paper Grid */
-.bg-warm-grid {
-  background-color: #F7F5F2;
-  background-image:
-    linear-gradient(to right, rgba(22, 22, 29, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(22, 22, 29, 0.04) 1px, transparent 1px);
-  background-size: 56px 56px;
+/* Typography Scale */
+.type-hero {
+  font-family: var(--font-display);
+  font-size: clamp(3.25rem, 9vw, 8.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  font-weight: 800;
 }
 
-/* Deep Panel Grid */
-.bg-ink-deep {
-  background-color: #16161D;
-  background-image:
-    linear-gradient(to right, rgba(247, 245, 242, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(247, 245, 242, 0.04) 1px, transparent 1px);
-  background-size: 56px 56px;
-}
-
-/* Typography Utility Classes */
-.font-headline {
-  font-family: var(--font-bricolage), sans-serif;
+.type-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  line-height: 1.0;
   letter-spacing: -0.035em;
-  line-height: 0.96;
+  font-weight: 800;
 }
 
-.font-body {
-  font-family: var(--font-hanken), sans-serif;
+.type-body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 62ch;
 }
 
-.font-mono {
-  font-family: var(--font-jetbrains), monospace;
+.type-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Hairline border utility */
+.hairline-sand {
+  border-color: #E8E3DC;
+}
+
+.hairline-ink {
+  border-color: #16161D;
+}
+
+.hairline-subtle-ink {
+  border-color: rgba(247, 245, 242, 0.14);
 }
 
 /* Caret blinking animation for speculative decoding */
@@ -104,20 +139,25 @@
   animation: caretBlink 800ms infinite;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+/* Scroll progress bar */
+#scroll-progress {
+  transform-origin: left;
+  will-change: transform;
 }
 
-::-webkit-scrollbar-track {
-  background: #16161D;
-}
+/* Respect prefers-reduced-motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #353542;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #FF5A36;
+  .animate-caret {
+    animation: none !important;
+    opacity: 1 !important;
+  }
 }

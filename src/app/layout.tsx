@@ -1,12 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from 'next/font/google';
 import '@/styles/globals.css';
-import { Navbar } from '@/components/layout/Navbar';
+import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { CommandPalette } from '@/components/ui/CommandPalette';
-import { SmoothScroll } from '@/components/motion/SmoothScroll';
+import { SITE } from '@/lib/site';
 
-// Bricolage Grotesque 800/700 for headlines (tight tracking -0.035em, line-height .96)
+// Bricolage Grotesque (display 800/700)
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   weight: ['700', '800'],
@@ -14,7 +13,7 @@ const bricolage = Bricolage_Grotesque({
   display: 'swap',
 });
 
-// Hanken Grotesk for body
+// Hanken Grotesk (body 400/500/600)
 const hanken = Hanken_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
@@ -22,7 +21,7 @@ const hanken = Hanken_Grotesk({
   display: 'swap',
 });
 
-// JetBrains Mono only for small labels and method lines
+// JetBrains Mono (labels 400/500)
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
@@ -31,22 +30,32 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://harshthanki-codes.github.io/Portfolio_Website'),
+  metadataBase: new URL(SITE.url),
   title: {
-    default: 'Harsh Thanki — AI engineer',
-    template: '%s | Harsh Thanki',
+    default: SITE.title,
+    template: `%s | ${SITE.name}`,
   },
-  description:
-    'AI engineer in Ahmedabad building deterministic open-weights AI systems, 7-tier failover DAGs, and local inference runtimes.',
-  authors: [{ name: 'Harsh Thanki', url: 'https://github.com/harshthanki-codes' }],
+  description: SITE.description,
+  authors: [{ name: SITE.name, url: SITE.github }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://harshthanki-codes.github.io/Portfolio_Website/',
-    title: 'Harsh Thanki — AI engineer',
-    description:
-      'AI systems that run on your own hardware. On-premise fine-tuning, failover inference DAGs, and local open-weights engines with zero marginal token cost.',
+    url: `${SITE.url}/`,
+    title: SITE.title,
+    description: SITE.description,
+    siteName: SITE.name,
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE.title,
+    description: SITE.description,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#16161D',
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -60,20 +69,20 @@ export default function RootLayout({
       className={`${bricolage.variable} ${hanken.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[#F7F5F2] text-[#16161D] font-body antialiased selection:bg-[#FF5A36] selection:text-white relative">
+      <body className="min-h-screen bg-[#F7F5F2] text-[#16161D] font-body antialiased selection:bg-[#FF5A36] selection:text-[#16161D] relative">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[#FF5A36] text-white font-mono text-xs font-bold border border-[#16161D]"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[#FF5A36] text-[#16161D] font-mono text-xs font-bold border border-[#16161D]"
         >
           Skip to main content
         </a>
 
-        <SmoothScroll>
-          <CommandPalette />
-          <Navbar />
-          <main id="main-content" className="relative z-10">{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <div id="top" />
+        <Header />
+        <main id="main-content" tabIndex={-1} className="outline-none">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
