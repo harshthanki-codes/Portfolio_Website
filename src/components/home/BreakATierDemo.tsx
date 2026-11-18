@@ -162,7 +162,7 @@ export const BreakATierDemo: React.FC = () => {
                       <button
                         type="button"
                         onClick={killCurrentLive}
-                        aria-label={`Kill Tier ${tier.id}: ${tier.name}`}
+                        aria-label={`LIVE — CLICK TO KILL: Tier ${tier.id} ${tier.name}`}
                         className="inline-flex items-center gap-2 px-4 py-2 bg-[#FF5A36] text-[#16161D] font-mono text-xs font-extrabold uppercase tracking-wider cursor-pointer border border-[#FF5A36] hover:bg-[#e64e2c] active:bg-[#cc4222] min-h-[44px]"
                       >
                         <span className="w-2 h-2 bg-[#16161D]" aria-hidden="true" />

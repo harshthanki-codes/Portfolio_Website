@@ -24,7 +24,7 @@ export default function NotFound() {
           </p>
 
           <div className="pt-4 flex justify-center">
-            <NextLink href={assetPath('/')}>
+            <NextLink href="/">
               <Button variant="coral" className="min-w-[200px]">
                 Return to Overview →
               </Button>
