@@ -2,7 +2,7 @@ name: CI Pipeline & Quality Verification
 
 on:
   push:
-    branches: [main]
+    branches: [main, redesign-ink-coral]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -34,4 +34,3 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://harshthanki-codes.github.io/Portfolio_Website
-          CONTACT_NOTIFICATION_EMAIL: harsh.h.thanki@gmail.com
