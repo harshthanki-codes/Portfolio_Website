@@ -50,6 +50,31 @@ export const metadata: Metadata = {
     title: SITE.title,
     description: SITE.description,
   },
+  alternates: {
+    canonical: `${SITE.url}/`,
+  },
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.name,
+  jobTitle: 'AI Engineer',
+  url: `${SITE.url}/`,
+  sameAs: [SITE.github, SITE.linkedin],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Ahmedabad',
+    addressCountry: 'IN',
+  },
+  knowsAbout: [
+    'Artificial Intelligence',
+    'Machine Learning',
+    'Large Language Models',
+    'Local Inference Optimization',
+    'Speculative Decoding',
+    'Fault-Tolerant DAGs',
+  ],
 };
 
 export const viewport: Viewport = {
@@ -78,6 +103,10 @@ export default function RootLayout({
         </a>
 
         <div id="top" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <Header />
         <main id="main-content" tabIndex={-1} className="outline-none">
           {children}

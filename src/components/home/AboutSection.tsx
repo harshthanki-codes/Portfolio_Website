@@ -54,7 +54,7 @@ export const AboutSection: React.FC = () => {
       <Container className="space-y-12">
         {/* Section Header */}
         <div className="space-y-4 max-w-[62ch]">
-          <Label tone="coral">How I work · 04</Label>
+          <Label tone="coral">How I work</Label>
           <h2 className="type-h2 text-[#F7F5F2] reveal-heading">
             I like systems that behave the same way every time.
           </h2>

@@ -36,12 +36,14 @@ export const SelectedWork: React.FC = () => {
           {projects.map((proj, idx) => {
             const isWide = idx === 0 || idx === 3;
             const spanClass = isWide ? 'lg:col-span-4' : 'lg:col-span-2';
+            // Cards 1 and 4 use lilac background (#D9CCFF), cards 2 and 3 use sand background (#E8E3DC)
+            const bgClass = isWide ? 'bg-[#D9CCFF]' : 'bg-[#E8E3DC]';
 
             return (
               <NextLink
                 key={proj.slug}
                 href={`/work/${proj.slug}`}
-                className={`group block ${spanClass} bg-[#E8E3DC] border border-[#16161D] p-6 sm:p-8 transition-colors duration-200 hover:bg-[#FF5A36] focus-visible:outline-3 focus-visible:outline-[#FF5A36]`}
+                className={`group block ${spanClass} ${bgClass} border border-[#16161D] p-6 sm:p-8 transition-colors duration-200 hover:bg-[#FF5A36] focus-visible:outline-3 focus-visible:outline-[#FF5A36]`}
               >
                 <div className="flex flex-col justify-between h-full min-h-[260px] space-y-6">
                   {/* Top Row: Mono Tag + Shifting Arrow */}
@@ -49,7 +51,7 @@ export const SelectedWork: React.FC = () => {
                     <span className="font-bold uppercase tracking-wider">{proj.tag}</span>
                     <span
                       aria-hidden="true"
-                      className="font-bold text-base transition-transform duration-200 group-hover:translate-x-1.5"
+                      className="font-bold text-base transition-transform duration-200 group-hover:translate-x-[6px]"
                     >
                       →
                     </span>

@@ -4,11 +4,11 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { EMAIL } from '@/lib/site';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
-import { Section } from '@/components/ui/Section';
 
 interface TokenItem {
   text: string;
   state: 'verified' | 'draft' | 'rejected';
+  justVerified?: boolean; // triggers 250ms mint flash
 }
 
 interface DecodingFrame {
@@ -32,12 +32,12 @@ const FRAMES: DecodingFrame[] = [
     ],
     statusText: '1.5B DRAFT MODEL GENERATED 4 SPECULATIVE TOKENS',
   },
-  // Frame 2: 7B target verification - "ride" rejected
+  // Frame 2: 7B target verification - "ride" rejected, 3 verified
   {
     tokens: [
-      { text: 'AI', state: 'verified' },
-      { text: 'systems', state: 'verified' },
-      { text: 'that', state: 'verified' },
+      { text: 'AI', state: 'verified', justVerified: true },
+      { text: 'systems', state: 'verified', justVerified: true },
+      { text: 'that', state: 'verified', justVerified: true },
       { text: 'ride', state: 'rejected' },
     ],
     statusText: '7B VERIFIER: 3 ACCEPTED, 1 REJECTED ("ride" ✗)',
@@ -48,7 +48,7 @@ const FRAMES: DecodingFrame[] = [
       { text: 'AI', state: 'verified' },
       { text: 'systems', state: 'verified' },
       { text: 'that', state: 'verified' },
-      { text: 'run', state: 'verified' },
+      { text: 'run', state: 'verified', justVerified: true },
       { text: 'on', state: 'draft' },
       { text: 'your', state: 'draft' },
       { text: 'own', state: 'draft' },
@@ -63,14 +63,14 @@ const FRAMES: DecodingFrame[] = [
       { text: 'systems', state: 'verified' },
       { text: 'that', state: 'verified' },
       { text: 'run', state: 'verified' },
-      { text: 'on', state: 'verified' },
-      { text: 'your', state: 'verified' },
-      { text: 'own', state: 'verified' },
+      { text: 'on', state: 'verified', justVerified: true },
+      { text: 'your', state: 'verified', justVerified: true },
+      { text: 'own', state: 'verified', justVerified: true },
       { text: 'servers.', state: 'rejected' },
     ],
     statusText: '7B VERIFIER: 3 ACCEPTED, 1 REJECTED ("servers." ✗)',
   },
-  // Frame 5: complete verified headline
+  // Frame 5: complete verified headline with "own hardware." on sun highlighter
   {
     tokens: [
       { text: 'AI', state: 'verified' },
@@ -88,26 +88,41 @@ const FRAMES: DecodingFrame[] = [
 
 export const Hero: React.FC = () => {
   const [frameIndex, setFrameIndex] = useState<number>(0);
+  const [flashingMint, setFlashingMint] = useState<boolean>(false);
   const [reducedMotion, setReducedMotion] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const flashTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   const startPlayback = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
+    if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
 
     let current = 0;
     setFrameIndex(current);
+    setFlashingMint(false);
 
-    const durations = [750, 1150, 1150, 1150, 1150]; // 5 frames leading to frame 5 which holds
+    const durations = [750, 1150, 1250, 1150, 1250];
 
     const step = (idx: number) => {
       if (idx >= FRAMES.length - 1) {
         setFrameIndex(FRAMES.length - 1);
-        return; // Plays once, then holds the correct headline
+        setFlashingMint(false);
+        return; // Plays once, holds final headline
       }
 
       timerRef.current = setTimeout(() => {
         const next = idx + 1;
         setFrameIndex(next);
+
+        // Check if frame has newly verified tokens to flash mint for 250ms
+        const hasNewlyVerified = FRAMES[next].tokens.some((t) => t.justVerified);
+        if (hasNewlyVerified) {
+          setFlashingMint(true);
+          flashTimerRef.current = setTimeout(() => {
+            setFlashingMint(false);
+          }, 250);
+        }
+
         step(next);
       }, durations[idx] || 1150);
     };
@@ -129,6 +144,7 @@ export const Hero: React.FC = () => {
       if (e.matches) {
         setReducedMotion(true);
         if (timerRef.current) clearTimeout(timerRef.current);
+        if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
         setFrameIndex(5);
       } else {
         setReducedMotion(false);
@@ -139,6 +155,7 @@ export const Hero: React.FC = () => {
     mq.addEventListener('change', handler);
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
+      if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
       mq.removeEventListener('change', handler);
     };
   }, [startPlayback]);
@@ -150,6 +167,7 @@ export const Hero: React.FC = () => {
   };
 
   const currentFrame = reducedMotion ? FRAMES[5] : FRAMES[frameIndex];
+  const isFinalFrame = reducedMotion || frameIndex === 5;
 
   return (
     <section className="pt-16 pb-20 sm:pt-24 sm:pb-28 border-b border-[#2D2D38]/60 relative z-10">
@@ -164,7 +182,7 @@ export const Hero: React.FC = () => {
 
             <div className="flex items-center gap-4 text-[11px] lowercase text-[#B9B9C4]">
               <span className="hidden sm:inline">
-                <span className="text-[#FF5A36] underline decoration-1 underline-offset-4">coral</span> = drafted by a 1.5B model · <span className="text-[#F7F5F2]">white</span> = verified by a 7B model
+                <span className="text-[#FF5A36] underline decoration-1 underline-offset-4">coral</span> = drafted by a 1.5B model · <span className="text-[#2EE6A6] font-bold">mint</span> = verified by a 7B model
               </span>
               <button
                 type="button"
@@ -177,17 +195,23 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Reserved Height Speculative Headline Container */}
+          {/* Reserved Height Speculative Headline Container (Zero Layout Shift) */}
           <div className="min-h-[160px] sm:min-h-[220px] lg:min-h-[280px] flex items-start">
             <h1
               aria-label="AI systems that run on your own hardware."
               className="type-hero text-[#F7F5F2] flex flex-wrap items-baseline gap-x-3 gap-y-2 select-none"
             >
-              {/* Visually hidden text for instant semantic and SEO availability */}
+              {/* Visually hidden text for semantic and search indexing */}
               <span className="sr-only">AI systems that run on your own hardware.</span>
 
-              {reducedMotion ? (
-                <span>AI systems that run on your own hardware.</span>
+              {isFinalFrame ? (
+                // Final verified state: "AI systems that run on your " in paper-white + "own hardware." on sun highlighter fill
+                <span>
+                  AI systems that run on your{' '}
+                  <mark className="bg-[#FFD23F] text-[#2B2200] px-2 py-0.5 inline-block font-extrabold not-italic">
+                    own hardware.
+                  </mark>
+                </span>
               ) : currentFrame.tokens.length === 0 ? (
                 <span className="text-[#B9B9C4]/40 font-mono text-3xl sm:text-5xl">[]</span>
               ) : (
@@ -214,10 +238,22 @@ export const Hero: React.FC = () => {
                       </span>
                     );
                   }
-                  // Verified in paper-white
+                  // Verified: flashes mint for 250ms with a small mint dot, then settles to paper-white
+                  const isFlashing = tok.justVerified && flashingMint;
                   return (
-                    <span key={idx} className="text-[#F7F5F2] inline-block">
+                    <span
+                      key={idx}
+                      className={`inline-flex items-center transition-colors duration-250 ${
+                        isFlashing ? 'text-[#2EE6A6]' : 'text-[#F7F5F2]'
+                      }`}
+                    >
                       {tok.text}
+                      {isFlashing && (
+                        <span
+                          className="inline-block w-1.5 h-1.5 bg-[#2EE6A6] ml-1.5 align-middle"
+                          aria-hidden="true"
+                        />
+                      )}
                     </span>
                   );
                 })

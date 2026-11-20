@@ -42,7 +42,7 @@ export const ContactSection: React.FC = () => {
         {/* Label in Ink text */}
         <div className="border-b border-[#16161D]/20 pb-3">
           <Label tone="default" className="text-[#16161D]">
-            05 // DIRECT INQUIRIES
+            Contact
           </Label>
         </div>
 

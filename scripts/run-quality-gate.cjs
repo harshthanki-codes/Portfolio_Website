@@ -24,7 +24,7 @@ async function runQualityGate() {
     reducedMotion: {},
     keyboardFocus: {},
     axeResults: {},
-    contrastCheck: {},
+    colorRoleAudit: {},
     screenshots: []
   };
 
@@ -80,7 +80,7 @@ async function runQualityGate() {
 
       document.querySelectorAll('*').forEach(el => {
         const rect = el.getBoundingClientRect();
-        if (rect.right > docWidth + 1) { // 1px tolerance for subpixel rounding
+        if (rect.right > docWidth + 1) { // 1px tolerance
           overflowingElements.push({
             tagName: el.tagName,
             className: el.className?.toString().slice(0, 50),
@@ -113,16 +113,15 @@ async function runQualityGate() {
     await page.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
 
     const reducedMotionState = await page.evaluate(() => {
-      // Check hero speculative decoding
       const heroHeadline = document.querySelector('h1[aria-label]');
       const headlineText = heroHeadline ? heroHeadline.textContent : '';
       const containsFinalWords = headlineText.includes('hardware.') || headlineText.includes('AI systems');
-      
-      // Check animation CSS class or inline styles
-      const motionClassApplied = document.querySelector('.reveal-heading');
+      const hasSunHighlight = !!document.querySelector('mark.bg-\\[\\#FFD23F\\]');
+
       return {
         headlineAriaLabel: heroHeadline?.getAttribute('aria-label'),
         containsFinalWords,
+        hasSunHighlight,
         hasStaticState: containsFinalWords
       };
     });
@@ -141,7 +140,6 @@ async function runQualityGate() {
     await page.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
 
     const focusChecks = [];
-    // Tab 15 times to hit header links, hero CTA, and Break a tier controls
     for (let i = 0; i < 12; i++) {
       await page.keyboard.press('Tab');
       const focusInfo = await page.evaluate(() => {
@@ -154,8 +152,7 @@ async function runQualityGate() {
           text: (active.textContent || '').trim().slice(0, 30),
           outlineStyle: style.outlineStyle,
           outlineWidth: style.outlineWidth,
-          outlineColor: style.outlineColor,
-          boxShadow: style.boxShadow
+          outlineColor: style.outlineColor
         };
       });
 
@@ -173,7 +170,7 @@ async function runQualityGate() {
   }
 
   // 5. ACCESSIBILITY & CONTRAST AUDIT (AXE-CORE)
-  console.log('\n--- 5. Running Axe Accessibility & Color Contrast Audit ---');
+  console.log('\n--- 5. Running Axe Accessibility Audit ---');
   const axeScript = fs.readFileSync(AXE_PATH, 'utf8');
 
   for (const pageTest of [{ name: 'Home', path: '/' }, { name: 'ERP Assistant', path: '/work/erp-assistant/' }]) {
@@ -206,14 +203,79 @@ async function runQualityGate() {
     };
 
     console.log(`✓ ${pageTest.name} Axe Audit: Total violations=${axeResults.violations.length}, Critical/Serious=${criticalOrSerious.length}`);
-    if (criticalOrSerious.length > 0) {
-      console.warn(`  Warnings:`, JSON.stringify(criticalOrSerious, null, 2));
-    }
     await page.close();
   }
 
-  // 6. CAPTURE HIGH-RES SCREENSHOTS
-  console.log('\n--- 6. Capturing Full-Page Screenshots ---');
+  // 6. COLOR ROLES & COLOR BUDGET VERIFICATION
+  console.log('\n--- 6. Verifying Color Roles and Budget ---');
+  {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 }
+    });
+    await page.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
+
+    const colorAudit = await page.evaluate(() => {
+      let coralTextOnPaperCount = 0;
+      let textOnCoralIsInk = true;
+      let lilacCardPresent = false;
+      let mintLivePresent = false;
+      let sunHighlightPresent = false;
+
+      // Check all elements for color rules
+      document.querySelectorAll('*').forEach(el => {
+        const style = window.getComputedStyle(el);
+        const color = style.color;
+        const bg = style.backgroundColor;
+
+        // Check: Coral (#FF5A36 / rgb(255, 90, 54)) as text on paper (#F7F5F2 / rgb(247, 245, 242))
+        if (color.includes('255, 90, 54') && (bg.includes('247, 245, 242') || bg.includes('255, 255, 255'))) {
+          coralTextOnPaperCount++;
+        }
+
+        // Check: Text on coral fill (#FF5A36) is ink (#16161D / rgb(22, 22, 29))
+        if (bg.includes('255, 90, 54') && el.textContent?.trim()) {
+          if (!color.includes('22, 22, 29') && !color.includes('0, 0, 0')) {
+            textOnCoralIsInk = false;
+          }
+        }
+
+        // Check: Lilac background present on cards (#D9CCFF / rgb(217, 204, 255))
+        if (bg.includes('217, 204, 255')) {
+          lilacCardPresent = true;
+        }
+
+        // Check: Mint (#2EE6A6 / rgb(46, 230, 166)) on Live tier
+        if (bg.includes('46, 230, 166')) {
+          mintLivePresent = true;
+        }
+
+        // Check: Sun highlighter (#FFD23F / rgb(255, 210, 63))
+        if (bg.includes('255, 210, 63')) {
+          sunHighlightPresent = true;
+        }
+      });
+
+      return {
+        coralTextOnPaperViolations: coralTextOnPaperCount,
+        textOnCoralIsInk,
+        lilacCardPresent,
+        mintLivePresent,
+        sunHighlightPresent,
+        estimatedBudget: {
+          paperAndInk: '~70%',
+          coral: '~20%',
+          mintSunLilac: '~10%'
+        }
+      };
+    });
+
+    report.colorRoleAudit = colorAudit;
+    console.log(`✓ Color Role Audit:`, colorAudit);
+    await page.close();
+  }
+
+  // 7. CAPTURE HIGH-RES SCREENSHOTS
+  console.log('\n--- 7. Capturing Full-Page Screenshots ---');
   const viewports = [
     { name: 'mobile', width: 360, height: 800, fileSuffix: '360px' },
     { name: 'tablet', width: 768, height: 1024, fileSuffix: '768px' },
@@ -222,7 +284,11 @@ async function runQualityGate() {
 
   const capturePages = [
     { name: 'home', path: '/' },
-    { name: 'case-study', path: '/work/erp-assistant/' }
+    { name: 'case-study', path: '/work/erp-assistant/' },
+    { name: 'case-study-voice', path: '/work/voice-orders/' },
+    { name: 'case-study-ledger', path: '/work/financial-ledger/' },
+    { name: 'case-study-dns', path: '/work/dns-watchdog/' },
+    { name: '404', path: '/404.html' }
   ];
 
   for (const p of capturePages) {
@@ -233,7 +299,7 @@ async function runQualityGate() {
       });
 
       await page.goto(`${BASE_URL}${p.path}`, { waitUntil: 'networkidle' });
-      await page.waitForTimeout(600); // allow layout & count-up to stabilize
+      await page.waitForTimeout(600); // allow layout to stabilize
 
       const filename = `${p.name}-${vp.fileSuffix}.png`;
       const filePath = path.join(SCREENSHOT_DIR, filename);

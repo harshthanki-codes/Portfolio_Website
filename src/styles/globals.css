@@ -8,6 +8,13 @@
   --color-muted: #55555F;
   --color-muted-ink: #B9B9C4;
 
+  --color-mint: #2EE6A6;
+  --color-mint-text: #0B2A20;
+  --color-sun: #FFD23F;
+  --color-sun-text: #2B2200;
+  --color-lilac: #D9CCFF;
+  --color-lilac-text: #241447;
+
   --font-display: var(--font-bricolage), -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: var(--font-hanken), -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: var(--font-jetbrains), monospace;
@@ -21,6 +28,12 @@
     --sand: #E8E3DC;
     --muted: #55555F;
     --muted-ink: #B9B9C4;
+    --mint: #2EE6A6;
+    --mint-text: #0B2A20;
+    --sun: #FFD23F;
+    --sun-text: #2B2200;
+    --lilac: #D9CCFF;
+    --lilac-text: #241447;
     --radius: 0px;
   }
 

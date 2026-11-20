@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Label } from '@/components/ui/Label';
@@ -11,38 +11,50 @@ interface Tier {
   name: string;
   hardware: string;
   latency: string;
-  latencyPercent: number; // 0-100 for latency bar
+  latencyPercent: number;
 }
 
 const TIERS: Tier[] = [
   { id: 1, name: 'Local Whisper Large-v3', hardware: 'Edge RTX 4090 (On-Prem)', latency: '<450ms', latencyPercent: 35 },
-  { id: 2, name: 'Speculative 1.5B Fast-Path', hardware: 'Local FP16 Draft Node', latency: '<180ms', latencyPercent: 18 },
-  { id: 3, name: 'Internal Quantized GGUF Node', hardware: 'Air-Gapped Workstation', latency: '<650ms', latencyPercent: 50 },
-  { id: 4, name: 'Regional On-Premise Backup', hardware: 'Secondary Cluster LAN', latency: '<920ms', latencyPercent: 70 },
-  { id: 5, name: 'Air-Gapped HA Buffer Queue', hardware: 'Persisted SQLite Invariant', latency: '0ms drop', latencyPercent: 10 },
-  { id: 6, name: 'Encrypted Cloud Private Gateway', hardware: 'Dedicated VPC Endpoint', latency: '<1200ms', latencyPercent: 90 },
-  { id: 7, name: 'Human Operator Intervention Buffer', hardware: 'Synchronous Warehouse Dispatch', latency: 'Fallback', latencyPercent: 100 },
+  { id: 2, name: 'Distil-Whisper / C++ ONNX', hardware: 'Local FP16 Draft Node', latency: '<180ms', latencyPercent: 18 },
+  { id: 3, name: 'Flash-Lite Multilingual ASR', hardware: 'Air-Gapped Workstation', latency: '<650ms', latencyPercent: 50 },
+  { id: 4, name: 'Streaming Chunked Kaldi', hardware: 'Secondary Cluster LAN', latency: '<920ms', latencyPercent: 70 },
+  { id: 5, name: 'Cloud Gemini 1.5 Flash Audio', hardware: 'VPC Gateway Bridge', latency: '<1100ms', latencyPercent: 82 },
+  { id: 6, name: 'Cloud Whisper API Backup', hardware: 'Encrypted Fallback Endpoint', latency: '<1400ms', latencyPercent: 92 },
+  { id: 7, name: 'Human Operator Intervention', hardware: 'Synchronous Warehouse Dispatch', latency: 'Fallback', latencyPercent: 100 },
 ];
 
 export const BreakATierDemo: React.FC = () => {
-  // Array tracking whether tier is down (true = killed, false = alive)
   const [killedTiers, setKilledTiers] = useState<boolean[]>([
     false, false, false, false, false, false, false
   ]);
+  const [flashingKilledIndex, setFlashingKilledIndex] = useState<number | null>(null);
+  const flashTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   const liveIndex = killedTiers.findIndex((k) => !k);
   const allKilled = liveIndex === -1;
 
   const killCurrentLive = () => {
     if (liveIndex === -1) return;
+    const targetIndex = liveIndex;
+
+    // Flash coral for 300ms on the killed tier before turning ink
+    setFlashingKilledIndex(targetIndex);
+    if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
+    flashTimerRef.current = setTimeout(() => {
+      setFlashingKilledIndex(null);
+    }, 300);
+
     setKilledTiers((prev) => {
       const next = [...prev];
-      next[liveIndex] = true;
+      next[targetIndex] = true;
       return next;
     });
   };
 
   const resetTiers = () => {
+    if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
+    setFlashingKilledIndex(null);
     setKilledTiers([false, false, false, false, false, false, false]);
   };
 
@@ -50,15 +62,13 @@ export const BreakATierDemo: React.FC = () => {
     <Section
       tone="paper"
       className="py-16 sm:py-24 border-b border-[#E8E3DC] bg-[#F7F5F2]"
-      aria-label="Failover DAG Simulation"
+      aria-label="Break a Tier Simulation"
     >
       <Container className="space-y-10">
         {/* Header Block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#E8E3DC]">
           <div className="space-y-3 max-w-2xl">
-            <div className="flex items-center gap-2">
-              <Label tone="muted">Simulation · 02</Label>
-            </div>
+            <Label tone="muted">Simulation</Label>
             <h2 className="type-h2 text-[#16161D] reveal-heading">
               Break a tier.
             </h2>
@@ -73,7 +83,7 @@ export const BreakATierDemo: React.FC = () => {
               onClick={resetTiers}
               className="text-xs uppercase font-mono tracking-wider min-h-[48px] px-5 text-[#16161D] border-[#16161D]"
             >
-              Reset All
+              Reset
             </Button>
           </div>
         </div>
@@ -81,7 +91,7 @@ export const BreakATierDemo: React.FC = () => {
         {/* Live Accessibility Status Banner */}
         <div
           aria-live="polite"
-          className={`p-5 border transition-all ${
+          className={`p-5 border transition-all duration-300 ${
             allKilled
               ? 'bg-[#16161D] text-[#F7F5F2] border-[#16161D]'
               : 'bg-[#E8E3DC] text-[#16161D] border-[#E8E3DC]'
@@ -94,7 +104,7 @@ export const BreakATierDemo: React.FC = () => {
                 : `Voice traffic actively routed to Tier 0${liveIndex + 1}: ${TIERS[liveIndex].name} (${TIERS[liveIndex].hardware}).`}
             </span>
             <span className="shrink-0 font-bold uppercase tracking-wider text-[11px]">
-              {allKilled ? '[ ALL FAILED ]' : `[ ACTIVE: T0${liveIndex + 1} ]`}
+              {allKilled ? '[ 0 ACTIVE / 7 DOWN ]' : `[ ACTIVE: T0${liveIndex + 1} ]`}
             </span>
           </div>
         </div>
@@ -104,15 +114,18 @@ export const BreakATierDemo: React.FC = () => {
           {TIERS.map((tier, idx) => {
             const isKilled = killedTiers[idx];
             const isLive = idx === liveIndex;
+            const isFlashingCoral = flashingKilledIndex === idx;
 
             return (
               <div
                 key={tier.id}
-                className={`py-4 transition-all duration-300 ${
-                  isKilled
+                className={`py-4 transition-all duration-400 ease-out ${
+                  isFlashingCoral
+                    ? 'bg-[#FF5A36] text-[#16161D]'
+                    : isKilled
                     ? 'bg-[#16161D]/5 opacity-60'
                     : isLive
-                    ? 'bg-white'
+                    ? 'bg-white shadow-xs translate-x-1 sm:translate-x-2'
                     : 'bg-transparent'
                 }`}
               >
@@ -124,10 +137,10 @@ export const BreakATierDemo: React.FC = () => {
                     </span>
                     <span
                       className={`font-mono text-sm sm:text-base font-bold ${
-                        isKilled
-                          ? 'line-through text-[#55555F]'
-                          : isLive
+                        isFlashingCoral
                           ? 'text-[#16161D]'
+                          : isKilled
+                          ? 'line-through text-[#55555F]'
                           : 'text-[#16161D]'
                       }`}
                     >
@@ -145,10 +158,12 @@ export const BreakATierDemo: React.FC = () => {
                     <div className="w-full h-1 bg-[#E8E3DC] overflow-hidden">
                       <div
                         className={`h-full transition-all duration-400 ${
-                          isKilled
+                          isFlashingCoral
+                            ? 'bg-[#16161D]'
+                            : isKilled
                             ? 'bg-[#55555F]/40'
                             : isLive
-                            ? 'bg-[#FF5A36]'
+                            ? 'bg-[#2EE6A6]'
                             : 'bg-[#55555F]'
                         }`}
                         style={{ width: `${tier.latencyPercent}%` }}
@@ -162,12 +177,16 @@ export const BreakATierDemo: React.FC = () => {
                       <button
                         type="button"
                         onClick={killCurrentLive}
-                        aria-label={`LIVE — CLICK TO KILL: Tier ${tier.id} ${tier.name}`}
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#FF5A36] text-[#16161D] font-mono text-xs font-extrabold uppercase tracking-wider cursor-pointer border border-[#FF5A36] hover:bg-[#e64e2c] active:bg-[#cc4222] min-h-[44px]"
+                        aria-label={`LIVE — CLICK TO KILL: Tier 0${tier.id} ${tier.name}`}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#2EE6A6] text-[#0B2A20] font-mono text-xs font-extrabold uppercase tracking-wider cursor-pointer border border-[#2EE6A6] hover:bg-[#25C78F] active:bg-[#1EAE7C] min-h-[44px] transition-colors"
                       >
-                        <span className="w-2 h-2 bg-[#16161D]" aria-hidden="true" />
+                        <span className="w-2 h-2 bg-[#0B2A20]" aria-hidden="true" />
                         <span>LIVE — CLICK TO KILL</span>
                       </button>
+                    ) : isFlashingCoral ? (
+                      <span className="inline-flex items-center px-3 py-1.5 bg-[#FF5A36] text-[#16161D] font-mono text-xs font-bold uppercase">
+                        KILLING...
+                      </span>
                     ) : isKilled ? (
                       <span className="inline-flex items-center px-3 py-1.5 bg-[#16161D] text-[#F7F5F2] font-mono text-xs font-bold line-through">
                         KILLED
